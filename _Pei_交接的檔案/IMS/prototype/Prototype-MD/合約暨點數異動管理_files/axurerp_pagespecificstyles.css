@@ -1,0 +1,5792 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../合約暨點數異動管理_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:-39px;
+    top:22px;
+    width:1402px;
+    height:1631px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1402px;
+    height:1631px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:808px;
+    width:1398px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:150px;
+    top:269px;
+    width:61px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../合約暨點數異動管理_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:52px;
+    top:214px;
+    width:1221px;
+    height:1378px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1227px;
+    height:1384px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:681px;
+    width:1217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_selected {
+    background-image: url('../合約暨點數異動管理_files/u7_selected.png');
+}
+
+.u7_normal {
+    background-image: url('../合約暨點數異動管理_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u9_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:62px;
+    height:20px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:68px;
+    height:26px;
+}
+
+.u10 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u12_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u12_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:6px;
+    height:20px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:26px;
+}
+
+.u13 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u16_selected {
+    background-image: url('../合約暨點數異動管理_files/u7_selected.png');
+}
+
+.u16_normal {
+    background-image: url('../合約暨點數異動管理_files/u7_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u18_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u19 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:67px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u21_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u21_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:6px;
+    height:20px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:26px;
+}
+
+.u22 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u25_selected {
+    background-image: url('../合約暨點數異動管理_files/u7_selected.png');
+}
+
+.u25_normal {
+    background-image: url('../合約暨點數異動管理_files/u7_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u25_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u27_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:53px;
+    height:20px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:59px;
+    height:26px;
+}
+
+.u28 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u30_selected {
+    background-image: url('../合約暨點數異動管理_files/u7_selected.png');
+}
+
+.u30_normal {
+    background-image: url('../合約暨點數異動管理_files/u7_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u30_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u32_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:40px;
+    height:20px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:46px;
+    height:26px;
+}
+
+.u33 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u35_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u35_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:66px;
+    height:20px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:26px;
+}
+
+.u36 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:61px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u38_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u38_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:78px;
+    height:20px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:84px;
+    height:26px;
+}
+
+.u39 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:73px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u41_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u41_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:102px;
+    height:20px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:108px;
+    height:26px;
+}
+
+.u42 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:97px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u44_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u44_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:78px;
+    height:20px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:84px;
+    height:26px;
+}
+
+.u45 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:73px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u47_selected {
+    background-image: url('../合約暨點數異動管理_files/u7_selected.png');
+}
+
+.u47_normal {
+    background-image: url('../合約暨點數異動管理_files/u7_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u47_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u49_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:54px;
+    height:20px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:60px;
+    height:26px;
+}
+
+.u50 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:49px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u52_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u52_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:90px;
+    height:20px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:26px;
+}
+
+.u53 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:85px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u55_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u55_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:90px;
+    height:20px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:26px;
+}
+
+.u56 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:85px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u58_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u58_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:90px;
+    height:20px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:26px;
+}
+
+.u59 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:85px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u61_selected {
+    background-image: url('../合約暨點數異動管理_files/u7_selected.png');
+}
+
+.u61_normal {
+    background-image: url('../合約暨點數異動管理_files/u7_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u61_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u63_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:80px;
+    height:20px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u64 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:75px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u66_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u66_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:158px;
+    height:20px;
+}
+
+#u66_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:164px;
+    height:26px;
+}
+
+.u67 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:153px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u69_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u69_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:114px;
+    height:20px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:120px;
+    height:26px;
+}
+
+.u70 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:109px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u71_line {
+    background-image: url('../合約暨點數異動管理_files/u71_line.png');
+}
+
+.u71_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:1376px;
+}
+
+.u71 {
+    position:absolute;
+    left:272px;
+    top:212px;
+    width:10px;
+    height:1376px;
+    
+}
+
+.u72 {
+    position:absolute;
+    left:597px;
+    top:396px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u73 {
+    position:absolute;
+    left:732px;
+    top:396px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u74_line {
+    background-image: url('../合約暨點數異動管理_files/u74_line.png');
+}
+
+.u74_line {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:985px;
+    height:5px;
+}
+
+.u74 {
+    position:absolute;
+    left:287px;
+    top:457px;
+    width:985px;
+    height:10px;
+    
+}
+
+.u75 {
+    position:absolute;
+    left:336px;
+    top:477px;
+    width:150px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u76_normal {
+    background-image: url('../合約暨點數異動管理_files/u76_normal.png');
+}
+
+.u76_container {
+    position:absolute;
+    left:294px;
+    top:475px;
+    width:25px;
+    height:24px;
+}
+
+#u76_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:25px;
+    height:24px;
+}
+
+.u77 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:21px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78 {
+    position:absolute;
+    left:287px;
+    top:214px;
+    width:402px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79 {
+    position:absolute;
+    left:306px;
+    top:253px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80 {
+    position:absolute;
+    left:306px;
+    top:276px;
+    width:91px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u81 {
+    position:absolute;
+    left:660px;
+    top:253px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82 {
+    position:absolute;
+    left:439px;
+    top:253px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../合約暨點數異動管理_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:660px;
+    top:277px;
+    width:180px;
+    height:23px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:29px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../合約暨點數異動管理_files/u83_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:440px;
+    top:276px;
+    width:180px;
+    height:23px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:29px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u87 {
+    position:absolute;
+    left:389px;
+    top:546px;
+    width:702px;
+    height:267px
+}
+
+.u88_normal {
+    background-image: url('../合約暨點數異動管理_files/u88_normal.png');
+}
+
+.u88_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:142px;
+    height:33px;
+}
+
+#u88_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:39px;
+}
+
+.u89 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90_normal {
+    background-image: url('../合約暨點數異動管理_files/u90_normal.png');
+}
+
+.u90_container {
+    position:absolute;
+    left:142px;
+    top:0px;
+    width:203px;
+    height:33px;
+}
+
+#u90_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:39px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_normal {
+    background-image: url('../合約暨點數異動管理_files/u92_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:345px;
+    top:0px;
+    width:136px;
+    height:33px;
+}
+
+#u92_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:39px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:132px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../合約暨點數異動管理_files/u94_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:480px;
+    top:0px;
+    width:216px;
+    height:33px;
+}
+
+#u94_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:39px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../合約暨點數異動管理_files/u96_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:0px;
+    top:33px;
+    width:142px;
+    height:41px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:47px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_normal {
+    background-image: url('../合約暨點數異動管理_files/u98_normal.png');
+}
+
+.u98_container {
+    position:absolute;
+    left:142px;
+    top:33px;
+    width:203px;
+    height:41px;
+}
+
+#u98_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:47px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../合約暨點數異動管理_files/u100_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:345px;
+    top:33px;
+    width:136px;
+    height:41px;
+}
+
+#u100_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:47px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:132px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102_normal {
+    background-image: url('../合約暨點數異動管理_files/u102_normal.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:480px;
+    top:33px;
+    width:216px;
+    height:41px;
+}
+
+#u102_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:47px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../合約暨點數異動管理_files/u104_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:0px;
+    top:74px;
+    width:142px;
+    height:36px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:42px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../合約暨點數異動管理_files/u106_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:142px;
+    top:74px;
+    width:203px;
+    height:36px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:42px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../合約暨點數異動管理_files/u108_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:345px;
+    top:74px;
+    width:136px;
+    height:36px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:42px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:132px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../合約暨點數異動管理_files/u110_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:480px;
+    top:74px;
+    width:216px;
+    height:36px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:42px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112_normal {
+    background-image: url('../合約暨點數異動管理_files/u112_normal.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:0px;
+    top:110px;
+    width:142px;
+    height:32px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:38px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../合約暨點數異動管理_files/u114_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:142px;
+    top:110px;
+    width:203px;
+    height:32px;
+}
+
+#u114_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:38px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../合約暨點數異動管理_files/u116_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:345px;
+    top:110px;
+    width:136px;
+    height:32px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:38px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:132px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118_normal {
+    background-image: url('../合約暨點數異動管理_files/u118_normal.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:480px;
+    top:110px;
+    width:216px;
+    height:32px;
+}
+
+#u118_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:38px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../合約暨點數異動管理_files/u120_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:0px;
+    top:142px;
+    width:142px;
+    height:45px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:51px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../合約暨點數異動管理_files/u122_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:142px;
+    top:142px;
+    width:203px;
+    height:45px;
+}
+
+#u122_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:51px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../合約暨點數異動管理_files/u124_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:345px;
+    top:142px;
+    width:136px;
+    height:45px;
+}
+
+#u124_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:51px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:132px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_normal {
+    background-image: url('../合約暨點數異動管理_files/u126_normal.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:480px;
+    top:142px;
+    width:216px;
+    height:45px;
+}
+
+#u126_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:51px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128_normal {
+    background-image: url('../合約暨點數異動管理_files/u128_normal.png');
+}
+
+.u128_container {
+    position:absolute;
+    left:0px;
+    top:187px;
+    width:142px;
+    height:35px;
+}
+
+#u128_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:41px;
+}
+
+.u129 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130_normal {
+    background-image: url('../合約暨點數異動管理_files/u130_normal.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:142px;
+    top:187px;
+    width:203px;
+    height:35px;
+}
+
+#u130_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:41px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132_normal {
+    background-image: url('../合約暨點數異動管理_files/u132_normal.png');
+}
+
+.u132_container {
+    position:absolute;
+    left:345px;
+    top:187px;
+    width:136px;
+    height:35px;
+}
+
+#u132_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:41px;
+}
+
+.u133 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:132px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u134_normal {
+    background-image: url('../合約暨點數異動管理_files/u134_normal.png');
+}
+
+.u134_container {
+    position:absolute;
+    left:480px;
+    top:187px;
+    width:216px;
+    height:35px;
+}
+
+#u134_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:41px;
+}
+
+.u135 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136_normal {
+    background-image: url('../合約暨點數異動管理_files/u136_normal.png');
+}
+
+.u136_container {
+    position:absolute;
+    left:0px;
+    top:222px;
+    width:142px;
+    height:40px;
+}
+
+#u136_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:148px;
+    height:46px;
+}
+
+.u137 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:138px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138_normal {
+    background-image: url('../合約暨點數異動管理_files/u138_normal.png');
+}
+
+.u138_container {
+    position:absolute;
+    left:142px;
+    top:222px;
+    width:203px;
+    height:40px;
+}
+
+#u138_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:209px;
+    height:46px;
+}
+
+.u139 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:199px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140_normal {
+    background-image: url('../合約暨點數異動管理_files/u140_normal.png');
+}
+
+.u140_container {
+    position:absolute;
+    left:345px;
+    top:222px;
+    width:136px;
+    height:40px;
+}
+
+#u140_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:46px;
+}
+
+.u141 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142_normal {
+    background-image: url('../合約暨點數異動管理_files/u142_normal.png');
+}
+
+.u142_container {
+    position:absolute;
+    left:480px;
+    top:222px;
+    width:216px;
+    height:40px;
+}
+
+#u142_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:222px;
+    height:46px;
+}
+
+.u143 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:212px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u144 {
+    position:absolute;
+    left:389px;
+    top:843px;
+    width:705px;
+    height:427px;
+    overflow:hidden;
+}
+
+#pd0u144 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:705px;
+    height:427px;
+    
+}
+
+.u145 {
+    position:absolute;
+    left:304px;
+    top:396px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u146_normal {
+    background-image: url('../合約暨點數異動管理_files/u146_normal.png');
+}
+
+.u146_container {
+    position:absolute;
+    left:0px;
+    top:6px;
+    width:126px;
+    height:47px;
+}
+
+#u146_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:53px;
+}
+
+.u147 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:122px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148_normal {
+    background-image: url('../合約暨點數異動管理_files/u148_normal.png');
+}
+
+.u148_container {
+    position:absolute;
+    left:229px;
+    top:12px;
+    width:158px;
+    height:41px;
+}
+
+#u148_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:164px;
+    height:47px;
+}
+
+.u149 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:154px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150_normal {
+    background-image: url('../合約暨點數異動管理_files/u150_normal.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:126px;
+    top:12px;
+    width:103px;
+    height:41px;
+}
+
+#u150_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:109px;
+    height:47px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:99px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:387px;
+    top:12px;
+    width:85px;
+    height:41px;
+}
+
+#u152_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u154_container {
+    position:absolute;
+    left:472px;
+    top:12px;
+    width:85px;
+    height:41px;
+}
+
+#u154_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u155 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u156 {
+    position:absolute;
+    left:0px;
+    top:49px;
+    width:709px;
+    height:342px
+}
+
+.u157_normal {
+    background-image: url('../合約暨點數異動管理_files/u157_normal.png');
+}
+
+.u157_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:129px;
+    height:45px;
+}
+
+#u157_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:51px;
+}
+
+.u158 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159_normal {
+    background-image: url('../合約暨點數異動管理_files/u159_normal.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:129px;
+    top:0px;
+    width:575px;
+    height:45px;
+}
+
+#u159_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:51px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161_normal {
+    background-image: url('../合約暨點數異動管理_files/u161_normal.png');
+}
+
+.u161_container {
+    position:absolute;
+    left:0px;
+    top:45px;
+    width:129px;
+    height:134px;
+}
+
+#u161_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:140px;
+}
+
+.u162 {
+    position:absolute;
+    left:2px;
+    top:59px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163_normal {
+    background-image: url('../合約暨點數異動管理_files/u163_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:129px;
+    top:45px;
+    width:575px;
+    height:134px;
+}
+
+#u163_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:140px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../合約暨點數異動管理_files/u165_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:0px;
+    top:179px;
+    width:129px;
+    height:58px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:64px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:21px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_normal {
+    background-image: url('../合約暨點數異動管理_files/u167_normal.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:129px;
+    top:179px;
+    width:575px;
+    height:58px;
+}
+
+#u167_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:64px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169_normal {
+    background-image: url('../合約暨點數異動管理_files/u169_normal.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:0px;
+    top:237px;
+    width:129px;
+    height:37px;
+}
+
+#u169_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:43px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171_normal {
+    background-image: url('../合約暨點數異動管理_files/u171_normal.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:129px;
+    top:237px;
+    width:575px;
+    height:37px;
+}
+
+#u171_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:43px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173_normal {
+    background-image: url('../合約暨點數異動管理_files/u173_normal.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:0px;
+    top:274px;
+    width:129px;
+    height:63px;
+}
+
+#u173_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:69px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175_normal {
+    background-image: url('../合約暨點數異動管理_files/u175_normal.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:129px;
+    top:274px;
+    width:575px;
+    height:63px;
+}
+
+#u175_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:69px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u178 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u180 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181 {
+    position:absolute;
+    left:156px;
+    top:103px;
+    width:442px;
+    height:119px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u182_normal {
+    background-image: url('../合約暨點數異動管理_files/u182_normal.png');
+}
+
+.u182_container {
+    position:absolute;
+    left:156px;
+    top:240px;
+    width:270px;
+    height:35px;
+}
+
+#u182_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:276px;
+    height:41px;
+}
+
+.u183 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:266px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u184 {
+    position:absolute;
+    left:448px;
+    top:244px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u185 {
+    position:absolute;
+    left:389px;
+    top:842px;
+    width:705px;
+    height:427px;
+    overflow:hidden;
+}
+
+#pd0u185 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:705px;
+    height:427px;
+    
+}
+
+.u186 {
+    position:absolute;
+    left:302px;
+    top:397px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u187_normal {
+    background-image: url('../合約暨點數異動管理_files/u187_normal.png');
+}
+
+.u187_container {
+    position:absolute;
+    left:120px;
+    top:4px;
+    width:109px;
+    height:47px;
+}
+
+#u187_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:53px;
+}
+
+.u188 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:105px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u189_normal {
+    background-image: url('../合約暨點數異動管理_files/u148_normal.png');
+}
+
+.u189_container {
+    position:absolute;
+    left:229px;
+    top:10px;
+    width:158px;
+    height:41px;
+}
+
+#u189_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:164px;
+    height:47px;
+}
+
+.u190 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:154px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u191_normal {
+    background-image: url('../合約暨點數異動管理_files/u191_normal.png');
+}
+
+.u191_container {
+    position:absolute;
+    left:0px;
+    top:10px;
+    width:120px;
+    height:41px;
+}
+
+#u191_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:47px;
+}
+
+.u192 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u193_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u193_container {
+    position:absolute;
+    left:387px;
+    top:10px;
+    width:85px;
+    height:41px;
+}
+
+#u193_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u194 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u195_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u195_container {
+    position:absolute;
+    left:472px;
+    top:10px;
+    width:85px;
+    height:41px;
+}
+
+#u195_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u196 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u197 {
+    position:absolute;
+    left:0px;
+    top:51px;
+    width:709px;
+    height:340px
+}
+
+.u198_normal {
+    background-image: url('../合約暨點數異動管理_files/u157_normal.png');
+}
+
+.u198_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:129px;
+    height:45px;
+}
+
+#u198_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:51px;
+}
+
+.u199 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u200_normal {
+    background-image: url('../合約暨點數異動管理_files/u159_normal.png');
+}
+
+.u200_container {
+    position:absolute;
+    left:129px;
+    top:0px;
+    width:575px;
+    height:45px;
+}
+
+#u200_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:51px;
+}
+
+.u201 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u202_normal {
+    background-image: url('../合約暨點數異動管理_files/u202_normal.png');
+}
+
+.u202_container {
+    position:absolute;
+    left:0px;
+    top:45px;
+    width:129px;
+    height:31px;
+}
+
+#u202_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:37px;
+}
+
+.u203 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u204_normal {
+    background-image: url('../合約暨點數異動管理_files/u204_normal.png');
+}
+
+.u204_container {
+    position:absolute;
+    left:129px;
+    top:45px;
+    width:575px;
+    height:31px;
+}
+
+#u204_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:37px;
+}
+
+.u205 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206_normal {
+    background-image: url('../合約暨點數異動管理_files/u206_normal.png');
+}
+
+.u206_container {
+    position:absolute;
+    left:0px;
+    top:76px;
+    width:129px;
+    height:33px;
+}
+
+#u206_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:39px;
+}
+
+.u207 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u208_normal {
+    background-image: url('../合約暨點數異動管理_files/u208_normal.png');
+}
+
+.u208_container {
+    position:absolute;
+    left:129px;
+    top:76px;
+    width:575px;
+    height:33px;
+}
+
+#u208_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:39px;
+}
+
+.u209 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u210_normal {
+    background-image: url('../合約暨點數異動管理_files/u210_normal.png');
+}
+
+.u210_container {
+    position:absolute;
+    left:0px;
+    top:109px;
+    width:129px;
+    height:99px;
+}
+
+#u210_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:105px;
+}
+
+.u211 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u212_normal {
+    background-image: url('../合約暨點數異動管理_files/u212_normal.png');
+}
+
+.u212_container {
+    position:absolute;
+    left:129px;
+    top:109px;
+    width:575px;
+    height:99px;
+}
+
+#u212_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:105px;
+}
+
+.u213 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u214_normal {
+    background-image: url('../合約暨點數異動管理_files/u214_normal.png');
+}
+
+.u214_container {
+    position:absolute;
+    left:0px;
+    top:208px;
+    width:129px;
+    height:47px;
+}
+
+#u214_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:53px;
+}
+
+.u215 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u216_normal {
+    background-image: url('../合約暨點數異動管理_files/u216_normal.png');
+}
+
+.u216_container {
+    position:absolute;
+    left:129px;
+    top:208px;
+    width:575px;
+    height:47px;
+}
+
+#u216_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:53px;
+}
+
+.u217 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u218_normal {
+    background-image: url('../合約暨點數異動管理_files/u169_normal.png');
+}
+
+.u218_container {
+    position:absolute;
+    left:0px;
+    top:255px;
+    width:129px;
+    height:37px;
+}
+
+#u218_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:43px;
+}
+
+.u219 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u220_normal {
+    background-image: url('../合約暨點數異動管理_files/u171_normal.png');
+}
+
+.u220_container {
+    position:absolute;
+    left:129px;
+    top:255px;
+    width:575px;
+    height:37px;
+}
+
+#u220_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:43px;
+}
+
+.u221 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u222_normal {
+    background-image: url('../合約暨點數異動管理_files/u222_normal.png');
+}
+
+.u222_container {
+    position:absolute;
+    left:0px;
+    top:292px;
+    width:129px;
+    height:43px;
+}
+
+#u222_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:49px;
+}
+
+.u223 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u224_normal {
+    background-image: url('../合約暨點數異動管理_files/u224_normal.png');
+}
+
+.u224_container {
+    position:absolute;
+    left:129px;
+    top:292px;
+    width:575px;
+    height:43px;
+}
+
+#u224_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:49px;
+}
+
+.u225 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u226_normal {
+    background-image: url('../合約暨點數異動管理_files/u182_normal.png');
+}
+
+.u226_container {
+    position:absolute;
+    left:155px;
+    top:265px;
+    width:270px;
+    height:35px;
+}
+
+#u226_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:276px;
+    height:41px;
+}
+
+.u227 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:266px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u228 {
+    position:absolute;
+    left:449px;
+    top:269px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u229_normal {
+    background-image: url('../合約暨點數異動管理_files/u229_normal.png');
+}
+
+.u229_container {
+    position:absolute;
+    left:148px;
+    top:57px;
+    width:180px;
+    height:26px;
+}
+
+#u229_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:32px;
+}
+
+.u230 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u231 {
+    position:absolute;
+    left:346px;
+    top:62px;
+    width:23px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u232_normal {
+    background-image: url('../合約暨點數異動管理_files/u229_normal.png');
+}
+
+.u232_container {
+    position:absolute;
+    left:369px;
+    top:57px;
+    width:180px;
+    height:26px;
+}
+
+#u232_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:32px;
+}
+
+.u233 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u234 {
+    position:absolute;
+    left:156px;
+    top:165px;
+    width:455px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u235 {
+    position:absolute;
+    left:389px;
+    top:842px;
+    width:705px;
+    height:427px;
+    overflow:hidden;
+}
+
+#pd0u235 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:705px;
+    height:427px;
+    
+}
+
+.u236_normal {
+    background-image: url('../合約暨點數異動管理_files/u236_normal.png');
+}
+
+.u236_container {
+    position:absolute;
+    left:120px;
+    top:7px;
+    width:98px;
+    height:41px;
+}
+
+#u236_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:47px;
+}
+
+.u237 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:94px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u238_normal {
+    background-image: url('../合約暨點數異動管理_files/u191_normal.png');
+}
+
+.u238_container {
+    position:absolute;
+    left:0px;
+    top:7px;
+    width:120px;
+    height:41px;
+}
+
+#u238_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:47px;
+}
+
+.u239 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u240_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u240_container {
+    position:absolute;
+    left:377px;
+    top:7px;
+    width:85px;
+    height:41px;
+}
+
+#u240_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u241 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u242_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u242_container {
+    position:absolute;
+    left:462px;
+    top:7px;
+    width:85px;
+    height:41px;
+}
+
+#u242_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u243 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u244 {
+    position:absolute;
+    left:302px;
+    top:393px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u245_normal {
+    background-image: url('../合約暨點數異動管理_files/u245_normal.png');
+}
+
+.u245_container {
+    position:absolute;
+    left:218px;
+    top:0px;
+    width:159px;
+    height:47px;
+}
+
+#u245_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:165px;
+    height:53px;
+}
+
+.u246 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:155px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u247 {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:709px;
+    height:338px
+}
+
+.u248_normal {
+    background-image: url('../合約暨點數異動管理_files/u157_normal.png');
+}
+
+.u248_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:129px;
+    height:45px;
+}
+
+#u248_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:51px;
+}
+
+.u249 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u250_normal {
+    background-image: url('../合約暨點數異動管理_files/u159_normal.png');
+}
+
+.u250_container {
+    position:absolute;
+    left:129px;
+    top:0px;
+    width:575px;
+    height:45px;
+}
+
+#u250_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:51px;
+}
+
+.u251 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u252_normal {
+    background-image: url('../合約暨點數異動管理_files/u252_normal.png');
+}
+
+.u252_container {
+    position:absolute;
+    left:0px;
+    top:45px;
+    width:129px;
+    height:131px;
+}
+
+#u252_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:137px;
+}
+
+.u253 {
+    position:absolute;
+    left:2px;
+    top:58px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u254_normal {
+    background-image: url('../合約暨點數異動管理_files/u254_normal.png');
+}
+
+.u254_container {
+    position:absolute;
+    left:129px;
+    top:45px;
+    width:575px;
+    height:131px;
+}
+
+#u254_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:137px;
+}
+
+.u255 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u256_normal {
+    background-image: url('../合約暨點數異動管理_files/u256_normal.png');
+}
+
+.u256_container {
+    position:absolute;
+    left:0px;
+    top:176px;
+    width:129px;
+    height:77px;
+}
+
+#u256_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:83px;
+}
+
+.u257 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u258_normal {
+    background-image: url('../合約暨點數異動管理_files/u258_normal.png');
+}
+
+.u258_container {
+    position:absolute;
+    left:129px;
+    top:176px;
+    width:575px;
+    height:77px;
+}
+
+#u258_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:83px;
+}
+
+.u259 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u260_normal {
+    background-image: url('../合約暨點數異動管理_files/u169_normal.png');
+}
+
+.u260_container {
+    position:absolute;
+    left:0px;
+    top:253px;
+    width:129px;
+    height:37px;
+}
+
+#u260_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:43px;
+}
+
+.u261 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u262_normal {
+    background-image: url('../合約暨點數異動管理_files/u171_normal.png');
+}
+
+.u262_container {
+    position:absolute;
+    left:129px;
+    top:253px;
+    width:575px;
+    height:37px;
+}
+
+#u262_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:43px;
+}
+
+.u263 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u264_normal {
+    background-image: url('../合約暨點數異動管理_files/u222_normal.png');
+}
+
+.u264_container {
+    position:absolute;
+    left:0px;
+    top:290px;
+    width:129px;
+    height:43px;
+}
+
+#u264_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:49px;
+}
+
+.u265 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u266_normal {
+    background-image: url('../合約暨點數異動管理_files/u224_normal.png');
+}
+
+.u266_container {
+    position:absolute;
+    left:129px;
+    top:290px;
+    width:575px;
+    height:43px;
+}
+
+#u266_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:49px;
+}
+
+.u267 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u268_normal {
+    background-image: url('../合約暨點數異動管理_files/u182_normal.png');
+}
+
+.u268_container {
+    position:absolute;
+    left:153px;
+    top:244px;
+    width:270px;
+    height:35px;
+}
+
+#u268_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:276px;
+    height:41px;
+}
+
+.u269 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:266px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u270 {
+    position:absolute;
+    left:449px;
+    top:250px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u271_normal {
+    background-image: url('../合約暨點數異動管理_files/u229_normal.png');
+}
+
+.u271_container {
+    position:absolute;
+    left:148px;
+    top:52px;
+    width:180px;
+    height:26px;
+}
+
+#u271_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:32px;
+}
+
+.u272 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u273 {
+    position:absolute;
+    left:346px;
+    top:57px;
+    width:23px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u274_normal {
+    background-image: url('../合約暨點數異動管理_files/u229_normal.png');
+}
+
+.u274_container {
+    position:absolute;
+    left:369px;
+    top:52px;
+    width:180px;
+    height:26px;
+}
+
+#u274_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:32px;
+}
+
+.u275 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u276 {
+    position:absolute;
+    left:148px;
+    top:100px;
+    width:455px;
+    height:109px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u277 {
+    position:absolute;
+    left:390px;
+    top:846px;
+    width:705px;
+    height:427px;
+    overflow:hidden;
+}
+
+#pd0u277 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:705px;
+    height:427px;
+    
+}
+
+#u278 {
+    position:absolute;
+    left:0px;
+    top:48px;
+    width:709px;
+    height:339px
+}
+
+.u279_normal {
+    background-image: url('../合約暨點數異動管理_files/u157_normal.png');
+}
+
+.u279_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:129px;
+    height:45px;
+}
+
+#u279_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:51px;
+}
+
+.u280 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u281_normal {
+    background-image: url('../合約暨點數異動管理_files/u159_normal.png');
+}
+
+.u281_container {
+    position:absolute;
+    left:129px;
+    top:0px;
+    width:575px;
+    height:45px;
+}
+
+#u281_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:51px;
+}
+
+.u282 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u283_normal {
+    background-image: url('../合約暨點數異動管理_files/u252_normal.png');
+}
+
+.u283_container {
+    position:absolute;
+    left:0px;
+    top:45px;
+    width:129px;
+    height:131px;
+}
+
+#u283_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:137px;
+}
+
+.u284 {
+    position:absolute;
+    left:2px;
+    top:58px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u285_normal {
+    background-image: url('../合約暨點數異動管理_files/u254_normal.png');
+}
+
+.u285_container {
+    position:absolute;
+    left:129px;
+    top:45px;
+    width:575px;
+    height:131px;
+}
+
+#u285_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:137px;
+}
+
+.u286 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u287_normal {
+    background-image: url('../合約暨點數異動管理_files/u256_normal.png');
+}
+
+.u287_container {
+    position:absolute;
+    left:0px;
+    top:176px;
+    width:129px;
+    height:77px;
+}
+
+#u287_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:83px;
+}
+
+.u288 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u289_normal {
+    background-image: url('../合約暨點數異動管理_files/u258_normal.png');
+}
+
+.u289_container {
+    position:absolute;
+    left:129px;
+    top:176px;
+    width:575px;
+    height:77px;
+}
+
+#u289_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:83px;
+}
+
+.u290 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u291_normal {
+    background-image: url('../合約暨點數異動管理_files/u169_normal.png');
+}
+
+.u291_container {
+    position:absolute;
+    left:0px;
+    top:253px;
+    width:129px;
+    height:37px;
+}
+
+#u291_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:43px;
+}
+
+.u292 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u293_normal {
+    background-image: url('../合約暨點數異動管理_files/u171_normal.png');
+}
+
+.u293_container {
+    position:absolute;
+    left:129px;
+    top:253px;
+    width:575px;
+    height:37px;
+}
+
+#u293_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:43px;
+}
+
+.u294 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u295_normal {
+    background-image: url('../合約暨點數異動管理_files/u295_normal.png');
+}
+
+.u295_container {
+    position:absolute;
+    left:0px;
+    top:290px;
+    width:129px;
+    height:44px;
+}
+
+#u295_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:50px;
+}
+
+.u296 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u297_normal {
+    background-image: url('../合約暨點數異動管理_files/u297_normal.png');
+}
+
+.u297_container {
+    position:absolute;
+    left:129px;
+    top:290px;
+    width:575px;
+    height:44px;
+}
+
+#u297_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:50px;
+}
+
+.u298 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u299_normal {
+    background-image: url('../合約暨點數異動管理_files/u182_normal.png');
+}
+
+.u299_container {
+    position:absolute;
+    left:153px;
+    top:246px;
+    width:270px;
+    height:35px;
+}
+
+#u299_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:276px;
+    height:41px;
+}
+
+.u300 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:266px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u301 {
+    position:absolute;
+    left:449px;
+    top:252px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u302_normal {
+    background-image: url('../合約暨點數異動管理_files/u229_normal.png');
+}
+
+.u302_container {
+    position:absolute;
+    left:148px;
+    top:54px;
+    width:180px;
+    height:26px;
+}
+
+#u302_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:32px;
+}
+
+.u303 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u304 {
+    position:absolute;
+    left:340px;
+    top:64px;
+    width:23px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u305 {
+    position:absolute;
+    left:148px;
+    top:102px;
+    width:455px;
+    height:109px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u306_normal {
+    background-image: url('../合約暨點數異動管理_files/u191_normal.png');
+}
+
+.u306_container {
+    position:absolute;
+    left:0px;
+    top:7px;
+    width:120px;
+    height:41px;
+}
+
+#u306_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:47px;
+}
+
+.u307 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u308_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u308_container {
+    position:absolute;
+    left:120px;
+    top:7px;
+    width:85px;
+    height:41px;
+}
+
+#u308_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u309 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u310_normal {
+    background-image: url('../合約暨點數異動管理_files/u310_normal.png');
+}
+
+.u310_container {
+    position:absolute;
+    left:205px;
+    top:7px;
+    width:156px;
+    height:41px;
+}
+
+#u310_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:47px;
+}
+
+.u311 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:152px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u312_normal {
+    background-image: url('../合約暨點數異動管理_files/u312_normal.png');
+}
+
+.u312_container {
+    position:absolute;
+    left:361px;
+    top:1px;
+    width:95px;
+    height:47px;
+}
+
+#u312_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:101px;
+    height:53px;
+}
+
+.u313 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u314_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u314_container {
+    position:absolute;
+    left:456px;
+    top:7px;
+    width:85px;
+    height:41px;
+}
+
+#u314_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u315 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u316 {
+    position:absolute;
+    left:302px;
+    top:392px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u317 {
+    position:absolute;
+    left:389px;
+    top:842px;
+    width:705px;
+    height:427px;
+    overflow:hidden;
+}
+
+#pd0u317 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:705px;
+    height:427px;
+    
+}
+
+.u318 {
+    position:absolute;
+    left:315px;
+    top:394px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u319_normal {
+    background-image: url('../合約暨點數異動管理_files/u312_normal.png');
+}
+
+.u319_container {
+    position:absolute;
+    left:444px;
+    top:0px;
+    width:95px;
+    height:47px;
+}
+
+#u319_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:101px;
+    height:53px;
+}
+
+.u320 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u321_normal {
+    background-image: url('../合約暨點數異動管理_files/u191_normal.png');
+}
+
+.u321_container {
+    position:absolute;
+    left:0px;
+    top:7px;
+    width:120px;
+    height:41px;
+}
+
+#u321_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:47px;
+}
+
+.u322 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u323_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u323_container {
+    position:absolute;
+    left:359px;
+    top:7px;
+    width:85px;
+    height:41px;
+}
+
+#u323_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u324 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u325_normal {
+    background-image: url('../合約暨點數異動管理_files/u152_normal.png');
+}
+
+.u325_container {
+    position:absolute;
+    left:120px;
+    top:7px;
+    width:85px;
+    height:41px;
+}
+
+#u325_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:47px;
+}
+
+.u326 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:81px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u327_normal {
+    background-image: url('../合約暨點數異動管理_files/u310_normal.png');
+}
+
+.u327_container {
+    position:absolute;
+    left:205px;
+    top:7px;
+    width:156px;
+    height:41px;
+}
+
+#u327_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:47px;
+}
+
+.u328 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:152px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u329 {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:709px;
+    height:343px
+}
+
+.u330_normal {
+    background-image: url('../合約暨點數異動管理_files/u157_normal.png');
+}
+
+.u330_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:129px;
+    height:45px;
+}
+
+#u330_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:51px;
+}
+
+.u331 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u332_normal {
+    background-image: url('../合約暨點數異動管理_files/u159_normal.png');
+}
+
+.u332_container {
+    position:absolute;
+    left:129px;
+    top:0px;
+    width:575px;
+    height:45px;
+}
+
+#u332_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:51px;
+}
+
+.u333 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u334_normal {
+    background-image: url('../合約暨點數異動管理_files/u252_normal.png');
+}
+
+.u334_container {
+    position:absolute;
+    left:0px;
+    top:45px;
+    width:129px;
+    height:131px;
+}
+
+#u334_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:137px;
+}
+
+.u335 {
+    position:absolute;
+    left:2px;
+    top:58px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u336_normal {
+    background-image: url('../合約暨點數異動管理_files/u254_normal.png');
+}
+
+.u336_container {
+    position:absolute;
+    left:129px;
+    top:45px;
+    width:575px;
+    height:131px;
+}
+
+#u336_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:137px;
+}
+
+.u337 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u338_normal {
+    background-image: url('../合約暨點數異動管理_files/u256_normal.png');
+}
+
+.u338_container {
+    position:absolute;
+    left:0px;
+    top:176px;
+    width:129px;
+    height:77px;
+}
+
+#u338_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:83px;
+}
+
+.u339 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u340_normal {
+    background-image: url('../合約暨點數異動管理_files/u258_normal.png');
+}
+
+.u340_container {
+    position:absolute;
+    left:129px;
+    top:176px;
+    width:575px;
+    height:77px;
+}
+
+#u340_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:83px;
+}
+
+.u341 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u342_normal {
+    background-image: url('../合約暨點數異動管理_files/u169_normal.png');
+}
+
+.u342_container {
+    position:absolute;
+    left:0px;
+    top:253px;
+    width:129px;
+    height:37px;
+}
+
+#u342_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:43px;
+}
+
+.u343 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u344_normal {
+    background-image: url('../合約暨點數異動管理_files/u171_normal.png');
+}
+
+.u344_container {
+    position:absolute;
+    left:129px;
+    top:253px;
+    width:575px;
+    height:37px;
+}
+
+#u344_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:43px;
+}
+
+.u345 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u346_normal {
+    background-image: url('../合約暨點數異動管理_files/u346_normal.png');
+}
+
+.u346_container {
+    position:absolute;
+    left:0px;
+    top:290px;
+    width:129px;
+    height:48px;
+}
+
+#u346_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:135px;
+    height:54px;
+}
+
+.u347 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u348_normal {
+    background-image: url('../合約暨點數異動管理_files/u348_normal.png');
+}
+
+.u348_container {
+    position:absolute;
+    left:129px;
+    top:290px;
+    width:575px;
+    height:48px;
+}
+
+#u348_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:581px;
+    height:54px;
+}
+
+.u349 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:571px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u350_normal {
+    background-image: url('../合約暨點數異動管理_files/u182_normal.png');
+}
+
+.u350_container {
+    position:absolute;
+    left:152px;
+    top:245px;
+    width:270px;
+    height:35px;
+}
+
+#u350_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:276px;
+    height:41px;
+}
+
+.u351 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:266px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u352 {
+    position:absolute;
+    left:448px;
+    top:251px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u353_normal {
+    background-image: url('../合約暨點數異動管理_files/u353_normal.png');
+}
+
+.u353_container {
+    position:absolute;
+    left:147px;
+    top:53px;
+    width:157px;
+    height:26px;
+}
+
+#u353_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:163px;
+    height:32px;
+}
+
+.u354 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:153px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u355 {
+    position:absolute;
+    left:322px;
+    top:58px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u356 {
+    position:absolute;
+    left:147px;
+    top:101px;
+    width:455px;
+    height:109px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u357_normal {
+    background-image: url('../合約暨點數異動管理_files/u353_normal.png');
+}
+
+.u357_container {
+    position:absolute;
+    left:369px;
+    top:53px;
+    width:157px;
+    height:26px;
+}
+
+#u357_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:163px;
+    height:32px;
+}
+
+.u358 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:153px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u359 {
+    position:absolute;
+    left:544px;
+    top:58px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u360 {
+    position:absolute;
+    left:872px;
+    top:254px;
+    width:77px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u361_normal {
+    background-image: url('../合約暨點數異動管理_files/u83_normal.png');
+}
+
+.u361_container {
+    position:absolute;
+    left:872px;
+    top:277px;
+    width:180px;
+    height:23px;
+}
+
+#u361_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:29px;
+}
+
+.u362 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u363 {
+    position:absolute;
+    left:647px;
+    top:164px;
+    width:69px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+

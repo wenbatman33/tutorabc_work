@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-family: 微软雅黑, 黑体, Tahoma, Geneva, sans-serif;}
+.clear{clear:both;}
+.clearfix:after { content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix { display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix { height: 1%;}
+
+/*Top Menu*/
+ul.nav{ background:url(../images/nav/bg_lv1.jpg) repeat-x top left; height:41px; line-height:41px;}
+ul.nav li.lv1{ color:#ffffff; height:31px; line-height:31px; float:left; padding:0 10px 10px; font-size:13px;}
+ul.nav li.current{ background:url(../images/nav/bg_lv1c.jpg) no-repeat top left;}
+ul.nav2{ background:url(../images/nav/bg_lv2.jpg) repeat-x top left; height:36px; line-height:36px;}
+ul.nav2 li.lv2{ color:#ffffff; height:26px; line-height:26px; float:left; padding:0 10px 10px; font-size:13px;}
+ul.nav2 li.current{ background:url(../images/nav/bg_lv2c.jpg) no-repeat top left;}
+ul.nav3{ background:url(../images/nav/bg_lv3.jpg) repeat-x top left; height:27px; line-height:27px;}
+ul.nav3 li.lv3{ color:#ffffff; height:27px; line-height:27px; float:left; padding:0 10px; font-size:13px;}
+ul.nav3 li.current{ color:#ff9900;}
+
+
+
+/*Left sideMenu*/
+.sideMenu{ width:160px; margin:0 auto; border:1px solid #cccccc; font-size:13px; float:left;}
+.sideMenu ul li{ list-style:none; line-height:1.8;}
+.sideMenu ul.main{ padding:0 3px;}
+.sideMenu ul li img{ vertical-align:middle;}
+a.lv1list{color:#333333; font-size:15px;}
+
+.sideMenu ul.main li.lv1 ul.second{ padding-left:8px; background:url(../images/sidebar/bg1.jpg) top left repeat-y;}
+.sideMenu ul.main li.lv2close{ padding-left:15px; background:url(../images/sidebar/btn_close.jpg) 0 7px no-repeat;}
+.sideMenu ul.main li.lv2open{ padding-left:15px; background:url(../images/sidebar/btn_open.jpg) 0 7px no-repeat;}
+.sideMenu ul.main li.lv3{ padding-left:10px; background:url(../images/sidebar/ico_list.jpg) 0 8px no-repeat;}
+.sideMenu ul.main li.lv3 a.current{color:#ff0000;}
+
+.TEST{ width:auto; min-width:800px; font-family: 微软雅黑, 黑体, Tahoma, Geneva, sans-serif; padding:0 1%; margin-left:160px;}
+.TEST2{ width:auto; min-width:740px; font-family: 微软雅黑, 黑体, Tahoma, Geneva, sans-serif; padding:0 1%; margin-left:160px;}
+.textalignC{ text-align:center;}
+.textalignL{ text-align:left;}
+.textalignR{ text-align:right;}
+a{ color:#0075a9; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.colorRed{ color:#ff0000;}
+.colorOrange{ color:#ffcc00;}
+.colorGreen{ color:#009900;}
+.colorBlue{ color:#003399;}
+.fsize13{ font-size:13px;}
+.fsize15{ font-size:15px;}
+.zebra{ background-color:#f2f2f2;}
+img{ vertical-align:middle;}
+input[type|="text"]{ border:1px solid #ccc; padding:2px; height:16px; line-height:16px; vertical-align:middle;}
+input[type|="radio"]{}
+select{ border:1px solid #ccc; vertical-align:middle;}
+button.orange{ vertical-align:middle; margin-left:5px; font-size:13px; background-color:#f09506; padding:2px 10px; color:#ffffff; border:none;}
+
+/*Pagination*/
+.pagination{ text-align:center; margin:15px auto; width:480px; color:#666666;}
+.pagination div{ padding:5px; background-color:#ffffff; float:left; margin-right:4px; font-size:13px;}
+.pagination div.pbox{ width:20px; height:20px; line-height:20px; border:1px solid #9d9d9d;}
+.pagination div a{ color:#666666;}
+.pagination div a:hover{ text-decoration:none; color:#000000;}
+.pagination div.current{ background-color:#ffa800;}
+.pagination div.current a{ color:#ffffff; font-weight:bold;}
+.pagination div input{ vertical-align:middle;}
+
+/*Table*/
+h4.title{ font-size:16px; font-weight:bold; margin:15px 0;}
+caption.title{ font-size:16px; font-weight:bold; margin:15px 0; display:none;}
+table.Vtb01{ border-collapse:collapse; line-height:1.8;}
+table.Vtb01 th{ border:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:12px; text-align:center; padding:10px 2px;}
+table.Vtb01 td{ border:1px solid #d3d3d3; font-size:12px; padding:5px 2px; text-align:center;}
+
+table.Vtb01a{ border-collapse:collapse; line-height:1.8;}
+table.Vtb01a th{ border:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:13px; text-align:center; padding:10px 2px;}
+table.Vtb01a th.sub{ background-color:#999999; text-align:left; padding:10px;}
+table.Vtb01a td{ border:1px solid #d3d3d3; font-size:13px; padding:5px 2px; text-align:center;}
+
+table.Vtb02{ border-collapse:collapse; line-height:1.8;}
+table.Vtb02 th{ border:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:12px; text-align:center; padding:10px 2px;}
+table.Vtb02 th.sub{ background-color:#999999;}
+table.Vtb02 td{ border:1px solid #d3d3d3; font-size:12px; padding:10px 2px; text-align:center;}
+
+table.Htb01{ border-collapse:collapse; line-height:1.8;}
+table.Htb01 th{ border:1px solid #d3d3d3; background-color:#f2f2f2; font-size:13px; text-align:right; padding:10px;}
+table.Htb01 th.sub{ background-color:#666666; text-align:center; color:#ffffff;}
+table.Htb01 td{ border:1px solid #d3d3d3; font-size:13px; padding:10px; text-align:left;}
+table.Htb01 td.textalignC, table.Htb01 th.textalignC{ text-align:center;}
+
+/*H2*/
+table.typeH2 th{ width:20%;}
+table.typeH2 td{ width:30%;}
+/*V4*/
+table.typeV4 th, table.typeV4 td{ width:25%;}
+/*V5*/
+table.typeV5 th, table.typeV5 td{ width:20%;}
+/*V6*/
+table.typeV6 th, table.typeV6 td{ width:16.66%;}
+/*V7*/
+table.typeV7 th, table.typeV7 td{ width:14.28%;}
+/*V8*/
+table.typeV8 th, table.typeV8 td{ width:12.5%;}
+/*V9*/
+table.typeV9 th, table.typeV9 td{ width:11.11%;}
+/*V13*/
+table.typeV13 th, table.typeV13 td{ width:7.69%;}
+
+
+.followup{ text-align:left; padding:10px; margin-top:10px; border-top:1px solid #ccc;}
+.tdcontent{ text-align:left; padding:10px; }
+.tbRightTop{ text-align:right; margin:10px 0; font-size:13px;}
+.tbLeftTop{ text-align:left; margin:10px 0; font-size:13px;}
+ul.listing{ text-align:left; padding:0 10px;}
+ul.listing li{ list-style:none;}
+.listingTitle{ float:left; width:105px;}
+.listingCnt{ float:left; width:80px;}
+.listingTwidthA{ width:120px;}
+.listingCwidthA{ width:150px;}
+ul.listing2{ text-align:left; padding:0 10px;}
+ul.listing2 li{ list-style:none; width:33.33%; float:left; margin-bottom:5px;}
+ul.listing2 li input[type|="text"]{ width:80px;}
+ul.listing2 li .listingTitle{ float:left; width:89px;}
+ul.listing2 li .listingCnt{ float:left; width:89px;}
+
+
+
+
+
+
+

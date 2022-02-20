@@ -1,0 +1,869 @@
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+    position: relative;
+    left: -0px;
+    width: 1026px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../New_Master_1_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:24px;
+    width:1026px;
+    height:107px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1026px;
+    height:107px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:46px;
+    width:1022px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:358px;
+    top:800px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../New_Master_1_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:30px;
+    top:82px;
+    width:995px;
+    height:680px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1001px;
+    height:686px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:332px;
+    width:991px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../New_Master_1_files/u5_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:22px;
+    top:127px;
+    width:197px;
+    height:61px;
+}
+
+#u5_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:197px;
+    height:61px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:193px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../New_Master_1_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:794px;
+    top:142px;
+    width:203px;
+    height:38px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:203px;
+    height:38px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:199px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../New_Master_1_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:384px;
+    top:92px;
+    width:13px;
+    height:25px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:13px;
+    height:25px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../New_Master_1_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:384px;
+    top:92px;
+    width:70px;
+    height:25px;
+}
+
+#u11_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:70px;
+    height:25px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:313px;
+    top:96px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../New_Master_1_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:33px;
+    top:194px;
+    width:972px;
+    height:579px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:978px;
+    height:585px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:282px;
+    width:968px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../New_Master_1_files/u9_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:298px;
+    top:91px;
+    width:13px;
+    height:25px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:13px;
+    height:25px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../New_Master_1_files/u9_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:370px;
+    top:91px;
+    width:13px;
+    height:25px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:13px;
+    height:25px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../New_Master_1_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:132px;
+    top:88px;
+    width:346px;
+    height:25px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:352px;
+    height:31px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:342px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../New_Master_1_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:261px;
+    top:95px;
+    width:178px;
+    height:17px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:184px;
+    height:23px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:174px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../New_Master_1_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:30px;
+    top:0px;
+    width:987px;
+    height:24px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:993px;
+    height:30px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:983px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:904px;
+    top:4px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../New_Master_1_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:33px;
+    top:90px;
+    width:228px;
+    height:27px;
+}
+
+#u27_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:228px;
+    height:27px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:224px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../New_Master_1_files/u29_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:132px;
+    top:113px;
+    width:180px;
+    height:18px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:24px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../Step4進入教室_files/u32_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:149px;
+    top:120px;
+    width:326px;
+    height:61px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:332px;
+    height:67px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:322px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../Step4進入教室_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:28px;
+    top:132px;
+    width:342px;
+    height:51px;
+}
+
+#u34_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:342px;
+    height:51px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_normal {
+    background-image: url('../Step4進入教室_files/u36_normal.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:143px;
+    top:94px;
+    width:369px;
+    height:21px;
+}
+
+#u36_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:375px;
+    height:27px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:365px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../Step4進入教室_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:22px;
+    top:97px;
+    width:274px;
+    height:25px;
+}
+
+#u38_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:274px;
+    height:25px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:270px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../Step4進入教室_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:296px;
+    top:97px;
+    width:13px;
+    height:25px;
+}
+
+#u40_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:13px;
+    height:25px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../Step4進入教室_files/u40_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:368px;
+    top:97px;
+    width:13px;
+    height:25px;
+}
+
+#u42_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:13px;
+    height:25px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../Step4進入教室_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:382px;
+    top:97px;
+    width:70px;
+    height:25px;
+}
+
+#u44_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:70px;
+    height:25px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46 {
+    position:absolute;
+    left:311px;
+    top:101px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../Step4進入教室_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:22px;
+    top:191px;
+    width:989px;
+    height:756px;
+}
+
+#u47_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:989px;
+    height:756px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:370px;
+    width:985px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../Step4進入教室_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:130px;
+    top:101px;
+    width:51px;
+    height:17px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:57px;
+    height:23px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:47px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

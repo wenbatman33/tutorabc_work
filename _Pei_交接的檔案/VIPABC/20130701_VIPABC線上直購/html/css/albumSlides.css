@@ -1,0 +1,116 @@
+#album {
+		position: absolute;
+		margin: 0 auto;
+		width: 1920px;	/* 框架圖片的寬 */
+		height: 600px;	/* 框架圖片的高 */
+		top:0;
+		/* background:url(../images/banner/banner_yao_bg.png) no-repeat;*/
+}
+#album {
+		margin: 0 auto;
+		width: 1920px;	/* 框架圖片的寬 */
+		height: 560px;	/* 框架圖片的高 */
+		position: absolute;
+}
+
+.banner_prev {
+		position: absolute;
+		display: block;
+		width: 13px;	/* 左右鈕圖片的寬 */
+		height: 28px;	/* 左右鈕圖片的高 */
+		text-indent: -9999px;
+		background: url(../images/banner/banner_prev.png) no-repeat;
+		top:15px;
+		left:6px;
+		z-index:306;
+}
+.banner_next {
+     	position: absolute;
+		display: block;
+		width: 13px;	/* 左右鈕圖片的寬 */
+		height: 28px;	/* 左右鈕圖片的高 */
+		text-indent: -9999px;
+		background: url(../images/banner/banner_next.png) no-repeat;
+		top:15px;
+		right: 12px;
+		z-index:306;
+}
+
+.banner_prev:hover {
+opacity:0.5;-moz-opacity:0.5;-khtml-opacity: 0.5; filter:alpha(opacity=50);"
+}
+.banner_next:hover {
+opacity:0.5;-moz-opacity:0.5;-khtml-opacity: 0.5; filter:alpha(opacity=50);"
+}
+
+#album .slides {
+		overflow: hidden;
+		margin:0 auto;
+		position:relative;
+		width: 960px;	/* 框架中間區塊的寬 */
+		height: 560px;	/* 框架中間區塊的高 */
+}
+#album .slides ul {
+		position: absolute;
+		width: 9990px;
+		height: 100%;
+}
+#album .slides li {
+		position:absolute;
+		width: 960px;	/* 框架中間區塊的寬 */
+		height: 100%;
+		float: left;
+}
+#album  .Thumbnail{
+		position:relative;
+		margin:0 auto;
+		margin-top:-60px;
+		width: 960px;	/* 框架中間區塊的寬 */
+		height: 100px;  /* 框架中間區塊的高 */
+		z-index:10;
+}
+#album .Thumbnail ul {
+		position:relative;
+		margin:0 auto;
+		width: 320px;
+}
+#album .Thumbnail li {
+		width: 59px;;	
+		height: 36px;
+		margin-right:10px;
+		float: left;
+}
+
+.new_ad_switch{
+	position:relative; z-index:302;	width:960px; margin:424px auto; height:56px; background:url(../images/banner/new_ad_switch_bg.png) no-repeat;
+}
+
+.new_ad_btns{
+	position:relative;
+	display:block;
+	width:960px;
+	margin:0 auto;
+}
+.new_ad_btns li{
+	float:left; list-style:none; width:240px;  margin:0; 
+}
+.new_ad_btns div{
+	width:150px; margin:10px auto; 
+}
+.ad_line{
+background:url(../images/new_ad_li_line.png) right no-repeat;
+}
+.new_ad_btns li a{
+	text-decoration:none;
+	color:#999;
+}
+.new_ad_btns li a:hover{
+	text-decoration:none;
+	color:#ccc;
+}
+.timeline{
+	position:absolute;
+	width:100px;
+	height:1px;
+	background:#e60013;
+}

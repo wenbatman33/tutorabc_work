@@ -1,0 +1,223 @@
+/*----------------------------------單文頁----------------------------------*/
+#divArticle{
+	position:relative;
+	width:660px;
+	float:left;
+	margin-top:26px;
+}
+#tab1, #tab2, #tab3, #tab4, #tab5{
+	font-family:Arial, Helvetica, sans-serif;}	
+.epaper_h_e, .epaper_h_c, .article, .article_more{
+	padding:10px 27px 0px 0px;}
+.epaper_h_e{
+	font-size:24px;
+	color:#ff9000;}
+.epaper_h_c{
+	font-size:15px;
+	color:#666666;
+	line-height:25px;}
+.epaper_pic{
+	text-align:center;
+	margin-top:8px;
+	margin-bottom:17px;
+}
+.vedio_epaper{
+	margin-top:5px;
+	*margin-top:27px;
+	margin-left:5px;
+	width:290px;
+	height:80px;
+	float:right;}
+.article{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#555555;
+	line-height:25px;
+	*margin-top:-15px;
+	letter-spacing:1px;}
+.article span a{
+	color:#ff9000;
+	font-weight:bold;
+	text-decoration:underline;}
+.article span a:hover{
+	color:#ff9000;}
+.share{
+	float:right;
+	padding:5px 27px 20px 0;
+	}
+.article_more{
+	color:#333333;
+	clear:both;
+	height:100%;
+	overflow:hidden;
+	
+	margin-bottom:30px;
+	}
+.article_more p{
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:6px;
+	margin-top:20px;
+	}
+.article_more ul li{
+	float:left;
+	width:300px;}
+.article_list_point{
+	text-indent:-999px;
+	width:15px;
+	height:30px;
+	background:url(../images/epaper_img.png) 0 -124px no-repeat;
+	float:left;}
+.article_list{
+	font-size:13px;
+	float:left;
+	width:280px;
+	height:22px;
+	border-bottom:1px solid #cccccc;
+	padding-left:2px; 
+	margin-bottom:7px;}
+.article_list a{
+	float:left;
+	color:#333333;
+	text-decoration:none;}
+.article_list a:hover{
+	color:#ff9000;}
+.title_app a{
+	font-size:12px;
+	line-height:26px;
+	height:20px;
+	float:right;
+	vertical-align:bottom;
+	color:#e10000;}
+.title_app a:hover{
+	text-decoration:none;}
+
+		/*----------------------------------lightbox----------------------------------*/
+.vocabulary{
+	width:500px;
+	display:none;}	
+h2.vocabu, h2.vocabu span#aaa, h2.vocabu span#bbb, p.vocabu_p, p.vocabu_p2{
+	text-align:left;
+	font-family:Tahoma, Geneva, sans-serif;}
+h2.vocabu, p.vocabu_p, p.vocabu_p2{
+	margin:0 20px;}
+h2.vocabu{
+	font-size:32px;
+	color:#ff9000;
+	border-bottom:#eeeeee 1px solid;
+	line-height:40px;}
+h2.vocabu span#aaa{
+	margin-left:10px;
+	font-size:13px;}	
+h2.vocabu span#bbb{
+	margin-left:10px;
+	font-size:15px;}
+h2.vocabu span#aaa{
+	color:#888888;}
+h2.vocabu span#bbb, p.vocabu_p{
+	font-weight:bold;
+	color:#000000;}
+p.vocabu_p{
+	margin-top:20px;}
+p.vocabu_p, p.vocabu_p2{
+	font-size:15px;
+	line-height:21px;
+	padding:7px 0;}
+p.vocabu_p2{
+	color:#555555;
+	margin-bottom:40px;}
+p.vocabu_p3{
+	text-align:right;
+	font-size:13px;
+	color:#adadad;
+	padding-right:55px;}
+p.vocabu_p3 span.gary{
+	color:#adadad;}
+		/*----------------------------------lightbox END----------------------------------*/
+
+	/*----------------------------------單文頁 END----------------------------------*/
+	/*------------------------------------列表頁------------------------------------*/
+.epaper_list{
+	margin:0 auto;
+	width:660px;
+	height:90px;
+	padding:23px 0;
+	border-bottom:1px solid #d6d6d6;}
+.epaper_list img{
+	padding-right:21px;
+	float:left;}
+.list_top{
+	width:80%;
+	padding:3px 0 3px 0;
+	color:#ff9000;
+}
+.list_top a{
+	color:#ff9000;
+	line-height:18px;
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:none;
+}
+.list_top a:hover{
+	color:#ff9000;
+}
+
+.list_bottom{
+	width:80%;
+	font-size:12px;
+	padding-left: 120px;
+}
+.list_bottom a{
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#555555;
+	line-height:16px;
+	text-decoration:none;}
+.list_bottom a:hover{
+	color:#000000;}
+	
+.epaper_intro_wrap{
+	width:100%;
+	height:130px;
+	position:relative;
+	float:left;
+	background:url(../images/epaper_intro_wrap.png) no-repeat;
+	}
+.epaper_intro{
+	width:174px;
+	float:left;
+	margin:10px 8px 30px 12px;}
+.epaper_intro ul li.epaper_intro1{
+	font-size:15px;
+	color:#000000;
+	line-height:30px;
+	letter-spacing:0px;
+	font-weight:bold;
+	background:url(../images/epaper/icon_headset.png) no-repeat left top;}
+.epaper_intro ul li.epaper_intro2{
+	color:#6A6A6A;
+	line-height:20px;
+	letter-spacing:0px;}
+.epaper_input{
+	font-family:Arial, Helvetica, sans-serif;
+	border-left:solid 1px #F0F0F0;
+	font-size:13px;
+	width:420px;
+	float:left;
+	padding:8px;}
+.epaper_input ul li{
+	height:25px;
+	line-height:25px;
+	margin-bottom:5px;}
+.epaper_input ul li.epaper_must{
+	color:#9F9F9F;
+	font-size:10px;}
+.epaper_input ul li span.epaper_mustT
+{
+	width:58px;
+}
+.epaper_input ul li input{
+	width:200px;}
+.epaper_input ul li input.epaper_sumit{
+	float:right;
+	height:30px;
+	padding:0 0 3px 2px;
+	width:80px;}

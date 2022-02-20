@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document 130903 10:30pm*/
+body{ font-family: "微軟正黑體","微软雅黑", 黑体, Tahoma, Geneva, sans-serif; color: #333333; -webkit-font-smoothing: antialiased;}
+ /*html{ width:100%; height:100%; font-family: 微软雅黑, 黑体;font-family:Arial,"蘋果儷中黑","Apple LiGothic Medium","微軟雅黑","Microsoft YaHei","宋體","微軟正黑體","Microsoft JhengHei"; font-family: "SimSun","宋体";}*/
+
+/*----------Header----------*/
+#header{ background:url(../images/bg_top.gif) top left repeat-x; background-color:#ffffff;}
+.topbar{ height: 30px; background-color:#3a3a3a; text-align:right; line-height:30px; color:#ffffff;/* margin-bottom:10px;*/}
+.topbar a{ color:#ffffff;}
+h1.logo{ margin-bottom:10px;}
+h1.logo img{ vertical-align:middle;}
+h1.logo2{ margin-bottom:5px; background:url(../images/bg_toptitle.jpg) repeat-x top left; height:54px; line-height:54px; padding-top:13px;}
+h1.logo2 img{ vertical-align:middle; margin-right:10px; *padding-bottom:13px !important;}
+.users{ text-align:right; padding-right:10px; margin:-35px 0 10px 0;}
+.breadcrumbs{ background:url(../images/ico_breadcrumb.gif) left center no-repeat; margin-bottom:10px; color:#666666; padding-left:13px;}
+.breadcrumbs a{ color:#666666;}
+
+h2.title{ margin-bottom:10px; background:url(../images/bg_slogan.gif) right bottom no-repeat;}
+.bgCgray{ background-color:#e9e9e9; padding:20px 0; height:auto;}
+.bgCgray2{ background:url(../images/bg3.jpg) repeat top left; padding:20px 0;}
+.divide{ background:url(../images/bg_shadowTop.jpg) bottom center no-repeat; width:990px; height:20px;}
+.contentArea{ padding:10px 102px;}
+.contentArea2{ padding:10px 0px;}
+
+/*----------選擇主題----------*/
+h3.title2a{ background:url(../images/tit_2a.gif) 10px 0 no-repeat; margin-bottom:5px; width:113px; height:29px; padding-left:10px;}
+h3.title2a span{ display:none;}
+h3.title2a+p{ font-size:15px; color:#666666; margin-bottom:20px; padding-left:10px;}
+h3.titleB{ height:25px; line-height:25px; border-left:5px solid #F60; padding-left:10px; font-size:25px; margin-bottom:5px; color:#ff9900; margin-left:15px;}
+h3.titleB+p{ font-size:15px; color:#666666; margin-bottom:20px; padding-left:10px; margin-left:15px;}
+
+.topicArea{ width:750px; margin-left:35px;}
+.topicArea ul.topics{ margin-bottom:25px;}
+.topicArea ul.topics li{ float:left; width:340px; height:212px; margin:25px 25px 0 0; border:1px solid #cccccc; position:relative; overflow:hidden; cursor:pointer;}
+.topicArea ul.topics li a span{ display:none;}
+.topicArea ul.topics li a{ width:340px; height:212px; display:block;}
+.topicArea ul.topics li a.topic00{ background:url(../images/btn_tp00.jpg) top left no-repeat;}
+.topicArea ul.topics li a.topic01{ background:url(../images/btn_tp01.jpg) top left no-repeat;}
+.topicArea ul.topics li a.topic02{ background:url(../images/btn_tp02.jpg) top left no-repeat;}
+.topicArea ul.topics li a.topic03{ background:url(../images/btn_tp03.jpg) top left no-repeat;}
+.topicArea input.s1{width:100px; height:43px; border:none; background:url(../images/btn_p3_s1.jpg) top left no-repeat; color:#ffffff; font-size:16px;}
+.topicArea input.l1{width:209px; height:43px; border:none; background:url(../images/btn_p3_l1.jpg) top left no-repeat; color:#ffffff; font-size:16px;}
+
+.topicArea ul.topics li .subTopics{ width:340px; height:212px;  padding:70px 20px 0; position:absolute; top:147px; z-index:10;}
+.subTopics{ padding:86px 20px 0;}
+.subTopics dl{ width:300px; font-size:15px;}
+.subTopics dt{ height:30px; line-height:30px; border-bottom:1px dotted #cccccc;}
+.subTopics dt div{ width:84px; height:30px; line-height:30px; background:url(../images/bg_subtopiclist.png) no-repeat 0 50%; padding-left:15px; float:left;}
+.subBG1{background:url(../images/btn_sub01.jpg) no-repeat top left;}
+.subBG2{background:url(../images/btn_sub02.jpg) no-repeat top left;}
+.subBG3{background:url(../images/btn_sub03.jpg) no-repeat top left;}
+
+/*大會堂選課*/
+ul.sessionArea{ width:700px; margin:0 auto; *margin-left:102px !important;}
+ul.sessionArea li{ background-color:#ffffff; width:700px; height:91px; margin-bottom:15px; border:1px solid #cccccc; cursor:pointer;}
+.photoA{ float:left; width:121px; height:91px; overflow:hidden;}
+.photoA img{ width:121px; max-width:121px;}
+.infoA{ float:right; width:553px; padding:13px;}
+.infoAL{ float:left; width:412px; padding-right:10px; border-right:1px solid #cccccc;}
+.infoAL h5{ font-size:16px; margin-bottom:5px; font-weight:bold;}
+.infoAL p{ font-size:13px; width:409px; height:40px; overflow:hidden;}
+.infoAR{ float:right; width:120px; padding-left:10px;}
+.infoAR .levelA{ font-size:13px; margin-bottom:20px;}
+.infoAR a.btnA{ display:block; width:111px; height:29px; line-height:29px; margin:0 auto; font-size:15px; color:#ffffff; background:url(../images/btn_sessionC.jpg) no-repeat top left; text-align:center;}
+.infoAR a:hover.btnA{ text-decoration:none;}
+
+
+/*----------入口頁----------*/
+h2.index{ background:url(../images/bg_index.jpg) top left no-repeat; width:605px; height:88px; padding:547px 0 0 385px;}
+h2.index strong, h2.index em, h2.index a span{ display:none;}
+h2.index a{ background:url(../images/btn_index.jpg) top left no-repeat; width:241px; height:44px; display:block;}
+
+/*----------課程簡介頁----------*/
+h3.title3a{ background:url(../images/tit_3a.gif) top left no-repeat; margin-bottom:20px; width:137px; height:29px;}
+h3.title3a span{ display:none;}
+.classinfo{ width:740px; border:1px solid #c9c9c9; background:url(../images/bg_divide.gif) top left repeat-y; padding:22px;}
+.Lside{ float:left; width:292px;}
+.Lside .lessonPic img{ width:292px; max-width:292px;}
+.Rside{ float:right; width:424px;}
+.Rside ul.lessonInfo{ font-size:15px; margin-bottom:85px;}
+.Rside ul.lessonInfo li{ list-style:none; margin-bottom:30px;}
+.Rside ul.lessonInfo li h5.title{ float:left; width:84px; height:19px; line-height:1.8; font-weight:bold; color:#000000; }
+.Rside ul.lessonInfo li p.cnt{ float:left; width:340px; line-height:1.8; color:#666666;}
+.Rside .timeInfo{ text-align:right; font-size:15px; margin-bottom:5px; padding-right:10px;}
+.classinfo .Rside .btnArea{ text-align:right; width:430px;}
+.classinfo .Rside .btnArea input[type|="button"]{ cursor:pointer;}
+.classinfo .Rside .btnArea input.s1{ width:100px; height:43px; border:none; background:url(../images/btn_p3_s1.jpg) top left no-repeat; color:#ffffff; font-size:16px;}
+.classinfo .Rside .btnArea input.s2{ width:100px; height:43px; border:none; background:url(../images/btn_p3_s2.jpg) top left no-repeat; color:#ffffff; font-size:16px; cursor:default;}
+.classinfo .Rside .btnArea input.l1{ width:209px; height:43px; border:none; background:url(../images/btn_p3_l1.jpg) top left no-repeat; color:#ffffff; font-size:16px;}
+.classinfo .Rside .btnArea input.l2{ width:209px; height:43px; border:none; background:url(../images/btn_p3_l2.jpg) top left no-repeat; color:#ffffff; font-size:16px; cursor:default;}
+
+/*----------上課頁----------*/
+.timebar{ background:url(../images/bg_timebar.gif) top left repeat-x; height:48px; line-height:48px; color:#555555; padding:0 10px; font-size:15px; font-weight:bold; margin-bottom:10px; position:relative;}
+/*.btnArea{ position:absolute; right:10px; top:10px;}*/
+.timebar .time{ float:left; /*width:305px;*/ width:400px;}
+.timebar .btnArea{ /*float:right;*/ height:48px; line-height:48px; padding-left:10px; width:500px; width:490px\9; text-align:right; position:absolute; top:0; right:10px; z-index:10;}
+.timebar .btnArea input.btn1{ vertical-align:middle; background:url(../images/p4_btn_bg1.gif) top left no-repeat; width:65px; height:29px; line-height:29px; line-height:20px\9;  border:none; color:#ffffff; font-weight:normal;}
+/*.btnArea input[disabled|="disabled"].btn1{ vertical-align:middle; background:url(../images/p4_btn_bg1a.gif) top left no-repeat; width:65px; height:29px; line-height:29px; line-height:20px\9;  border:none; color:#dfdfdf; font-weight:normal; cursor:default;}*/
+.timebar .btnArea input.btn1a{ vertical-align:middle; background:url(../images/p4_btn_bg1a.gif) top left no-repeat; width:65px; height:29px; line-height:29px; line-height:20px\9;  border:none; color:#dfdfdf; font-weight:normal; cursor:default; outline:none;}
+.timebar .btnArea input.btn2{ vertical-align:middle; background:url(../images/p4_btn_bg2.gif) top left no-repeat; width:124px; height:29px; line-height:29px; line-height:20px\9; border:none; color:#ffffff; font-weight:normal;}
+.timebar .btnArea input.btn2a{ vertical-align:middle; background:url(../images/p4_btn_bg2a.gif) top left no-repeat; width:124px; height:29px; line-height:29px; line-height:20px\9; border:none; color:#dfdfdf; font-weight:normal; cursor:default; outline:none;}
+.UI{ width:990px; height:698px; margin-bottom:20px;}
+
+/*----------預約選課----------*/
+.reminding{ width:928px; padding:5px 15px; font-size:15px; text-align:center; border:1px solid #ffd092; background-color:#ffeed7; margin:0 auto 10px; color:#ff6600;}
+ul.tabArea{ background:url(../images/bg_tab3.png) repeat-x bottom left; height:38px;  margin:0 auto; width:960px; padding-top:20px;}
+ul.tabArea li{ background:url(../images/bg_tabN.png) no-repeat bottom left; width:249px; height:38px; line-height:38px; color:#555555; text-align:center; float:left; font-size:16px; cursor:pointer;}
+ul.tabArea li.current{ background:url(../images/bg_tabC.png) no-repeat bottom left; width:249px; height:38px; line-height:38px; color:#ff9900; text-align:center; font-weight:bold;}
+/*title*/
+.tabBorder{ border:1px solid #cccccc; background-color:#ffffff; padding:15px; width:928px; margin:0 auto 20px;}
+.titmorning{ background:url(../images/bg1_morning.jpg) no-repeat top left; width:847px; height:47px; line-height:47px; font-size:25px; font-weight:bold; padding:0 0 0 63px; margin:0;}
+.titafternoon{ background:url(../images/bg1_afternoon.jpg) no-repeat top left; width:847px; height:47px; line-height:47px; font-size:25px; font-weight:bold; padding:0 0 0 63px; margin:0;}
+.titevening{ background:url(../images/bg1_evening.jpg) no-repeat top left; width:847px; height:47px; line-height:47px; font-size:25px; font-weight:bold; padding:0 0 0 63px; margin:0;}
+.titnight{ background:url(../images/bg1_night.jpg) no-repeat top left; width:847px; height:47px; line-height:47px; font-size:25px; font-weight:bold; padding:0 0 0 63px; margin:0;}
+.titbooking{ background:url(../images/bg1_booking.jpg) no-repeat top left; width:860px; height:47px; line-height:47px; font-size:25px; font-weight:bold; padding:0 0 0 50px; margin:0 0 15px;}
+.Tstate img{ vertical-align:middle;}
+.Tstate, .Tstate a{ color:#333333;}
+.Tstate a{ text-decoration:none;}
+.Tstate span a{ font-size:13px; text-decoration:underline; color:#555555; margin-left:15px;}
+.Tstate span a:hover{ color:#111111;}
+.SessionTimes{ font-size:15px; font-weight:normal;}
+
+/*Morning Block*/
+ul.Tmorning{ background-color:#e5f4ff; padding:20px 0 12px 20px; width:882px; margin-bottom:20px;}
+ul.Tmorning li{ float:left; width:281px; height:101px; background:url(../images/bg_m_N1.jpg) no-repeat top left; margin:0 10px 2px 0; position:relative; cursor:pointer;}
+ul.Tmorning li.booking .Ttime{ color:#ffff00; font-size:36px; height:45px; line-height:45px; padding:6px 0 12px;}
+ul.Tmorning li .cancel{ position:absolute; top:-10px; right:-10px;}
+/*ul.Tmorning li .Ttime{ height:63px; font-size:32px; font-weight:bold; text-align:center; line-height:63px; color:#ffffff; position:relative;}*/
+ul.Tmorning li .Ttime{ height:45px; font-size:32px; font-weight:bold; text-align:center; line-height:45px; color:#ffffff; padding:7px 0 11px;}
+ul.Tmorning li .Ttime img{ vertical-align:middle;}
+ul.Tmorning li .Tstate{ height:30px; line-height:30px; font-size:16px; text-align:center;}
+/*afternoon Block*/
+ul.Tafternoon{ background-color:#e5f4ff; padding:20px 0 12px 20px; width:882px; margin-bottom:20px;}
+ul.Tafternoon li{ float:left; width:281px; height:101px; background:url(../images/bg_af_N1.jpg) no-repeat top left; margin:0 10px 2px 0; position:relative; cursor:pointer;}
+ul.Tafternoon li.booking .Ttime{color:#ffff00; font-size:36px; height:45px; line-height:45px; padding:6px 0 12px;}
+ul.Tafternoon li .cancel{ position:absolute; top:-10px; right:-10px;}
+/*ul.Tafternoon li .Ttime{ height:63px; font-size:32px; font-weight:bold; text-align:center; line-height:63px; color:#ffffff;}*/
+ul.Tafternoon li .Ttime{  height:45px; font-size:32px; font-weight:bold; text-align:center; line-height:45px; color:#ffffff; padding:7px 0 11px;}
+ul.Tafternoon li .Ttime img{ vertical-align:middle;}
+ul.Tafternoon li .Tstate{ height:30px; line-height:30px; font-size:16px; text-align:center;}
+/*evening Block*/
+ul.Tevening{ background-color:#e5f4ff; padding:20px 0 12px 20px; width:882px;  margin-bottom:20px;}
+ul.Tevening li{ float:left; width:281px; height:101px; background:url(../images/bg_ev_N1.jpg) no-repeat top left; margin:0 10px 2px 0; position:relative; position:relative; cursor:pointer;}
+ul.Tevening li.booking .Ttime{ color:#ffff00; font-size:36px; height:45px; line-height:45px; padding:6px 0 12px;}
+ul.Tevening li .cancel{ position:absolute; top:-10px; right:-10px;}
+/*ul.Tevening li .Ttime{ height:63px; font-size:32px; font-weight:bold; text-align:center; line-height:63px; color:#ffffff;}*/
+ul.Tevening li .Ttime{  height:45px; font-size:32px; font-weight:bold; text-align:center; line-height:45px; color:#ffffff; padding:7px 0 11px;}
+ul.Tevening li .Ttime img{ vertical-align:middle;}
+ul.Tevening li .Tstate{ height:30px; line-height:30px; font-size:16px; text-align:center;}
+.Tshadow{ background:url(../images/bg_shadow.png) no-repeat top center; width:281px; height:8px;}
+/*night Block*/
+ul.Tnight{ background-color:#e5f4ff; padding:20px 0 12px 20px; width:882px;  margin-bottom:20px;}
+ul.Tnight li{ float:left; width:281px; height:101px; background:url(../images/bg_n_N1.jpg) no-repeat top left; margin:0 10px 2px 0; position:relative; position:relative; cursor:pointer;}
+ul.Tnight li.booking .Ttime{ color:#ffff00; font-size:36px; height:45px; line-height:45px; padding:6px 0 12px;}
+ul.Tnight li .cancel{ position:absolute; top:-10px; right:-10px;}
+/*ul.Tnight li .Ttime{ height:63px; font-size:32px; font-weight:bold; text-align:center; line-height:63px; color:#ffffff;}*/
+ul.Tnight li .Ttime{  height:45px; font-size:32px; font-weight:bold; text-align:center; line-height:45px; color:#ffffff; padding:7px 0 11px;}
+ul.Tnight li .Ttime img{ vertical-align:middle;}
+ul.Tnight li .Tstate{ height:30px; line-height:30px; font-size:16px; text-align:center;}
+.Tshadow{ background:url(../images/bg_shadow.png) no-repeat top center; width:281px; height:8px;}
+/*booking List*/
+.noBooking{ width:780px; height:93px; background-color:#eaeaea; text-align:center; padding-top:77px; font-size:15px; margin:0 auto 20px;}
+.listArea{ padding:0 60px 20px;}
+ul.bookingList{}
+ul.bookingList li{ font-size:18px; height:63px; line-height:63px; padding-left:20px; /*border-bottom:1px solid #cccccc; */}
+ul.bookingList li.bgcolor1{ background-color:#e8e8e8;}
+ul.bookingList li .info{ height:63px; line-height:63px; float:left; width:450px;}
+ul.bookingList li .info img{ vertical-align:middle;}
+ul.bookingList li .state{ height:52px; float:left; width:235px; padding:11px 8px 0;}
+.icoS2{ float:left; height:40px; line-height:38px;}
+.icoS2 img{ vertical-align:middle;}
+a.state1{ background:url(../images/btn_state.png) no-repeat 0 0; width:62px; height:40px; display:block; line-height:38px; padding-left:123px; color:#cc0000; font-size:18px; font-weight:bold;float:left;}
+a:hover.state1{ text-decoration:none;}/*報到*/
+a.state2{ background:url(../images/btn_state.png) no-repeat 0 -40px; width:62px; height:40px; display:block; line-height:38px; padding-left:123px; color:#cc0000; font-size:18px; font-weight:bold;float:left;}
+a:hover.state2{ text-decoration:none;}/*逾時補位*/
+a.state3{ background:url(../images/btn_state.png) no-repeat 0 -80px; width:62px; height:40px; display:block; line-height:38px; padding-left:123px; color:#cc0000; font-size:18px; font-weight:bold; float:left;}
+a:hover.state3{ text-decoration:none;}/*立馬上*/
+a.state4{ background:url(../images/btn_state.png) no-repeat 0 -120px; width:62px; height:40px; display:block; line-height:38px; padding-left:123px; color:#cc0000; font-size:18px; font-weight:bold;float:left;}
+a:hover.state4{ text-decoration:none;}/*進入諮詢室*/
+a.state5{ background:url(../images/btn_state.png) no-repeat 0 -160px; width:62px; height:40px; display:block; line-height:38px; padding-left:123px; color:#cc0000; font-size:18px; font-weight:bold;float:left;}
+a:hover.state5{ text-decoration:none;}/*進入諮詢室*/
+span.state6{ display:block; height:40px; line-height:40px; width:185px; text-align:center; font-weight:bold;}/*已預約*/
+span.state7{ display:block; height:40px; line-height:40px; width:185px; text-align:center; font-weight:bold; color:#999999;}/*已逾時*/
+ul.bookingList li .cancel{ height:63px; line-height:63px; float:left; width:70px; text-align:center;}
+ul.bookingList li .cancel a{ font-size:13px; text-decoration:underline; color:#555555;}
+ul.bookingList li .cancel a:hover{ color:#111111;}
+ul.bookingList li .cancel a img{ padding-top:16px;}
+.btnsArea{ margin:30px 0; text-align:center;}
+.btnsArea a{ margin-right:10px;}
+.btnsArea a:hover{ text-decoration:none;}
+.btnsArea a.btn_goBooking{ display:inline-block; background:url(../images/btn_goBooking2.jpg) no-repeat top left; width:267px; height:49px; text-align:center; line-height:49px; font-size:20px; font-weight:bold; color:#ffffff;}
+.btnsArea a.btn_goSession{ display:inline-block; background:url(../images/btn_goSession2.jpg) no-repeat top left; width:267px; height:49px; text-align:center; line-height:49px; font-size:20px; font-weight:bold; color:#ffffff;}
+
+
+/*----------Loading----------*/
+.loading{ background:url(images/bg_loading.jpg) top left no-repeat; width:354px; height:166px; line-height:166px; text-align:center; color:#666666; font-size:16px; border:1px solid #cccccc;}
+.loading img{ vertical-align:middle; margin-right:10px;}
+
+/*----------Lightbox 滿員----------*/
+.lightboxA{ width:500px; border:1px solid #cccccc; background-color:#e2e2e2;}
+.lightboxA h3{ background-color:#ffffff; height:45px; line-height:45px; text-align:right; padding-right:10px; position:relative;}
+.lightboxA h3 strong{ float:left; height:45px; line-height:45px; padding-left:10px; font-size:18px; font-weight:normal;}
+.lightboxA h3 a.close{ position:absolute; top:13px; right:10px;}
+.lightboxA .shadow{ width:500px; height:12px; background:url(../images/bg_lb_shadow1.jpg) no-repeat top left;}
+.lightboxA .btns{ width:371px; margin:0 auto; padding:20px 0;}
+.lightboxA .btns a{ display:block; width:369px; height:53px; line-height:53px; color:#ffffff; font-size:16px; text-align:center; border:1px solid #b4b4b4; margin-bottom:10px; font-weight:bold;}
+.lightboxA .btns a:hover{ text-decoration:none;}
+.lightboxA .btns a.btn1{ background:url(../images/btn_lb_bg1.jpg) no-repeat top left;}
+.lightboxA .btns a.btn2{ background:url(../images/btn_lb_bg2.jpg) no-repeat top left;}
+.lightboxA .btns a.btn3{ background:url(../images/btn_lb_bg3.jpg) no-repeat top left;}
+
+/*----------sticky Footer----------*/
+html, body, #wrapper{height: 100%; font-size:13px;}
+#main{ min-height: 100%; height: auto !important; height: 100%;margin: 0 auto -40px; background-color:#e9e9e9;}
+.push{height: 40px;}
+#footer{height: 40px; margin:0 auto; background-color:#3a3a3a; text-align:center; line-height:40px; color:#ffffff;}
+#footer, .push {clear: both;}

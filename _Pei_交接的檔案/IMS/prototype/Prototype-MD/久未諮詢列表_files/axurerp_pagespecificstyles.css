@@ -1,0 +1,2222 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../久未諮詢列表_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:-49px;
+    top:12px;
+    width:1402px;
+    height:1631px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1402px;
+    height:1631px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:808px;
+    width:1398px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:140px;
+    top:259px;
+    width:61px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../久未諮詢列表_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:37px;
+    top:200px;
+    width:1221px;
+    height:1378px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1227px;
+    height:1384px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:681px;
+    width:1217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_selected {
+    background-image: url('../久未諮詢列表_files/u7_selected.png');
+}
+
+.u7_normal {
+    background-image: url('../久未諮詢列表_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u9_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:62px;
+    height:20px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:68px;
+    height:26px;
+}
+
+.u10 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u12_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u12_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:6px;
+    height:20px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:26px;
+}
+
+.u13 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u16_selected {
+    background-image: url('../久未諮詢列表_files/u7_selected.png');
+}
+
+.u16_normal {
+    background-image: url('../久未諮詢列表_files/u7_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u18_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u19 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:67px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u21_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u21_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:6px;
+    height:20px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:26px;
+}
+
+.u22 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u25_selected {
+    background-image: url('../久未諮詢列表_files/u7_selected.png');
+}
+
+.u25_normal {
+    background-image: url('../久未諮詢列表_files/u7_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u25_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u27_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:53px;
+    height:20px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:59px;
+    height:26px;
+}
+
+.u28 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u30_selected {
+    background-image: url('../久未諮詢列表_files/u7_selected.png');
+}
+
+.u30_normal {
+    background-image: url('../久未諮詢列表_files/u7_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u30_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u32_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:40px;
+    height:20px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:46px;
+    height:26px;
+}
+
+.u33 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u35_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u35_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:59px;
+    height:20px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:65px;
+    height:26px;
+}
+
+.u36 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:54px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u38_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u38_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u39 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:67px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u41_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u41_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:94px;
+    height:20px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:100px;
+    height:26px;
+}
+
+.u42 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u44_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u44_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u45 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:67px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u47_selected {
+    background-image: url('../久未諮詢列表_files/u7_selected.png');
+}
+
+.u47_normal {
+    background-image: url('../久未諮詢列表_files/u7_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u47_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u49_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:54px;
+    height:20px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:60px;
+    height:26px;
+}
+
+.u50 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:49px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u52_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u52_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:83px;
+    height:20px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:89px;
+    height:26px;
+}
+
+.u53 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:78px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u55_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u55_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:83px;
+    height:20px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:89px;
+    height:26px;
+}
+
+.u56 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:78px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u58_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u58_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:83px;
+    height:20px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:89px;
+    height:26px;
+}
+
+.u59 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:78px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u61_selected {
+    background-image: url('../久未諮詢列表_files/u7_selected.png');
+}
+
+.u61_normal {
+    background-image: url('../久未諮詢列表_files/u7_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u61_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u63_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:80px;
+    height:20px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u64 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:75px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u66_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u66_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:145px;
+    height:20px;
+}
+
+#u66_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:151px;
+    height:26px;
+}
+
+.u67 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:140px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u69_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u69_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:105px;
+    height:20px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:26px;
+}
+
+.u70 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:100px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u71_line {
+    background-image: url('../久未諮詢列表_files/u71_line.png');
+}
+
+.u71_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:1376px;
+}
+
+.u71 {
+    position:absolute;
+    left:238px;
+    top:202px;
+    width:10px;
+    height:1376px;
+    
+}
+
+#u72 {
+    position:absolute;
+    left:282px;
+    top:591px;
+    width:921px;
+    height:122px
+}
+
+.u73_normal {
+    background-image: url('../久未諮詢列表_files/u73_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:122px;
+    height:36px;
+}
+
+#u73_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:42px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../久未諮詢列表_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:122px;
+    top:0px;
+    width:167px;
+    height:36px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:173px;
+    height:42px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../久未諮詢列表_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:289px;
+    top:0px;
+    width:164px;
+    height:36px;
+}
+
+#u77_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:170px;
+    height:42px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:160px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../久未諮詢列表_files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:453px;
+    top:0px;
+    width:178px;
+    height:36px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:184px;
+    height:42px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:174px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../久未諮詢列表_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:631px;
+    top:0px;
+    width:124px;
+    height:36px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:42px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../久未諮詢列表_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:755px;
+    top:0px;
+    width:161px;
+    height:36px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:167px;
+    height:42px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:157px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../久未諮詢列表_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:0px;
+    top:36px;
+    width:122px;
+    height:38px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:44px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../久未諮詢列表_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:122px;
+    top:36px;
+    width:167px;
+    height:38px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:173px;
+    height:44px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../久未諮詢列表_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:289px;
+    top:36px;
+    width:164px;
+    height:38px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:170px;
+    height:44px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:160px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../久未諮詢列表_files/u91_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:453px;
+    top:36px;
+    width:178px;
+    height:38px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:184px;
+    height:44px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:174px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_normal {
+    background-image: url('../久未諮詢列表_files/u93_normal.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:631px;
+    top:36px;
+    width:124px;
+    height:38px;
+}
+
+#u93_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:44px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_normal {
+    background-image: url('../久未諮詢列表_files/u95_normal.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:755px;
+    top:36px;
+    width:161px;
+    height:38px;
+}
+
+#u95_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:167px;
+    height:44px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:157px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_normal {
+    background-image: url('../久未諮詢列表_files/u97_normal.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:0px;
+    top:74px;
+    width:122px;
+    height:43px;
+}
+
+#u97_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:49px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99_normal {
+    background-image: url('../久未諮詢列表_files/u99_normal.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:122px;
+    top:74px;
+    width:167px;
+    height:43px;
+}
+
+#u99_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:173px;
+    height:49px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101_normal {
+    background-image: url('../久未諮詢列表_files/u101_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:289px;
+    top:74px;
+    width:164px;
+    height:43px;
+}
+
+#u101_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:170px;
+    height:49px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:160px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_normal {
+    background-image: url('../久未諮詢列表_files/u103_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:453px;
+    top:74px;
+    width:178px;
+    height:43px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:184px;
+    height:49px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:174px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../久未諮詢列表_files/u105_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:631px;
+    top:74px;
+    width:124px;
+    height:43px;
+}
+
+#u105_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:49px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107_normal {
+    background-image: url('../久未諮詢列表_files/u107_normal.png');
+}
+
+.u107_container {
+    position:absolute;
+    left:755px;
+    top:74px;
+    width:161px;
+    height:43px;
+}
+
+#u107_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:167px;
+    height:49px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:157px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:556px;
+    top:386px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u110 {
+    position:absolute;
+    left:690px;
+    top:386px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u111_line {
+    background-image: url('../久未諮詢列表_files/u111_line.png');
+}
+
+.u111_line {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:1011px;
+    height:5px;
+}
+
+.u111 {
+    position:absolute;
+    left:247px;
+    top:447px;
+    width:1011px;
+    height:10px;
+    
+}
+
+.u112 {
+    position:absolute;
+    left:285px;
+    top:467px;
+    width:150px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113_normal {
+    background-image: url('../久未諮詢列表_files/u113_normal.png');
+}
+
+.u113_container {
+    position:absolute;
+    left:251px;
+    top:465px;
+    width:25px;
+    height:24px;
+}
+
+#u113_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:25px;
+    height:24px;
+}
+
+.u114 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:21px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115 {
+    position:absolute;
+    left:257px;
+    top:204px;
+    width:347px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116 {
+    position:absolute;
+    left:261px;
+    top:262px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117 {
+    position:absolute;
+    left:349px;
+    top:259px;
+    width:39px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u118 {
+    position:absolute;
+    left:411px;
+    top:262px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119 {
+    position:absolute;
+    left:499px;
+    top:259px;
+    width:55px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u120 {
+    position:absolute;
+    left:595px;
+    top:259px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121 {
+    position:absolute;
+    left:664px;
+    top:258px;
+    width:60px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u122_normal {
+    background-image: url('../久未諮詢列表_files/u122_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:940px;
+    top:632px;
+    width:33px;
+    height:32px;
+}
+
+#u122_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:33px;
+    height:32px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:29px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../久未諮詢列表_files/u122_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:942px;
+    top:671px;
+    width:33px;
+    height:32px;
+}
+
+#u124_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:33px;
+    height:32px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:29px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u126 {
+    position:absolute;
+    left:834px;
+    top:620px;
+    width:107px;
+    height:54px;
+    overflow:hidden;
+}
+
+#pd0u126 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:107px;
+    height:54px;
+    
+}
+
+.u127_normal {
+    background-image: url('../久未諮詢列表_files/u127_normal.png');
+}
+
+.u127_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:98px;
+    height:57px;
+}
+
+#u127_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:63px;
+}
+
+.u128 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:81px;
+    top:0px;
+    width:17px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u130 {
+    position:absolute;
+    left:30px;
+    top:718px;
+    width:726px;
+    height:402px;
+    overflow:hidden;
+}
+
+#pd0u130 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:726px;
+    height:402px;
+    
+}
+
+.u131_normal {
+    background-image: url('../久未諮詢列表_files/u131_normal.png');
+}
+
+.u131_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:725px;
+    height:401px;
+}
+
+#u131_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:725px;
+    height:401px;
+}
+
+.u132 {
+    position:absolute;
+    left:2px;
+    top:192px;
+    width:721px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u133 {
+    position:absolute;
+    left:662px;
+    top:12px;
+    width:50px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u134_normal {
+    background-image: url('../久未諮詢列表_files/u134_normal.png');
+}
+
+.u134_container {
+    position:absolute;
+    left:983px;
+    top:632px;
+    width:35px;
+    height:28px;
+}
+
+#u134_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:28px;
+}
+
+.u135 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136_normal {
+    background-image: url('../久未諮詢列表_files/u134_normal.png');
+}
+
+.u136_container {
+    position:absolute;
+    left:985px;
+    top:674px;
+    width:35px;
+    height:28px;
+}
+
+#u136_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:28px;
+}
+
+.u137 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138_normal {
+    background-image: url('../久未諮詢列表_files/u138_normal.png');
+}
+
+.u138_container {
+    position:absolute;
+    left:505px;
+    top:1507px;
+    width:367px;
+    height:50px;
+}
+
+#u138_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:367px;
+    height:50px;
+}
+
+.u139 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:363px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:882px;
+    top:1518px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141_normal {
+    background-image: url('../久未諮詢列表_files/u138_normal.png');
+}
+
+.u141_container {
+    position:absolute;
+    left:522px;
+    top:521px;
+    width:367px;
+    height:50px;
+}
+
+#u141_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:367px;
+    height:50px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:363px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:899px;
+    top:532px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144 {
+    position:absolute;
+    left:984px;
+    top:529px;
+    width:41px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u145 {
+    position:absolute;
+    left:1038px;
+    top:531px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146 {
+    position:absolute;
+    left:950px;
+    top:532px;
+    width:34px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147 {
+    position:absolute;
+    left:966px;
+    top:1515px;
+    width:41px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u148 {
+    position:absolute;
+    left:1020px;
+    top:1517px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149 {
+    position:absolute;
+    left:932px;
+    top:1518px;
+    width:34px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

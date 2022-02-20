@@ -1,0 +1,332 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../錄像文件_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:302px;
+    top:154px;
+    width:627px;
+    height:685px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:627px;
+    height:685px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:334px;
+    width:623px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../錄像文件_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:591px;
+    top:500px;
+    width:105px;
+    height:13px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:19px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:591px;
+    top:500px;
+    width:133px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../錄像文件_files/u2_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:761px;
+    top:501px;
+    width:105px;
+    height:13px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:19px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:758px;
+    top:500px;
+    width:133px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../錄像文件_files/u2_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:429px;
+    top:500px;
+    width:105px;
+    height:13px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:19px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:426px;
+    top:499px;
+    width:133px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../錄像文件_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:425px;
+    top:499px;
+    width:477px;
+    height:19px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:483px;
+    height:25px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:473px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:302px;
+    top:124px;
+    width:220px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../錄像文件_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:1511px;
+    height:106px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1511px;
+    height:106px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:45px;
+    width:1507px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../錄像文件_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:976px;
+    top:130px;
+    width:240px;
+    height:760px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:240px;
+    height:760px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:372px;
+    width:236px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:901px;
+    top:499px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

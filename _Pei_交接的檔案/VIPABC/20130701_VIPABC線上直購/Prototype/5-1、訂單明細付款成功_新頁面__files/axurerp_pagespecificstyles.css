@@ -1,0 +1,1499 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:166px;
+    top:160px;
+    width:802px;
+    height:874px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:808px;
+    height:880px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:429px;
+    width:798px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:208px;
+    top:200px;
+    width:130px;
+    height:25px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_line {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u3_line.png');
+}
+
+.u3_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:740px;
+    height:3px;
+}
+
+.u3 {
+    position:absolute;
+    left:180px;
+    top:233px;
+    width:740px;
+    height:10px;
+    
+}
+
+.u4 {
+    position:absolute;
+    left:380px;
+    top:199px;
+    width:130px;
+    height:25px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:846px;
+    top:203px;
+    width:130px;
+    height:25px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:181px;
+    top:251px;
+    width:759px;
+    height:67px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:765px;
+    height:73px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:755px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:199px;
+    top:302px;
+    width:90px;
+    height:28px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:34px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:86px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:192px;
+    top:318px;
+    width:747px;
+    height:556px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:753px;
+    height:562px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:270px;
+    width:743px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u12 {
+    position:absolute;
+    left:245px;
+    top:372px;
+    width:613px;
+    height:269px
+}
+
+.u13_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:156px;
+    height:32px;
+}
+
+#u13_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:156px;
+    top:0px;
+    width:452px;
+    height:32px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:0px;
+    top:32px;
+    width:156px;
+    height:32px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:156px;
+    top:32px;
+    width:452px;
+    height:32px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:0px;
+    top:64px;
+    width:156px;
+    height:32px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:156px;
+    top:64px;
+    width:452px;
+    height:32px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:0px;
+    top:96px;
+    width:156px;
+    height:32px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:156px;
+    top:96px;
+    width:452px;
+    height:32px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:0px;
+    top:128px;
+    width:156px;
+    height:32px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:156px;
+    top:128px;
+    width:452px;
+    height:32px;
+}
+
+#u31_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u33_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:0px;
+    top:160px;
+    width:156px;
+    height:40px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:46px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:156px;
+    top:160px;
+    width:452px;
+    height:40px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:46px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:0px;
+    top:200px;
+    width:156px;
+    height:32px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:156px;
+    top:200px;
+    width:452px;
+    height:32px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u13_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:0px;
+    top:232px;
+    width:156px;
+    height:32px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:162px;
+    height:38px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:152px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u15_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:156px;
+    top:232px;
+    width:452px;
+    height:32px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:458px;
+    height:38px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:448px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u6_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:184px;
+    top:876px;
+    width:759px;
+    height:67px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:765px;
+    height:73px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:755px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u6_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:185px;
+    top:946px;
+    width:759px;
+    height:67px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:765px;
+    height:73px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:755px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49 {
+    position:absolute;
+    left:172px;
+    top:128px;
+    width:240px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u50_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:1582px;
+    top:140px;
+    width:718px;
+    height:850px;
+}
+
+#u50_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:718px;
+    height:850px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:417px;
+    width:714px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52 {
+    position:absolute;
+    left:245px;
+    top:342px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u53_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:1511px;
+    height:106px;
+}
+
+#u53_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1511px;
+    height:106px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:45px;
+    width:1507px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55 {
+    position:absolute;
+    left:246px;
+    top:664px;
+    width:184px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u56 {
+    position:absolute;
+    left:245px;
+    top:702px;
+    width:610px;
+    height:77px
+}
+
+.u57_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u57_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:74px;
+    height:24px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:80px;
+    height:30px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:70px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:74px;
+    top:0px;
+    width:67px;
+    height:24px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:73px;
+    height:30px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:63px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:141px;
+    top:0px;
+    width:100px;
+    height:24px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:30px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u61_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:241px;
+    top:0px;
+    width:100px;
+    height:24px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:30px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:341px;
+    top:0px;
+    width:86px;
+    height:24px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:92px;
+    height:30px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:82px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:427px;
+    top:0px;
+    width:93px;
+    height:24px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:99px;
+    height:30px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:89px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:520px;
+    top:0px;
+    width:85px;
+    height:24px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:30px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:81px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u71_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:0px;
+    top:24px;
+    width:74px;
+    height:48px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:80px;
+    height:54px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:70px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u73_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:74px;
+    top:24px;
+    width:67px;
+    height:48px;
+}
+
+#u73_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:73px;
+    height:54px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:63px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:141px;
+    top:24px;
+    width:100px;
+    height:48px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:54px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u75_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:241px;
+    top:24px;
+    width:100px;
+    height:48px;
+}
+
+#u77_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:54px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:341px;
+    top:24px;
+    width:86px;
+    height:48px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:92px;
+    height:54px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:82px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:427px;
+    top:24px;
+    width:93px;
+    height:48px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:99px;
+    height:54px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:89px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:520px;
+    top:24px;
+    width:85px;
+    height:48px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:54px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:81px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85 {
+    position:absolute;
+    left:683px;
+    top:784px;
+    width:167px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86 {
+    position:absolute;
+    left:670px;
+    top:203px;
+    width:130px;
+    height:25px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../5-1、訂單明細付款成功_新頁面__files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:1004px;
+    top:128px;
+    width:206px;
+    height:757px;
+}
+
+#u87_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:206px;
+    height:757px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:370px;
+    width:202px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

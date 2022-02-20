@@ -1,0 +1,5982 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:-49px;
+    top:12px;
+    width:1402px;
+    height:1631px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1402px;
+    height:1631px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:808px;
+    width:1398px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:140px;
+    top:259px;
+    width:61px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:39px;
+    top:200px;
+    width:1221px;
+    height:1378px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1227px;
+    height:1384px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:681px;
+    width:1217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:414px;
+    top:306px;
+    width:17px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_selected {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_selected.png');
+}
+
+.u8_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u10_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:62px;
+    height:20px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:68px;
+    height:26px;
+}
+
+.u11 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u13_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u13_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:6px;
+    height:20px;
+}
+
+#u13_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:26px;
+}
+
+.u14 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u17_selected {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_selected.png');
+}
+
+.u17_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u17_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u19_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u20 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:67px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u22_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u22_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:6px;
+    height:20px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:12px;
+    height:26px;
+}
+
+.u23 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u26_selected {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_selected.png');
+}
+
+.u26_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u26_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u28_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:53px;
+    height:20px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:59px;
+    height:26px;
+}
+
+.u29 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u31_selected {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_selected.png');
+}
+
+.u31_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u31_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u33_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:40px;
+    height:20px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:46px;
+    height:26px;
+}
+
+.u34 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u36_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u36_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:59px;
+    height:20px;
+}
+
+#u36_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:65px;
+    height:26px;
+}
+
+.u37 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:54px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u39_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u39_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u40 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:67px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u42_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u42_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:94px;
+    height:20px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:100px;
+    height:26px;
+}
+
+.u43 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u45_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u45_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:72px;
+    height:20px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:26px;
+}
+
+.u46 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:67px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u48_selected {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_selected.png');
+}
+
+.u48_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u48_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u50_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:54px;
+    height:20px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:60px;
+    height:26px;
+}
+
+.u51 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:49px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u53_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u53_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:83px;
+    height:20px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:89px;
+    height:26px;
+}
+
+.u54 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:78px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u56_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u56_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:83px;
+    height:20px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:89px;
+    height:26px;
+}
+
+.u57 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:78px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u59_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u59_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:83px;
+    height:20px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:89px;
+    height:26px;
+}
+
+.u60 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:78px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u62_selected {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_selected.png');
+}
+
+.u62_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u8_normal.png');
+}
+
+.u62_container {
+    position:absolute;
+    left:6px;
+    top:6px;
+    width:9px;
+    height:9px;
+}
+
+#u62_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:9px;
+}
+
+.u63 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u64_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:80px;
+    height:20px;
+}
+
+#u64_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u65 {
+    position:absolute;
+    left:3px;
+    top:2px;
+    width:75px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u67_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u67_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:145px;
+    height:20px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:151px;
+    height:26px;
+}
+
+.u68 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:140px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u70_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u70_container {
+    position:absolute;
+    left:22px;
+    top:0px;
+    width:105px;
+    height:20px;
+}
+
+#u70_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:26px;
+}
+
+.u71 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:100px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.u72_line {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u72_line.png');
+}
+
+.u72_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:1376px;
+}
+
+.u72 {
+    position:absolute;
+    left:236px;
+    top:202px;
+    width:10px;
+    height:1376px;
+    
+}
+
+.u73 {
+    position:absolute;
+    left:270px;
+    top:333px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u74 {
+    position:absolute;
+    left:270px;
+    top:588px;
+    width:986px;
+    height:159px
+}
+
+.u75_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:76px;
+    height:40px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:82px;
+    height:46px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:76px;
+    top:0px;
+    width:85px;
+    height:40px;
+}
+
+#u77_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:46px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:81px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:161px;
+    top:0px;
+    width:103px;
+    height:40px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:109px;
+    height:46px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:99px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:264px;
+    top:0px;
+    width:100px;
+    height:40px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:46px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:364px;
+    top:0px;
+    width:147px;
+    height:40px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:46px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:511px;
+    top:0px;
+    width:126px;
+    height:40px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:46px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:637px;
+    top:0px;
+    width:108px;
+    height:40px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:46px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:745px;
+    top:0px;
+    width:118px;
+    height:40px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:46px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u89_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:863px;
+    top:0px;
+    width:118px;
+    height:40px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:46px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u93_normal.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:0px;
+    top:40px;
+    width:76px;
+    height:55px;
+}
+
+#u93_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:82px;
+    height:61px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u95_normal.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:76px;
+    top:40px;
+    width:85px;
+    height:55px;
+}
+
+#u95_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:61px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:81px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u97_normal.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:161px;
+    top:40px;
+    width:103px;
+    height:55px;
+}
+
+#u97_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:109px;
+    height:61px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:99px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u99_normal.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:264px;
+    top:40px;
+    width:100px;
+    height:55px;
+}
+
+#u99_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:61px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u101_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:364px;
+    top:40px;
+    width:147px;
+    height:55px;
+}
+
+#u101_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:61px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u103_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:511px;
+    top:40px;
+    width:126px;
+    height:55px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:61px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u105_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:637px;
+    top:40px;
+    width:108px;
+    height:55px;
+}
+
+#u105_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:61px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u107_normal.png');
+}
+
+.u107_container {
+    position:absolute;
+    left:745px;
+    top:40px;
+    width:118px;
+    height:55px;
+}
+
+#u107_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:61px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u107_normal.png');
+}
+
+.u109_container {
+    position:absolute;
+    left:863px;
+    top:40px;
+    width:118px;
+    height:55px;
+}
+
+#u109_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:61px;
+}
+
+.u110 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u111_normal.png');
+}
+
+.u111_container {
+    position:absolute;
+    left:0px;
+    top:95px;
+    width:76px;
+    height:59px;
+}
+
+#u111_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:82px;
+    height:65px;
+}
+
+.u112 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u113_normal.png');
+}
+
+.u113_container {
+    position:absolute;
+    left:76px;
+    top:95px;
+    width:85px;
+    height:59px;
+}
+
+#u113_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:91px;
+    height:65px;
+}
+
+.u114 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:81px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u115_normal.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:161px;
+    top:95px;
+    width:103px;
+    height:59px;
+}
+
+#u115_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:109px;
+    height:65px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:99px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u117_normal.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:264px;
+    top:95px;
+    width:100px;
+    height:59px;
+}
+
+#u117_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:65px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u119_normal.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:364px;
+    top:95px;
+    width:147px;
+    height:59px;
+}
+
+#u119_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:65px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u121_normal.png');
+}
+
+.u121_container {
+    position:absolute;
+    left:511px;
+    top:95px;
+    width:126px;
+    height:59px;
+}
+
+#u121_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:65px;
+}
+
+.u122 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u123_normal.png');
+}
+
+.u123_container {
+    position:absolute;
+    left:637px;
+    top:95px;
+    width:108px;
+    height:59px;
+}
+
+#u123_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:65px;
+}
+
+.u124 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u125_normal.png');
+}
+
+.u125_container {
+    position:absolute;
+    left:745px;
+    top:95px;
+    width:118px;
+    height:59px;
+}
+
+#u125_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:65px;
+}
+
+.u126 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u125_normal.png');
+}
+
+.u127_container {
+    position:absolute;
+    left:863px;
+    top:95px;
+    width:118px;
+    height:59px;
+}
+
+#u127_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:65px;
+}
+
+.u128 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129_line {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u129_line.png');
+}
+
+.u129_line {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:1011px;
+    height:5px;
+}
+
+.u129 {
+    position:absolute;
+    left:251px;
+    top:447px;
+    width:1011px;
+    height:10px;
+    
+}
+
+.u130 {
+    position:absolute;
+    left:282px;
+    top:467px;
+    width:150px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u131_normal.png');
+}
+
+.u131_container {
+    position:absolute;
+    left:251px;
+    top:465px;
+    width:25px;
+    height:24px;
+}
+
+#u131_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:25px;
+    height:24px;
+}
+
+.u132 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:21px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133 {
+    position:absolute;
+    left:272px;
+    top:204px;
+    width:347px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138 {
+    position:absolute;
+    left:803px;
+    top:305px;
+    width:130px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u139 {
+    position:absolute;
+    left:588px;
+    top:309px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:646px;
+    top:306px;
+    width:66px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u141 {
+    position:absolute;
+    left:270px;
+    top:353px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142 {
+    position:absolute;
+    left:567px;
+    top:356px;
+    width:89px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:729px;
+    top:307px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u144_normal.png');
+}
+
+.u144_container {
+    position:absolute;
+    left:376px;
+    top:351px;
+    width:166px;
+    height:23px;
+}
+
+#u144_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:172px;
+    height:29px;
+}
+
+.u145 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u144_normal.png');
+}
+
+.u146_container {
+    position:absolute;
+    left:638px;
+    top:353px;
+    width:166px;
+    height:23px;
+}
+
+#u146_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:172px;
+    height:29px;
+}
+
+.u147 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148 {
+    position:absolute;
+    left:814px;
+    top:353px;
+    width:109px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151 {
+    position:absolute;
+    left:613px;
+    top:396px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u152 {
+    position:absolute;
+    left:748px;
+    top:396px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u153 {
+    position:absolute;
+    left:270px;
+    top:230px;
+    width:129px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u154 {
+    position:absolute;
+    left:751px;
+    top:579px;
+    width:495px;
+    height:269px;
+    overflow:hidden;
+}
+
+#pd0u154 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:495px;
+    height:269px;
+    
+}
+
+.u155_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u155_normal.png');
+}
+
+.u155_container {
+    position:absolute;
+    left:8px;
+    top:6px;
+    width:476px;
+    height:237px;
+}
+
+#u155_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:476px;
+    height:237px;
+}
+
+.u156 {
+    position:absolute;
+    left:2px;
+    top:110px;
+    width:472px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u157_normal.png');
+}
+
+.u157_container {
+    position:absolute;
+    left:14px;
+    top:60px;
+    width:458px;
+    height:169px;
+}
+
+#u157_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:464px;
+    height:175px;
+}
+
+.u158 {
+    position:absolute;
+    left:2px;
+    top:68px;
+    width:454px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u159_normal.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:165px;
+    top:37px;
+    width:180px;
+    height:21px;
+}
+
+#u159_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:27px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u161 {
+    position:absolute;
+    left:434px;
+    top:8px;
+    width:50px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u162 {
+    position:absolute;
+    left:282px;
+    top:553px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u163_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u163_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:270px;
+    top:305px;
+    width:133px;
+    height:19px;
+}
+
+#u163_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:25px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u163_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:430px;
+    top:304px;
+    width:133px;
+    height:19px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:25px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u167_normal.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:511px;
+    top:1506px;
+    width:367px;
+    height:50px;
+}
+
+#u167_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:367px;
+    height:50px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:363px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169 {
+    position:absolute;
+    left:888px;
+    top:1517px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u170_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u167_normal.png');
+}
+
+.u170_container {
+    position:absolute;
+    left:511px;
+    top:496px;
+    width:367px;
+    height:50px;
+}
+
+#u170_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:367px;
+    height:50px;
+}
+
+.u171 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:363px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u172 {
+    position:absolute;
+    left:888px;
+    top:507px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u173 {
+    position:absolute;
+    left:286px;
+    top:333px;
+    width:201px;
+    height:201px;
+    overflow:hidden;
+}
+
+#pd0u173 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:201px;
+    height:201px;
+    
+}
+
+.u174_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u174_normal.png');
+}
+
+.u174_container {
+    position:absolute;
+    left:10px;
+    top:5px;
+    width:160px;
+    height:185px;
+}
+
+#u174_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:191px;
+}
+
+.u175 {
+    position:absolute;
+    left:2px;
+    top:84px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u176_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u176_normal.png');
+}
+
+.u176_container {
+    position:absolute;
+    left:20px;
+    top:15px;
+    width:22px;
+    height:18px;
+}
+
+#u176_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:28px;
+    height:24px;
+}
+
+.u177 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:18px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u178_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u176_normal.png');
+}
+
+.u178_container {
+    position:absolute;
+    left:138px;
+    top:15px;
+    width:22px;
+    height:18px;
+}
+
+#u178_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:28px;
+    height:24px;
+}
+
+.u179 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:18px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u180 {
+    position:absolute;
+    left:47px;
+    top:17px;
+    width:86px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u181 {
+    position:absolute;
+    left:20px;
+    top:55px;
+    width:145px;
+    height:125px
+}
+
+.u182_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u182_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u182_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u183 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u184_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u184_normal.png');
+}
+
+.u184_container {
+    position:absolute;
+    left:20px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u184_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u185 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u186_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u186_container {
+    position:absolute;
+    left:40px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u186_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u187 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u188_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u188_container {
+    position:absolute;
+    left:60px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u188_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u189 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u190_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u190_container {
+    position:absolute;
+    left:80px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u190_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u191 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u192_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u192_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u192_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u193 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u194_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u194_container {
+    position:absolute;
+    left:120px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u194_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u195 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u196_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u196_container {
+    position:absolute;
+    left:0px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u196_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u197 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u198_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u198_container {
+    position:absolute;
+    left:20px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u198_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u199 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u200_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u200_container {
+    position:absolute;
+    left:40px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u200_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u201 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u202_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u202_container {
+    position:absolute;
+    left:60px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u202_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u203 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u204_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u204_container {
+    position:absolute;
+    left:80px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u204_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u205 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u206_container {
+    position:absolute;
+    left:100px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u206_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u207 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u208_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u208_normal.png');
+}
+
+.u208_container {
+    position:absolute;
+    left:120px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u208_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u209 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u210_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u210_container {
+    position:absolute;
+    left:0px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u210_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u211 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u212_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u212_container {
+    position:absolute;
+    left:20px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u212_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u213 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u214_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u214_container {
+    position:absolute;
+    left:40px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u214_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u215 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u216_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u216_container {
+    position:absolute;
+    left:60px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u216_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u217 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u218_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u218_normal.png');
+}
+
+.u218_container {
+    position:absolute;
+    left:80px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u218_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u219 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u220_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u220_container {
+    position:absolute;
+    left:100px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u220_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u221 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u222_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u222_container {
+    position:absolute;
+    left:120px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u222_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u223 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u224_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u224_container {
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u224_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u225 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u226_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u226_container {
+    position:absolute;
+    left:20px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u226_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u227 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u228_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u228_container {
+    position:absolute;
+    left:40px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u228_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u229 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u230_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u230_normal.png');
+}
+
+.u230_container {
+    position:absolute;
+    left:60px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u230_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u231 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u232_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u232_normal.png');
+}
+
+.u232_container {
+    position:absolute;
+    left:80px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u232_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u233 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u234_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u234_normal.png');
+}
+
+.u234_container {
+    position:absolute;
+    left:100px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u234_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u235 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u236_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u236_container {
+    position:absolute;
+    left:120px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u236_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u237 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u238_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u238_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u238_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u239 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u240_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u240_container {
+    position:absolute;
+    left:20px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u240_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u241 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u242_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u242_container {
+    position:absolute;
+    left:40px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u242_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u243 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u244_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u244_container {
+    position:absolute;
+    left:60px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u244_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u245 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u246_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u246_normal.png');
+}
+
+.u246_container {
+    position:absolute;
+    left:80px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u246_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u247 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u248_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u248_container {
+    position:absolute;
+    left:100px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u248_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u249 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u250_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u250_container {
+    position:absolute;
+    left:120px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u250_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u251 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u252_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u252_container {
+    position:absolute;
+    left:0px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u252_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u253 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u254_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u254_container {
+    position:absolute;
+    left:20px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u254_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u255 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u256_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u256_container {
+    position:absolute;
+    left:40px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u256_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u257 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u258_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u258_container {
+    position:absolute;
+    left:60px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u258_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u259 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u260_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u260_container {
+    position:absolute;
+    left:80px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u260_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u261 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u262_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u262_container {
+    position:absolute;
+    left:100px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u262_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u263 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u264_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u264_container {
+    position:absolute;
+    left:120px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u264_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u265 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u266 {
+    position:absolute;
+    left:20px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u267 {
+    position:absolute;
+    left:140px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u268 {
+    position:absolute;
+    left:40px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u269 {
+    position:absolute;
+    left:60px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u270 {
+    position:absolute;
+    left:80px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u271 {
+    position:absolute;
+    left:100px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u272 {
+    position:absolute;
+    left:120px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u273 {
+    position:absolute;
+    left:520px;
+    top:330px;
+    width:201px;
+    height:201px;
+    overflow:hidden;
+}
+
+#pd0u273 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:201px;
+    height:201px;
+    
+}
+
+.u274_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u174_normal.png');
+}
+
+.u274_container {
+    position:absolute;
+    left:10px;
+    top:5px;
+    width:160px;
+    height:185px;
+}
+
+#u274_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:191px;
+}
+
+.u275 {
+    position:absolute;
+    left:2px;
+    top:84px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u276_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u176_normal.png');
+}
+
+.u276_container {
+    position:absolute;
+    left:20px;
+    top:15px;
+    width:22px;
+    height:18px;
+}
+
+#u276_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:28px;
+    height:24px;
+}
+
+.u277 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:18px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u278_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u176_normal.png');
+}
+
+.u278_container {
+    position:absolute;
+    left:138px;
+    top:15px;
+    width:22px;
+    height:18px;
+}
+
+#u278_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:28px;
+    height:24px;
+}
+
+.u279 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:18px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u280 {
+    position:absolute;
+    left:47px;
+    top:17px;
+    width:86px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u281 {
+    position:absolute;
+    left:20px;
+    top:55px;
+    width:145px;
+    height:125px
+}
+
+.u282_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u282_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u282_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u283 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u284_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u184_normal.png');
+}
+
+.u284_container {
+    position:absolute;
+    left:20px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u284_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u285 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u286_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u286_container {
+    position:absolute;
+    left:40px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u286_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u287 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u288_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u288_container {
+    position:absolute;
+    left:60px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u288_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u289 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u290_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u290_container {
+    position:absolute;
+    left:80px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u290_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u291 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u292_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u292_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u292_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u293 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u294_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u294_container {
+    position:absolute;
+    left:120px;
+    top:0px;
+    width:20px;
+    height:20px;
+}
+
+#u294_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u295 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u296_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u296_container {
+    position:absolute;
+    left:0px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u296_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u297 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u298_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u298_container {
+    position:absolute;
+    left:20px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u298_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u299 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u300_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u300_container {
+    position:absolute;
+    left:40px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u300_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u301 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u302_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u302_container {
+    position:absolute;
+    left:60px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u302_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u303 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u304_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u304_container {
+    position:absolute;
+    left:80px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u304_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u305 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u306_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u306_container {
+    position:absolute;
+    left:100px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u306_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u307 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u308_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u208_normal.png');
+}
+
+.u308_container {
+    position:absolute;
+    left:120px;
+    top:20px;
+    width:20px;
+    height:20px;
+}
+
+#u308_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u309 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u310_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u310_container {
+    position:absolute;
+    left:0px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u310_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u311 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u312_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u312_container {
+    position:absolute;
+    left:20px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u312_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u313 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u314_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u314_container {
+    position:absolute;
+    left:40px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u314_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u315 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u316_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u316_container {
+    position:absolute;
+    left:60px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u316_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u317 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u318_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u218_normal.png');
+}
+
+.u318_container {
+    position:absolute;
+    left:80px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u318_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u319 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u320_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u320_container {
+    position:absolute;
+    left:100px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u320_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u321 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u322_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u322_container {
+    position:absolute;
+    left:120px;
+    top:40px;
+    width:20px;
+    height:20px;
+}
+
+#u322_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u323 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u324_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u324_container {
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u324_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u325 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u326_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u326_container {
+    position:absolute;
+    left:20px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u326_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u327 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u328_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u328_container {
+    position:absolute;
+    left:40px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u328_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u329 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u330_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u230_normal.png');
+}
+
+.u330_container {
+    position:absolute;
+    left:60px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u330_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u331 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u332_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u232_normal.png');
+}
+
+.u332_container {
+    position:absolute;
+    left:80px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u332_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u333 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u334_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u234_normal.png');
+}
+
+.u334_container {
+    position:absolute;
+    left:100px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u334_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u335 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u336_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u336_container {
+    position:absolute;
+    left:120px;
+    top:60px;
+    width:20px;
+    height:20px;
+}
+
+#u336_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u337 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u338_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u338_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u338_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u339 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u340_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u340_container {
+    position:absolute;
+    left:20px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u340_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u341 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u342_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u182_normal.png');
+}
+
+.u342_container {
+    position:absolute;
+    left:40px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u342_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u343 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u344_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u344_container {
+    position:absolute;
+    left:60px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u344_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u345 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u346_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u246_normal.png');
+}
+
+.u346_container {
+    position:absolute;
+    left:80px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u346_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u347 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u348_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u348_container {
+    position:absolute;
+    left:100px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u348_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u349 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u350_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u350_container {
+    position:absolute;
+    left:120px;
+    top:80px;
+    width:20px;
+    height:20px;
+}
+
+#u350_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u351 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u352_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u352_container {
+    position:absolute;
+    left:0px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u352_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u353 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u354_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u354_container {
+    position:absolute;
+    left:20px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u354_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u355 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u356_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u356_container {
+    position:absolute;
+    left:40px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u356_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u357 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u358_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u358_container {
+    position:absolute;
+    left:60px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u358_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u359 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u360_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u360_container {
+    position:absolute;
+    left:80px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u360_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u361 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u362_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u362_container {
+    position:absolute;
+    left:100px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u362_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u363 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u364_normal {
+    background-image: url('../點數歸還申請列表-詳列模式_files/u244_normal.png');
+}
+
+.u364_container {
+    position:absolute;
+    left:120px;
+    top:100px;
+    width:20px;
+    height:20px;
+}
+
+#u364_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:26px;
+}
+
+.u365 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:16px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u366 {
+    position:absolute;
+    left:20px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u367 {
+    position:absolute;
+    left:140px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u368 {
+    position:absolute;
+    left:40px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u369 {
+    position:absolute;
+    left:60px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u370 {
+    position:absolute;
+    left:80px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u371 {
+    position:absolute;
+    left:100px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u372 {
+    position:absolute;
+    left:120px;
+    top:40px;
+    width:17px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u373 {
+    position:absolute;
+    left:972px;
+    top:504px;
+    width:41px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u374 {
+    position:absolute;
+    left:1026px;
+    top:506px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u375 {
+    position:absolute;
+    left:938px;
+    top:507px;
+    width:34px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u376 {
+    position:absolute;
+    left:969px;
+    top:1514px;
+    width:41px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u377 {
+    position:absolute;
+    left:1023px;
+    top:1516px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u378 {
+    position:absolute;
+    left:935px;
+    top:1517px;
+    width:34px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

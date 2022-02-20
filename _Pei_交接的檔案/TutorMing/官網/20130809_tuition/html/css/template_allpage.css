@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+body      {margin:0px 0 0 0; padding:0; background:url(/images/index/2010ming_image_top.gif) repeat-x top; font-family: Verdana, Arial, Helvetica, sans-serif, 新細明體; 
+           font-size: 12px; color: #555555; text-align:left; }
+a:link    { color:#555555; text-decoration:none;}
+a:visited { color:#555555; text-decoration:none;}
+a:active  { color:#555555; text-decoration:underline;}
+a:hover   { color:#555555; text-decoration:underline;}
+
+img       {padding:0; margin:0; border:0;}
+
+
+/*大框架**********************************************************************************
+*****************************************************************************************/
+.all_ming       {width:100%; margin:0px auto; padding:0px; position:relative;}
+.mainframe_ming {width:850px; margin:0 auto; clear: both; position:relative;}
+.top_txt_ming   {width:850px; text-align:right; color:#fff; padding:5px 0 0 0; height:30px;}
+.header_ming    {width:850px; margin:0 auto; clear: both;}
+.flash_ming     {width:850px; margin:0 auto; clear: both; position:relative; z-index:1; }
+.menu_ming      {width:850px; margin:0 auto; clear: both; position:relative;}
+.content_ming   {width:850px; background:#fff; clear: both; position:relative; margin:30px 0 0 0;}
+.sidebar_ming   {width:222px; float:left; margin:0 0 0 0px; display:inline; padding:0 0 0px 0;  position:relative;}
+.column_ming    {width:600px; float:right; margin:0px 0 0 0px;  position:relative;}
+.footer_ming    {clear:both; background:#e2e2e2; position:relative; padding:15px 0 15px 150px;}
+/*******************************************************************************************************************
+********************************************************************************************************************/
+
+
+/*HEADER*********************************************************************************
+*****************************************************************************************/
+
+/*最上黑底條*/
+.top_txt_ming span {font-size:10px; color:#7e7e7e; padding:0 10px 0 10px;}
+.top_txt_ming a:link, .top_txt_ming a:visited {color:#fff; text-decoration:none;}
+.top_txt_ming a:active, .top_txt_ming a:hover {color:#888888; text-decoration:none;}
+
+/*Header*/
+.header_ming .logo_2010      {width:300px; float:left; text-align:left;}
+.header_ming .infor_2010     {width:430px; float:right;  text-align:right; margin:35px 0 0 0;} 
+.header_ming .infor_2010 .selt1 {width:100px; background:#eee; color:#000; font-family:Arial, Helvetica, sans-serif; }
+.header_ming .infor_2010 .reg  {float:right; text-align:right; margin-left:8px;}
+.header_ming .infor_2010 .lang {float:right; width:105px; text-align:right; _padding:3px 0 0 0; *padding:3px 0 0 0;}
+
+/*Menu*/
+.header_ming .menuz            {width:850px; height:47px; background:url(/images/index/2010ming_image_menu_back.gif) repeat-x top;}
+.header_ming .menuz ul         {padding:0 0 0 0px; margin:0; list-style-type:none;}
+.header_ming .menuz ul li      {padding:0; margin:0; list-style-type:none;}
+.header_ming .menuz ul li.box  {margin:13px 0 0 0; font-size:13px; color:#fff; font-family: Verdana, Arial, Helvetica, sans-serif; float:left; padding:0 52px 0 52px; }
+.header_ming .menuz ul li.line {background:url(/images/index/2010ming_image_menu_line.gif) no-repeat; width:4px; height:47px; float:left; font-size:1px;}
+.header_ming .menuz a:link, .header_ming .menuz a:visited {color:#fff; text-decoration:none;}
+.header_ming .menuz a:active, .header_ming .menuz a:hover {color:#000; text-decoration:none;}
+
+/*次menu*/
+.menuz2        { background:#8e1237; width:200px; z-index:5px; padding:0 0 13px 0;}
+.menuz2 ul     { padding:0 0 0 0px; margin:0; list-style-type:none;}
+.menuz2 ul li  { margin:0; list-style-type:none; color:#fff; font-size:12px; padding:8px 0 0 10px; text-align:left;}
+.menuz2 ul li a:link, .menuz2 ul li a:visited{color:#fff; text-decoration:none;}
+.menuz2 ul li a:active, .menuz2 ul li a:hover{color:#f779a2; text-decoration:none;}
+
+/*套用 jquery MENU 的 css start**********************************************************************************************************************/
+.mainframe_ming ul li.box {font-size:13px; color:#fff; font-family: Verdana, Arial, Helvetica, sans-serif; float:left; padding:0 28px 0 28px; }
+#jsddm   {width:850px; height:47px; background:url(/images/index/2010ming_image_menu_back.gif) repeat-x top;margin: 0;padding: 0; list-style-type: none;}
+#jsddm li.line {background:url(/images/index/2010ming_image_menu_line.gif) no-repeat; width:4px; height:47px; float:left; font-size:1px; z-index:0}
+
+#jsddm li{position: relative;display: inline;float: left; z-index:300; width:auto;}
+#jsddm li a{display: block; color: white; margin:15px 0 0 0;padding: 0px 25px 10px 25px;/*選單的字距*/color: #FFFFFF; text-decoration: none;font-family:Verdana;}
+html>body #jsddm li a  {margin:14px 0 0 0;}/*ff*/
+* html #jsddm ul li a     {display: inline-block;}/*IE6*/
+#jsddm li a:link, #jsddm li a:visited{color:#fff; text-decoration:none;}
+#jsddm li a:hover, #jsddm li a:active{color:#000; text-decoration:none;}
+/*MENU-次選單*/
+#jsddm li ul   {position: absolute;left: 0;display: block;visibility: hidden; }
+#jsddm li ul li{background:#8e1237; width:150px; z-index:5px; padding:0 0 13px 0;}
+#jsddm li ul li ul{top: 0;}
+#jsddm li ul li a{ margin:0; list-style-type:none; color:#fff; font-size:12px; padding:8px 0 0 10px; text-align:left; }
+#jsddm ul li a:link, #jsddm ul li a:visited{color:#fff; text-decoration:none;}
+#jsddm ul li a:active, #jsddm ul li a:hover{color:#f779a2; text-decoration:none;}
+/*套用 jquery MENU 的 css end**********************************************************************************************************************/
+
+
+/*左邊sidebar*****************************************************************************
+*****************************************************************************************/
+.sidebar_ming .areaz        {width:222px; margin:0 0 25px 0;}
+
+/*Ming Tube*/
+.sidebar_ming .mingtube        {width:222px; background:#000 url(/images/index/2010ming_image_tubeback.gif) no-repeat bottom; padding:0 0px 10px 0px; }
+.sidebar_ming .mingtube .pagev {background:url(/images/index/2010ming_image_tubepage.gif) no-repeat; height:28px;}
+.sidebar_ming .mingtube .pagev .pww    {width:111px; float:left; color:#9d9d9d; text-align:center; font-size:11px; height:22px; padding:6px 0 0 0; display:block;}
+.sidebar_ming .mingtube .pagev .pww_in {width:111px; float:left; color:#f3135d; text-align:center; font-size:11px; height:22px; font-weight:bold; padding:6px 0 0 0;
+                                        background:url(/images/index/2010ming_image_tubepage_ov.gif) no-repeat; display:block;}
+.sidebar_ming .mingtube .vdo           {width:210px; margin:0 0 0 6px;}
+.sidebar_ming .mingtube .lines         {width:222px; height:13px; background:url(/images/index/2010ming_image_tube_line.gif) no-repeat;}
+.sidebar_ming .mingtube .descw         {width:209px; padding:0 5px 0 8px; color:#888888; font-size:11px; line-height:14px; font-family:Tahoma;}
+.sidebar_ming .mingtube .descw a:link, .sidebar_ming .mingtube .descw a:visited{color:#41a300; text-decoration:none; }
+.sidebar_ming .mingtube .descw a:active, .sidebar_ming .mingtube .descw a:hover{color:#41a300; text-decoration:underline; }
+
+/*LOGIN*/
+.sidebar_ming .sidetop        {background:url(/images/index/2010ming_image_mem_top.gif) no-repeat; height:19px; width:210px; padding:10px 0 0 12px; color:#c21b52; font-weight:bold;  position:relative;}
+.sidebar_ming .sidetop .open   {position: absolute; top:12px; right:12px; width:11px; height:11px;}/*會員快捷專用+*/
+.sidebar_ming .sidemmm        { background:url(/images/index/2010ming_image_mem_mm.gif) no-repeat top; padding:15px 10px 5px 10px;}
+.sidebar_ming .sidemmm .wd    {float:left; width:63px; padding:0px 0 6px 0; text-align:right;}
+.sidebar_ming .sidemmm .ipx   {float:right; width:130px; padding:0px 0 6px 0; text-align:left;font-size:11px;}
+.sidebar_ming .sidemmm .ipx a:link,.sidebar_ming .sidemmm .ipx a:visited   {color:#41a300; text-decoration:none; }
+.sidebar_ming .sidemmm .ipx a:active,.sidebar_ming .sidemmm .ipx a:hover   {color:#41a300; text-decoration:underline; }
+.sidebar_ming .sidemmm .ipt   {border:0; background:#e6e6e6; width:123px; font-family:Tahoma,Arial, Helvetica, sans-serif; color:#000; padding:2px; margin:0; font-size:12px;}
+.sidebar_ming .sidemmm .btn00 {background:url(/images/index/2010ming_image_btn0.gif) no-repeat; width:100px; height:21px; color:#fff; font-size:12px;font-family:Tahoma,Arial; 
+                                text-align:center; border:0;cursor:pointer;}
+.sidebar_ming .sidedown       {background:url(/images/index/2010ming_image_mem_under.gif) no-repeat; height:6px; font-size:1px;}
+
+/*Contact Us*/
+.sidebar_ming .sidemmm .contus     {width:98px;}
+.sidebar_ming .sidemmm .contus img {padding:0 0 5px 0;}
+
+/*會員快捷*/
+.sidebar_ming .sidemmm .memuse  {padding:0 0 0 5px;}
+.sidebar_ming .sidemmm .memuse ul    {padding:0; margin:0; list-style-type:none;}
+.sidebar_ming .sidemmm .memuse ul li {padding:0; margin:0; list-style-type:none; padding:0 0 5px 0;}
+.sidebar_ming .sidemmm .memuse ul li a:link,.sidebar_ming .sidemmm .memuse ul li a:visited {color:#41a300; text-decoration:none; }
+.sidebar_ming .sidemmm .memuse ul li a:active,.sidebar_ming .sidemmm .memuse ul li a:hover {color:#41a300; text-decoration:underline; }
+
+
+
+/*右邊內容區******************************************************************************
+*****************************************************************************************/
+
+/*基本款共用title*/
+.column_ming .title-g     {background:url(/images/index/2010ming_image_col_tback.gif) repeat-x bottom; line-height:26px; }
+.column_ming .title-g .tw {background:url(/images/index/2010ming_image_col_tbackin.gif) repeat-x bottom; vertical-align:bottom; padding:0 0 5px 0; font-weight:bold; 
+                           font-family:Verdana,Arial, Helvetica, sans-serif; font-size:13px; color:#000;}
+
+/*free session*/
+.column_ming .free-session       {margin:10px 0 30px 0;position:relative; width:600px; height:150px;}
+.column_ming .free-session .numm {position: absolute; top:129px; right:0; width: 173px;  height:21px; text-align:right; color:#fff;font-weight:bold; font-size:12px;}
+.column_ming .free-session .numm .headd {float:left; width:23px;height:21px;}
+.column_ming .free-session .numm .pickk {float:left; width: 150px; height:18px; background:url(http://www.tutorming.com/images/index/2010ming_image_se_back.png) repeat-x; padding:3px 0 0 0;}
+.column_ming .free-session .numm a:link, .column_ming .free-session .numm a:visited {color:#fff; text-decoration:none; padding:0 12px 0 0;}
+.column_ming .free-session .numm a:active, .column_ming .free-session .numm a:hover {color:#c01b51; text-decoration:underline; padding:0 12px 0 0;}
+
+
+
+/*Diverse TutorMing Chinese Course*/
+.column_ming .diverse    {margin:10px 0 30px 0;}
+
+/*DCGS & Upgrade*/
+.column_ming .dc-up        {margin:10px 0 30px 0;}
+.column_ming .dc-up-top    {background:url(/images/index/2010ming_image_co_top.gif) no-repeat top; width:600px; height:50px;}
+.column_ming .dc-up-top .ttebox           {padding:10px 0 0 0px; position:relative;}
+.column_ming .dc-up-top .ttebox .more {position: absolute;top:20px; right:0; font-size:11px; color:#41a300; text-align:right; }
+.column_ming .dc-up-top .ttebox .more a:link, .column_ming .dc-up-top .ttebox .more a:visited {color:#41a300; text-decoration:none;}
+.column_ming .dc-up-top .ttebox .more a:active, .column_ming .dc-up-top .ttebox .more a:hover {color:#c01b51; text-decoration:none;}
+.column_ming .dcgs-width       {width:220px; margin-left:15px; _margin-left:7px;}
+.column_ming .upgrade-width    {width:330px; margin-left:18px;}
+.column_ming .dc-up-mmm    {background:url(/images/index/2010ming_image_co_m.gif) repeat-y; width:600px; }
+.column_ming .dc-up-under  {background:url(/images/index/2010ming_image_co_under.gif) no-repeat; width:600px; height:13px; font-size:1px;}
+
+/*free resource & News*/
+.column_ming .re-news               {margin:10px 0 40px 0;}
+.column_ming .re-news .resorce      {float:left; width:255px;}
+.column_ming .re-news .resorce .p1  {background:url(/images/index/2010ming_image_res_01.gif) no-repeat; width:254px; height:36px; display:block; margin:15px 0 0 0;}
+.column_ming .re-news .resorce .p1 a:link, .column_ming .re-news .resorce .p1 a:visited  {background:url(/images/index/2010ming_image_res_01.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+.column_ming .re-news .resorce .p1 a:active, .column_ming .re-news .resorce .p1 a:hover  {background:url(/images/index/2010ming_image_res_010.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+.column_ming .re-news .resorce .p2  {background:url(/images/index/2010ming_image_res_02.gif) no-repeat; width:254px; height:36px; display:block; margin:5px 0 0 0;}
+.column_ming .re-news .resorce .p2 a:link, .column_ming .re-news .resorce .p2 a:visited   {background:url(/images/index/2010ming_image_res_02.gif) no-repeat; display:block; 
+                                                                                           width:254px; height:36px; }
+.column_ming .re-news .resorce .p2 a:active, .column_ming .re-news .resorce .p2 a:hover   {background:url(/images/index/2010ming_image_res_020.gif) no-repeat; display:block; 
+                                                                                           width:254px; height:36px; }
+.column_ming .re-news .resorce .p3  {background:url(/images/index/2010ming_image_res_03.gif) no-repeat; width:254px; height:36px; display:block; margin:5px 0 0 0;}
+.column_ming .re-news .resorce .p3 a:link, .column_ming .re-news .resorce .p3 a:visited  {background:url(/images/index/2010ming_image_res_03.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+.column_ming .re-news .resorce .p3 a:active, .column_ming .re-news .resorce .p3 a:hover  {background:url(/images/index/2010ming_image_res_030.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+																						  
+.column_ming .re-news .resorce .p1_fr  {background:url(/images/index/2010ming_image_res_01_fr.gif) no-repeat; width:254px; height:36px; display:block; margin:15px 0 0 0;}
+.column_ming .re-news .resorce .p1_fr a:link, .column_ming .re-news .resorce .p1_fr a:visited  {background:url(/images/index/2010ming_image_res_01_fr.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+.column_ming .re-news .resorce .p1_fr a:active, .column_ming .re-news .resorce .p1_fr a:hover  {background:url(/images/index/2010ming_image_res_010_fr.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+.column_ming .re-news .resorce .p2_fr  {background:url(/images/index/2010ming_image_res_02_fr.gif) no-repeat; width:254px; height:36px; display:block; margin:5px 0 0 0;}
+.column_ming .re-news .resorce .p2_fr a:link, .column_ming .re-news .resorce .p2_fr a:visited   {background:url(/images/index/2010ming_image_res_02_fr.gif) no-repeat; display:block; 
+                                                                                           width:254px; height:36px; }
+.column_ming .re-news .resorce .p2_fr a:active, .column_ming .re-news .resorce .p2_fr a:hover   {background:url(/images/index/2010ming_image_res_020_fr.gif) no-repeat; display:block; 
+                                                                                           width:254px; height:36px; }
+.column_ming .re-news .resorce .p3_fr {background:url(/images/index/2010ming_image_res_03_fr.gif) no-repeat; width:254px; height:36px; display:block; margin:5px 0 0 0;}
+.column_ming .re-news .resorce .p3_fr a:link, .column_ming .re-news .resorce .p3_fr a:visited  {background:url(/images/index/2010ming_image_res_03_fr.gif) no-repeat; display:block; 
+                                                                                          width:254px; height:36px;}
+.column_ming .re-news .resorce .p3_fr a:active, .column_ming .re-news .resorce .p3_fr a:hover  {background:url(/images/index/2010ming_image_res_030_fr.gif) no-repeat; display:block; 
+																							width:254px; height:36px;}
+                                            
+											
+.column_ming .re-news .world-news     {float:right; width:320px; margin:0 0 0 20px;}
+.column_ming .re-news .world-news img {margin:15px 4px 0 0;}
+
+
+/*Footer*********************************************************************************
+*****************************************************************************************/
+.footer_ming .copyright_m {width:650px; margin:0 auto; clear: both; line-height:22px; color:#000; font-size:13px;}
+.footer_ming .copyright_m span {font-size:10px; color:#b0b0b0; margin:0 10px 0 10px;}
+.footer_ming .copyright_m a:link, .footer_ming .copyright_m a:visited {color:#000; text-decoration:none;}
+.footer_ming .copyright_m a:active, .footer_ming .copyright_m a:hover {color:#000; text-decoration:underline;}
+
+/*一般共用********************************************************************************
+*****************************************************************************************/
+.clear     {clear:both;}
+.f-left    {float:left;}
+.f-right   {float:right;}
+.t-right   {text-align:right;}
+.t-left    {text-align:left;}

@@ -1,0 +1,376 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:1524px;
+    top:158px;
+    width:956px;
+    height:682px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:956px;
+    height:682px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:333px;
+    width:952px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:219px;
+    top:150px;
+    width:695px;
+    height:84px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:701px;
+    height:90px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:34px;
+    width:691px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:236px;
+    top:158px;
+    width:661px;
+    height:77px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:380px;
+    top:173px;
+    width:249px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:1918px;
+    top:510px;
+    width:476px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_line {
+    background-image: url('../預訂_取消課程-大會堂_files/u7_line.png');
+}
+
+.u7_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:27px;
+    height:3px;
+}
+
+.u7 {
+    position:absolute;
+    left:2020px;
+    top:543px;
+    width:27px;
+    height:10px;
+    
+}
+
+.u8_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:214px;
+    top:245px;
+    width:706px;
+    height:439px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:706px;
+    height:439px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:212px;
+    width:702px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:224px;
+    top:111px;
+    width:267px;
+    height:32px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:267px;
+    height:32px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:263px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_line {
+    background-image: url('../預訂_取消課程-大會堂_files/u12_line.png');
+}
+
+.u12_line {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:130px;
+    height:5px;
+}
+
+.u12 {
+    position:absolute;
+    left:684px;
+    top:423px;
+    width:130px;
+    height:10px;
+    
+}
+
+.u13_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:224px;
+    top:151px;
+    width:477px;
+    height:81px;
+}
+
+#u13_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:483px;
+    height:87px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:473px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:1917px;
+    top:500px;
+    width:159px;
+    height:81px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:165px;
+    height:87px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:155px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u17_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:1511px;
+    height:106px;
+}
+
+#u17_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1511px;
+    height:106px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:45px;
+    width:1507px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../預訂_取消課程-大會堂_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:980px;
+    top:132px;
+    width:240px;
+    height:760px;
+}
+
+#u19_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:240px;
+    height:760px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:372px;
+    width:236px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

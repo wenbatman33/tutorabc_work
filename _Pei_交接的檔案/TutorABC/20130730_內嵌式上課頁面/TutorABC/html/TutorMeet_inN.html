@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<title>TutorABC 線上‧真人‧同步 英語視訊學習系統</title>
+<meta name="description" content="英文老師到你家！提供「真人即時互動」、「專業外籍顧問」、「量身訂作學習內容」、「精準追蹤學習成效」的客製化語言學習服務。" />
+<meta name="keywords" content="Ielts,Toeic,外籍老師,多益,托福,美語家教,美語教學,美語補習,英文教學,英文進修,英文會話,英文補習,英文檢定,英文聽力,旅遊英文,商用英文,視訊英文,雅思,補英文,英文家教,線上英文,線上學習,學美語,學英文,學英語" />
+<link href="css/justsessionN.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script>
+    function correctPNG()
+    {
+        for(var i=0; i<document.images.length; i++)
+        {
+            var img = document.images[i]
+            var imgName = img.src.toUpperCase()
+            if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+            {
+                var imgID = (img.id) ? "id='" + img.id + "' " : ""
+                var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+                var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+                var imgStyle = "display:inline-block;" + img.style.cssText
+                if (img.align == "left") imgStyle = "float:left;" + imgStyle
+                if (img.align == "right") imgStyle = "float:right;" + imgStyle
+                if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+                var strNewHTML = "<span "+ imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='image');\"></span>"
+                img.outerHTML = strNewHTML
+                i = i-1
+            }
+        }
+    }
+    window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+<script language="javascript" type="text/javascript" src="scripts/jQuery_v1.8.2.js"></script>
+<link href="scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('.fancybox').fancybox({loop:false});
+		});
+	</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="main">
+      <div class="toolbar"><a href="#">回到會員服務首頁</a></div>
+  <!--Header START-->    
+      <div class="header"><a href="#"><img src="images/LOGO.png" /></a></div>
+  <!--Header END-->
+  	<div class=" contentAll">
+  	  <div class="path">
+      	<span class="color-002">您目前所在位置 ></span> <a href="#">TutorABC官方網站</a> <span class="color-002">></span> <a href="#ifleave" class="fancybox">會員服務</a> <span class="color-002">>&nbsp;</span>進入諮詢室
+      </div>
+  		
+      <div class="ifleave_style" id="ifleave">
+          <p>您即將要離開諮詢室，為了解您的上課感受，請問是否填寫課後評鑑?</p>
+          <div><input type="submit"value="好" class="btn-box-ok" />&nbsp;<input type="submit"value="下次填寫" class="btn-box-no" /></div>
+      </div>
+      
+      <div class="infoBar clearfix">
+      	<h2>大會堂諮詢室 2013/04/15 (四) 18:30 - 19:30 (45min.)</h2>
+        <div class="btnScreenArea">
+                <span class=" f-left">顯示比例</span>
+               <a href="#" class="btnScreenSize current" title="原尺寸">原尺寸</a> 
+                <a href="#" class="btnScreenSize" title="滿版">滿版</a>
+          </div>
+         <div class="btnArea" style="width:250px;">
+                <input type="submit" name="button5" id="button5" value="單字" class="btn-check-ss1" />
+                <input type="submit" name="button5" id="button5" value="課後評鑑" class="btn-check-ss2" />
+                <input type="submit" name="button5" id="button5" value="填寫作業" class="btn-check-ss2" />
+          </div>
+      </div>
+      
+      <div class="embedWindow">     
+     	 <iframe src="classroom.html" frameborder="0" width="100%" height="auto"></iframe>
+      </div>
+           
+      <div class="push"></div>   
+    </div>
+  </div>
+
+  <!--Footer START-->
+  <div id="footer">Copyright © TutorABC All Rights Reserved.</div>
+  <!--Footer END--> 
+</div>
+</body>
+</html>

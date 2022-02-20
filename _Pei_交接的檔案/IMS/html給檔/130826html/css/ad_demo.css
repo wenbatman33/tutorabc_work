@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+input[type|="text"], textarea{ color:#333333;}
+
+ol li{ list-style:decimal; list-style-position:outside;}
+table.upload ol{ padding-left:15px;}
+table.upload ol li{ line-height:2.5; margin-bottom:5px;}
+table.upload input[type|="text"]{ width:210px;}
+table.upload input[type|="file"]{ width:259px;}
+table.upload input.datepicker{ width:150px; background:url(../images/universal/ico_calendar.jpg) no-repeat 135px center; padding-right:2px; cursor:pointer;}
+table.upload input.reminding, .container textarea.reminding{ background-color:#ffcece;}
+
+ul.notice li{ margin-bottom:5px; line-height:1.8;}
+ul.notice li ol{ padding-left:20px;}
+ul.notice li ol li{ list-style:decimal; list-style-position:inside;}
+
+/*觀看建議/投票*/
+h4.tbtitle{ border-left:1px solid #d3d3d3; border-right:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:12px; text-align:center; padding:10px 2px;}
+ol.tblist li{ background:url(../images/addemo/bg_tblist.jpg) repeat-y top left; padding-left:53px; list-style-position:inside;}
+table.pollresult th{ width:17%;}
+table.pollresult th.pic{ width:220px;}
+
+/*AD後台列表*/
+table.adList td .ADpic, table.adList td ADfileName{ margin:5px 0;}
+
+/*popup Poll*/
+.wrapper{ width:100%;}
+.pollBox{ width:680px; margin:0 auto;}
+h2.title{ background:url(../images/addemo/tit_popuppoll.jpg) no-repeat 50% 50%; background-color:#2a2a2a; width:680px; height:70px;}
+h2.title strong{ display:none;}
+.pollBox .container{ padding:10px;}
+.container{ margin:0 0 10px;}
+.container table.Vtb03_dot td{ padding:10px 0;}
+.pollBox h3{ margin:10px 0; font-size:15px; font-weight:bold;}
+.container textarea.comment{ width:650px; height:95px; overflow-y : auto; /* IE */ resize : none; border:1px solid #cccccc; padding:2px;}
+.btm{ text-align:center; height:85px; line-height:1.2; color:#ffffff; background-color:#2a2a2a; padding-top:15px;}
+.pollBox table.Vtb03_dot td{ vertical-align:middle;}
+

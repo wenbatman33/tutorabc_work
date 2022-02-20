@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document 130826*/
+
+/*font*/
+.bold{font-weight:bold;}
+.normal{font-weight:normal;}
+.underline{ text-decoration:underline;}
+.nounderline{ text-decoration:none;}
+
+.colorRed{color:#ff0000;}
+.colorOrange{ color:#ff7800;}
+.colorGreen{ color:#009900;}
+.colorBlue{ color:#003399;}
+
+.font_tip{ color:#666666;}
+.fsize11{ font-size:11px;}
+.fsize12{ font-size:12px;}
+.fsize13{ font-size:13px;}
+.fsize15{ font-size:15px;}
+.fsize16{ font-size:16px;}

@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+.clear{clear:both;}
+.clearfix:after { content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix { display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix { height: 1%;}
+
+.onlinePurchaseContent{ margin-bottom:30px;}
+.content{ padding-top:35px;}
+.Lside{ float:left; width:178px; }
+.Rside{ float:right; width:757px; }
+
+/*Left side Step*/
+ul.Lsidemenu li{ list-style:none;} 
+ul.Lsidemenu li.s1og{ width:147px; height:41px; background:url(../images/ol_purchase/L_bg_s1.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#ffffff; line-height:41px;}
+ul.Lsidemenu li.s2og{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s2.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#ffffff; line-height:40px;}
+ul.Lsidemenu li.s3og{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s3.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#ffffff; line-height:40px;}
+ul.Lsidemenu li.s4og{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s4.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#ffffff; line-height:40px;}
+
+ul.Lsidemenu li.s2{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s2g.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#888888; line-height:40px;}
+ul.Lsidemenu li.s3{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s3g.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#888888; line-height:40px;}
+ul.Lsidemenu li.s4{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s4g.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#888888; line-height:40px;}
+
+ul.Lsidemenu li.s1ok{ width:147px; height:41px; background:url(../images/ol_purchase/L_bg_s1ok.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#888888; line-height:41px;}
+ul.Lsidemenu li.s2ok{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s2ok.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#888888; line-height:41px;}
+ul.Lsidemenu li.s3ok{ width:147px; height:40px; background:url(../images/ol_purchase/L_bg_s2ok.jpg) no-repeat top left; padding-left:31px; font-size:13px; color:#888888; line-height:41px;}
+
+/*Right Side Content*/
+.Rside a{ color:#ff7a03;}
+.Rside h3 strong, .Rside h3 em, .rt5_1 strong{ display:none;}
+.Rside h3.Rtitle{ text-align:right; padding-top:28px; margin-bottom:10px;}
+.rt1_1{ width:721px; height:269px; background:url(../images/ol_purchase/bg1_1.jpg) no-repeat top left; padding:17px 0 0 59px; margin-bottom:42px;}
+.rt2_1{ height:18px; background:url(../images/ol_purchase/title2_1.jpg) no-repeat top left;}
+.rt3_1{ height:19px; background:url(../images/ol_purchase/title3_1.jpg) no-repeat top left;}
+.rt4_1{ height:19px; background:url(../images/ol_purchase/title4_1.jpg) no-repeat top left;}
+h3.rt5_1{ width:421px; height:47px; background:url(../images/ol_purchase/title5_1.jpg) no-repeat top left; margin-top:28px 0 10px;}
+
+/*Index*/
+.mvclip{ width:365px; height:228px;}
+.tablechart1{ width:780px; height:531px; position:relative; margin-bottom:42px;}
+.tablechart1 a.buynow3000{ position:absolute; top:95px; left:139px; z-index:10;}
+.tablechart1 a.buynow5000{ position:absolute; top:95px; left:304px; z-index:10;}
+.tablechart1 a.buynow7000{ position:absolute; top:95px; left:467px; z-index:10;}
+.tablechart1 a.buynow9000{ position:absolute; top:95px; left:630px; z-index:10;}
+.tablechart1 a.cinfo1{ position:absolute; top:285px; left:94px; z-index:10;}
+.tablechart1 a.cinfo2{ position:absolute; top:408px; left:94px; z-index:10;}
+.rt1_3{ width:780px; height:399px; background:url(../images/ol_purchase/title1_3.gif) no-repeat top left;}
+.rt1_3 ul{ float:left; width:378px; padding:65px 0 0 10px;}
+.rt1_3 ul li{ list-style:none;}
+.rt1_3 ul li h4{ font-size:15px; font-weight:bold; background:url(../images/ol_purchase/ico_dot.gif) no-repeat left center; padding-left:15px;}
+.rt1_3 ul li p{ font-size:13px; margin-bottom:28px; padding-left:15px;}
+.rt1_3chart{ float:right; width:392px; height:399px;}
+
+/*Register and Form*/
+.RbdrT{ width:757px; height:20px; background:url(../images/ol_purchase/bdr_t.gif) no-repeat top left;}
+.RbdrM{ width:687px; background:url(../images/ol_purchase/bdr_m.gif) repeat-y top left; padding:10px 35px; font-size:15px;}
+.RbdrM h4{ font-size:15px; }
+.formA{ width:687px; margin:24px 0; color:#555555;}
+.formA .Ftitle{ width:120px; text-align:right; font-size:15px; color:#555555; height:33px; line-height:33px; float:left; margin-right:15px;}
+.formA .Ffield{ width:519px; font-size:15px; height:33px; line-height:33px; float:left;}
+.formA .Ffield input.iptext{ height:15px; font-size:15px;color:#888888;line-height: 15px;vertical-align:middle;background-color: #E0E0E0;border: 1px solid #d1d1d1; background-color: #ffffff;  outline: none; padding:9px 10px;}
+.formA .Ffield img{ vertical-align:middle;}
+.formA .Ffield span.Fcheck{ font-size:13px;}
+.formA .Ffield .Fstatement{ width:507px; height:95px; padding:10px; font-size:13px; line-height:1.5; overflow:auto; border:1px solid #b3b3b3; margin:10px 0;}
+.formA .Ffield .Fstatement strong{ display:block; font-weight:bold;}
+.formA .Ffield .Fstatement p{ margin:15px 0;}
+.formA .Ffield select.Fselect{ height:33px; font-size:15px; color:#888888; line-height: 33px; vertical-align:middle;background-color: #E0E0E0;border: 1px solid #d1d1d1; background-color: #ffffff; padding-left:10px; padding:5px 0 5px 10px\9;}
+.formA .Ffield ul.Ffrom{ width:300px;}
+.formA .Ffield ul.Ffrom li{ width:150px; height:30px; line-height:30px; list-style:none; float:left;}
+.formA .Ffield ul.Ffrom li input{ vertical-align:middle;}
+.RbdrB{ width:757px; height:17px; background:url(../images/ol_purchase/bdr_b.gif) no-repeat top left;}
+
+.FullbdrT{ width:962px; height:20px; background:url(../images/ol_purchase/bdr_t960.gif) no-repeat top left;}
+.FullbdrM{ width:792px; background:url(../images/ol_purchase/bdr_m960.gif) repeat-y top left; padding:45px 75px 45px 95px; font-size:15px;}
+.FullbdrM p.Fcnt{ line-height:1.8;}
+.FullbdrB{ width:962px; height:27px; background:url(../images/ol_purchase/bdr_b960.gif) no-repeat top left;}
+
+/*Payment*/
+table.PaymentTB1{ border-collapse:collapse;}
+table.PaymentTB1 th{ background-color:#e0e0e0; border:1px solid #cfcfcf; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB1 td{ background-color:#f5f5f5; border:1px solid #cfcfcf; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB1 td select.Fselect{ vertical-align:middle; background-color: #E0E0E0; border: 1px solid #d1d1d1;background-color: #ffffff; padding-left:10px; text-align:left;}
+.PriceL{  font-family: 微软雅黑, 黑体; font-size:30px; margin:5px 0;}
+
+table.PaymentTB3{ border-collapse:collapse;}
+table.PaymentTB3 th.W_onethird{ width:33.33%;}
+table.PaymentTB3 th{ background-color:#e0e0e0; border:1px solid #cfcfcf; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB3 td{ background-color:#ffffff; border:1px solid #cfcfcf; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+
+.UParrow{ width:25px; height:18px; background:url(../images/ol_purchase/arrow.png) no-repeat top left; margin:0 auto; top:-7px; left:323px; position:absolute;}
+.listBox{ width:649px; margin:0 auto; border:1px solid #cccccc; padding:10px;}
+table.PaymentTB2{ border-collapse:collapse;}
+table.PaymentTB2 th{ background-color:#f5f5f5; border-top:1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; border-left:none; border-right:none; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB2 td{ background-color:#ffffff; border-top:1px dotted #cfcfcf; border-bottom:1px dotted #cfcfcf; border-left:none; border-right:none; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB2 td.subT{ /*width:170px;*/ width:150px; text-align:center;}
+table.PaymentTB2 td select.Fselect{ vertical-align:middle; background-color: #E0E0E0; border: 1px solid #d1d1d1;background-color: #ffffff; padding-left:10px; text-align:left;}
+table.PaymentTB2 td ul.LOGOlist li{ width:210px; height:40px; line-height:40px; padding:0 0 0 10px; float:left; text-align:left; margin-bottom:10px;}
+table.PaymentTB2 td ul.LOGOlist li input, table.PaymentTB2 td ul.LOGOlist li img{ vertical-align:middle;}
+/*table.PaymentTB2{ border-collapse:collapse;}
+table.PaymentTB2 th{ background-color:#e0e0e0; border:1px solid #cfcfcf; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB2 td{ background-color:#ffffff; border:1px solid #cfcfcf; padding:10px; text-align:center; font-size:15px; font-weight:normal;}
+table.PaymentTB2 td.subT{ width:170px; text-align:center;}
+table.PaymentTB2 td select.Fselect{ vertical-align:middle; background-color: #E0E0E0; border: 1px solid #d1d1d1;background-color: #ffffff; padding-left:10px; text-align:left;}
+table.PaymentTB2 td ul.LOGOlist li{ width:210px; height:40px; line-height:40px; padding:0 0 0 10px; float:left; text-align:left; margin-bottom:10px;}
+table.PaymentTB2 td ul.LOGOlist li input, table.PaymentTB2 td ul.LOGOlist li img{ vertical-align:middle;}*/
+.choosePaymentArea{ margin:0 0 30px;}
+.cPTitleArea{ height:40px; line-height:40px; font-size:15px; font-weight:normal; background-color:#e0e0e0; border-top:1px solid #cfcfcf; border-bottom:1px dotted #cfcfcf; width:100%;}
+.cPTitleArea .cPTitle{ float:left; width:33%; text-align:center; height:40px; line-height:40px;}
+
+ul.cPlistArea li.cPlist{ height:40px; line-height:40px; font-size:15px; font-weight:normal; background-color:#ffffff; border-top:1px dotted #cfcfcf; width:100%;}
+ul.cPlistArea li.allPayment{ height:auto; padding:10px 0 10px; font-size:15px; font-weight:normal; background-color:#ffffff; width:100%; position:relative;}
+ul.cPlistArea li:first-child{border-top:none;}
+.cpprice, .cppayment, .cpstate{ float:left; width:33%; text-align:center; height:40px; line-height:36px; vertical-align:middle;}
+.cppayment img, .cpstate img{ vertical-align:middle; *padding-top:5px !important;}
+.cPpaid{ text-align:right;  padding-top:10px; margin-top:20px; border-top:1px solid #cccccc; padding-right:10px;}
+
+/*LightBox*/
+.lightBoxL{ position:relative; width:500px;}
+.lbClose{ position:absolute; right:-15px; top:-15px;}
+.lbT{ width:500px; height:33px; background:url(../images/ol_purchase/bg_LT.png) no-repeat top left;}
+.lbM{ width:400px; background-color:#ffffff; padding:0 50px; color:#55555; font-size:15px;}
+.lbM h4{ font-size:16px; font-weight:bold; color:#000000; margin-bottom:20px;}
+.lbM div.lbcnt{ height:33px; line-height:33px;padding-bottom:20px;}
+.lbM .lbcnt input.iptext{ height:15px; font-size:15px;color:#888888;line-height: 15px;vertical-align:middle;background-color: #E0E0E0;border: 1px solid #d1d1d1; background-color: #ffffff;  outline: none; padding:9px 10px; }
+.lbM .lbcnt img{ vertical-align:middle;}
+.lbM h4.lbwarning{ height:45px; line-height:45px;}
+.lbM h4.lbwarning img{ margin-right:10px; vertical-align:middle;}
+.lbM p.lbcnt{ padding-bottom:30px; color:#555555; line-height:1.8; padding-left:20px;}
+.lbB{ width:500px; height:30px; background:url(../images/ol_purchase/bg_LB.png) no-repeat top left;}
+.lightBoxL2{ position:relative; width:638px;}
+.lbT2{ width:638px; height:24px; background:url(../images/ol_purchase/bg_LT2.png) no-repeat top left;}
+.lbM2{ width:578px; background-color:#ffffff; padding:0 30px; color:#55555; font-size:15px;}
+
+.lbM2 h4{ font-size:16px; font-weight:bold; color:#000000; margin-bottom:20px;}
+.lbM2 div.lbcnt{ height:33px; line-height:33px;padding-bottom:20px;}
+.lbM2 .lbcnt input.iptext{ height:15px; font-size:15px;color:#888888;line-height: 15px;vertical-align:middle;background-color: #E0E0E0;border: 1px solid #d1d1d1; background-color: #ffffff;  outline: none; padding:9px 10px; }
+.lbM2 .lbcnt img{ vertical-align:middle;}
+.lbM2 h4.lbwarning{ height:45px; line-height:45px;}
+.lbM2 h4.lbwarning img{ margin-right:10px; vertical-align:middle;}
+.lbM2 p.lbcnt{ padding-bottom:30px; color:#555555; line-height:1.8; padding-left:20px;}
+
+.lbB2{ width:638px; height:26px; background:url(../images/ol_purchase/bg_LB2.png) no-repeat top left;}
+.lightBoxL3{ position:relative; width:800px; height:545px; padding:15px; background-color:#000000;}
+
+
+.lbnotice{ width:578px; overflow:auto; height:390px; margin-bottom:25px; font-size:13px; color:#555555; line-height:1.8;}
+.lbnotice h1, .lbnotice h2,  .lbnotice h3{ margin-bottom:20px; line-height:1.8; font-weight:bold;}
+.lbnotice p{ margin-bottom:15px; line-height:1.8;}

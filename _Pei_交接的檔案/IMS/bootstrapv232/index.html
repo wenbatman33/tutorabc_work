@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>TutorGroup - IMS</title>
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/index.css" rel="stylesheet">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+    <!--[if IE 6]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script>
+        function correctPNG()
+        {
+            for(var i=0; i<document.images.length; i++)
+            {
+                var img = document.images[i]
+                var imgName = img.src.toUpperCase()
+                if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+                {
+                    var imgID = (img.id) ? "id='" + img.id + "' " : ""
+                    var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+                    var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+                    var imgStyle = "display:inline-block;" + img.style.cssText
+                    if (img.align == "left") imgStyle = "float:left;" + imgStyle
+                    if (img.align == "right") imgStyle = "float:right;" + imgStyle
+                    if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+                    var strNewHTML = "<span "+ imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='image');\"></span>"
+                    img.outerHTML = strNewHTML
+                    i = i-1
+                }
+            }
+        }
+        window.attachEvent("onload", correctPNG);
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+  	 <script src="http://code.jquery.com/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>    
+<!--Header-->    
+     <div class="header">
+        <div class="topNav bg-black clearfix">
+           <div class=" container">
+                <ul class=" inline pull-left">
+                    <li><a href="#" title="TurtorABC">TurtorABC</a></li>
+                    <li><span class="divider">|</span></li>
+                    <li><a href="#" title="VIPABC">VIPABC</a></li>
+                     <li><span class="divider">|</span></li>
+                    <li><a href="#" title="TurtorABCJr">TurtorABCJr</a></li>
+                     <li><span class="divider">|</span></li>
+                    <li><a href="#" title="TurtorMing">TurtorMing</a></li>
+                </ul>
+                <ul class="inline pull-right logout">
+                    <li><a href="#">logout</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class=" bg-red">
+          <div class=" container">
+            <div class="row topContent">
+                <div class="span3"><img src="images/logo_TutorGroup.png" alt="TutorGroup Logo" title="TutorGroup"/></div>
+                <div class="span5 offset4">
+                  <div class="loginArea clearfix">
+                    <div class=" pull-right"><input type="text" class="span2"/> <input type="button" value="submit" class="btn btn-darkred no-border"/></div>
+                    <div class=" inline text-right pull-right color-white checkinTime">check in<br/><span class=" color-pink">2013/12/12 18:00</span></div>              
+                    </div>
+                </div>
+            </div>
+            <div class="row" style=" margin-bottom:0;">
+            	<div class="MainNav span11">
+                	<ul class=" inline">
+                      <li><a href="#">Business</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Customer Service</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Teaching Center</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Session Monitoring</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Marketing</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Employee</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Management</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Web Master</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Policy</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">CheckIn System</a></li>
+                  </ul>
+                </div>
+                <div class="span1 checkArea">
+                	<ul class=" inline">
+                      <li class=" clearfix">
+                        <a href="#" class="extensionBtn" title="Extension Query"><span class=" hide">Extension Query</span></a>
+                        <a href="#" class="messageCheckBtn" title="Message Check"><span class=" hide">Message Check</span></a>
+                      </li>                 
+                    </ul>  
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class=" bg-gray verticalSpace">
+      	<div class=" container">
+<!--Compliment-->        
+        	<div class="row">
+            	<div class="span12"> 
+                             
+                <div class="compliment-section clearfix">
+                	<strong class="title">Compliment</strong>
+                    <div class="content">
+                    <marquee scrolldelay="10" scrollamount="3">Josh Tsai：Jocelyn顧問對我不懂的地方,迅速的以簡單字彙解釋,讓我明白更多,並協助我以更簡潔完整的方式表達出來,非常感謝她。上課認真親切，耐心指導，將學員所說的句子打在白板上，還協助優化造句，讓語意表達更清楚造句文法更正確。謝謝!Alan教學非常仔細，發音、文法、字彙的詞性和英文思考脈絡都會特別提醒，再加上清晰的發音與沉穩且明確的教法，謝謝他!老師很親切且活潑...上課方式不會死板板ㄉ...很輕鬆的學習!</marquee>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        
+            <div class="row">
+<!--Calendar-->            
+              <div class="span3">              	
+                <div class="boxSet calendar-section">
+                	<div class="box-top"><strong class=" pull-left">September 2013</strong><a href="#">Pre</a><a href="#">Next</a></div>
+                    <div class="box-content">
+                    	<table width="100%" border="0" class="datepicker-calendar">
+                          <tr>
+                            <th><span title="Monday">M</span></th>
+                            <th><span title="Tuesday">T</span></th>
+                            <th><span title="Wednesday">W</span></th>
+                            <th><span title="Thursday">T</span></th>
+                            <th><span title="Friday">F</span></th>
+                            <th class="weekend"><span title="Saturday">S</span></th>
+                            <th class="weekend"><span title="Sunday">S</span></th>
+                          </tr>	
+                          <tr>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="weekend">1</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td class="weekend">7</td>
+                            <td class=" weekend">8</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="today">11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td class="weekend">14</td>
+                            <td class="weekend">15</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td class="weekend">21</td>
+                            <td class="weekend">22</td>
+                          </tr>
+                          <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td class="weekend">28</td>
+                            <td class="weekend">29</td>
+                          </tr>
+                          <tr>
+                            <td class=" color-red">30</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                            <td class="blank">&nbsp;</td>
+                          </tr>
+                        </table>
+                    </div>
+                </div>               
+              </div>
+<!--Announcement-->              
+              <div class="span6">
+                <div class="boxSet announcement-section">
+                	<div class="box-top"><strong class=" pull-left">Announcement</strong><a href="#">Edit</a></div>
+                    <div class="box-content">
+                    	<strong><span class=" color-red">Hotline</span> 專線：0982-681677</strong>
+                        <div class="scrollbar" style=" height:130px;">
+                        	<table width="100%" border="0" class="table table-horizontal table-condensed">                            
+                              <tr>
+                                <td class="title"><a href="#">FD晉升公告-徐瑞鴻（Reynold Hsu）</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="title"><a href="#">FD晉升公告-徐瑞鴻（Reynold Hsu）</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>                             
+                              <tr>
+                                <td class="title"><a href="#">FD晉升公告-徐瑞鴻（Reynold Hsu）</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="title"><a href="#">FD晉升公告-徐瑞鴻（Reynold Hsu）</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                               <tr>
+                                <td class="title"><a href="#">FD晉升公告-徐瑞鴻（Reynold Hsu）</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="title"><a href="#">同仁申請6月份之事假、病假、忘刷等，最遲請於7月2日下班前完成申請及核可程序 </a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="title"><a href="#">FD晉升公告-徐瑞鴻（Reynold Hsu）</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+<!--Search-->              
+              <div class="span3">              	
+                <div class="boxSet search-section">
+                	<div class="box-top"><strong class=" pull-left">Search</strong><a href="#">Advanced Search</a></div>
+                    <div class="box-content">
+                    	<input class="btn-block" type="text" value="Name" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Name';}" />
+                        <input class="btn-block" type="text" value="Email" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Email';}" />
+                        <input class="btn-block" type="text" value="Phone" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Phone';}" />
+                        <input type="button" class="btn btn-normal btn-long" value="Submit" style=" margin-top:5px;"/>
+                    </div>
+                </div>               
+              </div>
+            </div>
+            
+        	<div class="row">
+              <div class="span3">
+<!--note-->              
+              	<div class="boxSet boxSet-bottomspace note-section">
+                	<div class="box-top"><strong class=" pull-left">Abcdefgh's Note</strong><a href="#">Edit</a></div>
+                    <div class="box-content">
+                    <!--無工作日誌狀態-->
+                        <!--<ul>
+                        	<li>別忘了寫工作日誌哦！</li>
+                        </ul>-->
+                    <!--有工作日誌狀態-->
+                    	<ul>
+                        	<li><a href="#">今日工作日誌 (1)</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--to do list-->                
+                <div class="boxSet boxSet-bottomspace todo-section">
+                	<div class="box-top"><strong class=" pull-left">Abcdefgh's  to do list</strong><a href="#">List</a></div>
+                    <div class="box-content">
+                    	<ul>
+                        	<li><a href="#">今日未處理客戶 (11)</a></li>
+                            <li><a href="#">未過期待處理客戶 (3)</a></li>
+                            <li><a href="#">已過期未處理 (11)</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--BD-->               
+                <div class="boxSet boxSet-bottomspace bd-section">
+                	<div class="box-top"><strong class=" pull-left">BD Area</strong></div>
+                    <div class="box-content">
+                    	<ul>
+                        	<li><a href="#">VIPABC</a></li>
+                            <li><a href="#">TutorABC</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--Test Session Room-->                
+                <div class="boxSet boxSet-bottomspace testroom-section">
+                	<div class="box-top"><strong class=" pull-left">Test Session Room</strong></div>
+                    <div class="box-content">
+                    	<ul>
+                        	<li><a href="#">TutorMeet測試教室</a></li>
+                            <li><a href="#">TutorMeet大會堂測試</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--Proposal / Request-->                
+                <div class="boxSet boxSet-bottomspace proposal-section">
+                	<div class="box-top"><strong class=" pull-left">Proposal / Request</strong></div>
+                    <div class="box-content">
+                    	<ul>
+                        	<li><a href="#">An idea...</a></li>
+                            <li><a href="#">只要有一個…系統</a></li>
+                            <li><a href="#">寫出對公司或產品任何建議，將可獲得一份神秘禮物(可匿名)</a></li>
+                            <li><a href="#">Technical Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--Employee Information-->                
+                <div class="boxSet boxSet-bottomspace employee-section">
+                	<div class="box-top"><strong class=" pull-left">Employee Information</strong></div>
+                    <div class="box-content">
+                    	<dl>
+                        	<dt>New Stuff</dt>
+                            <dd>Flora Fu,Flora Fu,Flora Fu,Flora Fu,Flora Fu,Flora Fu,Flora Fu,Flora Fu,Flora Fu,Flora Fu,</dd>
+                            
+                            <dt>Birthday</dt>
+                            <dd>
+                            	<ul>
+                                	<li>Flora Fu</li>
+                                    <li>Flora Fu</li>
+                                    <li>Flora Fu</li>
+                                    <li>Flora Fu</li>
+                                </ul>
+                            </dd>
+                            
+                            <dt>Tomorrow Birthday</dt>
+                            <dd>
+                            	<ul>
+                                	<li>Flora Fu</li>
+                                    <li>Flora Fu</li>
+                                    <li>Flora Fu</li>
+                                    <li>Flora Fu</li>
+                                </ul>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </div>
+              </div>
+              
+              
+              <div class="span9">
+<!--Employee Status-->
+              	<div class="boxSet boxSet-bottomspace employee-section">
+                	<div class="box-top"><strong class=" pull-left">Employee Status</strong></div>
+                    <div class="box-content clearfix">
+                    
+                        <div class="pull-left" style=" width:330px;">
+                          <strong>Staff Information</strong>
+                          <div class="scrollbar" style=" height:150px;">
+                              <table width="100%" border="0" class="table table-horizontal table-condensed">
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Bingley Zhang</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>加班補休</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                              </table>
+                          </div>
+                        </div>
+                        
+                         <div class="pull-right" style=" width:330px;">
+                          <strong>Manager Information</strong>
+                          <div class="scrollbar" style=" height:150px;">
+                              <table width="100%" border="0" class="table table-horizontal table-condensed">
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Bingley Zhang</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>加班補休</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                                <tr>
+                                  <td>Reynold Hsu</td>
+                                  <td>2013/07/01 12:00~22:00</td>
+                                  <td>特休假</td>
+                                </tr>
+                              </table>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div>
+<!--New Media-->
+              	<div class="boxSet boxSet-bottomspace media-section">
+                	<div class="box-top"><strong class=" pull-left">New Media</strong></div>
+                    <div class="box-content">
+                        <strong class="clearfix">
+                          <div class="media pull-left">媒體類別 / 細項</div>
+                          <div class="title pull-left">媒體來源</div>
+                        </strong>
+                        <div class="scrollbar" style=" height:150px;">
+                            <table width="100%" border="0" class="table table-horizontal table-condensed">
+                             <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">Internet / Yahoo</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>                             
+                              <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">Speech / 智富</td>
+                                <td class="title"><a href="#">智富 20120919【Smart智富員工推薦】填名單送有聲書</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+<!--Notification-->
+              	<!--<div class="boxSet boxSet-bottomspace notification-section">
+                	<div class="box-top"><strong class=" pull-left">Notification</strong><a href="#">Add</a><a href="#">Old</a></div>
+                    <div class="box-content">
+                        <div class="scrollbar" style=" height:150px;">
+                            <table width="100%" border="0" class="table table-horizontal table-condensed">
+                              <tr>
+                                <td class="media">TutorABC</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">TutorABC</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">TutorABC</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">TutorMing</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">TutorABC</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">TutorABCJr</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                              <tr>
+                                <td class="media">TutorABC</td>
+                                <td class="title"><a href="#">獎勵2013台大校園招募菁英徵才活動有功人員</a></td>
+                                <td>Reynold Hsu</td>
+                                <td>2013/07/01</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>-->
+<!--Customer Care-->
+              	<div class="boxSet boxSet-bottomspace customer-section">
+                	<div class="box-top"><strong class=" pull-left">Customer Care</strong></div>
+                    <div class="box-content">
+                    	<dl>
+                        	<dt>Compliment</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>Suggestions</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>New Client</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>Expiring</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>Birthday</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>Trial</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>Not Upgraded</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+                            
+                            <dt>Upgraded</dt>
+                            <dd><a href="#">Flora Fu</a>,<a href="#">Flora Fu</a>,<a href="#">Flora Fu</a></dd>
+
+                        </dl>
+                    </div>
+                </div>
+              </div>
+            </div>
+<!--Footer-->            
+            <div class="row">
+            	<div class="span12  text-center  color-gray footer">Copyright © 2013 TutorABC Inc. All rights reserved. </div>
+            </div>
+            
+            
+        </div>
+      </div>
+      
+  </body>
+</html>

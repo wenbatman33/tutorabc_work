@@ -1,0 +1,318 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../登入_註冊會員_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:53px;
+    top:57px;
+    width:994px;
+    height:287px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:994px;
+    height:287px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:136px;
+    width:990px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:53px;
+    top:28px;
+    width:200px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../登入_註冊會員_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:1068px;
+    top:57px;
+    width:995px;
+    height:500px;
+}
+
+#u3_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:995px;
+    height:500px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:242px;
+    width:991px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../登入_註冊會員_files/u5_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:53px;
+    top:710px;
+    width:929px;
+    height:889px;
+}
+
+#u5_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:929px;
+    height:889px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:436px;
+    width:925px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:60px;
+    top:691px;
+    width:200px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../登入_註冊會員_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:1079px;
+    top:1790px;
+    width:973px;
+    height:583px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:973px;
+    height:583px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:284px;
+    width:969px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:80px;
+    top:1771px;
+    width:200px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../登入_註冊會員_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:80px;
+    top:1800px;
+    width:956px;
+    height:589px;
+}
+
+#u11_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:956px;
+    height:589px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:286px;
+    width:952px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../登入_註冊會員_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:856px;
+    top:2528px;
+    width:604px;
+    height:592px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:604px;
+    height:592px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:288px;
+    width:600px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:120px;
+    top:2481px;
+    width:200px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../登入_註冊會員_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:120px;
+    top:2510px;
+    width:638px;
+    height:530px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:638px;
+    height:530px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:257px;
+    width:634px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

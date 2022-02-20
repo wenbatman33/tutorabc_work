@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tableBox{ margin:20px 0;}
+/*html{overflow-x:hidden;}*/
+/*html .tableBox iframe.form{overflow-x:hidden;}*/
+
+caption.title{ font-size:16px; font-weight:bold; margin:20px 0; display:none;}
+.zebra{ background-color:#f2f2f2;}
+
+/*==========Table Type==========*/
+table.Vtb01{ border-collapse:collapse; line-height:1.8;}
+table.Vtb01 th{ border:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:12px; text-align:center; padding:5px 2px;}
+table.Vtb01 td{ border:1px solid #d3d3d3; font-size:12px; padding:5px 2px; text-align:center;}
+
+table.Vtb01a{ border-collapse:collapse; line-height:1.8;}
+table.Vtb01a th{ border:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:13px; text-align:center; padding:5px 2px;}
+table.Vtb01a th.sub{ background-color:#999999; text-align:left; padding:5px 10px;}
+table.Vtb01a td{ border:1px solid #d3d3d3; font-size:13px; padding:5px 2px; text-align:center;}
+
+table.Vtb02{ border-collapse:collapse; line-height:1.8;}
+table.Vtb02 th{ border:1px solid #d3d3d3; background-color:#666666; color:#ffffff; font-size:12px; text-align:center; padding:5px 2px;}
+table.Vtb02 th.sub{ background-color:#999999;}
+table.Vtb02 td{ border:1px solid #d3d3d3; font-size:12px; padding:5px 2px; text-align:center;}
+
+table.Htb01{ border-collapse:collapse; line-height:1.8;}
+table.Htb01 th{ border:1px solid #d3d3d3; background-color:#f2f2f2; font-size:13px; text-align:right; padding:10px;}
+table.Htb01 th.sub{ background-color:#666666; text-align:center; color:#ffffff;}
+table.Htb01 td{ border:1px solid #d3d3d3; font-size:13px; padding:10px; text-align:left;}
+table.Htb01 td.textalignC, table.Htb01 th.textalignC{ text-align:center;}
+
+/*index*/
+table.Vtb03_dot{ border-collapse:collapse; line-height:1.8;}
+table.Vtb03_dot td{ border-top:1px dotted #aeaeae; border-bottom:1px dotted #aeaeae; padding:2px 0; vertical-align:top;}
+
+/*index Calendar*/
+table.tbCalendar{border-collapse:collapse;}
+table.tbCalendar td{ padding:2px; text-align:center; font-size:12px; width:14.2%;}
+table.tbCalendar td.current{ background:url(../images/index/Calendar/calendar_today.png) no-repeat 50% 50%; color:#ffffff;}
+
+/*==========Grid==========*/
+/*H2*/
+table.typeH2 th{ width:20%; vertical-align:top;}
+table.typeH2 td{ width:30%;}
+table.typeH2a th{ width:15%; vertical-align:top;}
+table.typeH2a td{ width:85%;}
+table.typeH2b th{ width:5%; vertical-align:top; text-align:center;}
+table.typeH2b td{ width:95%;}
+table.typeH2c th{ width:10%;}
+table.typeH2c td{ width:40%;}
+table.typeH2f th{ width:190px; vertical-align:top;}
+table.typeH2f td{ }
+/*V4*/
+table.typeV4 th, table.typeV4 td{ width:25%;}
+/*V5*/
+table.typeV5 th, table.typeV5 td{ width:20%;}
+/*V6*/
+table.typeV6 th, table.typeV6 td{ width:16.66%;}
+/*V7*/
+table.typeV7 th, table.typeV7 td{ width:14.28%;}
+/*V8*/
+table.typeV8 th, table.typeV8 td{ width:12.5%;}
+/*V9*/
+table.typeV9 th, table.typeV9 td{ width:11.11%;}
+/*V13*/
+table.typeV13 th, table.typeV13 td{ width:7.69%;}
+
+/*==========Table內外區塊設定==========*/
+.tbRightTop{ text-align:right; margin:10px 0; font-size:13px;}
+.tbLeftTop{ text-align:left; margin:10px 0; font-size:13px;}
+.tbRightTop img, .tbLeftTop img{ vertical-align:middle;}
+
+.tdcontent{ text-align:left; padding:10px; }
+
+table td.t-right{ text-align:right; padding:0 10px;}
+table th.checkbox{ vertical-align:middle; background-color:#ffffff; width:20px;}
+table th input{ vertical-align:middle;}
+table td span img{ vertical-align:middle; margin:0 1px;}
+table td span.group img{ vertical-align:middle; margin:0 1px;}
+table td a img{ vertical-align:middle;}
+table td img{ vertical-align:middle;}
+
+ul.listing{ text-align:left; padding:0 10px;}
+ul.listing li{ list-style:none;}
+.listingTitle{ float:left; width:105px; height:16px; line-height:16px; padding:3px 0;}
+.listingCnt{ float:left; width:80px; height:16px; line-height:16px; padding:3px 0;}
+.listingCnt img{ vertical-align:middle;}
+
+.listingTwidthA{ width:120px;}
+.listingCwidthA{ width:150px;}
+ul.listing2{ text-align:left; padding:0 10px;}
+ul.listing2 li{ list-style:none; width:33.33%; float:left; margin-bottom:5px;}
+ul.listing2 li input[type|="text"]{ width:110px;}
+ul.listing2 li .listingTitle{ float:left; width:89px;}
+ul.listing2 li .listingCnt{ float:left; width:89px;}
+
+ul.listing3{ text-align:left; padding:0 10px;}
+ul.listing3 li{ list-style:none; border-top:1px dotted #cccccc;}
+ul.listing3 li:first-child{border-top:none;}
+
+.exborder{ width:800px; height:350px;}/*iframe border for Analysis table pages*/
+.followup{ text-align:left; padding:10px; margin-top:10px; border-top:1px solid #ccc;}
+
+/*==========客戶課後回饋 Icon==========*/
+.Ico_new{ background-color:#ff76c3; padding:1px 3px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.Ico_first{ background-color:#45a22f; padding:1px 3px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.Ico_vip{ background-color:#f0b500; padding:1px 3px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.Ico_complaint{ background-color:#333333; padding:1px 3px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.Ico_angry{ background-color:#990000; padding:1px 3px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.Ico_class{ background-color:#0088de; padding:1px 2px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.TutorMeet{ background-color:#334e66; padding:1px 2px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+.JoinNet{ background-color:#d01731; padding:1px 2px; margin:0 1px; color:#ffffff; font-size:11px; width:11px; height:11px;}
+
+
+
+

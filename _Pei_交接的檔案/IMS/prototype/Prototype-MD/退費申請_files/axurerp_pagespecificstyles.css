@@ -1,0 +1,9035 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../退費申請_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:-49px;
+    top:12px;
+    width:1402px;
+    height:1631px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1402px;
+    height:1631px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:808px;
+    width:1398px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../退費申請_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:39px;
+    top:205px;
+    width:1226px;
+    height:1374px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1232px;
+    height:1380px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:679px;
+    width:1222px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../退費申請_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:21px;
+    top:158px;
+    width:1235px;
+    height:28px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1241px;
+    height:34px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:1231px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:50px;
+    top:164px;
+    width:89px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:158px;
+    top:164px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:286px;
+    top:164px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_line {
+    background-image: url('../退費申請_files/u9_line.png');
+}
+
+.u9_line {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:1219px;
+    height:5px;
+}
+
+.u9 {
+    position:absolute;
+    left:37px;
+    top:270px;
+    width:1219px;
+    height:10px;
+    
+}
+
+.u10_normal {
+    background-image: url('../退費申請_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:69px;
+    top:308px;
+    width:1136px;
+    height:45px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1142px;
+    height:51px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:1132px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:136px;
+    top:393px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../退費申請_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:92px;
+    top:385px;
+    width:33px;
+    height:34px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:33px;
+    height:34px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:29px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:305px;
+    top:215px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:343px;
+    top:214px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:358px;
+    top:215px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:405px;
+    top:215px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:470px;
+    top:215px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:484px;
+    top:215px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:523px;
+    top:215px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:538px;
+    top:215px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:603px;
+    top:215px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:618px;
+    top:215px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:657px;
+    top:215px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:769px;
+    top:214px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:784px;
+    top:214px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28 {
+    position:absolute;
+    left:832px;
+    top:214px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29 {
+    position:absolute;
+    left:844px;
+    top:214px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30 {
+    position:absolute;
+    left:915px;
+    top:214px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31 {
+    position:absolute;
+    left:930px;
+    top:214px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32 {
+    position:absolute;
+    left:995px;
+    top:214px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:1010px;
+    top:214px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34 {
+    position:absolute;
+    left:393px;
+    top:214px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u35 {
+    position:absolute;
+    left:297px;
+    top:497px;
+    width:843px;
+    height:994px;
+    overflow:hidden;
+}
+
+#pd0u35 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:843px;
+    height:994px;
+    
+}
+
+#u36 {
+    position:absolute;
+    left:0px;
+    top:53px;
+    width:847px;
+    height:329px
+}
+
+.u37_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:44px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../退費申請_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:737px;
+    height:44px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:50px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../退費申請_files/u41_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:0px;
+    top:44px;
+    width:105px;
+    height:36px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:42px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../退費申請_files/u43_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:105px;
+    top:44px;
+    width:737px;
+    height:36px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:42px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../退費申請_files/u45_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:105px;
+    height:104px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:110px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:44px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../退費申請_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:105px;
+    top:80px;
+    width:737px;
+    height:104px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:110px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../退費申請_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:0px;
+    top:184px;
+    width:105px;
+    height:140px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:146px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:62px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../退費申請_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:105px;
+    top:184px;
+    width:737px;
+    height:140px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:146px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:137px;
+    top:62px;
+    width:126px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u54 {
+    position:absolute;
+    left:137px;
+    top:106px;
+    width:126px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u55 {
+    position:absolute;
+    left:291px;
+    top:106px;
+    width:152px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u56 {
+    position:absolute;
+    left:137px;
+    top:144px;
+    width:512px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u58 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:212px;
+    top:246px;
+    width:75px;
+    height:26px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:212px;
+    top:294px;
+    width:75px;
+    height:26px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u66 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:212px;
+    top:339px;
+    width:75px;
+    height:26px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u70 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:389px;
+    top:245px;
+    width:75px;
+    height:26px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:389px;
+    top:289px;
+    width:75px;
+    height:26px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:391px;
+    top:333px;
+    width:75px;
+    height:26px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:562px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:562px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:564px;
+    top:331px;
+    width:75px;
+    height:26px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:732px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u95_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:732px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u99_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u101 {
+    position:absolute;
+    left:0px;
+    top:533px;
+    width:847px;
+    height:404px
+}
+
+.u102_normal {
+    background-image: url('../退費申請_files/u102_normal.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:107px;
+    height:41px;
+}
+
+#u102_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:47px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../退費申請_files/u104_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:107px;
+    top:0px;
+    width:735px;
+    height:41px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:47px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../退費申請_files/u106_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:0px;
+    top:41px;
+    width:107px;
+    height:44px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:50px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:107px;
+    top:41px;
+    width:735px;
+    height:44px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../退費申請_files/u106_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:0px;
+    top:85px;
+    width:107px;
+    height:44px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:50px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:107px;
+    top:85px;
+    width:735px;
+    height:44px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../退費申請_files/u114_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:0px;
+    top:129px;
+    width:107px;
+    height:43px;
+}
+
+#u114_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:49px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../退費申請_files/u116_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:107px;
+    top:129px;
+    width:735px;
+    height:43px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:49px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118_normal {
+    background-image: url('../退費申請_files/u118_normal.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:0px;
+    top:172px;
+    width:107px;
+    height:39px;
+}
+
+#u118_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:45px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../退費申請_files/u120_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:107px;
+    top:172px;
+    width:735px;
+    height:39px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:45px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../退費申請_files/u122_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:0px;
+    top:211px;
+    width:107px;
+    height:37px;
+}
+
+#u122_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:43px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../退費申請_files/u124_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:107px;
+    top:211px;
+    width:735px;
+    height:37px;
+}
+
+#u124_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:43px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_normal {
+    background-image: url('../退費申請_files/u126_normal.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:0px;
+    top:248px;
+    width:107px;
+    height:36px;
+}
+
+#u126_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:42px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128_normal {
+    background-image: url('../退費申請_files/u128_normal.png');
+}
+
+.u128_container {
+    position:absolute;
+    left:107px;
+    top:248px;
+    width:735px;
+    height:36px;
+}
+
+#u128_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:42px;
+}
+
+.u129 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130_normal {
+    background-image: url('../退費申請_files/u130_normal.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:0px;
+    top:284px;
+    width:107px;
+    height:115px;
+}
+
+#u130_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:121px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:50px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132_normal {
+    background-image: url('../退費申請_files/u132_normal.png');
+}
+
+.u132_container {
+    position:absolute;
+    left:107px;
+    top:284px;
+    width:735px;
+    height:115px;
+}
+
+#u132_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:121px;
+}
+
+.u133 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:574px;
+    top:548px;
+    width:98px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141_normal {
+    background-image: url('../退費申請_files/u141_normal.png');
+}
+
+.u141_container {
+    position:absolute;
+    left:643px;
+    top:543px;
+    width:109px;
+    height:26px;
+}
+
+#u141_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:32px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u147_container {
+    position:absolute;
+    left:126px;
+    top:627px;
+    width:144px;
+    height:23px;
+}
+
+#u147_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u148 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u151_container {
+    position:absolute;
+    left:126px;
+    top:671px;
+    width:144px;
+    height:23px;
+}
+
+#u151_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u152 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161 {
+    position:absolute;
+    left:128px;
+    top:752px;
+    width:139px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u162_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u162_container {
+    position:absolute;
+    left:127px;
+    top:787px;
+    width:144px;
+    height:23px;
+}
+
+#u162_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u163 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u164 {
+    position:absolute;
+    left:99px;
+    top:376px;
+    width:748px;
+    height:164px
+}
+
+.u165_normal {
+    background-image: url('../退費申請_files/u165_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:38px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:44px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_normal {
+    background-image: url('../退費申請_files/u167_normal.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:643px;
+    height:38px;
+}
+
+#u167_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:44px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169_normal {
+    background-image: url('../退費申請_files/u169_normal.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:0px;
+    top:38px;
+    width:100px;
+    height:40px;
+}
+
+#u169_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:46px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171_normal {
+    background-image: url('../退費申請_files/u171_normal.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:100px;
+    top:38px;
+    width:643px;
+    height:40px;
+}
+
+#u171_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:46px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173_normal {
+    background-image: url('../退費申請_files/u173_normal.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:0px;
+    top:78px;
+    width:100px;
+    height:45px;
+}
+
+#u173_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:51px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175_normal {
+    background-image: url('../退費申請_files/u175_normal.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:100px;
+    top:78px;
+    width:643px;
+    height:45px;
+}
+
+#u175_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:51px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177_normal {
+    background-image: url('../退費申請_files/u177_normal.png');
+}
+
+.u177_container {
+    position:absolute;
+    left:0px;
+    top:123px;
+    width:100px;
+    height:36px;
+}
+
+#u177_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:42px;
+}
+
+.u178 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u179_normal {
+    background-image: url('../退費申請_files/u179_normal.png');
+}
+
+.u179_container {
+    position:absolute;
+    left:100px;
+    top:123px;
+    width:643px;
+    height:36px;
+}
+
+#u179_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:42px;
+}
+
+.u180 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181_normal {
+    background-image: url('../退費申請_files/u181_normal.png');
+}
+
+.u181_container {
+    position:absolute;
+    left:0px;
+    top:376px;
+    width:105px;
+    height:158px;
+}
+
+#u181_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:164px;
+}
+
+.u182 {
+    position:absolute;
+    left:2px;
+    top:71px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u183_container {
+    position:absolute;
+    left:223px;
+    top:420px;
+    width:470px;
+    height:28px;
+}
+
+#u183_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u184 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u185_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u185_container {
+    position:absolute;
+    left:223px;
+    top:464px;
+    width:470px;
+    height:28px;
+}
+
+#u185_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u186 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u187_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u187_container {
+    position:absolute;
+    left:223px;
+    top:502px;
+    width:470px;
+    height:28px;
+}
+
+#u187_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u188 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u189 {
+    position:absolute;
+    left:126px;
+    top:831px;
+    width:581px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u190_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u190_container {
+    position:absolute;
+    left:223px;
+    top:382px;
+    width:470px;
+    height:28px;
+}
+
+#u190_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u191 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u192 {
+    position:absolute;
+    left:355px;
+    top:958px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u193_normal {
+    background-image: url('../退費申請_files/u193_normal.png');
+}
+
+.u193_container {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:180px;
+    height:50px;
+}
+
+#u193_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:56px;
+}
+
+.u194 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u195_normal {
+    background-image: url('../退費申請_files/u195_normal.png');
+}
+
+.u195_container {
+    position:absolute;
+    left:180px;
+    top:12px;
+    width:180px;
+    height:41px;
+}
+
+#u195_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:47px;
+}
+
+.u196 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u197 {
+    position:absolute;
+    left:297px;
+    top:497px;
+    width:843px;
+    height:880px;
+    overflow:hidden;
+}
+
+#pd0u197 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:843px;
+    height:880px;
+    
+}
+
+#u198 {
+    position:absolute;
+    left:-1px;
+    top:53px;
+    width:847px;
+    height:329px
+}
+
+.u199_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u199_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:44px;
+}
+
+#u199_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u200 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u201_normal {
+    background-image: url('../退費申請_files/u39_normal.png');
+}
+
+.u201_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:737px;
+    height:44px;
+}
+
+#u201_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:50px;
+}
+
+.u202 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u203_normal {
+    background-image: url('../退費申請_files/u41_normal.png');
+}
+
+.u203_container {
+    position:absolute;
+    left:0px;
+    top:44px;
+    width:105px;
+    height:36px;
+}
+
+#u203_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:42px;
+}
+
+.u204 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u205_normal {
+    background-image: url('../退費申請_files/u43_normal.png');
+}
+
+.u205_container {
+    position:absolute;
+    left:105px;
+    top:44px;
+    width:737px;
+    height:36px;
+}
+
+#u205_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:42px;
+}
+
+.u206 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u207_normal {
+    background-image: url('../退費申請_files/u45_normal.png');
+}
+
+.u207_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:105px;
+    height:104px;
+}
+
+#u207_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:110px;
+}
+
+.u208 {
+    position:absolute;
+    left:2px;
+    top:44px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u209_normal {
+    background-image: url('../退費申請_files/u47_normal.png');
+}
+
+.u209_container {
+    position:absolute;
+    left:105px;
+    top:80px;
+    width:737px;
+    height:104px;
+}
+
+#u209_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:110px;
+}
+
+.u210 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u211_normal {
+    background-image: url('../退費申請_files/u49_normal.png');
+}
+
+.u211_container {
+    position:absolute;
+    left:0px;
+    top:184px;
+    width:105px;
+    height:140px;
+}
+
+#u211_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:146px;
+}
+
+.u212 {
+    position:absolute;
+    left:2px;
+    top:62px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u213_normal {
+    background-image: url('../退費申請_files/u51_normal.png');
+}
+
+.u213_container {
+    position:absolute;
+    left:105px;
+    top:184px;
+    width:737px;
+    height:140px;
+}
+
+#u213_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:146px;
+}
+
+.u214 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u215 {
+    position:absolute;
+    left:137px;
+    top:62px;
+    width:126px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u216 {
+    position:absolute;
+    left:137px;
+    top:106px;
+    width:126px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u217 {
+    position:absolute;
+    left:291px;
+    top:106px;
+    width:152px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u218 {
+    position:absolute;
+    left:137px;
+    top:144px;
+    width:512px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u220 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u221_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u221_container {
+    position:absolute;
+    left:212px;
+    top:246px;
+    width:75px;
+    height:26px;
+}
+
+#u221_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u222 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u224 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u225_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u225_container {
+    position:absolute;
+    left:212px;
+    top:294px;
+    width:75px;
+    height:26px;
+}
+
+#u225_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u226 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u228 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u229_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u229_container {
+    position:absolute;
+    left:212px;
+    top:339px;
+    width:75px;
+    height:26px;
+}
+
+#u229_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u230 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u232 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u233_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u233_container {
+    position:absolute;
+    left:389px;
+    top:245px;
+    width:75px;
+    height:26px;
+}
+
+#u233_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u234 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u236 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u237_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u237_container {
+    position:absolute;
+    left:389px;
+    top:289px;
+    width:75px;
+    height:26px;
+}
+
+#u237_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u238 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u240 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u241_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u241_container {
+    position:absolute;
+    left:391px;
+    top:333px;
+    width:75px;
+    height:26px;
+}
+
+#u241_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u242 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u244 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u245_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u245_container {
+    position:absolute;
+    left:562px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u245_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u246 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u248 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u249_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u249_container {
+    position:absolute;
+    left:562px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u249_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u250 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u252 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u253_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u253_container {
+    position:absolute;
+    left:564px;
+    top:331px;
+    width:75px;
+    height:26px;
+}
+
+#u253_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u254 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u256 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u257_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u257_container {
+    position:absolute;
+    left:732px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u257_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u258 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u260 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u261_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u261_container {
+    position:absolute;
+    left:732px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u261_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u262 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u263 {
+    position:absolute;
+    left:1px;
+    top:377px;
+    width:845px;
+    height:404px
+}
+
+.u264_normal {
+    background-image: url('../退費申請_files/u264_normal.png');
+}
+
+.u264_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:41px;
+}
+
+#u264_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:47px;
+}
+
+.u265 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u266_normal {
+    background-image: url('../退費申請_files/u104_normal.png');
+}
+
+.u266_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:735px;
+    height:41px;
+}
+
+#u266_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:47px;
+}
+
+.u267 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u268_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u268_container {
+    position:absolute;
+    left:0px;
+    top:41px;
+    width:105px;
+    height:44px;
+}
+
+#u268_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u269 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u270_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u270_container {
+    position:absolute;
+    left:105px;
+    top:41px;
+    width:735px;
+    height:44px;
+}
+
+#u270_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u271 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u272_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u272_container {
+    position:absolute;
+    left:0px;
+    top:85px;
+    width:105px;
+    height:44px;
+}
+
+#u272_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u273 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u274_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u274_container {
+    position:absolute;
+    left:105px;
+    top:85px;
+    width:735px;
+    height:44px;
+}
+
+#u274_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u275 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u276_normal {
+    background-image: url('../退費申請_files/u276_normal.png');
+}
+
+.u276_container {
+    position:absolute;
+    left:0px;
+    top:129px;
+    width:105px;
+    height:43px;
+}
+
+#u276_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:49px;
+}
+
+.u277 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u278_normal {
+    background-image: url('../退費申請_files/u116_normal.png');
+}
+
+.u278_container {
+    position:absolute;
+    left:105px;
+    top:129px;
+    width:735px;
+    height:43px;
+}
+
+#u278_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:49px;
+}
+
+.u279 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u280_normal {
+    background-image: url('../退費申請_files/u280_normal.png');
+}
+
+.u280_container {
+    position:absolute;
+    left:0px;
+    top:172px;
+    width:105px;
+    height:39px;
+}
+
+#u280_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:45px;
+}
+
+.u281 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u282_normal {
+    background-image: url('../退費申請_files/u120_normal.png');
+}
+
+.u282_container {
+    position:absolute;
+    left:105px;
+    top:172px;
+    width:735px;
+    height:39px;
+}
+
+#u282_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:45px;
+}
+
+.u283 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u284_normal {
+    background-image: url('../退費申請_files/u284_normal.png');
+}
+
+.u284_container {
+    position:absolute;
+    left:0px;
+    top:211px;
+    width:105px;
+    height:37px;
+}
+
+#u284_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:43px;
+}
+
+.u285 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u286_normal {
+    background-image: url('../退費申請_files/u124_normal.png');
+}
+
+.u286_container {
+    position:absolute;
+    left:105px;
+    top:211px;
+    width:735px;
+    height:37px;
+}
+
+#u286_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:43px;
+}
+
+.u287 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u288_normal {
+    background-image: url('../退費申請_files/u41_normal.png');
+}
+
+.u288_container {
+    position:absolute;
+    left:0px;
+    top:248px;
+    width:105px;
+    height:36px;
+}
+
+#u288_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:42px;
+}
+
+.u289 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u290_normal {
+    background-image: url('../退費申請_files/u128_normal.png');
+}
+
+.u290_container {
+    position:absolute;
+    left:105px;
+    top:248px;
+    width:735px;
+    height:36px;
+}
+
+#u290_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:42px;
+}
+
+.u291 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u292_normal {
+    background-image: url('../退費申請_files/u292_normal.png');
+}
+
+.u292_container {
+    position:absolute;
+    left:0px;
+    top:284px;
+    width:105px;
+    height:115px;
+}
+
+#u292_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:121px;
+}
+
+.u293 {
+    position:absolute;
+    left:2px;
+    top:50px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u294_normal {
+    background-image: url('../退費申請_files/u132_normal.png');
+}
+
+.u294_container {
+    position:absolute;
+    left:105px;
+    top:284px;
+    width:735px;
+    height:115px;
+}
+
+#u294_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:121px;
+}
+
+.u295 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u297 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u299 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u301 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u302 {
+    position:absolute;
+    left:574px;
+    top:392px;
+    width:98px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u303_normal {
+    background-image: url('../退費申請_files/u141_normal.png');
+}
+
+.u303_container {
+    position:absolute;
+    left:643px;
+    top:387px;
+    width:109px;
+    height:26px;
+}
+
+#u303_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:32px;
+}
+
+.u304 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u306 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u308 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u309_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u309_container {
+    position:absolute;
+    left:126px;
+    top:471px;
+    width:144px;
+    height:23px;
+}
+
+#u309_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u310 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u312 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u313_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u313_container {
+    position:absolute;
+    left:126px;
+    top:515px;
+    width:144px;
+    height:23px;
+}
+
+#u313_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u314 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u316 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u318 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u320 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u322 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u323 {
+    position:absolute;
+    left:128px;
+    top:596px;
+    width:139px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u324_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u324_container {
+    position:absolute;
+    left:127px;
+    top:631px;
+    width:144px;
+    height:23px;
+}
+
+#u324_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u325 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u326 {
+    position:absolute;
+    left:126px;
+    top:675px;
+    width:581px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u327 {
+    position:absolute;
+    left:355px;
+    top:810px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u328_normal {
+    background-image: url('../退費申請_files/u193_normal.png');
+}
+
+.u328_container {
+    position:absolute;
+    left:0px;
+    top:3px;
+    width:180px;
+    height:50px;
+}
+
+#u328_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:56px;
+}
+
+.u329 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u330_normal {
+    background-image: url('../退費申請_files/u195_normal.png');
+}
+
+.u330_container {
+    position:absolute;
+    left:180px;
+    top:12px;
+    width:180px;
+    height:41px;
+}
+
+#u330_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:47px;
+}
+
+.u331 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u332_normal {
+    background-image: url('../退費申請_files/u332_normal.png');
+}
+
+.u332_container {
+    position:absolute;
+    left:250px;
+    top:214px;
+    width:13px;
+    height:18px;
+}
+
+#u332_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:13px;
+    height:18px;
+}
+
+.u333 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u334 {
+    position:absolute;
+    left:266px;
+    top:214px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u335 {
+    position:absolute;
+    left:297px;
+    top:215px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u336 {
+    position:absolute;
+    left:297px;
+    top:497px;
+    width:843px;
+    height:880px;
+    overflow:hidden;
+}
+
+#pd0u336 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:843px;
+    height:880px;
+    
+}
+
+#u337 {
+    position:absolute;
+    left:0px;
+    top:53px;
+    width:847px;
+    height:329px
+}
+
+.u338_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u338_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:44px;
+}
+
+#u338_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u339 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u340_normal {
+    background-image: url('../退費申請_files/u39_normal.png');
+}
+
+.u340_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:737px;
+    height:44px;
+}
+
+#u340_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:50px;
+}
+
+.u341 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u342_normal {
+    background-image: url('../退費申請_files/u41_normal.png');
+}
+
+.u342_container {
+    position:absolute;
+    left:0px;
+    top:44px;
+    width:105px;
+    height:36px;
+}
+
+#u342_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:42px;
+}
+
+.u343 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u344_normal {
+    background-image: url('../退費申請_files/u43_normal.png');
+}
+
+.u344_container {
+    position:absolute;
+    left:105px;
+    top:44px;
+    width:737px;
+    height:36px;
+}
+
+#u344_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:42px;
+}
+
+.u345 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u346_normal {
+    background-image: url('../退費申請_files/u45_normal.png');
+}
+
+.u346_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:105px;
+    height:104px;
+}
+
+#u346_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:110px;
+}
+
+.u347 {
+    position:absolute;
+    left:2px;
+    top:44px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u348_normal {
+    background-image: url('../退費申請_files/u47_normal.png');
+}
+
+.u348_container {
+    position:absolute;
+    left:105px;
+    top:80px;
+    width:737px;
+    height:104px;
+}
+
+#u348_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:110px;
+}
+
+.u349 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u350_normal {
+    background-image: url('../退費申請_files/u49_normal.png');
+}
+
+.u350_container {
+    position:absolute;
+    left:0px;
+    top:184px;
+    width:105px;
+    height:140px;
+}
+
+#u350_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:146px;
+}
+
+.u351 {
+    position:absolute;
+    left:2px;
+    top:62px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u352_normal {
+    background-image: url('../退費申請_files/u51_normal.png');
+}
+
+.u352_container {
+    position:absolute;
+    left:105px;
+    top:184px;
+    width:737px;
+    height:140px;
+}
+
+#u352_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:146px;
+}
+
+.u353 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u354 {
+    position:absolute;
+    left:137px;
+    top:106px;
+    width:126px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u355 {
+    position:absolute;
+    left:291px;
+    top:106px;
+    width:152px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u356 {
+    position:absolute;
+    left:137px;
+    top:144px;
+    width:512px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u358 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u359_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u359_container {
+    position:absolute;
+    left:212px;
+    top:246px;
+    width:75px;
+    height:26px;
+}
+
+#u359_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u360 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u362 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u363_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u363_container {
+    position:absolute;
+    left:212px;
+    top:294px;
+    width:75px;
+    height:26px;
+}
+
+#u363_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u364 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u366 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u367_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u367_container {
+    position:absolute;
+    left:212px;
+    top:339px;
+    width:75px;
+    height:26px;
+}
+
+#u367_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u368 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u370 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u371_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u371_container {
+    position:absolute;
+    left:389px;
+    top:245px;
+    width:75px;
+    height:26px;
+}
+
+#u371_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u372 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u374 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u375_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u375_container {
+    position:absolute;
+    left:389px;
+    top:289px;
+    width:75px;
+    height:26px;
+}
+
+#u375_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u376 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u378 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u379_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u379_container {
+    position:absolute;
+    left:391px;
+    top:333px;
+    width:75px;
+    height:26px;
+}
+
+#u379_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u380 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u382 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u383_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u383_container {
+    position:absolute;
+    left:562px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u383_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u384 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u386 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u387_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u387_container {
+    position:absolute;
+    left:562px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u387_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u388 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u390 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u391_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u391_container {
+    position:absolute;
+    left:564px;
+    top:331px;
+    width:75px;
+    height:26px;
+}
+
+#u391_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u392 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u394 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u395_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u395_container {
+    position:absolute;
+    left:732px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u395_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u396 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u398 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u399_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u399_container {
+    position:absolute;
+    left:732px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u399_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u400 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u401 {
+    position:absolute;
+    left:0px;
+    top:377px;
+    width:845px;
+    height:404px
+}
+
+.u402_normal {
+    background-image: url('../退費申請_files/u264_normal.png');
+}
+
+.u402_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:41px;
+}
+
+#u402_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:47px;
+}
+
+.u403 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u404_normal {
+    background-image: url('../退費申請_files/u104_normal.png');
+}
+
+.u404_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:735px;
+    height:41px;
+}
+
+#u404_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:47px;
+}
+
+.u405 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u406_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u406_container {
+    position:absolute;
+    left:0px;
+    top:41px;
+    width:105px;
+    height:44px;
+}
+
+#u406_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u407 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u408_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u408_container {
+    position:absolute;
+    left:105px;
+    top:41px;
+    width:735px;
+    height:44px;
+}
+
+#u408_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u409 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u410_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u410_container {
+    position:absolute;
+    left:0px;
+    top:85px;
+    width:105px;
+    height:44px;
+}
+
+#u410_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u411 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u412_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u412_container {
+    position:absolute;
+    left:105px;
+    top:85px;
+    width:735px;
+    height:44px;
+}
+
+#u412_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u413 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u414_normal {
+    background-image: url('../退費申請_files/u276_normal.png');
+}
+
+.u414_container {
+    position:absolute;
+    left:0px;
+    top:129px;
+    width:105px;
+    height:43px;
+}
+
+#u414_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:49px;
+}
+
+.u415 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u416_normal {
+    background-image: url('../退費申請_files/u116_normal.png');
+}
+
+.u416_container {
+    position:absolute;
+    left:105px;
+    top:129px;
+    width:735px;
+    height:43px;
+}
+
+#u416_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:49px;
+}
+
+.u417 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u418_normal {
+    background-image: url('../退費申請_files/u280_normal.png');
+}
+
+.u418_container {
+    position:absolute;
+    left:0px;
+    top:172px;
+    width:105px;
+    height:39px;
+}
+
+#u418_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:45px;
+}
+
+.u419 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u420_normal {
+    background-image: url('../退費申請_files/u120_normal.png');
+}
+
+.u420_container {
+    position:absolute;
+    left:105px;
+    top:172px;
+    width:735px;
+    height:39px;
+}
+
+#u420_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:45px;
+}
+
+.u421 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u422_normal {
+    background-image: url('../退費申請_files/u284_normal.png');
+}
+
+.u422_container {
+    position:absolute;
+    left:0px;
+    top:211px;
+    width:105px;
+    height:37px;
+}
+
+#u422_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:43px;
+}
+
+.u423 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u424_normal {
+    background-image: url('../退費申請_files/u124_normal.png');
+}
+
+.u424_container {
+    position:absolute;
+    left:105px;
+    top:211px;
+    width:735px;
+    height:37px;
+}
+
+#u424_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:43px;
+}
+
+.u425 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u426_normal {
+    background-image: url('../退費申請_files/u41_normal.png');
+}
+
+.u426_container {
+    position:absolute;
+    left:0px;
+    top:248px;
+    width:105px;
+    height:36px;
+}
+
+#u426_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:42px;
+}
+
+.u427 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u428_normal {
+    background-image: url('../退費申請_files/u128_normal.png');
+}
+
+.u428_container {
+    position:absolute;
+    left:105px;
+    top:248px;
+    width:735px;
+    height:36px;
+}
+
+#u428_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:42px;
+}
+
+.u429 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u430_normal {
+    background-image: url('../退費申請_files/u292_normal.png');
+}
+
+.u430_container {
+    position:absolute;
+    left:0px;
+    top:284px;
+    width:105px;
+    height:115px;
+}
+
+#u430_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:121px;
+}
+
+.u431 {
+    position:absolute;
+    left:2px;
+    top:50px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u432_normal {
+    background-image: url('../退費申請_files/u132_normal.png');
+}
+
+.u432_container {
+    position:absolute;
+    left:105px;
+    top:284px;
+    width:735px;
+    height:115px;
+}
+
+#u432_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:121px;
+}
+
+.u433 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u435 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u437 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u439 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u440 {
+    position:absolute;
+    left:574px;
+    top:392px;
+    width:98px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u441_normal {
+    background-image: url('../退費申請_files/u141_normal.png');
+}
+
+.u441_container {
+    position:absolute;
+    left:643px;
+    top:387px;
+    width:109px;
+    height:26px;
+}
+
+#u441_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:32px;
+}
+
+.u442 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u444 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u446 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u447_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u447_container {
+    position:absolute;
+    left:126px;
+    top:471px;
+    width:144px;
+    height:23px;
+}
+
+#u447_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u448 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u450 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u451_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u451_container {
+    position:absolute;
+    left:126px;
+    top:515px;
+    width:144px;
+    height:23px;
+}
+
+#u451_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u452 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u454 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u456 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u458 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u460 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u461 {
+    position:absolute;
+    left:128px;
+    top:596px;
+    width:139px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u462_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u462_container {
+    position:absolute;
+    left:127px;
+    top:631px;
+    width:144px;
+    height:23px;
+}
+
+#u462_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u463 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u464 {
+    position:absolute;
+    left:126px;
+    top:675px;
+    width:581px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u465 {
+    position:absolute;
+    left:124px;
+    top:62px;
+    width:200px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u466 {
+    position:absolute;
+    left:378px;
+    top:794px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u467_normal {
+    background-image: url('../退費申請_files/u193_normal.png');
+}
+
+.u467_container {
+    position:absolute;
+    left:181px;
+    top:3px;
+    width:180px;
+    height:50px;
+}
+
+#u467_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:56px;
+}
+
+.u468 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u469_normal {
+    background-image: url('../退費申請_files/u195_normal.png');
+}
+
+.u469_container {
+    position:absolute;
+    left:1px;
+    top:12px;
+    width:180px;
+    height:41px;
+}
+
+#u469_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:47px;
+}
+
+.u470 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u471 {
+    position:absolute;
+    left:278px;
+    top:497px;
+    width:862px;
+    height:994px;
+    overflow:hidden;
+}
+
+#pd0u471 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:862px;
+    height:994px;
+    
+}
+
+#u472 {
+    position:absolute;
+    left:0px;
+    top:53px;
+    width:847px;
+    height:329px
+}
+
+.u473_normal {
+    background-image: url('../退費申請_files/u37_normal.png');
+}
+
+.u473_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:44px;
+}
+
+#u473_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:50px;
+}
+
+.u474 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u475_normal {
+    background-image: url('../退費申請_files/u39_normal.png');
+}
+
+.u475_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:737px;
+    height:44px;
+}
+
+#u475_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:50px;
+}
+
+.u476 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u477_normal {
+    background-image: url('../退費申請_files/u41_normal.png');
+}
+
+.u477_container {
+    position:absolute;
+    left:0px;
+    top:44px;
+    width:105px;
+    height:36px;
+}
+
+#u477_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:42px;
+}
+
+.u478 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u479_normal {
+    background-image: url('../退費申請_files/u43_normal.png');
+}
+
+.u479_container {
+    position:absolute;
+    left:105px;
+    top:44px;
+    width:737px;
+    height:36px;
+}
+
+#u479_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:42px;
+}
+
+.u480 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u481_normal {
+    background-image: url('../退費申請_files/u45_normal.png');
+}
+
+.u481_container {
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:105px;
+    height:104px;
+}
+
+#u481_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:110px;
+}
+
+.u482 {
+    position:absolute;
+    left:2px;
+    top:44px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u483_normal {
+    background-image: url('../退費申請_files/u47_normal.png');
+}
+
+.u483_container {
+    position:absolute;
+    left:105px;
+    top:80px;
+    width:737px;
+    height:104px;
+}
+
+#u483_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:110px;
+}
+
+.u484 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u485_normal {
+    background-image: url('../退費申請_files/u49_normal.png');
+}
+
+.u485_container {
+    position:absolute;
+    left:0px;
+    top:184px;
+    width:105px;
+    height:140px;
+}
+
+#u485_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:146px;
+}
+
+.u486 {
+    position:absolute;
+    left:2px;
+    top:62px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u487_normal {
+    background-image: url('../退費申請_files/u51_normal.png');
+}
+
+.u487_container {
+    position:absolute;
+    left:105px;
+    top:184px;
+    width:737px;
+    height:140px;
+}
+
+#u487_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:743px;
+    height:146px;
+}
+
+.u488 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:733px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u489 {
+    position:absolute;
+    left:137px;
+    top:106px;
+    width:126px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u490 {
+    position:absolute;
+    left:291px;
+    top:106px;
+    width:152px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u491 {
+    position:absolute;
+    left:137px;
+    top:144px;
+    width:512px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u493 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u494_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u494_container {
+    position:absolute;
+    left:212px;
+    top:246px;
+    width:75px;
+    height:26px;
+}
+
+#u494_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u495 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u497 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u498_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u498_container {
+    position:absolute;
+    left:212px;
+    top:294px;
+    width:75px;
+    height:26px;
+}
+
+#u498_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u499 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u501 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u502_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u502_container {
+    position:absolute;
+    left:212px;
+    top:339px;
+    width:75px;
+    height:26px;
+}
+
+#u502_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u503 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u505 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u506_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u506_container {
+    position:absolute;
+    left:389px;
+    top:245px;
+    width:75px;
+    height:26px;
+}
+
+#u506_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u507 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u509 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u510_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u510_container {
+    position:absolute;
+    left:389px;
+    top:289px;
+    width:75px;
+    height:26px;
+}
+
+#u510_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u511 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u513 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u514_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u514_container {
+    position:absolute;
+    left:391px;
+    top:333px;
+    width:75px;
+    height:26px;
+}
+
+#u514_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u515 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u517 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u518_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u518_container {
+    position:absolute;
+    left:562px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u518_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u519 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u521 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u522_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u522_container {
+    position:absolute;
+    left:562px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u522_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u523 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u525 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u526_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u526_container {
+    position:absolute;
+    left:564px;
+    top:331px;
+    width:75px;
+    height:26px;
+}
+
+#u526_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u527 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u529 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u530_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u530_container {
+    position:absolute;
+    left:732px;
+    top:243px;
+    width:75px;
+    height:26px;
+}
+
+#u530_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u531 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u533 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u534_normal {
+    background-image: url('../退費申請_files/u59_normal.png');
+}
+
+.u534_container {
+    position:absolute;
+    left:732px;
+    top:287px;
+    width:75px;
+    height:26px;
+}
+
+#u534_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:32px;
+}
+
+.u535 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u536 {
+    position:absolute;
+    left:0px;
+    top:533px;
+    width:847px;
+    height:404px
+}
+
+.u537_normal {
+    background-image: url('../退費申請_files/u102_normal.png');
+}
+
+.u537_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:107px;
+    height:41px;
+}
+
+#u537_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:47px;
+}
+
+.u538 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u539_normal {
+    background-image: url('../退費申請_files/u104_normal.png');
+}
+
+.u539_container {
+    position:absolute;
+    left:107px;
+    top:0px;
+    width:735px;
+    height:41px;
+}
+
+#u539_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:47px;
+}
+
+.u540 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u541_normal {
+    background-image: url('../退費申請_files/u106_normal.png');
+}
+
+.u541_container {
+    position:absolute;
+    left:0px;
+    top:41px;
+    width:107px;
+    height:44px;
+}
+
+#u541_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:50px;
+}
+
+.u542 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u543_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u543_container {
+    position:absolute;
+    left:107px;
+    top:41px;
+    width:735px;
+    height:44px;
+}
+
+#u543_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u544 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u545_normal {
+    background-image: url('../退費申請_files/u106_normal.png');
+}
+
+.u545_container {
+    position:absolute;
+    left:0px;
+    top:85px;
+    width:107px;
+    height:44px;
+}
+
+#u545_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:50px;
+}
+
+.u546 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u547_normal {
+    background-image: url('../退費申請_files/u108_normal.png');
+}
+
+.u547_container {
+    position:absolute;
+    left:107px;
+    top:85px;
+    width:735px;
+    height:44px;
+}
+
+#u547_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:50px;
+}
+
+.u548 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u549_normal {
+    background-image: url('../退費申請_files/u114_normal.png');
+}
+
+.u549_container {
+    position:absolute;
+    left:0px;
+    top:129px;
+    width:107px;
+    height:43px;
+}
+
+#u549_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:49px;
+}
+
+.u550 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u551_normal {
+    background-image: url('../退費申請_files/u116_normal.png');
+}
+
+.u551_container {
+    position:absolute;
+    left:107px;
+    top:129px;
+    width:735px;
+    height:43px;
+}
+
+#u551_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:49px;
+}
+
+.u552 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u553_normal {
+    background-image: url('../退費申請_files/u118_normal.png');
+}
+
+.u553_container {
+    position:absolute;
+    left:0px;
+    top:172px;
+    width:107px;
+    height:39px;
+}
+
+#u553_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:45px;
+}
+
+.u554 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u555_normal {
+    background-image: url('../退費申請_files/u120_normal.png');
+}
+
+.u555_container {
+    position:absolute;
+    left:107px;
+    top:172px;
+    width:735px;
+    height:39px;
+}
+
+#u555_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:45px;
+}
+
+.u556 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u557_normal {
+    background-image: url('../退費申請_files/u122_normal.png');
+}
+
+.u557_container {
+    position:absolute;
+    left:0px;
+    top:211px;
+    width:107px;
+    height:37px;
+}
+
+#u557_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:43px;
+}
+
+.u558 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u559_normal {
+    background-image: url('../退費申請_files/u124_normal.png');
+}
+
+.u559_container {
+    position:absolute;
+    left:107px;
+    top:211px;
+    width:735px;
+    height:37px;
+}
+
+#u559_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:43px;
+}
+
+.u560 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u561_normal {
+    background-image: url('../退費申請_files/u126_normal.png');
+}
+
+.u561_container {
+    position:absolute;
+    left:0px;
+    top:248px;
+    width:107px;
+    height:36px;
+}
+
+#u561_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:42px;
+}
+
+.u562 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u563_normal {
+    background-image: url('../退費申請_files/u128_normal.png');
+}
+
+.u563_container {
+    position:absolute;
+    left:107px;
+    top:248px;
+    width:735px;
+    height:36px;
+}
+
+#u563_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:42px;
+}
+
+.u564 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u565_normal {
+    background-image: url('../退費申請_files/u130_normal.png');
+}
+
+.u565_container {
+    position:absolute;
+    left:0px;
+    top:284px;
+    width:107px;
+    height:115px;
+}
+
+#u565_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:121px;
+}
+
+.u566 {
+    position:absolute;
+    left:2px;
+    top:50px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u567_normal {
+    background-image: url('../退費申請_files/u132_normal.png');
+}
+
+.u567_container {
+    position:absolute;
+    left:107px;
+    top:284px;
+    width:735px;
+    height:115px;
+}
+
+#u567_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:741px;
+    height:121px;
+}
+
+.u568 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:731px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u570 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u572 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u574 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u575 {
+    position:absolute;
+    left:574px;
+    top:548px;
+    width:98px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u576_normal {
+    background-image: url('../退費申請_files/u141_normal.png');
+}
+
+.u576_container {
+    position:absolute;
+    left:643px;
+    top:543px;
+    width:109px;
+    height:26px;
+}
+
+#u576_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:32px;
+}
+
+.u577 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u579 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u581 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u582_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u582_container {
+    position:absolute;
+    left:126px;
+    top:627px;
+    width:144px;
+    height:23px;
+}
+
+#u582_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u583 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u585 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u586_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u586_container {
+    position:absolute;
+    left:126px;
+    top:671px;
+    width:144px;
+    height:23px;
+}
+
+#u586_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u587 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u589 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u591 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u593 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u595 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:108px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u596 {
+    position:absolute;
+    left:128px;
+    top:752px;
+    width:139px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u597_normal {
+    background-image: url('../退費申請_files/u147_normal.png');
+}
+
+.u597_container {
+    position:absolute;
+    left:127px;
+    top:787px;
+    width:144px;
+    height:23px;
+}
+
+#u597_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:29px;
+}
+
+.u598 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u599 {
+    position:absolute;
+    left:99px;
+    top:376px;
+    width:748px;
+    height:164px
+}
+
+.u600_normal {
+    background-image: url('../退費申請_files/u165_normal.png');
+}
+
+.u600_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:38px;
+}
+
+#u600_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:44px;
+}
+
+.u601 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u602_normal {
+    background-image: url('../退費申請_files/u167_normal.png');
+}
+
+.u602_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:643px;
+    height:38px;
+}
+
+#u602_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:44px;
+}
+
+.u603 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u604_normal {
+    background-image: url('../退費申請_files/u169_normal.png');
+}
+
+.u604_container {
+    position:absolute;
+    left:0px;
+    top:38px;
+    width:100px;
+    height:40px;
+}
+
+#u604_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:46px;
+}
+
+.u605 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u606_normal {
+    background-image: url('../退費申請_files/u171_normal.png');
+}
+
+.u606_container {
+    position:absolute;
+    left:100px;
+    top:38px;
+    width:643px;
+    height:40px;
+}
+
+#u606_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:46px;
+}
+
+.u607 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u608_normal {
+    background-image: url('../退費申請_files/u173_normal.png');
+}
+
+.u608_container {
+    position:absolute;
+    left:0px;
+    top:78px;
+    width:100px;
+    height:45px;
+}
+
+#u608_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:51px;
+}
+
+.u609 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u610_normal {
+    background-image: url('../退費申請_files/u175_normal.png');
+}
+
+.u610_container {
+    position:absolute;
+    left:100px;
+    top:78px;
+    width:643px;
+    height:45px;
+}
+
+#u610_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:51px;
+}
+
+.u611 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u612_normal {
+    background-image: url('../退費申請_files/u177_normal.png');
+}
+
+.u612_container {
+    position:absolute;
+    left:0px;
+    top:123px;
+    width:100px;
+    height:36px;
+}
+
+#u612_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:42px;
+}
+
+.u613 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u614_normal {
+    background-image: url('../退費申請_files/u179_normal.png');
+}
+
+.u614_container {
+    position:absolute;
+    left:100px;
+    top:123px;
+    width:643px;
+    height:36px;
+}
+
+#u614_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:649px;
+    height:42px;
+}
+
+.u615 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:639px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u616_normal {
+    background-image: url('../退費申請_files/u181_normal.png');
+}
+
+.u616_container {
+    position:absolute;
+    left:0px;
+    top:376px;
+    width:105px;
+    height:158px;
+}
+
+#u616_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:164px;
+}
+
+.u617 {
+    position:absolute;
+    left:2px;
+    top:71px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u618_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u618_container {
+    position:absolute;
+    left:223px;
+    top:420px;
+    width:470px;
+    height:28px;
+}
+
+#u618_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u619 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u620_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u620_container {
+    position:absolute;
+    left:223px;
+    top:464px;
+    width:470px;
+    height:28px;
+}
+
+#u620_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u621 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u622_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u622_container {
+    position:absolute;
+    left:223px;
+    top:502px;
+    width:470px;
+    height:28px;
+}
+
+#u622_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u623 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u624 {
+    position:absolute;
+    left:126px;
+    top:831px;
+    width:581px;
+    height:80px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u625_normal {
+    background-image: url('../退費申請_files/u183_normal.png');
+}
+
+.u625_container {
+    position:absolute;
+    left:223px;
+    top:382px;
+    width:470px;
+    height:28px;
+}
+
+#u625_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:476px;
+    height:34px;
+}
+
+.u626 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:466px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u627 {
+    position:absolute;
+    left:119px;
+    top:63px;
+    width:200px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u628 {
+    position:absolute;
+    left:355px;
+    top:954px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u629_normal {
+    background-image: url('../退費申請_files/u193_normal.png');
+}
+
+.u629_container {
+    position:absolute;
+    left:181px;
+    top:3px;
+    width:180px;
+    height:50px;
+}
+
+#u629_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:56px;
+}
+
+.u630 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u631_normal {
+    background-image: url('../退費申請_files/u195_normal.png');
+}
+
+.u631_container {
+    position:absolute;
+    left:1px;
+    top:12px;
+    width:180px;
+    height:41px;
+}
+
+#u631_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:47px;
+}
+
+.u632 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:176px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u633_normal {
+    background-image: url('../退費申請_files/u633_normal.png');
+}
+
+.u633_container {
+    position:absolute;
+    left:17px;
+    top:87px;
+    width:1248px;
+    height:61px;
+}
+
+#u633_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1254px;
+    height:67px;
+}
+
+.u634 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:1244px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u635_normal {
+    background-image: url('../退費申請_files/u635_normal.png');
+}
+
+.u635_container {
+    position:absolute;
+    left:37px;
+    top:93px;
+    width:180px;
+    height:50px;
+}
+
+#u635_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:56px;
+}
+
+.u636 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u637 {
+    position:absolute;
+    left:670px;
+    top:214px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

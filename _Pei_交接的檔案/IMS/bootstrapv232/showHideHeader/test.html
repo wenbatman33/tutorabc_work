@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Untitled-1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Big5" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+#box_1{
+	position:fixed;
+	z-index:3;
+}
+#box_2{
+	position:fixed;
+	top:130px;
+	z-index:2;
+}
+#box_3{
+	position:relative;
+	top:300px;
+	
+}
+</style>
+<script>
+$(function() {
+		var myNum =0;
+		var timer;
+	$(window).scroll(function(){
+		var scroH = Number($(this).scrollTop());
+		if(scroH<=50){
+		    myNum=scroH;
+			showbox_soon();
+	   }else if(scroH<myNum){
+		   	// 往下滑
+			    myNum=scroH;	
+				onscroll();
+		}else{
+			 myNum=scroH;
+		     hidebox_soon();
+		}
+	});
+});
+
+
+
+
+function onscroll() {
+	$( "#box_2" ).stop().animate({opacity: 1}, 500  ,function() {
+    	$( "#box_2" ).stop().animate({opacity: 1}, 2000,
+				function() {
+				$( "#box_2" ).stop().animate({opacity: 0}, 500);
+				 }
+		);
+    });
+}
+
+function hidebox() {
+	$( "#box_2" ).stop().animate({opacity: 0}, 1000) 
+}
+	
+function hidebox_soon() {
+	$( "#box_2" ).stop().animate({opacity: 0}, 100);
+	
+}
+function showbox_soon() {
+	$( "#box_2" ).stop().animate({opacity: 1}, 200) ;
+	clearTimeout(timer);
+	
+}
+
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+
+		<div id="box_1"><img src="images/test_01.jpg" width="1021" height="139" alt="" /></div>
+		<div id="box_2"><img src="images/test_02.jpg" width="1021" height="100" alt="" /></div>
+		<div id="box_3"><img src="images/test_03.jpg" width="1021" height="1220" alt="" /></div>
+        <div id="box_3"><img src="images/test_03.jpg" width="1021" height="1220" alt="" /></div>
+	
+</body>
+</html>

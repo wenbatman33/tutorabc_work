@@ -1,0 +1,1214 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:250px;
+    top:0px;
+    width:858px;
+    height:327px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:858px;
+    height:327px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:156px;
+    width:854px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../自由配_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:250px;
+    top:321px;
+    width:251px;
+    height:731px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:251px;
+    height:731px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:358px;
+    width:247px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../自由配_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:257px;
+    top:1052px;
+    width:225px;
+    height:240px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:225px;
+    height:240px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:112px;
+    width:221px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../自由配_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:478px;
+    top:321px;
+    width:621px;
+    height:66px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:621px;
+    height:66px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:617px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../自由配_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:532px;
+    top:763px;
+    width:453px;
+    height:11px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:459px;
+    height:17px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:449px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../自由配_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:565px;
+    top:716px;
+    width:114px;
+    height:31px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:120px;
+    height:37px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:110px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../自由配_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:996px;
+    top:754px;
+    width:110px;
+    height:27px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:33px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:106px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../自由配_files/u10_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:565px;
+    top:871px;
+    width:114px;
+    height:31px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:120px;
+    height:37px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:110px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../自由配_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:900px;
+    top:726px;
+    width:17px;
+    height:27px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:23px;
+    height:33px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:13px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../自由配_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:532px;
+    top:763px;
+    width:1px;
+    height:11px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:7px;
+    height:17px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../自由配_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:967px;
+    top:778px;
+    width:35px;
+    height:27px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:41px;
+    height:33px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_line {
+    background-image: url('../自由配_files/u22_line.png');
+}
+
+.u22_line {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:7px;
+    height:17px;
+}
+
+.u22 {
+    position:absolute;
+    left:527px;
+    top:761px;
+    width:10px;
+    height:17px;
+    
+}
+
+.u23_normal {
+    background-image: url('../自由配_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:918px;
+    top:726px;
+    width:75px;
+    height:27px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:33px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../自由配_files/u8_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:532px;
+    top:914px;
+    width:453px;
+    height:11px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:459px;
+    height:17px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:449px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_line {
+    background-image: url('../自由配_files/u27_line.png');
+}
+
+.u27_line {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:7px;
+    height:17px;
+}
+
+.u27 {
+    position:absolute;
+    left:527px;
+    top:912px;
+    width:10px;
+    height:17px;
+    
+}
+
+.u28_normal {
+    background-image: url('../自由配_files/u12_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:996px;
+    top:906px;
+    width:110px;
+    height:27px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:33px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:106px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../自由配_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:900px;
+    top:876px;
+    width:27px;
+    height:27px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:33px;
+    height:33px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:23px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../自由配_files/u23_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:918px;
+    top:877px;
+    width:75px;
+    height:27px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:33px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:71px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../自由配_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:532px;
+    top:795px;
+    width:356px;
+    height:27px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:362px;
+    height:33px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:352px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_line {
+    background-image: url('../自由配_files/u36_line.png');
+}
+
+.u36_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:567px;
+    height:3px;
+}
+
+.u36 {
+    position:absolute;
+    left:532px;
+    top:843px;
+    width:567px;
+    height:10px;
+    
+}
+
+.u37_line {
+    background-image: url('../自由配_files/u37_line.png');
+}
+
+.u37_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:567px;
+    height:3px;
+}
+
+.u37 {
+    position:absolute;
+    left:532px;
+    top:983px;
+    width:567px;
+    height:10px;
+    
+}
+
+.u38_normal {
+    background-image: url('../自由配_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:996px;
+    top:1002px;
+    width:151px;
+    height:27px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:157px;
+    height:33px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:147px;
+    height:29px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../自由配_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:996px;
+    top:1055px;
+    width:126px;
+    height:22px;
+}
+
+#u40_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:28px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../自由配_files/u16_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:900px;
+    top:877px;
+    width:17px;
+    height:27px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:23px;
+    height:33px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:13px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../自由配_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:532px;
+    top:945px;
+    width:385px;
+    height:27px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:391px;
+    height:33px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:381px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../自由配_files/u46_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:804px;
+    top:643px;
+    width:195px;
+    height:57px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:201px;
+    height:63px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:191px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_normal {
+    background-image: url('../自由配_files/u48_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:897px;
+    top:700px;
+    width:30px;
+    height:16px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:36px;
+    height:22px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../自由配_files/u50_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:523px;
+    top:870px;
+    width:32px;
+    height:32px;
+}
+
+#u50_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:32px;
+    height:32px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:28px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../自由配_files/u52_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:523px;
+    top:716px;
+    width:32px;
+    height:32px;
+}
+
+#u52_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:32px;
+    height:32px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:28px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../自由配_files/u54_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:520px;
+    top:1141px;
+    width:576px;
+    height:149px;
+}
+
+#u54_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:582px;
+    height:155px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:66px;
+    width:572px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56 {
+    position:absolute;
+    left:535px;
+    top:1151px;
+    width:547px;
+    height:84px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u57_container {
+    position:absolute;
+    left:854px;
+    top:1177px;
+    width:67px;
+    height:21px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:73px;
+    height:27px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:63px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_mouseOver {
+    background-image: url('../自由配_files/u59_mouseOver.png');
+}
+
+.u59_normal {
+    background-image: url('../自由配_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:905px;
+    top:1238px;
+    width:172px;
+    height:30px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:178px;
+    height:36px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:168px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../自由配_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:527px;
+    top:397px;
+    width:554px;
+    height:201px;
+}
+
+#u61_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:554px;
+    height:201px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:92px;
+    width:550px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../自由配_files/u63_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:520px;
+    top:1130px;
+    width:593px;
+    height:172px;
+}
+
+#u63_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:593px;
+    height:172px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:78px;
+    width:589px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_mouseOver {
+    background-image: url('../自由配_files/u65_mouseOver.png');
+}
+
+.u65_normal {
+    background-image: url('../自由配_files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:877px;
+    top:1236px;
+    width:213px;
+    height:28px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:219px;
+    height:34px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:209px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../自由配_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:516px;
+    top:627px;
+    width:598px;
+    height:410px;
+}
+
+#u67_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:598px;
+    height:410px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:197px;
+    width:594px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

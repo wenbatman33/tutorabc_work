@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/metro.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<script src="http://code.jquery.com/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+
+<style type="text/css">
+#box_1{
+	position:fixed;
+	z-index:3;
+}
+#box_2{
+	position:fixed;
+	top:130px;
+	z-index:2;
+}
+#box_3{
+	position:relative;
+	top:300px;
+	
+}
+</style>
+<script>
+$(function() {
+		var myNum =0;
+		var timer;
+	$(window).scroll(function(){
+		var scroH = Number($(this).scrollTop());
+		if(scroH<=50){
+		    myNum=scroH;
+			showbox_soon();
+	   }else if(scroH<myNum){
+		   	// 往下滑
+			    myNum=scroH;	
+				onscroll();
+		}else{
+			 myNum=scroH;
+		     hidebox_soon();
+		}
+	});
+});
+
+
+
+
+function onscroll() {
+	$( "#box_2" ).stop().animate({opacity: 1}, 500  ,function() {
+    	$( "#box_2" ).stop().animate({opacity: 1}, 2000,
+				function() {
+				$( "#box_2" ).stop().animate({opacity: 0}, 500);
+				 }
+		);
+    });
+}
+
+function hidebox() {
+	$( "#box_2" ).stop().animate({opacity: 0}, 1000) 
+}
+	
+function hidebox_soon() {
+	$( "#box_2" ).stop().animate({opacity: 0}, 100);
+	
+}
+function showbox_soon() {
+	$( "#box_2" ).stop().animate({opacity: 1}, 200) ;
+	clearTimeout(timer);
+	
+}
+
+</script>
+
+
+<div class="header" style=" position:fixed; z-index:10; width:100%;">
+
+        <div class="topNav bg-black clearfix">
+       <div class=" container">
+            <ul class=" inline pull-left">
+                <li><a href="#">TurtorABC</a></li>
+                <li><span class="divider">|</span></li>
+                <li><a href="#">VIPABC</a></li>
+                 <li><span class="divider">|</span></li>
+                <li><a href="#">TurtorABCJr</a></li>
+                 <li><span class="divider">|</span></li>
+                <li><a href="#">TurtorMing</a></li>
+            </ul>
+            <ul class="inline pull-right logout">
+                <li><a href="#">logout</a></li>
+            </ul>
+        </div>
+        </div>
+        
+        <div class=" bg-red">
+          <div class=" container">
+            <div class="row" style=" margin-bottom:0;">
+                <div class="span3">LOGO</div>
+                <div class="span5 offset4">
+                  <div class="logoutArea clearfix">
+                    <div class=" pull-right"><input type="text" class="span2"/> <input type="button" value="submit" class="btn btn-darkred"/></div>
+                    <div class=" inline text-right pull-right color-white" style=" line-height:1; padding-right:3px;">check in<br/>2013/12/12 18:00</div>              
+                    </div>
+                </div>
+            </div>
+            <div class="row" style=" margin-bottom:0;">
+            	<div class="MainNav span11">
+                	<ul class=" inline">
+                      <li><a href="#">Business</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Customer Service</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Teaching Center</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Session Monitoring</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Marketing</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Employee</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Management</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Web Master</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">Policy</a></li>
+                      <li><span class="divider">|</span></li>
+                      <li><a href="#">CheckIn System</a></li>
+                  </ul>
+                </div>
+                <div class="span1">123</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+<div class="verticalSpace">
+<div class=" container">
+  <div class="row" id="box_2">
+    <div class="span12">
+      <div class="metro">
+      <!--主類-->
+        <div class="titleTile">
+        	<span class="tile-label">客戶基本資料</span>
+        </div>
+      <!--1大-->
+        <div class="metro-section">       
+          <a class="tile tile-double tile-double-vertical">
+            <span class="tile-label">認證與重設密碼紀錄</span>
+          </a>          
+        </div>
+      <!--上2下2-->
+        <div class="metro-section">       
+          <a class="tile">
+            <span class="tile-label">認證</span>
+          </a>
+          <a class="tile">
+           <span class="tile-label">認證</span>
+          </a>    
+          <a class="tile disabled">
+            <span class="tile-label">認證</span>
+          </a>    
+          <a class="tile">
+            <span class="tile-label">認證</span>
+          </a>           
+        </div>
+       <!--上2下1--> 
+        <div class="metro-section">       
+          <a class="tile">
+            <span class="tile-label">認證</span>
+          </a>
+          <a class="tile">
+           <span class="tile-label">認證</span>
+          </a>    
+          <a class="tile tile-double">
+            <span class="tile-label">客戶關懷狀態</span>
+          </a>     
+        </div>
+        <!--上1下2--> 
+        <div class="metro-section">  
+          <a class="tile tile-double active">
+            <span class="tile-label">客戶關懷狀態</span>
+          </a>       
+          <a class="tile">
+            <span class="tile-label">認證</span>
+          </a>
+          <a class="tile">
+           <span class="tile-label">認證</span>
+          </a>
+        </div>
+        <!--上1下1--> 
+        <div class="metro-section">  
+          <a class="tile tile-double">
+            <span class="tile-label">客戶關懷狀態</span>
+          </a>    
+          <a class="tile tile-double">
+            <span class="tile-label">客戶關懷狀態</span>
+          </a>       
+        </div>
+        <!--1大-->
+        <div class="metro-section">       
+          <a class="tile tile-double tile-double-vertical">
+            <span class="tile-label">基本資料維護</span>
+          </a>          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  
+  <div id="box_3"><img src="images/test_03.jpg" width="1021" height="1220" alt="" /></div>
+</div>
+</div>
+
+
+
+</body>
+</html>

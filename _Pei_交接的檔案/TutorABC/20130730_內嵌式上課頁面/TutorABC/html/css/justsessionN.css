@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("reset.css");
+
+body{ background:url(../images/bg.gif) repeat; font-family: Tahoma, Arial, Helvetica, sans-serif, 新細明體; font-size: 15px; color: #333333; text-align:left; }
+a:link    { color:#000; text-decoration:none;}
+a:visited { color:#000; text-decoration:none;}
+a:active  { color:#000; text-decoration:underline;}
+a:hover   { color:#000; text-decoration:underline;}
+
+.color-001  {color:#e9150e;}/*紅的*/
+.color-002  {color:#777;}/*淺灰*/
+.color-003  {color:#ff6e00;}/*紅的*/
+
+.toolbar{ background:#32004d; text-align:right; color:#fecf05; font-size:12px; height:17px; line-height:17px; padding:5px 1%;}
+.toolbar a{ color:#FECF05;}
+
+.header    { padding:5px 0;}
+
+.contentAll{ background-color:#ffffff; min-width:990px;}
+.path{font-size:12px; color:#FF9900; height:17px; line-height:17px; padding:10px 1%;}
+.ifleave_style{display:none;width:260px; padding:20px 0 10px 0; font-size:13px;}
+.ifleave_style p{margin-bottom:20px;}
+.ifleave_style div{text-align:center;	}
+.btn-box-no{ width:90px;background:url(../images/btn_check_s3.png) no-repeat;}
+.btn-box-ok{margin-right:20px;width:48px;background:url(../images/btn_check_s2.png) no-repeat;}
+.btn-box-ok,.btn-box-no{ height:30px;  line-height:20px; text-align:center; font-size:12px; color:#fff; border:0px; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}	
+
+.infoBar{ background:#ebebeb url(../images/bg_timeline.png) repeat-x top; padding:8px 1%; margin-bottom:5px;}
+.infoBar h2{font-weight:bold; font-size:16px; height:30px; line-height:30px; float:left;}
+.infoBar .btnArea{ width:250px; padding:0 1% 0 20px; float:right; border-right:1px solid #cccccc; text-align:right;} 
+.btn-check-ss1{width:48px; height:30px; background:url(../images/btn_check_s2.png) no-repeat; line-height:20px; text-align:center; font-size:12px; color:#fff; border:0px; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+.btn-check-ss2{width:90px; height:30px; background:url(../images/btn_check_s3.png) no-repeat; line-height:20px; text-align:center; font-size:12px; color:#fff;  border:0px; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+.btn-check-ss3{width:170px; height:30px; background:url(../images/btn_check_ss2.png) no-repeat; line-height:20px; text-align:center; font-size:12px; color:#fff;  border:0px; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+
+.infoBar .btnScreenArea{ padding:0 0 0 20px; float:right; text-align:left; height:30px; line-height:30px; width:216px;} 
+.infoBar .btnScreenArea a.btnScreenSize{ display:block; float:left; background:url(../images/bg_btnScreen.png) no-repeat top left; width:73px; height:28px; line-height:28px; color:#ffffff; text-align:center; margin-left:5px; font-size:12px;}
+.infoBar .btnScreenArea a.current{ background:url(../images/bg_btnScreenCurrent.png) no-repeat top left;}
+.infoBar .btnScreenArea a{ text-decoration:none;}
+
+.embedWindow{ padding:0 1%;}
+
+/*Footer*/
+html, body, #wrapper{height: 100%; min-width:990px;}
+#main{ min-height: 100%; height: auto !important; height: 100%;margin: 0 auto -40px; min-width:990px;}
+.push{height: 40px;}
+#footer{height: 40px; margin:0 auto; text-align:center; line-height:40px; color:#ffffff;}
+#footer, .push {clear: both;}

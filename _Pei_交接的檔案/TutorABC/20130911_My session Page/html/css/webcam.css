@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document 130826*/
+
+/*Reset*/
+body, div, ul, ol, li, dl, dt ,dd, h1, h2, h3, h4, h5, h6, form, input, button,textarea, p, blockquote, th, td { margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, th, td { border:0; outline:0; word-wrap: break-word;}
+body{ font-family: "微軟正黑體","Microsoft JhengHei","微软雅黑体", "黑体", Tahoma, Geneva, sans-serif; color: #333333; -webkit-font-smoothing: antialiased; line-height:1.5;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:underline;}
+a{text-decoration:none;color:#004ea2;}
+a:hover{text-decoration:underline;}
+a img{border-width:0;border-style:none;}
+:focus {outline: 0;}
+input:focus{ outline:none;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+input, button, textarea,select, optgroup, option { font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;}
+input, select,  textarea{ vertical-align:middle; padding:2px;}
+code, kbd, samp, tt {font-size: 100%;}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size: 100%;}
+input[type|="button"]{ cursor:pointer;}
+body { line-height:1.5;}
+ol, ul, li {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+.f-left {float:left;}
+.f-right {float:right;}
+.t-left {text-align:left;}
+.t-center {text-align:center;}
+.t-right {text-align:right;}
+.va-middle {vertical-align:middle;}
+.displaynone{display:none;}
+.clear{clear:both;}
+.clearfix:after { content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix { display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix { height: 1%;}
+
+
+.wrapper{ width:700px; margin:20px auto 30px;}
+.left{ float:left; width:201px;}
+.right{ float:right; width:412px;}
+.webcam{ background:url(../images/bg_webcam.jpg) no-repeat top left; width:193px; height:165px; padding:29px 0 0 8px; margin:0 0 20px;}
+.image{ width:183px; height:158px; /*background-color:#efefef;*/}
+.bg_green{ background-color:#7bcc0c;}
+.bg_red{ background-color:#cf3213;}
+.bg_gray{ background-color:#666666;}
+.bg_lightgray{ background-color:#f2f2f2;}
+h2{ height:40px; line-height:40px; font-size:18px; color:#ffffff; font-weight:bold; text-align:center;}
+h3{ height:30px; line-height:30px; font-size:16px; color:#ffffff; font-weight:normal; text-align:center; vertical-align:middle;}
+h3 img{ vertical-align:middle;}
+.right .content{ text-align:center; padding:10px; background-color:#efefef; margin-bottom:5px;border:1px solid #d0d0d0;}
+.block{ font-size:13px; text-align:center; margin-bottom:3px;}
+.underline{ text-decoration:underline;}
+table.table{ border-collapse:collapse;}
+table.table th{ border:1px solid #d0d0d0;}
+table.table td{ text-align:center; background-color:#efefef; padding:10px; border:1px solid #d0d0d0; }
+
+
+

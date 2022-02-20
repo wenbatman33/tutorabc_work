@@ -1,0 +1,45 @@
+@charset "utf-8";
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;padding: 0;}
+body, div, ul, ol, li, dl, dt ,dd, h1, h2, h3, h4, h5, h6, form, input, button,textarea, p, blockquote, th, td { margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, th, td { border:0; outline:0; word-wrap: break-word;}
+body{/* font-family: "微軟正黑體","Microsoft JhengHei","微软雅黑体", "黑体", Tahoma, Geneva, sans-serif; color: #333333; -webkit-font-smoothing: antialiased; line-height:1.5; font-size:15px;*/}
+/*body{font-size:13px; font-family:"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", Arial, Helvetica, sans-serif; font-family:Arial\9;}*/
+a:visited{text-decoration:none;}
+a:active{}
+a{text-decoration:none;color:#004ea2;}
+a:hover{text-decoration:underline;}
+a img{border-width:0;border-style:none;}
+:focus {outline: 0;}
+input:focus{ outline:none;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+input, button, textarea,select, optgroup, option { font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;}
+input[type|="text"], select,  textarea{ padding:2px;}
+input, select,  textarea{ vertical-align:middle;}
+code, kbd, samp, tt {font-size: 100%;}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size: 100%;}
+input[type|="button"]{ cursor:pointer;}
+input[disabled|="disabled"]{ cursor:default;}
+textarea{resize : none;}
+ol, ul, li {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+.f-left{float:left;}
+.f-right{float:right;}
+.t-center{text-align:center;}
+.t-left{text-align:left;}
+.t-right{text-align:right;}
+.textalignC{ text-align:center;}
+.textalignL{ text-align:left;}
+.textalignR{ text-align:right;}
+.va-middle {vertical-align:middle;}
+.displaynone{display:none;}
+.nounderline{ text-decoration:none;}
+.clear{clear:both;}
+.clearfix:after { content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix { display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix { height: 1%;}

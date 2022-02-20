@@ -1,0 +1,304 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../選擇商品_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:52px;
+    top:55px;
+    width:448px;
+    height:507px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:448px;
+    height:507px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:246px;
+    width:444px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:53px;
+    top:28px;
+    width:200px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../選擇商品_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:53px;
+    top:625px;
+    width:832px;
+    height:534px;
+}
+
+#u3_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:832px;
+    height:534px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:259px;
+    width:828px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:49px;
+    top:1180px;
+    width:230px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../選擇商品_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:49px;
+    top:1209px;
+    width:794px;
+    height:531px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:794px;
+    height:531px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:258px;
+    width:790px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:64px;
+    top:613px;
+    width:230px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_container {
+    position:absolute;
+    left:49px;
+    top:1790px;
+    width:900px;
+    height:534px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:900px;
+    height:534px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:259px;
+    width:896px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:49px;
+    top:1761px;
+    width:230px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../選擇商品_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:53px;
+    top:2390px;
+    width:617px;
+    height:640px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:617px;
+    height:640px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:312px;
+    width:613px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:49px;
+    top:2361px;
+    width:230px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_container {
+    position:absolute;
+    left:49px;
+    top:3124px;
+    width:794px;
+    height:486px;
+}
+
+#u15_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:794px;
+    height:486px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:235px;
+    width:790px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:49px;
+    top:3095px;
+    width:230px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*舊版Tutorming的********************************************************************************
+*****************************************************************************************/
+.menu_style  { font-family: Arial; font-size: 8pt; color: #FFFFFF; font-weight: bold }
+.small_font  {
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 24px;
+}
+.small_font_1  {
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+.login_txt {
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #103f5c;
+	font-size: 12px;
+}
+.login_input {
+	border: 1px solid #a9b8c2;
+}
+.login_link a, .login_link a:link, .login_link a:visited, .login_link a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #664d3f;
+	text-decoration: none;
+}
+.login_link a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ff6000;
+	text-decoration: none;
+}
+.wordtutor_txt {
+	margin: 6px 16px 0px 16px;
+	color: #1d333f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.customer_txt {
+	margin: 0px 16px 0px 16px;
+	color: #95856f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.system_table {
+	margin-top:0px;
+}
+.system_title {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #719900;
+}
+.system_sec {
+	margin: 0px 0px 0px 6px;
+	color: #df3131;
+	font-size: 11px;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+}
+.system_button {
+	color: #ffffff;
+	font-size: 12px;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 6px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.system_buttons {
+	color: #ffffff;
+	font-size: 11px;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 4px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.datentime {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #444444;
+	font-weight: bold;
+}
+.copyright {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+}
+.copyrightc {
+	font-size:12px;
+	color:#FFFFFF;
+}
+.bottomlink, .bottomlink a, .bottomlink a:link, .bottomlink a:visited, .bottomlink a:active {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3a1800;
+	text-decoration:none;
+}
+.bottomlink a:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FF0000;
+	text-decoration:none;
+}
+.bottonline {
+	background-image:url(images/botton_line.gif);
+	background-repeat:repeat-x;
+	background-position:center;
+}
+.style0 	{ padding:5px; font-size: 8pt; font-family:Arial; text-align:center; background-color:#FACC7D; color:#444444}
+.style1 	{ padding:5px; font-size: 8pt; font-family:Arial; text-align:center; background-color:#FFFFFF; color:#444444; text-align:center}
+.style2 	{ padding:5px; font-size: 8pt; font-family:Arial; text-align:center; background-color:#f7f2df; color:#444444}
+.style4 	{ padding:5px; font-size: 8pt; font-family:Arial; text-align:center; background-color:#EA4240; color:#ffffff}
+.subject  { font-family: Arial; font-size: 12pt; text-align: left; font-weight: bold; color:#999999 }
+.subject2  { font-family: Arial; font-size: 12pt; text-align: left; font-weight: bold; color:#000000 }
+.member_menu { padding:5; font-size: 10 pt; font-family:Arial; text-align:center; background-color: #FFFFFF }
+.visitor_menu { padding:5; font-size: 10 pt; font-family:Arial; text-align:center; background-color: #FFFFFF }
+.spec_td     { padding: 5px }
+.b_font      { font-family: Arial; font-size: 12pt; color: #000000 }
+.m_font      { font-family: Arial; font-size: 10pt; color: #000000 }
+.s_font      { font-family: Arial; font-size: 9pt; color: #000000 }
+.form_line1  { font-family: Arial; font-size: 9pt; color: #444444; padding: 5px; background-color:#E2E2E2 }
+.form_line2  { font-family: Arial; font-size: 9pt; color: #444444; padding: 5px; background-color:#FFFFFF }
+.styles 	{ padding:5; font-size: 10 pt; font-family:Arial}
+.style_sum 	{ padding:5px; font-size: 10 pt; font-family:Arial; text-align:center; background-color:#A1A1A1; color:#454545}
+.style01 	{ font-size: 10 pt; font-family:Arial; text-align:center; background-color:#FFFFFF; color:#454545; text-align:center; padding-left:5px; padding-right:5px; padding-top:5px}
+.style02 	{ font-size: 10 pt; font-family:Arial; text-align:center; background-color:#EFEFEF; color:#454545; padding-left:5px; padding-right:5px; padding-top:5px}
+/*.system_table a {
+	color: #719900;
+	text-decoration:none;
+}*/
+.small_font a {
+	color: #000000;
+	text-decoration:none;
+}
+.small_font_1 a {
+	color: #000000;
+	text-decoration:none;
+}
+.small_font_1 a:hover {
+	color: #719900;
+	text-decoration:none;
+}
+
+.system_req_t {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #719900;
+}
+/*.style3 {color: #719900}*/
+.faq_a_title {
+	padding: 3px 0px 3px 23px;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.faq_td {
+	padding: 10px 0px 0px 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+.whiteword {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.whitecont {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+}
+.whitetitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.system_title_font {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #719900;
+}
+.smallstar {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#990000;
+}
+.cus_font {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#da010b;
+}
+.index_title {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	/*font-weight:bold;*/
+	color:#5a5a5a;
+}
+.line_font {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	text-decoration:none;
+	padding-left: 30px;
+}
+.lines_font {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	text-decoration:none;
+}.join_title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #b90000;
+}
+#board {    
+     position: absolute; top: 0; right: 0; width: 200px;    
+     padding: 3px;    
+     font: 12px Verdana; color: blue;    
+ }    

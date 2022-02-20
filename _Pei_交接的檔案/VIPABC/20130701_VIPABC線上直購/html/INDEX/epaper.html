@@ -1,0 +1,220 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+<script language="javascript" type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<link href="css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<link href="css/html.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <input type="button" value="立即预约" class="y_btn" >  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+		 <li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>學習報</div>
+              
+                              <ul  class="tab_ul">
+                    <li class="tab_li_L" style="width:20%"><span class="tab_li_span"><a href="#">商业科技</a></span></li>
+                    <li class="tab_li_M_active" style="width:20%"><span class="tab_li_span">旅游探索</span></li>
+                    <li class="tab_li_M" style="width:20%"><span class="tab_li_span"><a href="#">生活娱乐</a></span></li>
+                    <li class="tab_li_M" style="width:20%"><span class="tab_li_span"><a href="#">健康医学</a></span></li>
+                    <li class="tab_li_R" style="width:20%"><span class="tab_li_span"><a href="#">人文艺术</a></span></li>
+                  </ul>
+              
+              
+            <div id="divArticle" style="">
+            <!--------------------------------------------------商業科技-------------------------------------------------->
+            <div id="tab1">
+              <div class="epaper_list" style="display: block;"><img src="http://www.tutorabc.com/aspx/Mvc/images/epaper/epaper_B_12.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;BrandingYourself.xml&quot;);">漂亮行銷自己<br>
+              Branding Yourself</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;BrandingYourself.xml&quot;);">With the advent of social media and blogs, it’s now easier than ever to become famous, or to “brand” yourself. While you might not be the next Nike or Apple, how you come across on these platforms can be really important when...</a></div></div><div class="epaper_list" style="display: block;"><img src="http://www.tutorabc.com/aspx/Mvc/images/epaper/epaper_B_11.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;EcommerceRich.xml&quot;);">e鳴驚人!電子商務讓您致富的理由<br>
+                5 reasons  why e-commerce will make you rich</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;EcommerceRich.xml&quot;);">The relatively recent development of e-commerce has proven advantageous to both retailers and customers. For one, it overcomes geographical limitations. Physical stores are limited by their...</a></div></div><div class="epaper_list" style="display: block;"><img src="http://www.tutorabc.com/aspx/Mvc/images/epaper/epaper_B_10.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;BPTheNewYear.xml&quot;);">商業系列︰新年新計畫<br>
+                  Business Planning for the New Year</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;BPTheNewYear.xml&quot;);">The New Year is upon us. Have you attained the vision that you envisioned for your business at the beginning of last year? <br>If you don’t know what you want, it’s hard to plan for it, and then the future of your business is out of your hands.This year, make plans to realize...</a></div></div><div class="epaper_list" style="display: block;"><img src="http://www.tutorabc.com/aspx/Mvc/images/epaper/epaper_B_9s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;AutoCars.xml&quot;);">科技新革命:自動車引領未來<br>
+                    Self-Driving Cars</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;AutoCars.xml&quot;);">Taking public transportation means you don’t have to deal with traffic. Taking your own car means you can get there with more personal comfort...</a></div></div><div class="epaper_list" style="display: block;"><img src="http://www.tutorabc.com/aspx/Mvc/images/epaper/epaper_B_8s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;BeInteresting.xml&quot;);">如何在職場中成為目光焦點<br>
+                      How To Be Interesting </a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;BeInteresting.xml&quot;);">Have you ever just looked at a person and felt that he or she was an interesting person? We’ve all sensed that from time to time. The person may not even...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_7s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Socializing.xml&quot;);">會說話，讓你少奮鬥10年<br>How To Have A Good Conversation</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Socializing.xml&quot;);">Having a good conversation takes practice, and it is even an art form to some. It doesn’t have to be as hard as many may think, though. There are some simple steps...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_6s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;TechnologyInnovationGoogleStreetView.xml&quot;);">深入世界的角落，就靠它！<br>Google Street View</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;TechnologyInnovationGoogleStreetView.xml&quot;);">In 2007, Google introduced Street View, a feature of Google Maps that allowed the user to let you explore cities from street level, as opposed to the more common bird’s-eye view...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_5s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;SuccessfulInterviewing.xml&quot;);">面試高招! 讓你成功達陣!<br>Successful Interviewing </a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;SuccessfulInterviewing.xml&quot;);">When unemployment is high and job competition is stiff, it’s not easy to land the job you want. Don’t let it discourage you! Whether you’re unemployed or just want to try a new job,...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_4s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;WhattoDoWithYourYearEndBonus.xml&quot;);">聰明運用你的年終獎金<br>What to Do with Your Year End Bonus </a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;WhattoDoWithYourYearEndBonus.xml&quot;);">Something everyone looks forward to at the end of the year is the possibility of a year-end bonus. It can make even the longest, most grueling days and weeks seem worthwhile...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_3s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Cool_Jobs_Series.xml&quot;);">全球最酷的工作<br>Cool Jobs Series  </a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Cool_Jobs_Series.xml&quot;);">Our world is constantly changing. Change creates new job markets. For example, there are many people changing their lives to live “greener” lifestyles. So there is a growing market for ...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_2s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Rules.xml&quot;);">經驗法則<br>Rules of Thumb</a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Rules.xml&quot;);">When rules are legislated by or through government officials or parliaments, we call them laws. But how about general rules of life followed by experienced travelers...</a></div></div><div class="epaper_list" style="display: none;"><img src="/aspx/Mvc/images/epaper/epaper_B_1s.jpg" width="100" height="123"><div class="list_top"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Lohas.xml&quot;);">樂活商機好熱絡<br>Lohas:A New and Growing Market </a></div><div class="list_bottom"><a href="javascript:void(0)" onClick="showhide(&quot;tab1&quot;, &quot;Lohas.xml&quot;);">LOHAS stands for Lifestyles of Health and Sustainability. LOHAS is a new and growing market segment around the globe that seeks products and services that...</a></div></div><div class="epaper_page"><a class="first_link  no_more" href="">&lt;&lt;</a><a class="previous_link  no_more" href="">&lt;</a><a class="page_link  first active_page setDefaultColor" href="" longdesc="0" style="display: inline-block;">1</a><a class="page_link" href="" longdesc="1" style="display: inline-block;">2</a><a class="page_link  last" href="" longdesc="2" style="display: inline-block;">3</a><a class="next_link" href="">&gt;</a><a class="last_link" href="">&gt;&gt;</a></div></div>
+            <!------------------------------------------------商業科技END-------------------------------------------------> 
+            <!--------------------------------------------------旅遊探索-------------------------------------------------->
+            <div id="tab2" style="display: none;">
+
+            </div>
+            <!------------------------------------------------旅遊探索END-------------------------------------------------> 
+            <!--------------------------------------------------生活娛樂-------------------------------------------------->
+            <div id="tab3" style="display: none;">
+            </div>
+            <!------------------------------------------------生活娛樂END-------------------------------------------------> 
+            <!--------------------------------------------------健康醫學-------------------------------------------------->
+            <div id="tab4" style="display: none;">
+            </div>
+            <!------------------------------------------------健康醫學END-------------------------------------------------> 
+            <!--------------------------------------------------人文藝術-------------------------------------------------->
+            <div id="tab5" style="display: none;">
+            </div>
+            <!------------------------------------------------人文藝術END-------------------------------------------------> 
+          </div>
+
+              
+        </div>
+    </div>
+
+</div>
+<!-- #############Content部分 end################ -->
+
+<div id="footer-all">
+       <div class="footer">
+        <div class="footcertify"><img src="images/permit_foot.jpg" width="960" height="50" alt="VIPABC在线英语培训服务承诺" /></div>
+        <div class="right">
+        <!--<a href="#">导览</a>．-->
+        <a href="/program/about/index.asp">关于VIPABC</a>．
+        <!--<a href="/program/news/news_list.asp">新闻/报道</a>．-->
+        <a href="/program/terms/privacy.asp">隐私保护</a>．
+        <a href="/program/terms/security.asp">安全条款</a>．
+        <a href="/program/terms/service.asp">服务条款</a>．
+         <!--<a href="/program/epaper/index.asp"></a>．-->
+        <a href="/program/recruit/index.asp" style="color:#ff6600;">诚征英才</a>．
+        <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>．
+        <!--<a href="#">加入我们</a>．-->
+        <!-- <a href="/program/terms/Academic_Affiliates.asp"></a>．-->
+        <a href="/program/download_page/interactive_software.asp">测试教学平台</a>．
+        <!--<a href="http://www.tutormeet.com/mictest/mictest.html?lang=3&compstatus=vipabc" target="_blank">平台测试</a>．-->
+        <a href="/program/contact/contact_us.asp">联络我们</a>．
+        <a href="/program/app/index.asp "style="color:#ff6600;">热门App下载</a>
+        <span class="certline" style="line-height:20px;">教育许可:教职成司函[2011]267号&nbsp;|&nbsp;经营许可证:京ICP证090121号&nbsp;|&nbsp;京ICP备11004351号&nbsp;|&nbsp;京公网安备110105019074<br />
+        <a href="/program/about/index.asp">VIPABC.com</a>&nbsp; <a href="/program/terms/law.asp"><font color="#999999">版权所有</font></a> &copy; 2008-2013 全球最大真人<a href="/program/consultant/consultant_list.asp" style="padding:0 0 0 0;text-decoration: none;color: #777777;">英语外教</a>网&nbsp;All Rights Reserved. | 服务专线:<font color="#FF6600"  style="font-size:14px; font-weight:bold">4006-30-30-30</font> 
+     　</span>
+        <br />
+        <a href="http://trust.360.cn/search.php" target="_blank" title="360绿色网站" rel="nofollow" >
+        <img src="images/360cert.jpg" border="0" /></a>
+        <a href="https://www.itrust.org.cn/yz/pjwx.asp?wm=2679644979" target="_blank" rel="nofollow" >
+        <img src="images/webtrust.jpg" width="110" height="40" border="0" /></a>
+        <a href="http://www.315online.com.cn/member/315120016.html" target="_blank" rel="nofollow" >
+        <img src="images/315cert.jpg"  width="110" height="40" border="0" /></a>
+        <!--<a href="http://www.vipabc.com/cnnic1.asp" target="_blank">
+        <img src="/images/cert/kexin.jpg" width="110" height="40" border="0"  /></a>-->
+        <a href="https://ss.cnnic.cn/verifyseal.dll?sn=e12040111010015948308104" target="_blank" rel="nofollow" ><img src="images/kexin.jpg" width="110" height="40" border="0" /></a>
+        <!--<iframe src="http://www.vipabc.com/cnnic.asp" frameborder="0" scrolling="0" width="160" height="90"></iframe>-->
+        <a id='___szfw_logo___' href='https://search.szfw.org/cert/l/CX20120625001575001635' target='_blank'><img src='images/trusticon1.png'></a><script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+        <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202012121200003" target="_blank" rel="nofollow">
+        <img src="images/hd315.gif" width="110" height="40" border="0" /></a>
+        </div>
+        <!--<div class="right"><select name="select" id="select" class="btn"><option>Choose  Language</option></select></div>-->
+        <br class="clear" />
+    </div>
+</div>
+</body>
+</html>

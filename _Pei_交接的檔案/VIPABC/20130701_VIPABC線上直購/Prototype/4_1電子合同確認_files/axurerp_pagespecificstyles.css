@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../4_1電子合同確認_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1250px;
+    height:1290px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1256px;
+    height:1296px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:637px;
+    width:1246px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../4_1電子合同確認_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:298px;
+    top:179px;
+    width:497px;
+    height:651px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:497px;
+    height:651px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:318px;
+    width:493px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u4 {
+    position:absolute;
+    left:774px;
+    top:179px;
+    width:22px;
+    height:41px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u5 {
+    position:absolute;
+    left:320px;
+    top:208px;
+    width:450px;
+    height:522px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u6_normal {
+    background-image: url('../4_1電子合同確認_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:481px;
+    top:740px;
+    width:130px;
+    height:35px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:136px;
+    height:41px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:126px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:428px;
+    top:788px;
+    width:334px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

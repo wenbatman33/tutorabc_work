@@ -1,0 +1,474 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+<script type="text/javascript">
+// banners 居中對位
+$(document).ready(function(){ 
+  $(window).resize(function() { 
+	document.getElementById("album").style.left= (document.documentElement.clientWidth- document.getElementById("album").offsetWidth)/2 + 'px'; 
+  });
+   $(window).resize(); 
+}); 
+// banners 居中對位
+</script>
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <input type="button" value="立即预约" class="y_btn" >
+                  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#">会员登录</a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#">免费注册</a></div></li>
+    </ul></div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="javascript:pageScroll('#part_01')">服务特色</a></li>
+                <li><a class="part_02" href="javascript:pageScroll('#part_02')">最有效学习法</a></li>
+                <li><a class="part_03" href="javascript:pageScroll('#part_03')">行动学习</a></li>
+                <li><a class="part_04" href="javascript:pageScroll('#part_04')">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="javascript:pageScroll('#part_05')">客户见证</a></li>
+                <li><a class="part_06" href="javascript:pageScroll('#part_06')">英语学习专区</a></li>
+                <li><a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- banner部分 start -->
+<div id="banners" style=" position:relative; margin-top:-5px; width:100%; height:360px;">
+    <div id="album">
+        <div class="slides" >
+            <ul>
+                <li><a href="#" ><img src="images/banner_01.png" border="0"></a></li>
+                <li><a href="#" ><img src="images/banner_02.png" border="0"></a></li>
+                <li><a href="#" ><img src="images/banner_01.png" border="0"></a></li>  
+                <li><a href="#" ><img src="images/banner_02.png" border="0"></a></li>           
+            </ul>
+        </div>
+        <div class="Thumbnail" >
+        	<ul>
+        		<li class="Thumb"><a href="#" ><img src="images/Choice_img_01_m.png" width="59" height="36"></a></li>
+                <li class="Thumb"><a href="#" ><img src="images/Choice_img_01_m.png" width="59" height="36"></a></li>
+                <li class="Thumb"><a href="#" ><img src="images/Choice_img_01_m.png" width="59" height="36"></a></li>
+                <li class="Thumb"><a href="#" ><img src="images/Choice_img_01_m.png" width="59" height="36"></a></li>
+            </ul> 
+      </div>
+      <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+    </div>
+</div>
+<!-- banner部分 end -->
+<!-- part_01部分 start -->
+<div id="part_01" class="box_Orange">
+    <div class="box_960">
+        <div class="box_660" style="margin:20px 0 0 0;">
+            <ul>
+                <li style="float:left; margin-right:5px">
+                	<a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded">
+                	<img src="images/Service_img_01.jpg" width="126" height="101">
+               		</a>
+                	<h5 class="color_fff" style="text-align:center;">全英文学习环境</h5>
+                </li>
+                	<li style="float:left; margin-right:5px">
+                	<a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded">
+                	<img src="images/Service_img_02.jpg" width="126" height="101">
+                	</a>
+                <h5 class="color_fff" style="text-align:center;">在线学习、真人互动</h5>
+                </li>
+                    <li style="float:left; margin-right:5px">
+                    <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded">
+                    <img src="images/Service_img_03.jpg" width="126" height="101">
+                    </a>
+                	<h5 class="color_fff" style="text-align:center;">24H学习不打烊</h5>
+                </li>
+                <li style="float:left; margin-right:5px">
+                    <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded">
+                    <img src="images/Service_img_04.jpg" width="126" height="101">
+                    </a>
+                    <h5 class="color_fff" style="text-align:center;">全球外籍顾问</h5>
+                </li>
+                <li style="float:left; margin-right:5px">
+               	    <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded">
+                    <img src="images/Service_img_05.jpg" width="126" height="101">
+                    </a>
+                  <h5 class="color_fff" style="text-align:center;">移动学习</h5>
+                </li>
+                <span class="title_wrap"><img src="images/title_01.png" width="660" height="96" alt="服务特色 Service Features" title="服务特色 Service Features" ></span>
+            </ul>
+        </div>
+        <div class="box_660 color_fff" style="margin:25px 0 0px 0;">
+        	<div class="title_wrap"></div>
+            <h4>
+            英语学习最重要的「环境」与「方法」， VIPABC 为您身打造！
+忘记过去事倍功半的学习阴影，与我们直奔最方便、最具成效的『聪明学习法』。
+            </h4>
+        </div>
+    </div>
+</div>
+<!-- part_01部分 end -->
+<div id="part_02" class="box_White">
+<div class="T_Orange"></div>
+<div class="box_960">
+        <div class="box_660 color_333">
+            <div class="title_wrap">
+            	<img src="images/title_02.png" width="660" height="96" alt="如何学习 How to Learn?" title="如何学习 How to Learn?" >
+            </div>
+            <h4>
+            用对的方式学英文，立即开始崭新的学习旅程！<br>
+			<br>
+          	1.掌握您的英文水平：外籍顾问為您进行「在线语言程度分析」了解您英文程度，掌握您的学习方向</h4>
+            <h4><br>
+			2.最適合您的課程：透過个性化的「学习好设定」包括：兴趣、学习重点、职业，VIPABC獨家專利DCGS系统会为您排最合适的课程与顾问<br><br>
+            </h4>
+            <h4>3.最有效的学习方式：「在线顾问真人互动教学」课堂中您将充分了解学习内容，专业外籍顾问与您即时互动，纠正您的发音，解读例句国外常用语法，让您学到地道英语！<br>
+            <br>
+			选择 VIPABC  ，让您英语沟通无障碍，遇到外国人不再手足无措            </h4>
+        </div>
+        <div class="box_660" style="margin-top:20px">
+        	<ul>
+            	<li style="float:left;  margin-left:20px"><img src="images/Learn_01.jpg" width="185" height="170"></li>
+                <li style="float:left;  margin-left:20px"><img src="images/Learn_02.jpg" width="224" height="143"></li>
+                <li style="float:left;  margin-left:20px"><img src="images/Learn_03.jpg" width="191" height="182"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="box_Gray">
+    <div class="T_White"></div>
+        <div class="box_960">
+            <div class="box_660 color_333">
+            <div class="title_wrap">
+                <img src="images/title_03.png" width="660" height="96" alt="专业分级 Professional Grading" title="专业分级 Professional Grading" >
+            </div>
+            <h3>听 / 说 / 读 / 写细分12等级</h3>
+            <h4>
+                VIPABC在线语言分析针对个人英文问题深入了解，依照听、说、读、写不同能力细分为十二个等级，专业外籍顾问在您学习过程中，精确为您的英语程度把关，让您可以循序渐进提高英文能力。
+            </h4>
+            <h3>
+                美国大学评量方式评估升级
+            </h3>
+            <h4>
+            国内英文学习机构与学习系统大都以测验模式作为程度升级的依据，但VIPABC 则采用美国优质大学的评量方式，从学习报告、评估、联机操作、效益稽核、测验评量等结合数字专业外籍顾问建议并予以评估升级，不受限制测验学习能力，让您真正感受说一口流利英文的成就感。
+            </h4>
+            <img src="images/Grading_img.jpg"  width="650" height="511"> 
+        </div>
+    </div>
+</div>
+<div class="box_White">
+  <div class="T_Gray"></div>
+  <div class="box_960">
+    <div class="box_660 color_333">
+      <div class="title_wrap"> <img src="images/title_05.png" width="660" height="96" alt="学习追踪系统 Learning materials system" title="学习追踪系统 Learning materials system"  > </div>
+      <h3> 学习追踪系统英文成效精确掌握 </h3>
+      <h4> 深怕自己在学习过程中无法检视目前成果吗?VIPABC 特别研发学习追踪系统（LMS），同时针对每一位学习者所学过的教材以及外籍顾问指导的过程，留下详细纪录，完整追踪您的学习成效 </h4>
+      <h3> 无限复习成效倍增 </h3>
+      <h4> 您不需要一边抄笔记，一边忙着听顾问上课，VIPABC  为您全程同步录像上课实况，让您专心听、说英文，还可以无限次复习教材，有效提升自己的英文实力，学习效果倍增，就像置身国外与外籍人士面对面自然说英语。 </h4>
+    </div>
+  </div>
+</div>
+
+<div id="part_03" class="box_Gray">
+<a name="a01"></a>
+  <div class="T_Orange"></div>
+<div class="box_960">
+    <div class="box_660 color_333" style="float:left;">
+            <div class="title_wrap">
+               	 <img src="images/title_06.png" width="660" height="96" alt="行动学习 Mobile Learning" title="行动学习 Mobile Learning">
+            </div>
+            <h4>
+                  VIPABC 全面支持移动学习，VIPABC On The Go提供24小时订位/上课
+            </h4>
+    </div>
+    <div class="box_660">
+    <div style="position:relative; margin-top:20px; float:left;">
+    <img src="images/MobileLearning_01.png" width="234" height="262">
+    </div>
+    <div style="position:relative; margin-top:20px; margin-left:10px; float:left;">
+        <h4>
+        「移动词汇通」每日精选5个单词，<br>
+        「词汇快手」玩遊戲輕鬆提升單字力<br>
+        「英文学习报」了解各国时事脉动<br>
+        「英语急救站」兼具趣味与实用的学习短片<br>
+        </h4>
+    </div>
+    <div style="position:relative; padding-top:150px;">
+        <ul>
+            <li style="float:left; margin-left:20px"><a href="#"><img src="images/MobileLearning_02.png" width="85" height="107"></a></li>
+            <li style="float:left; margin-left:20px"><a href="#"><img src="images/MobileLearning_03.png" width="85" height="107"></a></li>
+            <li style="float:left; margin-left:20px"><a href="#"><img src="images/MobileLearning_04.png" width="85" height="107"></a></li>
+            <li style="float:left; margin-left:20px"><a href="#"><img src="images/MobileLearning_05.png" width="85" height="107"></a></li>
+        </ul>
+    </div>
+    
+
+    </div>
+    </div>
+</div>
+<div id="part_04" class="box_Orange">
+<div class="T_Gray"></div>
+  <div class="box_960">
+        <div class="box_660 color_fff">
+        <div class="title_wrap">
+               	 <img src="images/title_07.png" width="660" height="96" alt="免费在线直播讲堂 Free Session" title="免费在线直播讲堂 Free Session">
+        </div>
+        <h4>全球专业顾问在线提供包罗万象的咨询内容，名额有限，马上报名
+        </h4>
+        </div>
+    <div class="box_660 color_fff">
+    <div style="position:relative; margin-top:20px; margin-left:0px; float:left;">
+        <p class="color_fff" style="font-size:24px; font-family:Arial,微軟正黑體;">2013/05/14 20:30星期二</p>
+        <p class="color_fff" style="font-size:18px;font-family:Arial,微軟正黑體;">生活杂症电话英文通</p> 
+        <p class="color_fff" style="font-size:13px;font-family:Arial,微軟正黑體;  margin-top:10px;">
+            <h4>
+            全英语发音<br>
+            适合初级或想学英语的您<br>
+            妳知道如何用英文解决这些疑难杂症吗?<br>
+            资深英语透过生动实例<br>
+            还有对话范例让你即学即用!</p>
+            </h4>
+            <a href="#"><img src="images/Reservation_btn.png" width="289" height="50" style=" margin-left:-5px;"></a>
+        </div>
+        <div style="position:relative; margin-top:20px; margin-left:20px; height:auto; float:left;">
+            <img src="images/free_loby.jpg" width="320" height="188" style=" display:block; margin:0 auto; float:left;">
+        </div>
+    </div>
+    
+</div>
+</div>
+<div id="part_05" class="box_White">
+<div class="T_Orange"></div>
+<div class="box_960">
+    <div class="box_660 color_333" style="float:left;">
+        <div class="title_wrap">
+                <img src="images/title_08.png" width="660" height="96" alt="客户见证 Testimonials" title="客户见证 Testimonials">
+        </div>
+            <h4>感谢每位客户对我们的支持及肯定，您的进步是对我们最大的鼓励
+                VIPABC坚持给您高质量及便利有效的英语学习方式，数万位职场菁英的共同选择，诚挚的推荐给您！
+            </h4>
+        </div>
+        
+
+        <div class="box_660 color_333" style="float:left;">
+        
+        <div style="position:relative; margin-top:20px; float:left;">
+        <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded">
+        <img src="images/Testimonials_img_1.jpg" width="638" height="386" style="float:left;">
+        </a>
+    </div>
+    <div style="position:relative; margin-top:20px; float:left;">
+    <ul>
+            	<li style="float:left; width:120px;  margin-right:10px">
+                <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded"><img src="images/Testimonials_img_02.png" width="119" height="73"></a>
+                <h5 class="color_333" style="text-align:left;">宁波远鼎进出口有限公司 外贸主管-王朝云</h5>
+                </li>
+                <li style="float:left; width:120px; margin-right:10px">
+                <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded"><img src="images/Testimonials_img_03.png" width="119" height="73"></a>
+                <h5 class="color_333" style="text-align:left;">《时文博览》杂志执行主编-李湛</h5>
+                </li>
+                <li style="float:left; width:120px; margin-right:10px">
+                <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded"><img src="images/Testimonials_img_04.png" width="119" height="73"></a>
+                <h5 class="color_333" style="text-align:left;">奥普科技总经理-娄达吟</h5>
+                </li>
+                <li style="float:left; width:120px;  margin-right:10px">
+                <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded"><img src="images/Testimonials_img_05.png" width="119" height="73"></a>
+                <h5 class="color_333" style="text-align:left;">中国电信洞头分公司总经理-林其新</h5>
+                </li>
+                <li style="float:left; width:120px; margin-right:10px">
+                <a class="fancybox-media" href="http://www.youtube.com/watch?v=fWxy4A5hq-0&feature=player_embedded"><img src="images/Testimonials_img_06.png" width="119" height="73"></a>
+                <h5 class="color_333" style="text-align:left;">高尔夫球职业教练-张敬昂</h5>
+                </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="part_06" class="box_Gray">
+<div class="T_White"></div>
+  <div class="box_960">
+        <div class="box_660 color_333">
+        <div class="title_wrap">
+               	 <img src="images/title_09.png" width="660" height="96" alt="英语学习专区 English Learning Resources" title="英语学习专区 English Learning Resources">
+       </div>
+        <h4>VIPABC 为您提供在线学习专区，让您轻松加强英语能力</h4>
+        </div>
+
+        <div class="box_660">
+        <div class="index_list">
+            	<ul>
+                    <li class="index_dailywords_wrap">
+                       <div class="index_list_White">每日一句</div>
+                       <a href="/aspx/Mvc/html/speedmemory.html"><img src="images/consultant.jpg" width="79" height="81"></a>
+                       <div class="index_list_on">
+                      Nicholas 教你说：<br>
+					  Run the Gamut
+                      </div>
+                    </li>
+                    <li class="index_list_wrap">
+                    <div class="index_list_Orange">英文报</div>
+                    <a href="/aspx/Mvc/epaper/index"><img src="images/Resources02.png" width="200" height="144"></a>
+                    <div class="index_list_on">
+                         最新最热门的话题<br>
+                        VIPABC英文报和你一起掌握!
+                     </div>
+                    </li>
+                    <li class="index_list_wrap">
+                    <div class="index_list_Orange">英文急救站</div>
+                    <a href="/aspx/Mvc/Home/IosTutorMobilePad"><img src="images/Resources03.png" width="200" height="144"></a>
+                    <div class="index_list_on">
+                        輕鬆有英文短劇<br>
+                       让您不费力气就能提升英语能力！
+
+                     </div>
+                    
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        
+    <div class="box_660 color_333" style="float:left; background:url(images/Subscription_bg.png); width:660px; height:95px;">
+    
+    
+    <div style=" position:relative;height:38px; margin-top:25px; margin-left:130px; width:500px; float:left; vertical-align:middle;">
+        <input class="reg_field" type="text" value="请输入您的邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的邮箱';}"  style="height:30px;  vertical-align:middle; width:360px; float:left;"/>
+        <div class="y_btn"><a class="btn_text color_fff" href="#">立即订阅</a></div></div>
+    </div> 
+    </div>
+  </div>
+</div>
+
+
+<div id="footer-all">
+<div class="footer">
+    <div class="footcertify"><img src="images/permit_foot.jpg" width="960" height="50" alt="VIPABC在线英语培训服务承诺" /></div>
+    <div class="right">
+	  <p>
+	  <!--<a href="#">导览</a>．-->
+      <a href="/program/about/index.asp">关于VIPABC</a>．
+  	<!--<a href="/program/news/news_list.asp">新闻/报道</a>．-->
+    <a href="/program/terms/privacy.asp">隐私保护</a>．
+    <a href="/program/terms/security.asp">安全条款</a>．
+    <a href="/program/terms/service.asp">服务条款</a>．
+     <!--<a href="/program/epaper/index.asp"></a>．-->
+	 <a href="/program/recruit/index.asp" style="color:#ff6600;">诚征英才</a>．
+	 <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>．<!--<a href="http://www.tutormeet.com/mictest/mictest.html?lang=3&compstatus=vipabc" target="_blank">平台测试</a>．--><a href="/program/contact/contact_us.asp">络我们</a>．</p>
+	  <p><span class="certline" style="line-height:20px;">教育许可:教职成司函[2011]267号&nbsp;|&nbsp;经营许可证:京ICP证090121号&nbsp;|&nbsp;京ICP备11004351号&nbsp;|&nbsp;京公网安备110105019074<br />
+      <a href="/program/about/index.asp">VIPABC.com</a>&nbsp; <a href="/program/terms/law.asp"><font color="#999999">版权所有</font></a> &copy; 2008-2013 全球最大真人<a href="/program/consultant/consultant_list.asp" style="padding:0 0 0 0;text-decoration: none;color: #777777;">英语外教</a>网&nbsp;All Rights Reserved. | 服务专线:<font color="#FF6600"  style="font-size:14px; font-weight:bold">4006-30-30-30</font> 
+      </span>
+	    <br />
+	    <a href="http://trust.360.cn/search.php" target="_blank" title="360绿色网站" rel="nofollow" >
+        <img src="images/360cert.jpg" border="0" /></a>
+	    <a href="https://www.itrust.org.cn/yz/pjwx.asp?wm=2679644979" target="_blank" rel="nofollow" >
+        <img src="images/webtrust.jpg" width="110" height="40" border="0" /></a>
+	    <a href="http://www.315online.com.cn/member/315120016.html" target="_blank" rel="nofollow" >
+        <img src="images/315cert.jpg"  width="110" height="40" border="0" /></a>
+	    <!--<a href="http://www.vipabc.com/cnnic1.asp" target="_blank">
+    <img src="/images/cert/kexin.jpg" width="110" height="40" border="0"  /></a>-->
+	    <a href="https://ss.cnnic.cn/verifyseal.dll?sn=e12040111010015948308104" target="_blank" rel="nofollow" ><img src="images/kexin.jpg" width="110" height="40" border="0" /></a>
+	    <!--<iframe src="http://www.vipabc.com/cnnic.asp" frameborder="0" scrolling="0" width="160" height="90"></iframe>-->
+	    <a id='___szfw_logo___' href='https://search.szfw.org/cert/l/CX20120625001575001635' target='_blank'><img src='images/trusticon1.png'></a>
+	    <script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+	    <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202012121200003" target="_blank" rel="nofollow">
+        <img src="images/hd315.gif" width="110" height="40" border="0" /></a></p>
+	</div>
+    <!--<div class="right"><select name="select" id="select" class="btn"><option>Choose  Language</option></select></div>-->
+    <br class="clear" />
+</div>
+</body>
+</html>

@@ -1,0 +1,355 @@
+.app_epaper{
+	font-size:1em;
+	}
+
+.article{
+	width:570px;
+	float:left;
+	padding:15px;}
+/*--------------------------------------------------------------------------------學習報主標--------------------------------------------------------------------------------*/
+.section1{
+	width:570px;
+	clear:both;}
+
+.title_epaper{
+	width:60px;
+	height:24px;
+	padding-right:225px;
+	float:left;}
+.app_epaper{
+	width:245px;
+	height:24px;
+	line-height:24px;
+	float:left;
+	color:#f40000;
+	letter-spacing:0px;
+	vertical-align:top;
+	background:url(../images/hot_epaper.jpg) top left no-repeat;
+	padding-left:40px;}
+.app_epaper a{
+	color:#f40000;}
+.app_epaper a:hover{
+	color:#CC0A08;}
+.dotted{
+	background:url(../images/dotted.gif) no-repeat;
+	text-indent:-999px;
+	clear:both;}
+/*--------------------------------------------------------------------------------學習報主標 END--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------NAV--------------------------------------------------------------------------------*/
+#nav_epaper{
+	width:570px;}
+#nav_epaper ul li{
+	float:left;
+	text-indent:-999px;}
+.bs a, .travel a, .fun a, .hh a, .art a, .bs_new a, .travel_new a, .fun_new a, .hh_new a, .art_new a{
+	width:114px;
+	height:40px;
+	margin-top:5px;
+	display:block;}
+.bs a:hover, .travel a:hover, .fun a:hover, .hh a:hover, .art a:hover, .bs_new a:hover, .travel_new a:hover, .fun_new a:hover, .hh_new a:hover, .art_new a:hover, .bs_arrive a, .travel_arrive a, .fun_arrive a, .hh_arrive a, .art_arrive a, .bs_arrive_new a, .travel_arrive_new a, .fun_arrive_new a, .hh_arrive_new a, .art_arrive_new a{
+	width:114px;
+	height:45px;
+	margin-top:0px;
+	display:block;}
+/*normal*/
+.bs a{
+	background:url(../images/nav.gif) 0 0 no-repeat;}
+.travel a{
+	background:url(../images/nav.gif) -114px 0 no-repeat;}
+.fun a{
+	background:url(../images/nav.gif) -228px 0 no-repeat;}
+.hh a{
+	background:url(../images/nav.gif) -342px 0 no-repeat;}
+.art a{
+	background:url(../images/nav.gif) -456px 0 no-repeat;}
+.bs a:hover{
+	background:url(../images/nav_hover.gif) 0 0 no-repeat;}
+.travel a:hover{
+	background:url(../images/nav_hover.gif) -114px 0 no-repeat;}
+.fun a:hover{
+	background:url(../images/nav_hover.gif) -228px 0 no-repeat;}
+.hh a:hover{
+	background:url(../images/nav_hover.gif) -342px 0 no-repeat;}
+.art a:hover{
+	background:url(../images/nav_hover.gif) -456px 0 no-repeat;}
+/*new*/
+.bs_new a{
+	background:url(../images/nav_new.gif) 0 0 no-repeat;}
+.travel_new a{
+	background:url(../images/nav_new.gif) -114px 0 no-repeat;}
+.fun_new a{
+	background:url(../images/nav_new.gif) -228px 0 no-repeat;}
+.hh_new a{
+	background:url(../images/nav_new.gif) -342px 0 no-repeat;}
+.art_new a{
+	background:url(../images/nav_new.gif) -456px 0 no-repeat;}
+.bs_new a:hover{
+	background:url(../images/nav_hover_new.gif) 0 0 no-repeat;}
+.travel_new a:hover{
+	background:url(../images/nav_hover_new.gif) -114px 0 no-repeat;}
+.fun_new a:hover{
+	background:url(../images/nav_hover_new.gif) -228px 0 no-repeat;}
+.hh_new a:hover{
+	background:url(../images/nav_hover_new.gif) -342px 0 no-repeat;}
+.art_new a:hover{
+	background:url(../images/nav_hover_new.gif) -456px 0 no-repeat;}
+/*arrive*/
+.bs_arrive a{
+	background:url(../images/nav_hover.gif) 0 0 no-repeat;}
+.travel_arrive a{
+	background:url(../images/nav_hover.gif) -114px 0 no-repeat;}
+.fun_arrive a{
+	background:url(../images/nav_hover.gif) -228px 0 no-repeat;}
+.hh_arrive a{
+	background:url(../images/nav_hover.gif) -342px 0 no-repeat;}
+.art_arrive a{
+	background:url(../images/nav_hover.gif) -456px 0 no-repeat;}
+/*arrive_new*/
+.bs_arrive_new a{
+	background:url(../images/nav_hover_new.gif) 0 0 no-repeat;}
+.travel_arrive_new a{
+	background:url(../images/nav_hover_new.gif) -114px 0 no-repeat;}
+.fun_arrive_new a{
+	background:url(../images/nav_hover_new.gif) -228px 0 no-repeat;}
+.hh_arrive_new a{
+	background:url(../images/nav_hover_new.gif) -342px 0 no-repeat;}
+.art_arrive_new a{
+	background:url(../images/nav_hover_new.gif) -456px 0 no-repeat;}
+/*--------------------------------------------------------------------------------NAV END--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------LIST--------------------------------------------------------------------------------*/
+.section2{
+	width:568px;
+	clear:both;
+	border-right:#dadada solid 1px;
+	border-bottom:#dadada solid 1px;
+	border-left:#dadada solid 1px;}
+.list_epaper{
+	width:518px;
+	margin:0 26px;
+	border-bottom:#eaeaea 1px solid;}
+.list_left{
+	width:100px;
+	padding:12px 17px 14px 0px;
+	float:left;}
+.list_right{
+	width:399px;
+	padding:12px 0 0 0;
+	float:left;}
+.list_title a{
+	font-size:1.25em;
+	height:40px;
+	line-height:20px;
+	color:#ff8400;
+	font-weight:bold;}
+.list_title a:hover{
+	color:#ff9422;}
+.list_article a{
+	color:#888888;
+	letter-spacing:0;
+	margin:6px 0;
+	line-height:20px;
+	height:60px;
+	overflow:hidden;}
+.list_article a:hover{
+	color:#999999;}
+.list_more a{
+	color:#555555;
+	float:right;
+	height:15px;
+	padding-bottom:10px;
+	text-decoration:underline;
+	font-weight:bold;}
+.list_more a:hover{
+	color:#333333;}
+/*--------------------------------------------------------------------------------LIST END--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------NUM--------------------------------------------------------------------------------*/
+.list_num{
+	padding:29px 0;
+	margin: 0 auto;
+	text-align:center;
+	height:28px;
+	line-height:28px;}
+span.num{
+	}
+span.num a{
+	color:#333333;
+	display: inline-block;
+	border: 1px solid #d3d3d3;
+	background-color: white;
+	padding: 2px 7px;
+	*padding: 2px 6px;
+	_padding: 2px 10px;
+	text-align: center;
+	min-width: 20px;
+	width: auto !important;
+	_width: auto;
+	*margin-right:2px;
+	_margin-right:1px;
+	text-decoration:none;
+	cursor:pointer;
+	font-weight:bold;}
+span.arrive{
+	color:#ffffff;
+	border: 1px solid #ff7200;
+	display: inline-block;
+	background-color:#ff7200;
+	padding: 2px 7px;
+	*padding: 2px 6px;
+	_padding: 2px 10px;
+	text-align: center;
+	min-width: 20px;
+	width: auto !important;
+	_width: auto;
+	*margin-right:2px;
+	_margin-right:1px;
+	text-decoration:none;
+	cursor:pointer;
+	font-weight:bold;}
+span.num a:hover{
+	background:#dfdfdf;}
+	
+/*--------------------------------------------------------------------------------NUM END--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------INSIDE--------------------------------------------------------------------------------*/
+.inside{
+	padding-top:12px;}
+.inside img{
+	margin-right:15px;
+	float:left;}
+.date_epaper{
+	float:left;
+	width:44px;
+	height:46px;
+	text-align:center;}
+.year_epaper{
+	line-height:21px;
+	background:#d4d4d4;
+	color:#FFFFFF;
+	letter-spacing:0;
+	font-weight:bold;
+	font-size:0.917em;
+	}
+.month_epaper{
+	border:#d4d4d4 solid 2px;
+	line-height:21px;
+	color:#555555;
+	font-weight:bold;
+	font-size:0.917em;}
+.inside_title{
+	width:245px;
+	height:44px;
+	float:left;
+	padding-left:13px;
+	padding-top:2px;}
+.vedio_epaper{
+	margin-top:15px;
+	width:300px;
+	height:80px;
+	float:left;}
+.article_epaper{
+	line-height:20px;
+	font-size:1.083em;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#555555;
+	letter-spacing:0;}
+.article_epaper span, .word_explanation span{
+	color:#0084FF;
+	font-weight:bold;}
+.vedio_share_epaper{
+	width:95px;
+	padding-left:430px;
+	clear:both;}
+.vedio_share_epaper ul li{
+	display:block;
+	float:left;}
+.word_epaper{
+	width:474px;
+	margin:0 26px 15px 26px;
+	padding:22px 22px 10px 22px;
+	background:#F8F8F8;}
+.each_word_epaper{
+	width:474px;
+	border-bottom:#666666 dotted 1px;
+	margin:15px 0;}
+.title_num1{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) 0 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num2{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -15px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num3{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -30px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num4{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -45px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num5{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -60px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num6{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -75px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num7{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -90px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num8{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -105px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num9{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif) -120px 0 no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.title_num10{
+	width:15px;
+	height:15px;
+	background:url(../images/number.gif)  -135px no-repeat;
+	text-indent:-999px;
+	margin-right:4px;
+	float:left;}
+.word_explanation{
+	width:455px;
+	float:left;}
+.word_explanation p{
+	color:#333333;
+	line-height:15px;
+	letter-spacing:0;
+	margin-bottom:10px;}
+/*--------------------------------------------------------------------------------INSIDE END--------------------------------------------------------------------------------*/

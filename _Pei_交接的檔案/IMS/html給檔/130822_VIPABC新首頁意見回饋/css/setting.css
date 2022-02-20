@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contentW825{ width:825px; margin:0 auto;}
+h3.title{ background:url(../images/setting/ico_title.jpg) no-repeat left center; font-size:16px; font-weight:bold; padding-left:35px; height:29px; line-height:29px; margin-bottom:25px;}
+ul.setting{ width:825px; margin-bottom:20px;}
+ul.setting li{ list-style:none; background:url(../images/setting/bg_bdr.jpg) no-repeat center left; width:382px; height:38px; line-height:38px; padding:0 10px; float:left; margin:0 10px 15px 0;}
+ul.setting li img{ vertical-align:middle;}
+ul.setting li h4{ float:left; width:230px; font-size:14px; font-weight:bold;}
+ul.setting li .status{ float:right; width:150px; font-size:13px;}
+ul.setting li .status>span{ padding-right:15px;}
+
+
+
+
+

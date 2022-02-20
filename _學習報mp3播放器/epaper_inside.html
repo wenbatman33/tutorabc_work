@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TutorABC</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="js/jQuery_v1.8.2.js"></script>
+<link href="css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<!----------------------------------頁籤---------------------------------->
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+		$($defaultLi.find('a').attr('href')).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs li').click(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_clickTab = $this.find('a').attr('href');
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+<!--------------------------------頁籤 END-------------------------------->
+<!---------------------------------player--------------------------------->
+<script type="text/javascript">
+	//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
+			});
+		},
+		swfPath: "js",
+		supplied: "mp3",
+		wmode: "window"
+	});
+});
+//]]>
+</script>
+<!------------------------------player END------------------------------>
+</head>
+
+<body>
+<div class="article"> 
+<!---------------------------學習報主標--------------------------->
+  <div class="section1">
+    <h1 class="title_epaper"><img src="images/title_epaper.jpg" alt="TutorABC學習報"/></h1>
+    <div class="app_epaper"><a href="epaper_inside.html">學習報隨身帶著走！立即下載英文學習報APP</a></div>
+    <div class="dotted">虛線</div>
+  </div>
+<!---------------------------學習報主標 END---------------------------> 
+  
+<!---------------------------學習報NAV--------------------------->
+  <div id="nav_epaper">
+    <ul class="tabs">
+      <li class="bs_arrive_new"><a href="#tab1">商業科技</a></li>
+      <li class="travel"><a href="#tab2">旅遊探索</a></li>
+      <li class="fun"><a href="#tab3">生活娛樂</a></li>
+      <li class="hh"><a href="#tab4">健康醫學</a></li>
+      <li class="art"><a href="#tab5">人文藝術</a></li>
+    </ul>
+  </div>
+<!---------------------------學習報NAV END---------------------------> 
+  
+<!---------------------------學習報LIST--------------------------->
+  <div class="section2"> 
+<!---------------------------商業科學--------------------------->
+    <div id="tab1"> 
+    	<div class="list_epaper">
+      		<div class="inside">
+        		<img src="images/epaper_L_7.jpg" />
+                <div class="date_epaper">
+                	<p class="year_epaper">2012</p>
+                	<p class="month_epaper">Sep</p>
+                </div>
+                <div class="inside_title">
+                	<p class="list_title"><a href="epaper_inside.html">全球最酷的工作<br />
+            Cool Jobs Series</a></p>
+            	</div>
+                <!--聲音檔-->
+                <div class="vedio_epaper">
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+		<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-single">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-time-holder">
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+
+						<ul class="jp-toggles">
+							<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+							<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+                </div>
+                <!--聲音檔 END-->
+                <!--內文-->
+                <p class="article_epaper">Are you familiar with the term “set-jetting”? “<span>Set</span>” refers to movie sets, or filming locations. “Jetting” refers to travel. So, set-jetting is to travel to places that you’ve seen in movies. This can be touring London in a high-speed boat like James Bond, or visiting the <span>estates</span> that are featured in film adaptations of Jane Austen novels. Gretchen Kelly, a New York journalist, first <span>coined</span> the term “set-jetting”.<br />
+The concept may be relatively new, but it’s rapidly becoming a major factor for travelers who aren’t too sure about where to go. Often when travelers see a place in a major movie, it may <span>compel</span> them to make an effort to visit the place, whether on family vacation, a honeymoon, or a backpacking trip. More examples of set-jetting are people visiting France after watching “The Da Vinci Code” and travelling to Thailand after seeing “The Beach”. </p>
+				<!--內文 END-->
+				 
+                	<!-- 社群網站分享 start-->
+                    <div class="vedio_share_epaper">
+                    <ul>
+                    	<!-- 社群網站分享 start-->
+                            <li class="f_04">
+                                <!-- AddThis Button BEGIN -->
+                                <div class="addthis_toolbox addthis_default_style ">
+                                    <a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_plurk">
+                                    </a>
+                                </div>
+                                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+                                <!-- AddThis Button END -->
+                            </li>
+                            <li class="f_05">
+                                <!-- Place this tag where you want the +1 button to render -->
+                                <g:plusone size="small" annotation="none"></g:plusone>
+                                <!-- Place this render call where appropriate -->
+                                <script type="text/javascript">
+                                    window.___gcfg = { lang: 'zh-TW' };
+
+                                    (function () {
+                                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                        po.src = 'https://apis.google.com/js/plusone.js';
+                                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                    })();
+                                </script>
+                            </li>
+                            <!-- 社群網站分享 end-->
+
+                     </ul>
+                </div>
+                <!-- 社群網站分享 end-->
+            </div>
+        </div>
+        <div class="word_epaper">
+        	<img src="images/epaper_title2.gif" />
+            <!--單字1-->
+            <div class="each_word_epaper">
+            	<div class="title_num1">1</div>
+                <div class="word_explanation">
+                <p><span>set</span> ( n. 名詞 ) (電影)攝影場地</p>
+                <p>The director yelled “quiet on set!” when the cameras began to film.</p>
+                <p>當攝影機開始拍攝，導演大喊︰『現場安靜！』</p>
+                </div>
+            </div>
+            <!--單字2-->
+            <div class="each_word_epaper">
+            	<div class="title_num2">2</div>
+                <div class="word_explanation">
+                <p><span>set</span> ( n. 名詞 ) (電影)攝影場地</p>
+                <p>The director yelled “quiet on set!” when the cameras began to film.</p>
+                <p>當攝影機開始拍攝，導演大喊︰『現場安靜！』</p>
+                </div>
+            </div>
+            <!--單字3-->
+            <div class="each_word_epaper">
+            	<div class="title_num3">3</div>
+                <div class="word_explanation">
+                <p><span>set</span> ( n. 名詞 ) (電影)攝影場地</p>
+                <p>The director yelled “quiet on set!” when the cameras began to film.</p>
+                <p>當攝影機開始拍攝，導演大喊︰『現場安靜！』</p>
+                </div>
+            </div>
+            <!--單字4-->
+            <div class="each_word_epaper">
+            	<div class="title_num4">4</div>
+                <div class="word_explanation">
+                <p><span>set</span> ( n. 名詞 ) (電影)攝影場地</p>
+                <p>The director yelled “quiet on set!” when the cameras began to film.</p>
+                <p>當攝影機開始拍攝，導演大喊︰『現場安靜！』</p>
+                </div>
+            </div>
+            <!--單字5-->
+            <div class="each_word_epaper">
+            	<div class="title_num5">5</div>
+                <div class="word_explanation">
+                <p><span>set</span> ( n. 名詞 ) (電影)攝影場地</p>
+                <p>The director yelled “quiet on set!” when the cameras began to film.</p>
+                <p>當攝影機開始拍攝，導演大喊︰『現場安靜！』</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------商業科學END---------------------------> 
+    
+<!---------------------------旅遊探索--------------------------->
+    <div id="tab2"> 
+      <!--120201-->
+      <div class="list_epaper">
+        <div class="list_left"><img src="images/epaper_L_7s.jpg" /></div>
+        <div class="list_right">
+          <p class="list_title"><a href="epaper_inside.html">2.全球最酷的工作<br />
+            Cool Jobs Series</a></p>
+          <p class="list_article"><a href="epaper_inside.html">Our world is constantly changing. Change creates new job markets. For 
+            example, there are many people changing their lives to live “greener” 
+            lifestyles. So there is a growing market for ... </a></p>
+          <p class="list_more"><a href="epaper_inside.html">more</a></p>
+        </div>
+      </div>
+      <!--120201-->
+      <div class="list_epaper">
+        <div class="list_left"><img src="images/epaper_L_7s.jpg" /></div>
+        <div class="list_right">
+          <p class="list_title"><a href="epaper_inside.html">全球最酷的工作<br />
+            Cool Jobs Series</a></p>
+          <p class="list_article"><a href="epaper_inside.html">Our world is constantly changing. Change creates new job markets. For 
+            example, there are many people changing their lives to live “greener” 
+            lifestyles. So there is a growing market for ... </a></p>
+          <p class="list_more"><a href="epaper_inside.html">more</a></p>
+        </div>
+      </div>
+      <!--學習報NUM-->
+      <div class="list_num"> <span class="num"><a><<</a></span> <span class="num"><a><</a></span> <span class="num"><a>1</a></span> <span class="arrive">2</span> <span class="num"><a>3</a></span> <span class="num"><a>4</a></span> <span class="num"><a>5</a></span> <span class="num"><a>6</a></span> <span class="num"><a>7</a></span> <span class="num"><a>8</a></span> <span class="num"><a>></a></span> <span class="num"><a>>></a></span> </div>
+      <!--學習報NUM END--> 
+    </div>
+    <!---------------------------旅遊探索END---------------------------> 
+    
+    <!---------------------------生活娛樂--------------------------->
+    <div id="tab3"> 
+      <!--120201-->
+      <div class="list_epaper">
+        <div class="list_left"><img src="images/epaper_L_7s.jpg" /></div>
+        <div class="list_right">
+          <p class="list_title"><a href="epaper_inside.html">3.全球最酷的工作<br />
+            Cool Jobs Series</a></p>
+          <p class="list_article"><a href="epaper_inside.html">Our world is constantly changing. Change creates new job markets. For 
+            example, there are many people changing their lives to live “greener” 
+            lifestyles. So there is a growing market for ... </a></p>
+          <p class="list_more"><a href="epaper_inside.html">more</a></p>
+        </div>
+      </div>
+      <!--學習報NUM-->
+      <div class="list_num"> <span class="num"><a><<</a></span> <span class="num"><a><</a></span> <span class="num"><a>1</a></span> <span class="arrive">2</span> <span class="num"><a>3</a></span> <span class="num"><a>4</a></span> <span class="num"><a>5</a></span> <span class="num"><a>6</a></span> <span class="num"><a>7</a></span> <span class="num"><a>8</a></span> <span class="num"><a>></a></span> <span class="num"><a>>></a></span> </div>
+      <!--學習報NUM END--> 
+    </div>
+<!---------------------------生活娛樂END---------------------------> 
+    
+<!---------------------------健康醫學--------------------------->
+    <div id="tab4"> 
+      <!--120201-->
+      <div class="list_epaper">
+        <div class="list_left"><img src="images/epaper_L_7s.jpg" /></div>
+        <div class="list_right">
+          <p class="list_title"><a href="epaper_inside.html">4.全球最酷的工作<br />
+            Cool Jobs Series</a></p>
+          <p class="list_article"><a href="epaper_inside.html">Our world is constantly changing. Change creates new job markets. For 
+            example, there are many people changing their lives to live “greener” 
+            lifestyles. So there is a growing market for ... </a></p>
+          <p class="list_more"><a href="">more</a></p>
+        </div>
+      </div>
+      <!--學習報NUM-->
+      <div class="list_num"> <span class="num"><a><<</a></span> <span class="num"><a><</a></span> <span class="num"><a>1</a></span> <span class="arrive">2</span> <span class="num"><a>3</a></span> <span class="num"><a>4</a></span> <span class="num"><a>5</a></span> <span class="num"><a>6</a></span> <span class="num"><a>7</a></span> <span class="num"><a>8</a></span> <span class="num"><a>></a></span> <span class="num"><a>>></a></span> </div>
+      <!--學習報NUM END--> 
+    </div>
+<!---------------------------健康醫學END---------------------------> 
+    
+<!---------------------------人文藝術--------------------------->
+    <div id="tab5"> 
+      <!--120201-->
+      <div class="list_epaper">
+        <div class="list_left"><img src="images/epaper_L_7s.jpg" /></div>
+        <div class="list_right">
+          <p class="list_title"><a href="epaper_inside.html">5.全球最酷的工作<br />
+            Cool Jobs Series</a></p>
+          <p class="list_article"><a href="epaper_inside.html">Our world is constantly changing. Change creates new job markets. For 
+            example, there are many people changing their lives to live “greener” 
+            lifestyles. So there is a growing market for ... </a></p>
+          <p class="list_more"><a href="epaper_inside.html">more</a></p>
+        </div>
+      </div>
+      <!--學習報NUM-->
+      <div class="list_num"> <span class="num"><a><<</a></span> <span class="num"><a><</a></span> <span class="num"><a>1</a></span> <span class="arrive">2</span> <span class="num"><a>3</a></span> <span class="num"><a>4</a></span> <span class="num"><a>5</a></span> <span class="num"><a>6</a></span> <span class="num"><a>7</a></span> <span class="num"><a>8</a></span> <span class="num"><a>></a></span> <span class="num"><a>>></a></span> </div>
+      <!--學習報NUM END--> 
+    </div>
+<!---------------------------人文藝術END---------------------------> 
+    
+<!---------------------------學習報LIST END---------------------------> 
+  </div>
+</div>
+</body>
+</html>

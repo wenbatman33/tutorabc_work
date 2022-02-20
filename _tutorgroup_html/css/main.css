@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+
+
+body {
+	margin: 0;
+	padding: 0;
+
+}
+
+.all { width: 955px; text-align:center; position:relative; margin:0px auto; font-family:Arial, Helvetica, sans-serif; font-size:15px;}
+
+img {border:0px; margin:0px;}
+hr { border:0; height:1px; background-color:#d4d4d4;
+	color:#d4d4d4}
+table { border:0px; padding:0px;}
+h1 { margin:0px auto 24px; }
+h4 { margin:12px auto 6px;}
+
+li { margin-bottom:24px;}
+
+.img {padding:6px; background-color:#FFF;}
+
+.bg_w { background-color:#FFF;}
+.center { text-align:center;}
+.float_l { float:left;}
+.float_r { float:right;}
+.margin_l { margin:auto 24px 24px auto;}
+.margin_r { margin:auto auto 24px 24px;}
+
+.footer { color:#bbb; font-size:14px; margin:24px; text-align:center;}
+.con { width:100%; margin:0px auto; color:#333; text-align:left;}
+.center { text-align:center;}
+.big { font-size:17px;}
+
+a:link { font-family:Arial, Helvetica, sans-serif; color:#bbbbbb; font-size:14px; text-decoration:none;}
+a:visited { font-family:Arial, Helvetica, sans-serif; color:#bbbbbb; font-size:14px;text-decoration:none;}
+a:active { font-family:Arial, Helvetica, sans-serif; color:#bbbbbb; font-size:14px;text-decoration:none;}
+a:hover { font-family:Arial, Helvetica, sans-serif; color:#999; font-size:14px; text-decoration:none;}
+
+.off:link { font-family:Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}
+.off:visited { font-family:Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}
+.off:active { font-family:Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}
+.off:hover { font-family:Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}
+
+
+.orange:link { font-family:Arial, Helvetica, sans-serif; color:#ff8a00; text-decoration:none;}
+.orange:visited { font-family:Arial, Helvetica, sans-serif; color:#ff8a00; text-decoration:none;}
+.orange:active { font-family:Arial, Helvetica, sans-serif; color:#ff8a00; text-decoration:none;}
+.orange:hover { font-family:Arial, Helvetica, sans-serif; color:#ff6c00; text-decoration: underline;}
+
+
+.sub_width { width:200px; }
+.awards_width { width:200px;}
+.sub_bg { background-color:#cc0000; vertical-align:top;}
+.sub_left_on { background-color:#f4f4f4; padding:18px; color:#333;}
+.sub_left_off { background-color:#C00; padding:18px; color:#FFF; border-top:1px solid #dc1b1b; border-bottom:1px solid #bb1212;}
+
+.main_right { padding:24px 36px; vertical-align:top;}
