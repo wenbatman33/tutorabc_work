@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+  $(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+	$( "#datepicker3" ).datepicker();
+  });
+</script>
+</head>
+<body class="col11">
+<div class="col11">
+  <div class="col11">
+    <table width="100%" cellpadding="0" cellspacing="0" class=" table_noneHover">
+      <tbody>
+            
+            <tr class="even">
+                <td class="text-right alignMiddle bg_color_gay width150"><div class="margin5 color_white ">*名单管道</div></td>
+                <td class="text-left alignMiddle bg_color_white">
+                <div class="margin5 float_left"><span class="fontSize14">
+                  <select class="width140" name="select7">
+                    <option selected="selected" value="请选择">请选择</option>
+                  </select>
+                </span></div>
+                <div class="color_red text-left float_left lineHeight30">请选择名单管道来源</div>
+              </td>
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">公司别</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span class="fontSize14">
+                  <select class="width140" name="select2">
+                    <option selected="selected" value="TutorABC">TutorABC</option>
+                  </select>
+                </span></div>
+                <div class=" text-left float_left lineHeight30"><input type="checkbox" name="checkbox_0" id="checkbox_0" /><label for="checkbox_0"> 此名单为Jr客户</label></div>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">*行动电话</div></td>
+                <td colspan="3" class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache4"></span><span class="fontSize14">
+                  <input  type="text" />
+                </span></div>
+                <div class="color_red text-left float_left lineHeight36">此行动电话已存在</div>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">*帐号</div></td>
+                <td colspan="3" class="text-left alignMiddle bg_color_white">
+                <div class="col11 margin5 float_left">
+                    <div class="inline_block float_left">
+                    <input  type="text"  class="width300"/></div>
+                    <div class="color_red text-left float_left lineHeight20">此帐号已存在</div>
+                 </div>
+                 <div class="col11 margin5  float_left">
+                 	<span class="margin5 lineHeight26">通讯信箱 <input type="checkbox" name="checkbox_1" id="checkbox_1" />
+                 	<label for="checkbox_1"> 与帐号相同 </label><input  type="text"  class="width300"/></span>
+                </div>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">*中文姓名</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache"></span><span class="fontSize14">
+                  <input  type="text" />
+                </span></div></td>
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">英文姓名</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache2"></span><span class="fontSize14">
+                  <input  type="text" />
+                </span></div></td>
+            </tr>
+            
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">*性别</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache"></span><span class="fontSize14">
+                   <input name="group1" id="group1_radio1" type="radio" /> 
+                   <label for="group1_radio1">男性</label>
+                   <input name="group1" id="group1_radio2" type="radio" /> 
+                   <label for="group1_radio2">女性</label>
+                </span></div></td>
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">*生日与年龄</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left">
+                  <input  type="text" id="datepicker2" />
+                  <select class="width70" name="select3">
+                    <option selected="selected" value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                  </select>
+                  </div>
+                </td>
+            </tr>
+            <tr class="even">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">*国籍与所在地</div></td>
+                <td colspan="3" class="text-left alignMiddle bg_color_white">
+                <div class="margin5">国籍：
+                  <select class="width300" name="select3">
+                    <option selected="selected" value="1978">中国</option>
+                  </select>
+                </div>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">如何得知公司</div></td>
+                <td colspan="3" class="text-left alignMiddle bg_color_white">
+                <div class="margin5">媒体类别：
+                  <select class="width300" name="select3">
+                    <option selected="selected" value="1978">广播</option>
+                  </select>
+                </div>
+                <div class="margin5">媒体名称：
+                  <select class="width300" name="select3">
+                    <option selected="selected" value="1978">ICRT</option>
+                  </select>
+                </div>
+                <div class="margin5">媒体细项：
+                  <select class="width300" name="select3">
+                    <option selected="selected" value="1978">圣诞节callin</option>
+                  </select>
+                </div>
+                </td>
+            </tr>
+      <tbody>
+    </table>
+    <div class="colauto text-center bg_color_gayc9  lineHeight30"><a  class="color_white" href="#">展开三个月内联络记录</a></div>
+  </div>
+    
+  <div class="col11 margin_top5">
+  	<div class="colauto text-center bg_color_gayc9  lineHeight30"><input type="checkbox" name="checkbox_2" id="checkbox_2" /><label class="color_white" for="checkbox_2"> 填写进阶资料</label>
+  	</div>
+  </div>
+    <table width="100%" cellpadding="0" cellspacing="0" class=" table_noneHover">
+      <tbody>
+            
+            <tr class="even">
+                <td class="text-right alignMiddle bg_color_gay width150"><div class="margin5 color_white">客户为什么想学</div></td>
+              <td colspan="3" class="text-left alignMiddle bg_color_white">
+                <div class="margin5 float_left"><span class="fontSize14">
+                  <select class="width140" name="select7">
+                    <option selected="selected" value="请选择">请选择</option>
+                  </select>
+              </span></div></td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">参加过哪个补习班</div></td>
+              <td colspan="3" class="text-left alignMiddle bg_color_white">
+              <div class="margin5 float_left"><span class="fontSize14">
+                <select class="width140" name="select">
+                  <option selected="selected" value="请选择">请选择</option>
+                </select>
+              </span></div>
+              <div class="margin5 float_left">学了多久<span class="fontSize14">
+                <select class="width140" name="select">
+                  <option selected="selected" value="请选择">请选择</option>
+                </select>
+              </span></div>
+              </td>
+            </tr>
+            
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">客户是否清楚价格</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache"></span>
+                  <div class="margin5 float_left"><span class="fontSize14">
+                    <select class="width140" name="select4">
+                      <option selected="selected" value="请选择">请选择</option>
+                    </select>
+                  </span></div>
+                </div></td>
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">粗估客户英文程度</div></td>
+                <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache2"></span><span class="fontSize14">
+                  <select class="width140" name="select5">
+                    <option selected="selected" value="请选择">请选择</option>
+                  </select>
+                </span></div></td>
+            </tr>
+            
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">通讯地址 </div></td>
+              <td colspan="3" class="text-left alignMiddle bg_color_white"><div class="margin5">媒体类别：
+                <select class="width60" name="select">
+                  <option selected="selected" value="台湾">台湾</option>
+                </select>
+                <select class="width150" name="select">
+                  <option selected="selected" value="请选择县市">请选择县市</option>
+                </select>
+                <select class="width60" name="select">
+                  <option selected="selected" value="请选择区域">请选择区域</option>
+                </select>
+              </div>
+              <div class="margin5">
+              		<input class="width300" type="text" />
+              </div>
+              
+              </td>
+            </tr>
+            <tr class="odd">
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">公司名称</div></td>
+              <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache3"></span>
+                <div class="margin5 float_left"><span class="fontSize14">
+                  <input  type="text" />
+                </span></div>
+              </div></td>
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">公司电话</div></td>
+              <td class="text-left alignMiddle bg_color_white">
+              <div class="margin5 float_left">
+                <input  class=" width50" type="text" />-<input  class=" width150" type="text" /> ext <input  class=" width50" type="text" />
+              </div>
+              </td>
+            </tr>
+            <tr class="odd">
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">职业别</div></td>
+              <td class="text-left alignMiddle bg_color_white">
+              <div class="margin5 float_left">
+                <span class="fontSize14 lineHeight30">
+                  <select class="width140" name="select8">
+                    <option selected="selected" value="请选择">请选择</option>
+                  </select>
+                </span>
+              </div>
+              <div class="col5 margin5 float_left fontSize14 lineHeight30">
+                 	<input  type="text"  class="width100" value="职称"/></span>
+              </div>
+              </td>
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">住家电话</div></td>
+              <td class="text-left alignMiddle bg_color_white">
+              <div class="margin5 float_left">
+                <input  class=" width50" type="text" />-<input  class=" width150" type="text" /> ext <input  class=" width50" type="text" />
+              </div>
+              </td>
+            </tr>
+            
+            <tr class="odd">
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">学校名称</div></td>
+              <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache6"></span>
+                <div class="margin5 float_left"><span class="fontSize14">
+                  <input  type="text" />
+                </span></div>
+              </div></td>
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">住家电话</div></td>
+              <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left">
+              <div class="margin5 float_left">
+                <input  class=" width50" type="text" />-<input  class=" width150" type="text" /> ext <input  class=" width50" type="text" />
+              </div>
+              </td>
+            </tr>
+            
+            <tr class="odd">
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">身分证字号 </div></td>
+              <td class="text-left alignMiddle bg_color_white"><div class="margin5 float_left"><span id="cache6"></span>
+                <div class="margin5 float_left"><span class="fontSize14">
+                  <input  type="text" />
+                </span></div>
+              </div></td>
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">其他电话</div></td>
+              <td class="text-left alignMiddle bg_color_white">
+              <div class="margin5 float_left">
+                <input  class=" width50" type="text" />-<input  class=" width150" type="text" /> ext <input  class=" width50" type="text" />
+              </div>
+              </td>
+            </tr>
+      <tbody>
+    </table>
+    
+    <div class="col11 margin_top5">
+  	<div class="colauto text-center bg_color_gay  lineHeight30 color_white">法定代理人资讯	</div>
+  </div>
+    <table width="100%" cellpadding="0" cellspacing="0" class=" table_noneHover">
+      <tbody> 
+        <tr class="odd">
+              <td class="text-right alignMiddle bg_color_gay width150 "><div class="margin5 color_white">姓名</div></td>
+              <td class="text-left alignMiddle bg_color_lightYellow"><div class="margin5 float_left"><span id="cache3"></span>
+                <div class="margin5 float_left"><span class="fontSize14">
+                  <input  type="text" />
+                </span></div>
+              </div></td>
+          <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">关系</div></td>
+              <td class="text-left alignMiddle bg_color_lightYellow"><div class="margin5 float_left"> <span class="fontSize14 lineHeight30">
+                <select class="width140" name="select6">
+                  <option selected="selected" value="请选择">请选择</option>
+                </select>
+              </span> </div></td>
+            </tr>
+            <tr class="odd">
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">电话</div></td>
+              <td class="text-left alignMiddle bg_color_lightYellow"><div class="margin5 float_left">
+                <input  class=" width50" type="text" />
+                -
+                <input  class=" width150" type="text" />
+                ext
+  <input  class=" width50" type="text" />
+              </div></td>
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">Email</div></td>
+              <td class="text-left alignMiddle bg_color_lightYellow">
+              <div class="margin5 float_left"><span class="fontSize14">
+                <input  type="text" />
+              </span></div>
+              </td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">通讯地址 </div></td>
+              <td colspan="3" class="text-left alignMiddle bg_color_lightYellow"><div class="margin5">媒体类别：
+                <select class="width60" name="select">
+                  <option selected="selected" value="台湾">台湾</option>
+                </select>
+                <select class="width150" name="select">
+                  <option selected="selected" value="请选择县市">请选择县市</option>
+                </select>
+                <select class="width60" name="select">
+                  <option selected="selected" value="请选择区域">请选择区域</option>
+                </select>
+              </div>
+              <div class="margin5">
+              		<input class="width300" type="text" />
+              </div>
+              
+              </td>
+            </tr>
+      <tbody>
+    </table>
+    <div class="col11 margin_top5">
+  	<div class="colauto text-center  lineHeight30 color_white"><a href="#" class="btn btn-primary">送出</a>	</div>
+  </div>
+    
+    
+</div>
+</body>
+</html>

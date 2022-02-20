@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="http://www.tutorabc.com/aspx/Mvc/Content/globe.css"/>
+<style type="text/css">
+.appCarouselUL {}
+.appCarouselUL li{ position:relative; float:left; margin-left:10px; top:0px; width:100%;}
+.appLRBtns{ position:absolute; z-index:10; top:0px;}
+.prevBtn { position:absolute; display:inline-block; left:5px;  width:26px; height:84px;background:url(images/prevBtn.png) no-repeat;}
+.nextBtn { position:absolute; display:inline-block; left:710px;  width:26px; height:84px;background:url(images/nextBtn.png) no-repeat;}
+.appPointBtns{width:100%;  height:20px; text-align:center;}
+.appPointBtns a{ margin:10px;}
+.ponitHit{ display:inline-block; width:10px; height:10px; background:url(images/appCarouse_point_click.png); margin:0px;}
+.ponitIcon{ display:inline-block; width:10px; height:10px; background:url(images/appCarouse_point.png); margin:0px; }
+
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+$(function(){
+	var $block = $('.appCarousel');
+	$slides = $block.find('.slides');
+	$ul = $slides.find('ul');
+	$PointBtns = $('.appPointBtns');
+	totalPic= $('.slides li').length;
+	_width = 666;
+	totalWidth=totalPic*110;
+	timer=100; _stop = false; nowNum=0; currentx=0; btnOver=false;
+	totalFrames=Math.ceil(totalWidth/_width);
+	
+	
+	
+	for(var i=0;i<totalFrames;i++){
+		$PointBtns.append( "<a href=\"javascript: void(0)\" onclick=\"javascript: roll("+i+")\" ><span class=\"ponitIcon\"></span></a>" );
+	}
+	
+	if(totalFrames<=1){
+		$('.appPointBtns').hide();
+		$('.app_submenu').css( "height","90px" );
+	}
+	
+	$('.prevBtn').hover(
+		  function() {
+			$( this ).css( "top","+=5px" );
+		  }, function() {
+			$( this ).css( "top","-=5px" );
+		  }
+	);
+	$('.nextBtn').hover(
+		   function() {
+			$( this ).css( "top","+=5px" );
+		  }, function() {
+			$( this ).css( "top","-=5px" );
+		  }
+	);
+	
+	$('.prevBtn').click( function(){ prv(); });
+	$('.nextBtn').click( function(){ next(); });
+	
+	roll(nowNum);	
+		
+	
+
+});
+
+function next(){
+	if(nowNum >=(totalFrames-1)){
+		nowNum=totalFrames;
+	}else{
+		nowNum+=1;
+		roll(nowNum);
+	}
+}
+function prv(){
+	if(nowNum<=0){
+		nowNum=0;	
+	}else{
+		nowNum-=1;
+		roll(nowNum);
+	}
+}
+
+function roll(num){
+
+	nowNum=num;
+	if(num<=0){
+		$('.prevBtn').hide();
+	}else{
+		$('.prevBtn').show();
+	}
+	if(num>=(totalFrames-1)){
+		$('.nextBtn').hide();
+	}else{
+		$('.nextBtn').show();
+	}
+	currentx=0-num*_width;
+	var str= currentx+"px";
+	$('.ponitHit').removeClass().addClass("ponitIcon");
+	$('.appPointBtns a').eq(num).find('span').removeClass("ponitIcon").addClass("ponitHit");
+	
+
+	
+	if(totalPic==5){
+		$(".slides").css( "left" ,"50px");
+	}else if(totalPic==4){
+		$(".slides").css( "left" ,"100px");
+	}else if(totalPic==3){
+		$(".slides").css( "left" ,"150px");
+	}else if(totalPic==2){
+		$(".slides").css( "left" ,"200px");
+	}else if(totalPic==1){
+		$(".slides").css( "left" ,"270px");
+	}else{
+		$(".slides").stop().animate({ left: str }, 300 );
+	}
+	
+	
+};
+</script>
+</head>
+
+
+<body>
+
+<div id="page_block" class="register">
+    <div class="blocks block_reserve">
+        <div class="title">
+            <img src="http://www.tutorabc.com/aspx/Mvc/images/title-app.png" alt="熱門APP下載"></div>
+        <!--app START-->
+        <div class="app_download">
+            <!--all app START-->
+            <div class="app_box">
+                <!--title-->
+                <div class="app_subtitle">
+                    <ul>
+                        <li class="on">iOS</li>
+                        <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/AndroidTutorMobilePad">Android</a></li>
+                        <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/WindowsPhoneEpaper">Windows Phone</a></li>
+                    </ul>
+                    <div class="Clear">
+                    </div>
+                </div>
+
+                        <div class="appad">
+                        	<ul>
+                            	<li class="Smart">Smart Phone</li>
+                                <li class="appline">線</li>
+                                <li class="Tablet"><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosTutorMobilePad">Tablet PC</a></li>
+                            </ul>
+                        </div>
+                        <!--appad end-->
+
+                <!--title-->
+                <div class="app_submenu" style=" height:120px; position:relative;">
+             
+                	 <!--appCarousel START-->
+                    <div class="appCarousel" style=" display:inline-block; position:relative; overflow:hidden; left:0px; width:666px; height:100px; ">
+						 <div class="slides" style="display:inline-block;  position:absolute; left:0px; width:9999px; height:84px; ">
+                        	<ul class="appCarouselUL"> 
+                           <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosSpellingGame">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/ico_iPhone-Spotlight_58.png"></a><br>
+                                字彙快手</li>
+                            <li>
+                                <a href="http://www.tutorabc.com/aspx/Mvc/Home/IosCalendar">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/TutorCalendar_58.png"></a><br>
+                                Tutor Calendar</li>        
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosGEPTB">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/GEPTB58x58.png"></a><br>
+                                TutorGEPT B</li>   				
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosTutorGEPT">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/58x58.png"></a><br>
+                                TutorGEPT I</li>       
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosEpaper">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/appicon-epaper.png"></a><br>
+                                英文學習報</li>   	                                                               
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosVocapp">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/appicon-vocapp.png"></a><br>
+                                行動字彙通</li>                                            
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosSurvivalEnglish">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/appicon-es.png"></a><br>
+                                英文急救站</li>  
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosSpellingGame">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/ico_iPhone-Spotlight_58.png"></a><br>
+                                字彙快手</li>       
+                                
+                                
+                                <li>
+                                <a href="http://www.tutorabc.com/aspx/Mvc/Home/IosCalendar">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/TutorCalendar_58.png"></a><br>
+                                Tutor Calendar</li>        
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosGEPTB">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/GEPTB58x58.png"></a><br>
+                                TutorGEPT B</li>   				
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosTutorGEPT">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/58x58.png"></a><br>
+                                TutorGEPT I</li>       
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosEpaper">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/appicon-epaper.png"></a><br>
+                                英文學習報</li>   	                                                               
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosVocapp">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/appicon-vocapp.png"></a><br>
+                                行動字彙通</li>                                            
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosSurvivalEnglish">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/appicon-es.png"></a><br>
+                                英文急救站</li>  
+                            <li><a href="http://www.tutorabc.com/aspx/Mvc/Home/IosSpellingGame">
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/ico_iPhone-Spotlight_58.png"></a><br>
+                                字彙快手</li>           
+                         </div>
+	
+                    </div>
+                    <div class="appPointBtns">
+      
+                    </div>
+                    <div class="appLRBtns">
+                  		<a class="prevBtn" href="javascript: test('test')" ></a>
+                         <a class="nextBtn" href="javascript: void(0)" ></a>
+                     </div>
+
+                    <!--appCarousel END-->
+                </div>
+            </div>
+            <!--all app END-->
+            <!--app Body START-->
+            
+<div class="app_body">
+    <div class="app_left">
+        <a href="xx" target="_blank">
+            </a><a href="http://itunes.apple.com/tw/app/tutorabc-gept-beginning/id544642768?l=zh&amp;mt=8" target="_blank">
+            <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/GEPTB114x114.png"></a>
+        <h1>
+            TutorGEPT  B<br>
+            </h1>
+        <h2>
+            免費下載<br>
+            Category:Education<br>
+            Size: 2.1MB</h2>
+        <a href="http://itunes.apple.com/tw/app/tutorabc-gept-beginning/id544642768?l=zh&amp;mt=8" target="_blank">
+            <img src="http://www.tutorabc.com/aspx/Mvc/images/btn-appstore.png"></a><br>
+        <br>
+        <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/GEPTB_QRcode.jpg">
+    </div>
+    <div class="app_right">
+        <h1>
+            由TutorABC專業語言顧問針對GEPT考試進行初級測驗的規劃，<br>
+            並將精選內容編入TutorGEPT Beginner之中，讓您輕鬆拿下英檢高分。</h1>
+        <h2>
+            ●行動學習<br>
+            由TutorABC專業語言顧問針對GEPT考試進行初級測驗的規劃，<br>
+            讓您無論在任何時間、任何地點，皆能身處英語學習環境！
+            <br><br>
+            ●模擬全民英檢考試情境<br>
+            收納聽力、閱讀題型、擬真考試方式與流程，讓您熟悉考試步調！不再考試皮皮挫！<br><br>
+            ●三種測驗方式<br>
+            提供三種獨立測驗方式﹝聽力、閱讀、綜合題組﹞，<br>
+            一切依照您想加強部份，自由選擇，量身訂做。
+            <br><br>
+            ●測驗排行榜<br>
+            測驗成績分成「個人排名」、「今日排名」、「總排名」。<br>
+            隨時記錄測驗成績，並透過「總排名」讓您與全球用戶一較高下。
+            <br>
+            <br>
+            只要下載「TutorGEPT B」，並提供寶貴資訊，<br>
+            我們馬上回饋給您所有測驗的中文翻譯，讓您自我學習，英文程度UP UP！ <br>
+            另外加贈：<br>
+            TutorABC專業語言顧問與您分享英文學習經驗談，並建議您最好的學習方式。<br><br>
+
+            ★ 教育類百大排名 品質保證★ <br>
+            精彩服務由TutorABC獨家提供<br>
+
+        </h2>
+
+        <h3>
+            <img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/screenshot-GEPTB-1.jpg"><img src="http://www.tutorabc.com/aspx/Mvc/images/IOS20120821/screenshot-GEPTB-2.jpg"></h3>
+    </div>
+    <div class="Clear">
+    </div>
+</div>
+
+
+            <!--app Body END-->
+        </div>
+        <!--app END-->
+    </div>
+</div></body>
+</html>

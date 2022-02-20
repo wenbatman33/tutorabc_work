@@ -1,0 +1,626 @@
+<!DOCTYPE HTML>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xml:lang="zh-CN" lang="zh-CN" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta charset="utf-8">
+<meta id="viewport" name='viewport'>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>English Learning Website_Speaking_Listening_VIPABC Real person English Online Learning</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<script src="http://www.vipabc.com/aspx/portal/Scripts/jquery-1.8.3.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+<div class="grid_100 regFixedWrap" style="display:none;" >
+    <div class="grid_12">
+        <div class="regForm">
+        <a href="javascript:OpenModalDialog()">
+                        <img src="images/CustomerService.png" data-original="/aspx/portal/Content/images/CustomerService.png" width="268" height="89" style="display: inline;"></a>
+          <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+        
+            <div style="margin:0px 30px 0px 30px; padding-top:30px;"><span class="font_14">Free language-level analysis</span></div>
+            <div style="margin:auto 30px;"><span class="font_12">Experience the most efficient method of learning English</span></div>
+            
+            
+            <div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">   
+            <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="Your Name" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Your Name';}" />
+            <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="Your Email" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Your Email';}" /><br>
+            <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                <option value="+86"  selected="selected">China</option>
+                <option value="-1"  >Others</option>
+            </select>
+            <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+              <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="Mobile Phone" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Mobile Phone';}" />
+    
+            <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                <option value="">Where did you hear about us?</option>                
+                <option value="23">English Portal</option>
+                <option value="23">163 Youdao</option>
+                <option value="23">Weibo </option>
+                <option value="23">Google </option>
+                <option value="23">Newspapers / magazines</option>
+                <option value="23">TV / Radio</option>
+                <option value="23">Baidu</option>
+                <option value="23">SMS / newsletter</option>
+                <option value="23">Beijing Subway</option>
+                <option value="23">Friends</option>
+                <option value="23"> Sohu / Soho</option>
+                <option value="23"> Other</option>             
+            </select><br><br>
+            
+            <input type="button" value="Register NOW" class="y_btn" >
+              </div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<div class="grid_100 backTop">
+    <div class="grid_12">
+    	<div class="backTopBtn">
+        <a class="index_top" href="javascript:pageScroll('')"><img src="images/backTop.png" width="50" height="50"></a>
+        </div>
+      </div>
+</div>
+<!-- fixed_box 固定註冊表單 start -->
+<div id="banners" class="grid_100 banners">  
+    <div class="grid_12  SecNav"> 
+      
+        <div style=" float:right">
+        <a class="btnType_1 register" href="/Login/UserRegister" >Registration</a>
+        <a class="btnType_1 login" href="/Login/Login">Login</a>
+        <a class="btnType_1 language " href="javascript:void(0);" >Language <b class="caret"></b> </a>
+                <ul class="dropdown-menu" style="display:none">
+                  <li><a tabindex="-1" href="#">English</a></li>
+                  <li><a tabindex="-1" href="#">Japanese</a></li>
+                  <li><a tabindex="-1" href="#">Portuguese</a></li>
+                  <li><a tabindex="-1" href="#">Spanish</a></li>
+                </ul>
+         </div>
+         <div style=" float:right">
+        	<wb:follow-button uid="1729584914" type="red_1" width="67" height="23" ></wb:follow-button>
+        </div>
+         <div style="float:right">
+            <a class="Sec_links" href="/index.asp" >Old Version  </a>  | 
+            <a class="Sec_links" href="#" >Learning Guide </a> | 
+            <span class="telphone"> Free:4006-30-30-30　</span>
+        </div>
+     
+    </div>
+    <div class="grid_12 main_nav">
+        <div class="main_logo"><img src="images/logo.png" width="187" height="49"></div>
+        <div class="main_nav_con">
+            <div class="main_nav_box">
+                <a class="part_01" href="#part_01">Effective</a>
+                <a class="part_02" href="#part_02">Customized </a>
+                <a class="part_03" href="#part_03">Mobile </a>
+                <a class="part_04" href="#part_04">Free Sessions</a>
+                <a class="part_05" href="#part_05">Client Testimonials</a>
+                <a class="part_06" href="#part_06">For Learners</a>
+                <a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">Corp. Training</a>
+            </div>   
+        </div>
+    </div>
+    <div id="album" style="background:url(images/banner/banner_yao_bg3.jpg);left: 0px; display: block; background-position:50% 0px;">
+        <div class="slides">
+            <ul>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20131081741432611.jpg" style="display: none;">
+                    <a class="fancybox"  data-fancybox-type="iframe" href="FillingPage.html" onclick="logCount(68);">
+                        <img alt="Join assuring course" title="Join assuring course" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20139261813203813.gif" width="960" height="560"></a></li>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20137311429123813.jpg" style="display: list-item;">
+                    <a class="fancybox"  data-fancybox-type="iframe" href="FillingPage.html" onclick="logCount(68);">
+                        <img alt="个性化教材量身订做最实用" title="个性化教材量身订做最实用" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20139261813203813.gif" width="960" height="560"></a>
+                        <img alt="Customized Materials" title="Customized Materials" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20137311429164914.gif" width="960" height="560"></a></li>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20138141647282712.jpg" style="display: none;">
+                    <a class="fancybox"  data-fancybox-type="iframe" href="FillingPage.html" onclick="logCount(68);">
+                        <img alt="Free material to download" title="Free material to download" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20137311428583712.gif" width="960" height="560"></a></li>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/2013731142854914.jpg" style="display: none;">
+                    <a class="fancybox"  data-fancybox-type="iframe" href="FillingPage.html" onclick="logCount(68);">
+                        <img alt="Learning English easily just need 45 minutes" title="Learning English easily just need 45 minutes" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/2013731142893813.gif" width="960" height="560"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="new_ad_switch">
+            <div class="timeline"></div>
+            <a href="#" class="banner_prev">&lt;</a>
+            <a href="#" class="banner_next">&gt;</a>
+            <ul  class="new_ad_btns">
+                <li class="ad_line" ><div><a href="#">Useful personalized materials</a></div></li>
+                <li class="ad_line" ><div><a href="#">An amazing result of learning English at the age of 53</a></div></li>
+                <li class="ad_line" ><div><a href="#">Business English material free download</a></div></li>
+                <li>                 <div><a href="#">Easy learning English only for 45 minuets</a></div></li>
+            </ul>
+    </div>
+</div>
+
+
+<div class="grid_100 topNavFixed" style="display:none;" >
+    <div class="grid_100 topNavFixedBtns">
+      	<div class="grid_12"> 
+           
+                
+            <div style=" float:right">
+        <a class="btnType_1 register" href="/Login/UserRegister" >Registration</a>
+        <a class="btnType_1 login" href="/Login/Login">Login</a>
+         <a class="btnType_1 language " href="javascript:void(0);" >Language <b class="caret"></b> </a>
+                <ul class="dropdown-menu" style="display:none">
+                  <li><a tabindex="-1" href="#">English</a></li>
+                  <li><a tabindex="-1" href="#">Japanese</a></li>
+                  <li><a tabindex="-1" href="#">Portuguese</a></li>
+                  <li><a tabindex="-1" href="#">Spanish</a></li>
+                </ul>
+         </div>
+         <div style=" float:right; top:10px;">
+        	<wb:follow-button uid="1729584914" type="red_1" width="67" height="24" ></wb:follow-button>
+        </div>
+         <div style="float:right; line-height:30px; vertical-align:middle">
+            <a class="Sec_links" href="/index.asp" >旧版Old Version </a>  | 
+            <a class="Sec_links" href="#" >Learning Guide　</a> 
+           
+        </div>  
+                
+                
+        </div>
+        <div class="grid_100 topNavWrap">
+            <div class="grid_12"> 
+            	<div class="topNavLogo"><a class="index_top" href="javascript: void(0)"><img src="images/logo.png" width="187" height="49"></a></div>
+                <div class="topTel"><span> Free :4006-30-30-30 </span></div>
+				<div class="topNav">
+                        <a class="part_01" href="#part_01">Effective</a>
+                        <a class="part_02" href="#part_02">Customized </a>
+                        <a class="part_03" href="#part_03">Mobile </a>
+                        <a class="part_04" href="#part_04">Free Sessions</a>
+                        <a class="part_05" href="#part_05">Client Testimonials</a>
+                        <a class="part_06" href="#part_06">For Learners</a>
+                        <a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">Corp. Training</a>
+                </div>
+            </div>
+	  	</div>
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div id="part_01" class="grid_100 bgColor_1">
+    <div class="grid_12">
+        <div class="grid_8 contentBox" style="padding:0px; float:left; margin-top:20px;"  >
+        <div class="grid_8" style="float:left;">
+            <div class="Service_img">
+                <a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(15);" rel="media-gallery"><img src="images/Service_img_01.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">English Learning Environment</div>
+            </div>
+            <div class="Service_img">
+            	<a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(15);" rel="media-gallery"><img src="images/Service_img_02.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">Online virtual interactive English </div>
+            </div>
+            <div class="Service_img">
+            	<a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(15);" rel="media-gallery"><img src="images/Service_img_03.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">24-hour, not limited by time zone</div>
+              </div>
+            <div class="Service_img">
+            	<a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(15);" rel="media-gallery"><img src="images/Service_img_04.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">Global English Learning Consultants</div>
+             </div>
+            <div class="Service_img">
+            	<a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(15);" rel="media-gallery"><img src="images/Service_img_05.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">Mobile Learning</div>
+            </div><br>
+          
+            <div class="grid_8" style=" padding-top:20px;float:left;">
+            <h1 class="color_white">Improve your competitiveness by learning more efficiently.</h1>
+            <br>
+            <h5 class="color_white">
+            Environments and methods are the most important things for English learning. VIPABC offers customized ways to learn English! Forget your old, less efficient learning experiences and start using the most effective smart learning methods.  
+            </h5>
+            </div>
+        </div>
+     </div>
+	</div>
+</div>
+
+<div id="part_02" class="grid_100 bgColor_2">
+    <div class="grid_12">
+        <div class="TColor_1"></div>
+            <div class="grid_8 contentBox" >
+            <h2 class="color_darkGray">Personalized learning to meet the needs of everyone.</h2><br>
+            <h5 class="color_darkGray">
+                "VIP efficient learning method" immediately begins a new English-learning journey!<br>
+                Accurate evaluation of your English level: 
+                "Online Level Placement Analysis Test" by native consultants helps you to understand your level of English and precise directions of your English learning.<br> 
+                Best Courses for you:
+                Through personalized "Learning Preferences" including interests, learning focus, and occupations, VIPABC’s patented DCGS system provides you with the most appropriate sessions and native consultants.<br>
+                The most effective method of learning English: live online interactive teaching with native consultants. In our sessions, you will fully understand the learning material and interact with professional native consultants online, who can correct your pronunciation, explain sentences and common expressions to learn how native speakers use English.
+            </h5>
+            <br>
+            <ul>
+                <li style="float: left; margin-right: 20px">
+                    <img src="images/Learn_01.jpg" data-original="http://www.vipabc.com//aspx/portal/Content/images/Learn_01.jpg" width="185" height="170" alt="Listening Writing Speaking Reading" title="Listening Writing Speaking Reading" style="display: inline;"></li>
+                <li style="float: left; margin-right: 20px">
+                    <img src="images/Learn_02.jpg" data-original="http://www.vipabc.com//aspx/portal/Content/images/Learn_02.jpg" width="224" height="143" alt="DCGS Customized Convenient Effective" title="DCGS DCGS Customized Convenient Effective" style="display: inline;"></li>
+                <li style="float: left; margin-right: 20px">
+                    <img src="images/Learn_03.jpg" data-original="http://www.vipabc.com//aspx/portal/Content/images/Learn_03.jpg" width="191" height="182" alt="VIPABC Online real person" title="VIPABC VIPABC Online real person" style="display: inline;"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="grid_100 bgColor_3">
+    <div class="grid_12">
+        <div class="TColor_2"></div>
+        <div class="grid_8 contentBox" >
+            <h2 class="color_darkGray">The most precise and the most comfortable English learning environment. </h2><br>
+            <h3 class="color_darkGray">12 levels of Listening/ speaking/ reading/ writing </h3>
+            <h5 class="color_darkGray">
+                VIPABC online language evaluations match speaking, listening, reading and writing lesson plans to each learner's specific requirements. Our professional consultants can help you improve your English listening and speaking abilities.<br>
+                American Universities Evaluation Upgrade System
+English training institutions in English speaking nations mostly adopt the exam model as the basis of English level. However, VIPABC adopts the evaluation system from the best U.S universities; according to study reports, assessments, online operation, audits and evaluation from professional foreign consultants. You will feel relaxed in the unrestrained learning environment, and speak fluent English.<br>
+            </h5>
+
+        </div>
+    </div>
+</div>
+<div class="grid_100 bgColor_1">
+    <div class="grid_12">
+        <div class="TColor_3"></div>
+        <div class="grid_8 contentBox" > 
+            <h1 class="color_white">The effects of learning are apparent through gradual learning.</h1>
+            <h3 class="color_white">The effect of English learning can be precisely traced by learning tracking system.</h3>
+            <h5 class="color_white">
+                Are you afraid you cannot view your current progress in the process of learning English? VIPABC invented a Learning Management System (LMS), on which materials and the whole process of the sessions of each learner can be traced in detail to facilitate of your learning.
+            </h5>
+
+            <h3 class="color_white">Unlimited Review</h3>
+            <h5 class="color_white">
+                You do not have to take notes in class. VIPABC provides you with synchronized video sessions, allowing you to concentrate on listening and speaking English. You can review materials to effectively improve your English as if you were talking to foreigners face- to-face. 
+            </h5>
+        </div>
+    </div>
+</div>
+
+
+<div class="grid_100 bgColor_2">
+    <div class="grid_12">
+        <div class="TColor_1"></div>
+        <div class="grid_8 contentBox" >
+            <h1 class="color_darkGray">Farewell poor English, hello fluent English!</h1>
+            <h5 class="color_darkGray">
+                VIPABC spent three years using the online virtual interactive English learning system. It gives students the most convenient learning platform. It also breaks the traditional, stereotypical learning limitation, and allows learners to set their own learning schedule through online reservations. You can truly learn English anytime and anywhere, interact live with hundreds of native speaker consultants in an English learning environment. The virtual online classroom can increase individual and corporate study effectiveness, decrease study costs, and enhance competitive advantage and learning quality.
+            </h5>
+            <ul>
+                        <li style="width: 651px; height: 132px; background: url(http://www.vipabc.com//aspx/portal/Content/images/Choice_img_01.png);
+                        margin-top: 10px;">
+                            <h4 style="margin-left: 160px; margin-right: 10px">
+                                1 on 1 English tutor</h4>
+                            <h5 style="margin-left: 160px; margin-right: 10px">
+                                You will get 100% guidance from foreign consultants; we can even offer a lesson with your own material (For example, an English presentation from work). The consultant can assist you completely according to your need.</h5>
+                        </li>
+                        <li style="width: 651px; height: 132px; background: url(http://www.vipabc.com//aspx/portal/Content/images/Choice_img_02.png);
+                        margin-top: 10px;">
+                            <h4 style="margin-left: 160px; margin-right: 10px">
+                                Group English conversation class of 1-4 students.</h4>
+                            <h5 style="margin-left: 160px; margin-right: 10px">
+                                You and other clients from the same level will share a session, and learn from each other. It will not affect your talking right in the group session.</h5>
+                        </li>
+                        <li style="width: 651px; height: 132px; background: url(http://www.vipabc.com//aspx/portal/Content/images/Choice_img_03.png);
+                        margin-top: 10px;">
+                            <h4 style="margin-left: 160px; margin-right: 10px">
+                                Topic English Special Session</h4>
+                            <h5 style="margin-left: 160px; margin-right: 10px">
+                                You are not just learning the language, but also learning general knowledge in English. Special session topics are mostly about current events, and all are very interesting and inspiring. You will learn the most useful English in the shortest time.</h5>
+                        </li>
+                    </ul>
+
+
+        </div>
+    </div>
+</div>
+
+<div id="part_03" class="grid_100 bgColor_3">
+    <div class="grid_12">
+        <div class="TColor_2">
+        </div><div class="grid_8 contentBox" >  
+            <h1 class="color_darkGray">Classrooms all over the world, anytime, anywhere!</h1><br>
+            <h5 class="color_darkGray">
+                VIPABC fully supports mobile learning. VIPABC On the Go offers 24-hour reservation / online English learning.
+            </h5>
+
+
+                    <div style="position: relative; margin-top: 20px; float: left;">
+                        <a href="http://www.vipabc.com/aspx/portal/App/App?type=1" onclick="logCount(20);">
+                            <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_01.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_01.png" width="234" height="262" alt="VIPABC On the Go offers 24-hour reservation / online English learning" title="VIPABC On the Go offers 24-hour reservation / online English learning" style="display: inline;">
+                        </a>
+                    </div>
+                    <div style="position: relative; margin-top: 20px; margin-left: 20px; float: left;">
+                        <h5 class="color_darkGray">
+                            Mobile vocab learning: five selected new words daily<br>
+                            Vocab: boost your vocab by playing games<br>
+                            Epaper: keep abreast of current events<br>
+                            Videos: Amusing useful videos for English learning<br>
+                        </h5>
+                    </div>
+                    <div style="position: relative; padding-top: 150px;">
+                        <ul>
+                            <li style="float: left; margin-left: 20px"><a href="http://www.vipabc.com/aspx/portal/App/App?type=2" onclick="logCount(21);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_02.png" data-original="/aspx/portal/Content/images/MobileLearning_02.png" width="85" height="107" alt="Mobile vocab learning APP" title="Mobile vocab learning APP" style="display: inline;"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="http://www.vipabc.com/aspx/portal/App/App?type=5" onclick="logCount(22);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_03.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_03.png" width="85" height="107" alt="Vocab APP" title="Vocab APP" style="display: inline;"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="http://www.vipabc.com/aspx/portal/App/App?type=4" onclick="logCount(23);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_04.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_04.png" width="85" height="107" alt="E-paper APP" title="E-paper APP" style="display: inline;"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="/aspx/portal/App/App?type=3" onclick="logCount(24);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_05.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_05.png" width="85" height="107" alt="Videos: Amusing useful videos for English learning" title="Videos: Amusing useful videos for English learning" style="display: inline;"></a></li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+</div>
+<div id="part_04" class="grid_100 bgColor_1">
+    <div class="grid_12">
+        <div class="TColor_3"></div>
+        <div class="grid_8 contentBox" >
+            <h1 class="color_white">Plenty of the hottest topics</h1><br>
+            <h5 class="color_white">Book NOW for sessions by professional native consultants around the world with a diverse range of topics.</h5>
+
+            <div style="position: relative; margin-top: 20px; margin-left: 0px; float: left;">
+                <p class="color_white" style="font-size: 24px;">2013/10/08 20:30 Tuesday</p>
+                <p class="color_white" style="font-size: 16px; width: 290px; margin-top: 6px;">Five kinds of foods you should not eat</p>
+                <p class="color_white" style="font-size: 14px; width: 290px; margin-top: 10px; height: 90px;">
+                    Full English pronunciation. Suitable for primary or your trying to learn English.</p>
+                <a id="vipabc_iframe2" data-fancybox-type="iframe"  href="FillingPage_2.html"><div class="reservationBtn" >Book NOW</div></a>
+            </div>
+            <div style="position: relative; margin-top: 20px; margin-left: 20px; height: auto; float: left;">
+                <a id="vipabc_iframe2" data-fancybox-type="iframe"  href="FillingPage_2.html">
+                <img src="http://www.vipabc.com/VIPABCMaintain/Content/Lobbysession/2013929162873712.jpg" width="320" height="188" style="display:block; margin:0 auto; float:left;" alt="Five kinds of foods you should not eat" title="Five kinds of foods you should not eat">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="part_05" class="grid_100 bgColor_2">
+    <div class="grid_12">
+        <div class="TColor_1"></div>
+        <div class="grid_8 contentBox" >
+            <h1 class="color_darkGray">Every client has their own success story.<br>You can be the next!</h1><br>
+            <h5 class="color_darkGray">Thank you for all the support and trust. Your improvement and success is our best encouragement. VIPABC will always give you the best quality and the most convenient way to learn English. Highly recommended by thousands of elites!</h5>
+
+
+            <div style="position: relative; margin-top: 20px; float: left;" onclick="logCount(27);ChangeYoukuURL('http://static.youku.com/v1.0.0352/v/swf/loader.swf','XNjA1NDM5NjA4'); thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+            <img alt="" title="" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/2013951915494914.jpg" width="638" height="386" style="float: left;">
+            </div>
+            <div id="thevideo" style="display: none; z-index: -100;">
+            </div>
+            <div style="position: relative; margin-top: 20px; float: left;">
+            <ul>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a id="vipabc_iframe" data-fancybox-type="iframe"  href="FillingPage.html">
+                <img alt="Consultant of World-renowned brand Adidas - Geng Hai-Chen" title="Consultant of World-renowned brand Adidas - Geng Hai-Chen" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/20137181828541510.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            Consultant of World-renowned brand Adidas - Geng Hai-Chen</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a id="vipabc_iframe" data-fancybox-type="iframe"  href="FillingPage.html">
+                <img alt="General Manager of Investment Management Co., Ltd.- KANG XU couple" title="General Manager of Investment Management Co., Ltd.- KANG XU couple" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/20137181959321510.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            General Manager of Investment Management Co., Ltd.- KANG XU couple</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a id="vipabc_iframe" data-fancybox-type="iframe"  href="FillingPage.html">
+                <img alt="General Manager of Computer Company – Yang Yin-Ping" title="General Manager of Computer Company – Yang Yin-Ping" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/201372518512611.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            General Manager of Computer Company – Yang Yin-Ping</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a id="vipabc_iframe" data-fancybox-type="iframe"  href="FillingPage.html">
+                <img alt="Colgate Sanxiao Sales Executives - Yan Jiang-Ping" title="Colgate Sanxiao Sales Executives - Yan Jiang-Ping" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/20138191544442611.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            Colgate Sanxiao Sales Executives - Yan Jiang-Ping</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a id="vipabc_iframe" data-fancybox-type="iframe"  href="FillingPage.html">
+                <img alt="Channel Manager of KRONOTEX (SHANGHAI) PTE.LTD - Dong Jie" title="Channel Manager of KRONOTEX (SHANGHAI) PTE.LTD - Dong Jie" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/2013819154743813.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            Channel Manager of KRONOTEX (SHANGHAI) PTE.LTD - Dong Jie</h6>
+            </li>
+            </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div id="part_06" class="grid_100 bgColor_3">
+    <div class="grid_12">
+        <div class="TColor_2"></div>
+        <div class="grid_8 contentBox" > 
+            <h1 class="color_darkGray">The Keys to Success</h1><br>
+            <h5 class="color_darkGray">VIPABC provides you with English learning to improve your English.</h5>
+            <ul>
+            <li class="index_dailywords_wrap partialContents" data-url="/Async/LessonDaily"><a href="http://cn.tutormeet.com/tutormeet/tutormeet_daily_topic.html?playback=1&amp;file_name=_recording_session68154_33582_201112081668154&amp;user=&amp;compStatus=vipabc&amp;comp_status_logo=vipabc&amp;start_time=22&amp;timestamp=0&amp;timestamp=0" target="_blank" onclick="logCount(33);">
+            <div class="index_list_White">
+            Phrase of the Day </div>
+            </a><a href="http://cn.tutormeet.com/tutormeet/tutormeet_daily_topic.html?playback=1&amp;file_name=_recording_session68154_33582_201112081668154&amp;user=&amp;compStatus=vipabc&amp;comp_status_logo=vipabc&amp;start_time=22&amp;timestamp=0&amp;timestamp=0" onclick="logCount(33);" target="_blank">
+            <img src="http://www.vipabc.com/consultant_profile/1785.jpg" width="79" height="81" alt="VIPABC teacher consultant Phrase of the day" title="VIPABC teacher consultant Phrase of the day"></a>
+            <a href="http://cn.tutormeet.com/tutormeet/tutormeet_daily_topic.html?playback=1&amp;file_name=_recording_session68154_33582_201112081668154&amp;user=&amp;compStatus=vipabc&amp;comp_status_logo=vipabc&amp;start_time=22&amp;timestamp=0&amp;timestamp=0" target="_blank">
+            <div class="index_list_on">
+            Peter teach you to say:<br>Not for All the Tea in China
+            </div>
+            </a></li>
+            <li class="index_list_wrap">
+                <div class="index_list_Orange">
+                    E-paper</div>
+                <a href="/aspx/portal/Epaper/EpaperList" onclick="logCount(34);">
+                    <img src="http://www.vipabc.com/aspx/portal/Content/images/Resources02.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/Resources02.png" width="200" height="144" alt="live of class e-paper" title="live of class e-paper" style="display: inline;"></a>
+                <div class="index_list_on" style="top: 300px;">
+                    The latest and most popular topic <br>VIPABC English newspaper with you to master!
+                </div>
+            </li>
+            <li class="index_list_wrap">
+                <div class="index_list_Orange">
+                    Videos of First-aid Station</div>
+                <a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XMzk3NDM0MzQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(35);" rel="media-gallery">
+                    <img src="http://www.vipabc.com/aspx/portal/Content/images/Resources03.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/Resources03.png" width="200" height="144" alt="VIPABC member English learning" title="VIPABC English learning" style="display: inline;"></a>
+                <div class="index_list_on" style="top: 300px;">
+                    Easily available in English skit <br>Allows you to effortlessly improve their English!
+                </div>
+            </li>
+            </ul>
+            <div style="float: left; background: url(images/Subscription_bg.png) no-repeat; margin-top: 10px; width: 655px; height: 60px; line-height: 60px; vertical-align: middle;">
+                    <div style="padding-left: 10px; float: left;">
+                        Subscribe to e-paper: 
+                        <input name="txt_email" type="text" class="reg_field" id="txt_email" value="Your email" onfocus="if(this.value=='Your email'){this.value='';this.className='reg_field';}else{this.className='reg_field_black';}" onblur="if(this.value==''){this.value='Your email';this.className='reg_field';}else{this.className='reg_field_black';}" style="height: 30px; vertical-align: middle; width: 360px;" autocomplete="off" >
+                    </div>
+                     <div class="y_btn" style="float: left; margin-top: 10px;">
+                            <a class="btn_text color_white" href="#" onclick="register();">
+                                <div>Subscribe </div>
+                            </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid_100 footerRedLine">
+    <div class="grid_12">  
+    	<img src="images/icon_1.png" width="230" height="35"  alt=""/>
+       <img src="images/icon_2.png" width="230" height="35"  alt=""/>
+       <img src="images/icon_3.png" width="230" height="35"  alt=""/>
+       <img src="images/icon_4.png" width="230" height="35"  alt=""/>
+    </div>
+</div>
+
+<div class="grid_100 footer">
+    <div class="grid_12">
+        <div class="grid_12 foot_linksWrap">
+                <div class="foot_links">
+                    <p class="color_orange">About us</p>
+                    <p><a href="/aspx/portal/About/AboutVIPABC" onclick="logCount(36);">Reasons to choose VIPABC</a></p>
+                    <p><a href="/aspx/portal/About/evolution" onclick="logCount(37);">History of Enterprise </a></p>
+                    <p><a href="/aspx/portal/About/News" onclick="logCount(38);">News</a></p>
+                    <p><a href="/aspx/portal/About/institution" onclick="logCount(39);">Academic Affiliates</a></p>
+                    <p><a href="http://www.vipabc.com/program/campaign/2011prize/index.htm" onclick="logCount(40);" target="_blank">Honors of Company</a></p>
+                    <p><a href="/aspx/portal/About/Sitemap" onclick="logCount(41);">Website Map</a></p>
+                </div>
+                <div class="foot_links">
+                    <p class="color_orange">Best Choice</p>
+                    <p><a href="/aspx/portal/onlineenglish/time" onclick="logCount(42);">Flexible Schedule</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/tutor" onclick="logCount(43);">Professional Native Consultants</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/live_classes" onclick="logCount(44);">Private Learning</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/award_winning_onlinecourse" onclick="logCount(45);">Most Effective Learning</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/materials" onclick="logCount(46);">Customized Materials</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/interactive_lessons" onclick="logCount(47);">Live Interaction</a></p>
+                </div>
+                <div class="foot_links">
+                    <p class="color_orange">Our sessions are for</p>
+                    <p><a href="/aspx/portal/course/adults" onclick="logCount(48);">Businesspeople / Professionals</a></p>
+                    <p><a href="/aspx/portal/course/corporate" onclick="logCount(49);">Corporate Training</a></p>
+                    <p><a href="/aspx/portal/course/liuxue" onclick="logCount(50);">Customized Materials</a></p>
+                    <p><a href="/aspx/portal/course/junior" onclick="logCount(51);">Children/Teenagers</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="foot_links">
+                    <p class="color_orange">VIPABC helps your</p>
+                    <p><a href="/aspx/portal/english/spoken" onclick="logCount(52);">Speaking</a></p>
+                    <p><a href="/aspx/portal/english/listening" onclick="logCount(53);">Listening</a></p>
+                    <p><a href="/aspx/portal/english/reading" onclick="logCount(54);">Reading</a></p>
+                    <p><a href="/aspx/portal/english/business" onclick="logCount(55);">Business English</a></p>
+                    <p><a href="/aspx/portal/english/applied" onclick="logCount(56);">Workplace English</a></p>
+                </div>
+                
+                <div class="foot_links">
+                    <p class="color_orange">For Learners</p>
+                    <p><a href="#part_04" onclick="logCount(61);">Online Free Sessions</a></p>
+                    <p><a href="#part_06" target="_blank" onclick="logCount(62);">Phrase of the Day</a></p>
+                    <p><a href="/aspx/portal/Epaper/EpaperList" onclick="logCount(63);">Epaper</a></p>
+                    <p><a href="/aspx/portal/App/App?type=1" onclick="logCount(64);">Mobile App</a></p>
+                    <p><a href="/aspx/portal/App/interactiveSoftware" onclick="logCount(65);">Online Instructions</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+             
+                <div class="foot_links">
+                    <p class="color_orange">Contact us</p>
+                    <p><a href="http://onlineservice.vipabc.com/VIPABC" target="_blank" onclick="logCount(66);">
+                                Online Service</a></p>
+                    <p><a href="/aspx/portal/Home/ContactUs" onclick="logCount(67);">Contact us</a></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="foot_links">
+                    <p class="color_orange">Contact us</p>
+                    <p><a href="http://onlineservice.vipabc.com/VIPABC" target="_blank" onclick="logCount(66);">
+                                Online Service</a></p>
+                    <p><a href="/aspx/portal/Home/ContactUs" onclick="logCount(67);">Contact us</a></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+        </div>
+
+        <div class="foot_tel">
+            <img src="http://www.vipabc.com/aspx/portal/Content/images/foot_tel.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/foot_tel.png" onclick="logCount(78);" width="184" height="44" alt="VIPABC customer service telephone 4006-30-30-30 " title="VIPABC customer service telephone 4006-30-30-30 " style="display: inline;">
+        </div>
+
+    </div>
+</div>
+
+<div class="grid_100 footer_cert">
+    <div class="grid_12">
+        <div class="foot_bottom">
+            <p>
+                <a href="/aspx/portal/About/evolution" onclick="logCount(69);">About VIPABC</a>
+                <a href="/aspx/portal/Home/Privacy" onclick="logCount(70);">Privacy Protection</a> 
+                <a href="/aspx/portal/Home/Security" onclick="logCount(71);">Terms of Security </a> 
+                <a href="/aspx/portal/Home/Service" onclick="logCount(72);">Terms of Service </a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp" onclick="logCount(73);">Recruiting </a>
+                <a href="http://biz.vipabc.com/" target="_blank" onclick="logCount(74);">Corporate Training</a>
+                <a href="/aspx/portal/Home/ContactUs" onclick="logCount(75);">Contact Us</a>
+            </p>
+        </div>
+        <div class="foot_bottom">
+            <p>Education License: Faculty Division Document [2011] No. 267 | License: Jing ICP Certificate No. 090121 | Beijing ICP No. 11004351 </p>
+            <p class="footer_p_display">VIPABC.com Copyright 2008-2013 the world's largest English Online Learning</p>
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" type="text/css" href="http://www.vipabc.com/aspx/portal/Scripts/jquery-ui-1.10.0.custom.css" />
+<link rel="stylesheet" media="screen" href="http://www.vipabc.com/aspx/portal/Content/source/jquery.fancybox.css?v=2.1.4"/>
+<link rel="stylesheet" href="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-buttons.css?v=1.0.5"/>
+<link rel="stylesheet" href="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7"/>
+        <!-- fancybox -->
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Content/source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript"src="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Scripts/js/fancybox.js"></script>
+</html>

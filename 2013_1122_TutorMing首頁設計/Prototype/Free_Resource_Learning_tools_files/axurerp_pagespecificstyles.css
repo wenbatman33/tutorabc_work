@@ -1,0 +1,262 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:-18px;
+    width:1280px;
+    height:854px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1280px;
+    height:854px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:419px;
+    width:1276px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:868px;
+    top:836px;
+    width:268px;
+    height:208px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:268px;
+    height:208px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:96px;
+    width:264px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:255px;
+    top:549px;
+    width:573px;
+    height:29px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:573px;
+    height:29px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:569px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:255px;
+    top:588px;
+    width:115px;
+    height:32px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:115px;
+    height:32px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:111px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:374px;
+    top:588px;
+    width:200px;
+    height:32px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:200px;
+    height:32px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:580px;
+    top:588px;
+    width:140px;
+    height:32px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:140px;
+    height:32px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:136px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../Free_Resource_Learning_tools_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:255px;
+    top:630px;
+    width:584px;
+    height:339px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:584px;
+    height:339px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:162px;
+    width:580px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

@@ -1,0 +1,2025 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0 {
+    position:absolute;
+    left:46px;
+    top:26px;
+    width:150px;
+    height:50px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u1 {
+    position:absolute;
+    left:344px;
+    top:30px;
+    width:369px;
+    height:30px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 22px;
+    color:#CCCCCC;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u2_normal {
+    background-image: url('../天地及導航列_files/u8_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:728px;
+    top:32px;
+    width:70px;
+    height:26px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:32px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:66px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../天地及導航列_files/u10_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:8px;
+    top:2542px;
+    width:1374px;
+    height:54px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1380px;
+    height:60px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:19px;
+    width:1370px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../天地及導航列_files/u12_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:1107px;
+    top:24px;
+    width:127px;
+    height:42px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:133px;
+    height:48px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:123px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../天地及導航列_files/u14_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:980px;
+    top:24px;
+    width:110px;
+    height:42px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:48px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:106px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:348px;
+    top:68px;
+    width:352px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../天地及導航列_files/u17_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:43px;
+    top:106px;
+    width:1344px;
+    height:64px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1350px;
+    height:70px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:1340px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_line {
+    background-image: url('../天地及導航列_files/u19_line.png');
+}
+
+.u13_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:44px;
+}
+
+.u13 {
+    position:absolute;
+    left:200px;
+    top:114px;
+    width:10px;
+    height:44px;
+    
+}
+
+.u14_line {
+    background-image: url('../天地及導航列_files/u20_line.png');
+}
+
+.u14_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:44px;
+}
+
+.u14 {
+    position:absolute;
+    left:392px;
+    top:114px;
+    width:10px;
+    height:44px;
+    
+}
+
+.u15 {
+    position:absolute;
+    left:76px;
+    top:118px;
+    width:150px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:436px;
+    top:123px;
+    width:150px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:250px;
+    top:119px;
+    width:150px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u18 {
+    position:absolute;
+    left:60px;
+    top:112px;
+    width:100px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+#u19 {
+    position:absolute;
+    left:221px;
+    top:112px;
+    width:150px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+#u20 {
+    position:absolute;
+    left:427px;
+    top:112px;
+    width:163px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u21 {
+    position:absolute;
+    left:1248px;
+    top:39px;
+    width:136px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 22px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u22 {
+    position:absolute;
+    left:52px;
+    top:2558px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:224px;
+    top:2558px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:409px;
+    top:2557px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:1107px;
+    top:2534px;
+    width:280px;
+    height:53px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_line {
+    background-image: url('../2-1、影片列表頁_files/u27_line.png');
+}
+
+.u27_line {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:7px;
+    height:906px;
+}
+
+.u27 {
+    position:absolute;
+    left:207px;
+    top:264px;
+    width:10px;
+    height:906px;
+    
+}
+
+.u28_normal {
+    background-image: url('../2-1、影片列表頁_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:239px;
+    top:231px;
+    width:1123px;
+    height:1022px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1129px;
+    height:1028px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:503px;
+    width:1119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30 {
+    position:absolute;
+    left:591px;
+    top:401px;
+    width:478px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../2-1、影片列表頁_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:591px;
+    top:438px;
+    width:150px;
+    height:20px;
+}
+
+#u31_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:150px;
+    height:20px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:146px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:591px;
+    top:470px;
+    width:478px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34 {
+    position:absolute;
+    left:911px;
+    top:435px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35 {
+    position:absolute;
+    left:591px;
+    top:653px;
+    width:478px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36 {
+    position:absolute;
+    left:323px;
+    top:742px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37 {
+    position:absolute;
+    left:322px;
+    top:938px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38 {
+    position:absolute;
+    left:326px;
+    top:1128px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_line {
+    background-image: url('../2-1、影片列表頁_files/u39_line.png');
+}
+
+.u39_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:1032px;
+    height:3px;
+}
+
+.u39 {
+    position:absolute;
+    left:271px;
+    top:574px;
+    width:1032px;
+    height:10px;
+    
+}
+
+.u40_line {
+    background-image: url('../2-1、影片列表頁_files/u40_line.png');
+}
+
+.u40_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:1032px;
+    height:3px;
+}
+
+.u40 {
+    position:absolute;
+    left:271px;
+    top:772px;
+    width:1032px;
+    height:10px;
+    
+}
+
+.u41_line {
+    background-image: url('../2-1、影片列表頁_files/u41_line.png');
+}
+
+.u41_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:1032px;
+    height:3px;
+}
+
+.u41 {
+    position:absolute;
+    left:271px;
+    top:962px;
+    width:1032px;
+    height:10px;
+    
+}
+
+.u42_line {
+    background-image: url('../2-1、影片列表頁_files/u42_line.png');
+}
+
+.u42_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:1032px;
+    height:3px;
+}
+
+.u42 {
+    position:absolute;
+    left:271px;
+    top:1166px;
+    width:1032px;
+    height:10px;
+    
+}
+
+.u43 {
+    position:absolute;
+    left:464px;
+    top:352px;
+    width:326px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44 {
+    position:absolute;
+    left:1175px;
+    top:352px;
+    width:326px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../2-1、影片列表頁_files/u45_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:280px;
+    top:592px;
+    width:296px;
+    height:145px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:151px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:64px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../2-1、影片列表頁_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:283px;
+    top:594px;
+    width:291px;
+    height:142px;
+}
+
+#u47_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:291px;
+    height:142px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:63px;
+    width:287px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../2-1、影片列表頁_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:279px;
+    top:394px;
+    width:297px;
+    height:148px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:303px;
+    height:154px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:66px;
+    width:293px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../2-1、影片列表頁_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:280px;
+    top:394px;
+    width:294px;
+    height:144px;
+}
+
+#u51_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:294px;
+    height:144px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:64px;
+    width:290px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../2-1、影片列表頁_files/u45_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:282px;
+    top:982px;
+    width:296px;
+    height:145px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:151px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:64px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../2-1、影片列表頁_files/u47_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:285px;
+    top:984px;
+    width:291px;
+    height:142px;
+}
+
+#u55_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:291px;
+    height:142px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:63px;
+    width:287px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../2-1、影片列表頁_files/u49_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:280px;
+    top:792px;
+    width:297px;
+    height:148px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:303px;
+    height:154px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:66px;
+    width:293px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../2-1、影片列表頁_files/u51_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:282px;
+    top:792px;
+    width:294px;
+    height:144px;
+}
+
+#u59_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:294px;
+    height:144px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:64px;
+    width:290px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../2-1、影片列表頁_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:259px;
+    top:352px;
+    width:1103px;
+    height:25px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1109px;
+    height:31px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:1099px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:658px;
+    top:356px;
+    width:230px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64 {
+    position:absolute;
+    left:1129px;
+    top:356px;
+    width:230px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../2-1、影片列表頁_files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:1190px;
+    top:286px;
+    width:132px;
+    height:36px;
+}
+
+#u65_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:132px;
+    height:36px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:128px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../2-1、影片列表頁_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:544px;
+    top:522px;
+    width:31px;
+    height:19px;
+}
+
+#u67_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:19px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../2-1、影片列表頁_files/u67_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:545px;
+    top:718px;
+    width:31px;
+    height:19px;
+}
+
+#u69_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:19px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../2-1、影片列表頁_files/u67_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:544px;
+    top:916px;
+    width:31px;
+    height:19px;
+}
+
+#u71_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:19px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../2-1、影片列表頁_files/u67_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:547px;
+    top:1106px;
+    width:31px;
+    height:19px;
+}
+
+#u73_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:19px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u75 {
+    position:absolute;
+    left:1190px;
+    top:279px;
+    width:65px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+#u76 {
+    position:absolute;
+    left:1257px;
+    top:279px;
+    width:65px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u77_normal {
+    background-image: url('../2-1、影片列表頁_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:932px;
+    top:293px;
+    width:248px;
+    height:29px;
+}
+
+#u77_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:248px;
+    height:29px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:244px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79 {
+    position:absolute;
+    left:48px;
+    top:179px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_normal {
+    background-image: url('../2-1、影片列表頁_files/u80_normal.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:846px;
+    top:435px;
+    width:31px;
+    height:22px;
+}
+
+#u80_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:22px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82 {
+    position:absolute;
+    left:878px;
+    top:437px;
+    width:117px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../2-1、影片列表頁_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:760px;
+    top:433px;
+    width:26px;
+    height:27px;
+}
+
+#u83_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:26px;
+    height:27px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:22px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85 {
+    position:absolute;
+    left:786px;
+    top:438px;
+    width:52px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86 {
+    position:absolute;
+    left:72px;
+    top:222px;
+    width:220px;
+    height:426px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../2-1、影片列表頁_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:51px;
+    top:225px;
+    width:157px;
+    height:40px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:163px;
+    height:46px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:153px;
+    height:33px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:282px;
+    top:244px;
+    width:308px;
+    height:27px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微軟正黑體';
+    font-size: 16px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u90 {
+    position:absolute;
+    left:604px;
+    top:242px;
+    width:157px;
+    height:27px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u91_normal {
+    background-image: url('../2-1、影片列表頁_files/u91_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:566px;
+    top:1184px;
+    width:494px;
+    height:60px;
+}
+
+#u91_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:494px;
+    height:60px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:490px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93 {
+    position:absolute;
+    left:591px;
+    top:593px;
+    width:478px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../2-1、影片列表頁_files/u31_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:591px;
+    top:630px;
+    width:150px;
+    height:20px;
+}
+
+#u94_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:150px;
+    height:20px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:146px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96 {
+    position:absolute;
+    left:911px;
+    top:627px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_normal {
+    background-image: url('../2-1、影片列表頁_files/u80_normal.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:846px;
+    top:627px;
+    width:31px;
+    height:22px;
+}
+
+#u97_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:22px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:878px;
+    top:629px;
+    width:117px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../2-1、影片列表頁_files/u83_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:760px;
+    top:625px;
+    width:26px;
+    height:27px;
+}
+
+#u100_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:26px;
+    height:27px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:22px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:786px;
+    top:630px;
+    width:52px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103 {
+    position:absolute;
+    left:587px;
+    top:792px;
+    width:478px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../2-1、影片列表頁_files/u31_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:587px;
+    top:829px;
+    width:150px;
+    height:20px;
+}
+
+#u104_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:150px;
+    height:20px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:146px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106 {
+    position:absolute;
+    left:907px;
+    top:826px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107_normal {
+    background-image: url('../2-1、影片列表頁_files/u80_normal.png');
+}
+
+.u107_container {
+    position:absolute;
+    left:842px;
+    top:826px;
+    width:31px;
+    height:22px;
+}
+
+#u107_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:22px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:874px;
+    top:828px;
+    width:117px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../2-1、影片列表頁_files/u83_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:756px;
+    top:824px;
+    width:26px;
+    height:27px;
+}
+
+#u110_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:26px;
+    height:27px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:22px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:782px;
+    top:829px;
+    width:52px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:585px;
+    top:872px;
+    width:478px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114 {
+    position:absolute;
+    left:586px;
+    top:1054px;
+    width:478px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115 {
+    position:absolute;
+    left:591px;
+    top:987px;
+    width:478px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../2-1、影片列表頁_files/u31_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:591px;
+    top:1024px;
+    width:150px;
+    height:20px;
+}
+
+#u116_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:150px;
+    height:20px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:146px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:904px;
+    top:1023px;
+    width:199px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119_normal {
+    background-image: url('../2-1、影片列表頁_files/u80_normal.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:839px;
+    top:1023px;
+    width:31px;
+    height:22px;
+}
+
+#u119_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:22px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:27px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121 {
+    position:absolute;
+    left:871px;
+    top:1025px;
+    width:117px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../2-1、影片列表頁_files/u83_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:753px;
+    top:1021px;
+    width:26px;
+    height:27px;
+}
+
+#u122_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:26px;
+    height:27px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:22px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124 {
+    position:absolute;
+    left:779px;
+    top:1026px;
+    width:52px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

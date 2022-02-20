@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/tip.js"></script>
+
+</head>
+<body class="bg-color-lightgary">
+
+<div class="container">
+    <H3 class="margin10">結案/公池名单</H3>
+    <div class="colauto margin10 padding10 bg_color_llightblue">
+    <table width="100%" border="0" cellpadding="6" cellspacing="5">
+        <tr>
+            <td height="40" class="text-left alignMiddle"><span class="fontSize14">合约到期日:</span><span class="fontSize14">
+            <input  type="text" id="datepicker" />
+to
+<input type="text" id="datepicker2" />
+名单类型:
+<select class="width140" name="select3">
+  <option selected="selected" value="不拘">不拘</option>
+  <option value="尚未聯繫">尚未聯繫</option>
+  <option value="僅電子郵件通知過未解說">僅電子郵件通知過未解說</option>
+  <option value="僅聯繫過未解說">僅聯繫過未解說</option>
+  <option value="僅業務解說過未預約">僅業務解說過未預約</option>
+  <option value="僅預約過未出席">僅預約過未出席</option>
+  <option value="僅出席過為成交購買">僅出席過為成交購買</option>
+  <option value="Key過直購">Key過直購</option>
+</select>
+            </span></td>
+        </tr>
+    </table>
+    
+    </div>
+    <div class="col-offset1"><a href="#" class="btn btn-primary">送出</a></div>
+    
+  <div class="colauto margin10"><hr /></div>
+  <div class="colauto margin10">
+    <div class="col11 fontSize14">
+    
+    <span>淺黃底的資料為三日內新增的名單 (不含公池撈回的名單)</span><br />
+	<span>日期區間：2013/08/10 - 2013/08/11</span><br />
+    <span>Total：</span><span class="color_red">3</span></div>
+    <table width="100%" cellpadding="0" cellspacing="0" class="table_bordered">
+      <thead>
+        <tr>
+        	 <th class="text-center alignMiddle"><input type="checkbox" /></th>
+            <th class="text-center alignMiddle">客户姓名</th>
+            <th class="text-center alignMiddle">客户英文姓名</th>
+            <th class="text-center alignMiddle">生日</th>
+            <th class="text-center alignMiddle">总堂数</th>
+            <th class="text-center alignMiddle">已用堂数</th>
+            <th class="text-center alignMiddle">续约率</th>
+            <th class="text-center alignMiddle">合约结束日</th>
+            <th class="text-center alignMiddle">合约使用状态</th>
+            <th class="text-center alignMiddle">名单类型</th>
+            <th class="text-center alignMiddle">取得名单</th>
+            <th class="text-center alignMiddle">标记</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="odd">
+            	  <td class="text-center alignMiddle"><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+                <td class="text-center alignMiddle"><span class="lineHeight24">王大人</span><abbr rel="tooltip" alt="VIPABC"><span class="vIcon lineHeight24"></span></abbr><br />
+					<a href="#"><span class="phoneBtn"></span></a><span></span><a href="#"><span class="mailBtn"></span></a><span></span><a href="#"><span class="smsBtn"></span></a><a href="#"><span class="addFile"></span></a></td>
+                <td class="text-center alignMiddle">Famous Wang</td>
+                <td class="text-center alignMiddle">8 / 5</td>
+                <td class="text-center alignMiddle">504</td>
+                <td class="text-center alignMiddle">520</td>
+                <td class="text-center alignMiddle"></td>
+                <td class="text-center alignMiddle">2013/11/07</td>
+                <td class="text-center alignMiddle">合约期效已過1/2</td>
+                <td class="text-center alignMiddle"><span class="color_blue">结案</span>续约名单</td>
+                <td class="text-center alignMiddle"><a href="#" class="btn btn-danger">取得</a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+            <tr class="even">
+            	<td class="text-center alignMiddle"><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+              <td class="text-center alignMiddle"><span class="lineHeight24">李大人</span><br />
+					<a href="#"><span class="phoneBtn"></span></a><span></span><a href="#"><span class="mailBtn"></span></a><span></span><a href="#"><span class="smsBtn"></span></a><a href="#"><span class="addFile"></span></a></td>
+                <td class="text-center alignMiddle">Bigman Lee</td>
+                <td class="text-center alignMiddle">1 / 1</td>
+                <td class="text-center alignMiddle">30</td>
+                <td class="text-center alignMiddle">22</td>
+                <td class="text-center alignMiddle">*高續約率</td>
+                <td class="text-center alignMiddle">2013/11/07</td>
+                <td class="text-center alignMiddle">已使用1/2堂數</td>
+                <td class="text-center alignMiddle"><span class="color_blue">结案</span>续约名单</td>
+                <td class="text-center alignMiddle"><a href="#" class="btn btn-danger">取得</a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag"></span></a></td>
+            </tr>
+            <tr class="odd">
+            	  <td class="text-center alignMiddle"><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+              <td class="text-center alignMiddle"><abbr  rel="tooltip" alt="Junior客戶"><span class="jrIcon lineHeight24"></span></abbr><span class="lineHeight24">张小毛</span><br />
+					<a href="#"><span class="phoneBtn"></span></a><span></span><a href="#"><span class="mailBtn"></span></a><span></span><a href="#"><span class="smsBtn"></span></a><a href="#"><span class="addFile"></span></a></td>
+                <td class="text-center alignMiddle">MoMo Chang</td>
+                <td class="text-center alignMiddle">12 / 2</td>
+                <td class="text-center alignMiddle">15384.60</td>
+                <td class="text-center alignMiddle">69.25</td>
+                <td class="text-center alignMiddle"></td>
+                <td class="text-center alignMiddle">2013/11/07</td>
+                <td class="text-center alignMiddle">合约期效已過1/2</td>
+                <td class="text-center alignMiddle"><span class="color_blue">结案</span>续约名单</td>
+                <td class="text-center alignMiddle"><a href="#" class="btn btn-danger">取得</a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+            <tr class="even">
+            	<td class="text-center alignMiddle"><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+                <td class="text-center alignMiddle"><span class="lineHeight24">周阿发</span><br />
+					<a href="#"><span class="phoneBtn"></span></a><span></span><a href="#"><span class="mailBtn"></span></a><span></span><a href="#"><span class="smsBtn"></span></a><a href="#"><span class="addFile"></span></a></td>
+                <td class="text-center alignMiddle">Fafa Chu</td>
+                <td class="text-center alignMiddle">3 / 12</td>
+                <td class="text-center alignMiddle">15384.60</td>
+                <td class="text-center alignMiddle">101</td>
+                <td class="text-center alignMiddle">*高續約率</td>
+                <td class="text-center alignMiddle">2013/11/07</td>
+                <td class="text-center alignMiddle">已使用1/2堂數</td>
+                <td class="text-center alignMiddle"><span class="color_blue">结案</span>续约名单</td>
+                <td class="text-center alignMiddle"><a href="#" class="btn btn-danger">取得</a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+      <tbody>
+    </table>
+    <div class="col11 fontSize14 margin_top10"><span>选了  0  个客户，分派处理人员 </span><span class="fontSize14">
+      <select class="width80" name="select4">
+        <option value="--- 組別 ---">--- 組別 ---</option>
+        <option value="CAS1">CAS1</option>
+        <option value="EC1">EC1</option>
+        <option value="EC2">EC2</option>
+        <option value="RS">RS</option>
+        <option value="TSR1">TSR1</option>
+        <option value="TSR2">TSR2</option>
+        <option selected="selected" value="TSR3">TSR3</option>
+        <option value="TSR4">TSR4</option>
+        <option value="TSR5">TSR5</option>
+        <option value="TSR6">TSR6</option>
+        <option value="TSR7">TSR7</option>
+        <option value="TSR8">TSR8</option>
+        <option value="TSR9">TSR9</option>
+        <option value="TSR10">TSR10</option>
+        <option value="TSR11">TSR11</option>
+        <option value="TSR12">TSR12</option>
+      </select>
+      <select class="width120" name="select4">
+        <option value="Ashton Sung">Ashton Sung</option>
+        <option value="Alina Zhang">Alina Zhang</option>
+        <option value="Amanad Si">Amanad Si</option>
+        <option value="Angela Ji">Angela Ji</option>
+        <option value="Ashton Sung">Ashton Sung</option>
+        <option value="Catherine.l Li">Catherine.l Li</option>
+        <option value="Cici Wei">Cici Wei</option>
+        <option value="Dale Sun">Dale Sun</option>
+        <option value="Evan Sun">Evan Sun</option>
+        <option value="Gina Wang">Gina Wang</option>
+        <option value="Laura Lan">Laura Lan</option>
+        <option value="Lisa Hou">Lisa Hou</option>
+        <option selected="selected" value="Paul Zhang">Paul Zhang</option>
+      </select>
+    </span> 
+    <a href="#" class="btn btn-primary">确定</a>
+    </div>
+    <div class="pagination pagination-right">
+    <ul>
+      <li class="disabled"><a href="#">‹‹</a></li>
+      <li class="disabled"><a href="#">‹</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li><a href="#">›</a></li>
+      <li><a href="#">››</a></li>
+    </ul>
+  </div>
+  </div>
+    
+    
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+  });
+</script>
+</body>
+</html>

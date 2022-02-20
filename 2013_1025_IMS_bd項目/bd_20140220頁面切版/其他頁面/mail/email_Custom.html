@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+  $(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+	$( "#datepicker3" ).datepicker();
+  });
+</script>
+<!--input-->
+<script type="text/javascript">
+    $(function(){
+  $('input[data-watermark]').each(function(){
+	var $current = $(this);
+	var exampleText= $current.attr('data-watermark');
+	$current.addClass('mark');
+	$current.val(exampleText);
+  });
+
+  $('input[data-watermark]').focus(function(){
+	var $current = $(this);
+	var exampleText= $current.attr('data-watermark');
+	if($current.val()==exampleText){
+	  $current.val('');
+	  $current.removeClass('mark');
+	}
+  });
+
+  $('input[data-watermark]').blur(function(){
+	var $current = $(this);
+	var exampleText= $current.attr('data-watermark');
+	if($current.val()==''){
+	  $current.val(exampleText);
+	  $current.addClass('mark');
+	}
+  });
+});
+</script>
+<!--input END-->
+</head>
+<body class="col11">
+<div class="col11">
+	<div class="col11">
+		<table width="100%" cellpadding="0" cellspacing="0" class=" table_noneHover">
+			<tbody>
+				<tr class="odd">
+					<td colspan="2" class="text-center bg_color_gayc9"><div class="margin5 color_white">寄送E-mail</div></td>
+				</tr>
+				<tr class="even">
+					<td width="20%" class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">TO</div></td>
+					<td width="80%" class="bg_color_white"><div class="margin5 float_left col10"><div class="fontSize14"><input class="col11" data-watermark="ann***@***.com" id="testinput" /></div></div></td>
+                </tr>
+				<tr class="odd">
+					<td class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">CC</div></td>
+					<td class="bg_color_white"><div class="margin5 float_left col10"><div class="fontSize14"><input class="col11" /></div></div></td>
+                </tr>
+                <tr class="even">
+                    <td class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">BCC</div></td>
+                    <td class="bg_color_white"><div class="margin5 float_left col10"><div class="fontSize14"><input class="col11" /></div></div></td>
+                </tr>
+                <tr class="odd">
+                    <td class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">Setting</div></td>
+                    <td class="bg_color_white"><div style="clear:both;"><div class="margin5 float_left"><input name="group1" id="group1_radio1" type="radio" /> <label for="group1_radio1">公版E-mail</label></div><div class="margin5 float_left"><select class="width140" name="select1">
+                            <option selected="selected" value="请选择">请选择</option>
+                          </select></div></div>
+                        <div style="clear:both;"><div class="margin5 float_left"><input name="group1" id="group1_radio1" type="radio" /> <label for="group1_radio1">自訂E-mail</label></div></div>
+                        <!--AttachmentOpen-->
+                        <div style="clear:both;">
+                        	<a class="margin5 float_left bg_color_gayc9 col10 padding20 text_derN color_black" href="">
+                        		<div class="openAttach margin_right15"> </div>Attachment
+                            </a>
+                        </div>
+                        <!--END AttachmentOpen-->
+                        <!--AttachmentClose-->
+                        <div style="clear:both;">
+                        	<div class="margin5 float_left bg_color_gayc9 col10 padding20">
+                                <div style="clear:both; overflow:hidden" class="margin_bottom10">
+                                	<a class="margin5 float_left bg_color_gayc9 col10 text_derN color_black" style="display:block;" href="">
+                        				<div class="closeAttach margin_right15"> </div>Attachment
+                                    </a>
+                                 </div>
+								 <a style="display:block;" class="margin_left20 float_left width100 text-center padding10 bg_color_white text_derN color_black" href="">EDM</a>
+                                 <a style="display:block;" class="float_left width100 text-center padding10 bg_color_gay9 text_derN color_white" href="">PDF</a>
+                                 <div style="clear:both;" class="margin_left20 bg_color_white margin_right15 padding20">
+                                 	<input type="checkbox" /><a href="" class=" margin_left10">VIPABC汇款帐号(新版)</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!--END AttachmentClose-->
+                        <!--TemplateOpen-->
+                        <div style="clear:both;">
+                        	<a class="margin5 float_left bg_color_gayc9 col10 padding20 text_derN color_black" href="">
+                        		<div class="openAttach margin_right15"> </div>Template
+                            </a>
+                        </div>
+                        <!--END TemplateOpen-->
+                        <!--TemplateClose-->
+                        <div style="clear:both;">
+                        	<div class="margin5 float_left bg_color_gayc9 col10 padding20">
+                                <div style="clear:both; overflow:hidden" class="margin_bottom10">
+                                	<a style="display:block;" class="margin5 float_left bg_color_gayc9 col10 text_derN color_black" href="">
+                        				<div class="closeAttach margin_right15"> </div>Template
+                                    </a>
+                                 </div>
+                                 <div style="clear:both;" class="margin_left20 margin_right15 padding_right20 padding_left20">
+                                 	<div class="margin_bottom10">Content: <select class="width140" name="select1">
+                            <option selected="selected" value="邀请在线讲堂">邀请在线讲堂</option>
+                          </select></div>
+                                 	<div>Signature: <select class="width200" name="select1">
+                            <option selected="selected" value="英语不好，不是您的错！">英语不好，不是您的错！</option>
+                          </select></div>
+                                 </div>
+                            </div>
+                        </div>
+                        <!--END TemplateClose-->
+                        </td>
+                </tr>
+                <tr class="even">
+                    <td class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">Subject</div></td>
+                    <td class="bg_color_white"><div class="margin5 float_left col10"><div class="fontSize14"><input class="col11" /></div></div></td>
+                </tr>
+                <tr class="odd">
+                    <td class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">Content</div></td>
+                    <td class="bg_color_white">
+                    	<div class="float_left border-mail col10 margin5 height600">
+                        	<div style="width:auto" class="bg_color_gayd7 padding5"><span class="color_red fontSize13">(不准寄價格給客人)</span><span class="color_Green fontSize13">*綠色字體為編修提示，請確認刪除後再寄出</span></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="even">
+                    <td class="bg_color_gay text-right alignMiddle"><div class="margin5 color_white">Remark</div></td>
+                    <td class="bg_color_white"><div class="margin5 float_left col10"><span class="color_red fontSize13">此備註欄之內容不會寄給客人，但會存進業務後續追蹤</span><div class="fontSize14"><textarea class="col11 height120"></textarea></div></div></td>
+                </tr>
+                <tr class="odd borderWhite">
+                    <td class="text-right alignMiddle bg_color_white  borderWhite"><div class="margin5 color_white"></div></td>
+                    <td colspan="3" class="text-left alignMiddle bg_color_white borderWhite">
+                        <div class="margin5">
+                            <a href="#" class="btn btn-danger">Subimit</a>
+                        </div>
+                    </td>
+                </tr>
+			<tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

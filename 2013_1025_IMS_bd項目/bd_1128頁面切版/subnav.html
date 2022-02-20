@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BDPortal</title>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<style type="text/css">
+.subNav{position:relative; width:auto;  z-index:500; background:#F00; }
+.subNavTitle{position:relative; width:100%; height:60px; background:url(images/subNavTitleBg.png) repeat-x; }
+
+.subNavBtnWrap{ position:relative;  width:300px; float:left; }
+.subNavBtn{ width:300px; height:30px; background:url(images/subNavBtnBg.png) repeat-x; line-height:30px; vertical-align:middle;}
+
+.subNavBtn:hover{background:url(images/subNavBtnBgHovr.png) repeat-x; }
+.subNavBtnTxt{position:absolute; z-index:60; }
+.subNavTip{ position:absolute; z-index:62; left:240px; margin-top:5px;  width:51px; height:20px; background:url(images/subNavBtnBg.png)no-repeat; line-height:20px;vertical-align:middle; background:url(images/subNavTip.png); color:#FFF; text-align:center;}
+
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+</head>
+
+<body>
+<div class="subNav">
+    <div class="subNavTitle"><span class="fontSize16   color_gray">我的主联</span></div>
+    <div class="subNavBtnWrap">
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">应出席试读列表</div><div class="subNavTip">222</div></div>
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">主动联络名单</div><div class="subNavTip">222</div></div>
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">出席未付订</div><div class="subNavTip">222</div></div>
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">今日应跟催</div><div class="subNavTip">222</div></div>
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">从未联络名单</div><div class="subNavTip">222</div></div>
+    </div>
+    <div class="subNavBtnWrap">
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">结案/公池名单</div><div class="subNavTip">222</div></div>
+        <div class="subNavBtn"><div class="subNavBtnTxt  fontSize140 color_gray">未来10天的每日应主联数</div><div class="subNavTip">222</div></div>
+    </div>
+     
+</div>
+
+</body>
+</html>

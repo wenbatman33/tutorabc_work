@@ -1,0 +1,179 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "";
+    //ViewBag.MenuIndex = 0;
+    ViewBag.ShowLeftAnalyze = true;
+    ViewBag.ShowBottomAd = false;
+}
+<style type="text/css">
+    .appCarouselUL {}
+    .appCarouselUL li{ position:relative; float:left; margin-left:10px; top:0px; width:100%;}
+    .prevBtn { display:inline-block; position:absolute; top:146px; left:90px;  width:26px; height:84px;background:url(@Url.Content("~/images/prevBtn.png")) no-repeat;}
+    .nextBtn { display:inline-block; position:absolute; top:146px; left:750px; width:26px; height:84px;background:url(@Url.Content("~/images/nextBtn.png")) no-repeat;}
+    .appPointBtns{width:100%;  height:20px; text-align:center;}
+    .appPointBtns a{ margin:10px;}
+    .ponitHit{ display:inline-block; width:10px; height:10px; background:url(@Url.Content("~/images/appCarouse_point_click.png")); margin:0px;}
+    .ponitIcon{ display:inline-block; width:10px; height:10px; background:url(@Url.Content("~/images/appCarouse_point.png")); margin:0px; }
+</style>
+<script type="text/javascript">  
+    $(function(){
+	    var $block = $('.appCarousel'),
+	    $slides = $block.find('.slides'),
+	    $ul = $slides.find('ul'),
+	    $PointBtns = $('.appPointBtns'),
+	    totalPic=$('.slides li').length
+	    _width = 666,
+	    totalWidth=totalPic*110,
+	    timer=100, _stop = false, nowNum=0,currentx=0, btnOver=false,
+	    totalFrames=Math.ceil(totalWidth/_width);
+	    for(var i=0;i<totalFrames;i++){
+		    $PointBtns.append( "<a href=\"javascript: void(0)\" onclick=\"javascript: roll("+i+")\" ><span class=\"ponitIcon\"></span></a>" );
+	    }
+	    $('.prevBtn').hover(
+		      function() {
+			    $( this ).css( "top","150px" );
+		      }, function() {
+			    $( this ).css( "top","146px" );
+		      }
+	    );
+	    $('.nextBtn').hover(
+		      function() {
+			    $( this ).css( "top","150px" );
+		      }, function() {
+			    $( this ).css( "top","146px" );
+		      }
+	    );
+	
+	    $('.prevBtn').click( function(){ prv(); });
+	    $('.nextBtn').click( function(){ next(); });
+	
+	    roll(nowNum);
+
+			
+    });
+
+    function next(){
+	    if(nowNum >=(totalFrames-1)){
+		    nowNum=totalFrames;
+	    }else{
+		    nowNum+=1;
+		    roll(nowNum);
+	    }
+    }
+    function prv(){
+	    if(nowNum<=0){
+		    nowNum=0;	
+	    }else{
+		    nowNum-=1;
+		    roll(nowNum);
+	    }
+    }
+
+    function roll(num){
+	    nowNum=num
+	    if(num<=0){
+		    $('.prevBtn').hide();
+	    }else{
+		    $('.prevBtn').show();
+	    }
+	    if(num>=(totalFrames-1)){
+		    $('.nextBtn').hide();
+	    }else{
+		    $('.nextBtn').show();
+	    }
+	    currentx=0-num*_width;
+	    var str= currentx+"px";
+	    $('.ponitHit').removeClass().addClass("ponitIcon");
+	    $('.appPointBtns a').eq(num).find('span').removeClass("ponitIcon").addClass("ponitHit");
+	    $(".slides").stop().animate({ left: str }, 300 );
+    };
+</script>
+
+<div id="page_block" class="register">
+    <div class="blocks block_reserve">
+        <div class="title">
+            <img src="@Url.Content("~/images/title-app.png")" alt="熱門APP下載" /></div>
+        <!--app START-->
+        <div class="app_download">
+            <!--all app START-->
+            <div class="app_box">
+                <!--title-->
+                <div class="app_subtitle">
+                    <ul>
+                        <li class="on">iOS</li>
+                        <li><a href="@Url.Action("AndroidTutorMobilePad")">Android</a></li>
+                        <li><a href="@Url.Action("WindowsPhoneEpaper")">Windows Phone</a></li>
+                    </ul>
+                    <div class="Clear"></div>
+                </div>
+                <div class="appad">
+                	<ul>
+                    	<li class="Smart">Smart Phone</li>
+                        <li class="appline">線</li>
+                        <li class="Tablet"><a href="@Url.Action("IosTutorMobilePad")">Tablet PC</a></li>
+                    </ul>
+                </div>
+                <!--appad end-->
+
+                <!--title-->
+                <div class="app_submenu" style=" height:120px; position:relative;">
+                     <!--appCarousel START-->
+                    <div class="appCarousel" style=" display:inline-block; position:relative; overflow:hidden; left:0px; width:666px; height:100px; ">
+						 <div class="slides" style="display:inline-block;  position:absolute; left:0px; width:9999px; height:84px; ">
+                            <ul class="appCarouselUL">
+                                <li>
+                                    <a href="@Url.Action("IosTutorMobile")"><img src="@Url.Content("~/images/appicon_tm.png")" /></a><br />
+                                    Tutor Mobile
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("IosCalendar")"><img src="@Url.Content("~/images/IOS20120821/TutorCalendar_58.png")" /></a><br />
+                                    Tutor Calendar
+                                </li>  
+                                <li>
+                                    <a href="@Url.Action("IosGEPTB")"><img src="@Url.Content("~/images/IOS20120821/GEPTB58x58.png")" /></a><br />
+                                    TutorGEPT B
+                                </li>   				
+                                <li>
+                                    <a href="@Url.Action("IosTutorGEPT")"><img src="@Url.Content("~/images/58x58.png")" /></a><br />
+                                    TutorGEPT I
+                                </li>       
+                                <li>
+                                    <a href="@Url.Action("IosEpaper")"><img src="@Url.Content("~/images/appicon-epaper.png")" /></a><br />
+                                    英文學習報
+                                </li>   	                                                               
+                                <li>
+                                    <a href="@Url.Action("IosVocapp")"><img src="@Url.Content("~/images/appicon-vocapp.png")" /></a><br />
+                                    行動字彙通
+                                </li>                                            
+                                <li>
+                                    <a href="@Url.Action("IosSurvivalEnglish")"><img src="@Url.Content("~/images/appicon-es.png")" /></a><br />
+                                    英文急救站
+                                </li>  
+                                <li>
+                                    <a href="@Url.Action("IosSpellingGame")"><img src="@Url.Content("~/images/IOS20120821/ico_iPhone-Spotlight_58.png")" /></a><br />
+                                    字彙快手
+                                </li>
+                                                                                             
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="appPointBtns">
+
+                    </div>
+                    
+                    <div class="appLRBtns">
+                        <a class="prevBtn" href="javascript: void(0)" ></a>
+                        <a class="nextBtn" href="javascript: void(0)" ></a>
+                    </div>
+                </div>
+            </div>
+            <!--all app END-->
+            <!--app Body START-->
+            @RenderBody()
+            <!--app Body END-->
+        </div>
+        <!--app END-->
+    </div>
+</div>
+<!-- end #mainContent -->
+              

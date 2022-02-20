@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html, p{	font-family:Arial,"MS Gothic","蘋果儷中黑","Apple LiGothic Medium","微軟雅黑","Microsoft YaHei","宋體","微軟正黑體","Microsoft JhengHei";}
+h1,h2,h3,h4,h5,h6{ font-family:inherit; line-height:1.5; color:inherit; text-rendering:optimizelegibility;}
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{ font-weight:normal; line-height:1; color:#999999;}
+h1{ font-size:40px; font-weight:bold; line-height:40px; vertical-align: middle;}
+h2{ font-size:40px; font-weight:bold; line-height:40px; vertical-align: middle;}
+h3{ font-size:20px; line-height:30px; vertical-align: middle;}
+h4{ font-size:16px; line-height:28px; vertical-align: middle;}
+h5{ font-size:14px; line-height:24px; vertical-align: middle;}
+h6{ font-size:12px; line-height:14px; vertical-align: middle;}
+h1 small{font-size:20px; line-height:28px; vertical-align: middle;}
+h2 small{font-size:20px; line-height:28px; vertical-align: middle;}
+h3 small{font-size:18px; line-height:22px; vertical-align: middle;}
+h4 small{font-size:14px; line-height:16px; vertical-align: middle;}
+h5 small{font-size:12px; line-height:12px; vertical-align: middle;}
+h6 small{font-size:11px; line-height:11px; vertical-align: middle;}
+
+.font_12{font-size:12px;}
+.font_14{font-size:14px;}
+.font_16{font-size:16px;}
+.font_18{font-size:18px;}
+.font_20{font-size:20px;}
+.font_22{font-size:22px;}
+.font_24{font-size:24px;}
+.font_26{font-size:26px;}
+
+
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{text-align:center;}
+.bold{font-weight:bold;}
+.color_red{	color:#e60012;}
+.color_orange{color:#ff9000;}
+.color_white{color:#FFF;}
+.color_darkGray{color:#333333;}
+.color_gray{color:#666666;}
+.color_lightGray{color:#999999;}
+a, a:hover,a:focus{text-decoration:none;}
+.a_link, .a_link:hover {
+font-size: 12px;
+line-height:14px;
+vertical-align:middle;
+color: #666666;
+}

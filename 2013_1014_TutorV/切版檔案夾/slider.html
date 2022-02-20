@@ -1,0 +1,1151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_Style.css"/>
+<link rel="stylesheet" href="css/IMS_Font.css"/>
+<link rel="stylesheet" href="css/Grid.css"/>
+
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox2.1.5/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script src="js/jquery.barrating.js"></script>
+<script type="text/javascript">
+$(function(){
+		var $block = $('.classes_List_warp'),
+		totalBox=$('.classes_List_warp .classes_ListBox').length,
+		
+		nowNum=0,
+		timer, _Speed = 500;
+		$(".left_arrowBtn2").bind("click",{id:1},prv);
+		$(".right_arrowBtn2").bind("click",{id:1},next);
+		function next(e){
+			console.log(e.data.id);
+			nowNum+=1
+			roll(nowNum);
+		}
+		
+		function prv(e){
+			console.log(e.data.id);
+			nowNum-=1
+			roll(nowNum);
+		}
+		
+		function roll(num){
+			if(num<=0){
+				$('.left_arrowBtn2').hide();
+			}else{
+				$('.left_arrowBtn2').show();
+			}
+			if(num>=(totalBox-1)){
+				$('.right_arrowBtn2').hide();
+			}else{
+				$('.right_arrowBtn2').show();
+			}
+			goingwidth=0-(num*960);
+			
+			$(".classes_List_warp").stop().animate({"left":goingwidth}, _Speed);
+			
+		}
+		roll(nowNum)
+		
+	});
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="classes col11 float_left">
+    <div class="classes_Category colauto ">
+    <span class="colauto color_white fontSize18 margin5 float_left "><div class="white_line"></div> <div class="margin_top5">商業金融</div></span>
+    <span class="colauto float_right margin10 color_white"> 
+    <a class="btn btn_Orange" href="#">最新更新</a> 
+    <a class="btn btn_White" href="#">最受歡迎</a>1/40
+    </span>
+    </div>
+    
+    <a href="javascript: void(0)"><img class="left_arrowBtn2" src="images/left_arrowBtn.png" width="23" height="49"  alt=""/></a>
+    <a href="javascript: void(0)"><img class="right_arrowBtn2" src="images/right_arrowBtn.png" width="23" height="49"  alt=""/></a>
+    <div class="classes_List col11 margin_top10">
+    <div class="classes_List_warp">
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+    </div>
+    </div>
+    </div>
+
+	
+    <div class="classes col11 float_left">
+    <div class="classes_Category colauto ">
+    <span class="colauto color_white fontSize18 margin5 float_left "><div class="white_line"></div> <div class="margin_top5">商業金融</div></span>
+    <span class="colauto float_right margin10 color_white"> 
+    <a class="btn btn_Orange" href="#">最新更新</a> 
+    <a class="btn btn_White" href="#">最受歡迎</a>1/40
+    </span>
+    </div>
+    
+    <a href="javascript: void(0)"><img class="left_arrowBtn2" src="images/left_arrowBtn.png" width="23" height="49"  alt=""/></a>
+    <a href="javascript: void(0)"><img class="right_arrowBtn2" src="images/right_arrowBtn.png" width="23" height="49"  alt=""/></a>
+    <div class="classes_List col11 margin_top10">
+    <div class="classes_List_warp">
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+        <div class="classes_ListBox"><ul class="classes_ul">
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_1.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_2.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_3.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_4.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_5.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_6.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_7.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    <li class="videoBtn bg_color_black"><a href="javascript: void(0)">
+    <img class="margin5" src="images/cover_8.jpg" width="223" height="167"  alt=""/> 
+    <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+    <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+    <div class="colauto fontSize13 color_white margin5">16459 views</div>
+    <div class="colauto margin5">
+    <span class="colauto float_left">
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+    </span>
+    <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+    </div></a>
+    </li>
+    </ul></div>
+    </div>
+    </div>
+    </div>
+	
+</div>
+</body>
+</html>

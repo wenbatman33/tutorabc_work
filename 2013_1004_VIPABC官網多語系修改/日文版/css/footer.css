@@ -1,0 +1,26 @@
+.footerRedLine{height: 35px; background:#e50012; float:left;}
+.footer{ min-height:50px;  background:#333; float:left;}
+.footer_cert{min-height:50px; background:#000; float:left;}
+
+.foot_logo{ display:block; position:relative; float:left; width:200px; height:52px; margin:20px 0 0 0;}
+.foot_linksWrap{ display:block; position:relative; float:left; margin-top:20px;}
+.foot_links{ display:block; position:relative; float:left; width:125px; padding:5px;	 }
+.foot_links p{ list-style:none; font-size:14px; font-weight:bold;}
+.foot_links a{ list-style:none;  color:#bfbfbf; text-decoration:none; font-size:12px; line-height:20px; font-weight:normal;}
+.foot_links a:hover{ list-style:none;  color:#eeeeee; text-decoration:none; font-size:12px;line-height:20px; font-weight:normal;}
+
+
+
+.foot_bottom{	display:block; position:relative;  margin:15px 0 8px 0; }
+.foot_bottom p{	color:#bfbfbf; text-decoration:none; font-size:12px;margin:0 8px 0 0;}
+.foot_bottom a{color:#bfbfbf; text-decoration:none; font-size:12px;margin:0 8px 0 0;}
+.foot_bottom a:hover{color:#eeeeee; text-decoration:none; font-size:12px;}
+.foot_tel{position:relative; display:block;width:100%; float:left; height:44px; text-align:right;}
+
+.foot_permit{ display:block; position:relative; float:left; width:760px; height:50px; margin:30px 0 0 0;}
+.foot_permit_icon{width:46px; height:34px;float:left; margin-left:18px}
+.foot_permit_01{ background:url(../images/foot_permit.jpg) 0px 0px no-repeat;}
+.foot_permit_02{ background:url(../images/foot_permit.jpg) 0px -34px no-repeat;}
+.foot_permit_03{ background:url(../images/foot_permit.jpg) 0px -68px no-repeat;}
+.foot_permit_04{ background:url(../images/foot_permit.jpg) 0px -102px no-repeat;}
+.foot_permit_info{height:34px; width:180px; float:left; line-height:18px; vertical-align: middle; color:#666; font-size:14px; margin-left:5px;}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fancyBox - Fancy jQuery Lightbox Alternative | Demonstration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_Style.css"/>
+<link rel="stylesheet" href="css/IMS_Font.css"/>
+<link rel="stylesheet" href="css/Grid.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#closePageBtn").click(function(){
+       $.fancybox.close( [true] )
+    });
+});
+</script>
+</head>
+<body style="background:#383838; overflow:hidden" class="margin10">
+<div id="iframe" class=" width600" >
+    <div class="text-center fontSize20 color_white">免費索取上課試聽碼 觀看完整英文課程</div>
+    <div class="width550 margin5 margin_top20 float_left lineHeight30">
+    	<div class="inline_block width180 text-right  float_left color_white fontSize16 lineHeight30">信箱:</div>
+       <div class="inline_block width370 text-left float_left lineHeight30 "><input class="form_input width200 fontSize14" type="text" value="
+請填寫常用信箱 "></div>
+    </div>
+    <div class="width550 margin5 float_left lineHeight30">
+    	<div class="inline_block width180 text-right  float_left color_white fontSize16 lineHeight30">姓名:</div>
+       <div class="inline_block width370 text-left float_left lineHeight30 "><input class="form_input width200 fontSize14" type="text" value="請填寫你的中文姓名"></div>
+    </div>
+    <div class="width550 margin5 float_left">
+    	<div class="inline_block width180 text-right  float_left color_white fontSize16">手機:</div>
+       <div class="inline_block width370 text-left float_left ">
+   		 <span class="margin_top10 margin_bottom10">
+            <select class="form_input width100 fontSize14" name="select2">
+                <option selected="" value="台灣">台灣</option>
+                <option value="中國">中國</option>
+            </select>
+            <input type="text" class="form_input width100 fontSize14" value="+886">
+        </span><br><br>
+        <span class="margin_top10 margin_bottom10"><input type="text" class="form_input width200 fontSize14" value="+886"></span>
+	</div>
+    </div>
+    <div class="width550 margin5 float_left">
+    	<div class="inline_block width180 text-right  float_left color_white fontSize16 lineHeight30">驗證碼:</div>
+       <div class="inline_block width370 text-left float_left  lineHeight30 "><input class="form_input width100 fontSize14" type="text">
+       <img class="lineHeight30" src="images/verCode.jpg" width="105" height="33"></div>
+    </div>
+    
+    <div class="width550 margin5 float_left">
+    	<div class="block text-right width180  float_left color_white fontSize16 lineHeight30  height30"> </div>
+        <div class="inline_block text-left width370 float_left  lineHeight30  ">
+           <span class="text-center fontSize14 color_white"><a id="closePageBtn2" class="btn btn_Orange" href="javascript:void(0);" >取得試聽碼 </a></span><br>
+           <span class="fontSize14 color_white">如果三分鐘沒收到驗證碼,請重新點擊獲取驗證碼按鈕</span>
+        </div>
+    </div>
+    <div class="width550  margin5 float_left">
+    	<div class="inline_block width180 text-right  float_left color_white fontSize16 lineHeight30">試聽碼:</div>
+       <div class="inline_block text-left width370 float_left  lineHeight30  ">
+           <input class="form_input width200 fontSize14" type="text">
+      </div>
+    </div>
+    <div class="width550  float_left text-center">
+    	<span class="text-center fontSize14 color_white">免費索取上課試聽碼 觀看完整英文課程</span>
+   </div>
+    <div class="width550 margin5 float_left text-center">
+    	<span class="text-center fontSize14 color_white"><a id="closePageBtn" class="btn btn_Login" href="javascript:parent.jQuery.fancybox.close();">送出 </a> </span>
+   </div>
+</div>
+</body>
+</html>

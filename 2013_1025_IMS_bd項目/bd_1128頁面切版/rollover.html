@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(function() {
+	$('.myDiv').hover(function(){
+		$(this).find('.layer_2').stop().animate({
+					top: 0
+				}, 300);
+			}, function(){
+				$(this).find('.layer_2').stop().animate({
+					top: 300
+				}, 300);
+	});
+});
+</script>
+<style type="text/css">
+body {	margin-left: 0px;	margin-top: 0px; }
+.myDiv{	 position:relative; float:left;	width:300px; height:300px; background:#0CF;overflow:hidden;}
+.layer_1{	position:absolute;	 width:300px; height:300px;z-index:10;}
+.layer_2{	position:absolute;	 width:300px; height:300px; background:#CCC; z-index:100; top:300px;}
+</style>
+</head>
+
+<body>
+<div class="myDiv">
+    <div class="layer_1">test</div>
+    <div class="layer_2">haha</div>
+</div>
+
+</body>
+
+</html>

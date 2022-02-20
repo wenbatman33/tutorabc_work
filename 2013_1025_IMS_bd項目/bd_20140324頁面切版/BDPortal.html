@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BDPortal</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/source/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/fancyboxOpenType.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox2.1.5/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script>
+$(function() {
+	var myTimeout;
+	var stretcNum=1;
+	$('.StatChartBox').hide()
+	//測試條狀圖跑的效果
+	$('.chartBarBox').stop().animate({width: '90%'}, 2000);
+	$('.chartBarBoxGray').stop().animate({width: '80%'}, 2000);
+	$('.chartBarNum').stop().animate({width: '80%'}, 2000);
+	
+	$('.rankBox').hover(function(){
+			$(this).find('.rankBox_layer_2').stop().animate({top: 0}, 100);	},function(){$(this).find('.rankBox_layer_2').stop().animate({top: 100}, 100);
+	});
+	$('.SeasonStat').click(function() {
+		$('.SeasonStat').stop().animate({width: 107}, 100);
+		$('.StatChartBox').hide();
+		
+		$(this).find('.StatChartBox').show();
+ 		$(this).animate({width: 250}, 500);
+	});
+	$('.SeasonStat').eq(1).stop().animate({width: 250}, 500);
+	$('.SeasonStat').eq(1).find('.StatChartBox').show();
+	
+	$('.NavBtn').mouseover(function(){
+		var position = $(this).position();
+		$(this).find( '.subNavFlow' ).css("top",position.top); 
+		$(this).find( '.subNavFlow' ).show();
+		$(this).find( '.subNavRedLine' ).show();
+	});
+	$('.NavBtn').mouseout(function(){
+		$(this).find( '.subNavFlow' ).hide();
+		$(this).find( '.subNavRedLine' ).hide();
+	});
+	/*131218*/
+
+	$('.NavSearch').click(function(){
+		$( '.SearchLi' ).toggle()
+	});
+	/*END 131218*/
+	$('.stretchBtn').click(function(){
+		stretcNum+=1;
+		stretchDashBoard(stretcNum);
+	});
+	
+	$('.TabsUL li').click(function(){
+		 var index = $( ".TabsUL li" ).index( this );
+
+		 $( ".TabsUL li" ).removeClass( "tabBtnClick" ).addClass( "tabBtn" );
+        $( this ).addClass( "tabBtnClick" );
+ 		 $('.Tabs_page').hide();
+		 $('.Tabs_page').eq(index).toggle();
+		
+	})
+			
+	 
+	 $( ".TabsUL li" ).eq(0).addClass( "tabBtnClick" );
+
+	 $( ".Tabs_page" ).eq(0).load( "toDoList.html" );
+	 $( ".Tabs_page" ).eq(1).load( "bd_page.html" );
+	 $( ".Tabs_page" ).eq(2).load( "activeContactList.html" );
+	 $( ".Tabs_page" ).eq(3).load( "neverContactList.html" );
+	 $( ".Tabs_page" ).eq(4).load( "activeContactList.html" );
+	 $( ".Tabs_page" ).eq(5).load( "Transaction.html" );
+	 $( ".Tabs_page" ).eq(6).load( "activeContactList.html" );
+
+	 $('.Tabs_page').eq(0).toggle();
+	 
+	 
+	  $(".companyCategory").click(function() {
+		 
+		
+	
+	});
+	
+	$( ".companyCategoryBox" ).hover(
+		  function() {
+			  $(document).unbind("click");
+		var ul=$(this).parent().find('ul');
+		$('.dropdown-menu').hide();
+		$(ul).toggle();
+		  }, function() {
+			$(".dropdown-menu_for_company").fadeOut();
+		  }
+		);
+	
+	
+	$(".companyItem").click(function() {
+	
+			  $(".companyCategory").html($(this).html());
+			  $(".dropdown-menu_for_company").fadeOut();
+
+	 });
+	 
+	 
+});
+
+function stretchDashBoard(num){
+	if (num%2==0){
+		$('.BD_DashBoard').stop().animate({top: -265}, 300);
+		$('.contentWrap').stop().delay( 200 ).animate({ marginTop: '80px' }, 150);
+
+	}else{
+		$('.contentWrap').stop().animate({ marginTop: '340px' }, 150);
+		$('.BD_DashBoard').stop().delay( 200 ).animate({top: 0}, 300);
+	}
+}
+</script>
+</head>
+<body class="bg_color_white yScroll" >
+<div class="BD_Container">
+    <div class="BD_TopNav float_left lineHeight40">
+        <div class=" float_left"> 
+            <span class="TutorABCicon lineHeight40"> </span>
+            <span class=" color_white lineHeight40">HI,Vivian </span>
+        </div>
+        <!--131218-->
+        <div class="float_left margin_left20"> 
+        	<div class=" NavSearch">
+            <a class="color_white" href="#">
+            <span class="searchIcon lineHeight40"> </span>
+            <span class=" lineHeight40">Search </span>
+            </a>
+            </div>
+           
+            <div class="SearchLi padding5">
+            	<div class="SearchLiTitle float_left color_white lineHeight26 text-right padding_right20 margin_bottom10">Brand</div>
+                <div class="SearchLiCheckbox float_left lineHeight26 margin_bottom10 color_white "><input type="checkbox"><span class="margin_left5">TutorABC</span></div>
+                <div class="SearchLiCheckbox lineHeight26 margin_left80 margin_bottom10 color_white "><input type="checkbox"><span class="margin_left5">TutorABCjr</span></div>
+                <div class="SearchLiCheckbox lineHeight26 margin_left80 margin_bottom10 color_white "><input type="checkbox"><span class="margin_left5">VIPABC</span></div>
+            	<div class="SearchLiTitle float_left color_white lineHeight26 text-right padding_right20 ">Name</div><div><input class="SearchLiInput margin_bottom10 lineHeight24" /></div>
+            	<div class="SearchLiTitle float_left color_white lineHeight26 text-right padding_right20 ">Email</div><div><input class="SearchLiInput margin_bottom10 lineHeight24" /></div>
+            	<div class="SearchLiTitle float_left color_white lineHeight26 text-right padding_right20 ">Mobile</div><div><input class="SearchLiInput margin_bottom10 lineHeight24" /></div>
+                <div><input class="btn-primary SearchLiButton margin_bottom10 float_right margin_right15 lineHeight26" type="button" value="Submit" /></div>
+            </div>
+        </div>
+        
+        <!--END 131218-->
+        <!-- 140129-->
+        <div class=" float_left">
+            	 <a href="#">
+                    <span class="extensionIcon lineHeight40"></span>
+                 <span class=" lineHeight40">Extension</span>
+                </a>
+      	</div>
+       <div class="companyCategoryBox margin_left10 float_left">
+  
+              	  <a class="companyCategory" href="#"><span class="TutorABCIcon lineHeight24 margin5"></span><span class="margin5">TutorABC</span></a></a>  
+                
+                <ul class="dropdown-menu_for_company">
+
+                          <li><a class="companyItem" href="#"><span class="TutorABCIcon lineHeight16 margin5"></span><span class="margin5">TutorABC</span></a></li>
+                          <li><a class="companyItem" href="#"><span class="VIPABCIcon_c lineHeight16 margin5"></span><span class="margin5">VIPABC</span></a></li>
+                          <li><a class="companyItem" href="#"><span class="jrIcon lineHeight16 margin5"></span><span class="margin5">TutorABCjr</span></a></li>
+                          <li><a class="companyItem" href="#"><span class="TutorMingIcon lineHeight16 margin5"></span ><span class="margin5">TutorMing</span></a></li>
+
+      
+                </ul>
+                
+       </div>
+      <!--END 140129-->
+        
+      <div class=" float_right"> 
+            <a class="color_white" href="#">
+            <span class="PriceListicon lineHeight40"> </span>
+            <span class="lineHeight40">价格表</span>
+            </a> 
+            
+            <a class="color_white" href="#">
+            <span class="calculateicon lineHeight40"> </span>
+            <span class="lineHeight40">计算机</span>
+            </a> 
+            
+            <a class="color_white" href="#">
+            <span class="Trainingicon lineHeight40"> </span>
+            <span class="lineHeight40">训练专区</span>
+            </a> 
+        
+            <span class="color_white lineHeight40">　　Check in</span>
+            <span class="lineHeight40"><input type="text" /></span>
+            <span class="checkBtn"><a href="#" class="btn btn-primary">Submit</a></span>
+            <span class="color_white lineHeight40 margin10">2013/11/18 12:00</span>
+            
+        </div>
+    </div>
+
+    <div class="BD_LeftNav float_left">
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_1.png" width="60" height="40"  alt=""/></div>
+            <div class="NavBtnTip">!</div>
+            <div class="subNavRedLine"></div>
+        </div>
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_2.png" width="60" height="40"  alt=""/></div>
+            <div class="subNavRedLine"></div>
+        </div>
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_3.png" width="60" height="40"  alt=""/></div>
+            <div class="subNavRedLine"></div>
+        </div>
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_4.png" width="60" height="40"  alt=""/></div>
+            <div class="NavBtnTip">33</div>
+            <div class="subNavRedLine"></div>
+            <div class="subNavFlow">
+                <div class="subNav">
+                    <div class="subNavTitle"><span class="fontSize16 margin15 lineHeight40 bold color_gray">我的主联</span></div>
+                    <div class="subNavBtnWrap">
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">应出席试读列表</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">主动联络名单</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">出席未付订</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">今日应跟催</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">从未联络名单</div><div class="subNavTip">222</div></div>
+                    </div>
+                    <div class="subNavBtnWrap">
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">结案/公池名单</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">未来10天的每日应主联数</div><div class="subNavTip">222</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_5.png" width="60" height="40"  alt=""/></div>
+            <div class="NavBtnTip">44</div>
+            <div class="subNavRedLine"></div>
+            <div class="subNavFlow">
+                <div class="subNav">
+                    <div class="subNavTitle"><span class="margin_left15 fontSize16 lineHeight40 bold color_gray">我的客户</span></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">成交客户一览表</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">续约主联名單</div><div class="subNavTip">222</div></div>
+                    <div class="subNavBtn"><div class="subNavBtnTxt margin_left15 fontSize140 color_gray">本月生日客户</div><div class="subNavTip">222</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_8.png" width="60" height="40"  alt=""/></div>
+            <div class="subNavRedLine"></div>
+        </div>
+        
+        
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_6.png" width="60" height="40"  alt=""/></div>
+            <div class="subNavRedLine"></div>
+        </div>
+        <div class="NavBtn">
+            <div class="NavBtnImg"><img src="images/navBtn_7.png" width="60" height="40"  alt=""/></div>
+            <div class="subNavRedLine"></div>
+        </div>
+
+
+
+        <!-- siteMap start -->
+        <div class="BD_LeftNavOpen">
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_1.png" width="60" height="40"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">首页</div>
+        </div>
+
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_2.png" width="60" height="40"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">公司公告 / 優惠活動</div>
+        </div>
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_3.png" width="60" height="40"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">一般功能</div>
+        <div class="NavOpenMenu">
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">新增预约名单</a></div>
+        <div class="NavOpenTip">222</div>
+
+        </div>
+
+        </div>
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_4.png" width="60" height="60"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">我的主联</div>
+        <div class="NavOpenMenu">
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">应出席试读列表</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">主动联络名单</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">从未联络名单</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">成交客户一览表</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">结案/公池名单</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">未来10天的每日应主联数</a></div>
+        <div class="NavOpenTip">222</div>
+
+
+        </div>
+        </div>
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_5.png" width="60" height="60"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">我的客户</div>
+        <div class="NavOpenMenu">
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">交客户一览表</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">续约主联名單</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">本月生日客户</a></div>
+        <div class="NavOpenTip">222</div>
+        </div>
+        </div>
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_6.png" width="60" height="60"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">我的统计报表</div>
+        <div class="NavOpenMenu">
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">KPI 积分排名查询</a></div>
+        <div class="NavOpenTip">222</div>
+
+        <div class="NavOpenTxt"><a class="navLink"  href="javascript:void(0);">个人KPI积分查询</a></div>
+        <div class="NavOpenTip">222</div>
+
+        </div>
+        </div>
+        <div class="BD_LeftItem">
+        <div class="NavOpenIcon"><img src="images/navBtn_7.png" width="60" height="60"  alt=""/></div>
+        <div class="NavOpenTitle fontSize16">业绩及薪奖</div>
+        </div>
+
+
+        </div>
+        <!-- siteMap end --> 
+        <div style=' clear: both;'></div>
+    </div>
+
+
+    <div class="BD_DashBoard float_left">
+        <div class="DashBoard_wrap col10">
+            <div class="col11 ">
+                <div class="fontSize18 float_left color_gray">My Rankings</div>
+                <div class="fontSize14 color_drakOrange float_right">Total Sales:186</div>
+            </div>
+            <!-- ranks start -->
+            <div class="col11  color_gray float_left">
+
+                <div class="rankBox float_left bg_color_lightGreen">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">KPI/Karma</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left  bg_color_lightGray2">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_orange">APPT</div>
+                <div class="col11 text-center color_orange fontSize36 enfont"><span class="normalTag"></span>186</div>
+                <div class="float_left col5 text-center fontSize16 color_orange">50</div>
+                <div class="float_left col5 text-center fontSize16 color_orange">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">ATTN</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">DEMO</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightGreen">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">CLTM</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightGreen">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">CALL</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">New Leads</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightGreen">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">APPT</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">DEMO</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                <div class="rankBox_layer_1">
+                <div class="col11 text-center color_white">SGNP</div>
+                <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                </div>
+                <div class="rankBox_layer_2" style="background:#000;">
+                <div class="col11 text-center color_white fontSize12 margin_top5">本日應出席數</div>
+                <div class="col11 text-center color_white fontSize16 enfont margin_top10">Rank</div>
+                <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                </div>
+                </div>
+            </div>
+            <!-- ranks end -->
+
+            <div class="col11">
+                <div class="fontSize18 float_left color_gray">Sales Stats</div>
+                <div class="fontSize14  color_drakOrange float_right">單位：千元</div>
+            </div>
+
+            <div class="col11 float_left">
+                <!-- 每季縮放區塊b start -->
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount float_left">
+                    <div class="enfont color_gray fontSize30">Q1</div>
+                    <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                    <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="StatChartBox width150 float_left ">
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">JAN</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">FEB</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">MAR</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount float_left">
+                    <div class="enfont color_gray fontSize30">Q2</div>
+                    <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                    <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="StatChartBox width150 float_left ">
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">APR</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">MAY</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">JUN</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount float_left">
+                    <div class="enfont color_gray fontSize30">Q3</div>
+                    <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                    <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="StatChartBox width150 float_left ">
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">JUL</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">AUG</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">SEP</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount float_left">
+                    <div class="enfont color_gray fontSize30">Q4</div>
+                    <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                    <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="StatChartBox width150 float_left ">
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">OCT</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">NOV</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    <div class="chartBarWarp margin_top10">
+                    <div class="width30 color_gray fontSize12 enfont float_left">DEC</div>
+                    <div class="chartBar color_gray fontSize12 enfont float_left">
+                    <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                    <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- 每季縮放區塊 end -->
+                <!-- 整年總計 start -->
+                <div class="YTD float_left bg_color_drakOrange">
+                    <div class="rankBox_layer_1">
+                    <div class="col11 text-left color_white fontSize24 enfont margin5">YTD</div>
+                    <div class="enfont color_white fontSize14 margin_left5">TOL.454000</div>  
+                    <div class="enfont color_white fontSize14 margin_left5">AVG.83823</div>  
+                    </div>
+                </div>
+                <!-- 整年總計 end -->
+                <!-- stv start -->
+                <div class="STV float_left  bg_color_lightGray">
+                    <div class="width140 float_left margin5">
+                        <div class="col11 text-left color_drakOrange">2013/08/20</div>
+                        <div class="chartBarWarp ">
+                        <div class="width100 color_gray fontSize12 enfont">Actual</div>
+                        <div class="chartBar2 color_gray fontSize12 enfont ">
+                        <div class="chartBarBoxGray color_gray fontSize12 enfont "></div>
+                        <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                        </div>
+                        </div>
+                        <div class="chartBarWarp margin_top15">
+                        <div class="width100 color_gray fontSize12 enfont">Planned</div>
+                        <div class="chartBar2 color_gray fontSize12 enfont ">
+                        <div class="chartBarBox color_gray fontSize12 enfont "></div>
+                        <div class="chartBarNum color_gray fontSize12 enfont ">24600</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="STVRank float_left bg_color_lightGreen">
+                        <div class="col11 text-center color_white">STV Rank</div>
+                        <div class="col11 text-center color_white fontSize36 enfont margin_top15"><span class="lowTag"></span>10</div>
+                    </div>
+                </div>
+                <!-- stv end -->
+                <div class="daysRemaining float_left  bg_color_lightGray">
+                    <div class="calendar float_left calendarIcon"></div>
+                    <div class="calendarDays  text-left color_orange  fontSize30 enfont ">30</div>
+                    <div class="calendarInfo  color_gray enfont  fontSize14 i  ">Days<br />Remaining<br />in <span class="color_orange">Jun</span></div>  
+                </div>
+                <!-- 整年總計 end -->
+            </div>
+        </div>
+        
+        <div class="stretchBtn col11">
+               
+        </div>
+    </div>
+    
+    <!-- 內容頁籤區塊 start -->
+    <div class='contentWrap col10'>
+    	<div class="Tabs">
+            <ul class="TabsUL">
+                <li class="tabBtnClick">To do list</li>
+                <li class="tabBtn">应出席试读列表</li>
+                <li class="tabBtn">主动联络名单</li>
+                <li class="tabBtn">从未联络名单</li>
+                <li class="tabBtn">新增预约名单</li>
+                <li class="tabBtn">成交客户一览表</li>
+                <li class="tabBtn">本月生日客户</li>
+            </ul>
+        </div>
+        <div class="Tabs_page"></div>
+        <div class="Tabs_page"></div>
+        <div class="Tabs_page"></div>
+        <div class="Tabs_page"></div>
+        <div class="Tabs_page"></div>
+        <div class="Tabs_page"></div>
+        <div class="Tabs_page"></div>
+    </div>
+    <!-- 內容頁籤區塊 end -->
+</div> 
+</body>
+</html>

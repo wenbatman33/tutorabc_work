@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://192.168.23.124:9001/lib/javascript/JQuery/Scripts/jquery.js"></script>
+<script type="text/javascript" src="http://192.168.23.124:9001/lib/javascript/JQuery/Scripts/plugin/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="http://192.168.23.124:9001/lib/javascript/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://192.168.23.124:9001/css/css_cn_test.css" media="screen" />
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#editTimeZone").fancybox({
+		});
+	});
+</script>
+<title>Untitled Document</title>
+</head>
+<body>
+
+<a id="editTimeZone" style="cursor:pointer;color: #ec7701;text-decoration: underline;" href="#editTimeZoneDiv">設定时区</a>
+<div style="display: none;">
+    <div id="editTimeZoneDiv" style="width:600px;height:250px;overflow:auto;">
+    	<span  style=" font-size:20px; line-height:40px; color:#f90; font-weight:bold;">时区设定</span><br>
+		<span  style=" font-size:14px; line-height:30px;">为了让客户于海外地区定课时可对照当地时间我们提供所在时区设定轻松安排课程没负担</span><br>
+		<span  style=" font-size:16px; line-height:40px; color:#f90; font-weight:bold;">所在时区</span><br>
+       <span  style=" font-size:14px; line-height:40px;">
+		<select id="selectTimeZone" onchange="CalculateTimeZone();">
+			<option value="1" gapminutes="-1200">(UTC-12:00)国际日期变更线西</option>
+			<option value="2" gapminutes="-1140">(UTC-11:00)协调世界时-11</option>	
+			<option value="3" gapminutes="-1080">(UTC-10:00)夏威夷</option>
+			<option value="4" gapminutes="-1020">(UTC-09:00)阿拉斯加</option>
+			<option value="5" gapminutes="-960">(UTC-08:00)下加利福尼亚州</option>
+			<option value="6" gapminutes="-960">(UTC-08:00)太平洋时间(美国和加拿大)</option>
+			<option value="7" gapminutes="-900">(UTC-07:00)亚利桑那</option>
+					
+			<option value="8" gapminutes="-900">(UTC-07:00)山地时间(美国和加拿大)</option>
+					
+			<option value="9" gapminutes="-900">(UTC-07:00)奇瓦瓦，拉巴斯，马萨特兰</option>
+					
+			<option value="10" gapminutes="-840">(UTC-06:00)中美洲</option>
+					
+			<option value="11" gapminutes="-840">(UTC-06:00)中部时间(美国和加拿大)</option>
+					
+			<option value="12" gapminutes="-840">(UTC-06:00)瓜达拉哈拉，墨西哥城，蒙特雷</option>
+					
+			<option value="13" gapminutes="-840">(UTC-06:00)萨斯喀彻温</option>
+					
+			<option value="14" gapminutes="-780">(UTC-05:00)印地安那州(东部)</option>
+					
+			<option value="15" gapminutes="-780">(UTC-05:00)东部时间(美国和加拿大)</option>
+					
+			<option value="16" gapminutes="-780">(UTC-05:00)波哥大，利马，基多</option>
+					
+			<option value="17" gapminutes="-750">(UTC-04:30)加拉加斯</option>
+					
+			<option value="18" gapminutes="-720">(UTC-04:00)亚松森</option>
+					
+			<option value="19" gapminutes="-720">(UTC-04:00)乔治敦，拉巴斯，马瑙斯，圣胡安</option>
+					
+			<option value="20" gapminutes="-720">(UTC-04:00)库亚巴</option>
+					
+			<option value="21" gapminutes="-720">(UTC-04:00)大西洋时间(加拿大)</option>
+					
+			<option value="22" gapminutes="-720">(UTC-04:00)圣地亚哥</option>
+					
+			<option value="23" gapminutes="-690">(UTC-03:30)纽芬兰</option>
+					
+			<option value="24" gapminutes="-660">(UTC-03:00)巴西利亚</option>
+					
+			<option value="25" gapminutes="-660">(UTC-03:00)布宜诺斯艾利斯</option>
+					
+			<option value="26" gapminutes="-660">(UTC-03:00)格陵兰</option>
+					
+			<option value="27" gapminutes="-660">(UTC-03:00)蒙得维的亚</option>
+					
+			<option value="28" gapminutes="-660">(UTC-03:00)萨尔瓦多</option>
+					
+			<option value="29" gapminutes="-660">(UTC-03:00)卡宴，福塔雷萨</option>
+					
+			<option value="30" gapminutes="-600">(UTC-02:00)协调世界时-02</option>
+					
+			<option value="31" gapminutes="-600">(UTC-02:00)中大西洋</option>
+					
+			<option value="32" gapminutes="-540">(UTC-01:00)亚速尔群岛</option>
+					
+			<option value="33" gapminutes="-540">(UTC-01:00)佛得角群岛</option>
+					
+			<option value="34" gapminutes="-480">(UTC)卡萨布兰卡</option>
+					
+			<option value="35" gapminutes="-480">(UTC)协调世界时</option>
+					
+			<option value="36" gapminutes="-480">(UTC)蒙罗维亚，雷克雅未克</option>
+					
+			<option value="37" gapminutes="-480">(UTC)都柏林，爱丁堡，里斯本，伦敦</option>
+					
+			<option value="38" gapminutes="-420">(UTC+01:00)中非西部</option>
+					
+			<option value="39" gapminutes="-420">(UTC+01:00)萨拉热窝，斯科普里，华沙，萨格勒布</option>
+					
+			<option value="40" gapminutes="-420">(UTC+01:00)布鲁塞尔，哥本哈根，马德里，巴黎</option>
+					
+			<option value="41" gapminutes="-420">(UTC+01:00)温得和克</option>
+					
+			<option value="42" gapminutes="-420">(UTC+01:00)贝尔格莱德，布拉迪斯拉发，布达佩斯，卢布尔雅那，布拉格</option>
+					
+			<option value="43" gapminutes="-420">(UTC+01:00)阿姆斯特丹，柏林，伯尔尼，罗马，斯德哥尔摩，维也纳</option>
+					
+			<option value="44" gapminutes="-360">(UTC+02:00)伊斯坦布尔</option>
+					
+			<option value="45" gapminutes="-360">(UTC+02:00)哈拉雷，比勒陀利亚</option>
+					
+			<option value="46" gapminutes="-360">(UTC+02:00)大马士革</option>
+					
+			<option value="47" gapminutes="-360">(UTC+02:00)东欧</option>
+					
+			<option value="48" gapminutes="-360">(UTC+02:00)耶路撒冷</option>
+					
+			<option value="49" gapminutes="-360">(UTC+02:00)贝鲁特</option>
+					
+			<option value="50" gapminutes="-360">(UTC+02:00)赫尔辛基，基辅，里加，索非亚，塔林，维尔纽斯</option>
+					
+			<option value="51" gapminutes="-360">(UTC+02:00)开罗</option>
+					
+			<option value="52" gapminutes="-360">(UTC+02:00)雅典，布加勒斯特</option>
+					
+			<option value="53" gapminutes="-300">(UTC+03:00)加里宁格勒，明斯克</option>
+					
+			<option value="54" gapminutes="-300">(UTC+03:00)内罗毕</option>
+					
+			<option value="55" gapminutes="-300">(UTC+03:00)安曼</option>
+					
+			<option value="56" gapminutes="-300">(UTC+03:00)巴格达</option>
+					
+			<option value="57" gapminutes="-300">(UTC+03:00)科威特，利雅得</option>
+					
+			<option value="58" gapminutes="-270">(UTC+03:30)德黑兰</option>
+					
+			<option value="59" gapminutes="-240">(UTC+04:00)巴库</option>
+					
+			<option value="60" gapminutes="-240">(UTC+04:00)第比利斯</option>
+					
+			<option value="61" gapminutes="-240">(UTC+04:00)莫斯科，圣彼得堡，伏尔加格勒</option>
+					
+			<option value="62" gapminutes="-240">(UTC+04:00)埃里温</option>
+					
+			<option value="63" gapminutes="-240">(UTC+04:00)路易港</option>
+					
+			<option value="64" gapminutes="-240">(UTC+04:00)阿布扎比，马斯喀特</option>
+					
+			<option value="65" gapminutes="-210">(UTC+04:30)喀布尔</option>
+					
+			<option value="66" gapminutes="-180">(UTC+05:00)伊斯兰堡，卡拉奇</option>
+					
+			<option value="67" gapminutes="-180">(UTC+05:00)塔什干</option>
+					
+			<option value="68" gapminutes="-150">(UTC+05:30)斯里加亚渥登普拉</option>
+					
+			<option value="69" gapminutes="-150">(UTC+05:30)钦奈，加尔各答，孟买，新德里</option>
+					
+			<option value="70" gapminutes="-135">(UTC+05:45)加德满都</option>
+					
+			<option value="71" gapminutes="-120">(UTC+06:00)叶卡捷琳堡</option>
+					
+			<option value="72" gapminutes="-120" selected="">(UTC+06:00)达卡</option>
+					
+			<option value="73" gapminutes="-120">(UTC+06:00)阿斯塔纳</option>
+					
+			<option value="74" gapminutes="-90">(UTC+06:30)仰光</option>
+					
+			<option value="75" gapminutes="-60">(UTC+07:00)曼谷，河内，雅加达</option>
+					
+			<option value="76" gapminutes="-60">(UTC+07:00)新西伯利亚</option>
+					
+			<option value="77" gapminutes="0">(UTC+08:00)珀斯</option>
+					
+			<option value="78" gapminutes="0">(UTC+08:00)克拉斯诺亚尔斯克</option>
+					
+			<option value="79" gapminutes="0">(UTC+08:00)北京，重庆，香港特别行政区，乌鲁木齐</option>
+					
+			<option value="80" gapminutes="0">(UTC+08:00)台北</option>
+					
+			<option value="81" gapminutes="0">(UTC+08:00)吉隆坡，新加坡</option>
+					
+			<option value="82" gapminutes="0">(UTC+08:00)乌兰巴托</option>
+					
+			<option value="83" gapminutes="60">(UTC+09:00)伊尔库茨克</option>
+					
+			<option value="84" gapminutes="60">(UTC+09:00)大阪，札幌，东京</option>
+					
+			<option value="85" gapminutes="60">(UTC+09:00)首尔</option>
+					
+			<option value="86" gapminutes="90">(UTC+09:30)阿德莱德</option>
+					
+			<option value="87" gapminutes="90">(UTC+09:30)达尔文</option>
+					
+			<option value="88" gapminutes="120">(UTC+10:00)雅库茨克</option>
+					
+			<option value="89" gapminutes="120">(UTC+10:00)堪培拉，墨尔本，悉尼</option>
+					
+			<option value="90" gapminutes="120">(UTC+10:00)布里斯班</option>
+					
+			<option value="91" gapminutes="120">(UTC+10:00)关岛，莫尔兹比港</option>
+					
+			<option value="92" gapminutes="120">(UTC+10:00)霍巴特</option>
+					
+			<option value="93" gapminutes="180">(UTC+11:00)符拉迪沃斯托克</option>
+					
+			<option value="94" gapminutes="180">(UTC+11:00)所罗门群岛，新喀里多尼亚</option>
+					
+			<option value="95" gapminutes="240">(UTC+12:00)协调世界时+12</option>
+					
+			<option value="96" gapminutes="240">(UTC+12:00)奥克兰，惠灵顿</option>
+					
+			<option value="97" gapminutes="240">(UTC+12:00)彼得罗巴甫洛夫斯克-堪察加 - 旧用</option>
+					
+			<option value="98" gapminutes="240">(UTC+12:00)斐济</option>
+					
+			<option value="99" gapminutes="240">(UTC+12:00)马加丹</option>
+					
+			<option value="100" gapminutes="300">(UTC+13:00)努库阿洛法</option>
+		
+		</select></span>
+		<span  style="line-height:40px;"><input type="checkbox" id="isDaylightSavingTime" onchange="CalculateTimeZone();">日光節約時間<img src="http://192.168.23.124:9001/images/question_blue.png" width="16" height="16" alt="又称夏令时间，是将原本的标准时间拨快一个小时" title="又称夏令时间，是将原本的标准时间拨快一个小时"> </span><br>
+		<span  style=" font-size:14px;  line-height:20px;" id="timeZoneAlert">因侦测到你的时区非北京，请至时区设定进行确认</span><br>
+		<span  style=" font-size:14px;  line-height:20px;" id="userTime">目前的日期及时间2013年11月12日 13:59</span><br>
+		<span  style=" font-size:14px;  line-height:20px;" id="timeZoneTime" style="display: none;">新的日期及时间2013年11月12日 13:59</span><br>
+		<div align="right"><input type="button" name="" id="btn_member_reservation_class" value="+ 送出" class="btn_1 m-left5;" onclick="changeUserTimeZoneSetting();"></div>
+        
+    </div>
+</div>
+
+
+
+</body>
+</html>

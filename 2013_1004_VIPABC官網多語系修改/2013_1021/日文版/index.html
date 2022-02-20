@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html><head>
+<meta charset="utf-8">
+<meta id="viewport" name='viewport'>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>English Learning Website_Speaking_Listening_VIPABC Real person English Online Learning</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+<div class="grid_100 regFixedWrap" style="display:none;" >
+    <div class="grid_12">
+        <div class="regForm">
+        <a href="javascript:OpenModalDialog()">
+                        <img src="images/CustomerService.png" data-original="/aspx/portal/Content/images/CustomerService.png" width="268" height="89" style="display: inline;"></a>
+          <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+            <div style="margin:0px 30px 0px 30px; padding-top:30px;"><h4>無料語学レベル解析</h4></div>
+            <div style="margin:auto 30px;"><h6>英語を学ぶための最も効率的な方法を体験<h6></div>
+            
+            
+            <div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">   
+            <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="あなたの名前を入力してください" onFocus="this.value='';" onBlur="if(this.value==''){this.value='あなたの名前を入力してください';}" />
+            <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="電子メールを入力してください" onFocus="this.value='';" onBlur="if(this.value==''){this.value='電子メールを入力してください';}" /><br>
+            <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                <option value="+86"  selected="selected">選択してください</option>
+                <option value="+886"  >中国</option>
+                <option value="+886"  >台湾</option>
+                <option value="+852"  >香港</option>
+                <option value="+853"  >マカオ</option>
+                <option value="+61"  >オーストラリア</option>
+                <option value="+1"  >カナダ</option>
+                <option value="+81"  >日本</option>
+                <option value="+82"  >大韓民国</option>
+                <option value="+65"  >シンガポール</option>
+                <option value="+1"  >米国</option>
+                <option value="+84"  >ベトナム</option>
+                <option value="-1"  >Others</option>
+            </select>
+            <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+              <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="携帯電話を入力してください" onFocus="this.value='';" onBlur="if(this.value==''){this.value='携帯電話を入力してください';}" />
+    
+            <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                <option value="">どこで知りました?</option>                
+                <option value="23">英語ポータル</option>
+                <option value="23">163富</option>
+                <option value="23">マイクロブログ/ソーシャル</option>
+                <option value="23">グーグル</option>
+                <option value="23">新聞や雑誌</option>
+                <option value="23">テレビ/ラジオ</option>
+                <option value="23">Baiduの</option>
+                <option value="23">SMS /ニュースレター</option>
+                <option value="23">北京地下鉄</option>
+                <option value="23">フレンズ</option>
+                <option value="23">捜狐/ソーホー</option>
+                <option value="23">その他</option>             
+            </select><br><br>
+            
+            <input type="button" value="直ちに予約" class="y_btn" >
+              </div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<div class="grid_100 backTop">
+    <div class="grid_12">
+    	<div class="backTopBtn">
+        <a class="index_top" href="javascript:pageScroll('')"><img src="images/backTop.png" width="50" height="50"></a>
+        </div>
+      </div>
+</div>
+<!-- fixed_box 固定註冊表單 start -->
+<div id="banners" class="grid_100 banners">  
+    <div class="grid_12  SecNav"> 
+        <a class="Sec_links" href="/index.asp" >旧バージョンVIPABC</a>  | 
+        <a class="Sec_links" href="#" >学習ガイド</a> | 
+        <span class="telphone"> フリー:4006-30-30-30 </span>
+        <a class="btnType_1 register" href="/Login/UserRegister" >登録</a>
+        <a class="btnType_1 login" href="/Login/Login">ログイン</a>
+        <a class="btnType_1 language " href="javascript:void(0);" >Language <b class="caret"></b> </a>
+                <ul class="dropdown-menu" style="display:none">
+                  <li><a tabindex="-1" href="#">English</a></li>
+                  <li><a tabindex="-1" href="#">Japanese</a></li>
+                  <li><a tabindex="-1" href="#">Portuguese</a></li>
+                  <li><a tabindex="-1" href="#">Spanish</a></li>
+                </ul>
+     
+    </div>
+    <div class="grid_12 main_nav">
+        <div class="main_logo"><img src="images/logo.png" width="187" height="49"></div>
+        <div class="main_nav_con">
+            <div class="main_nav_box">
+                <a class="part_01" href="#part_01">効率的な学習環境</a>
+                <a class="part_02" href="#part_02">パーソナライズされた学習</a>
+                <a class="part_03" href="#part_03">モバイル学習</a>
+                <a class="part_04" href="#part_04">無料の人気講堂</a>
+                <a class="part_05" href="#part_05">ユーザー証言集</a>
+                <a class="part_06" href="#part_06">学習ゾーン</a>
+                <a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">企業研修</a>
+            </div>   
+        </div>
+    </div>
+    <div id="album" style="background:url(images/banner/banner_yao_bg3.jpg);left: 0px; display: block; background-position:50% 0px;">
+        <div class="slides">
+            <ul>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20131081741432611.jpg" style="display: none;">
+                    
+                   <a class="fancybox"  data-fancybox-type="iframe" href="http://www.vipabc.com/program/linkage_page/UnlimitedSessionEnsure/index.asp?fromwhere=JIeIPHGpW5" onclick="logCount(68);">
+                        <img alt="コースの保証に参加" title="コースの保証に参加" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20139261813203813.gif" width="960" height="560"></a></li>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20137311429123813.jpg" style="display: list-item;"><a class="fancybox"   data-fancybox-type="iframe" href="http://www.vipabc.com/program/linkage_page/Fluently/index.asp?pop=yes&amp;fromwhere=VZuRe6ie1l" onclick="logCount(80);" target="_blank">
+                        <img alt="パーソナライズされたテーラー最も実用的な指導" title="パーソナライズされたテーラー最も実用的な指導" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20137311429164914.gif" width="960" height="560"></a></li>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20138141647282712.jpg" style="display: none;"><a class="fancybox"  data-fancybox-type="iframe"  href="http://www.vipabc.com/count.asp?code=C1kgB8bvNZ" onclick="logCount(81);" target="_blank">
+                        <img alt="ビジネス英語教材の無料ダウンロードを学びたい" title="ビジネス英語教材の無料ダウンロードを学びたい" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/20137311428583712.gif" width="960" height="560"></a></li>
+                    <li src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/2013731142854914.jpg" style="display: none;"><a class="fancybox"  data-fancybox-type="iframe"  href="http://www.vipabc.com/count.asp?code=Thhh3kOXpf" onclick="logCount(82);" target="_blank">
+                        <img alt="45分限り、英語を学ぶのは簡単" title="45分限り、英語を学ぶのは簡単" src="http://www.vipabc.com/VIPABCMaintain/Content/BannerImg/2013731142893813.gif" width="960" height="560"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="new_ad_switch">
+            <div class="timeline"></div>
+            <a href="#" class="banner_prev">&lt;</a>
+            <a href="#" class="banner_next">&gt;</a>
+            <ul  class="new_ad_btns">
+                <li class="ad_line" ><div><a href="#">パーソナライズされたテーラー最も実用的な指導</a></div></li>
+                <li class="ad_line" ><div><a href="#">53歳の英語驚くべき結果</a></div></li>
+                <li class="ad_line" ><div><a href="#">ビジネス英語教材の無料ダウンロードを学びたい</a></div></li>
+                <li>                 <div><a href="#">45分限り、英語を学ぶのは簡単</a></div></li>
+            </ul>
+    </div>
+</div>
+
+
+<div class="grid_100 topNavFixed" style="display:none;" >
+    <div class="grid_100 topNavFixedBtns">
+      	<div class="grid_12"> 
+            <a class="Sec_links" href="/index.asp" >旧バージョンVIPABC</a>  | 
+            <a class="Sec_links" href="#" >学習ガイド</a>  
+            <a class="btnType_1 register" href="/Login/UserRegister" >登録</a>
+            <a class="btnType_1 login" href="/Login/Login">ログイン</a>
+            <a class="btnType_1 language " href="javascript:void(0);" >Language <b class="caret"></b> </a>
+                <ul class="dropdown-menu" style="display:none">
+                  <li><a tabindex="-1" href="#">English</a></li>
+                  <li><a tabindex="-1" href="#">Japanese</a></li>
+                  <li><a tabindex="-1" href="#">Portuguese</a></li>
+                  <li><a tabindex="-1" href="#">Spanish</a></li>
+                </ul>
+        </div>
+        <div class="grid_100 topNavWrap">
+            <div class="grid_12"> 
+            	<div class="topNavLogo"><a class="index_top" href="javascript: void(0)"><img src="images/logo.png" width="187" height="49"></a></div>
+                <div class="topTel"><span> Free :4006-30-30-30 </span></div>
+				<div class="topNav">                    
+                        <a class="part_01" href="#part_01">効率的な学習環境</a>
+                        <a class="part_02" href="#part_02">パーソナライズされた学習</a>
+                        <a class="part_03" href="#part_03">モバイル学習</a>
+                        <a class="part_04" href="#part_04">無料の人気講堂</a>
+                        <a class="part_05" href="#part_05">ユーザー証言集</a>
+                        <a class="part_06" href="#part_06">学習ゾーン</a>
+                        <a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">企業研修</a>
+                </div>
+            </div>
+	  	</div>
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="part_01" class="grid_100 bgColor_1">
+    <div class="grid_12">
+        <div class="grid_8 contentBox" style="padding:0px; float:left; margin-top:20px;"  >
+        <div class="grid_8" style="float:left;">
+            <div class="Service_img">
+                <a href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true"><img src="images/Service_img_01.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">フル•イングリッシュ•学習環境</div>
+            </div>
+            <div class="Service_img">
+            	<a href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true"><img src="images/Service_img_02.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">オンライン学習、インタラクティブライブ</div>
+            </div>
+            <div class="Service_img">
+            	<a href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true"><img src="images/Service_img_03.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">24H学習が閉鎖されていません</div>
+              </div>
+            <div class="Service_img">
+            	<a href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true"><img src="images/Service_img_04.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">グローバル•モバイル学習教師のコンサルタント</div>
+             </div>
+            <div class="Service_img">
+            	<a href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true"><img src="images/Service_img_05.jpg" width="126" height="101"></a>
+                <div class="Service_info color_white">モバイル学習</div>
+            </div><br>
+          
+            <div class="grid_8" style=" padding-top:20px;float:left;">
+            <h1 class="color_white">効果的な学習法を追及し 自身の競争力を強化する</h1>
+            <br>
+            <h5 class="color_white">
+            最も重要なことは、英語の"環境"と "方法"を学ぶことです、VIPABCはあなたの最もVIP英語の学習方法に合わせて！過去とあまり効果的英語学習影を忘れ、我々は最も便利で最も効果的にまっすぐに行ってきました"スマート学習。"  
+            </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="part_02" class="grid_100 bgColor_2">
+    <div class="grid_12">
+        <div class="TColor_1"></div>
+            <div class="grid_8 contentBox" >
+            <h2 class="color_darkGray">すべてのニーズを満たすためにパーソナライズされた学習</h2><br>
+            <h5 class="color_darkGray">
+                "VIPの効率的な学習方法は、"すぐに新しい英語学習の旅を開始！<br>
+                あなたの英語のレベルを正確に制御する：より良いあなたの英語学習向きの英語、精密制御のレベルを理解するあなたのための教師のコンサルタント"オンライン言語レベルの分析"<br> 
+                あなたのための最良のコース：
+パーソナライズされた"学習趣味の設定"を通じ、次のとおりです。関心、職業、VIPABC特許取得DCGSシステムが最も適切なカリキュラムや教師の顧問を提供します、フォーカスを学習
+<br>
+                最も効果的な英語学習の方法：あなたは完全に学習内容を理解し、教室、プロの外国顧問あなたとオンラインでリアルタイムの相互作用"教師の顧問は、オンライン対話型の授業を生きる"、文章やあなたが学ぶことができ、外国の一般的な構文を読んで、あなたの音声発音を訂正本物の英語！
+            </h5>
+            <br>
+            <ul>
+                <li style="float: left; margin-right: 20px">
+                    <img src="images/Learn_01.jpg" data-original="http://www.vipabc.com//aspx/portal/Content/images/Learn_01.jpg" width="185" height="170" alt="英語を書く英語を話すリスニングリーディング" title="英語を書く英語を話すリスニングリーディング" style="display: inline;"></li>
+                <li style="float: left; margin-right: 20px">
+                    <img src="images/Learn_02.jpg" data-original="http://www.vipabc.com//aspx/portal/Content/images/Learn_02.jpg" width="224" height="143" alt="DCGS 便利で効果的なオーダーメイド" title="DCGS 便利で効果的なオーダーメイド" style="display: inline;"></li>
+                <li style="float: left; margin-right: 20px">
+                    <img src="images/Learn_03.jpg" data-original="http://www.vipabc.com//aspx/portal/Content/images/Learn_03.jpg" width="191" height="182" alt="VIPABC オンラインライブ" title="VIPABC オンラインライブ" style="display: inline;"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="part_03" class="grid_100 bgColor_3">
+    <div class="grid_12">
+        <div class="TColor_2"></div>
+        <div class="grid_8 contentBox" >
+            <h2 class="color_darkGray">最も正確な評価が最も快適な英語環境</h2><br>
+            <h3 class="color_darkGray">セグメント12レベルを話す/聞く/読む/書く</h3>
+            <h5 class="color_darkGray">
+                あなたの学習過程で12の異なるレベル、プロの外国顧問に細分化、リスニング、スピーキング、リーディング、ライティング能力に応じて問題の個々の英語オンライン英語の深い理解のためにVIPABC分析、正確な英語のレベルをチェックして、ステップバイステップでできます話さ英語、英語のリスニングスキルを向上させる。<br>
+                アメリカの大学の評価は、アップグレードを評価
+VIPABC、デジタルプロの外国と組み合わせる研究報告、評価、オンライン操作、効率性監査、テスト、評価、などから米国の大学の質の評価手法によって使用されている国内の英語研修機関と学習システムは、アップグレードのための基礎として英語力試験モデルで主である推奨されるコンサルタントと評価のアップグレード、無制限テスト学習能力なので、あなたは本当に達成感が流暢な英語を話す感じ。<br>
+            </h5>
+
+        </div>
+    </div>
+</div>
+<div class="grid_100 bgColor_1">
+    <div class="grid_12">
+        <div class="TColor_3"></div>
+        <div class="grid_8 contentBox" > 
+            <h1 class="color_white">ステップガイドで成果見える進捗ステップを学ぶ</h1>
+            <h3 class="color_white">学習追跡システムは正確に英語の学習を把握する</h3>
+            <h5 class="color_white">
+               彼らの英語の学習プロセスを恐れ現在の結果が行う表示できない？VIPABC特別に開発された学習追跡システム（LMS）、材料、教師の指導のプロセスを学んだ学習者のそれぞれについて、あなたの完全なトラックの詳細な記録を残す英語学習
+            </h5>
+
+            <h3 class="color_white">無限増殖の有効性を確認</h3>
+            <h5 class="color_white">
+                忙しい学校の先生顧問、あなたの全体のライブのためにVIPABC同期した映像授業を聞きながら、メモを取るあなたが英語を話す、聞くことに集中することなく、無制限の見直し材料ながら、必要のない、効果的に英語学習、乗数効果を向上させ、外国人駐在員への暴露のように自然に英語を話すと競争に直面する。 
+            </h5>
+        </div>
+    </div>
+</div>
+
+
+<div id="part_04" class="grid_100 bgColor_2">
+    <div class="grid_12">
+        <div class="TColor_1"></div>
+        <div class="grid_8 contentBox" >
+            <h1 class="color_darkGray">さらばダムスーパー流暢口頭英語のコミュニケーション</h1>
+            <h5 class="color_darkGray">
+                VIPABC伝統的な英語コースの授業時間と空間の制約を破って、英語の学習プラットフォームの学習者のための最も便利を提供し、伝統的な英語教育のステレオタイプを壊す、オンライン、ライブ、同時ビデオ英語学習システムを検索するには3年を要した、あなたが自由に学習を手配することができます計画、いつでも、任意の場所では英語を効果的、効率を改善する学習コストを削減し、英語での競争力を高める学習、教師のコンサルタントコンサルティングと対話するために世界中から1000人以上の専門家と、全体の英語学習環境におけるオンライン学習することができます。
+            </h5>
+            <ul>
+                        <li style="width: 651px; height: 132px; background: url(http://www.vipabc.com//aspx/portal/Content/images/Choice_img_01.png);
+                        margin-top: 10px;">
+                            <h4 style="margin-left: 160px; margin-right: 10px;">
+                                1対1の英語の家庭教師</h4>
+                            <h6 style="margin-left: 160px; margin-right: 10px; line-height:20px;">
+                                あなたの特定のニーズのためのコンサルタントは、完全援助を提供するように、：あなたは文章の先生の指導カウンセラーの百パーセントを取得することができます、あなたも（英語のプレゼンテーションファイルで行われるために働くなど）独自のクラスの材料を提供することができるかもしれません。</h6>
+                        </li>
+                        <li style="width: 651px; height: 132px; background: url(http://www.vipabc.com//aspx/portal/Content/images/Choice_img_02.png);
+                        margin-top: 10px;">
+                            <h4 style="margin-left: 160px; margin-right: 10px;">
+                                1-4小さな英会話</h4>
+                            <h6 style="margin-left: 160px; margin-right: 10px; line-height:20px;">
+                                あなたが一緒に英語を学ぶために英語の同レベルの他のクライアントで動作します、あなたは他人から話す、異なる視点を聞いて、より少ないあなたの言葉を使用することを学ぶ。少人数制のクラス以下の4人を通じ、外国人教師の顧問ガイドを教えることに深い経験を、あなたの興味は、開口部に影響を与えたことはありません。</h6>
+                        </li>
+                        <li style="width: 651px; height: 132px; background: url(http://www.vipabc.com//aspx/portal/Content/images/Choice_img_03.png);
+                        margin-top: 10px;">
+                            <h4 style="margin-left: 160px; margin-right: 10px;">
+                                テーマ - 英語タウン</h4>
+                            <h6 style="margin-left: 160px; margin-right: 10px; line-height:20px;">
+                                あなただけでなく、英語、"知識"、と英語を通じてより多くの成長を学ぶ"洞察力を。"市役所あなたは英語でトピック最も包括的かつ有益なコンテンツを取得するための最短時間で、より多くのニュースのトピック、教師のコンサルタントの指導の下でディープで啓発や興味深いテーマ深い主題できることです。</h6>
+                        </li>
+                    </ul>
+
+
+        </div>
+    </div>
+</div>
+
+<div id="part_05" class="grid_100 bgColor_3">
+    <div class="grid_12">
+        <div class="TColor_2">
+        </div><div class="grid_8 contentBox" >  
+            <h1 class="color_darkGray">どこでも世界は教室です！</h1><br>
+            <h5 class="color_darkGray">
+                囲碁でモバイル学習、VIPABCためVIPABCフルサポートは、24時間予約/オンライン英語学習を提供しています
+            </h5>
+
+
+                    <div style="position: relative; margin-top: 20px; float: left;">
+                        <a href="http://www.vipabc.com/aspx/portal/App/App?type=1" onclick="logCount(20);">
+                            <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_01.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_01.png" width="234" height="262" alt="VIPABC On the Go 移動クライアント" title="VIPABC On the Go 移動クライアント" style="display: inline;">
+                        </a>
+                    </div>
+                    <div style="position: relative; width:402px; margin-top: 20px; margin-left: 20px; float: left;">
+                        <h5 class="color_darkGray">
+                            "モバイル•用語集リンクは"毎日5つの単語のお勧め<br>
+                            "用語集器用"英語の単語ゲームは、簡単に機能をアップグレード
+                            国事脈動の"英語の勉強の理解<br>
+                            "英語のファーストエイドステーション"楽しさと実用的な英語<br>
+学習作品両方<br>
+                        </h5>
+                    </div>
+                    <div style="position: relative; padding-top: 150px;">
+                        <ul>
+                            <li style="float: left; margin-left: 20px"><a href="http://www.vipabc.com/aspx/portal/App/App?type=2" onclick="logCount(21);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_02.png" data-original="/aspx/portal/Content/images/MobileLearning_02.png" width="85" height="107" alt="ムーブメント語彙を通して APP" title="ムーブメント語彙を通して APP" style="display: inline;"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="http://www.vipabc.com/aspx/portal/App/App?type=5" onclick="logCount(22);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_03.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_03.png" width="85" height="107" alt="用語器用 APP" title="用語器用 APP" style="display: inline;"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="http://www.vipabc.com/aspx/portal/App/App?type=4" onclick="logCount(23);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_04.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_04.png" width="85" height="107" alt="英語の勉強 APP" title="英語の勉強 APP" style="display: inline;"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="/aspx/portal/App/App?type=3" onclick="logCount(24);">
+                                <img src="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_05.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/MobileLearning_05.png" width="85" height="107" alt="英語救急ステーション" title="英語救急ステーション" style="display: inline;"></a></li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+</div>
+<div id="part_06" class="grid_100 bgColor_1">
+    <div class="grid_12">
+        <div class="TColor_3"></div>
+        <div class="grid_8 contentBox" >
+            <h1 class="color_white">最もエキサイティングな新興のホットトピック</h1><br>
+            <h5 class="color_white">場所で英語でのグローバルプロの外国顧問包括的なテーマオンラインで利用可能な、素晴らしいアドバイスは、限られている、今すぐ登録</h5>
+
+            <div style=" width:300px; position: relative; margin-top: 20px; margin-left: 0px; float: left;">
+                <p class="color_white" style="font-size: 24px;">2013/9.12 午後8時30分木曜日</p>
+                <p class="color_white" style="font-size: 16px; width: 290px; margin-top: 6px;">あなたが食べてはいけない食品の五種類</p>
+                <p class="color_white" style="font-size: 14px; width: 290px; margin-top: 10px; height: 90px;">
+                    フル英語の発音。プライマリまたはあなたの英語を習得しようとするのに適しています。</p>
+                <a href="http://www.vipabc.com/program/free_lobby/FiveFoodUnhealthy/index.asp?fromwhere=ajL7zBy2gx" target="_blank" onclick="logCount(25);"><div class="reservationBtn" >直ちに予約</div></a>
+            </div>
+            <div style="position: relative; margin-top: 20px; margin-left: 20px; height: auto; float: left;">
+                <a href="http://www.vipabc.com/program/free_lobby/FiveFoodUnhealthy/index.asp?fromwhere=ajL7zBy2gx" target="_blank" onclick="logCount(26);">
+                <img src="http://www.vipabc.com/VIPABCMaintain/Content/Lobbysession/2013929162873712.jpg" width="320" height="188" style="display:block; margin:0 auto; float:left;" alt="あなたが食べてはいけない食品の五種類" title="あなたが食べてはいけない食品の五種類">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="part_07" class="grid_100 bgColor_2">
+    <div class="grid_12">
+        <div class="TColor_1"></div>
+        <div class="grid_8 contentBox" >
+            <h1 class="color_darkGray">グローバル•ユーザーは、サクセスストーリーを持っている<br>あなたは、次のものである</h1><br>
+            <h5 class="color_darkGray">あなたの進歩と成功への支援との認識のための私達の顧客の皆さんのおかげで私たちの最大の励ましのVIPABCが品質に付着し、英語を学ぶための効果的な方法を促進され、エリートの一般的な選択によって何万人もの従業員と誠実にすることをお勧めあなた！</h5>
+
+
+            <div style="position: relative; margin-top: 20px; float: left;" onclick="logCount(27);ChangeYoukuURL('http://static.youku.com/v1.0.0352/v/swf/loader.swf','XNjA1NDM5NjA4'); thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+            <img alt="" title="" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/2013951915494914.jpg" width="638" height="386" style="float: left;">
+            </div>
+            <div id="thevideo" style="display: none; z-index: -100;">
+            </div>
+            <div style="position: relative; margin-top: 20px; float: left;">
+            <ul>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a class="fancybox-media" onclick="logCount(28);" href="http://www.vipabc.com/program/linkage_page/GengHaiChen/index.asp?fromwhere=pqNVyx6hVo&amp;save=1" target="_blank">
+                <img alt="このようなアディダスリーンコンサルタントとして世界的に有名なブランド - Genghaiチェン" title="このようなアディダスリーンコンサルタントとして世界的に有名なブランド - Genghaiチェン" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/20137181828541510.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            このようなアディダスリーンコンサルタントとして世界的に有名なブランド - Genghaiチェン</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a class="fancybox-media" onclick="logCount(29);" href="http://www.vipabc.com/count.asp?code= rgtlZboRSu" target="_blank">
+                <img alt="Haiou特殊部隊•インベストメント•マネジメント•リミテッドゼネラルマネージャー - カン徐カップル" title="Haiou特殊部隊•インベストメント•マネジメント•リミテッドゼネラルマネージャー - カン徐カップル" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/20137181959321510.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            Haiou特殊部隊•インベストメント•マネジメント•リミテッドゼネラルマネージャー - カン徐カップル</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a class="fancybox-media" onclick="logCount(30);" href="http://www.vipabc.com/program/linkage_page/YangYinPing/index.asp?pop=yes&amp;fromwhere=hDJobsW3E1" target="_blank">
+                <img alt="コンピュータ会社ゼネラルマネージャーヤンYinping" title="コンピュータ会社ゼネラルマネージャーヤンYinping" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/201372518512611.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            コンピュータ会社ゼネラルマネージャーヤンYinping</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a class="fancybox-media" onclick="logCount(31);" href="http://www.vipabc.com/program/linkage_page/yanjiangping/index.asp?pop=yes&amp;fromwhere=tSAaV2I2Mu" target="_blank">
+                <img alt="Colgate Sanxiao Sales Executives - Yan Jiang-Ping" title="Colgate Sanxiao Sales Executives - Yan Jiang-Ping" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/20138191544442611.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            Colgate Sanxiao Sales Executives - Yan Jiang-Ping</h6>
+            </li>
+            <li style="float: left; width: 120px; margin-right: 10px">
+            <a class="fancybox-media" onclick="logCount(32);" href="http://www.vipabc.com/program/linkage_page/DongJie/index.asp?pop=yes&amp;fromwhere=wRvUnSTL1y" target="_blank">
+                <img alt="Heinoのデコトレーディングカンパニーパイプラインマネージャー - 董潔（ドン•ジェ）" title="Heinoのデコトレーディングカンパニーパイプラインマネージャー - 董潔（ドン•ジェ）" src="http://www.vipabc.com/VIPABCMaintain/Content/Images/FamousStory/2013819154743813.png" width="119" height="73">
+            </a>
+            <h6 class="color_333" style="text-align: left;">
+            Heinoのデコトレーディングカンパニーパイプラインマネージャー - 董潔（ドン•ジェ）</h6>
+            </li>
+            </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="grid_100 bgColor_3">
+    <div class="grid_12">
+        <div class="TColor_2"></div>
+        <div class="grid_8 contentBox" > 
+            <h1 class="color_darkGray">成功の鍵を購読</h1><br>
+            <h5 class="color_darkGray">VIPABCスペシャル英語学習エリアを提供していますので、簡単に英語力を向上させることができます</h5>
+            <ul>
+            <li class="index_dailywords_wrap partialContents" data-url="/Async/LessonDaily"><a href="http://cn.tutormeet.com/tutormeet/tutormeet_daily_topic.html?playback=1&amp;file_name=_recording_session68154_33582_201112081668154&amp;user=&amp;compStatus=vipabc&amp;comp_status_logo=vipabc&amp;start_time=22&amp;timestamp=0&amp;timestamp=0" target="_blank" onclick="logCount(33);">
+            <div class="index_list_White">
+            毎日1</div>
+            </a><a href="http://cn.tutormeet.com/tutormeet/tutormeet_daily_topic.html?playback=1&amp;file_name=_recording_session68154_33582_201112081668154&amp;user=&amp;compStatus=vipabc&amp;comp_status_logo=vipabc&amp;start_time=22&amp;timestamp=0&amp;timestamp=0" onclick="logCount(33);" target="_blank">
+            <img src="http://www.vipabc.com/consultant_profile/1785.jpg" width="79" height="81" alt="VIPABC 先生 コンサルタント 毎日1" title="VIPABC 先生 コンサルタント 毎日1"></a>
+            <a href="http://cn.tutormeet.com/tutormeet/tutormeet_daily_topic.html?playback=1&amp;file_name=_recording_session68154_33582_201112081668154&amp;user=&amp;compStatus=vipabc&amp;comp_status_logo=vipabc&amp;start_time=22&amp;timestamp=0&amp;timestamp=0" target="_blank">
+            <div class="index_list_on">
+            Peter 言うことを教える:<br>Not for All the Tea in China
+            </div>
+            </a></li>
+            <li class="index_list_wrap">
+                <div class="index_list_Orange">
+                    英語の勉強</div>
+                <a href="/aspx/portal/Epaper/EpaperList" onclick="logCount(34);">
+                    <img src="http://www.vipabc.com/aspx/portal/Content/images/Resources02.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/Resources02.png" width="200" height="144" alt="クラス写真 事実 ツアーを見る 英字新聞" title="クラス写真 事実 ツアーを見る 英字新聞" style="display: inline;"></a>
+                <div class="index_list_on" style="top: 300px;">
+                    最新かつ最も人気のあるトピック<br>マスターへあなたとVIPABC英語新聞！
+                </div>
+            </li>
+            <li class="index_list_wrap">
+                <div class="index_list_Orange">
+                   英語救急ステーション</div>
+                <a class="fancybox-media" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XMzk3NDM0MzQ0&amp;winType=adshow&amp;isAutoPlay=true" onclick="logCount(35);" rel="media-gallery">
+                    <img src="http://www.vipabc.com/aspx/portal/Content/images/Resources03.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/Resources03.png" width="200" height="144" alt="VIPABC 学生エリア 英語を学ぶ" title="VIPABC 学生エリア 英語を学ぶ" style="display: inline;"></a>
+                <div class="index_list_on" style="top: 300px;">
+                   英語のドラマの中で容易に入手できる<br>あなたは難なく自分の英語力を向上させることができます！
+                </div>
+            </li>
+            </ul>
+            <div style="float: left; background: url(images/Subscription_bg.png); margin-top: 10px; width: 655px; height: 60px; line-height: 60px; vertical-align: middle;">
+                    <div style="padding-left: 10px; float: left;">
+                        英字新聞を購読: 
+                        <input name="txt_email" type="text" class="reg_field" id="txt_email" value="あなたの電子メールを入力してください" onfocus="if(this.value=='Your email'){this.value='';this.className='reg_field';}else{this.className='reg_field_black';}" onblur="if(this.value==''){this.value='あなたの電子メールを入力してください';this.className='reg_field';}else{this.className='reg_field_black';}" style="height: 30px; vertical-align: middle; width: 360px;" autocomplete="off" >
+                    </div>
+                     <div class="y_btn" style="float: left; margin-top: 10px;">
+                            <a class="btn_text color_white" href="#" onclick="register();">
+                                <div>今すぐ登録</div>
+                            </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid_100 footerRedLine"></div>
+
+<div class="grid_100 footer">
+    <div class="grid_12">
+        <div class="foot_logo">
+        <img src="http://www.vipabc.com/aspx/portal/Content/images/footer_logo.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/footer_logo.png" width="200" height="52" alt="VIPABC グローバル英語外国人教師のホームページ LOGO " title="VIPABC グローバル英語外国人教師のホームページ LOGO " style="display: inline;">
+        </div>
+        <div class="foot_permit">
+            <div class="foot_permit_icon foot_permit_01"></div><div class="foot_permit_info">毎年恒例の無制限の<br>レッスン最高の取引</div>
+            <div class="foot_permit_icon foot_permit_03"></div><div class="foot_permit_info">最も都合の良い時間と<br>場所を選択してください</div>
+            <div class="foot_permit_icon foot_permit_04"></div><div class="foot_permit_info">グローバル教員</div>
+
+        </div>
+        <div class="grid_12 foot_linksWrap">
+                <div class="grid_2 foot_links">
+                    <p>私達について</p>
+                    <p><a href="/aspx/portal/About/AboutVIPABC" onclick="logCount(36);">理由VIPABCを選択</a></p>
+                    <p><a href="/aspx/portal/About/evolution" onclick="logCount(37);">会社沿革</a></p>
+                    <p><a href="/aspx/portal/About/News" onclick="logCount(38);">ニュース</a></p>
+                    <p><a href="/aspx/portal/About/institution" onclick="logCount(39);">学術機関</a></p>
+                    <p><a href="http://www.vipabc.com/program/campaign/2011prize/index.htm" onclick="logCount(40);" target="_blank">グローリー企業</a></p>
+                    <p><a href="/aspx/portal/About/Sitemap" onclick="logCount(41);">サイトマップ</a></p>
+                </div>
+                <div class="grid_2 foot_links">
+                    <p>英語を学習するための最良の選択</p>
+                    <p><a href="/aspx/portal/onlineenglish/time" onclick="logCount(42);">最も柔軟な学習時間</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/tutor" onclick="logCount(43);">ほとんどの専門家の先生のアドバイザー</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/live_classes" onclick="logCount(44);">最も親密な学習環境</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/award_winning_onlinecourse" onclick="logCount(45);">英語学習の最も効果的な方法</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/materials" onclick="logCount(46);">ほとんどのパーソナライズされた教材</a></p>
+                    <p><a href="/aspx/portal/onlineenglish/interactive_lessons" onclick="logCount(47);">最も簡単なライブのインタラクティブ教材</a></p>
+                </div>
+                <div class="grid_2 foot_links">
+                    <p>私たちのコースは、適しています</li>
+                    <p><a href="/aspx/portal/course/adults" onclick="logCount(48);">労働者/専門家</a></p>
+                    <p><a href="/aspx/portal/course/corporate" onclick="logCount(49);">企業研修</a></p>
+                    <p><a href="/aspx/portal/course/liuxue" onclick="logCount(50);">留学</a></p>
+                    <p><a href="/aspx/portal/course/junior" onclick="logCount(51);">子供/青少年</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="grid_2 foot_links">
+                    <p>VIPABCは、あなたが改善に役立つ</li>
+                    <p><a href="/aspx/portal/english/spoken" onclick="logCount(52);">口語英語</a></p>
+                    <p><a href="/aspx/portal/english/listening" onclick="logCount(53);">リスニング</a></p>
+                    <p><a href="/aspx/portal/english/reading" onclick="logCount(54);">英語リーディング</a></p>
+                    <p><a href="/aspx/portal/english/business" onclick="logCount(55);">ビジネス英語</a></p>
+                    <p><a href="/aspx/portal/english/applied" onclick="logCount(56);">職場で英語</a></p>
+                </div>
+                
+                <div class="grid_2 foot_links">
+                    <p>英語学習ゾーン</li>
+                    <p><a href="#part_04" onclick="logCount(61);">無料オンライン講義</a></p>
+                    <p><a href="#part_06" target="_blank" onclick="logCount(62);">毎日1</a></p>
+                    <p><a href="/aspx/portal/Epaper/EpaperList" onclick="logCount(63);">英語の勉強</a></p>
+                    <p><a href="/aspx/portal/App/App?type=1" onclick="logCount(64);">モバイル学習</a></p>
+                    <p><a href="/aspx/portal/App/interactiveSoftware" onclick="logCount(65);">オンライン学習のヘルプ</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+             
+                <div class="grid_2 foot_links">
+                    <p>私に連絡しなさい</li>
+                    <p><a href="http://onlineservice.vipabc.com/VIPABC" target="_blank" onclick="logCount(66);">
+                                オンラインサービス</a></p>
+                    <p><a href="/aspx/portal/Home/ContactUs" onclick="logCount(67);">お問い合わせ</a></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+        </div>
+
+        <div class="foot_tel">
+            <img src="http://www.vipabc.com/aspx/portal/Content/images/foot_tel.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/foot_tel.png" onclick="logCount(78);" width="184" height="44" alt="VIPABC customer service telephone 4006-30-30-30 " title="VIPABC customer service telephone 4006-30-30-30 " style="display: inline;">
+        </div>
+
+    </div>
+</div>
+
+<div class="grid_100 footer_cert">
+    <div class="grid_12">
+        <div class="foot_bottom">
+            <p>
+                <a href="/aspx/portal/About/evolution" onclick="logCount(69);">VIPABCについて</a>
+                <a href="/aspx/portal/Home/Privacy" onclick="logCount(70);">プライバシーの保護</a> 
+                <a href="/aspx/portal/Home/Security" onclick="logCount(71);">セキュリティーポリシー</a> 
+                <a href="/aspx/portal/Home/Service" onclick="logCount(72);">利用規約</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp" onclick="logCount(73);">募集</a>
+                <a href="http://biz.vipabc.com/" target="_blank" onclick="logCount(74);">企業研修</a>
+                <a href="/aspx/portal/Home/ContactUs" onclick="logCount(75);">お問い合わせ</a>
+            </p>
+        </div>
+        <div class="foot_bottom">
+            <p>教育ライセンス：手紙に学部課[2011]第267|ライセンス：京ICP認証番号090121|北京ICP11004351号</p>
+            <p class="footer_p_display">VIPABC.com著作 C2008-2013世界最大の英語の人間の教師のネットワーク</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://www.vipabc.com/aspx/portal/Scripts/jquery-1.8.3.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+
+<script src="http://www.vipabc.com/aspx/portal/Scripts/jquery-1.8.3.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="http://www.vipabc.com/aspx/portal/Scripts/jquery-ui-1.10.0.custom.css" />
+<link rel="stylesheet" media="screen" href="http://www.vipabc.com/aspx/portal/Content/source/jquery.fancybox.css?v=2.1.4"/>
+<link rel="stylesheet" href="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-buttons.css?v=1.0.5"/>
+<link rel="stylesheet" href="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7"/>
+        <!-- fancybox -->
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Content/source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript"src="http://www.vipabc.com/aspx/portal/Content/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<script type="text/javascript" src="http://www.vipabc.com/aspx/portal/Scripts/js/fancybox.js"></script>
+</html>

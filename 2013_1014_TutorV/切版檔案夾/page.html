@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_Style.css"/>
+<link rel="stylesheet" href="css/IMS_Font.css"/>
+<link rel="stylesheet" href="css/Grid.css"/>
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox2.1.5/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script src="js/jquery.barrating.js"></script>
+<script type="text/javascript">
+$(function () {
+		$('#example-f').barrating({ showSelectedRating:false });
+		$('.scrollBox_type1').tinyscrollbar();
+	    $("#onLoadedPge").fancybox({
+			fitToView	: true,
+			width		: 600,
+			height		: 450,
+			autoSize	: false,
+			closeClick	: true,
+			openEffect	: 'elastic',
+			closeEffect: 'elastic',
+			closeBtn: true,
+			closeClick:false,
+			hideOnOverlayClick:false,
+			helpers : { 
+			  overlay : {closeClick: false}
+			},
+			beforeShow: function(){$(".fancybox-skin").css("backgroundColor","#999");}
+			}).trigger('click');
+
+			$('#tab_2').hide();
+			
+			$('#tabBtn_1').click(function() {
+			   $('#tabBtn_2').removeClass( "color_white" ).addClass( "color_orange" );
+			  $('#tabBtn_1').removeClass( "color_orange" ).addClass( "color_white" );
+			  
+			  $('#tab_1').show();
+			  $('#tab_2').hide();
+			});
+			
+			$('#tabBtn_2').click(function() {
+				$('#tabBtn_1').removeClass( "color_white" ).addClass( "color_orange" );
+			  $('#tabBtn_2').removeClass( "color_orange" ).addClass( "color_white" );
+			 
+			  $('#tab_2').show();
+			  $('#tab_1').hide();
+			});
+			
+	
+				
+});
+function closefancybox(){
+ alert("closefancybox");
+}
+</script>
+</head>
+<body>
+<!-- 載入時的燈箱頁面 start -->
+<a id="onLoadedPge" class="fancybox fancybox.iframe" href="popup.html" style=" display:none;" ></a>
+<!-- 載入時的燈箱頁面 end -->
+<div class="coffee"></div>
+<div class="notebook"></div>
+<div class="container">
+<div id="header" class="col11 margin_top20" > 
+<div class="logo float_left "></div>
+<div class="btnGroups">
+<a class="btn btn_Registration" href="#">註冊</a> 
+<a class="btn btn_Login" href="#">登入 </a> 
+<a class="btn btn_Language" href="#">Language <b class="caret"></b></a>  
+<ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">English</a></li>
+      <li><a tabindex="-1" href="#">Japanese</a></li>
+      <li><a tabindex="-1" href="#">Portuguese</a></li>
+      <li><a tabindex="-1" href="#">Spanish</a></li>
+</ul>
+</div>
+
+
+<div class="searchGroups fontSize12 color_lightGray"> <span>熱門：觀光 文法 漫畫 美國 KTV 小說 </span><span><input type="text"></span></div>
+</div>
+<div class="nav col11 clearfix fontSize16 color_white"> <a href="#">首頁</a> ｜  <a href="#">錄影課程</a> ｜   <a href="#">優質課程<b class="caret_ff6000"></b></a></div>
+<hr/>
+<div class="classes col11 float_left">
+<div class="classes_Category colauto ">
+<span class="colauto color_white fontSize18 margin5 float_left "><div class="white_line"></div> <div class="margin_top5">超实用日常会话：情绪表达篇 Conversations About: Emotions</div></span>
+</div>
+<!-- 影片區塊 -->
+<div class="video col11 margin_top10"><div class="videoImg"><img src="images/videoImg.jpg" width="916" height="506"></div></div>
+<!-- 影片區塊 -->
+<div class="col11 float_left">
+	<div class="col4 margin_top10 float_left">
+
+        <span class="color_white float_left alignMiddle margin5" >16459 views <img src="images/like.png" width="16" height="16"  alt=""  class="alignMiddle"/>16459 likes</span> 
+        <span class="margin5"><a class="smallbtn btn_Orange" href="#">收藏</a> </span>
+   </div>
+   <div class="col4 margin_top10 float_left float_right">
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style_24x24 float_right">
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_tqq"></a>
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_renren"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+            <a class="jiathis_counter_style"></a>
+        </div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1372297054084853" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+    </div>
+    <div class="col11 margin_top40"><hr/></div>
+</div>
+<!-- 內容區塊 -->
+<div class="width680 margin5 float_left">
+    <div class="margin_bottom15">
+        <div class="title">
+        <div class="title_left"></div>
+        <div class="title_name"><div class="margin10 color_white fontSize16"><a id="tabBtn_1" class="color_white" href="javascript: void(0)" >單字預習</a> | <a id="tabBtn_2" class="color_orange" href="javascript: void(0)" >課後複習</a></div></div>
+        <div class="title_right"></div>
+        </div>
+        <div class="classes_graybg_List col11 color_white padding_bottom20">
+          <div class="margin5 margin_left15 height350 ">
+                <!-- 捲動區塊 -->
+                <div id="tab_1" class="scrollBox_type1">
+                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                <div class="viewport height350">
+                <div class="overview">
+                        <!-- 捲動內容區塊 -->
+                        <div class="col11 color_white float_left">
+                        <span class="fontSize24 lineHeight40 float_left">aerospace</span>
+                        <span class="lineHeight40 float_right">
+                        <a href="#"><span class="saveBtn lineHeight40"></span></a>
+                        <a href="#"><span class="soundBtn lineHeight40"></span></a>
+                        </span>
+                        </div>
+                        <div class="col11 float_left margin_top5">
+                        <div class="tip">
+                        <div class="tip_left"></div>
+                        <div class="tip_bg color_white fontSize12 float_left lineHeight24">字彙解釋</div>
+                        <div class="tip_right"></div>
+                        </div> 
+                        <div class="margin_left10 color_white lineHeight24 float_left">n. 名詞   航空與航天空間(指地球大氣層及其外面的空間)</div>
+                        </div>
+                        
+                        <div class="col11 float_left margin_top10">
+                        <div class="tip">
+                        <div class="tip_left"></div>
+                        <div class="tip_bg color_white fontSize12 float_left lineHeight24">英文釋義</div>
+                        <div class="tip_right"></div>
+                        </div> 
+                        <div class="col9 margin_left10 color_white lineHeight24 float_left">The dictionary may not have the exact word, but it may have a synonym of it. Try several variations.</div>
+                        </div>
+                        
+                        <div class="col11 float_left margin_top10">
+                        <div class="tip">
+                        <div class="tip_left"></div>
+                        <div class="tip_bg color_white fontSize12 float_left lineHeight24">例　　句</div>
+                        <div class="tip_right"></div>
+                        </div> 
+                        <div class="col9 margin_left10 color_white lineHeight24 float_left">This dictionary only looks at single Chinese characters. Many if not most words in Chinese use two or more characters. Try the Chinese word dictionary at this same site</div>
+                        </div>
+                        
+                        <div class="col11 float_left margin_top10"><hr /></div>
+                        
+                        
+                        <div class="col11 color_white float_left">
+                        <span class="fontSize24 lineHeight40 float_left">aerospace</span>
+                        <span class="lineHeight40 float_right">
+                        <a href="#"><span class="saveBtn lineHeight40"></span></a>
+                        <a href="#"><span class="soundBtn lineHeight40"></span></a>
+                        </span>
+                        </div>
+                        <div class="col11 float_left margin_top10">
+                        <div class="tip">
+                        <div class="tip_left"></div>
+                        <div class="tip_bg color_white fontSize12 float_left lineHeight24">字彙解釋</div>
+                        <div class="tip_right"></div>
+                        </div> 
+                        <div class="margin_left10 color_white lineHeight24 float_left">n. 名詞   航空與航天空間(指地球大氣層及其外面的空間)</div>
+                        </div>
+                        
+                        <div class="col11 float_left margin_top10">
+                        <div class="tip">
+                        <div class="tip_left"></div>
+                        <div class="tip_bg color_white fontSize12 float_left lineHeight24">英文釋義</div>
+                        <div class="tip_right"></div>
+                        </div> 
+                        <div class="col9 margin_left10 color_white lineHeight24 float_left">The dictionary may not have the exact word, but it may have a synonym of it. Try several variations.</div>
+                        </div>
+                        
+                        <div class="col11 float_left margin_top10">
+                        <div class="tip">
+                        <div class="tip_left"></div>
+                        <div class="tip_bg color_white fontSize12 float_left lineHeight24">例　　句</div>
+                        <div class="tip_right"></div>
+                        </div> 
+                        <div class="col9 margin_left10 color_white lineHeight24 float_left">This dictionary only looks at single Chinese characters. Many if not most words in Chinese use two or more characters. Try the Chinese word dictionary at this same site</div>
+                        </div>
+                        
+                        <div class="col11 float_left margin_top10"><hr /></div>
+                        <!-- 捲動內容區塊 end -->
+                        
+                       
+                </div>
+                </div>
+                </div>	
+                <!-- 捲動區塊 end -->
+                
+                
+                
+                <!-- 捲動區塊 -->
+                <div id="tab_2" class="scrollBox_type1">
+                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                <div class="viewport height350">
+                <div class="overview">
+                        <!-- 課後複習 start -->
+                <!-- 課後複習 start -->
+                    <div class="allTest">
+                    
+                    <span class="fontSize18 lineHeight30 color_white">
+                    Please answer these questions: The correct answer is displayed in Orange.
+                    </span><br>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/wrong.png" width="20" height="20">1.When something creates an emotional response, it 
+                    </span><br>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_1" id="answer_1" value="1" disabled=""> a.hits a note
+                    <input type="radio" name="answer_1" id="answer_1" value="2" disabled=""> b.strikes a note
+                    <input type="radio" name="answer_1" id="answer_1" value="3" checked="" disabled=""> c.hits a chord
+                    <input type="radio" name="answer_1" id="answer_1" value="4" disabled=""> <span class="color_orange">d.strikes a chord</span>
+                    </span><br>
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/wrong.png" width="20" height="20">2.If an idea seems good to you, it ____ with you. 
+                    </span><br>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_2" id="answer_2" value="1" disabled=""> a.hits a note
+                    <input type="radio" name="answer_2" id="answer_2" value="2" disabled=""> b.strikes a note
+                    <input type="radio" name="answer_2" id="answer_2" value="3" checked="" disabled=""> c.hits a chord
+                    <input type="radio" name="answer_2" id="answer_2" value="4" disabled=""> <span class="color_orange">d.strikes a chord</span>
+                    </span><br>
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/yes.png" width="20" height="20">3.To express your ideas with words is to ____ them. 
+                    </span><br>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_3" id="answer_3" value="1" disabled=""> a.compass
+                    <input type="radio" name="answer_3" id="answer_3" value="2"  disabled=""> b.articulate
+                    <input type="radio" name="answer_3" id="answer_3" value="3" checked="" disabled=""><span class="color_orange">c.develop</span>
+                    <input type="radio" name="answer_3" id="answer_3" value="4" disabled=""> d.edit
+                    </span><br>
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/yes.png" width="20" height="20">4.To get enough courage to do something is to ____ your courage. 
+                    </span><br>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_4" id="answer_4" value="1" disabled=""> a.hits a note
+                    <input type="radio" name="answer_4" id="answer_4" value="2" disabled=""> b.strikes a note
+                    <input type="radio" name="answer_4" id="answer_4" value="3" checked="" disabled=""> <span class="color_orange">c.hits a chord</span>
+                    <input type="radio" name="answer_4" id="answer_4" value="4" disabled=""> d.strikes a chord
+                    </span><br>
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/wrong.png" width="20" height="20">5.A feeling of wanting something to be true is 
+                    </span><br>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_5" id="answer_5" value="1" disabled=""> a.anonymous
+                    <input type="radio" name="answer_5" id="answer_5" value="2" disabled=""> b.blog
+                    <input type="radio" name="answer_5" id="answer_5" value="3" checked="" disabled=""> c.hope
+                    <input type="radio" name="answer_5" id="answer_5" value="4" disabled=""> <span class="color_orange">d.dispair</span>
+                    </span><br>
+                    <hr>
+                    <span class="fontSize18 lineHeight30 color_white">
+                    Please find the correct definition
+                    </span><br>
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/wrong.png" width="20" height="20">6.
+                    </span>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_6" id="answer_6" value="1" disabled=""> A
+                    <input type="radio" name="answer_6" id="answer_6" value="2" disabled=""> B
+                    <input type="radio" name="answer_6" id="answer_6" value="3" checked="" disabled=""> C
+                    <input type="radio" name="answer_6" id="answer_6" value="4" disabled=""> <span class="color_orange">D</span>
+                    <input type="radio" name="answer_6" id="answer_6" value="3" checked="" disabled=""> E
+                    </span><br>
+                    
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/yes.png" width="20" height="20">7.
+                    </span>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_7" id="answer_7" value="1" disabled=""> A
+                    <input type="radio" name="answer_7" id="answer_7" value="2" disabled=""> B
+                    <input type="radio" name="answer_7" id="answer_7" value="3" checked="" disabled=""> <span class="color_orange">C</span>
+                    <input type="radio" name="answer_7" id="answer_7" value="4" disabled=""> D
+                    <input type="radio" name="answer_7" id="answer_7" value="4" disabled=""> E
+                    </span><br>
+                    
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/wrong.png" width="20" height="20">8
+                    </span>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_8" id="answer_8" value="1" disabled=""> A
+                    <input type="radio" name="answer_8" id="answer_8" value="2" disabled=""> B
+                    <input type="radio" name="answer_8" id="answer_8" value="3" checked="" disabled=""> C
+                    <input type="radio" name="answer_8" id="answer_8" value="4" disabled=""> <span class="color_orange">D</span>
+                    <input type="radio" name="answer_8" id="answer_8" value="2" disabled=""> E
+                    </span><br>
+                    
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/yes.png" width="20" height="20">9
+                    </span>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_9" id="answer_9" value="1" disabled=""> A
+                    <input type="radio" name="answer_9" id="answer_9" value="2" disabled=""> B
+                    <input type="radio" name="answer_9" id="answer_9" value="3" checked="" disabled=""> <span class="color_orange">C</span>
+                    <input type="radio" name="answer_9" id="answer_9" value="4" disabled=""> D
+                    <input type="radio" name="answer_9" id="answer_9" value="4" disabled=""> E
+                    </span><br>
+                    
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <img  class="lineHeight24" src="images/wrong.png" width="20" height="20">10
+                    </span>
+                    <span class="fontSize14 lineHeight24 color_white">
+                    <input type="radio" name="answer_10" id="answer_10" value="1" disabled=""> A
+                    <input type="radio" name="answer_10" id="answer_10" value="2" disabled=""> B
+                    <input type="radio" name="answer_10" id="answer_10" value="3" checked="" disabled=""> C
+                    <input type="radio" name="answer_10" id="answer_10" value="4" disabled=""> <span class="color_orange">D</span>
+                    <input type="radio" name="answer_10" id="answer_10" value="2" disabled=""> E
+                    
+                    </span><br>
+                    
+                    
+                    
+                    <div class="inline_block  fontSize14 lineHeight24 color_white">
+                    <div class=" inline_block float_left width20 color_black text-center  bg_color_gray  margin3">A</div>
+                    <div class="inline_block float_left color_white text-left  margin3">an instrument that shows directions and has a needle that always points north</div>
+                    </div><br>
+                    
+                    <div class="inline_block fontSize14 lineHeight24 color_white">
+                    <div class="inline_block  float_left width20 color_black text-center bg_color_gray margin3">B</div>
+                    <div class="inline_block  float_left color_white text-left  margin3">a mathematical statement that two expressions are equal, the act of regarding as equal</div>
+                    </div><br>
+                    
+                    <div class="inline_block fontSize14 lineHeight24 color_white">
+                    <div class="inline_block  float_left width20 color_black text-center bg_color_gray margin3">C</div>
+                    <div class="inline_block  float_left color_white text-left  margin3">expressing yourself easily or characterized by clear expressive language</div>
+                    </div><br>
+                    
+                    <div class="inline_block fontSize14 lineHeight24 color_white">
+                    <div class="inline_block  float_left width20 color_black text-center bg_color_gray margin3">D</div>
+                    <div class="inline_block  float_left color_white text-left  margin3">be received or understood</div>
+                    </div><br>
+                    
+                    <div class="inline_block fontSize14 lineHeight24 color_white">
+                    <div class="inline_block  float_left width20 color_black text-center bg_color_gray margin3">E</div>
+                    <div class="inline_block  float_left color_white text-left  margin3">to get enough courage, confidence, support etc to do something, especially with difficulty</div>
+                    </div>
+                    
+                    
+                    </div>
+
+                <!-- 課後複習 end -->
+                        
+                       
+                </div>
+                </div>
+                </div>	
+                <!-- 捲動區塊 end -->
+                
+                
+                
+                
+          </div>
+        </div>
+    </div>
+    
+<div class="margin_bottom15">
+<div class="title">
+<div class="title_left"></div>
+<div class="title_name"><div class="margin10 color_white fontSize16">觀看更多的影片</div></div>
+<div class="title_right"></div>
+</div>
+<div class="classes_graybg_List col11 color_white padding_bottom5">
+        <div class="margin2">
+        <ul class="classes_sub_ul">
+           <li class="videoBtn bg_color_black">
+           	<a href="#">
+               <img class="margin5" src="images/cover_6.jpg" width="210" height="157"  alt=""/> 
+               <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+             <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+             <div class="colauto fontSize13 color_white margin5">16459 views</div>
+             <div class="colauto margin5">
+                    <span class="colauto float_left">
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                </span>
+                <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+              </div>
+              </a>
+           </li>
+           <li class="videoBtn bg_color_black">
+           	<a href="#">
+               <img class="margin5" src="images/cover_7.jpg" width="210" height="157"  alt=""/> 
+               <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+             <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+             <div class="colauto fontSize13 color_white margin5">16459 views</div>
+             <div class="colauto margin5">
+                <span class="colauto float_left">
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                </span>
+                <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+              </div>
+              </a>
+           </li>
+           <li class="videoBtn bg_color_black">
+           	<a href="#">
+               <img class="margin5" src="images/cover_8.jpg" width="210" height="157"  alt=""/> 
+               <div class="colauto fontSize14 color_white margin5">成功人生的第一步，優秀的人品性格</div>
+             <div class="colauto fontSize13 color_gray margin5">Jennifer Herriot</div>
+             <div class="colauto fontSize13 color_white margin5">16459 views</div>
+             <div class="colauto margin5">
+                    <span class="colauto float_left">
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                </span>
+                <span class="colauto color_white float_right"><img src="images/like.png" width="16" height="16"  alt=""/>1234</span>
+              </div>
+              </a>
+           </li>
+        </ul>
+   		 </div>
+    </div>
+</div>
+
+<div class="margin_bottom15">
+        <div class="title">
+        <div class="title_left"></div>
+        <div class="title_name"><div class="margin10 color_white fontSize16">評論</div></div>
+        <div class="title_right"></div>
+        </div>
+        <div class="classes_graybg_List col11 color_white padding_bottom20">
+          <div class="margin5 margin_left15 height300 ">
+                <!-- 捲動區塊 -->
+                <div class="scrollBox_type1">
+                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                <div class="viewport height300">
+                <div class="overview">
+                        <!-- 捲動內容區塊 -->
+                        <div class="col11 color_white float_left">
+                        <span class="fontSize18 lineHeight30 nput select rating-f">您給的星等:<select class="lineHeight80" id="example-f" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                       
+                        </span>
+                        
+                        </div>
+                        <div class="col11 float_left  margin10">
+                                <div class="width60 float_left"><img src="images/avatar_1.png" width="60" height="60"  alt=""/></div>
+                                <div class="width400 float_left">
+                                    <div class="margin_left10 color_white fontSize18 lineHeight18">Tracy:</div>
+                                    <div class="margin_left10 color_white lineHeight18">英文的威力到底有多強大？<br>
+                                    英文好的人生跟英文菜的人生到底差別在哪裡？<br>
+                                    看看主角在學好英文後的人生，會以什麼樣的方法晉級！？<br>
+                                    </div>
+                                    <span class="margin_left10 colauto lineHeight20">
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    </span>
+                                </div>
+                                <div class="col11 float_left "><hr/></div>
+                        </div>
+                        
+                       <div class="col11 float_left  margin10">
+                                <div class="width60 float_left"><img src="images/avatar_2.png" width="60" height="60"  alt=""/></div>
+                                <div class="width400 float_left">
+                                    <div class="margin_left10 color_white fontSize18 lineHeight18">Franklin:</div>
+                                    <div class="margin_left10 color_white lineHeight18">英文的威力到底有多強大？<br>
+                                    英文好的人生跟英文菜的人生到底差別在哪裡？<br>
+                                    看看主角在學好英文後的人生，會以什麼樣的方法晉級！？<br>
+                                    </div>
+                                    <span class="margin_left10 colauto lineHeight20">
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    </span>
+                                </div>
+                                <div class="col11 float_left "><hr/></div>
+                        </div>
+                        
+                        <div class="col11 float_left margin10">
+                                <div class="width60 float_left"><img src="images/avatar_3.png" width="60" height="60"  alt=""/></div>
+                                <div class="col6 float_left">
+                                    <span class="margin_left10 color_white fontSize18 lineHeight24">Michael：</span><br>
+                                    <span class="margin_left10 color_white lineHeight20">上課的內容非常好</span><br>
+                                    <span class="margin_left10 colauto lineHeight20">
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    </span>
+                                </div>
+                               <div class="col11 float_left "><hr/></div>
+
+                        </div>
+                        <div class="col11 float_left  margin10">
+                                <div class="width60 float_left"><img src="images/avatar_1.png" width="60" height="60"  alt=""/></div>
+                                <div class="width400 float_left">
+                                    <div class="margin_left10 color_white fontSize18 lineHeight18">Tracy:</div>
+                                    <div class="margin_left10 color_white lineHeight18">英文的威力到底有多強大？<br>
+                                    英文好的人生跟英文菜的人生到底差別在哪裡？<br>
+                                    看看主角在學好英文後的人生，會以什麼樣的方法晉級！？<br>
+                                    </div>
+                                    <span class="margin_left10 colauto lineHeight20">
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    </span>
+                                </div>
+                                <div class="col11 float_left "><hr/></div>
+                        </div>
+                        <div class="col11 float_left  margin10">
+                                <div class="width60 float_left"><img src="images/avatar_1.png" width="60" height="60"  alt=""/></div>
+                                <div class="width400 float_left">
+                                    <div class="margin_left10 color_white fontSize18 lineHeight18">Tracy:</div>
+                                    <div class="margin_left10 color_white lineHeight18">英文的威力到底有多強大？<br>
+                                    英文好的人生跟英文菜的人生到底差別在哪裡？<br>
+                                    看看主角在學好英文後的人生，會以什麼樣的方法晉級！？<br>
+                                    </div>
+                                    <span class="margin_left10 colauto lineHeight20">
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_1.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    <img src="images/star_2.png" width="15" height="13"  alt=""/>
+                                    </span>
+                                </div>
+                                <div class="col11 float_left "><hr/></div>
+                        </div>
+                       
+                        <!-- 捲動內容區塊 end -->
+                </div>
+                </div>
+                </div>	
+                <!-- 捲動區塊 end -->
+                
+                
+          </div>
+        </div>
+    </div>
+
+</div>
+<!-- 260內容區塊 -->
+<div class="width260 margin5  float_left">
+    <div class="margin_bottom15">
+        <div class="title">
+            <div class="title_left"></div>
+            <div class="title_name"><div class="margin5 color_white fontSize16">課程簡介:</div></div>
+            <div class="title_right"></div>
+        </div>
+        <div class="classes_graybg_List col11 color_white">
+            <div class="margin10">
+            	<div class=" col11 fontSize12 lineHeight24">
+            		各种对话过程当中我们常显现各种情绪，通常最容易表现出来的表情就是愤怒、疑虑、快乐、兴奋以及恐惧。这些表情中我们也能让对方感受到愉悦或是被冒犯，所以有时候这些表情上的控管也是必须学习的。今天我们会着重在讨论常见的情绪以及搭配一些对话，让我们更能顺利用英文表达自己的情绪
+            	</div>
+              <div class=" col11 fontSize16 lineHeight24 margin_top20">教師:</div>
+               <div class=" col11 fontSize16 lineHeight24"><img src="images/teacher.png" width="111" height="111"  alt=""/></div>
+               <div class=" col11 fontSize16 lineHeight24 color_orange ">Carol Seagal </div>
+            </div>
+        </div>
+    </div>
+   <div class="margin_bottom15">
+        <div class="title">
+        <div class="title_left"></div>
+        <div class="title_name"><div class="margin5 color_white fontSize16">你有英文的問題嗎?</div></div>
+        <div class="title_right"></div>
+        </div>
+        <div class="classes_graybg_List col11 color_white">
+   		  		
+                
+                <div class="margin10 text-right"><input type="text" class="form_input  fontSize12 col11" value="輸入有關於英文學習有關的問題, 以獲得幫助..." onFocus="this.value='';" onBlur="if(this.value==''){this.value='輸入有關於英文學習有關的問題, 以獲得幫助...';}" ></div>
+			     <div class="margin10 text-left"><a class="btn btn_Orange" href="#">送  出</a></div>
+              
+        </div>
+   </div>
+        
+    <div class="margin_bottom15">
+        <div class="title">
+        <div class="title_left"></div>
+        <div class="title_name"><div class="margin5 color_white fontSize16">這些問題有幫到你嗎?</div></div>
+        <div class="title_right"></div>
+        </div>
+        <div class="classes_graybg_List col11 color_white">
+        	<div class="margin10 text-left">Have I understood this Chinese sentence correctly?</div>
+           <div class="margin10 text-left"><span>David |  2小時前 |  <a class="orangeLink" href="#">1個回答</a></span></div> 
+           
+           <div class="margin10 text-left">Have I understood this Chinese sentence correctly?</div>
+           <div class="margin10 text-left"><span>David |  2小時前 |  <a class="orangeLink" href="#">1個回答</a></span></div> 
+           
+           <div class="margin10 text-left">Have I understood this Chinese sentence correctly?</div>
+           <div class="margin10 text-left"><span>David |  2小時前 |  <a class="orangeLink" href="#">1個回答</a></span></div> 
+           
+           <div class="margin10 text-left">Have I understood this Chinese sentence correctly?</div>
+           <div class="margin10 text-left"><span>David |  2小時前 |  <a class="orangeLink" href="#">1個回答</a></span></div>
+           
+           <div class="margin10 text-left">Have I understood this Chinese sentence correctly?</div>
+           <div class="margin10 text-left"><span>David |  2小時前 |  <a class="orangeLink" href="#">1個回答</a></span></div>
+            
+    	</div>
+    </div>
+</div>
+
+
+<!-- 內容區塊 -->
+<div class="footer col11 float_left color_white">
+<hr/>
+<span>首頁 | 隱私權政策 | 安全性條款 | 服務條款 | 聯絡我們 | 人才招募 | 常見問題</span> <span>TutorV All Rights Reserved.</span>
+
+</div>
+</div>
+</div>
+</body>
+</html>

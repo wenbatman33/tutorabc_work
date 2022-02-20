@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+  $(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+	$( "#datepicker3" ).datepicker();
+	$( ".openTipbox" ).hover(
+	  function() {
+		$('.tipBox').show();
+		var position = $('.openTipbox').offset();  
+		var x = position.left-40;  
+		var y = position.top+40;  
+		$('.tipBox').css({left: x, top: y});
+	 	}, function() {
+		$('.tipBox').hide()
+	 	}
+	);
+  });
+</script>
+</head>
+<body class="col11">
+<div class="tipBox"  style="display:none;">
+                    <span class="arrow_up_int"></span>
+                    <span class="arrow_up_out"></span>
+                    <span>使用手機刷卡功能注意事項：<br>
+                    1. 簡訊內會夾帶刷卡連結,寄發簡訊前請</span>
+                    <span class="color_lightRed">務必確認客戶手機號碼是正確的</span><br>
+                    <span>2.建議客戶使用<span class="color_lightRed">智慧型手機</span>並連結網路的情況下操作本功能<br>
+                    3.除透過手機外,也可由電腦或Pad開啟任一網頁輸入刷卡網址(URL)來執行本刷卡功能,請注意<span class="color_lightRed">刷卡網址的英文字母有大小寫</span>之分(EX: http://is.gd/Rc6Y23)</span>
+</div>
+<div class="col11">
+  <div class="col11">
+    <table width="100%" cellpadding="0" cellspacing="0" class=" table_noneHover">
+      <thead>
+        <tr>
+            <th colspan="4" class=" text-left alignMiddle bg_color_gay">
+            	<div class="float_left margin10">
+                  		<span class="text-left">完成百分比:</span><span class=" color_red">0%</span>
+                 </div>
+                 <div class="float_right margin10">
+                  		<a href="#" class="lineHeight24 color_white"><img class="lineHeight40" src="images/followUp.png" width="24" height="24" alt=""><span class="lineHeight24">編輯客戶背景</span></a>
+                 </div>
+            </th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="even">
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">基本資料</div></td>
+              <td class="text-left alignTop bg_color_white">
+               	  <div class="margin5 col11">
+                  		<span class="inline_block width130  text-right">姓名:</span>
+                        <span class="margin_left5">王小明</span>
+                  </div>
+                  <div class="margin5 col11">
+                 	 <span class="inline_block width130  text-right">媒體類別:</span>
+                     <span class="margin_left5">廣播</span>
+                  </div>
+                  <div class="margin5">
+                      <span class="inline_block width130  text-right">媒體名稱:</span>
+                      <span class="margin_left5">ICRT</span>
+                  </div>
+                  <div class="margin5">
+                  	  <span class="inline_block width130  text-right">年齡:</span>
+                      <span class="margin_left5">
+                          <input  type="text" id="datepicker" /> 
+                          or 
+                          <select class="width140" name="select1">
+                            <option selected="selected" value="請選擇">請選擇</option>
+                          </select>
+                      </span>
+                </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right">個性:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                       		<option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                     </span>
+                </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right">職業別:</span>
+                    <span class="margin_left5">
+               	 	<select class="width140" name="select1">
+                   		<option selected="selected" value="請選擇">請選擇職業別</option>
+                    </select>
+                     <input  type="text" value="職銜"  onFocus="this.value='';" onBlur="if(this.value==''){this.value='職銜';}" /> 
+                     </span>
+                 </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right">工作資歷:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                          <option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right">粗估英文程度:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1" disabled="disabled">
+                          <option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right">參加過的補習班:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                          <option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right" style="vertical-align:top;">為何中斷:</span>
+                    <span class="margin_left5">
+           		  		<textarea class=" width400  height100" style="resize:none"></textarea>
+                     </span>
+                </div>
+                    
+
+                </td>
+              <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">學習需求</div></td>
+              <td colspan="2" class="text-left alignTop bg_color_white">
+                
+                <div class="margin5">
+                    <span class="inline_block width130  text-right">為什麼想學:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                          <option selected="selected" value="請選擇">請選擇</option>
+                         </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                    <span class="inline_block width130  text-right">最想加強:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                        	<option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                      </span>
+                </div>
+                 <div class="margin5">
+                    <span class="inline_block width130  text-right">使用英文頻率:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                          	<option selected="selected" value="請選擇">請選擇</option>
+                         </select>
+                      </span>
+                </div>
+                <div class="margin5">
+                    <span class="inline_block width130  text-right">每週可上課時數:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                            <option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                	<span class="inline_block width130  text-right">可上線時段:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                          	<option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                    <span class="inline_block width130  text-right">選擇本公司的原因:</span>
+                    <span class="margin_left5">
+                       <select class="width140" name="select1">
+                      		<option selected="selected" value="請選擇">請選擇</option>
+                      </select>
+                      </span>
+                </div>
+                <div class="margin5">
+                    <span class="inline_block width130  text-right">可支付月付款:</span>
+                    <span class="margin_left5">
+                        <select class="width140" name="select1">
+                          <option selected="selected" value="請選擇">請選擇</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="margin5">
+                    	<span class="inline_block width130  text-right">常用付款方式:</span>
+                        <span class="margin_left5">
+                            <select class="width140" name="select1">
+                              <option selected="selected" value="請選擇">請選擇</option>
+                            </select>
+                        </span>
+                </div>
+
+                     
+	
+	
+	
+	
+		
+	
+	
+
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">設備資料</div></td>
+              <td class="text-left alignTop bg_color_white">
+                  <div class="margin5">
+                        <span class="inline_block width130  text-right">試讀地點:</span>
+                        <span class="margin_left5">
+                            <select class="width140" name="select1">
+                            	<option selected="selected" value="請選擇">請選擇</option>
+                            </select>
+                        </span>
+                </div>
+                    <div class="margin5">
+                        <span class="inline_block width130  text-right">常用瀏覽器:</span>
+                        <span class="margin_left5">
+                            <select class="width140" name="select1">
+                                <option selected="selected" value="請選擇">請選擇</option>
+                            </select>
+                        </span>
+
+                </div>
+                    <div class="margin5">
+                        <span class="inline_block width130  text-right">電腦系統:</span>
+                        <span class="margin_left5">
+                          <select class="width140" name="select1">
+                           	 <option selected="selected" value="請選擇">請選擇</option>
+                          </select>
+                        </span>
+
+                </div>
+                    <div class="margin5">
+                        <span class="inline_block width130  text-right">是否有耳麥:</span>
+                        <span class="margin_left5">
+                            <input name="group1" id="group1_radio1" type="radio" /> 
+                            <label for="group1_radio1">是</label>
+                            <input name="group1" id="group1_radio2" type="radio" /> 
+                            <label for="group1_radio2">否</label>
+                         </span>
+                </div>
+                </td>
+                <td class="text-right alignMiddle bg_color_gay "><div class="margin5 color_white">報價資訊</div></td>
+              <td colspan="2" class="text-left alignTop bg_color_white">
+                 <div class="margin5">
+                        <span class="inline_block width130  text-right">是否清楚價格:</span>
+                        <span class="margin_left5">
+						<select class="width140" name="select1">
+                            <option selected="selected" value="請選擇">請選擇</option>
+                          </select>
+                      </span>
+                </div>
+                    <div class="margin5">
+                        <span class="inline_block width130  text-right">推薦方案:</span>
+                        <span class="margin_left5">
+                    	<select class="width140" name="select1">
+                            <option selected="selected" value="請選擇">請選擇</option>
+                          </select>
+                         </span>
+
+                </div>
+                    <div class="margin5">
+                       <span class="inline_block width130  text-right"> 產品價格 : </span>
+                       <span class="margin_left5">自動帶入該產品之牌告價</span>
+                    </div>
+                    <div class="margin5">
+                        <span class="inline_block width130  text-right" style="vertical-align:top;">備註:</span>
+                        <span class="margin_left5">
+                    	  <textarea class=" width400 height60" style="resize:none"></textarea>
+                      	</span>
+                    </div>
+                </td>
+            </tr>
+
+           
+           
+      </tbody>
+    </table>
+  </div>
+    
+    
+</div>
+</body>
+
+</html>

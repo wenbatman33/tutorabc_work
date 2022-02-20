@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*按鈕*/
+.phoneBtn,.flag, .flag_hide, .enterBtn, .openfile, .jrIcon{display: inline-block;background-repeat: no-repeat;background-image:url(../images/ims_BD_Pic.png);}
+.phoneBtn{  background-position:0px 0px; width:36px; height:20px;}
+.flag{ background-position:0px -20px ; width:20px; height:20px; }
+.flag_hide{ background-position:-20px -20px ; width:20px; height:20px; }
+.enterBtn{background-position:0px -42px ; width:22px; height:22px; }
+.openfile{background-position:0px -70px ; width:16px; height:16px; }
+.jrIcon{background-position:0px -92px ; width:16px; height:16px; }

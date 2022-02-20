@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_Style.css"/>
+<link rel="stylesheet" href="css/IMS_Font.css"/>
+<link rel="stylesheet" href="css/Grid.css"/>
+
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox2.1.5/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script src="js/jquery.barrating.js"></script>
+<script type="text/javascript">
+$(function(){
+		
+		$(".left_arrowBtn2").bind("click",{id:1},function(){
+			$(this).parent().css('background-color', 'red');
+		});
+		$(".right_arrowBtn2").bind("click",{id:1},function(){
+			$(this).parent().find( ".classes_List_warp" ).css( "background-color", "red" );
+		});
+	
+	$( "body" ).click(function( event ) {
+		console.log(event.target.nodeName );
+		});
+		
+});
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="classes col11 float_left">
+        <div class="classes_Category colauto ">
+        <span class="colauto color_white fontSize18 margin5 float_left "><div class="white_line"></div> <div class="margin_top5">商業金融</div></span>
+        <span class="colauto float_right margin10 color_white"> 
+        <a class="btn btn_Orange" href="#">最新更新</a> 
+        <a class="btn btn_White" href="#">最受歡迎</a>1/40
+        </span>
+        </div>
+        
+        <a class="left_arrowBtn2" href="javascript: void(0)"><img  src="images/left_arrowBtn.png" width="23" height="49"  alt=""/></a>
+        <a class="right_arrowBtn2" href="javascript: void(0)"><img src="images/right_arrowBtn.png" width="23" height="49"  alt=""/></a>
+        <div class="classes_List col11 margin_top10">
+        <div class="classes_List_warp">
+       
+        </div>
+        </div>
+        </div>
+    
+        <div class="classes col11 float_left">
+        <div class="classes_Category colauto ">
+        <span class="colauto color_white fontSize18 margin5 float_left "><div class="white_line"></div> <div class="margin_top5">商業金融</div></span>
+        <span class="colauto float_right margin10 color_white"> 
+        <a class="btn btn_Orange" href="#">最新更新</a> 
+        <a class="btn btn_White" href="#">最受歡迎</a>1/40
+        </span>
+        </div>
+        
+        <a class="left_arrowBtn2" href="javascript: void(0)"><img  src="images/left_arrowBtn.png" width="23" height="49"  alt=""/></a>
+        <a class="right_arrowBtn2" href="javascript: void(0)"><img src="images/right_arrowBtn.png" width="23" height="49"  alt=""/></a>
+        <div class="classes_List col11 margin_top10">
+        <div class="classes_List_warp">
+       
+        </div>
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>

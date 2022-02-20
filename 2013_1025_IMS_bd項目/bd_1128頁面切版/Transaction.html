@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/tip.js"></script>
+
+</head>
+<body class="bg-color-lightgary">
+<div class="container">
+    <H3 class="margin10">成交客户一览表</H3>
+    <div class="colauto margin10 padding10 bg_color_llightblue">
+    <table width="100%" border="0" cellpadding="6" cellspacing="5">
+        <tr>
+            <td height="40" class="text-left alignMiddle"><span class="fontSize14">业務人员:</span><span class="fontSize14">
+            <select class="width100" name="select2">
+                <option selected="" value="銷售業務">銷售業務</option>
+                <option value="負責業務">負責業務</option>
+            </select>
+            <select class="width80" name="select">
+                <option value="--- 組別 ---">--- 組別 ---</option>
+                <option value="CAS1">CAS1</option>
+                <option value="EC1">EC1</option>
+                <option value="EC2">EC2</option>
+                <option value="RS">RS</option>
+                <option value="TSR1">TSR1</option>
+                <option value="TSR2">TSR2</option>
+                <option selected="" value="TSR3">TSR3</option>
+                <option value="TSR4">TSR4</option>
+                <option value="TSR5">TSR5</option>
+                <option value="TSR6">TSR6</option>
+                <option value="TSR7">TSR7</option>
+                <option value="TSR8">TSR8</option>
+                <option value="TSR9">TSR9</option>
+                <option value="TSR10">TSR10</option>
+                <option value="TSR11">TSR11</option>
+                <option value="TSR12">TSR12</option>
+            </select>
+            <select class="width140" name="select3">
+            <option value="Ashton Sung">Ashton Sung</option>
+            <option value="Alina Zhang">Alina Zhang</option>
+            <option value="Amanad Si">Amanad Si</option>
+            <option value="Angela Ji">Angela Ji</option>
+            <option value="Ashton Sung">Ashton Sung</option>
+            <option value="Catherine.l Li">Catherine.l Li</option>
+            <option value="Cici Wei">Cici Wei</option>
+            <option value="Dale Sun">Dale Sun</option>
+            <option value="Evan Sun">Evan Sun</option>
+            <option value="Gina Wang">Gina Wang</option>
+            <option value="Laura Lan">Laura Lan</option>
+            <option value="Lisa Hou">Lisa Hou</option>
+            <option selected="" value="Paul Zhang">Paul Zhang</option>
+            </select>
+            </span></td>
+        </tr>
+        <tr>
+            <td height="40" class="text-left alignMiddle"><span class="fontSize14">时间区间:</span>
+            	 <select class="width100" name="select4">
+                <option selected="" value="合約起始日">合約起始日</option>
+                <option value="合約結束日">合約結束日</option>
+                </select>
+                <span class="fontSize14"><input  type="text" id="datepicker" /> to <input type="text" id="datepicker2" /></span></td>
+        </tr>
+    </table>
+    
+    </div>
+    <div class="col-offset1"><a href="#" class="btn btn-primary">送出</a></div>
+    
+  <div class="colauto margin10"><hr /></div>
+  <div class="colauto margin10">
+    <div class="col11 fontSize14">
+    <span>(客戶狀態為暫存狀態，每24小時更新一次，若欲瀏覽真實的客戶狀態，請瀏覽該客戶的基本資料。)</span>
+    <br />
+    <span>Total：</span><span class="color_red">3</span></div>
+    <table width="100%" cellpadding="0" cellspacing="0" class="table_bordered">
+      <thead>
+        <tr>
+            <th class="text-center alignMiddle">客户姓名</th>
+            <th class="text-center alignMiddle">上课状态</th>
+            <th class="text-center alignMiddle">产品区间</th>
+            <th class="text-center alignMiddle">销售业务</th>
+            <th class="text-center alignMiddle">负责业务</th>
+            <th class="text-center alignMiddle">距离上次关怀</th>
+            <th class="text-center alignMiddle">距离上次出席</th>
+            <th class="text-center alignMiddle">最近课后评鉴<br />顾 / 教 / 连</th>
+            <th class="text-center alignMiddle">客户状态</th>
+            <th class="text-center alignMiddle">标记</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="odd">
+                <td class="text-center alignMiddle">王名人<abbr rel="tooltip" alt="首堂客戶"><span class="oneIcon"></span></abbr><br />
+                Famous Wang</td>
+                <td class="text-center alignMiddle"><span class="color_red">&gt;&gt;首堂&lt;&lt;</span></td>
+                <td class="text-center alignMiddle">2013/08/10<br />~<br />2015/09/28</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">30 天</td>
+                <td class="text-center alignMiddle">10 天</td>
+                <td class="text-center alignMiddle">10 / 9 / 8 <br />2013/08/10 14:03<br />
+                    <abbr rel="tooltip" alt="this is handIcon"><span class="handIcon"></span></abbr><span>　</span>
+                    <abbr rel="tooltip" alt="this is dialogueIcon"><span class="dialogueIcon"></span></abbr>
+                </td>
+                <td class="text-center alignMiddle">续约</td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+            <tr class="even">
+                <td class="text-center alignMiddle">王名人<abbr rel="tooltip" alt="十堂內客戶"><span class="nIcon"></span></abbr><abbr rel="tooltip" alt="貴賓VIP"><span class="bIcon"></span></abbr><br />Famous Wang</td>
+                <td class="text-center alignMiddle"><span class="color_red">&gt;&gt;首堂&lt;&lt;</span></td>
+                <td class="text-center alignMiddle">2013/08/10<br />~<br />2015/09/28</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">30 天</td>
+                <td class="text-center alignMiddle">10 天</td>
+                <td class="text-center alignMiddle">10 / 9 / 8 <br />2013/08/10 14:03<br />
+                    <abbr rel="tooltip" alt="this is handIcon_hide"><span class="handIcon_hide"></span></abbr><span>　</span>
+                    <abbr rel="tooltip" alt="this is dialogueIcon_hide"><span class="dialogueIcon_hide"></span></abbr>
+				  </td>
+                <td class="text-center alignMiddle">合约延期</td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag"></span></a></td>
+            </tr>
+            <tr class="odd">
+                <td class="text-center alignMiddle"><abbr rel="tooltip" alt="Junior客戶"><span class="jrIcon"></span></abbr>王名人<br />
+                Famous Wang</td>
+                <td class="text-center alignMiddle"><span class="color_red">&gt;&gt;首堂&lt;&lt;</span></td>
+                <td class="text-center alignMiddle">2013/08/10<br />~<br />2015/09/28</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">30 天</td>
+                <td class="text-center alignMiddle">10 天</td>
+                <td class="text-center alignMiddle">10 / 9 / 8 <br />2013/08/10 14:03</td>
+                <td class="text-center alignMiddle">付订，合约延期</td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+            <tr class="even">
+                <td class="text-center alignMiddle">王名人<abbr rel="tooltip" alt="貴賓VIP"><span class="bIcon"></span></abbr><br />Famous Wang</td>
+                <td class="text-center alignMiddle"><span class="color_red">&gt;&gt;首堂&lt;&lt;</span></td>
+                <td class="text-center alignMiddle">2013/08/10<br />~<br />2015/09/28</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">30 天</td>
+                <td class="text-center alignMiddle">10 天</td>
+                <td class="text-center alignMiddle">10 / 9 / 8 <br />2013/08/10 14:03</td>
+                <td class="text-center alignMiddle">付订</td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+            <tr class="odd">
+                <td class="text-center alignMiddle">王名人<abbr rel="tooltip" alt="VIPABC"><span class="vIcon"></span></abbr><br />Famous Wang</td>
+                <td class="text-center alignMiddle"><span class="color_red">&gt;&gt;首堂&lt;&lt;</span></td>
+                <td class="text-center alignMiddle">2013/08/10<br />~<br />2015/09/28</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">Paul Zhang TSR3</td>
+                <td class="text-center alignMiddle">30 天</td>
+                <td class="text-center alignMiddle">10 天</td>
+                <td class="text-center alignMiddle">10 / 9 / 8 <br />2013/08/10 14:03</td>
+                <td class="text-center alignMiddle">付订</td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+          
+      <tbody>
+    </table>
+    <div class="pagination pagination-right">
+    <ul>
+      <li class="disabled"><a href="#">‹‹</a></li>
+      <li class="disabled"><a href="#">‹</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li><a href="#">›</a></li>
+      <li><a href="#">››</a></li>
+    </ul>
+  </div>
+  </div>
+    
+    
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BDPortal</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/tip.js"></script>
+<script>
+$(function() {
+	$('.rankBox').hover(function(){
+		$(this).find('.rankBox_layer_2').stop().animate({
+					top: 0
+				}, 100);
+			}, function(){
+				$(this).find('.rankBox_layer_2').stop().animate({
+					top: 100
+				}, 100);
+	});
+	
+	$('.SeasonStat').eq(1).stop().animate({width: 230}, 500);
+	$('.SeasonStat').click(function() {
+		$('.SeasonStat').stop().animate({width: 114}, 100);
+ 		$(this).animate({width: 230}, 500);
+	});
+	
+});
+</script>
+
+</head>
+<body class="bg_color_white">
+<div class="BD_Container">
+    <div class="BD_TopNav float_left lineHeight40">
+        <div class=" float_left"> 
+            <span class="TutorABCicon lineHeight40"> </span>
+            <span class=" color_white lineHeight40">HI,Vivian </span>
+        </div>
+        <div class=" float_right"> 
+            <a class="color_white" href="#">
+            <span class="PriceListicon lineHeight40"> </span>
+            <span class="lineHeight40">价格表</span>
+            </a> 
+            
+            <a class="color_white" href="#">
+            <span class="calculateicon lineHeight40"> </span>
+            <span class="lineHeight40">计算机</span>
+            </a> 
+            
+            <a class="color_white" href="#">
+            <span class="Trainingicon lineHeight40"> </span>
+            <span class="lineHeight40">训练专区</span>
+            </a> 
+		
+            <span class="color_white lineHeight40">　　Check in</span>
+            <span class="lineHeight40"><input type="text" /></span>
+            <span class="color_white lineHeight40 margin10">2013/11/18 12:00</span>
+            
+        </div>
+    </div>
+    <div class="BD_DashBoard float_left">
+    
+    	<div class="DashBoard_wrap col10">
+        
+        	<div class="col11 ">
+                <div class="fontSize18 float_left color_gray">My Rankings</div>
+                <div class="fontSize14 color_drakOrange float_right">Total Sales:186</div>
+            </div>
+            <!-- ranks start -->
+            <div class="col11  color_gray float_left">
+            
+                <div class="rankBox float_left bg_color_lightGreen">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">KPI/Karma</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left  bg_color_lightGray2">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_orange">APPT</div>
+                        <div class="col11 text-center color_orange fontSize36 enfont"><span class="normalTag"></span>186</div>
+                        <div class="float_left col5 text-center fontSize16 color_orange">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_orange">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">ATTN</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">DEMO</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightGreen">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">CLTM</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightGreen">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">CALL</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">TTN</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">New Leads</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightGreen">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">APPT</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="lowTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">DEMO</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+                <div class="rankBox float_left bg_color_lightOrange">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-center color_white">SGNP</div>
+                        <div class="col11 text-center color_white fontSize36 enfont"><span class="highTag"></span>10</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                        <div class="float_left col5 text-center fontSize16 color_white">50</div>
+                    </div>
+                    <div class="rankBox_layer_2" style="background:#000;">
+                        <div class="col11 text-center color_white fontSize16 enfont margin_top30">Rank</div>
+                        <div class="float_left col3 text-center fontSize12 color_white margin_top20">MTD</div>
+                        <div class="float_left col7 text-center fontSize12 color_white margin_top20">Benchmark</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ranks end -->
+            
+            <div class="col11">
+                <div class="fontSize18 float_left color_gray">Sales Stats</div>
+                <div class="fontSize14  color_drakOrange float_right">單位：千元</div>
+            </div>
+            
+            <div class="col11 float_left">
+            <!-- 每季縮放區塊b start -->
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount padding5 float_left">
+                        <div class="enfont color_gray fontSize30">Q1</div>
+                        <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                        <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="padding5 float_left">
+                    <div class="chartContainer float_left">
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">JAN</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">FEB</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">MAR</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount padding5 float_left">
+                        <div class="enfont color_gray fontSize30">Q2</div>
+                        <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                        <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="padding5 float_left">
+                    <div class="chartContainer float_left">
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">APR</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">MAY</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">JUN</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount padding5 float_left">
+                        <div class="enfont color_gray fontSize30">Q3</div>
+                        <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                        <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="padding5 float_left">
+                    <div class="chartContainer float_left">
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">JUL</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">AUG</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">SEP</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="SeasonStat float_left bg_color_lightGray2">
+                    <div class="StatCount padding5 float_left">
+                        <div class="enfont color_gray fontSize30">Q4</div>
+                        <div class="enfont color_drakOrange fontSize14">TOL.454000</div>  
+                        <div class="enfont color_drakOrange fontSize14">AVG.83823</div>  
+                    </div>
+                    <div class="padding5 float_left">
+                    <div class="chartContainer float_left">
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">OCT</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">NOV</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                            <div class="chartBarWarp">
+                                    <div class="chartTitle color_gray fontSize12 enfont float_left">DEC</div>
+                                 <div class="chartBar color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarBox color_gray fontSize12 enfont float_left"></div>
+                                 <div class="chartBarNum color_gray fontSize12 enfont float_left">24600</div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <!-- 每季縮放區塊 end -->
+                 
+                <!-- 整年總計 start -->
+                <div class="YTD float_left bg_color_drakOrange">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-left color_white fontSize24 enfont margin5">YTD</div>
+                        <div class="enfont color_white fontSize14 margin_left5">TOL.454000</div>  
+                        <div class="enfont color_white fontSize14 margin_left5">AVG.83823</div>  
+                    </div>
+                </div>
+                <!-- 整年總計 end -->
+                <!-- stv start -->
+                <div class="STV float_left  bg_color_lightGray">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-left color_white fontSize24 enfont margin5">YTD</div>
+                        <div class="enfont color_white fontSize14 margin_left5">TOL.454000</div>  
+                        <div class="enfont color_white fontSize14 margin_left5">AVG.83823</div>  
+                    </div>
+                    
+                    <div class="STVRank float_left bg_color_lightGreen">
+                    
+                        <div class="col11 text-center color_white">STV Rank</div>
+                        <div class="col11 text-center color_white fontSize36 enfont margin_top15"><span class="lowTag"></span>10</div>
+
+                       
+                    
+                    </div>
+                    
+                </div>
+                <!-- stv end -->
+                <div class="daysRemaining float_left  bg_color_lightGray">
+                    <div class="rankBox_layer_1">
+                        <div class="col11 text-left color_white fontSize24 enfont margin5">ddddYTD</div>
+                        <div class="enfont color_white fontSize14 margin_left5">TOL.454000</div>  
+                        <div class="enfont color_white fontSize14 margin_left5">AVG.83823</div>  
+                    </div>
+                </div>
+                <!-- 整年總計 end -->
+                
+                
+                
+                
+                
+                
+            </div>
+          
+            
+               
+        </div>
+    
+    
+    </div>
+    
+    
+    <div class="BD_LeftNav float_left"></div>
+    
+</div> 
+</body>
+</html>

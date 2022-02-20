@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+
+.timeZone {
+	position: relative;display: block;float: left;width: 600px;height: 60px;
+}
+.timeZone h2{line-height: 24px;font-size: 20px;font-weight: bold;color: #ff9000;}
+.timeZone h3{line-height: 20px;font-size: 14px;font-weight: bold;color: #333;}
+.timeZone h4{line-height: 20px;font-size: 12px;font-weight: bold;color: #333;}
+</style>
+</head>
+
+<body>
+  <div class="timeZone">
+    <h2>时区设定</h2>
+    <h3>为了让客户于海外地区定课时可对照当地时间我们提供所在时区设定轻松安排课程没负担</h3><br>
+    <h2>所在时区</h2>
+    <select>
+            <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
+            <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
+            </select>
+            <input type="checkbox">日光節約時間<img src="images/question_blue.png" width="16" height="16" alt="又称夏令时间，是将原本的标准时间拨快一个小时" title="又称夏令时间，是将原本的标准时间拨快一个小时"/> 
+       <h4>目前的日期及时间2013年10月21日上午10:00</h4>
+       <h4>新的日期及时间2013年10月21日上午11:00</h4>
+       <input type="button" name="" id="btn_member_reservation_class" value="+ 送出" class="btn_1 m-left5" onclick="javascript:location.href='reservation_class/class_choose.asp'">
+  </div>
+
+</body>
+</html>

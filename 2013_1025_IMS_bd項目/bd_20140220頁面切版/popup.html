@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/tip.js"></script>
+
+<script>
+$(function () {
+	$('.TabsULPopup li').click(function(){
+		 var index = $( ".TabsULPopup li" ).index( this );
+		 $( ".TabsULPopup li" ).removeClass( "tabBtnClick" ).addClass( "tabBtn" );
+        $( this ).addClass( "tabBtnClick" );
+ 		 $('.TabsPopup_page').hide();
+		 $('.TabsPopup_page').eq(index).toggle();
+	})
+	 $( ".TabsULPopup li" ).eq(0).addClass( "tabBtnClick" );
+	 $( ".TabsPopup_page" ).eq(0).load( "ListInformation.html" );
+	 $( ".TabsPopup_page" ).eq(1).load( "businessTrackDetails.html" );
+	 $( ".TabsPopup_page" ).eq(2).load( "TrackDetails.html" );
+	 $( ".TabsPopup_page" ).eq(3).load( "customersInfo.html" );
+	 $('.TabsPopup_page').eq(0).toggle();
+	
+	 $(".popup").click(function() {
+		$(document).unbind("click");
+			var ul=$(this).parent().find('ul');
+			$('.dropdown-menu').hide();
+			$(ul).toggle();
+			$(this).bind('mouseout',function(){
+			$(document).bind("click",function(){$(".dropdown-menu").fadeOut();});
+     	 });	
+	});
+	
+	$( ".openTipRedPhone" ).click(function() {
+		$(document).unbind("click");
+		$('#tipBoxRedPhone').toggle();
+		var positionRedPhone = $('.openTipRedPhone').offset();  
+		var xRedPhone = positionRedPhone.left-320;  
+		var yRedPhone= positionRedPhone.top-15;  
+		$('#tipBoxRedPhone').css({ width:350, left: xRedPhone, top: yRedPhone });
+		
+		$('#tipBoxRedPhone').css('z-index', 3000);
+		$('#tipBoxRedPhone .arrow_up_int').css({ left: 310});
+		$('#tipBoxRedPhone .arrow_up_out').css({ left: 310});
+	
+		$('#tipBoxRedPhone')
+		.mouseover(function() {
+			$(document).unbind("click");
+		})
+		.mouseout(function() {
+			$(document).bind("click",function(){$("#tipBoxRedPhone").fadeOut();});
+		});
+				
+		 
+	 });
+});
+</script>
+</head>
+<body class="bg_color_white">
+<div class="col11 ">
+    <div class="col-offset8 float_right">
+    	<div class=" width80 float_left margin5">
+            <a class="btn btn-blue popup" href="#">基本資料</a>  
+            <ul class="dropdown-menu">
+                      <li><a href="#">關點數資訊懷</a></li>
+                      <li><a href="#">客戶關懷狀態</a></li>
+                      <li><a href="#">上課狀況分析</a></li>
+                      <li><a href="#">基本資料維護</a></li>
+                      <li><a href="#">課程資訊</a></li>
+                      <li><a href="#">升級資訊</a></li>
+                      <li><a href="#">付款資訊</a></li>
+                      <li><a href="#">付款資訊</a></li>
+                      <li><a href="#">支付客戶款項設定</a></li>
+            </ul>
+        </div>
+        <div class=" width80 float_left margin5">
+            <a class="btn btn-orange popup" href="#">業務追蹤</a>  
+            <ul class="dropdown-menu">
+                        <li><a href="#">歷史郵件</a></li>
+                        <li><a href="#">demo錄影檔</a></li>
+                        <li><a href="#">認證與重設密碼記錄</a></li>
+                        <li><a href="#">demo教室記錄</a></li>
+            </ul>
+        </div>
+          <div class="width80 float_left margin5">
+            <a class="btn btn-green popup" href="#">客戶服務</a>  
+            <ul class="dropdown-menu">
+                        <li><a href="#">關懷</a></li>
+                        <li><a href="#">網路</a></li>
+                        <li><a href="#">訂位</a></li>
+                        <li><a href="#">郵件 / 簡訊</a></li>
+                        <li><a href="#">回饋</a></li>
+                        <li><a href="#">退費</a></li>
+                        <li><a href="#">作業</a></li>
+                        <li><a href="#">退訂</a></li>
+                        <li><a href="#">評鑑</a></li>
+                        <li><a href="#">錄影檔</a></li>
+                        <li><a href="#">學程</a></li>
+                        <li><a href="#">整併 / 轉讓</a></li>
+                        <li><a href="#">歸還</a></li>
+                        <li><a href="#">退費通報</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="col11 float_left">
+    	<span class=" fontSize26 lineHeight30">業務追蹤</span>
+       <span class="TutorABCjrIcon lineHeight30"></span><span> 王名人 Famous / 男  / 主聯</span><span class="personIcon lineHeight30"></span>
+        <a href="#"><span class="phoneBtn lineHeight30 openTipRedPhone"></span></a>
+        <a href="#"><span class="mailBtn lineHeight30"></span></a>
+        <a href="#"><span class="smsBtn lineHeight30"></span></a>
+        <div class="tipBox width700"  id="tipBoxRedPhone" style="display:none;">
+                    <span class="arrow_up_int"></span>
+                    <span class="arrow_up_out"></span>
+                    
+                    <table  border="0"   class="table_bordered">
+                        <thead>
+                          <tr>
+                                <th colspan="2" class="text-right alignMiddle fontSize14 padding_right10">使用分機 <input type="text"  class=" fontSize14 width30" value="139" /></th>
+                          </tr>
+                        </thead>
+                    
+                        <tr class="bg_color_white">
+                            <td class=" padding10 fontSize14 text-left alignMiddle">
+                            <div class=" width200 margin5"><input type="radio" name="group1" id="item_1" /><label for="item_1" class="fontSize12"> <span class="mobilePhoneBtn lineHeight24"></span>行動電話:0912111222</label></div>
+                            <div class=" width200 margin5"><input type="radio" name="group1" id="item_2" /><label for="item_2" class="fontSize12"> <span class="homePhoneBtn lineHeight24"></span>住家電話:0912111222</label></div>
+                            <div class=" width200 margin5"><input type="radio" name="group1" id="item_3" /><label for="item_3" class="fontSize12"> <span class="otherPhoneBtn lineHeight24"></span>其他電話:0912111222</label></div>
+                            
+                            </td>
+                            <td align="center" valign="middle" class="padding5 fontSize14 text-center alignMiddle" style="border-left:solid 1px;"><a href="#" class="btn btn-danger">Dial</a></td>
+                        </tr>
+                       
+                    </table>
+                   
+        </div>
+        
+         <abbr rel="tooltip" alt="查看语言程度分析"><span><a href="#"><span class="smsBtn_disabled lineHeight30"></span></a></span></abbr>
+        
+    </div>
+    
+    <div class="col11 float_left">
+        <!-- 內容頁籤區塊 start -->
+        <div class=' margin_top20 col11'>
+            <div class="Tabs">
+                <ul class="TabsULPopup">
+                    <li class="tabBtnClick">名单资讯</li>
+                    <li class="tabBtn">后续追踪</li>
+                    <li class="tabBtn">业务追踪明细</li>
+                    <li class="tabBtn">客戶背景</li>
+                </ul>
+            </div>
+            <div class="TabsPopup_page"></div>
+            <div class="TabsPopup_page"></div>
+            <div class="TabsPopup_page"></div>
+            <div class="TabsPopup_page"></div>
+        </div>
+        <!-- 內容頁籤區塊 end -->
+    </div>
+</div></body>
+
+</html>

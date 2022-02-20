@@ -1,0 +1,383 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../手機版首頁_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:401px;
+    top:104px;
+    width:881px;
+    height:76px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:887px;
+    height:82px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:877px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../手機版首頁_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:413px;
+    top:109px;
+    width:197px;
+    height:63px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:197px;
+    height:63px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:193px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../手機版首頁_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:413px;
+    top:1386px;
+    width:862px;
+    height:104px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:868px;
+    height:110px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:44px;
+    width:858px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:457px;
+    top:1402px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:631px;
+    top:1402px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:816px;
+    top:1401px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:1002px;
+    top:1377px;
+    width:280px;
+    height:53px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:701px;
+    top:1449px;
+    width:231px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_container {
+    position:absolute;
+    left:403px;
+    top:190px;
+    width:876px;
+    height:410px;
+}
+
+#u11_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:876px;
+    height:410px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:197px;
+    width:872px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_line {
+    background-image: url('../手機版首頁_files/u13_line.png');
+}
+
+.u13_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:876px;
+    height:3px;
+}
+
+.u13 {
+    position:absolute;
+    left:399px;
+    top:610px;
+    width:876px;
+    height:10px;
+    
+}
+
+.u14_normal {
+    background-image: url('../手機版首頁_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:460px;
+    top:750px;
+    width:241px;
+    height:250px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:241px;
+    height:250px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:117px;
+    width:237px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../手機版首頁_files/u14_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:727px;
+    top:750px;
+    width:241px;
+    height:250px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:241px;
+    height:250px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:117px;
+    width:237px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../手機版首頁_files/u14_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:460px;
+    top:1030px;
+    width:241px;
+    height:250px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:241px;
+    height:250px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:117px;
+    width:237px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../手機版首頁_files/u14_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:726px;
+    top:1030px;
+    width:241px;
+    height:250px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:241px;
+    height:250px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:117px;
+    width:237px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

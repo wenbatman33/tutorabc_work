@@ -1,0 +1,1872 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0 {
+    position:absolute;
+    left:46px;
+    top:26px;
+    width:150px;
+    height:50px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u1 {
+    position:absolute;
+    left:344px;
+    top:30px;
+    width:369px;
+    height:30px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 22px;
+    color:#CCCCCC;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u2_normal {
+    background-image: url('../天地及導航列_files/u8_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:728px;
+    top:32px;
+    width:70px;
+    height:26px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:32px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:66px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../天地及導航列_files/u10_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:8px;
+    top:2542px;
+    width:1374px;
+    height:54px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1380px;
+    height:60px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:19px;
+    width:1370px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../天地及導航列_files/u12_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:1107px;
+    top:24px;
+    width:127px;
+    height:42px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:133px;
+    height:48px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:123px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../天地及導航列_files/u14_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:980px;
+    top:24px;
+    width:110px;
+    height:42px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:48px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:106px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:348px;
+    top:68px;
+    width:352px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../天地及導航列_files/u17_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:43px;
+    top:106px;
+    width:1344px;
+    height:64px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1350px;
+    height:70px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:1340px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_line {
+    background-image: url('../天地及導航列_files/u19_line.png');
+}
+
+.u13_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:44px;
+}
+
+.u13 {
+    position:absolute;
+    left:200px;
+    top:114px;
+    width:10px;
+    height:44px;
+    
+}
+
+.u14_line {
+    background-image: url('../天地及導航列_files/u20_line.png');
+}
+
+.u14_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:44px;
+}
+
+.u14 {
+    position:absolute;
+    left:392px;
+    top:114px;
+    width:10px;
+    height:44px;
+    
+}
+
+.u15 {
+    position:absolute;
+    left:76px;
+    top:118px;
+    width:150px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:436px;
+    top:123px;
+    width:150px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:250px;
+    top:119px;
+    width:150px;
+    height:37px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u18 {
+    position:absolute;
+    left:60px;
+    top:112px;
+    width:100px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+#u19 {
+    position:absolute;
+    left:221px;
+    top:112px;
+    width:150px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+#u20 {
+    position:absolute;
+    left:427px;
+    top:112px;
+    width:163px;
+    height:50px;
+    ;
+    ;
+    ;
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u21 {
+    position:absolute;
+    left:1248px;
+    top:39px;
+    width:136px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 22px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u22 {
+    position:absolute;
+    left:52px;
+    top:2558px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:224px;
+    top:2558px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:409px;
+    top:2557px;
+    width:150px;
+    height:28px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:1107px;
+    top:2534px;
+    width:280px;
+    height:53px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../3、問答頁_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:46px;
+    top:247px;
+    width:973px;
+    height:1313px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:979px;
+    height:1319px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:648px;
+    width:969px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../3、問答頁_files/u29_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:1049px;
+    top:436px;
+    width:325px;
+    height:94px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:331px;
+    height:100px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:321px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../3、問答頁_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:1049px;
+    top:558px;
+    width:325px;
+    height:382px;
+}
+
+#u31_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:331px;
+    height:388px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:183px;
+    width:321px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:1079px;
+    top:582px;
+    width:289px;
+    height:50px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34 {
+    position:absolute;
+    left:1096px;
+    top:661px;
+    width:235px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u35 {
+    position:absolute;
+    left:1095px;
+    top:708px;
+    width:236px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u36 {
+    position:absolute;
+    left:1095px;
+    top:754px;
+    width:75px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u37 {
+    position:absolute;
+    left:1180px;
+    top:753px;
+    width:151px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u38_normal {
+    background-image: url('../3、問答頁_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:1140px;
+    top:795px;
+    width:127px;
+    height:26px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:133px;
+    height:32px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:123px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:1080px;
+    top:842px;
+    width:255px;
+    height:46px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../3、問答頁_files/u41_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:100px;
+    top:502px;
+    width:120px;
+    height:60px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:66px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../3、問答頁_files/u43_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:220px;
+    top:502px;
+    width:120px;
+    height:60px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:66px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../3、問答頁_files/u43_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:340px;
+    top:502px;
+    width:120px;
+    height:60px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:66px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../3、問答頁_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:100px;
+    top:280px;
+    width:900px;
+    height:200px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:906px;
+    height:206px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:92px;
+    width:896px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49 {
+    position:absolute;
+    left:121px;
+    top:338px;
+    width:399px;
+    height:87px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 18px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u50_normal {
+    background-image: url('../3、問答頁_files/u50_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:415px;
+    top:435px;
+    width:105px;
+    height:27px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:33px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52 {
+    position:absolute;
+    left:121px;
+    top:298px;
+    width:260px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:263px;
+    top:436px;
+    width:136px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 22px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u54 {
+    position:absolute;
+    left:114px;
+    top:434px;
+    width:260px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55 {
+    position:absolute;
+    left:590px;
+    top:339px;
+    width:360px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56_normal {
+    background-image: url('../3、問答頁_files/u50_normal.png');
+}
+
+.u56_container {
+    position:absolute;
+    left:820px;
+    top:431px;
+    width:105px;
+    height:27px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:33px;
+}
+
+.u57 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58 {
+    position:absolute;
+    left:590px;
+    top:298px;
+    width:260px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../3、問答頁_files/u43_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:460px;
+    top:502px;
+    width:120px;
+    height:60px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:66px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:116px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../3、問答頁_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:1115px;
+    top:244px;
+    width:205px;
+    height:50px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:211px;
+    height:56px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:201px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../3、問答頁_files/u29_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:1049px;
+    top:317px;
+    width:325px;
+    height:94px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:331px;
+    height:100px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:321px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../3、問答頁_files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:100px;
+    top:594px;
+    width:105px;
+    height:27px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:33px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../3、問答頁_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:215px;
+    top:594px;
+    width:105px;
+    height:27px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:33px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../3、問答頁_files/u67_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:330px;
+    top:594px;
+    width:105px;
+    height:27px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:33px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../3、問答頁_files/u67_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:445px;
+    top:594px;
+    width:105px;
+    height:27px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:33px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73 {
+    position:absolute;
+    left:206px;
+    top:698px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74 {
+    position:absolute;
+    left:208px;
+    top:725px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../3、問答頁_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:112px;
+    top:693px;
+    width:70px;
+    height:52px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../3、問答頁_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:112px;
+    top:769px;
+    width:70px;
+    height:52px;
+}
+
+#u77_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../3、問答頁_files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:112px;
+    top:842px;
+    width:70px;
+    height:52px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../3、問答頁_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:112px;
+    top:920px;
+    width:70px;
+    height:52px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../3、問答頁_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:112px;
+    top:990px;
+    width:70px;
+    height:52px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../3、問答頁_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:112px;
+    top:1060px;
+    width:70px;
+    height:52px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../3、問答頁_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:112px;
+    top:1130px;
+    width:70px;
+    height:52px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../3、問答頁_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:112px;
+    top:1210px;
+    width:70px;
+    height:52px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../3、問答頁_files/u91_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:112px;
+    top:1290px;
+    width:70px;
+    height:52px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_normal {
+    background-image: url('../3、問答頁_files/u93_normal.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:112px;
+    top:1368px;
+    width:70px;
+    height:52px;
+}
+
+#u93_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:58px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:66px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95 {
+    position:absolute;
+    left:55px;
+    top:190px;
+    width:150px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96 {
+    position:absolute;
+    left:208px;
+    top:774px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97 {
+    position:absolute;
+    left:210px;
+    top:801px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98 {
+    position:absolute;
+    left:208px;
+    top:844px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:210px;
+    top:871px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100 {
+    position:absolute;
+    left:210px;
+    top:920px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101 {
+    position:absolute;
+    left:212px;
+    top:947px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:209px;
+    top:994px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103 {
+    position:absolute;
+    left:211px;
+    top:1021px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104 {
+    position:absolute;
+    left:209px;
+    top:1066px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105 {
+    position:absolute;
+    left:211px;
+    top:1093px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106 {
+    position:absolute;
+    left:207px;
+    top:1135px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107 {
+    position:absolute;
+    left:209px;
+    top:1162px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:209px;
+    top:1213px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:211px;
+    top:1240px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110 {
+    position:absolute;
+    left:208px;
+    top:1293px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111 {
+    position:absolute;
+    left:210px;
+    top:1320px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:208px;
+    top:1368px;
+    width:636px;
+    height:26px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:210px;
+    top:1395px;
+    width:319px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../3、問答頁_files/u114_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:208px;
+    top:1460px;
+    width:494px;
+    height:60px;
+}
+
+#u114_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:494px;
+    height:60px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:490px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

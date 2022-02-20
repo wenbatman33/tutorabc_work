@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/IMS_BD_Style.css"/>
+
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/tip.js"></script>
+
+</head>
+<body class="bg-color-lightgary">
+<div class="container">
+    <H3 class="margin10">出席未付订</H3>
+    <div class="colauto margin10 padding10 bg_color_llightblue">
+    <table width="100%" border="0" cellpadding="6" cellspacing="5">
+        <tr>
+            <td height="40" class="text-left alignMiddle"> <div class="width90 fontSize14 lineHeight30 float_left text-right">负责业务:</div><span class="fontSize14">
+                <select class="width80" name="select2">
+                  <option value="--- 組別 ---">--- 組別 ---</option>
+                  <option value="CAS1">CAS1</option>
+                  <option value="EC1">EC1</option>
+                  <option value="EC2">EC2</option>
+                  <option value="RS">RS</option>
+                  <option value="TSR1">TSR1</option>
+                  <option value="TSR2">TSR2</option>
+                  <option selected="selected" value="TSR3">TSR3</option>
+                  <option value="TSR4">TSR4</option>
+                  <option value="TSR5">TSR5</option>
+                  <option value="TSR6">TSR6</option>
+                  <option value="TSR7">TSR7</option>
+                  <option value="TSR8">TSR8</option>
+                  <option value="TSR9">TSR9</option>
+                  <option value="TSR10">TSR10</option>
+                  <option value="TSR11">TSR11</option>
+                  <option value="TSR12">TSR12</option>
+                </select>
+                <select class="width120" name="select">
+                  <option value="Ashton Sung">Ashton Sung</option>
+                  <option value="Alina Zhang">Alina Zhang</option>
+                  <option value="Amanad Si">Amanad Si</option>
+                  <option value="Angela Ji">Angela Ji</option>
+                  <option value="Ashton Sung">Ashton Sung</option>
+                  <option value="Catherine.l Li">Catherine.l Li</option>
+                  <option value="Cici Wei">Cici Wei</option>
+                  <option value="Dale Sun">Dale Sun</option>
+                  <option value="Evan Sun">Evan Sun</option>
+                  <option value="Gina Wang">Gina Wang</option>
+                  <option value="Laura Lan">Laura Lan</option>
+                  <option value="Lisa Hou">Lisa Hou</option>
+                  <option selected="selected" value="Paul Zhang">Paul Zhang</option>
+                </select>
+下次联络时间:</span><span class="fontSize14">
+          <span class="fontSize14">
+          <input  type="text" id="datepicker" /> to <input type="text" id="datepicker2" />
+            </span></span></td>
+        </tr>
+        <tr>
+            <td height="40" class="text-left alignMiddle"><div class="width90 fontSize14 lineHeight30 float_left text-right">Demo时间:</div><span class="fontSize14">
+            <span class="fontSize14">
+            <input  type="text" id="datepicker" /> to <input type="text" id="datepicker2" />
+            </span></span></td>
+        </tr>
+    </table>
+    
+    </div>
+    <div class="col-offset1"><a href="#" class="btn btn-primary">送出</a></div>
+    
+  <div class="colauto margin10"><hr /></div>
+  <div class="colauto margin10">
+    <div class="col11 fontSize14">
+    <span>Total：</span><span class="color_red">3</span></div>
+    <table width="100%" cellpadding="0" cellspacing="0" class="table_bordered">
+      <thead>
+        <tr>
+            <th class="text-center alignMiddle">客户姓名</th>
+            <th class="text-center alignMiddle">负责业务</th>
+            <th class="text-center alignMiddle">下次应联络时间</th>
+            <th class="text-center alignMiddle">上次Demo时间</th>
+			 <th class="text-center alignMiddle">最近一次联络记录</th>
+            <th class="text-center alignMiddle">后续处理</th>
+            <th class="text-center alignMiddle">标记</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="odd">
+                <td class="text-center alignMiddle">王名人<br />Famous Wang</td>
+                <td class="text-center alignMiddle">Paul Zhang <br />
+                TSR3</td>
+                <td class="text-center alignMiddle">2013/08/10 14:00</td>
+                <td class="text-center alignMiddle">2013/08/08 14:03<br />
+                距今已<span class="color_red"> 2 </span>天</td>
+                <td class="text-left alignMiddle"> 有做业务解说，可追踪<br />
+<span class="color_gray fontSize12">2013/08/10 14:00</span></td>
+				  <td class="text-center alignMiddle"><a href="#"><img src="images/followUp.png" width="24" height="24"  alt=""/></a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag"></span></a></td>
+            </tr>
+            <tr class="even">
+                <td class="text-center alignMiddle">王名人<br />Famous Wang</td>
+                <td class="text-center alignMiddle">Paul Zhang <br />
+                TSR3</td>
+                <td class="text-center alignMiddle">2013/08/10 14:00</td>
+                <td class="text-center alignMiddle">2013/08/08 14:03<br />
+                距今已<span class="color_red"> 2 </span>天</td>
+                <td class="text-left alignMiddle"> 有做业务解说，可追踪<br />
+<span class="color_gray fontSize12">2013/08/10 14:00</span></td>
+				  <td class="text-center alignMiddle"><a href="#"><img src="images/followUp.png" width="24" height="24"  alt=""/></a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag_hide"></span></a></td>
+            </tr>
+            <tr class="odd">
+                <td class="text-center alignMiddle"><abbr rel="tooltip" alt="Junior客戶"><span class="jrIcon"></span></abbr>王名人<br />Famous Wang</td>
+                <td class="text-center alignMiddle">Paul Zhang<br />
+TSR3</td>
+                <td class="text-center alignMiddle">2013/08/10 14:00</td>
+                <td class="text-center alignMiddle">2013/08/08 14:03<br />
+              距今已<span class="color_red"> 2 </span>天</td>
+                <td class="text-left alignMiddle"> 有做业务解说，可追踪<br />
+<span class="color_gray fontSize12">2013/08/10 14:00</span></td>
+				  <td class="text-center alignMiddle"><a href="#"><img src="images/followUp.png" width="24" height="24"  alt=""/></a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag"></span></a></td>
+            </tr>
+            <tr class="even">
+                <td class="text-center alignMiddle">王名人<br />Famous Wang</td>
+                <td class="text-center alignMiddle">Paul Zhang <br />
+                TSR3</td>
+                <td class="text-center alignMiddle">2013/08/10 14:00</td>
+                <td class="text-center alignMiddle">2013/08/08 14:03<br />
+                距今已<span class="color_red"> 2 </span>天</td>
+                <td class="text-left alignMiddle"> 有做业务解说，可追踪<br />
+<span class="color_gray fontSize12">2013/08/10 14:00</span></td>
+				  <td class="text-center alignMiddle"><a href="#"><img src="images/followUp.png" width="24" height="24"  alt=""/></a></td>
+                <td class="text-center alignMiddle"><a href="#"><span class="flag"></span></a></td>
+            </tr>
+            
+          
+      <tbody>
+    </table>
+    <div class="pagination pagination-right">
+    <ul>
+      <li class="disabled"><a href="#">‹‹</a></li>
+      <li class="disabled"><a href="#">‹</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li><a href="#">›</a></li>
+      <li><a href="#">››</a></li>
+    </ul>
+  </div>
+  </div>
+    
+    
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+  });
+</script>
+</body>
+</html>
