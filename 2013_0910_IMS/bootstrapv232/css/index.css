@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.topContent{ margin-bottom:0px; padding:10px 0;}
+.loginArea .pull-right input[class|="span2"]{ border:none; background-color:#dd9191; color:#ffffff;}
+.loginArea .checkinTime{ line-height:1.2; padding-right:4px;}
+.checkArea ul.inline li a.extensionBtn{ width:24px; height:24px; display:block; background:url(../images/icons.png) no-repeat 0 0; float:left;}
+.checkArea ul.inline li a.messageCheckBtn{width:24px; height:24px; display:block; background:url(../images/icons3.png) no-repeat 0 0; float:left;}
+.checkArea ul.inline li a+a{ margin-left:2px;}
+
+.announcement-section .scrollbar table td{ padding-left:0; padding-right:0;}
+.announcement-section .scrollbar table td.title{ width:236px;}
+
+.media-section .scrollbar table td.media{ width:110px;}
+.media-section div.media{ width:110px; padding:0 5px;}
+.media-section .scrollbar table td.title{ width:330px;}
+.media-section div.title{ width:330px; padding:0 5px;}
+
+.search-section input[type|="text"]{ height:auto; line-height:1.5; margin-bottom:3px;}
+
+.note-section ul li, .todo-section ul li, .bd-section ul li, .testroom-section ul li, .proposal-section ul li{ background:url(../images/ico_dot.png) no-repeat left 50%; padding-left:13px; line-height:1.8;}
+.note-section ul li a, .bd-section ul li a, .testroom-section ul li a, .proposal-section ul li a, .customer-section dl dd a{ color:#666666;}
+.todo-section ul li a{ color:#ba2323;}
+
+.employee-section dl dt, .customer-section dl dt{ color:#ba2323; margin-bottom:10px;}
+.employee-section dl dd, .customer-section dl dd{ color:#666666; margin-bottom:10px;}

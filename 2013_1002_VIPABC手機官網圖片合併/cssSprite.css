@@ -1,0 +1,25 @@
+
+/* Start Sprite Master CSS */
+.btn_back,.title_bg2,.header_line,.icon_session,.list_in,.p_good_phrase_num,.btn_r,.btn_r2,.btn_w,.item_bg,.title_bg,.btn_b_g,.btn_b_r,.month_day_on_order,.month_day_on_today,.header_bg,.month_day_on,.month_today,.month_bg,.list_bg,.list_time{display: inline-block;background-repeat: no-repeat;background-image: url('cssSprite.png');}
+.btn_back{background-position:0px 0px;width:0px;height:0px;}
+.title_bg2{background-position:-10px 0px;width:0px;height:0px;}
+.header_line{background-position:-20px 0px;width:2px;height:7px;}
+.icon_session{background-position:-32px 0px;width:10px;height:15px;}
+.list_in{background-position:-52px 0px;width:24px;height:36px;}
+.p_good_phrase_num{background-position:-86px 0px;width:47px;height:47px;}
+.btn_r{background-position:-143px 0px;width:170px;height:55px;}
+.btn_r2{background-position:0px -65px;width:170px;height:55px;}
+.btn_w{background-position:-180px -65px;width:170px;height:55px;}
+.item_bg{background-position:-360px -65px;width:42px;height:58px;}
+.title_bg{background-position:-412px -65px;width:25px;height:73px;}
+.btn_b_g{background-position:0px -148px;width:87px;height:82px;}
+.btn_b_r{background-position:-97px -148px;width:87px;height:82px;}
+.month_day_on_order{background-position:-194px -148px;width:200px;height:90px;}
+.month_day_on_today{background-position:0px -248px;width:200px;height:90px;}
+.header_bg{background-position:-210px -248px;width:6px;height:91px;}
+.month_day_on{background-position:-226px -248px;width:5px;height:100px;}
+.month_today{background-position:-241px -248px;width:6px;height:100px;}
+.month_bg{background-position:-257px -248px;width:10px;height:200px;}
+.list_bg{background-position:-277px -248px;width:10px;height:250px;}
+.list_time{background-position:-297px -248px;width:15px;height:300px;}
+/* End Sprite Master CSS */

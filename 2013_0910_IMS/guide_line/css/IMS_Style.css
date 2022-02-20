@@ -1,0 +1,130 @@
+@charset "utf-8";
+html{	width:100%;	height:100%;	font-family:Arial,"蘋果儷中黑","Apple LiGothic Medium","微軟雅黑","Microsoft YaHei","宋體","微軟正黑體","Microsoft JhengHei";	overflow-x:hidden;}
+body {margin:0 auto; width:100%; background-color:#ededed;}
+
+
+.wrapTGroup{min-width: 1280px;  width:100%; background:#333333; height:32px; position:fixed; z-index: 1;}
+.wrapTGroup a{ color:#FFFFFF; font-size:12px; text-decoration:none;}
+.wrapTGroup a:hover{ color:#FFFFFF; font-size:12px; text-decoration:underline;}
+.wrapTGroup_block{width:100%; padding:0 10px 0 10px; height:32px; line-height:32px; vertical-align:middle; color:#FFFFFF; font-size:12px; }
+
+.wrapTGHead{min-width: 1280px; width:100%; height:190px; background:#ba2323;}
+.wrapTGHead_block{ width:265px; height:77px; margin:0 auto;  padding:70px 57px 40px 57px;}
+
+.wrapNav{ min-width: 1280px; width:100%; height:40px; z-index: 2;}
+.wrapNav_block{height:40px; margin:0 auto; padding:0 10px 0 10px;  background:#FFFFFF; line-height:40px; vertical-align:middle;  font-size:11px; color:#333;}
+.wrapNav_block a{ font-size:14px; color:#333; text-decoration:none;}
+.wrapNav_block a:hover{ font-size:14px; color:#333; text-decoration:underline;}
+.IMSSearch{ position:relative; float:right; line-height: 40px; height: 40px;  vertical-align:middle; margin: 0 0 0 30px;}
+.iSearch{ border:none; height:24px; width:150px; background:url(../images/iSearch.png) no-repeat 125px 6px;; background-color : #eee; padding:3px;}
+
+
+.wrapContainer { min-width: 1280px; width:100%; min-height:800px;}
+.wrapSubNav{ position: relative; width:12%; height: auto; margin: 10px; float: left; background: #FFF;}
+.wrapContent{ position: relative; width:84%; height: auto; margin: 10px; float: left;}
+.wrapFooter{}
+
+a{text-decoration:none;}
+a:hover,a:focus{text-decoration:underline;}
+
+.col0,.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11 { position: relative; float: left;}
+.col0{width:8.333333333333332%;}
+.col1{width:16.666666666666664%;}
+.col2{width:25%;}
+.col3{width:33.33333333333333%;}
+.col4{width:41.66666666666667%;}
+.col5{width:50%}
+.col6{width:58.333333333333336%;}
+.col7{width:66.66666666666666%;}
+.col8{width:75%;}
+.col9{width:83.33333333333334%;}
+.col10{width:91.66666666666666%;}
+.col11{width:100%;}
+
+.col-offset0 {margin-left: 0;}
+.col-offset1 {margin-left: 8.333333333333332%;}
+.col-offset2 {margin-left: 16.666666666666664%;}
+.col-offset3 {margin-left: 25%;}
+.col-offset4 {margin-left: 33.33333333333333%;}
+.col-offset5 {margin-left: 41.66666666666667%;}
+.col-offset6 {margin-left: 50%;}
+.col-offset7 {margin-left: 58.333333333333336%;}
+.col-offset8 {margin-left: 66.66666666666666%;}
+.col-offset9 {margin-left: 75%;}
+.col-offset10 {margin-left: 83.33333333333334%;}
+.col-offset11 {margin-left: 91.66666666666666%;}
+
+.color_black{color:#000;}
+.color_white{color:#fff;}
+.color_darkGray{color:#333;}
+.color_gray{color:#666;}
+.color_lightGray{color:#ccc;}
+.color_red{color:#aa0000;}
+.color_darkBlue{color:#2980b9;}
+.color_lightBlue{color:#3498db;}
+.color_darkGreen{color:#52be7f;}
+.color_lightGreen{color:#2ecc71;}
+.color_darkOrange{color:#d35400;}
+.color_lightOrange{color:#f39c12;}
+.color_darkPurple{color:#8e44ad;}
+.color_lightPurple{color:#9b59b6;}
+
+.bg-black{ background-color:#000000;}
+.bg-white{ background-color:#ffffff;}
+.bg-red{ background-color:#ba2323;}
+.bg-pink{ background-color:#f2dede}
+.bg-yellow{ background-color:#fcf8e3;}
+.bg-green{ background-color:#dff0d8;}
+.bg-blue{ background-color:#d9edf7;}
+.bg-darkGray{background-color:#333;}
+.bg-gray{background-color:#666;}
+.bg-lightGray{background-color:#ccc;}
+
+table{max-width:100%;background-color:#ffffff;border-collapse:collapse;border-spacing:0; text-align:center; vertical-align:middle;}
+
+
+/*fixd Metro UI*/
+.metro{ height: auto; overflow: hidden; position: relative; width:100%; margin-bottom:1.5em;}
+.metro .titleTile{ float:left; color: #ffffff; width:107px; height:102px; margin:1px 1px 1px 0;}
+.metro .titleTile span.tile-label{ font-size: 18px; position: absolute; top:25%; text-align:center; color:#ffffff; width:102px;}
+.metro .metro-section{ float: left; width:83px; height:104px; overflow: hidden;}
+.metro .metro-section a.tile{ background-color: #ffffff; color: #70726d; cursor: pointer; display: block; float: left; width:50px; height: 50px; margin:1px; overflow: hidden; position: relative; text-decoration:none;}
+.metro .metro-section a.tile small{ position:absolute; top:0; right:0; background-color:#ff0000; padding:1px; color:#ffffff; min-width:11px; min-height:11px; text-align:center; font-size:9px;}
+.metro .metro-section a:hover.tile{ background-color:#717171; color:#ffffff;}
+.metro .metro-section a.tile-double{ width:82px;}
+.metro .metro-section a.tile-double-vertical{ height:102px;}
+.metro .metro-section a.tile span.tile-label{ font-size: 13px; position: absolute; top:36%; text-align:center; width:100%;}
+.metro .metro-section a.tile span.tile-two-line{ top:10%;}
+.metro .metro-section a.active{ background-color:#717171; color:#ffffff;}
+.metro .metro-section a.disabled{ color:#b7b5b6; cursor:default;}
+.metro .metro-section a:hover.disabled{ background-color: #ffffff; color:#b7b5b6; cursor:default;}
+
+.metro .metro-section2x{ float: left; width:166px; height:104px; overflow: hidden;}
+.metro .metro-section2x a.tile{ background-color: #ffffff; color: #70726d; cursor: pointer; display: block; float: left; width:50px; height: 50px; margin:1px; overflow: hidden; position: relative; text-decoration:none;}
+.metro .metro-section2x a.tile small{ position:absolute; top:0; right:0; background-color:#ff0000; padding:1px; color:#ffffff; min-width:11px; min-height:11px; text-align:center; font-size:9px;}
+.metro .metro-section2x a:hover.tile{ background-color:#717171; color:#ffffff;}
+.metro .metro-section2x a.tile-double{ width:165px;}
+.metro .metro-section2x a.tile-double-vertical{ height:102px;}
+.metro .metro-section2x a.tile span.tile-label{ font-size: 13px; position: absolute; top:36%; text-align:center; width:100%;}
+.metro .metro-section2x a.tile span.tile-two-line{ top:10%;}
+.metro .metro-section2x a.active{ background-color:#717171; color:#ffffff;}
+.metro .metro-section2x a.disabled{ color:#b7b5b6; cursor:default;}
+.metro .metro-section2x a:hover.disabled{ background-color: #ffffff; color:#b7b5b6; cursor:default;}
+
+
+/*fluid Metro UI*/
+.metro-fluid{ height: auto; overflow: hidden; position: relative; width:100%; margin-bottom:1.5em; min-width:940px;}
+.metro-fluid .titleTile{ float:left; background-color:#ba2323; color: #ffffff; width:11%; height:102px; margin:1px 1px 1px 0;}
+.metro-fluid .titleTile span.tile-label{ font-size: 18px; position: absolute; top:23%; text-align:center; color:#ffffff; width:11%;}
+.metro-fluid .metro-section{ float: left; width:11%; height:104px; overflow: hidden;}
+.metro-fluid .metro-section a.tile{ background-color: #ffffff; color: #70726d; cursor: pointer; display: block; float: left; width:49%; height: 50px; margin:1px; overflow: hidden; position: relative; text-decoration:none;}
+.metro-fluid .metro-section a.tile small{ position:absolute; top:0; right:0; background-color:#ff0000; padding:1px; color:#ffffff; min-width:11px; min-height:11px; text-align:center; font-size:9px;}
+.metro-fluid .metro-section a:hover.tile{ background-color:#717171; color:#ffffff;}
+.metro-fluid .metro-section a.tile-double{ width:98%;}
+.metro-fluid .metro-section a.tile-double-vertical{ height:102px;}
+.metro-fluid .metro-section a.tile span.tile-label{ font-size: 13px; position: absolute; top:34%; text-align:center; width:100%;}
+.metro-fluid .metro-section a.tile span.tile-two-line{ top:10%;}
+.metro-fluid .metro-section a.active{ background-color:#717171; color:#ffffff;}
+.metro-fluid .metro-section a.disabled{ color:#b7b5b6; cursor:default;}
+.metro-fluid .metro-section a:hover.disabled{ background-color: #ffffff; color:#b7b5b6; cursor:default;}
+

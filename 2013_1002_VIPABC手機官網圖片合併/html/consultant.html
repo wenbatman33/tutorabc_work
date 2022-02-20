@@ -1,0 +1,379 @@
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width; initial-scale=0.5; minimum-scale=0.25; maximum-scale=1.0; user-scalable=1;" />
+
+    <title>VIPABC真人在线‧ 实时互动英语在线学习系统</title>
+
+    <link href="css/text.Mobile.css" rel="stylesheet" type="text/css" />
+
+    
+
+</head>
+
+<body>
+
+    <div class="mainframe" id="mainframe">
+
+        <!--Header START-->
+
+<div data-role="header" class="header">
+
+    <div class="logo">
+
+        <a href="/aspx/portal/Home/IndexMobile">
+
+            <span  class="Mobilelogo"></span></a></div>
+
+
+
+    <div class="icon-header">
+
+        <a href="/aspx/portal/Mobile/menu">
+
+            <span  class="icon_menu"></span></a></div>
+
+    <div class="clear">
+
+    </div>
+
+</div>
+
+<!--Header END-->
+
+        <div class="mainframe">
+
+    <!--Title START-->
+
+    <div class="title">
+
+        顾问推荐</div>
+
+    <script type="text/javascript">
+
+        function ShowConsultant(id) {
+
+
+
+            if (id == "div1") {
+
+                document.getElementById("div1").style.display = 'block';
+
+                document.getElementById('link1').innerHTML = "<iframe width='100%' height='420' src='http://player.youku.com/embed/XNTk2ODE1MDIw' frameborder='0' allowfullscreen></iframe>";
+
+                document.getElementById("div2").style.display = 'none';
+
+                document.getElementById('link2').innerHTML = '';
+
+                document.getElementById("div3").style.display = 'none';
+
+                document.getElementById('link3').innerHTML = '';
+
+            }
+
+            if (id == "div2") {
+
+                document.getElementById("div1").style.display = 'none';
+
+                document.getElementById('link1').innerHTML = "";
+
+                document.getElementById("div2").style.display = 'block';
+
+                document.getElementById('link2').innerHTML = "<iframe width='100%' height='420' src='http://player.youku.com/embed/XNTk4MDQ0MjEy' frameborder='0' allowfullscreen></iframe>";
+
+                document.getElementById("div3").style.display = 'none';
+
+                document.getElementById('link3').innerHTML = '';
+
+            }
+
+            if (id == "div3") {
+
+                document.getElementById("div1").style.display = 'none';
+
+                document.getElementById('link1').innerHTML = '';
+
+                document.getElementById("div2").style.display = 'none';
+
+                document.getElementById('link2').innerHTML = '';
+
+                document.getElementById("div3").style.display = 'block';
+
+                document.getElementById('link3').innerHTML = "<iframe width='100%' height='420' src='http://player.youku.com/embed/XNTk4MDQ2MzA0' frameborder='0' allowfullscreen></iframe>";
+
+            }
+
+
+
+        }
+
+    </script>
+
+    <div id="back" class="back">
+
+    </div>
+
+    <!--Title END-->
+
+    <div id="div1">
+
+        <div class="title-item">
+
+            Alan Missroon III</div>
+
+        <div id="link1">
+
+            <iframe width="100%" height="420" src="http://player.youku.com/embed/XNTk2ODE1MDIw"
+
+                frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+    <div id="div2" style="display: none;">
+
+        <div class="title-item">
+
+            Janelle Harrington</div>
+
+        <div id="link2">
+
+            <iframe width="100%" height="420" src="http://player.youku.com/embed/XNTk4MDQ0MjEy"
+
+                frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+    <div id="div3" style="display: none;">
+
+        <div class="title-item">
+
+            Alain Deschamps</div>
+
+        <div id="link3">
+
+            <iframe width="100%" height="420" src="http://player.youku.com/embed/XNTk4MDQ2MzA0"
+
+                frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+    <!--0 START=沒有Alan時才會出現這行-->
+
+    <div id="a1" style="cursor: pointer" onclick="ShowConsultant('div1');">
+
+        <div class="consultant">
+
+            <div class="consultant-icon">
+
+                <h1>
+
+                    Alan Missroon III</h1>
+
+                <p>
+
+                    来自美国，很喜欢教英文也很喜欢烹饪...</p>
+
+                <p>
+
+                    评分<span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_1" ></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--0 END-->
+
+    <!--1 START-->
+
+    <div id="a2" style="cursor: pointer" onclick="ShowConsultant('div2');">
+
+        <div class="consultant">
+
+            <div class="consultant-icon">
+
+                <h1>
+
+                    Janelle Harrington</h1>
+
+                <p>
+
+                    来自美国，大学时主修TESOL，专门教...</p>
+
+                <p>
+
+                    评分<span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_1" ></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--1 END-->
+
+    <!--2 START-->
+
+    <div id="a3" style="cursor: pointer" onclick=" ShowConsultant('div3');">
+
+        <div class="consultant">
+
+            <div class="consultant-icon">
+
+                <h1>
+
+                    Alain Deschamps</h1>
+
+                <p>
+
+                    來自南非，刚进入职场时是一位律师...</p>
+
+                <p>
+
+                    评分<span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_2" ></span><span class="icon_rating_1" ></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--2 END-->
+
+    <!--Other END-->
+
+</div>
+
+<!--List END-->
+
+<input id="fromwhere" name="fromwhere" type="hidden" value="Hxzhi" />
+
+<div class="mobile-form">
+
+    <img src="http://www.vipabc.com/aspx/portal/Content/images/mobile/form_p.png" width="100%">
+
+    <table cellpadding="0" cellspacing="0" class="placement">
+
+        <tr>
+
+            <td class="left">
+
+                姓 名
+
+            </td>
+
+            <td class="right">
+
+                <input type="text" name="name" id="name" class="input-1" maxlength="30" />
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="left">
+
+                手 机
+
+            </td>
+
+            <td class="right">
+
+                <input type="text" name="cphone" id="cphone" class="input-1" maxlength="15" />
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="left">
+
+                E-Mail
+
+            </td>
+
+            <td class="right">
+
+                <input type="text" name="mail" id="mail" class="input-1" maxlength="60" />
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="right2" colspan="2">
+
+                <input type="submit" value="送出" class="btn-r2" onclick="submitData();" />
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<script src="http://www.vipabc.com/aspx/portal/Scripts/javascript/error_handle.js" type="text/javascript"></script>
+
+<script src="http://www.vipabc.com/aspx/portal/Scripts/javascript/verify.js" type="text/javascript"></script>
+
+<!--Form END-->
+
+
+
+        <!--Footer START-->
+
+<div class="footer">
+
+    <div class="c-white">
+
+        Copyright © VIPABC All Rights Reserved.</div>
+
+    
+
+
+
+
+
+手机版 <span class="small c-gray">&nbsp;|&nbsp;&nbsp;&nbsp;</span><a href="/aspx/portal/?pc=1">电脑版</a>
+
+
+
+</div>
+
+<!--Footer END-->
+
+    </div>
+
+	<script src="http://www.vipabc.com/aspx/portal/Scripts/jquery-1.5.1.min.js" type="text/javascript"></script>
+
+    <script src="http://www.vipabc.com/aspx/portal/Scripts/mobile/jquery.common-1.2.js" type="text/javascript"></script>
+
+    <script src="http://www.vipabc.com/aspx/portal/Scripts/mobile/jquery.unobtrusive-1.2.1.js" type="text/javascript"></script>
+
+    <script src="http://www.vipabc.com/aspx/portal/Scripts/mobile/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+
+    <script src="http://www.vipabc.com/aspx/portal/Scripts/mobile/ajaxcall.js" type="text/javascript"></script>
+
+    <script src="http://www.vipabc.com/aspx/portal/Scripts/mobile/mobile.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+

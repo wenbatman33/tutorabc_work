@@ -1,0 +1,35 @@
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+body{font-family:"微軟正黑體","Microsoft JhengHei","微软雅黑体","黑体",Tahoma,Geneva,sans-serif;font-size:13px;line-height:1.5;}
+pre,
+code {
+  font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+hr{margin:1.5 0;border:0;border-top:1px solid #cccccc;border-bottom:1px solid #dddddd;}
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+h1{ font-size:25px;}
+h2{ font-size:18px;}
+h3{ font-size:16px;}
+h4{ font-size:15px;}
+h5{font-size:13px;}
+h6{font-size:12px;}
+h1 small{font-size:16px;}
+h2 small{font-size:13px;}
+h3 small{font-size:12px;}
+h4 small{font-size:12px;}
+h5 small{font-size:12px;}
+h6 small{font-size:11px;}
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+ul,ol{padding:0;margin:0 0 0.75 25px;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
+li{line-height:1.5;}
+ul.unstyled,ol.unstyled{margin-left:0;list-style:none;}
+ul.inline,ol.inline{margin-left:0;list-style:none;}
+ul.inline>li,ol.inline>li{display:inline-block;*display:inline;*zoom:1;padding-left:5px;padding-right:5px;}
+dl{margin-bottom:1.5;}
+dt,dd{line-height:1.5;}
+dt{font-weight:bold;}
+dd{margin-left:0.75;}
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset,figure {margin-bottom: 20px;}

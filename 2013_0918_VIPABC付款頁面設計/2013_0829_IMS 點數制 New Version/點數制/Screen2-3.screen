@@ -1,0 +1,939 @@
+﻿<?Infragistics.Models format="xaml" version="16"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="e3af2026-ae9a-4733-a131-27f08da6e55d">
+    <Page.Content>
+        <Content Width="1024" Height="768" Background="White" Id="bc31406d-a3f8-4742-8f2e-c7956c1538e4">
+            <Layer Layout="Stretch" Id="ef8253c4-2418-471a-a34d-655aa49c33fe" Panel.Layout="Stretch" />
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="08/30/2013 04:33:57" Id="42163fff-fe97-4d65-b916-c042d64143ca">
+            <KeyFrame Id="b8731dfc-e126-4247-b361-9ac7a297f28a">
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle CornerRadius="1,1,0,0" Color="#FF383838" Background="#FF383838" Id="28727a7b-4f2b-4256-9832-d2d112f33de2" Panel.Bounds="0,0,1024{5,2147483647},24{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="F1M0,0L16,0 16,4 0,4 0,0z" Color="White" CatalogId="Dash" Id="68cc5a3b-aba1-4844-a339-1751c0ba2ccf" Panel.Bounds="979,6,12{5,2147483647},12{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M205.73681640625,19.6396484375C205.73681640625,19.6396484375 203.63916015625,21.7353515625 203.63916015625,21.7353515625 203.25537109375,22.12109375 202.6279296875,22.12109375 202.2421875,21.7353515625 202.2421875,21.7353515625 197.0009765625,16.49609375 197.0009765625,16.49609375 197.0009765625,16.49609375 191.75927734375,21.7353515625 191.75927734375,21.7353515625 191.37451171875,22.12109375 190.74609375,22.12109375 190.3623046875,21.7333984375 190.3623046875,21.7333984375 188.26318359375,19.6396484375 188.26318359375,19.6396484375 187.87939453125,19.25390625 187.87939453125,18.62890625 188.26318359375,18.2412109375 188.26318359375,18.2412109375 193.5048828125,13 193.5048828125,13 193.5048828125,13 188.2646484375,7.759765625 188.2646484375,7.759765625 187.880859375,7.373046875 187.880859375,6.744140625 188.2646484375,6.361328125 188.2646484375,6.361328125 190.3623046875,4.2646484375 190.3623046875,4.2646484375 190.74609375,3.876953125 191.37548828125,3.876953125 191.75927734375,4.2646484375 191.75927734375,4.2646484375 197,9.505859375 197,9.505859375 197,9.505859375 202.24169921875,4.2646484375 202.24169921875,4.2646484375 202.6279296875,3.876953125 203.25537109375,3.876953125 203.6376953125,4.2646484375 203.6376953125,4.2646484375 205.7353515625,6.3583984375 205.7353515625,6.3583984375 206.12060546875,6.744140625 206.12060546875,7.373046875 205.73681640625,7.759765625 205.73681640625,7.759765625 200.49609375,13 200.49609375,13 200.49609375,13 205.73681640625,18.2412109375 205.73681640625,18.2412109375 206.12060546875,18.62890625 206.12060546875,19.25390625 205.73681640625,19.6396484375z" Color="White" CatalogId="Remove" Id="7d5256fa-6cc8-445e-aaf7-6d1d8b2fb5b1" Panel.Bounds="1003,6,12{5,2147483647},12{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Title Text="客戶基本資料" Foreground="Black" FontSize="34" FontStyle="Normal" Id="80427397-a5a0-48de-ac92-9a5101bcc970" Panel.Bounds="15,41,204*,47*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="王名人 Famous" Foreground="#FF282828" FontSize="13" FontStyle="Normal" Id="9e37a8bd-63f7-4139-9970-ed2d6de8848a" Panel.Bounds="258,55,92*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" CornerRadius="2" Color="Transparent" Background="#FFFF2E2E" Id="e6f3fb18-64ce-4b43-bce6-c1c5eb6ce2d9" Panel.Bounds="232,54,20{5,2147483647},20{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="V" Foreground="White" FontSize="13" FontFamily="Verdana" FontStyle="Normal" Id="c3688874-cfdf-447b-ac38-4cf60e8d3486" Panel.Bounds="237,56,9*,16*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF68324" Id="c848f7a3-5ce6-4401-8537-3987f32af4d8" Panel.Bounds="795,46,100{5,2147483647},24{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="Black" Id="fedf6eca-1d8a-482d-9f3b-502134545802" Panel.Bounds="902,46,100{5,2147483647},24{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="業務追蹤明細" Foreground="White" FontSize="13" FontStyle="Normal" Id="c99127d2-e6a0-4da6-a9cf-864e0e7df499" Panel.Bounds="806,49,78*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="客戶關懷明細" Foreground="White" FontSize="13" FontStyle="Normal" Id="b6c4a5d3-8926-4be1-8ba0-6eb69e9176db" Panel.Bounds="913,49,78*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF1F497D" Id="b6b4e4f8-e143-46db-bcad-5324101795a7" Panel.Bounds="685,46,100{5,2147483647},24{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="客戶基本資料" Foreground="White" FontSize="13" FontStyle="Normal" Id="6acd4947-51c0-4eb9-bb81-c253e4558d08" Panel.Bounds="696,49,78*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="F1M-2.29477882385254E-06,18.9999961853027L1.99999678134918,18.9999961853027 1.99999678134918,23.0000019073486C2,23.5508117675781,2.44821166992188,24,3.00000333786011,24.0000019073486L23.0000019073486,24.0000019073486C23.5517883300781,24,24,23.5508117675781,24,23.0000019073486L24,18.9999961853027 26,18.9999961853027 26,23.0000019073486C26,24.6563110351563,24.6563110351563,26,23.0000019073486,26L3.00000333786011,26C1.34381103515625,26,0,24.6563110351563,-2.29477882385254E-06,23.0000019073486L-2.29477882385254E-06,18.9999961853027z M12.9816627502441,0.32814285159111C13.5256652832031,0.328872680664063,14.069091796875,0.880401611328125,15.1694040298462,1.98049902915955L21.73779296875,8.54879760742188C22.9453125,9.7587890625,22.6684875488281,10,21.2572917938232,10.0000009536743L17.9999961853027,10.0000009536743 17.9999961853027,17.9999980926514C18,19.6571960449219,16.6567077636719,21,14.9999980926514,21.0000038146973L11,21.0000038146973C9.34329223632813,21,8,19.6571960449219,8.00000095367432,17.9999980926514L8.00000095367432,10.0000009536743 4.69680547714233,10.0000009536743C3.42330932617188,10,3.01419067382813,9.7587890625,4.2217116355896,8.54879760742188L10.7904968261719,1.98049902915955C11.89306640625,0.87744140625,12.4376220703125,0.327392578125,12.9816627502441,0.32814285159111z" CatalogId="Upload" Id="145a6f07-5622-4397-a17f-4faa7c5aeea9" Panel.Bounds="956,715,32{5,2147483647},32{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="145a6f07-5622-4397-a17f-4faa7c5aeea9" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle CornerRadius="5" Color="Transparent" Background="#FFC6C6C6" Id="9ad0506c-e6c4-4772-b683-bb9168524d6d" Panel.Bounds="947,710,50{5,2147483647},50{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="Top" Foreground="#FF555555" FontSize="10" FontStyle="Normal" Id="f1e6f023-5224-45a8-9926-57920017437b" Panel.Bounds="964,746,0*{5,2147483647},0*{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" CornerRadius="3" Background="#FFE2E2E2" Id="79e28879-fe88-4059-b7be-11ca81cf16b4" Panel.Bounds="1008,95,8{5,2147483647},660{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" CornerRadius="3" Background="#FF717171" Id="c0d0bca3-0e23-4ced-a035-841a6851ef34" Panel.Bounds="1008,216,8{5,2147483647},400{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="143cf613-df7f-4464-bfee-016bcef6e4a3" Panel.Bounds="15,132,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="96d5af17-aa4d-4071-8738-5ec733325b5b" Panel.Bounds="108,132,152{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="性別" Foreground="White" FontSize="12" FontStyle="Normal" Id="e34808c3-4b46-4735-b590-d47ec2968a06" Panel.Bounds="79,140,26,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="880d5d85-68ce-471b-b173-a369a4e2049a" Panel.Bounds="261,132,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="5becc189-7838-42cc-b3ec-78088ce10508" Panel.Bounds="354,132,152{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="身分類別" Foreground="White" FontSize="12" FontStyle="Normal" Id="37747afb-774f-453c-8d57-b7aa952412d8" Panel.Bounds="301,140,56,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="ae0eabd5-0c1f-48ed-a8ac-ac45ef849756" Panel.Bounds="508,132,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="72e74d0e-803f-4448-97cf-205bd2d7f266" Panel.Bounds="601,132,154{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="出生年月日" Align="Right" Foreground="White" FontSize="12" FontStyle="Normal" Id="4af16638-ec39-4eb7-bbcb-d2390efb8f0b" Panel.Bounds="529,140,69,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="c783e001-e341-43a8-b50d-0bad6d254259" Panel.Bounds="15,240,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="9a212315-51dd-45ff-8c49-fabebfe4c0d0" Panel.Bounds="108,240,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="行動電話" Foreground="White" FontSize="12" FontStyle="Normal" Id="e024f696-cdcc-41ed-9c8a-6458b779a549" Panel.Bounds="54,247,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="3459d627-3d95-4616-8ef3-0922e0aa0293" Panel.Bounds="15,204,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="5a9ad787-0ab1-4982-aa4d-3805e17f0078" Panel.Bounds="108,204,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="服務客服" Foreground="White" FontSize="12" FontStyle="Normal" Id="90aec515-07c2-43bb-a9ef-2d8927d60e51" Panel.Bounds="54,212,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="男" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="d6c0d073-55b2-4f69-8314-eb067c7ce6c5" Panel.Bounds="115,140,13,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="1900/01/01" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="876e83ba-02ef-4f85-80db-f1cafb0ef073" Panel.Bounds="609,140,78,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="代碼：V0 - Sam Zhao " Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="8eacc289-da4e-4969-92dd-ac5059a391bf" Panel.Bounds="116,212,129,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="01234567891011，9876543210101" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="e1a592da-a4ac-4c26-961c-9a5f19c3f176" Panel.Bounds="118,246,214,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="e6ed82af-50c4-4a84-9993-d6977aaa712c" Panel.Bounds="753,132,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="285dc238-14ac-4794-a774-ba0ca40c2260" Panel.Bounds="846,132,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="國籍" Align="Right" Foreground="White" FontSize="12" FontStyle="Normal" Id="bd7658f5-7a57-4ef2-a879-8671f1a11ac1" Panel.Bounds="772,140,69,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="cb38ae47-44f3-42c7-86d5-34dd95d8782f" Panel.Bounds="508,240,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="67d26084-c4e4-4d21-8920-46300cf51fc8" Panel.Bounds="603,240,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="住家電話" Foreground="White" FontSize="12" FontStyle="Normal" Id="e45c3f76-a176-47ce-8e97-d6e37ba13069" Panel.Bounds="548,247,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="e155a672-f8b1-4916-96d6-3477094ee15b" Panel.Bounds="508,204,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="629f46e2-d797-4397-ad22-9f026c2f30f9" Panel.Bounds="603,204,397{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="01234567891011，9876543210101" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="85d8680a-991c-4c2e-a196-b1fdcc7fba76" Panel.Bounds="610,246,198*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="2543a095-9ccd-4d1b-a6e6-7947e06c0819" Panel.Bounds="15,312,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="53a9b9e2-e82d-4609-bdb4-d25f7a4b661d" Panel.Bounds="108,312,891{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="通訊地址" Foreground="White" FontSize="12" FontStyle="Normal" Id="9f4e2a22-23e5-4e14-b7ce-e298d9d85eb0" Panel.Bounds="54,319,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="6e5eb83e-d1de-4ddc-9568-be89faf745ca" Panel.Bounds="15,276,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="68c52ba4-3979-4014-a9b4-7fe7861b6403" Panel.Bounds="108,276,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="公司電話" Foreground="White" FontSize="12" FontStyle="Normal" Id="93fe6c8d-c517-4d8d-91ac-5ef226f88b00" Panel.Bounds="54,284,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="12345678910001" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="85ee722f-3e8f-4c4f-a3d3-e2e7856eebd6" Panel.Bounds="116,284,129,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="(123) 北京市东城区123 东城九龙坡区杨家坪滩子口田野小区B-6-4号&#xD;北京市东城区123 东城九龙坡区杨家坪滩子口田野小区B-6-4号" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="58db93b4-8fc8-44f6-a68f-5631a2644462" Panel.Bounds="116,313,391,0*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="0aacd234-ee3f-4f37-ae18-30df9b0a378d" Panel.Bounds="508,276,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="440ba582-8016-43d3-b015-339f0b000d3a" Panel.Bounds="603,276,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="公司傳真" Foreground="White" FontSize="12" FontStyle="Normal" Id="f0270d6c-48ec-443f-a127-aeb09f785144" Panel.Bounds="548,284,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="12345678910001" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="daa89671-f802-467d-9d14-97077a61074e" Panel.Bounds="609,284,97*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="303ec0c2-574e-47a4-84ed-fe01cb2a4e70" Panel.Bounds="15,168,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="0e8977b4-17f0-4af3-bd06-dbd8d640b2a7" Panel.Bounds="108,168,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="帳號" Foreground="White" FontSize="12" FontStyle="Normal" Id="58852376-2727-4da0-abfc-12192bc61c26" Panel.Bounds="77,176,24*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="ux@vipabc.com" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="174378d4-a898-4332-9679-e4c1e2ddcfb0" Panel.Bounds="116,176,129,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="f25dbef7-66d0-4ca9-85d9-2bcb0ad59e56" Panel.Bounds="508,168,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="321a1b08-82e2-48d3-b68f-4e07b40071de" Panel.Bounds="603,168,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="通訊郵件地址" Foreground="White" FontSize="12" FontStyle="Normal" Id="a92450cc-5cbe-48c3-a48d-a72c7ca9c807" Panel.Bounds="524,176,72*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="ux@vipabc.com" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="c525d0f8-4661-4f81-b707-f3d345ec06ab" Panel.Bounds="609,176,88*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="China" Foreground="#FF383838" FontSize="13" FontStyle="Normal" Id="1d77d568-17cf-463f-8f80-87e9248a62f7" Panel.Bounds="851,140,78,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF153153" Id="e85e0452-cd3a-46ef-89b8-0db4b308ec9c" Panel.Bounds="15,95,984{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M568.038330078125,196.518325805664C568.038330078125,196.518325805664 592.066101074219,172.212890625 592.066101074219,172.212890625 613.444702148438,150.834289550781 613.259643554688,115.978363037109 591.638061523438,94.3452453613281 591.638061523438,94.3452453613281 513.365539550781,16.0842895507813 513.365539550781,16.0842895507813 491.743988037109,-5.53726196289063 456.899658203125,-5.72235107421875 435.521026611328,15.65625 435.521026611328,15.65625 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 568.038330078125,196.518325805664 568.038330078125,196.518325805664z M511.306335449219,260.041015625C511.306335449219,260.041015625 548.684204101563,225 548.684204101563,225 548.684204101563,225 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 347.958984375,96.6936645507813 347.958984375,96.6936645507813 347.958984375,96.6936645507813 511.306335449219,260.041015625 511.306335449219,260.041015625z M120.603057861328,440.162719726563C120.603057861328,440.162719726563 158.455230712891,448.665557861328 158.455230712891,448.665557861328 158.455230712891,448.665557861328 163.892425537109,483.440490722656 163.892425537109,483.440490722656 163.892425537109,483.440490722656 424.368988037109,223.183746337891 424.368988037109,223.183746337891 424.368988037109,223.183746337891 381.091186523438,179.894378662109 381.091186523438,179.894378662109 381.091186523438,179.894378662109 120.603057861328,440.162719726563 120.603057861328,440.162719726563z M88.4499969482422,540.859985351563C88.4499969482422,540.859985351563 67.1650009155273,519.575012207031 67.1650009155273,519.575012207031 76.4464645385742,487.659698486328 85.6495819091797,455.736083984375 95,424.25 95.9002227783203,420.949188232422 98.0608901977539,414.945343017578 99.6449966430664,409.160003662109 99.6449966430664,409.160003662109 355.397521972656,153.668563842773 355.397521972656,153.668563842773 355.397521972656,153.668563842773 324.34765625,122.630264282227 324.34765625,122.630264282227 324.34765625,122.630264282227 66.4249954223633,378.289978027344 66.4249954223633,378.289978027344 61.7881355285645,381.257568359375 57.1823196411133,386.277435302734 56,390.5 44,431.5 32,472.5 19.75,513.5 16.75,524 13.75,534.5 10.5,545 7,557.25 3,569.5 0.25,581.75 0.25,581.75 0.25,586.75 0.25,586.75 0.25,587.25 0.75,589.5 1,590.75 4.75,602.75 15.25,607.75 23.75,607.75 24.5,607.75 27.75,607.5 29.5,607 29.5,607 174.5,564.5 174.5,564.5 184.5,561.5 195,558.25 205.25,555.5 207.25,554.75 209.5,554 212,553.5 219.545852661133,551.823120117188 225.139114379883,547.804809570313 228.604995727539,542.794982910156 228.604995727539,542.794982910156 487.695007324219,285.989196777344 487.695007324219,285.989196777344 487.695007324219,285.989196777344 452.943206787109,251.237365722656 452.943206787109,251.237365722656 452.943206787109,251.237365722656 194.114990234375,509.789978027344 194.114990234375,509.789978027344 194.114990234375,509.789978027344 88.4499969482422,540.859985351563 88.4499969482422,540.859985351563z" Color="White" CatalogId="Edit" Id="88d1a5da-7869-4f70-9c90-5588149add34" Panel.Bounds="855,103,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="資料更新" Foreground="White" FontSize="13" FontStyle="Normal|Underline" Id="48df9220-5ed2-4444-bde0-cfab715cca11" Panel.Bounds="877,103,52*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="基本資料明細" Foreground="White" FontSize="13" FontStyle="Normal" Id="c9587b25-685c-4f7b-8459-8a85e773044c" Panel.Bounds="34,103,78*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="ef56a6d7-2e15-4541-a34b-04440dde990f" Panel.Bounds="15,348,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="6b4d1a3f-4f6c-4815-a6b0-2bc7ff934611" Panel.Bounds="108,348,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="公司電話" Foreground="White" FontSize="12" FontStyle="Normal" Id="c32e5fdc-4cdb-472a-b052-ce093dba78f3" Panel.Bounds="54,356,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="12345678910001" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="a1353634-1f66-4038-b935-17657a165db1" Panel.Bounds="116,356,129,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="889fbd04-ed85-4424-8e18-19ca51007e78" Panel.Bounds="508,348,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="59f1667b-1359-4601-99c7-6f3740fbcfbe" Panel.Bounds="603,348,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="公司傳真" Foreground="White" FontSize="12" FontStyle="Normal" Id="d44193ba-0704-4428-b45f-8a6607ef0ced" Panel.Bounds="548,356,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="12345678910001" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="7e8c396e-8421-4aba-963a-e1de5e59ad63" Panel.Bounds="609,356,97*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="9a3abd06-8cb9-41e4-8ad5-4d11895bd9c2" Panel.Bounds="15,384,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="1ca90ebf-1bc3-4b71-8f75-838c2c0f6a20" Panel.Bounds="108,384,157{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="產業" Foreground="White" FontSize="12" FontStyle="Normal" Id="7eb8172d-3685-4998-915e-b01b63c061f5" Panel.Bounds="79,391,24*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="df37c669-2eaa-4e30-81d9-453e271a5417" Panel.Bounds="508,384,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="aabff15a-be57-4519-aa77-cd19ee9f907e" Panel.Bounds="603,384,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="公司名稱" Foreground="White" FontSize="12" FontStyle="Normal" Id="e588caea-8c3f-442a-be93-530979b84146" Panel.Bounds="548,391,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="bfb7639f-1f9c-4000-88a8-c85543ba4f4c" Panel.Bounds="508,420,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="4dddc71e-4db2-454a-8b7f-2c58ee4594ae" Panel.Bounds="603,420,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="媒體來源" Foreground="White" FontSize="12" FontStyle="Normal" Id="b5d46f22-a5fd-4001-8006-91f802298a2c" Panel.Bounds="548,428,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="VIPABC Website" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="e6d1a5cb-92b0-4bf6-a840-2c00b5c1a283" Panel.Bounds="609,428,89*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Line Type="Line" Thickness="1" RotationAngle="90" Background="Transparent" Id="1f8b2d51-b9bf-462c-84c0-a0c35d3833ad" Panel.Bounds="938,101,3,20">
+                            <Line.StartPoint>
+                                <Point X="60" Y="-60" Id="43709af1-df65-4b33-9d57-c70ea1a66c08" />
+                            </Line.StartPoint>
+                            <Line.Segments>
+                                <Segment Id="65ffd34f-8ce6-40ca-86d4-f2ebc92a5edb">
+                                    <Segment.EndPoint>
+                                        <Point X="60" Y="60" Id="9fb8eb48-102b-4909-82ea-5f4fda4c110b" />
+                                    </Segment.EndPoint>
+                                </Segment>
+                            </Line.Segments>
+                        </Line>
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="舊合約" Foreground="#FFFFFF8E" FontSize="13" FontStyle="Normal" Id="709dc413-8df8-4c00-b31d-b2a7788d2ec1" Panel.Bounds="950,103,39*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="bb5022ac-a7f0-408e-a3ab-a5f4e4dafb7f" Panel.Bounds="15,420,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="3bd27d27-1e23-4b0d-92b9-194a1e53e2d1" Panel.Bounds="108,420,398{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="語言分析顧問" Foreground="White" FontSize="12" FontStyle="Normal" Id="7099ee76-5817-409b-b87c-5c78346ee84e" Panel.Bounds="27,428,72*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="Waldo Swart" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="814db23a-0d84-4061-ad05-5d9ea7cbfad6" Panel.Bounds="115,428,130,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="ea39f205-4265-4bd9-8777-4f2b18d9bb8e" Panel.Bounds="508,456,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="780c39a0-f76a-433d-8bf3-57a233e49665" Panel.Bounds="603,456,147{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="f303fb2d-3996-4c87-a334-192f86de58bc" Panel.Bounds="15,456,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="bd1959e7-d36e-4ed1-a63f-8c27e345dbfa" Panel.Bounds="108,456,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="6e058af1-023e-48b3-a434-42d79f431441" Panel.Bounds="508,492,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="769062d0-4044-4c03-847f-cd31e7824e8a" Panel.Bounds="603,492,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="f4905584-5aab-4ddc-90d2-6be02acc3f7f" Panel.Bounds="15,492,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="33e771e2-598f-4578-b960-0d225ac32996" Panel.Bounds="108,492,157{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="4f086449-491a-49ce-89a4-95974af50f9f" Panel.Bounds="508,528,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="584f3923-bdec-4739-a933-95639fa96099" Panel.Bounds="603,528,152{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="契約編號" Foreground="White" FontSize="12" FontStyle="Normal" Id="1c7e3871-5de2-4067-abef-09615e23e3e6" Panel.Bounds="548,464,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="50001900 " Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="3cb237d2-f0ed-43ae-9ec7-72a2ae97f9fd" Panel.Bounds="609,464,58*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="3d3caa1c-c0e8-46c9-942a-bcc69298e7ec" Panel.Bounds="15,528,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="b7f0b86d-0811-470b-8561-82ca874190cc" Panel.Bounds="108,528,394{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="一對一諮詢" Foreground="White" FontSize="12" FontStyle="Normal" Id="696d8444-201a-4337-acbc-def90cb8108d" Panel.Bounds="38,538,60*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="4464fe3c-9934-4eda-b23e-eec09b08799b" Panel.Bounds="508,564,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="d859f897-cfb9-49a3-90cf-2a765ee815d4" Panel.Bounds="603,564,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="服務期間" Foreground="White" FontSize="12" FontStyle="Normal" Id="d2dd611d-3a94-406e-ae1d-959063a36267" Panel.Bounds="548,500,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="不可" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="61174705-4163-47a4-a878-52788339d730" Panel.Bounds="117,538,24*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="a12a7607-bd27-4acc-b6c0-06d09efbc6fd" Panel.Bounds="262,384,92{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="5e9f5f61-06a1-408a-81e7-c270722a0cae" Panel.Bounds="354,384,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="職稱" Foreground="White" FontSize="12" FontStyle="Normal" Id="edcdcb4e-3a63-42b5-83e4-cfabb32b50a1" Panel.Bounds="323,392,24*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="未填寫" Foreground="#FF383838" FontSize="13" FontStyle="Normal" Id="00de6f12-120d-4168-91ed-fb63669ffa3d" Panel.Bounds="363,392,137,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="產品名稱" Foreground="White" FontSize="12" FontStyle="Normal" Id="8cb513c1-3ccf-44d9-a7a3-8d96412cbeac" Panel.Bounds="52,500,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="銷售業務" Foreground="White" FontSize="12" FontStyle="Normal" Id="8fc26707-7187-4953-bb95-f1441cb80a95" Panel.Bounds="52,464,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="Wendy Yu" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="88a67581-7cfc-40e0-be37-940c199cade6" Panel.Bounds="115,464,56*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="8cefbf77-8836-44b0-8ebb-1866ba41c6dc" Panel.Bounds="261,491,92{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="a8572e9c-2dda-4b73-a455-ab5d588fc95d" Panel.Bounds="354,492,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="付款方式" Foreground="White" FontSize="12" FontStyle="Normal" Id="2c9bc116-3cd1-4674-ba69-a90f4d4a7505" Panel.Bounds="299,500,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="93391f56-15f1-48c5-bdb7-9c8176f737ba" Panel.Bounds="754,456,92{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="fa1efdab-b2c2-4bea-90df-3db10031e99e" Panel.Bounds="847,456,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="續約購買" Align="Right" Foreground="White" FontSize="12" FontStyle="Normal" Id="06fa1aef-5d0d-4a91-9a3e-17979a39573b" Panel.Bounds="527,538,69,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="2012/03/22 - 2013/03/21" Foreground="#FF383838" FontSize="12" FontStyle="Normal" Id="f87cb86f-1d2c-475f-a162-f74c11267b96" Panel.Bounds="609,500,138*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="直接購買" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="75dd9dca-ac29-4806-9477-3508c2a9d352" Panel.Bounds="640,538,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="開啟權限" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="83453629-9ba1-43e0-a7a8-5ef374bff340" Panel.Bounds="182,539,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="合約退費" Foreground="White" FontSize="12" FontStyle="Normal" Id="7b11cccd-3d0e-45f1-99cc-2f6caf064575" Panel.Bounds="793,464,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="79caa7e4-a049-44ed-9850-3aa341fc6e67" Panel.Bounds="754,528,92{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="3dc10ddb-de84-46d9-9dea-abe5fad61e0e" Panel.Bounds="847,528,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="續約率" Foreground="White" FontSize="12" FontStyle="Normal" Id="e5cdee19-bc9c-4dac-8bf9-d10ff3e8a2ad" Panel.Bounds="805,536,36*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="d0fee927-346c-4f36-8738-8b92cd5ddd80" Panel.Bounds="15,564,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="63761caf-559a-48f6-a46e-71e7ee49182e" Panel.Bounds="108,564,157{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="05be75df-84cd-4b70-b799-77d281bb0249" Panel.Bounds="262,564,92{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="b6ef7ea9-5411-4d9c-8c63-7ff3452fa83e" Panel.Bounds="354,564,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="介紹人" Foreground="White" FontSize="12" FontStyle="Normal" Id="fe17973a-1475-480f-95d5-d694476e75d5" Panel.Bounds="63,572,36*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="關係人" Foreground="White" FontSize="12" FontStyle="Normal" Id="6dde9fc6-62f3-4eb5-88d8-c75f69b9fcde" Panel.Bounds="310,572,36*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="備註" Align="Right" Foreground="White" FontSize="12" FontStyle="Normal" Id="2a5b561b-ee13-42d8-a075-801f03fde8e7" Panel.Bounds="572,212,24*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="填寫備註" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="754f1f54-2461-4b6d-869d-b93f22716f42" Panel.Bounds="634,212,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="VIP客戶備註" Foreground="White" FontSize="12" FontStyle="Normal" Id="7fe83e35-bb60-4a58-8044-3d7085c88032" Panel.Bounds="530,572,66*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="填寫VIP客戶備註" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="f069f393-6694-4b79-a6ee-19d1b5f6d534" Panel.Bounds="640,572,90*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="c3f649c6-b1c7-4448-9e30-983508a13ccf" Panel.Bounds="508,312,92{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="15d79f76-4d68-4191-a790-7f92e4780ef2" Panel.Bounds="601,312,153{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="請假" Align="Right" Foreground="White" FontSize="12" FontStyle="Normal" Id="38ce7049-e9a5-451a-be81-a93f14bc7a3d" Panel.Bounds="526,320,69,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="設定請假期間" Foreground="#FF4281D0" FontSize="13" FontStyle="Normal|Underline" Id="3f12dbfc-3624-4ea6-942b-7c3c69067ee2" Panel.Bounds="631,320,78*,18*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="7e40bba8-0943-4638-83d2-5f1378df1526" Panel.Bounds="508,600,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="48fc8e12-519b-4c35-932d-979b354cb9d1" Panel.Bounds="603,600,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="Special Care" Foreground="White" FontSize="12" FontStyle="Normal" Id="fd4d87fe-7f39-4512-ac06-8ea73d47af88" Panel.Bounds="527,608,69*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="填寫Special Care" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="a98091b8-c6ea-42cf-ac72-d91d03ca6a45" Panel.Bounds="640,608,93*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="22de4c42-873d-44c9-b6b5-cdfc37418907" Panel.Bounds="15,600,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="e458ba2c-f375-4a65-8e9e-94a7e3791043" Panel.Bounds="109,600,397{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="重大抱怨備註" Foreground="White" FontSize="12" FontStyle="Normal" Id="eaebce9a-9f4a-4582-87a1-fb45799f0dd5" Panel.Bounds="28,608,72*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="觀看紀錄" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="e069be8e-12ff-448c-90e0-8089f1c4d2be" Panel.Bounds="148,609,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M145,0.1875C139.580078125,0.1875 135.1875,4.580078125 135.1875,10 135.1875,15.419921875 139.580078125,19.8125 145,19.8125 150.419921875,19.8125 154.8125,15.419921875 154.8125,10 154.8125,4.580078125 150.419921875,0.1875 145,0.1875z M145,17.9970703125C140.58251953125,17.9970703125 137.00244140625,14.41748046875 137.00244140625,10 137.00244140625,5.58251953125 140.58251953125,2.0029296875 145,2.0029296875 149.41748046875,2.0029296875 152.99755859375,5.58251953125 152.99755859375,10 152.99755859375,14.41748046875 149.41748046875,17.9970703125 145,17.9970703125z M147.01220703125,14.85791015625C143.09716796875,14.85791015625 139.9228515625,11.68408203125 139.9228515625,7.7685546875 139.9228515625,7.6640625 139.93359375,7.56298828125 139.9384765625,7.458984375 139.421875,8.29541015625 139.1181640625,9.2783203125 139.1181640625,10.33251953125 139.1181640625,13.35986328125 141.57177734375,15.81298828125 144.5986328125,15.81298828125 145.76708984375,15.81298828125 146.84765625,15.4443359375 147.73828125,14.8212890625 147.49951171875,14.84521484375 147.2568359375,14.85791015625 147.01220703125,14.85791015625z M160.3291015625,21.884765625C160.3291015625,21.884765625 155.71484375,17.26953125 155.71484375,17.26953125 155.00146484375,16.55615234375 153.84423828125,16.55615234375 153.130859375,17.26953125 153.130859375,17.26953125 152.27001953125,18.13037109375 152.27001953125,18.13037109375 151.556640625,18.84375 151.556640625,20.00048828125 152.2705078125,20.7138671875 152.2705078125,20.7138671875 156.88427734375,25.3291015625 156.88427734375,25.3291015625 157.59814453125,26.04248046875 158.75439453125,26.04248046875 159.4677734375,25.3291015625 159.4677734375,25.3291015625 160.3291015625,24.46826171875 160.3291015625,24.46826171875 161.0419921875,23.7548828125 161.0419921875,22.59814453125 160.3291015625,21.884765625z" CatalogId="Search" Id="648b7414-3f68-47ad-8501-9a999b2d4e96" Panel.Bounds="123,608,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="觀看Special Care歷史紀錄" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="7d84be91-7775-4b4c-8988-ebf245967679" Panel.Bounds="775,608,141*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M145,0.1875C139.580078125,0.1875 135.1875,4.580078125 135.1875,10 135.1875,15.419921875 139.580078125,19.8125 145,19.8125 150.419921875,19.8125 154.8125,15.419921875 154.8125,10 154.8125,4.580078125 150.419921875,0.1875 145,0.1875z M145,17.9970703125C140.58251953125,17.9970703125 137.00244140625,14.41748046875 137.00244140625,10 137.00244140625,5.58251953125 140.58251953125,2.0029296875 145,2.0029296875 149.41748046875,2.0029296875 152.99755859375,5.58251953125 152.99755859375,10 152.99755859375,14.41748046875 149.41748046875,17.9970703125 145,17.9970703125z M147.01220703125,14.85791015625C143.09716796875,14.85791015625 139.9228515625,11.68408203125 139.9228515625,7.7685546875 139.9228515625,7.6640625 139.93359375,7.56298828125 139.9384765625,7.458984375 139.421875,8.29541015625 139.1181640625,9.2783203125 139.1181640625,10.33251953125 139.1181640625,13.35986328125 141.57177734375,15.81298828125 144.5986328125,15.81298828125 145.76708984375,15.81298828125 146.84765625,15.4443359375 147.73828125,14.8212890625 147.49951171875,14.84521484375 147.2568359375,14.85791015625 147.01220703125,14.85791015625z M160.3291015625,21.884765625C160.3291015625,21.884765625 155.71484375,17.26953125 155.71484375,17.26953125 155.00146484375,16.55615234375 153.84423828125,16.55615234375 153.130859375,17.26953125 153.130859375,17.26953125 152.27001953125,18.13037109375 152.27001953125,18.13037109375 151.556640625,18.84375 151.556640625,20.00048828125 152.2705078125,20.7138671875 152.2705078125,20.7138671875 156.88427734375,25.3291015625 156.88427734375,25.3291015625 157.59814453125,26.04248046875 158.75439453125,26.04248046875 159.4677734375,25.3291015625 159.4677734375,25.3291015625 160.3291015625,24.46826171875 160.3291015625,24.46826171875 161.0419921875,23.7548828125 161.0419921875,22.59814453125 160.3291015625,21.884765625z" CatalogId="Search" Id="196602f6-0f0a-4f56-9caf-2ef9379d89e5" Panel.Bounds="751,607,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M568.038330078125,196.518325805664C568.038330078125,196.518325805664 592.066101074219,172.212890625 592.066101074219,172.212890625 613.444702148438,150.834289550781 613.259643554688,115.978363037109 591.638061523438,94.3452453613281 591.638061523438,94.3452453613281 513.365539550781,16.0842895507813 513.365539550781,16.0842895507813 491.743988037109,-5.53726196289063 456.899658203125,-5.72235107421875 435.521026611328,15.65625 435.521026611328,15.65625 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 568.038330078125,196.518325805664 568.038330078125,196.518325805664z M511.306335449219,260.041015625C511.306335449219,260.041015625 548.684204101563,225 548.684204101563,225 548.684204101563,225 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 347.958984375,96.6936645507813 347.958984375,96.6936645507813 347.958984375,96.6936645507813 511.306335449219,260.041015625 511.306335449219,260.041015625z M120.603057861328,440.162719726563C120.603057861328,440.162719726563 158.455230712891,448.665557861328 158.455230712891,448.665557861328 158.455230712891,448.665557861328 163.892425537109,483.440490722656 163.892425537109,483.440490722656 163.892425537109,483.440490722656 424.368988037109,223.183746337891 424.368988037109,223.183746337891 424.368988037109,223.183746337891 381.091186523438,179.894378662109 381.091186523438,179.894378662109 381.091186523438,179.894378662109 120.603057861328,440.162719726563 120.603057861328,440.162719726563z M88.4499969482422,540.859985351563C88.4499969482422,540.859985351563 67.1650009155273,519.575012207031 67.1650009155273,519.575012207031 76.4464645385742,487.659698486328 85.6495819091797,455.736083984375 95,424.25 95.9002227783203,420.949188232422 98.0608901977539,414.945343017578 99.6449966430664,409.160003662109 99.6449966430664,409.160003662109 355.397521972656,153.668563842773 355.397521972656,153.668563842773 355.397521972656,153.668563842773 324.34765625,122.630264282227 324.34765625,122.630264282227 324.34765625,122.630264282227 66.4249954223633,378.289978027344 66.4249954223633,378.289978027344 61.7881355285645,381.257568359375 57.1823196411133,386.277435302734 56,390.5 44,431.5 32,472.5 19.75,513.5 16.75,524 13.75,534.5 10.5,545 7,557.25 3,569.5 0.25,581.75 0.25,581.75 0.25,586.75 0.25,586.75 0.25,587.25 0.75,589.5 1,590.75 4.75,602.75 15.25,607.75 23.75,607.75 24.5,607.75 27.75,607.5 29.5,607 29.5,607 174.5,564.5 174.5,564.5 184.5,561.5 195,558.25 205.25,555.5 207.25,554.75 209.5,554 212,553.5 219.545852661133,551.823120117188 225.139114379883,547.804809570313 228.604995727539,542.794982910156 228.604995727539,542.794982910156 487.695007324219,285.989196777344 487.695007324219,285.989196777344 487.695007324219,285.989196777344 452.943206787109,251.237365722656 452.943206787109,251.237365722656 452.943206787109,251.237365722656 194.114990234375,509.789978027344 194.114990234375,509.789978027344 194.114990234375,509.789978027344 88.4499969482422,540.859985351563 88.4499969482422,540.859985351563z" Color="#FF555555" CatalogId="Edit" Id="864e97d5-5fa3-40ab-9111-17af243af947" Panel.Bounds="618,607,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M568.038330078125,196.518325805664C568.038330078125,196.518325805664 592.066101074219,172.212890625 592.066101074219,172.212890625 613.444702148438,150.834289550781 613.259643554688,115.978363037109 591.638061523438,94.3452453613281 591.638061523438,94.3452453613281 513.365539550781,16.0842895507813 513.365539550781,16.0842895507813 491.743988037109,-5.53726196289063 456.899658203125,-5.72235107421875 435.521026611328,15.65625 435.521026611328,15.65625 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 568.038330078125,196.518325805664 568.038330078125,196.518325805664z M511.306335449219,260.041015625C511.306335449219,260.041015625 548.684204101563,225 548.684204101563,225 548.684204101563,225 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 347.958984375,96.6936645507813 347.958984375,96.6936645507813 347.958984375,96.6936645507813 511.306335449219,260.041015625 511.306335449219,260.041015625z M120.603057861328,440.162719726563C120.603057861328,440.162719726563 158.455230712891,448.665557861328 158.455230712891,448.665557861328 158.455230712891,448.665557861328 163.892425537109,483.440490722656 163.892425537109,483.440490722656 163.892425537109,483.440490722656 424.368988037109,223.183746337891 424.368988037109,223.183746337891 424.368988037109,223.183746337891 381.091186523438,179.894378662109 381.091186523438,179.894378662109 381.091186523438,179.894378662109 120.603057861328,440.162719726563 120.603057861328,440.162719726563z M88.4499969482422,540.859985351563C88.4499969482422,540.859985351563 67.1650009155273,519.575012207031 67.1650009155273,519.575012207031 76.4464645385742,487.659698486328 85.6495819091797,455.736083984375 95,424.25 95.9002227783203,420.949188232422 98.0608901977539,414.945343017578 99.6449966430664,409.160003662109 99.6449966430664,409.160003662109 355.397521972656,153.668563842773 355.397521972656,153.668563842773 355.397521972656,153.668563842773 324.34765625,122.630264282227 324.34765625,122.630264282227 324.34765625,122.630264282227 66.4249954223633,378.289978027344 66.4249954223633,378.289978027344 61.7881355285645,381.257568359375 57.1823196411133,386.277435302734 56,390.5 44,431.5 32,472.5 19.75,513.5 16.75,524 13.75,534.5 10.5,545 7,557.25 3,569.5 0.25,581.75 0.25,581.75 0.25,586.75 0.25,586.75 0.25,587.25 0.75,589.5 1,590.75 4.75,602.75 15.25,607.75 23.75,607.75 24.5,607.75 27.75,607.5 29.5,607 29.5,607 174.5,564.5 174.5,564.5 184.5,561.5 195,558.25 205.25,555.5 207.25,554.75 209.5,554 212,553.5 219.545852661133,551.823120117188 225.139114379883,547.804809570313 228.604995727539,542.794982910156 228.604995727539,542.794982910156 487.695007324219,285.989196777344 487.695007324219,285.989196777344 487.695007324219,285.989196777344 452.943206787109,251.237365722656 452.943206787109,251.237365722656 452.943206787109,251.237365722656 194.114990234375,509.789978027344 194.114990234375,509.789978027344 194.114990234375,509.789978027344 88.4499969482422,540.859985351563 88.4499969482422,540.859985351563z" Color="#FF555555" CatalogId="Edit" Id="1df7e4d6-2a62-4aa1-9de6-439c7b26e66f" Panel.Bounds="610,212,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M568.038330078125,196.518325805664C568.038330078125,196.518325805664 592.066101074219,172.212890625 592.066101074219,172.212890625 613.444702148438,150.834289550781 613.259643554688,115.978363037109 591.638061523438,94.3452453613281 591.638061523438,94.3452453613281 513.365539550781,16.0842895507813 513.365539550781,16.0842895507813 491.743988037109,-5.53726196289063 456.899658203125,-5.72235107421875 435.521026611328,15.65625 435.521026611328,15.65625 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 568.038330078125,196.518325805664 568.038330078125,196.518325805664z M511.306335449219,260.041015625C511.306335449219,260.041015625 548.684204101563,225 548.684204101563,225 548.684204101563,225 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 347.958984375,96.6936645507813 347.958984375,96.6936645507813 347.958984375,96.6936645507813 511.306335449219,260.041015625 511.306335449219,260.041015625z M120.603057861328,440.162719726563C120.603057861328,440.162719726563 158.455230712891,448.665557861328 158.455230712891,448.665557861328 158.455230712891,448.665557861328 163.892425537109,483.440490722656 163.892425537109,483.440490722656 163.892425537109,483.440490722656 424.368988037109,223.183746337891 424.368988037109,223.183746337891 424.368988037109,223.183746337891 381.091186523438,179.894378662109 381.091186523438,179.894378662109 381.091186523438,179.894378662109 120.603057861328,440.162719726563 120.603057861328,440.162719726563z M88.4499969482422,540.859985351563C88.4499969482422,540.859985351563 67.1650009155273,519.575012207031 67.1650009155273,519.575012207031 76.4464645385742,487.659698486328 85.6495819091797,455.736083984375 95,424.25 95.9002227783203,420.949188232422 98.0608901977539,414.945343017578 99.6449966430664,409.160003662109 99.6449966430664,409.160003662109 355.397521972656,153.668563842773 355.397521972656,153.668563842773 355.397521972656,153.668563842773 324.34765625,122.630264282227 324.34765625,122.630264282227 324.34765625,122.630264282227 66.4249954223633,378.289978027344 66.4249954223633,378.289978027344 61.7881355285645,381.257568359375 57.1823196411133,386.277435302734 56,390.5 44,431.5 32,472.5 19.75,513.5 16.75,524 13.75,534.5 10.5,545 7,557.25 3,569.5 0.25,581.75 0.25,581.75 0.25,586.75 0.25,586.75 0.25,587.25 0.75,589.5 1,590.75 4.75,602.75 15.25,607.75 23.75,607.75 24.5,607.75 27.75,607.5 29.5,607 29.5,607 174.5,564.5 174.5,564.5 184.5,561.5 195,558.25 205.25,555.5 207.25,554.75 209.5,554 212,553.5 219.545852661133,551.823120117188 225.139114379883,547.804809570313 228.604995727539,542.794982910156 228.604995727539,542.794982910156 487.695007324219,285.989196777344 487.695007324219,285.989196777344 487.695007324219,285.989196777344 452.943206787109,251.237365722656 452.943206787109,251.237365722656 452.943206787109,251.237365722656 194.114990234375,509.789978027344 194.114990234375,509.789978027344 194.114990234375,509.789978027344 88.4499969482422,540.859985351563 88.4499969482422,540.859985351563z" Color="#FF555555" CatalogId="Edit" Id="afe62078-db7e-4252-adc7-e69304a3fe04" Panel.Bounds="618,572,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="F1 M8.4916964,14.583996 C6.8563843,14.584 5.5308228,15.909195 5.5308247,17.543898 5.5308228,19.179703 6.8563843,20.504898 8.4916964,20.504894 10.126526,20.504898 11.452087,19.179703 11.452092,17.543898 11.452087,15.909195 10.126526,14.584 8.4916964,14.583996 z M7.4125953,9.0518055 L9.536067,9.0518055 9.9766216,11.566409 C10.579102,11.715805 11.14502,11.954102 11.661624,12.267596 L13.733403,10.777298 15.234923,12.277294 13.762207,14.376996 C14.071777,14.892593 14.30658,15.455093 14.45612,16.052706 L16.982906,16.465805 16.982906,18.5889 14.45612,19.031296 C14.308105,19.630905 14.073181,20.193405 13.763672,20.710005 L15.25879,22.786098 13.758299,24.288103 11.663088,22.817396 C11.147888,23.130905 10.58197,23.370102 9.9818687,23.521502 L9.536067,26.036106 7.4125953,26.036106 6.9956074,23.528301 C6.3925781,23.379898 5.8256836,23.1436 5.3057275,22.831099 L3.2250931,24.288103 1.7235734,22.786098 3.1967742,20.726597 C2.8817749,20.205093 2.6425781,19.636703 2.492183,19.030308 L1.5691039E-06,18.5889 1.5691039E-06,16.465805 2.4951217,16.050797 C2.6464844,15.443405 2.8856812,14.876007 3.199703,14.355494 L1.7465779,12.277294 3.2479811,10.777298 5.3134761,12.252002 C5.8319702,11.941406 6.4003906,11.7061 7.0039091,11.558593 L7.4125953,9.0518055 z" Color="#FF555555" CatalogId="Gears" Id="a3aedd5e-b1f3-4cfa-bfda-5d64ce0206ad" Panel.Bounds="609,320,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="F1M20.0000019073486,22.1875019073486C21.0010070800781,22.1875 21.8125,22.9989929199219 21.8125,24 21.8125,25.0010070800781 21.0010070800781,25.8125 20.0000019073486,25.8125 18.9989929199219,25.8125 18.1875,25.0010070800781 18.1875019073486,24 18.1875,22.9989929199219 18.9989929199219,22.1875 20.0000019073486,22.1875019073486z M13.9999980926514,22.1875019073486C15.0010070800781,22.1875 15.8125,22.9989929199219 15.8124971389771,24 15.8125,25.0010070800781 15.0010070800781,25.8125 13.9999980926514,25.8125 12.9989929199219,25.8125 12.1875,25.0010070800781 12.1874990463257,24 12.1875,22.9989929199219 12.9989929199219,22.1875 13.9999980926514,22.1875019073486z M19.1499004364014,14.1504039764404L19.1499004364014,15.9452953338623 20.1415996551514,15.9452953338623 20.9771118164063,14.1504039764404 19.1499004364014,14.1504039764404z M15.1499013900757,14.1504039764404L15.1499013900757,15.9452953338623 17.8500995635986,15.9452953338623 17.8500995635986,14.1504039764404 15.1499013900757,14.1504039764404z M11.5350942611694,14.1504039764404L12.0884113311768,15.9120922088623C12.12060546875,15.9306945800781,12.1592102050781,15.9452972412109,12.1982116699219,15.9452953338623L13.8501005172729,15.9452953338623 13.8501005172729,14.1504039764404 11.5350942611694,14.1504039764404z M19.1499004364014,11.150408744812L19.1499004364014,12.8495941162109 21.5826454162598,12.8495941162109 22.3735942840576,11.150408744812 19.1499004364014,11.150408744812z M15.1499013900757,11.150408744812L15.1499013900757,12.8495941162109 17.8500995635986,12.8495941162109 17.8500995635986,11.150408744812 15.1499013900757,11.150408744812z M10.5928974151611,11.150408744812L11.1265554428101,12.8495941162109 13.8501005172729,12.8495941162109 13.8501005172729,11.150408744812 10.5928974151611,11.150408744812z M19.1499004364014,8.05470085144043L19.1499004364014,9.84959983825684 22.9791259765625,9.84959983825684 23.7051086425781,8.29000282287598C23.7383117675781,8.2041015625,23.7593078613281,8.12400054931641,23.7709941864014,8.05470085144043L19.1499004364014,8.05470085144043z M15.1499013900757,8.05470085144043L15.1499013900757,9.84959983825684 17.8500995635986,9.84959983825684 17.8500995635986,8.05470085144043 15.1499013900757,8.05470085144043z M9.63821315765381,8.05470085144043C9.65280151367188,8.13089752197266,9.6748046875,8.22270202636719,9.7080078125,8.33300113677979L10.1843233108521,9.84959983825684 13.8501005172729,9.84959983825684 13.8501005172729,8.05470085144043 9.63821315765381,8.05470085144043z M1.00000059604645,2.50932544076932E-06L4.46881198883057,2.50932544076932E-06C6.70169067382813,0,7.39889526367188,1.34670257568359,7.78610467910767,2.66310262680054L8.7963285446167,6.10228633880615 9.30810832977295,5.99999856948853C9.99114990234375,6,16.5163269042969,6,19.4999980926514,5.99999856948853L20.7099628448486,5.99999856948853C22.1078491210938,6 23.2466735839844,6 23.8237037658691,5.99999856948853 25.87060546875,6 26.1445007324219,7.77539825439453 25.5893859863281,9.10939788818359L22.0028991699219,16.8144989013672C21.90478515625,17.1367034912109,21.4258117675781,18,20.3955097198486,17.9999980926514L12.2911367416382,17.9999980926514 12.4491872787476,18.5381011962891C12.5562133789063,18.7666015625,13.1953125,20,14.5093078613281,20.0000019073486L22.3438129425049,20.0000019073486C22.89599609375,20 23.3438110351563,20.4472961425781 23.3438110351563,21 23.3438110351563,21.5527038574219 22.89599609375,22 22.3438129425049,21.9999980926514L14.5093078613281,21.9999980926514C11.7344055175781,22 10.6278991699219,19.3721008300781 10.5820035934448,19.2606964111328 10.5693054199219,19.2285003662109 10.55810546875,19.1963043212891 10.5483064651489,19.1640911102295L5.86718559265137,3.22750115394592C5.55130004882813,2.15229797363281,5.28518676757813,2,4.46881198883057,1.99999892711639L1.00000059604645,1.99999892711639C0.44781494140625,2 0,1.55269622802734 2.45462706516264E-06,1.00000071525574 0,0.447303771972656 0.44781494140625,0 1.00000059604645,2.50932544076932E-06z M19.4999980926514,-2.53165180765791E-05C19.755859375,-3.0517578125E-05,20.01171875,0.0976486206054688,20.2069969177246,0.293001681566238L22.2070007324219,2.29299807548523C22.5976867675781,2.68360137939453,22.5976867675781,3.31639862060547,22.2070007324219,3.70700311660767L20.2069969177246,5.7069993019104C20.0116882324219,5.90229797363281 19.7558898925781,6 19.4999980926514,5.99999856948853 19.2441101074219,6 18.9883117675781,5.90229797363281 18.7929992675781,5.7069993019104 18.4023132324219,5.31639862060547 18.4023132324219,4.68360137939453 18.7929992675781,4.29300117492676L19.0859699249268,4.00000238418579 13,4.00000238418579C12.4478149414063,4 12,3.55269622802734 12.0000019073486,2.99999713897705 12,2.44730377197266 12.4478149414063,2 13,1.99999892711639L19.0859699249268,1.99999892711639 18.7929992675781,1.70699977874756C18.4023132324219,1.31639862060547 18.4023132324219,0.683601379394531 18.7929992675781,0.293001681566238 18.98828125,0.0976486206054688 19.244140625,-3.0517578125E-05 19.4999980926514,-2.53165180765791E-05z" Color="#FF555555" CatalogId="Checkout" Id="3d5445fb-cd5e-4850-90cc-c683b3d4085b" Panel.Bounds="615,538,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M97.9549942016602,-47.6549987792969C97.9549942016602,-47.6549987792969 -79.8499984741211,-47.6549987792969 -79.8499984741211,-47.6549987792969 -75.3080520629883,-51.8568725585938 -71.7913589477539,-57.751838684082 -70.5,-65.5 -70.5,-65.5 -70.5,-93.5 -70.5,-93.5 -70.5,-138.5 -49.5,-188.5 9.5,-188.5 59.5,-188.5 87.5,-153.5 90.5,-94.5 90.5,-94.5 90.5,-63.5 90.5,-63.5 90.5,-57.4392395019531 93.4993286132813,-51.9422149658203 97.9549942016602,-47.6549987792969z M150,-47.6530609130859C150,-47.6530609130859 142.089996337891,-47.6549987792969 142.089996337891,-47.6549987792969 150.346984863281,-57.95458984375 149.5,-74.7731323242188 149.5,-86.5 149.5,-165.5 112.5,-247.5 9.5,-247.5 -61.5,-247.5 -119.5,-204.5 -129.5,-109.5 -129.5,-109.5 -129.5,-64.5 -129.5,-64.5 -129.5,-57.9568023681641 -126.005218505859,-52.0708541870117 -120.95499420166,-47.6549987792969 -120.95499420166,-47.6549987792969 -130,-47.6530609130859 -130,-47.6530609130859 -163.134765625,-47.6530609130859 -190,-20.7330017089844 -190,12.4693880081177 -190,12.4693880081177 -190,212.877548217773 -190,212.877548217773 -190,246.079940795898 -163.134765625,273 -130,273 -130,273 150,273 150,273 183.134765625,273 210,246.079940795898 210,212.877548217773 210,212.877548217773 210,12.4693880081177 210,12.4693880081177 210,-20.7330017089844 183.134765625,-47.6530609130859 150,-47.6530609130859z M30,127.156089782715C30,127.156089782715 30,172.795913696289 30,172.795913696289 30,183.843811035156 21.025390625,192.836730957031 10,192.836730957031 -1.025390625,192.836730957031 -10,183.843811035156 -10,172.795913696289 -10,172.795913696289 -10,127.156089782715 -10,127.156089782715 -21.904296875,120.208343505859 -30,107.428413391113 -30,92.6326522827148 -30,70.4977264404297 -12.08984375,52.5510215759277 10,52.5510215759277 32.08984375,52.5510215759277 50,70.4977264404297 50,92.6326522827148 50,107.428413391113 41.904296875,120.208343505859 30,127.156089782715z" Color="#FF555555" CatalogId="Lock" Id="2d345bb6-981e-45c6-8774-d30672c7e1d9" Panel.Bounds="160,539,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="6f657f51-e3b4-449c-bc20-851b423d57e6" Panel.Bounds="15,636,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="e8c428e1-3658-42a1-b6aa-7de66a11ed52" Panel.Bounds="109,636,891{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="臨時取消課程" Foreground="White" FontSize="12" FontStyle="Normal" Id="13469b14-5d06-4995-ada9-c89e3d81ad19" Panel.Bounds="28,644,0*,0*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="e09d4f19-b3d9-43d6-937b-cb867b19a782" Panel.Bounds="508,672,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="33e65064-7a7a-4bbc-a3d7-30fca8dd17b2" Panel.Bounds="603,672,396{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="Learning Note" Foreground="White" FontSize="12" FontStyle="Normal" Id="d82b36cf-e336-42ff-bfae-77562c24eb3b" Panel.Bounds="517,680,69*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="1ac62855-c176-4b13-8ce3-0d62ac632b98" Panel.Bounds="15,672,93{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="f3fabd07-94cc-4d80-bd24-25641d3dbee6" Panel.Bounds="109,672,397{5,2147483647},35{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="錄影檔分享" Foreground="White" FontSize="12" FontStyle="Normal" Id="ef220384-5bab-427e-a0b8-8eefacaa24f2" Panel.Bounds="40,681,0*,0*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <OptionGroup FontStyle="" Id="89dd75e7-ec87-4973-9b5e-fd366ab136e4" Panel.Bounds="123,674,5*{5,2147483647},5*{5,2147483647}">
+                            <Option Text="禁止分享" Id="f99dd159-abad-482b-85fb-7210dffa8901" />
+                            <Option Text="開放分享" Id="d99066bd-3342-4591-ad7d-61cc0ea52e32" />
+                        </OptionGroup>
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Button Text="送出設定" Background="#FF383838" Foreground="White" FontSize="13" FontStyle="Normal" Id="c8ecabbf-480e-4fa7-8369-e24e09522bd2" Panel.Bounds="290,675,72{5,2147483647},28{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="[JN][HK] C:20120408-10:30.Johnny" Foreground="#FF282828" FontSize="12" FontStyle="Normal|Underline" Id="323e3187-2df6-4fcb-b5b5-4a75f6c1dcfc" Panel.Bounds="618,680,0*{5,2147483647},0*{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="Client Request" Foreground="#FF4281D0" FontSize="12" FontStyle="Normal|Underline" Id="b16352bf-8d18-44bf-a503-e60c5e6bc3aa" Panel.Bounds="852,680,48*,17*" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Icon Path="M568.038330078125,196.518325805664C568.038330078125,196.518325805664 592.066101074219,172.212890625 592.066101074219,172.212890625 613.444702148438,150.834289550781 613.259643554688,115.978363037109 591.638061523438,94.3452453613281 591.638061523438,94.3452453613281 513.365539550781,16.0842895507813 513.365539550781,16.0842895507813 491.743988037109,-5.53726196289063 456.899658203125,-5.72235107421875 435.521026611328,15.65625 435.521026611328,15.65625 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 411.493225097656,39.9616851806641 568.038330078125,196.518325805664 568.038330078125,196.518325805664z M511.306335449219,260.041015625C511.306335449219,260.041015625 548.684204101563,225 548.684204101563,225 548.684204101563,225 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 385.336853027344,61.6410827636719 347.958984375,96.6936645507813 347.958984375,96.6936645507813 347.958984375,96.6936645507813 511.306335449219,260.041015625 511.306335449219,260.041015625z M120.603057861328,440.162719726563C120.603057861328,440.162719726563 158.455230712891,448.665557861328 158.455230712891,448.665557861328 158.455230712891,448.665557861328 163.892425537109,483.440490722656 163.892425537109,483.440490722656 163.892425537109,483.440490722656 424.368988037109,223.183746337891 424.368988037109,223.183746337891 424.368988037109,223.183746337891 381.091186523438,179.894378662109 381.091186523438,179.894378662109 381.091186523438,179.894378662109 120.603057861328,440.162719726563 120.603057861328,440.162719726563z M88.4499969482422,540.859985351563C88.4499969482422,540.859985351563 67.1650009155273,519.575012207031 67.1650009155273,519.575012207031 76.4464645385742,487.659698486328 85.6495819091797,455.736083984375 95,424.25 95.9002227783203,420.949188232422 98.0608901977539,414.945343017578 99.6449966430664,409.160003662109 99.6449966430664,409.160003662109 355.397521972656,153.668563842773 355.397521972656,153.668563842773 355.397521972656,153.668563842773 324.34765625,122.630264282227 324.34765625,122.630264282227 324.34765625,122.630264282227 66.4249954223633,378.289978027344 66.4249954223633,378.289978027344 61.7881355285645,381.257568359375 57.1823196411133,386.277435302734 56,390.5 44,431.5 32,472.5 19.75,513.5 16.75,524 13.75,534.5 10.5,545 7,557.25 3,569.5 0.25,581.75 0.25,581.75 0.25,586.75 0.25,586.75 0.25,587.25 0.75,589.5 1,590.75 4.75,602.75 15.25,607.75 23.75,607.75 24.5,607.75 27.75,607.5 29.5,607 29.5,607 174.5,564.5 174.5,564.5 184.5,561.5 195,558.25 205.25,555.5 207.25,554.75 209.5,554 212,553.5 219.545852661133,551.823120117188 225.139114379883,547.804809570313 228.604995727539,542.794982910156 228.604995727539,542.794982910156 487.695007324219,285.989196777344 487.695007324219,285.989196777344 487.695007324219,285.989196777344 452.943206787109,251.237365722656 452.943206787109,251.237365722656 452.943206787109,251.237365722656 194.114990234375,509.789978027344 194.114990234375,509.789978027344 194.114990234375,509.789978027344 88.4499969482422,540.859985351563 88.4499969482422,540.859985351563z" Color="#FF555555" CatalogId="Edit" Id="f6677b13-4087-4278-8b5f-165a9301ae71" Panel.Bounds="828,680,18{5,2147483647},18{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FF555555" Id="44da4f1d-9d93-4e91-b412-142e31c20cac" Panel.Bounds="15,708,93{5,2147483647},57{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Rectangle Thickness="0" Background="#FFF2F2F2" Id="39a5a333-1a2f-4614-a1c6-546bfc8cf196" Panel.Bounds="109,708,890{5,2147483647},57{5,2147483647}" />
+                    </Add.Item>
+                </Add>
+                <Add Property="Panel.Children" Before="9ad0506c-e6c4-4772-b683-bb9168524d6d" Target="ef8253c4-2418-471a-a34d-655aa49c33fe">
+                    <Add.Item>
+                        <Label Text="購買歷史紀錄" Foreground="White" FontSize="12" FontStyle="Normal" Id="2b51119e-e2e8-431f-8c82-6305aa16f933" Panel.Bounds="30,728,0*,0*" />
+                    </Add.Item>
+                </Add>
+            </KeyFrame>
+        </Scene>
+    </Page.Scenes>
+</Page>

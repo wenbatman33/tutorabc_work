@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="reg_row">
+    <div class="reg_title_wrap">
+    <span class="reg_txt">联系电话 </span>
+    </div>
+    <div class="reg_field_wrap" style="width: 500px;">
+    <input type="radio" id="rad_mobile" value="cphone" name="rad_contact_tel" class="reg_field reg_txt"
+    checked="checked" onclick="setContactTel(this)" /><label class="reg_txt" style="margin-left: 5px">移动电话</label>
+    <input type="radio" id="rad_gphone" value="gphone" name="rad_contact_tel" class="reg_field reg_txt"
+    onclick="setContactTel(this)" /><label class="reg_txt" style="margin-left: 5px">固定电话</label>
+    <input type="hidden" id="hdn_phone_nationcode1" name="hdn_phone_nationcode1" value="+86" /><br />
+    <select name="sel_nation_code1" id="sel_nation_code1" class="form_select" onchange="changeNationalCode1(this)"
+    onfocus="this.style.color='#666'" onblur="if(this.value==''){this.style.color='#ccc';}else{this.style.color='#666';}">
+    <option value="">请选择</option>
+    @foreach (var item in XmlData)
+    {
+        if (item.value == "+86")
+        {
+        <option value="@item.value" selected="selected">@item.text</option>
+        }
+        else
+        {
+        <option value="@item.value">@item.text</option>
+        }
+    }
+    </select><br />
+    <input class="reg_field" type="text" id="txt_phone_nationcode1" name="txt_phone_nationcode1"
+    value="+86" style="width: 70px;" onchange="document.getElementById('hdn_phone_nationcode1').value=document.getElementById('txt_phone_nationcode1').value" />
+    <span id="span_rad_mobile">
+    <input class="reg_field" type="text" id="txt_cphone1" name="txt_cphone1" value="请输入手机电话"
+        style="width: 180px;" onfocus="if(this.value=='请输入手机电话'){this.value='';}this.style.color='#666';"
+        onblur="if(this.value!=''){this.style.color='#666';}" />
+    </span><span id="span_rad_gphone" style="display: none;">-<input type="text" id="txt_gphone_code"
+    name="txt_gphone_code" class="reg_field" style="width: 65px;" onfocus="this.style.color='#666';"
+    onblur="if(this.value!=''){this.style.color='#666';}" />-
+    <input type="text" id="txt_gphone" name="txt_gphone" class="reg_field" style="width: 100px;"
+        onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+    Ext.<input type="text" id="txt_gphone_ext" name="txt_gphone_ext" class="reg_field"
+        style="width: 65px;" onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+          @*<span class="reg_prompt_wrap color_red">
+            <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+            請輸入联系电话</span>*@
+
+    </div>
+</div>
+</body>
+</html>

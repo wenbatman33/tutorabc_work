@@ -1,0 +1,211 @@
+﻿@charset "utf-8";
+@import url("reset.css");
+
+body      { background:#fff; margin:0; padding:0; text-align:left; color:#000; font-family: Arial, Helvetica, sans-serif; font-size:30px; letter-spacing:-1px;}
+a         { color:#333333; text-decoration:none;  border: none;}
+a:active  { color:#333333; text-decoration:none;}
+img{border:none;}
+
+.footer,.header,.btn-big2,.btn-big,.title-item ,.testimonial,.news,.consultant,.phrase-area, .account-area ,.order-ss-area ,.idx-list-box,.voc-area,.plan-area,.order-time-area,.title,table.month-show-tab tr td.on,table.month-show-tab tr td.today{display: inline-block;background-repeat: no-repeat;background-image:url(../images/mobile/cssSprite_rx.png);}
+.idx-list-box-num ,.btn-back,.btn-w ,.btn-r,.btn-r2 ,.order-ss-area-icon,.phrase-area-icon,.consultant-icon,.news-icon,.idx-list-box-icon,.testimonial-icon,table.month-show-tab tr td.today-order,table.month-show-tab tr td.ordered {background-repeat: no-repeat;background-image:url(../images/mobile/cssSprite_norepeat.png);}
+.icon_menu,.icon_rating_1,.icon_rating_2,.Mobilelogo,.icon_men_7,.icon_men_11,.icon_men_12,.icon_men_15,.icon_men_16,.icon_men_home{ background-repeat: no-repeat;background-image: url(../images/mobile/icons.png);}
+
+.mainframe    {width:100%; position:relative;}/*iphone的橫向要吃xxx;*/
+.header       {width:100%; height:91px; background-position: 0px -164px; background-repeat: repeat-x;}
+.logo         {float:left; width:50%; padding:15px 0 0 15px;}
+.icon-header  {float:right; background:url(../images/mobile/cssSprite_ry.png) repeat-y left; width:60px; height:60px; padding:15px 15px 15px 35px; display:block;}
+
+/*一般共用*/
+.title  { background-position: 0px -1263px; background-repeat: repeat-x; padding:15px 0 0 0; width:100%;  text-align:center; font-size:38px; color:#000; height:58px;
+          border-bottom:1px #fff solid; position:relative;}
+.title2  { background:#020202 url(../images/mobile/title_bg2.png) repeat-x top; padding:15px 0 0 0;w idth:100%;  text-align:center; font-size:38px; color:#fff; height:58px;
+          border-bottom:1px #fff solid; position:relative;}
+.back  { position:absolute; left:15px; top:10px;  }
+
+.title-item   { background-position: 0px -255px; background-repeat: repeat-x; text-align:left; width:100%; color:#fff; font-size:34px; padding:10px 0 0 20px; height:48px;}
+
+.show-how { text-align:center; padding:15px 0 15px 0;}
+
+.show-more { color:#2f7ff0 ; font-size:36px; text-align:center; padding:30px 0 30px 0; display:block;}/*顯示更多*/
+.show-more2 { color:#2f7ff0 ; font-size:36px; text-align:center; padding:25px 0 25px 0; margin:0 0 20px 0;
+              display:block; border-top:1px #ccc solid; border-bottom:1px #ccc solid;}/*顯示更多(上下有直線)*/
+
+/*首頁-列表*/
+.idx-list-box                      { background-position: 0px -313px; background-repeat: repeat-x; padding:30px 0 20px 15px; border-top:1px #fff solid;  display:block; position:relative;}
+.idx-list-box-num                  { position:absolute; left:200px; width:42px; height:44px; background-position: 0 -430px ; background-repeat: no-repeat; text-align:center; color:#fff;
+                                     padding:3px 5px 0 0;}
+.idx-list-box-icon                 { background-position: 100% -480px;  margin:0 10px 0 0; }
+.idx-list-box .idx-list-box-p      { float:left; }
+.idx-list-box .idx-list-box-desc   { margin:0 25px 0 245px; }
+.idx-list-box .idx-list-box-desc h1 {color:#cc0000; font-size:35px;  }
+.idx-list-box .idx-list-box-desc h2 {color:#000; font-size:32px; padding:5px 0 5px 0;}
+.idx-list-box .idx-list-box-desc h3 {color:#888; font-size:32px; }
+
+/*以月顯示*/
+.month                          { border-top: 1px #e6e6e6 solid; border-bottom:1px #fff solid; background-position: 0px -863px; background-repeat: repeat-x;}
+table.month-show-tab            { width:100%;}
+table.month-show-tab tr         {}
+table.month-show-tab tr th      { text-align:center; color:#555; font-size:44px; padding:10px 0 0 0 ;  }
+table.month-show-tab tr td.week { background:none; font-size:22px; color:#555; padding:10px 0 8px 0; border-bottom:1px #b6b6b6 solid; border-right:0px; border-left:0px;}
+table.month-show-tab tr td      { width:14%; text-align:center; padding:8px 0 12px 0; font-size:48px;  border-bottom:1px #ccc solid; border-right:1px #ccc solid;
+                                  background:#ededed; color:#555; }
+table.month-show-tab tr td.none       { color:#ccc;}
+table.month-show-tab tr td.today      { background-position: 0px -1163px; background-repeat: repeat-x; color:#fff;}/*今天*/
+table.month-show-tab tr td.today a    { color:#fff;}
+table.month-show-tab tr td.today-order      { background-position: 0px -338px; background-repeat: no-repeat; color:#fff;}/*今天有訂課*/
+table.month-show-tab tr td.today-order a    { color:#fff;}
+table.month-show-tab tr td.ordered    { background-position: 0px -230px; background-repeat: no-repeat;}/*有訂課*/
+table.month-show-tab tr td.on         { color:#fff; background-position: 0px -247px; background-repeat: no-repeat; }/*點擊那天*/
+table.month-show-tab tr td.on a       { color:#fff;}
+table.month-show-tab tr td.on-order   { background-position: 0px -1063px;  color:#fff;}/*點擊那天有訂課*/
+table.month-show-tab tr td.on-order a { color:#fff;}
+table.month-show-tab a                { color:#555;}
+
+/*訂課:一對x*/
+.order-time-area { background-position: 0px -563px; background-repeat: repeat-x;border-top:1px #fff solid; border-bottom:1px #ccc solid; padding:15px 0 15px 0; display:block;}
+.order-time-area .order-time {float:left; padding:5px 0 0 20px; font-size:40px; }
+.order-time-area .order-area {float:right; padding:0 20px 0 0;}
+
+.order-time-24h { background:#ffc682;}/*24h小時內橘色背景*/
+
+/*訂課:大會堂*/
+.order-ss-area        {background-position: 0px -313px; background-repeat: repeat-x; padding:20px 0 20px 20px; border-top:1px #fff solid;  display:block;}
+.order-ss-area-icon   {background-position: 100% -480px;  margin:0 10px 0 0; }
+.order-ss-area h1     {color:#cc0000; font-size:36px; width:95%; padding:0 0 8px 0;}
+.order-ss-area h2     {color:#888; font-size:30px;width:95%;padding:0 0 8px 0;}
+.order-ss-area h3     {color:#333; font-size:30px;width:95%;}
+/*訂課:大會堂單文*/
+.order-ss-show        { padding:20px 20px 25px 20px; }
+.order-ss-show h1     { color:#cc0000; font-size:40px; }
+.order-ss-show h2     { color:#000; font-size:40px; }
+.order-ss-show h3     { color:#888; font-size:32px; margin:0 0 15px 0; }
+.order-ss-show h4     { color:#888; font-size:34px; }
+.order-ss-show h5     { color:#000; font-size:34px; margin:15px 0 0 0; float:left; width:50%;}
+.order-ss-show h6     { margin:15px 0 0 0; float:left; text-align:right;width:50%; padding:20px 0 0 0;}
+
+/*學習計劃*/
+.plan-area             {background-position: 0px -563px; background-repeat: repeat-x; border-top:1px #fff solid; border-bottom:1px #ccc solid; padding:20px ; display:block; font-size:36px;}
+.plan-area .plan-time  {float:left; padding:0 25px 0 0; color:#cc0000;}
+.plan-area .plan-stype {float:left; color:#000;}
+.plan-area .plan-topic {color:#888; padding:5px 0 0 0;}
+
+/*Menu*/
+.menu { background:#fff; padding:60px 0 0 20px; height:450px;}
+.menu ul    {}
+.menu ul li {float:left; padding:0 20px 60px 0; display:block; width:30%; text-align:center;}
+.menu ul li p {font-size:30px; color:#000; text-align:center;}
+
+/*字彙銀行*/
+.voc-area             {background-position: 0px -563px; background-repeat: repeat-x; border-top:1px #fff solid; border-bottom:1px #ccc solid; padding:20px ; display:block; }
+.voc-area .voc-eng    {float:left; padding:0 25px 0 0; color:#000; font-size:50px;}
+.voc-area .voc-voice  {float:right; padding:10px 10px 0 0; color:#555; font-size:38px;}
+
+.voc-show {padding:25px;}
+.voc-show h1 {font-size:80px; color:#000; float:left; letter-spacing:-3px; padding:0 0 15px 0;}
+.voc-show h2 {float:right; display:block; padding:10px 0 0 0;}
+.voc-show p {padding:0 0 20px 0; color:#333; font-size:38px;}
+.voc-show p .v-t{color:#ccc;}
+
+/*帳戶資訊*/
+.account-area           {background-position: 0px -313px; background-repeat: repeat-x; border-top:1px #fff solid; border-bottom:1px #ccc solid; padding:20px 30px 20px 30px;
+                         display:block; font-size:36px;}
+.account-area .acc-desc {float:left; text-align:left; padding:0 0 8px 0;}
+.account-area .acc-num  {float:right; text-align:left; padding:0 0 8px 0; }
+
+/*聯絡我們*/
+.contactus-area {padding:10px 20px 10px 20px; font-size:34px;}
+.contactus-area h1 {font-size:38px; padding:0 0 10px 0;}
+.contactus-area textarea { width:99%; height:320px;}
+.contactus-area img { margin:0 3px -5px 3px;}
+
+/*每日一句*/
+.phrase-area        {background-position: 0px -313px; background-repeat: repeat-x; padding:20px 0 20px 20px; border-top:1px #fff solid;  display:block;}
+.phrase-area-icon   {background-position: 100% -480px;  margin:0 10px 0 0; }
+.phrase-area h1     {color:#333; font-size:40px; width:95%; }
+.phrase-area h2     {color:#888; font-size:32px; padding:0 20px 0 0; float:left;}
+
+/*填表*/
+.mobile-form {}
+table.placement { font-size:38px; width:100%;}
+table.placement td.left  { padding:15px 20px 0 0; text-align:right; width:23%;}
+table.placement td.right { padding:15px 0 0 0; }
+table.placement td.right2 { padding:15px 0 30px 0; text-align:center; }
+
+/*關於我們*/
+.aboutus {padding:20px;font-size:36px; line-height:46px;}
+.aboutus p {padding:20px; color:#0084ff; padding:20px 0 20px 0; }
+
+/*企業榮耀*/
+.gloria-area {margin:20px; padding:0 0 15px 0; border-bottom:1px #ccc solid; font-size:36px; vertical-align:top;}
+.gloria-area .gloria-p    {float:left;padding:0 20px 0 0; text-align:center; }
+.gloria-area .gloria-desc {float:left;width:83%;}
+.noneline { border-bottom:1px #fff solid;}
+
+/*顧問推薦*/
+.consultant        {background-position: 0px -313px; background-repeat: repeat-x; padding:20px 0 20px 20px; border-top:1px #fff solid;  display:block;}
+.consultant-icon   {background-position: 100% -480px;  margin:0 10px 0 0; }
+.consultant h1     {color:#333; font-size:40px; width:95%; }
+.consultant p     {color:#888; font-size:32px; padding:0 20px 0 0; }
+
+/*新聞*/
+.news        {background-position: 0px -313px; background-repeat: repeat-x;  padding:20px 0 20px 20px; border-top:1px #fff solid;  display:block;}
+.news-icon   {background-position: 100% -480px;  margin:0 10px 0 0; }
+.news img    {float:left; margin:8px 20px 0 0 ; border:1px #ccc solid;}
+.news h1     {color:#333; font-size:40px; width:95%; }
+
+.news-show    {padding:25px;}
+.news-show h1 {font-size:40px; color:#cc0000; margin:0 0 10px 0;}
+.news-show p  {font-size:36px; color:#555; line-height:46px; margin:0 0 25px 0 ;}
+.news-show img {float:left; margin:0 10px 5px 0;}
+
+/*見證人*/
+.testimonial        {background-position: 0px -313px; background-repeat: repeat-x; padding:20px 0 20px 20px; border-top:1px #fff solid;  display:block;}
+.testimonial-icon   {background-position: 100% -480px; t; margin:0 10px 0 0; }
+.testimonial .t-p   {float:left; padding:0 15px 0 0 ; }
+.testimonial .t-box { margin:0 0 0 160px; }
+.testimonial h1     {color:#cc0000; font-size:40px; padding:0 0 5px 0px; }
+.testimonial p      {color:#888; font-size:34px; padding:0 30px 0px 10px; }
+
+/*Footer*/
+.footer   { background-position: 0px -1336px;background-repeat: repeat-x; width:100%; text-align:center; color:#888; font-size:30px; padding:11px 0 5px 0; line-height:45px;
+            border-top:1px #555 solid; }
+.footer a {color:#fff;}
+
+/*元件共用*/
+.clear  { clear:both;}
+.btn-w  { background-position: 0 -171px ; background-repeat: no-repeat; width:170px; height:55px; border:0; text-align:center; color:#555; font-size:34px;}/*White*/
+.btn-r  { background-position: 0px -59px ; background-repeat: no-repeat; width:170px; height:55px; border:0; text-align:center; color:#fff; font-size:34px;}/*red*/
+.btn-r2  { background-color: #fff; background-position: 0 -115px; background-repeat: no-repeat; width:170px; height:55px; border:0; text-align:center; color:#fff; font-size:34px;}/*red*/
+
+.btn-big {background-position: 0px -82px; background-repeat: repeat-x; width:92%; height:82px; border:0; text-align:center; color:#fff; font-size:40px; margin-bottom:10px; } /*red*/
+.btn-big2 {background-position: 0px 0px; background-repeat: repeat-x; width:92%; height:82px; border:0; text-align:center; color:#fff; font-size:40px; margin-bottom:10px; }/*green*/
+.select-1 {width:95%; font-size:34px; margin:15px 0 20px 0;}
+.input-1 { height:50px; width:93%; margin:5px 0 0 0; font-size:38px;}
+
+.btn-box { text-align:center;  width:100%; }
+
+.small  { font-size:20px;}
+.middle { font-size:38px;}
+
+.btn-back {border:0; width:129px; height:59px; display:block; color:#fff; background-position: 0 0; background-repeat: no-repeat; font-size:32px; text-align:right; padding-right:35px;}
+
+.text-01     {width:95%; border:1px #ccc solid; background:#fffac6; height:35px; }
+
+.c-01 {color:#cc0000;}/*red*/
+
+.c-gray  {color:#555;}/*灰色*/
+.c-white {color:#fff;}/*白色*/
+
+.icon_menu{display: inline-block;background-position:0px 0px;width:44px;height:52px;}
+.Mobilelogo{display: inline-block;background-position:-114px 0px;width:163px;height:48px;}
+
+.icon_rating_1{ display: inline-block;background-position:-44px 0px;width:35px;height:33px; }
+.icon_rating_2{ display: inline-block; background-position:-79px 0px;width:35px;height:33px; }
+.icon_men_7{ display: inline-block;background-position:-277px 0px;width:130px;height:110px;}
+.icon_men_11{ display: inline-block;background-position:0px -110px;width:130px;height:110px;}
+.icon_men_12{ display: inline-block;background-position:-130px -110px;width:130px;height:110px;}
+.icon_men_15{ display: inline-block;background-position:-260px -110px;width:130px;height:110px;}
+.icon_men_16{ display: inline-block;background-position:0px -220px;width:130px;height:110px;}
+.icon_men_home{ display: inline-block;background-position:-130px -220px;width:130px;height:110px;}
+
+

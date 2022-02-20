@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+/*fixd Metro UI*/
+.metro{ height: auto; overflow: hidden; position: relative; width:100%; margin-bottom:1.5em;}
+.metro .titleTile{ float:left; color: #ffffff; width:102px; height:102px; margin:1px 1px 1px 0;}
+.metro .titleTile span.tile-label{ font-size: 18px; position: absolute; top:25%; text-align:center; color:#ffffff; width:102px;}
+.metro .metro-section{ float: left; width:104px; height:104px; overflow: hidden;}
+.metro .metro-section a.tile{ background-color: #ffffff; color: #70726d; cursor: pointer; display: block; float: left; width:50px; height: 50px; margin:1px; overflow: hidden; position: relative; text-decoration:none;}
+.metro .metro-section a.tile small{ position:absolute; top:0; right:0; background-color:#ff0000; padding:1px; color:#ffffff; min-width:11px; min-height:11px; text-align:center; font-size:9px;}
+.metro .metro-section a:hover.tile{ background-color:#717171; color:#ffffff;}
+.metro .metro-section a.tile-double{ width:102px;}
+.metro .metro-section a.tile-double-vertical{ height:102px;}
+.metro .metro-section a.tile span.tile-label{ font-size: 13px; position: absolute; top:36%; text-align:center; width:100%;}
+.metro .metro-section a.tile span.tile-two-line{ top:10%;}
+.metro .metro-section a.active{ background-color:#717171; color:#ffffff;}
+.metro .metro-section a.disabled{ color:#b7b5b6; cursor:default;}
+.metro .metro-section a:hover.disabled{ background-color: #ffffff; color:#b7b5b6; cursor:default;}
+
+/*fluid Metro UI*/
+.metro-fluid{ height: auto; overflow: hidden; position: relative; width:100%; margin-bottom:1.5em; min-width:940px;}
+.metro-fluid .titleTile{ float:left; color: #ffffff; width:11%; height:102px; margin:1px 1px 1px 0;}
+.metro-fluid .titleTile{ float:left;  color: #ffffff; width:11%; height:102px; margin:1px 1px 1px 0;}
+.metro-fluid .titleTile{ float:left;  color: #ffffff; width:11%; height:102px; margin:1px 1px 1px 0;}
+
+.metro-fluid .titleTile span.tile-label{ font-size: 18px; position: absolute; top:23%; text-align:center; color:#ffffff; width:11%;}
+.metro-fluid .metro-section{ float: left; width:11%; height:104px; overflow: hidden;}
+.metro-fluid .metro-section a.tile{ background-color: #ffffff; color: #70726d; cursor: pointer; display: block; float: left; width:49%; height: 50px; margin:1px; overflow: hidden; position: relative; text-decoration:none;}
+.metro-fluid .metro-section a.tile small{ position:absolute; top:0; right:0; background-color:#ff0000; padding:1px; color:#ffffff; min-width:11px; min-height:11px; text-align:center; font-size:9px;}
+.metro-fluid .metro-section a:hover.tile{ background-color:#717171; color:#ffffff;}
+.metro-fluid .metro-section a.tile-double{ width:98%;}
+.metro-fluid .metro-section a.tile-double-vertical{ height:102px;}
+.metro-fluid .metro-section a.tile span.tile-label{ font-size: 13px; position: absolute; top:34%; text-align:center; width:100%;}
+.metro-fluid .metro-section a.tile span.tile-two-line{ top:10%;}
+.metro-fluid .metro-section a.active{ background-color:#717171; color:#ffffff;}
+.metro-fluid .metro-section a.disabled{ color:#b7b5b6; cursor:default;}
+.metro-fluid .metro-section a:hover.disabled{ background-color: #ffffff; color:#b7b5b6; cursor:default;}
+/*.metro .metro-section a.tile{ -moz-border-radius: 10px 10px 0 0; -webkit-border-radius:  10px 10px 0 0; border-radius:  10px 10px 0 0; behavior: url(css/PIE.htc);}*/
+
+
