@@ -1,0 +1,38 @@
+ajax_cancel_class.asp
+// 取消課程 (只能一次一堂)
+
+ajax_class_info.asp
+// 一對一和一對三頁面
+// 選擇訂課日期動態呼叫
+// 計算扣堂數動態呼叫
+
+ajax_class_list_calender.asp
+// 月份 行事曆
+
+ajax_class_list_calender_head.asp
+// 月份 行事曆 切換行事曆種類按鈕
+
+ajax_class_list_week.asp
+// 星期 行事曆
+
+ajax_class_list_week_head.asp
+// 星期 行事曆 切換行事曆種類按鈕
+
+ajax_commend_lobby_class.asp
+// 一對一和一對三訂課頁面 推薦大會堂的顧問資料
+
+ajax_lobby_class_info.asp
+// 大會堂訂課頁面 開課顧問的資料
+
+ajax_lobby_class_search.asp
+// 大會堂訂課頁面 搜尋開課顧問
+
+ajax_reservation_normal_and_vip_class.asp
+// 一對一和一對三訂課頁面 選擇課程種類、日期、時間
+
+include_all_message.inc
+// 所有訂課頁面上顯示的訊息 .js 要用到的提示訊息
+
+include_prepare_and_check_data.inc
+// 所有訂課頁面皆會載入 
+// 是否能使用訂課頁面的各種條件判斷及都會共用到的資料設定

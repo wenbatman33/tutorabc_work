@@ -1,0 +1,64 @@
+h1{
+	font-size:20px;	line-height:28px;
+	
+}
+h2{
+	font-size:18px;	line-height:26x;
+	
+}
+h3{
+	font-size:16px;	line-height:24px; padding-top:15px;	padding-bottom:-2px;
+}
+
+h4{
+	font-size: 14px; line-height: 24px;  
+}
+h4 a{
+	color:#666;
+	font-size: 14px; line-height: 24px;  
+}
+h4 a:hover{
+	color:#999;
+	font-size: 14px; line-height: 24px;  
+}
+h5{
+	font-size: 12px;	 line-height: 16px;
+}
+
+h5 a{
+	color:#666;
+	font-size: 12px;	 line-height: 16px;
+}
+h5 a:hover{
+	color:#999;
+	font-size: 12px;	 line-height: 16px; 
+}
+.bold{
+	font-weight:bold;
+	
+}
+
+.color_fff{
+	color:#FFF;
+}
+
+.color_red{
+	color:#e60012;
+}
+
+.color_orange{
+	color:#ff9000;
+}
+
+.color_fff{
+	color:#FFF;
+}
+
+.color_333{
+	color:#333333;
+}
+.color_666{
+	color:#666666;
+}
+
+

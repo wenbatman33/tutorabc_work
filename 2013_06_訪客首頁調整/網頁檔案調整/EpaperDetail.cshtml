@@ -1,0 +1,263 @@
+﻿@model NewVIPABC.Models.Epaper
+@{var EpaperList = ViewData["EpaperList"] as IEnumerable<NewVIPABC.Models.Epaper>;}
+<head>
+    <script language="javascript" type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.jplayer.min.js")"></script>
+    <link href="@Url.Content("~/Content/css/jplayer.blue.monday.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/html.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/jquery.fancybox_VIPABC.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.fancybox.pack.js")"></script>
+    <script type="text/javascript">  
+        function changeClass(type) {          
+            document.getElementById("form1").action = '@Url.Action("EpaperList", "Epaper")?type='+type;
+            document.getElementById("form1").submit();
+        }    
+         function changeUrl(ID) {
+            //转页
+            window.location.href='@Url.Action("EpaperDetail", "Epaper")?epaperType='+@Model.EpaperType+'&&ID='+ID;
+        }
+        function sendepaper() {
+            var epaper_email = document.getElementById("txt_email").value;
+            //檢驗email格式    
+            if (g_obj_verify.isEmailAddressValid(epaper_email) == g_obj_error_handle.error_code.input_data_is_empty) {
+                alert("请输入您的邮箱");
+                $("#txt_email").focus();
+                return false;
+            }
+            if (g_obj_verify.isEmailAddressValid(epaper_email) != g_obj_error_handle.success_code) {
+                alert("您输入的邮箱格式不正确");
+                $("#txt_email").focus();
+                return false;
+            }
+            if (epaper_email == "请输入您的邮箱") {
+                alert("请输入您的邮箱");
+                $("#txt_email").focus();
+                return false;
+            }           
+            //將使用者留下的email寫入資料庫	
+            document.getElementById("form1").action = '@Url.Action("EpaperDetail", "Epaper")?type='+@Model.EpaperType+'&id='+@Model.ID+'&email=' + epaper_email;
+            document.getElementById("form1").submit();
+        }
+    </script>
+</head>
+@using (Html.BeginForm("EpaperDetail", "Epaper", FormMethod.Post, new { name = "form1", id = "form1", pagevalue = "1" }))
+{
+    <input id="hidden" type="hidden" value="@Model.Content" />
+    <div class="content" style="min-height:50px">
+        <div class="box_960">
+            <div class="box_660 color_333">
+                <div class="breadcrumb">
+                    <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>学习报</div>
+                <ul class="tab_ul">
+                    @if (@Model.EpaperType == 1)
+                    {
+                        <li id="li1" class="tab_li_L_active" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                            <span class="tab_li_span">商业科技</span></li>
+                        <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                            <span class="tab_li_span">旅游探索</span></li>
+                        <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                            <span class="tab_li_span">生活娱乐</span></li>
+                        <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                            <span class="tab_li_span">健康医学</span></li>
+                        <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                            <span class="tab_li_span">人文艺术</span></li>
+                    }
+                    else if (@Model.EpaperType == 2)
+                    {
+                        <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                            <span class="tab_li_span">商业科技</span></li>
+                        <li id="li2" class="tab_li_M_active" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                            <span class="tab_li_span">旅游探索</span></li>
+                        <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                            <span class="tab_li_span">生活娱乐</span></li>
+                        <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                            <span class="tab_li_span">健康医学</span></li>
+                        <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                            <span class="tab_li_span">人文艺术</span></li>
+                    }
+                    else if (@Model.EpaperType == 3)
+                    {
+                        <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                            <span class="tab_li_span">商业科技</span></li>
+                        <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                            <span class="tab_li_span">旅游探索</span></li>
+                        <li id="li3" class="tab_li_M_active" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                            <span class="tab_li_span">生活娱乐</span></li>
+                        <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                            <span class="tab_li_span">健康医学</span></li>
+                        <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                            <span class="tab_li_span">人文艺术</span></li>
+                    }
+                    else if (@Model.EpaperType == 4)
+                    {
+                        <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                            <span class="tab_li_span">商业科技</span></li>
+                        <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                            <span class="tab_li_span">旅游探索</span></li>
+                        <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                            <span class="tab_li_span">生活娱乐</span></li>
+                        <li id="li4" class="tab_li_M_active" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                            <span class="tab_li_span">健康医学</span></li>
+                        <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                            <span class="tab_li_span">人文艺术</span></li>
+                    }
+                    else
+                    {
+                        <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                            <span class="tab_li_span">商业科技</span></li>
+                        <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                            <span class="tab_li_span">旅游探索</span></li>
+                        <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                            <span class="tab_li_span">生活娱乐</span></li>
+                        <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                            <span class="tab_li_span">健康医学</span></li>
+                        <li id="li5" class="tab_li_R_active" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                            <span class="tab_li_span">人文艺术</span></li>
+                    }
+                </ul>
+                <div id="divArticle" style="">
+                    <div class="epaper_h_e">
+                        @Model.Localizations.En.Name</div>
+                    <div class="epaper_h_c">
+                        @Model.Name</div>
+                    <div class="epaper_pic">
+                        <img id="EPaperImage" width="660" height="348" src="@Model.Images.pic768x730" atl=""></div>
+                   <div class="article">
+                        <!--聲音檔-->
+                        <div class="vedio_epaper">
+                            <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 0px; height: 0px;">
+                                <img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0"
+                                    preload="metadata" src="@Model.Mp3Url"></audio></div>
+                            <div id="jp_container_1" class="jp-audio">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface" style="">
+                                        <ul class="jp-controls">
+                                            <li><a href="javascript:;" class="jp-play" tabindex="1" style="">play</a></li>
+                                            <li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;">pause</a></li>
+                                            <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute" style="">mute</a></li>
+                                            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none;">
+                                                unmute</a></li>
+                                            <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume"
+                                                style="">max volume</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar" style="width: 100%;">
+                                                <div class="jp-play-bar" style="width: 0%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-volume-bar" style="">
+                                            <div class="jp-volume-bar-value" style="width: 80%;">
+                                            </div>
+                                        </div>
+                                        <div class="jp-time-holder">
+                                            <div class="jp-current-time">
+                                                00:00</div>
+                                            <div class="jp-duration">
+                                                01:27</div>
+                                            <ul class="jp-toggles">
+                                                <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat" style="">repeat</a></li>
+                                                <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off"
+                                                    style="display: none;">repeat off</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--聲音檔 END-->
+                        <div id="paragraphs" style="font-size: 12px">
+                        </div>
+                        <div style="clear: both">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article_more" style="">
+                @if (@Model.EpaperType == 1)
+                {
+                    <p>
+                        更多商业科技类学习报</p>
+                }
+                else if (@Model.EpaperType == 2)
+                {
+                    <p>
+                        更多旅游探索类学习报</p>
+                }
+                else if (@Model.EpaperType == 3)
+                {
+                    <p>
+                        更多生活娱乐类学习报</p>
+                }
+                else if (@Model.EpaperType == 4)
+                {
+                    <p>
+                        更多健康医学类学习报</p>
+                }
+                else
+                {
+                    <p>
+                        更多人文艺术类学习报</p>
+                }
+                <ul style="width: 700px">
+                    @foreach (var item in EpaperList)
+                    {
+                        <li>
+                            <div class="article_list_point">
+                                點點</div>
+                            <div class="article_list">
+                                <a href="javascript:void(0)" onclick="changeUrl(@item.ID);">
+                                    @if (@item.Name.Count() > 11)
+                                    {
+                                        @item.Name.Substring(0, 11)<span>...</span>
+                                    }
+                                    else
+                                    {
+                                        @item.Name
+                                    }
+                                    @if (@item.Localizations.En.Name.Count() > 14)
+                                    {
+                                        @item.Localizations.En.Name.Substring(0, 11)<span>...</span>
+                                    }
+                                    else
+                                    {
+                                        @item.Localizations.En.Name
+                                    }
+                                </a>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <form id="formEpaper" action="">
+            <div class="epaper_intro_wrap">
+                <div class="epaper_intro">
+                    <ul>
+                        <li class="epaper_intro1">立即订阅免费学习报</li>
+                        <li class="epaper_intro2">了解国际时事脉动，体会世界人文之旅，提供您第一手消息！</li>
+                    </ul>
+                </div>
+                <div class="epaper_input" style="margin-top:18px;">
+                    <div style="position: relative; width: 100%; text-align: left; float: left; height: 32px;
+                        line-height: 32px; vertical-align: middle;">
+                        E-mail
+                        <input name="txt_email" class="reg_field" id="txt_email" type="text" value="请输入您的邮箱"
+                            onfocus="if(this.value=='请输入您的邮箱'){this.value='';this.className='reg_field';}else{this.className='reg_field_black';}" style="width: 350px;" 
+                            onblur="if(this.value==''){this.value='请输入您的邮箱';this.className='reg_field';}else{this.className='reg_field_black';}"/>
+                    </div>
+                    <div class="y_btn" style="position: relative; float: left; margin-left: 50px; margin-top: 10px;"
+                        onclick="sendepaper()">
+                        <a class="btn_text color_fff" href="#">
+                            <div>
+                                确定送出</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("paragraphs").innerHTML = document.getElementById("hidden").value;
+    </script>
+}

@@ -1,0 +1,30 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	width:100%;
+}
+
+
+#top_news {
+margin:0 auto;
+background:#3a3a3a;
+height:48px;
+
+}
+.topmain {
+width: 960px;
+margin: 0 auto;
+}
+.topleft a {
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+}
+
+
+.user_register_bar{
+	height:48px;
+	float:left;
+	
+}

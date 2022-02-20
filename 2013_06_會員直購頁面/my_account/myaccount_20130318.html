@@ -1,0 +1,1789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>無標題文件</title>
+<link href="my_account_20130318.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!--[if lt IE 7]>
+<script>
+    function correctPNG()
+    {
+        for(var i=0; i<document./images.length; i++)
+        {
+            var img = document./images[i]
+            var imgName = img.src.toUpperCase()
+            if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+            {
+                var imgID = (img.id) ? "id='" + img.id + "' " : ""
+                var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+                var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+                var imgStyle = "display:inline-block;" + img.style.cssText
+                if (img.align == "left") imgStyle = "float:left;" + imgStyle
+                if (img.align == "right") imgStyle = "float:right;" + imgStyle
+                if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+                var strNewHTML = "<span "+ imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='image');\"></span>"
+                img.outerHTML = strNewHTML
+                i = i-1
+            }
+        }
+    }
+    window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+
+<!--展開收合控制--><script type="text/javascript">
+	$(document).ready(function(){
+		$(".contract").hide();
+		$(".consulting_detail").hide();
+		$(".search_session_log").hide();
+		$(".btn_search").show();
+		
+		$('.btn_close').click(function(){
+			/*按關閉按鈕全部收合*/
+			$(".contract").slideUp();
+			$(".consulting_detail").slideUp();
+			$(".search_session_log").slideUp();
+			/*移除按鈕選取背景色*/
+			$(".btn_contract").removeClass("selected");
+			$(".btn_consulting_detail").removeClass("selected");
+			$(".btn_search").removeClass("selected");
+		});
+		$('.btn_search').click(function(){
+			/*搜尋框控制*/
+			$(".btn_search").toggleClass("selected");
+			$(".search_session_log").slideToggle();
+		});
+		$('#btn_contract_01').click(function(){
+			$("#btn_contract_01").toggleClass("selected");
+			$("#btn_contract_02").removeClass("selected");
+			$("#btn_contract_03").removeClass("selected");
+			$("#btn_consulting_detail_01").removeClass("selected");
+			$("#btn_consulting_detail_02").removeClass("selected");
+			$("#btn_consulting_detail_03").removeClass("selected");
+			$(".btn_search").removeClass("selected");
+			$("#contract_01").slideToggle();
+			$("#contract_02").slideUp();
+			$("#contract_03").slideUp();
+			$("#consulting_detail_01").slideUp();
+			$("#consulting_detail_02").slideUp();
+			$("#consulting_detail_03").slideUp();
+			$(".search_session_log").slideUp();
+		});
+		$('#btn_contract_02').click(function(){
+			$("#btn_contract_01").removeClass("selected");
+			$("#btn_contract_02").toggleClass("selected");
+			$("#btn_contract_03").removeClass("selected");
+			$("#btn_consulting_detail_01").removeClass("selected");
+			$("#btn_consulting_detail_02").removeClass("selected");
+			$("#btn_consulting_detail_03").removeClass("selected");
+			$(".btn_search").removeClass("selected");
+			$("#contract_01").slideUp();
+			$("#contract_02").slideToggle();
+			$("#contract_03").slideUp();
+			$("#consulting_detail_01").slideUp();
+			$("#consulting_detail_02").slideUp();
+			$("#consulting_detail_03").slideUp();
+			$(".search_session_log").slideUp();
+		});
+		$('#btn_contract_03').click(function(){
+			$("#btn_contract_01").removeClass("selected");
+			$("#btn_contract_02").removeClass("selected");
+			$("#btn_contract_03").toggleClass("selected");
+			$("#btn_consulting_detail_01").removeClass("selected");
+			$("#btn_consulting_detail_02").removeClass("selected");
+			$("#btn_consulting_detail_03").removeClass("selected");
+			$(".btn_search").removeClass("selected");
+			$("#contract_01").slideUp();
+			$("#contract_02").slideUp();
+			$("#contract_03").slideToggle();
+			$("#consulting_detail_01").slideUp();
+			$("#consulting_detail_02").slideUp();
+			$("#consulting_detail_03").slideUp();
+			$(".search_session_log").slideUp();
+		});
+		$('#btn_consulting_detail_01').click(function(){
+			$("#btn_contract_01").removeClass("selected");
+			$("#btn_contract_02").removeClass("selected");
+			$("#btn_contract_03").removeClass("selected");
+			$("#btn_consulting_detail_01").toggleClass("selected");
+			$("#btn_consulting_detail_02").removeClass("selected");
+			$("#btn_consulting_detail_03").removeClass("selected");
+			$(".btn_search").removeClass("selected");
+			$("#contract_01").slideUp();
+			$("#contract_02").slideUp();
+			$("#contract_03").slideUp();
+			$("#consulting_detail_01").slideToggle();
+			$("#consulting_detail_02").slideUp();
+			$("#consulting_detail_03").slideUp();
+			$(".search_session_log").slideUp();
+		});
+		$('#btn_consulting_detail_02').click(function(){
+			$("#btn_contract_01").removeClass("selected");
+			$("#btn_contract_02").removeClass("selected");
+			$("#btn_contract_03").removeClass("selected");
+			$("#btn_consulting_detail_01").removeClass("selected");
+			$("#btn_consulting_detail_02").toggleClass("selected");
+			$("#btn_consulting_detail_03").removeClass("selected");
+			$(".btn_search").removeClass("selected");
+			$("#contract_01").slideUp();
+			$("#contract_02").slideUp();
+			$("#contract_03").slideUp();
+			$("#consulting_detail_01").slideUp();
+			$("#consulting_detail_02").slideToggle();
+			$("#consulting_detail_03").slideUp();
+			$(".search_session_log").slideUp();
+		});
+		$('#btn_consulting_detail_03').click(function(){
+			$("#btn_contract_01").removeClass("selected");
+			$("#btn_contract_02").removeClass("selected");
+			$("#btn_contract_03").removeClass("selected");
+			$("#btn_consulting_detail_01").removeClass("selected");
+			$("#btn_consulting_detail_02").removeClass("selected");
+			$("#btn_consulting_detail_03").toggleClass("selected");
+			$(".btn_search").removeClass("selected");
+			$("#contract_01").slideUp();
+			$("#contract_02").slideUp();
+			$("#contract_03").slideUp();
+			$("#consulting_detail_01").slideUp();
+			$("#consulting_detail_02").slideUp();
+			$("#consulting_detail_03").slideToggle();
+			$(".search_session_log").slideUp();
+		});		
+	});
+<!--end 展開收合控制--></script>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="content">
+    <div id="myaccount_20130318">
+      <div id="myaccount_main">
+        <div class="c c_sort clearfix">
+          <div class="r r_contract_01">產品</div>
+          <div class="r r_contract_02">產品使用期限</div>
+          <div class="r r_contract_03">點數</div>
+          <div class="r r_contract_04">剩餘點數</div>
+          <div class="r r_contract_05">&nbsp;</div>
+          <div class="r r_contract_06">&nbsp;</div>
+        </div>
+        <div class="c_list_outter">
+          <div class="c c_list clearfix">
+            <div class="r r_contract_01">(新)決心套裝(新二年400堂)</div>
+            <div class="r r_contract_02">2010/10/20~2011/10/19</div>
+            <div class="r r_contract_03">425</div>
+            <div class="r r_contract_04">15</div>
+            <div id="btn_contract_01" class="r r_contract_05 btn_contract"><a href="#">合約詳情</a></div>
+            <div id="btn_consulting_detail_01" class="r r_contract_06 btn_consulting_detail"><a href="#">諮詢明細</a></div>
+          </div>
+          <div id="contract_01" class="contract">
+            <div class="arrow_top"></div>
+            <div class="block_body">
+              <div class="btn_close"><a href="#">x</a></div>
+              <ul>
+                <li>購買日期：2013/1/26</li>
+                <li>合約期限：2013/1/30 - 2014/1/29</li>
+                <li>產品服務期限：2013/1/30 - 2014/1/29</li>
+              </ul>
+              <div class="c c_btn_set clearfix">
+                <div class="r r_btn_01 btn_con_detail"><a href="#">瀏覽合約</a></div>
+                <div class="r r_btn_02 btn_con_attach"><a href="#">瀏覽附約</a></div>
+              </div>
+              <div class="sep_border"></div>
+              <div class="change_log clearfix">
+                <div class="change_log_t">異動紀錄</div>
+                <div class="change_log_c">
+                  <ul>
+                    <li>2012/02/07 產品服務期限異動：2011/1/30-2012/3/29</li>
+                    <li>2013/03/07 產品服務期限異動：2013/1/30-2014/3/29</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--end .contract--></div>
+          <div id="consulting_detail_01" class="consulting_detail">
+            <div class="arrow_top"></div>
+            <div class="block_body">
+              <div class="btn_close"><a href="#">x</a></div>
+              <div class="dashboard">
+                <div class="c clearfix">
+                  <div class="r r_status_01">點數</div>
+                  <div class="r r_status_02">
+                    <span class="caption">基礎點數：</span>
+                    40000</div>
+                  <div class="r r_status_operate">+</div>
+                  <div class="r r_status_03">
+                    <span class="caption">贈送紅利點數：</span>
+                    25</div>
+                  <div class="r r_status_operate">-</div>
+                  <div class="r r_status_04">
+                    <span class="caption">使用點數：</span>
+                    41000</div>
+                  <div class="r r_status_operate">=</div>
+                  <div class="r r_status_05">
+                    <span class="caption">剩餘點數：</span>
+                    15000</div>
+                </div>
+                <div class="c clearfix">
+                  <div class="r r_status_01">贈送紅利點數</div>
+                  <div class="r r_status_02">&nbsp;</div>
+                  <div class="r r_status_operate">&nbsp;</div>
+                  <div class="r r_status_03">
+                    <span class="caption">贈送點數：</span>
+                    4</div>
+                  <div class="r r_status_operate">-</div>
+                  <div class="r r_status_04">
+                    <span class="caption">使用點數：</span>
+                    3.5</div>
+                  <div class="r r_status_operate">=</div>
+                  <div class="r r_status_05">
+                    <span class="caption">剩餘點數：</span>
+                    0.5</div>
+                </div>
+                <div class="type_stats">
+                  <div class="type_stats_t">點數使用明細
+                    <span class="caption">( 使用點數 / 諮詢次數 )</span>
+                  </div>
+                  <div class="type_stats_body c clearfix">
+                    <div class="r r_type_stats_01">
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對1</div>
+                        <div class="r type_stats_stats">300點 / 1次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對2</div>
+                        <div class="r type_stats_stats">900點 / 33333次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對3</div>
+                        <div class="r type_stats_stats">300點 / 1次</div>
+                      </div>
+                    </div>
+                    <div class="r r_type_stats_02">
+                      <div class="l clearfix" style="display:none;">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_04" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對4</div>
+                        <div class="r type_stats_stats">600點 / 3次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對6</div>
+                        <div class="r type_stats_stats">900點 / 99999次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">大會堂</div>
+                        <div class="r type_stats_stats">900點 / 3333次</div>
+                      </div>
+                    </div>
+                    <div class="r r_type_stats_03">
+                      <div class="l clearfix" style="display:none;">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_07" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">特殊1對1</div>
+                        <div class="r type_stats_stats">600點 / 2次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">錄影檔</div>
+                        <div class="r type_stats_stats">900點 / 99999次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">贈送錄影檔</div>
+                        <div class="r type_stats_stats">900點/ 3333次</div>
+                      </div>
+                    </div>
+                    <!--end .type_stats_body--></div>
+                  <!--end .type_stats--></div>
+                <!--end .dashboard--></div>
+              <div class="session_log">
+                <div class="session_log_t">即將開課</div>
+                <div class="c c_seesion_count clearfix">
+                  <div class="r r_seesion_count_t">諮詢次數：</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /> 99999</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                </div>
+                <div class="session_log_body">
+                  <div class="c c_sort clearfix">
+                    <div class="r r_log_01">日期</div>
+                    <div class="r r_log_02">時段</div>
+                    <div class="r r_log_03">諮詢教材</div>
+                    <div class="r r_log_04">已用點數</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">100+99</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="page">
+                    <span><a href="#">&lt;</a></span>
+                    <span><a href="#">1-5</a></span>
+                    <span><a href="#">6-10</a></span>
+                    <span><a href="#">11-15</a></span>
+                    <span><a href="#">16-20</a></span>
+                    <span class="current"><a href="#">21-25</a></span>
+                    <span><a href="#">26-30</a></span>
+                    <span><a href="#">31-35</a></span>
+                    <span><a href="#">36-40</a></span>
+                    <span><a href="#">41-45</a></span>
+                    <span><a href="#">46-50</a></span>
+                    <span><a href="#">&gt;</a></span>
+                  </div>
+                </div>
+                <!--session_log--></div>
+              <div class="session_log">
+                <div class="session_log_t">歷史諮詢記錄</div>
+                <div id="btn_search_01" class="btn_search"><a href="#"><img src="/images/my_account/search_ico.png" width="10" height="12" /> 搜尋</a></div>
+                <div id="search_session_log_01" class="search_session_log">
+                  <div class="arrow_top"></div>
+                  <div class="block_body">
+                    <form>
+                      <div class="c clearfix">
+                        <div class="r r_search_01">
+                          <div class="r_search_t">查詢起迄日</div>
+                          <label>
+                            <input name="" type="text" />
+                            <span class="ico_calendar"><img src="/images/my_account/calendar_ico.png" width="13" height="14" /></span>
+                          </label>
+                          <br />
+                          到<br />
+                          <label>
+                            <input name="" type="text" />
+                            <span class="ico_calendar"><img src="/images/my_account/calendar_ico.png" width="13" height="14" /></span>
+                          </label>
+                          <br />
+                        </div>
+                        <div class="r r_search_02">
+                          <div class="r_search_t">課程類型</div>
+                          <div class="type_stats">
+                            <div class="type_stats_body c clearfix">
+                              <div class="r r_type_stats_01">
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對1 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對2 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對3 </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="r r_type_stats_02">
+                                <div class="l clearfix" style="display:none;">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對4 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對6</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      大會堂</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="r r_type_stats_03">
+                                <div class="l clearfix" style="display:none;">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      特殊1對1</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      錄影檔</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      贈送錄影檔</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--end .type_stats_body--></div>
+                            <!--end .type_stats--></div>
+                        </div>
+                        <div class="r r_search_03">
+                          <div class="r_search_t">出席狀況</div>
+                          <div class="l clearfix">
+                            <div class="r type_stats_check">
+                              <label>
+                                <input name="" type="checkbox" value="" />
+                                出席</label>
+                            </div>
+                          </div>
+                          <div class="l clearfix">
+                            <div class="r type_stats_check">
+                              <label>
+                                <input name="" type="checkbox" value="" />
+                                未出席</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="r r_search_04">
+                          <div class="btn_search_submit"><input type="button" value="搜尋" /></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--end .search_session_log--></div>
+                <div class="c c_seesion_count clearfix">
+                  <div class="r r_seesion_count_t">諮詢次數：</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /> 99999</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="c_status_count clearfix">
+                    <div class="r r_status_count_01">
+                      <span class="r_status_count_t">出席次數：</span>
+                      99999</div>
+                    <div class="r r_status_count_02">
+                      <span class="r_status_count_t">未出席次數：</span>
+                      99999</div>
+                    <div class="r r_status_count_03">
+                      <span class="r_status_count_t">出席率：</span>
+                      99999</div>
+                    <div class="r r_status_count_04">
+                      <span class="r_status_count_t">使用點數：</span>
+                      99999</div>
+                  </div>
+                </div>
+                <div class="session_log_body">
+                  <div class="c c_sort clearfix">
+                    <div class="r r_log_01">日期</div>
+                    <div class="r r_log_02">時段</div>
+                    <div class="r r_log_03">諮詢教材</div>
+                    <div class="r r_log_04">已用點數</div>
+                    <div class="r r_log_05">出席狀況</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">100+99</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">199</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="page">
+                    <span><a href="#">&lt;</a></span>
+                    <span><a href="#">101-120</a></span>
+                    <span><a href="#">121-140</a></span>
+                    <span><a href="#">141-160</a></span>
+                    <span><a href="#">161-180</a></span>
+                    <span class="current"><a href="#">181-200</a></span>
+                    <span><a href="#">201-220</a></span>
+                    <span><a href="#">221-240</a></span>
+                    <span><a href="#">241-260</a></span>
+                    <span><a href="#">&gt;</a></span>
+                  </div>
+                </div>
+                <!--session_log--></div>
+            </div>
+            <!--end .consulting_detail--></div>
+          <!--end .c_list--></div>
+        <div class="c_list_outter even"><!--偶數行加入 even-->
+          <div class="c c_list clearfix">
+            <div class="r r_contract_01">(新)鑽石續約:續約一年240堂</div>
+            <div class="r r_contract_02">2012/01/01~2013/01/01</div>
+            <div class="r r_contract_03">265</div>
+            <div class="r r_contract_04">100</div>
+            <div id="btn_contract_02" class="r r_contract_05 btn_contract"><a href="#">合約詳情</a></div>
+            <div id="btn_consulting_detail_02" class="r r_contract_06 btn_consulting_detail"><a href="#">諮詢明細</a></div>
+          </div>
+          <div id="contract_02" class="contract">
+            <div class="arrow_top"></div>
+            <div class="block_body">
+              <div class="btn_close"><a href="#">x</a></div>
+              <ul>
+                <li>購買日期：2013/1/26</li>
+                <li>合約期限：2013/1/30 - 2014/1/29</li>
+                <li>產品服務期限：2013/1/30 - 2014/1/29</li>
+              </ul>
+              <div class="c c_btn_set clearfix">
+                <div class="r r_btn_01 btn_con_detail"><a href="#">瀏覽合約</a></div>
+                <div class="r r_btn_02 btn_con_attach"><a href="#">瀏覽附約</a></div>
+              </div>
+              <div class="sep_border"></div>
+              <div class="change_log clearfix">
+                <div class="change_log_t">異動紀錄</div>
+                <div class="change_log_c">
+                  <ul>
+                    <li>2012/02/07 產品服務期限異動：2011/1/30-2012/3/29</li>
+                    <li>2013/03/07 產品服務期限異動：2013/1/30-2014/3/29</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--end .contract--></div>
+          <div id="consulting_detail_02" class="consulting_detail">
+            <div class="arrow_top"></div>
+            <div class="block_body">
+              <div class="btn_close"><a href="#">x</a></div>
+              <div class="dashboard">
+                <div class="c clearfix">
+                  <div class="r r_status_01">堂數</div>
+                  <div class="r r_status_02">
+                    <span class="caption">產品堂數：</span>
+                    40000</div>
+                  <div class="r r_status_operate">+</div>
+                  <div class="r r_status_03">
+                    <span class="caption">贈送堂數：</span>
+                    25</div>
+                  <div class="r r_status_operate">-</div>
+                  <div class="r r_status_04">
+                    <span class="caption">使用堂數：</span>
+                    41000</div>
+                  <div class="r r_status_operate">=</div>
+                  <div class="r r_status_05">
+                    <span class="caption">剩餘堂數：</span>
+                    15000</div>
+                </div>
+                <div class="c clearfix">
+                  <div class="r r_status_01">贈送錄影檔</div>
+                  <div class="r r_status_02">&nbsp;</div>
+                  <div class="r r_status_operate">&nbsp;</div>
+                  <div class="r r_status_03">
+                    <span class="caption">贈送堂數：</span>
+                    4</div>
+                  <div class="r r_status_operate">-</div>
+                  <div class="r r_status_04">
+                    <span class="caption">使用堂數：</span>
+                    3.5</div>
+                  <div class="r r_status_operate">=</div>
+                  <div class="r r_status_05">
+                    <span class="caption">剩餘堂數：</span>
+                    0.5</div>
+                </div>
+                <div class="type_stats">
+                  <div class="type_stats_t">堂數使用明細
+                    <span class="caption">( 使用堂數 / 諮詢次數 )</span>
+                  </div>
+                  <div class="type_stats_body c clearfix">
+                    <div class="r r_type_stats_01">
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對1</div>
+                        <div class="r type_stats_stats">3堂 / 1次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對2</div>
+                        <div class="r type_stats_stats">99999堂 / 33333次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對3</div>
+                        <div class="r type_stats_stats">3堂 / 1次</div>
+                      </div>
+                    </div>
+                    <div class="r r_type_stats_02">
+                      <div class="l clearfix" style="display:none;">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_04" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對4</div>
+                        <div class="r type_stats_stats">6堂 / 3次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對6</div>
+                        <div class="r type_stats_stats">99999堂 / 99999次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">大會堂</div>
+                        <div class="r type_stats_stats">9999堂 / 3333次</div>
+                      </div>
+                    </div>
+                    <div class="r r_type_stats_03">
+                      <div class="l clearfix" style="display:none;">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_07" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">特殊1對1</div>
+                        <div class="r type_stats_stats">6堂 / 2次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">錄影檔</div>
+                        <div class="r type_stats_stats">99999堂 / 99999次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">贈送錄影檔</div>
+                        <div class="r type_stats_stats">9999堂 / 3333次</div>
+                      </div>
+                    </div>
+                    <!--end .type_stats_body--></div>
+                  <!--end .type_stats--></div>
+                <!--end .dashboard--></div>
+              <div class="session_log">
+                <div class="session_log_t">即將開課</div>
+                <div class="c c_seesion_count clearfix">
+                  <div class="r r_seesion_count_t">諮詢次數：</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /> 99999</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                </div>
+                <div class="session_log_body">
+                  <div class="c c_sort clearfix">
+                    <div class="r r_log_01">日期</div>
+                    <div class="r r_log_02">時段</div>
+                    <div class="r r_log_03">諮詢教材</div>
+                    <div class="r r_log_04">使用堂數</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="page">
+                    <span><a href="#">&lt;</a></span>
+                    <span><a href="#">1-5</a></span>
+                    <span><a href="#">6-10</a></span>
+                    <span><a href="#">11-15</a></span>
+                    <span><a href="#">16-20</a></span>
+                    <span class="current"><a href="#">21-25</a></span>
+                    <span><a href="#">26-30</a></span>
+                    <span><a href="#">31-35</a></span>
+                    <span><a href="#">36-40</a></span>
+                    <span><a href="#">41-45</a></span>
+                    <span><a href="#">46-50</a></span>
+                    <span><a href="#">&gt;</a></span>
+                  </div>
+                </div>
+                <!--session_log--></div>
+              <div class="session_log">
+                <div class="session_log_t">歷史諮詢記錄</div>
+                <div class="btn_search"><a href="#"><img src="/images/my_account/search_ico.png" width="10" height="12" /> 搜尋</a></div>
+                <div class="search_session_log">
+                  <div class="arrow_top"></div>
+                  <div class="block_body">
+                    <form>
+                      <div class="c clearfix">
+                        <div class="r r_search_01">
+                          <div class="r_search_t">查詢起迄日</div>
+                          <label>
+                            <input name="" type="text" />
+                            <span class="ico_calendar"><img src="/images/my_account/calendar_ico.png" width="13" height="14" /></span>
+                          </label>
+                          <br />
+                          到<br />
+                          <label>
+                            <input name="" type="text" />
+                            <span class="ico_calendar"><img src="/images/my_account/calendar_ico.png" width="13" height="14" /></span>
+                          </label>
+                          <br />
+                        </div>
+                        <div class="r r_search_02">
+                          <div class="r_search_t">課程類型</div>
+                          <div class="type_stats">
+                            <div class="type_stats_body c clearfix">
+                              <div class="r r_type_stats_01">
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對1 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對2 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對3 </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="r r_type_stats_02">
+                                <div class="l clearfix" style="display:none;">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對4 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對6</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      大會堂</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="r r_type_stats_03">
+                                <div class="l clearfix" style="display:none;">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      特殊1對1</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      錄影檔</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      贈送錄影檔</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--end .type_stats_body--></div>
+                            <!--end .type_stats--></div>
+                        </div>
+                        <div class="r r_search_03">
+                          <div class="r_search_t">出席狀況</div>
+                          <div class="l clearfix">
+                            <div class="r type_stats_check">
+                              <label>
+                                <input name="" type="checkbox" value="" />
+                                出席</label>
+                            </div>
+                          </div>
+                          <div class="l clearfix">
+                            <div class="r type_stats_check">
+                              <label>
+                                <input name="" type="checkbox" value="" />
+                                未出席</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="r r_search_04">
+                          <div class="btn_search_submit"><input type="button" value="搜尋" /></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--end .search_session_log--></div>
+                <div class="c c_seesion_count clearfix">
+                  <div class="r r_seesion_count_t">諮詢次數：</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /> 99999</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="c_status_count clearfix">
+                    <div class="r r_status_count_01">
+                      <span class="r_status_count_t">出席次數：</span>
+                      99999</div>
+                    <div class="r r_status_count_02">
+                      <span class="r_status_count_t">未出席次數：</span>
+                      99999</div>
+                    <div class="r r_status_count_03">
+                      <span class="r_status_count_t">出席率：</span>
+                      99999</div>
+                    <div class="r r_status_count_04">
+                      <span class="r_status_count_t">使用堂數：</span>
+                      99999</div>
+                  </div>
+                </div>
+                <div class="session_log_body">
+                  <div class="c c_sort clearfix">
+                    <div class="r r_log_01">日期</div>
+                    <div class="r r_log_02">時段</div>
+                    <div class="r r_log_03">諮詢教材</div>
+                    <div class="r r_log_04">使用堂數</div>
+                    <div class="r r_log_05">出席狀況</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">0.5</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">0</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="page">
+                    <span><a href="#">&lt;</a></span>
+                    <span><a href="#">101-120</a></span>
+                    <span><a href="#">121-140</a></span>
+                    <span><a href="#">141-160</a></span>
+                    <span><a href="#">161-180</a></span>
+                    <span class="current"><a href="#">181-200</a></span>
+                    <span><a href="#">201-220</a></span>
+                    <span><a href="#">221-240</a></span>
+                    <span><a href="#">241-260</a></span>
+                    <span><a href="#">&gt;</a></span>
+                  </div>
+                </div>
+                <!--session_log--></div>
+            </div>
+            <!--end .consulting_detail--></div>
+          <!--end .c_list--></div>
+        <div class="c_list_outter">
+          <div class="c c_list clearfix">
+            <div class="r r_contract_01">終身無限卡</div>
+            <div class="r r_contract_02">2013/01/02~無期限</div>
+            <div class="r r_contract_03">無上限</div>
+            <div class="r r_contract_04">-</div>
+            <div id="btn_contract_03" class="r r_contract_05 btn_contract"><a href="#">合約詳情</a></div>
+            <div id="btn_consulting_detail_03" class="r r_contract_06 btn_consulting_detail"><a href="#">諮詢明細</a></div>
+          </div>
+          <div id="contract_03" class="contract">
+            <div class="arrow_top"></div>
+            <div class="block_body">
+              <div class="btn_close"><a href="#">x</a></div>
+              <ul>
+                <li>購買日期：2013/1/26</li>
+                <li>合約期限：2013/1/30 - 2014/1/29</li>
+                <li>產品服務期限：2013/1/30 - 2014/1/29</li>
+              </ul>
+              <div class="c c_btn_set clearfix">
+                <div class="r r_btn_01 btn_con_detail"><a href="#">瀏覽合約</a></div>
+                <div class="r r_btn_02 btn_con_attach"><a href="#">瀏覽附約</a></div>
+              </div>
+              <div class="sep_border"></div>
+              <div class="change_log clearfix">
+                <div class="change_log_t">異動紀錄</div>
+                <div class="change_log_c">
+                  <ul>
+                    <li>2012/02/07 產品服務期限異動：2011/1/30-2012/3/29</li>
+                    <li>2013/03/07 產品服務期限異動：2013/1/30-2014/3/29</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--end .contract--></div>
+          <div id="consulting_detail_03" class="consulting_detail">
+            <div class="arrow_top"></div>
+            <div class="block_body">
+              <div class="btn_close"><a href="#">x</a></div>
+              <div class="dashboard">
+                <div class="c clearfix">
+                  <div class="r r_status_01">堂數</div>
+                  <div class="r r_status_02">
+                    <span class="caption">產品堂數：</span>
+                    40000</div>
+                  <div class="r r_status_operate">+</div>
+                  <div class="r r_status_03">
+                    <span class="caption">贈送堂數：</span>
+                    25</div>
+                  <div class="r r_status_operate">-</div>
+                  <div class="r r_status_04">
+                    <span class="caption">使用堂數：</span>
+                    41000</div>
+                  <div class="r r_status_operate">=</div>
+                  <div class="r r_status_05">
+                    <span class="caption">剩餘堂數：</span>
+                    15000</div>
+                </div>
+                <div class="c clearfix">
+                  <div class="r r_status_01">贈送錄影檔</div>
+                  <div class="r r_status_02">&nbsp;</div>
+                  <div class="r r_status_operate">&nbsp;</div>
+                  <div class="r r_status_03">
+                    <span class="caption">贈送堂數：</span>
+                    4</div>
+                  <div class="r r_status_operate">-</div>
+                  <div class="r r_status_04">
+                    <span class="caption">使用堂數：</span>
+                    3.5</div>
+                  <div class="r r_status_operate">=</div>
+                  <div class="r r_status_05">
+                    <span class="caption">剩餘堂數：</span>
+                    0.5</div>
+                </div>
+                <div class="type_stats">
+                  <div class="type_stats_t">堂數使用明細
+                    <span class="caption">( 使用堂數 / 諮詢次數 )</span>
+                  </div>
+                  <div class="type_stats_body c clearfix">
+                    <div class="r r_type_stats_01">
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對1</div>
+                        <div class="r type_stats_stats">3堂 / 1次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對2</div>
+                        <div class="r type_stats_stats">99999堂 / 33333次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對3</div>
+                        <div class="r type_stats_stats">3堂 / 1次</div>
+                      </div>
+                    </div>
+                    <div class="r r_type_stats_02">
+                      <div class="l clearfix" style="display:none;">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_04" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對4</div>
+                        <div class="r type_stats_stats">6堂 / 3次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">1對6</div>
+                        <div class="r type_stats_stats">99999堂 / 99999次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">大會堂</div>
+                        <div class="r type_stats_stats">9999堂 / 3333次</div>
+                      </div>
+                    </div>
+                    <div class="r r_type_stats_03">
+                      <div class="l clearfix" style="display:none;">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_07" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">特殊1對1</div>
+                        <div class="r type_stats_stats">6堂 / 2次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">錄影檔</div>
+                        <div class="r type_stats_stats">99999堂 / 99999次</div>
+                      </div>
+                      <div class="l clearfix">
+                        <div class="r type_stats_ico"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                        <div class="r type_stats_name">贈送錄影檔</div>
+                        <div class="r type_stats_stats">9999堂 / 3333次</div>
+                      </div>
+                    </div>
+                    <!--end .type_stats_body--></div>
+                  <!--end .type_stats--></div>
+                <!--end .dashboard--></div>
+              <div class="session_log">
+                <div class="session_log_t">即將開課</div>
+                <div class="c c_seesion_count clearfix">
+                  <div class="r r_seesion_count_t">諮詢次數：</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /> 99999</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                </div>
+                <div class="session_log_body">
+                  <div class="c c_sort clearfix">
+                    <div class="r r_log_01">日期</div>
+                    <div class="r r_log_02">時段</div>
+                    <div class="r r_log_03">諮詢教材</div>
+                    <div class="r r_log_04">使用堂數</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="c c_list c_list_pre clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">session time has not yet arrived.</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">&nbsp;</div>
+                  </div>
+                  <div class="page">
+                    <span><a href="#">&lt;</a></span>
+                    <span><a href="#">1-5</a></span>
+                    <span><a href="#">6-10</a></span>
+                    <span><a href="#">11-15</a></span>
+                    <span><a href="#">16-20</a></span>
+                    <span class="current"><a href="#">21-25</a></span>
+                    <span><a href="#">26-30</a></span>
+                    <span><a href="#">31-35</a></span>
+                    <span><a href="#">36-40</a></span>
+                    <span><a href="#">41-45</a></span>
+                    <span><a href="#">46-50</a></span>
+                    <span><a href="#">&gt;</a></span>
+                  </div>
+                </div>
+                <!--session_log--></div>
+              <div class="session_log">
+                <div class="session_log_t">歷史諮詢記錄</div>
+                <div class="btn_search"><a href="#"><img src="/images/my_account/search_ico.png" width="10" height="12" /> 搜尋</a></div>
+                <div class="search_session_log">
+                  <div class="arrow_top"></div>
+                  <div class="block_body">
+                    <form>
+                      <div class="c clearfix">
+                        <div class="r r_search_01">
+                          <div class="r_search_t">查詢起迄日</div>
+                          <label>
+                            <input name="" type="text" />
+                            <span class="ico_calendar"><img src="/images/my_account/calendar_ico.png" width="13" height="14" /></span>
+                          </label>
+                          <br />
+                          到<br />
+                          <label>
+                            <input name="" type="text" />
+                            <span class="ico_calendar"><img src="/images/my_account/calendar_ico.png" width="13" height="14" /></span>
+                          </label>
+                          <br />
+                        </div>
+                        <div class="r r_search_02">
+                          <div class="r_search_t">課程類型</div>
+                          <div class="type_stats">
+                            <div class="type_stats_body c clearfix">
+                              <div class="r r_type_stats_01">
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對1 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對2 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對3 </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="r r_type_stats_02">
+                                <div class="l clearfix" style="display:none;">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對4 </label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      1對6</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      大會堂</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="r r_type_stats_03">
+                                <div class="l clearfix" style="display:none;">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      特殊1對1</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      錄影檔</label>
+                                  </div>
+                                </div>
+                                <div class="l clearfix">
+                                  <div class="r type_stats_check">
+                                    <label>
+                                      <input name="" type="checkbox" value="" />
+                                      贈送錄影檔</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--end .type_stats_body--></div>
+                            <!--end .type_stats--></div>
+                        </div>
+                        <div class="r r_search_03">
+                          <div class="r_search_t">出席狀況</div>
+                          <div class="l clearfix">
+                            <div class="r type_stats_check">
+                              <label>
+                                <input name="" type="checkbox" value="" />
+                                出席</label>
+                            </div>
+                          </div>
+                          <div class="l clearfix">
+                            <div class="r type_stats_check">
+                              <label>
+                                <input name="" type="checkbox" value="" />
+                                未出席</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="r r_search_04">
+                          <div class="btn_search_submit"><input type="button" value="搜尋" /></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--end .search_session_log--></div>
+                <div class="c c_seesion_count clearfix">
+                  <div class="r r_seesion_count_t">諮詢次數：</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_02" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_03" src="/images/icon_spacer.gif" width="16" height="16" /> 0</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /> 99999</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_06" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="r r_seesion_count_c"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /> 3</div>
+                  <div class="c_status_count clearfix">
+                    <div class="r r_status_count_01">
+                      <span class="r_status_count_t">出席次數：</span>
+                      99999</div>
+                    <div class="r r_status_count_02">
+                      <span class="r_status_count_t">未出席次數：</span>
+                      99999</div>
+                    <div class="r r_status_count_03">
+                      <span class="r_status_count_t">出席率：</span>
+                      99999</div>
+                    <div class="r r_status_count_04">
+                      <span class="r_status_count_t">使用堂數：</span>
+                      99999</div>
+                  </div>
+                </div>
+                <div class="session_log_body">
+                  <div class="c c_sort clearfix">
+                    <div class="r r_log_01">日期</div>
+                    <div class="r r_log_02">時段</div>
+                    <div class="r r_log_03">諮詢教材</div>
+                    <div class="r r_log_04">使用堂數</div>
+                    <div class="r r_log_05">出席狀況</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_08" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">0.5</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_09" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">0</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_01" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">3</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Obtaining a Qualification</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">未出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Presentation Points</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Discussion: The Ideal Secretary</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Quitting a Job</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="c c_list clearfix">
+                    <div class="r r_log_01">2013/02/29</div>
+                    <div class="r r_log_02">15:30 - 16:15</div>
+                    <div class="r r_log_03-1"><img class="session_ico sprite-session_ico_05" src="/images/icon_spacer.gif" width="16" height="16" /></div>
+                    <div class="r r_log_03-2">Incredible India</div>
+                    <div class="r r_log_04">1</div>
+                    <div class="r r_log_05">出席</div>
+                  </div>
+                  <div class="page">
+                    <span><a href="#">&lt;</a></span>
+                    <span><a href="#">101-120</a></span>
+                    <span><a href="#">121-140</a></span>
+                    <span><a href="#">141-160</a></span>
+                    <span><a href="#">161-180</a></span>
+                    <span class="current"><a href="#">181-200</a></span>
+                    <span><a href="#">201-220</a></span>
+                    <span><a href="#">221-240</a></span>
+                    <span><a href="#">241-260</a></span>
+                    <span><a href="#">&gt;</a></span>
+                  </div>
+                </div>
+                <!--session_log--></div>
+            </div>
+            <!--end .consulting_detail--></div>
+          <!--end .c_list--></div>
+        <!--end #myaccount_main--></div>
+      <!--end #myaccount--></div>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+<p>&nbsp;</p>
+</body>
+</html>

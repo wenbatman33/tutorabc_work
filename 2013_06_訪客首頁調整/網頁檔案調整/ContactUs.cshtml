@@ -1,0 +1,301 @@
+﻿@{
+    ViewBag.Title = "ContactUs";
+}
+@{var XmlData = ViewData["XmlData"] as IEnumerable<NewVIPABC.Models.DDLModel>;}
+@{var MediaItem = ViewData["MediaItem"] as IEnumerable<NewVIPABC.Models.DDLModel>;}
+<head>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/jquery.skygqCheckAjaxform.1.3.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/contact_us.js")"></script>
+    <link href="@Url.Content("~/Content/css/valid.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var items_array2;
+        $(function () {
+            items_array2 = [
+		{ name: "email", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "sel_contact_time", simple: "您的联络时间", focusMsg: '请选择您的联络时间' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "sel_contact_us_qtype", simple: "问题类型", focusMsg: '请选择问题类型' },
+        { name: "textarea_comment", type: "comment", simple: "问题描述", focusMsg: '请填写问题描述' },
+        { name: "txt_cphone", type: "86cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' }
+	];
+
+            $("#frm_regist").skygqCheckAjaxForm({
+                items: items_array2
+            });
+        });
+
+        //切换手机和电话
+        function setContactTel(p_objId) {
+            if (p_objId.id == "rad_mobile") {
+                items_array2.splice(0, items_array2.length);
+                items_array2 = [
+		{ name: "email", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "sel_contact_time", simple: "您的联络时间", focusMsg: '请选择您的联络时间' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "sel_contact_us_qtype", simple: "问题类型", focusMsg: '请选择问题类型' },
+        { name: "textarea_comment", type: "comment", simple: "问题描述", focusMsg: '请填写问题描述' },
+        { name: "txt_cphone", type: "86cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' }
+	];
+                document.getElementById("span_rad_mobile").style.display = "";
+                document.getElementById("span_rad_gphone").style.display = "none";
+                $("#frm_regist").skygqCheckAjaxForm({
+                    items: items_array2
+                });
+            }
+            else {
+                items_array2.splice(0, items_array2.length);
+                items_array2 = [
+		{ name: "email", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "sel_contact_time", simple: "您的联络时间", focusMsg: '请选择您的联络时间' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "sel_contact_us_qtype", simple: "问题类型", focusMsg: '请选择问题类型' },
+        { name: "textarea_comment", type: "comment", simple: "问题描述", focusMsg: '请填写问题描述' },
+        { name: "txt_gphone", type: "gphone", simple: "您的电话", focusMsg: '请填写您的电话' }
+	];
+                document.getElementById("span_rad_mobile").style.display = "none";
+                document.getElementById("span_rad_gphone").style.display = "";
+                $("#frm_regist").skygqCheckAjaxForm({
+                    items: items_array2
+                });
+            }
+        }
+
+        //todo: 國碼不能hardcode在程式內
+        function changeNationalCode(obj) {
+            if (document.getElementById('rad_mobile').checked) {
+                var str_nation_code = obj.options[obj.selectedIndex].value;
+                if (str_nation_code == "0") {
+                    //請選擇：do nothing
+                    $("#txt_phone_nationcode").val("");
+                }
+                else if (str_nation_code == "-1") {
+                    //其他
+                    document.getElementById("txt_phone_nationcode").value = "";
+                    document.getElementById("txt_phone_nationcode").disabled = "";
+                    document.getElementById("hdn_phone_nationcode").value = "";
+                } else {
+                    document.getElementById("txt_phone_nationcode").value = str_nation_code;
+                    document.getElementById("txt_phone_nationcode").disabled = "disabled";
+                    document.getElementById("hdn_phone_nationcode").value = str_nation_code;
+                }
+                if (str_nation_code == "+886") {
+                    items_array2.splice(0, items_array2.length);
+                    items_array2 = [
+		{ name: "email", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "sel_contact_time", simple: "您的联络时间", focusMsg: '请选择您的联络时间' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "sel_contact_us_qtype", simple: "问题类型", focusMsg: '请选择问题类型' },
+        { name: "textarea_comment", type: "comment", simple: "问题描述", focusMsg: '请填写问题描述' },
+        { name: "txt_cphone", type: "cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' }
+	];
+                    document.getElementById("span_rad_mobile").style.display = "";
+                    document.getElementById("span_rad_gphone").style.display = "none";
+                    $("#frm_regist").skygqCheckAjaxForm({
+                        items: items_array2
+                    });
+                } else {
+                    items_array2.splice(0, items_array2.length);
+                    items_array2 = [
+		{ name: "email", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "sel_contact_time", simple: "您的联络时间", focusMsg: '请选择您的联络时间' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "sel_contact_us_qtype", simple: "问题类型", focusMsg: '请选择问题类型' },
+        { name: "textarea_comment", type: "comment", simple: "问题描述", focusMsg: '请填写问题描述' },
+        { name: "txt_cphone", type: "86cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' }
+	];
+                    document.getElementById("span_rad_mobile").style.display = "";
+                    document.getElementById("span_rad_gphone").style.display = "none";
+                    $("#frm_regist").skygqCheckAjaxForm({
+                        items: items_array2
+                    });
+                }
+            }
+            if (document.getElementById('rad_gphone').checked) {
+                var str_nation_code = obj.options[obj.selectedIndex].value;
+                if (str_nation_code == "0") {
+                    //請選擇：do nothing
+                } else if (str_nation_code == "-1") {
+                    //其他
+                    document.getElementById("txt_phone_nationcode").value = "";
+                    document.getElementById("txt_phone_nationcode").disabled = "";
+                    document.getElementById("hdn_phone_nationcode").value = "";
+                } else {
+                    document.getElementById("txt_phone_nationcode").value = str_nation_code;
+                    document.getElementById("txt_phone_nationcode").disabled = "disabled";
+                    document.getElementById("hdn_phone_nationcode").value = str_nation_code;
+                }
+            }
+        }
+        //验证是否IE
+        $(document).ready(function () {
+            if (! -[1, ]) {
+                document.getElementById("IE_div").style.display = "";
+                document.getElementById("not_IE_div").style.display = "none";
+            }
+            else {
+                document.getElementById("IE_div").style.display = "none";
+                document.getElementById("not_IE_div").style.display = "";
+            }
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                if (navigator.userAgent.indexOf("MSIE 9.0") > 0) {
+                    document.getElementById("IE_div").style.display = "";
+                    document.getElementById("not_IE_div").style.display = "none";
+                }
+            }
+        });
+    </script>
+</head>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+            <div class="breadcrumb">
+                <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>联络我们</div>
+            <div style="position: relative; float: left; width: 660px; height: auto; margin-top: 20px;">
+                <h2 style="color: #666;">
+                    联络我们</h2>
+                <div class="box_shadow" style="background-position: -80px 0px;">
+                </div>
+                <h5 style="color: #666;">
+                    24H 服务热线：4006-30-30-30<br>
+                    企业培训专线：4009-30-30-30 (服务时间周一到周五：9:00–18:00)<br>帮助您快速了解产品服务资讯，顶级客户服务专家全心全意为您作最好的服务。<br>
+                    客服邮箱：<a href="mailto:vipservices@vipabc.com">vipservices@vipabc.com </a><br>
+
+                    商业合作：<br>
+                    如果您是媒体、公司、或任何组织机构想洽谈商业合作，<br>
+                    请发邮件到：<a href="mailto:vipservices@vipabc.com">vipservices@vipabc.com </a> 或拨专线4006-30-30-30，我们将珍惜每次与您更广泛的交流及合作。<br>
+                    如果 <a href="http://www.vipabc.com/program/faq/faq.asp">FAQ</a>无法满足您的需要，不用客气，请马上与我们联络！</h5>
+                <div style="position: relative; float: right; width: 100%; margin: 0 auto;">
+                    <div class="reg_form">
+                        <form name="frm_regist" action="http://192.168.101.73:91/program/contact/contact_us_ok_exe.asp"
+                        id="frm_regist" method="post">
+                        <div class="reg_row">
+                            <div class="reg_title_wrap">
+                                <span class="reg_txt">您的姓名</span></div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <input class="reg_field" type="text" id="txt_cname" name="txt_cname" value="" style="width: 320px;"
+                                 onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                            </div>
+                        </div>
+                        <div class="reg_row">
+                            <div class="reg_title_wrap">
+                                <span class="reg_txt">联系电话 </span>
+                            </div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <input type="radio" id="rad_mobile" value="cphone" name="rad_contact_tel" class="reg_field reg_txt"
+                                    checked="checked" onclick="setContactTel(this)" /><label class="reg_txt" style="margin-left: 5px">移动电话</label>
+                                <input type="radio" id="rad_gphone" value="gphone" name="rad_contact_tel" class="reg_field reg_txt"
+                                    onclick="setContactTel(this)" /><label class="reg_txt" style="margin-left: 5px">固定电话</label>
+                                <input type="hidden" id="hdn_phone_nationcode" name="hdn_phone_nationcode" value="+86" /><br />
+                            </div>
+                            <div class="reg_title_wrap" id="IE_div" style="display: none;">
+                            </div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <select name="sel_nation_code" id="sel_nation_code" class="form_select" onchange="changeNationalCode(this)"
+                                 onfocus = "this.style.color='#666'" onblur = "if(this.value==''){this.style.color='#ccc';}else{this.style.color='#666';}">
+                                    <option value="">请选择</option>
+                                    @foreach (var item in XmlData)
+                                    {
+                                        if (item.value == "+86")
+                                        {
+                                        <option value="@item.value" selected="selected">@item.text</option> 
+                                        }
+                                        else
+                                        {
+                                        <option value="@item.value">@item.text</option> 
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="reg_title_wrap" id="not_IE_div" style="display: none;">
+                            </div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <input class="reg_field" type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"
+                                    readonly="readonly" value="+86" style="width: 70px;" onchange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                                <span id="span_rad_mobile">
+                                    <input class="reg_field" type="text" id="txt_cphone" name="txt_cphone" value="" style="width: 180px;"
+                                     onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                                </span><span id="span_rad_gphone" style="display: none;">-<input type="text" id="txt_gphone_code"
+                                    name="txt_gphone_code" class="reg_field" style="width: 65px;"  onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />-
+                                    <input type="text" id="txt_gphone" name="txt_gphone" class="reg_field" style="width: 100px;"
+                                    onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                                    Ext.<input type="text" id="txt_gphone_ext" name="txt_gphone_ext" class="reg_field"
+                                        style="width: 65px;" onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                                </span>
+                            </div>
+                            @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        請輸入联系电话</div>*@
+                        </div>
+                        <div class="reg_row">
+                            <div class="reg_title_wrap">
+                                <span class="reg_txt">E-Mail</span></div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <input id="email" name="email" type="text" class="reg_field" value="请填写回复时您常用的电子邮件，此将成为您的注册帐号"
+                                    onfocus="if(this.value=='请填写回复时您常用的电子邮件，此将成为您的注册帐号'){this.value='';}this.style.color='#666';"
+                                    onblur="if(this.value!=''){this.style.color='#666';}" style="width: 320px;" />
+                            </div>
+                        </div>
+                        <div class="reg_row">
+                            <div class="reg_title_wrap">
+                                <span class="reg_txt">方便联络时间 </span>
+                            </div>
+                            <div class="reg_field_wrap">
+                                <div style="width: 160px; float: left;">
+                                    <input type="radio" class="reg_field" name="sel_contact_time" value="09:00 ~ 13:00"><label class="reg_txt"
+                                        style="margin-left: 5px">09:00 ~ 13:00</label></div>
+                                <div style="width: 160px; float: left;">
+                                    <input type="radio" class="reg_field" name="sel_contact_time" value="13:00 ~ 18:00"><label class="reg_txt"
+                                        style="margin-left: 5px">13:00 ~ 18:00
+                                    </label>
+                                </div>
+                                <div style="width: 160px; float: left;">
+                                    <input type="radio" class="reg_field" name="sel_contact_time" value="18:00 ~ 22:00"><label class="reg_txt"
+                                        style="margin-left: 5px">18:00 ~ 22:00</label></div>
+                                <div style="width: 160px; float: left;">
+                                    <input type="radio" class="reg_field" name="sel_contact_time" checked="checked" value="不拘"><label
+                                        class="reg_txt" style="margin-left: 5px">不拘</label></div>
+                            </div>
+                        </div>
+                        <div class="reg_row">
+                            <div class="reg_title_wrap">
+                                <span class="reg_txt">问题类型</span></div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <select class="reg_select" name="sel_contact_us_qtype" id="sel_contact_us_qtype"
+                                    style="width: 320px;" onchange="change_select_value()"
+                                    onfocus = "this.style.color='#666'" onblur = "if(this.value==''){this.style.color='#ccc';}else{this.style.color='#666';}">
+                                    <option value="">请选择</option>
+                                    <option value="6">想了解产品与价格</option>
+                                    <option value="4">技术问题</option>
+                                    <option value="1">意见反馈</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="reg_row">
+                            <div class="reg_title_wrap">
+                                <span class="reg_txt">问题描述</span></div>
+                            <div class="reg_field_wrap" style="width: 500px;">
+                                <textarea class="reg_field" name="textarea_comment" id="textarea_comment" style="width: 320px;
+                                    height: 100px; resize: none;" onblur="if(this.value!=''){this.style.color='#666';}"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="q_type_value" id="q_type_value" value=""/>
+                        <!-- ############# Form部分 end################ -->
+                        <div class="box_shadow">
+                        </div>
+                        <div class="reg_row">
+                            <input style="margin-left:15%;" type="submit" value="确认提交" class="y_btn" />
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #############Content部分 end################ -->

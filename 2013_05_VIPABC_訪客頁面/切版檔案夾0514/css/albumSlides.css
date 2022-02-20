@@ -1,0 +1,38 @@
+#album {
+		margin: 0 auto;
+		width: 1920px;	/* 框架圖片的寬 */
+		height: 482px;	/* 框架圖片的高 */
+		position: absolute;
+}
+#album a.prev, #album a.next {
+		position: absolute;
+		top: 210px;
+		display: block;
+		width: 56px;	/* 左右鈕圖片的寬 */
+		height: 53px;	/* 左右鈕圖片的高 */
+		text-indent: -9999px;
+}
+#album .prev {
+		background: url(../images/left.png) no-repeat;
+		left:470px;
+}
+#album .next {
+		background: url(../images/right.png) no-repeat;
+		right: 440px;
+}
+#album .slides {
+	overflow: hidden;
+	position: absolute;
+	width: 1920px;	/* 框架中間區塊的寬 */
+	height: 482px;	/* 框架中間區塊的高 */
+}
+#album .slides ul {
+		position: absolute;
+		width: 9990px;
+		height: 100%;
+}
+#album .slides li {
+		width: 1920px;	/* 框架中間區塊的寬 */
+		height: 100%;
+		float: left;
+}

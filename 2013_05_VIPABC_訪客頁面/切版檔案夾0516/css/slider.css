@@ -1,0 +1,23 @@
+
+/*
+	SLIDER
+*/
+.slider-wrap								{
+	width: 960px;
+	margin:0 auto;
+}			
+.stripViewer .panelContainer .panel ul { }
+.stripViewer								{ position: relative; overflow: hidden; width: 960px; height: 285px; }
+.stripViewer .panelContainer				{ position: relative; left: 0; top: 0; }
+.stripViewer .panelContainer .panel			{ float: left; height: 100%; position: relative; width: 960px; }
+.stripNavL, .stripNavR, .stripNav			{ display: none; }
+.nav-thumb 									{ border: 5px solid black; border-color:#f99; margin-right: 5px; }
+#movers-row									{ width:960px; margin-top:-300xpx; z-index:3; }
+#movers-row div								{ width:10%; float: left; }
+#movers-row div a.cross-link 				{ float: right; }
+.photo-meta-data							{ background: url(images/transpBlack.png); padding: 10px; height: 30px; 
+											  margin-top: -50px; position: relative; z-index: 9999; color: white; }
+.photo-meta-data span 						{ font-size: 13px; }
+.cross-link									{ display: block; width: 62px; margin-top: -14px; 
+											  position: relative; padding-top: 15px; z-index: 9999; background: }
+.active-thumb 							    { background: transparent url(images/icon-uparrowsmallwhite.png) top center no-repeat; float:left;}

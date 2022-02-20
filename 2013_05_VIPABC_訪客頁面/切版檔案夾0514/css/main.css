@@ -1,0 +1,286 @@
+@charset "utf-8";
+@font-face {
+font-family:"微軟正黑體";
+src:url(../font/MSJH.TTF);
+/*
+font-family:"Tahoma";
+src: url(../font/tahoma.ttf);
+*/
+}
+
+
+
+input,button,select,textarea{
+background-color: #E0E0E0;
+border-top: 1px solid #D7D7D7;
+border-right: 1px solid #E4E4E4;
+border-bottom: 1px solid #E4E4E4;
+border-left: 1px solid #E4E4E4;
+background-color: #ffffff;  
+outline: none;
+}
+
+
+html{
+	width:100%;
+	height:100%;
+}
+html{
+	overflow-x:hidden;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	width:100%;
+}
+* html #fixed {
+	position:absolute;
+}
+#top_news {
+	margin:0 auto;
+	width:100%;
+	background:#3a3a3a;
+	height:48px;
+}
+.topmain {
+	position:relative;
+	width: 960px;
+	margin: 0 auto;
+}
+.topleft a {
+	color: #8e8e8e;
+	font-size: 14px;
+	line-height:48px;
+	font-weight: bold;
+	text-decoration: none;
+	width:700px;
+	float:left;
+}
+.user_register_bar{
+	position: relative;
+	float:right;
+	margin-top:8px;
+}
+.user_register_bar li{
+	display:inline;
+}
+#top_nav{
+	position:relative;
+	width:100%;
+	margin:0;
+	height:82px;
+	background:url(../images/nav_bg.png) repeat-x;
+	z-index:300;
+}
+.logo img{
+	margin-top:15px;
+}
+.nav_bar{
+	position: relative;
+	float:right;
+	margin-top:-35px;
+}
+.nav_bar li{
+	display:inline;
+	margin-right:15px;
+}
+.nav_bar li a{
+	color: #8e8e8e;
+	font-size: 15px;
+	line-height:48px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.nav_bar li a.cur{
+	color:#f60;
+}
+.tel{
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+
+.fixed_box{
+	position:relative; 
+	margin:0 auto; 
+	width:100%; 
+	z-index:105;
+}
+
+.registration_form{
+	position:absolute;
+	width:275px;
+	left:680px;
+	top:0px;
+	z-index:104;
+}
+
+.box_960{ 
+	position:relative;
+	width:960px; 
+	height:auto; 
+	margin:0 auto;
+}
+.box_660{ 
+	position:relative;
+	width:660px; 
+	height:auto;
+	float:left;
+}
+
+
+
+
+
+.box_Orange{
+	position:relative;
+	width:100%; 
+	height:auto; 
+	/*min-height:500px;*/
+	margin:0 auto;
+	background-color:#ff9000;
+	padding-bottom:40px;
+	overflow:hidden;
+}
+.box_Gray{
+	position:relative;
+	width:100%; 
+	height:auto; 
+	/*min-height:500px;*/
+	margin:0 auto;
+	background-color:#eeeeee;
+	z-index:0;
+	padding-bottom:40px;
+	overflow:hidden;
+}
+.box_White{
+	position:relative;
+	width:100%; 
+	height:auto; 
+	/*min-height:500px;*/
+	margin:0 auto;
+	background-color:#ffffff;
+	z-index:0;
+	padding-bottom:40px;
+	overflow:hidden;
+}
+.T_Orange{
+	position:relative;
+	width:960px; height:29px; 
+	background:url(../images/triangle_Orange.png) bottom no-repeat; 
+	background-position: 60px;  
+	z-index:101; margin:0 auto; 
+}
+.T_Gray{
+	position:relative;
+	width:960px; height:29px; 
+	background:url(../images/triangle_Gray.png) bottom no-repeat; 
+	background-position: 60px;  
+	z-index:102; margin:0 auto; 
+}
+.T_White{
+	position:relative;
+	width:960px; height:29px; 
+	background:url(../images/triangle_White.png) bottom no-repeat;
+	background-position: 60px;  
+	z-index:102; margin:0 auto; 
+}
+
+h1{
+	font-family:"Arial","微軟正黑體";
+	font-size:48px;
+	font-weight:300;
+	line-height:50px;
+	padding-top:40px;
+	padding-bottom:5px;
+}
+h2{
+	font-family:"Arial","微軟正黑體";
+	font-size:20px;
+	font-weight:600;
+	line-height:20px;
+	
+}
+h3{
+	/*font-family:"新細明體","微軟正黑體","Tahoma" ;*/
+	font-size:16px;
+	padding-top:15px;
+	padding-bottom:-2px;
+	font-weight:600;
+	line-height:20px;
+}
+
+h4{
+	/*font-family:"新細明體","微軟正黑體","Tahoma" ;*/
+	font-size: 13px;
+	line-height: 25px;
+	padding-top:10px;
+
+}
+h5{
+	/*font-family:"新細明體","微軟正黑體","Tahoma" ;*/
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.color_fff{
+	color:#FFF;
+}
+
+.color_333{
+	color:#333333;
+}
+
+.color_fff{
+	color:#FFF;
+}
+
+.color_333{
+	color:#333333;
+}
+
+
+.index_list {
+	width: 660px;
+	height:auto;
+	margin-top:20px;
+}
+
+.index_list ul li {
+	width: 200px;
+	height: 144px;
+	background: #FFFFFF;
+	padding: 5px;
+	border: #c9c9c9 1px solid;
+	margin-right: 4px;
+	float: left;
+	position: relative;
+}
+.index_list_Orange {
+	padding: 6px 7px;
+	color: #ffffff;
+	font-size: 13px;
+	background: #ff9000;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.index_list_on {
+	width: 186px;
+	height: 32px;
+	padding: 3px 7px;
+	line-height: 16px;
+	color: #FFFFFF;
+	font-size: 11px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	background: #000000;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}

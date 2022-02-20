@@ -1,0 +1,19 @@
+ajax_class_info.asp
+// 檢查客戶選到的訂課時間 取得預計扣除課時數
+// 傳HTML控制項<select> 可供客戶訂課的時間
+
+
+ajax_lobby_class_info.asp
+// 根據搜尋條件找出來的大會堂資訊
+
+
+include_lobby_class_search.asp
+// 搜尋大會堂的頁面
+
+
+ajax_class_list_calender_head.asp
+// 觀看課表 行事曆 顯示年和切換月的按鈕
+
+
+ajax_class_list_calender.asp
+// 觀看課表 行事曆 顯示日期

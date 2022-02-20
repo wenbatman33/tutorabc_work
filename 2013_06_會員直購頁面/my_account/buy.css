@@ -1,0 +1,545 @@
+@charset "utf-8";
+body {
+	font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video {
+border: 0 none;
+margin: 0;
+padding: 0;
+}
+ul, ul li{list-style:none}
+dl{height:1%}
+a:focus{outline:0}
+input:focus{outline:0}
+a{
+color:#ff5a00;
+text-decoration:none;
+outline: none; /* for Firefox Google Chrome */
+behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+a:hover{text-decoration:underline}
+.Clear{clear:both;}
+.Clearleft{clear:left;}
+.Clearright{clear:right;}
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+.clearfix { display: inline-block;} 
+html[xmlns] .clearfix { display: block;} 
+* html .clearfix { height: 1%;}
+
+.container {
+	width: 100%;
+	background: #FFF;
+	margin: 0 auto;/
+}
+.content {
+	padding: 0;
+}
+
+
+/*課程類型icon*/ .session_ico{ background-image:url(/images/my_account/session_ico.png); }
+/*1對1*/ .sprite-session_ico_01{ background-position: 0 0; width: 16px; height: 16px; } 
+/*1對2*/ .sprite-session_ico_02{ background-position: 0 -17px; width: 16px; height: 16px; } 
+/*1對3*/ .sprite-session_ico_03{ background-position: 0 -34px; width: 16px; height: 16px; } 
+/*1對4*/ .sprite-session_ico_04{ background-position: 0 -51px; width: 16px; height: 16px; } 
+/*1對6*/ .sprite-session_ico_05{ background-position: 0 -68px; width: 16px; height: 16px; } 
+/*大會堂*/ .sprite-session_ico_06{ background-position: 0 -85px; width: 16px; height: 16px; } 
+/*客製1對1*/ .sprite-session_ico_07{ background-position: 0 -102px; width: 16px; height: 16px; } 
+/*錄影檔*/ .sprite-session_ico_08{ background-position: 0 -119px; width: 16px; height: 16px; } 
+/*贈送錄影檔*/ .sprite-session_ico_09{ background-position: 0 -136px; width: 16px; height: 16px; } 
+
+#myaccount_20130318{
+	font: 12px/1.5;
+}
+#myaccount_20130318 .c{
+}
+#myaccount_20130318 .c .r{
+	float:left;
+}
+#myaccount_main{
+	width:100%;
+	padding:20px 5px;
+}
+#myaccount_main .even{
+	background-color:#f2f2f2;
+}
+#myaccount_main .c_sort{
+	font-weight:700;
+	color:#4c4c4c;
+	padding:0 5px 10px;
+	border-bottom:1px solid #c9c9c9;
+}
+#myaccount_main .c_list_outter .c_list{
+	width:100%;
+	padding:10px 0 10px 5px;
+	color:#4c4c4c;
+}
+#myaccount_main .c .r_contract_01{
+	width:25%;
+	padding-right:10px;
+}
+#myaccount_main .c .r_contract_02{
+	width:25%;
+	padding-right:5px;
+}
+#myaccount_main .c .r_contract_03{
+	width:10%;
+	text-align:center;
+	padding-right:5px;
+}
+#myaccount_main .c .r_contract_04{
+	width:15%;
+	text-align:center;
+	padding-right:5px;
+}
+#myaccount_main .c .r_contract_05{
+	width:10%;
+	text-align:center;
+	padding-right:5px;
+}
+#myaccount_main .c .r_contract_06{
+	width:10%;
+	text-align:center;
+}
+#myaccount_main .c_list .r_contract_02{
+	font-size:0.917em;
+	-webkit-text-size-adjust:none;
+}
+#myaccount_main .c_list .btn_contract a,
+#myaccount_main .c_list .btn_consulting_detail a{
+	display:block;
+	padding:2px 4px;
+	color:#FFF;
+	background-color:#004aa4;
+	text-decoration:none;
+}
+#myaccount_main .c_list .btn_contract a:hover,
+#myaccount_main .c_list .btn_consulting_detail a:hover{
+	background-color:#005dcf;
+	text-decoration:none;
+}
+#myaccount_main .c_list .selected a{
+	text-decoration:none;
+	background-color:#ff6612;
+}
+#myaccount_main .c_list .selected a:hover{
+	text-decoration:none;
+	background-color:#ff7d12;
+}
+#myaccount_main .c_list_outter .contract,
+#myaccount_main .c_list_outter .consulting_detail{
+	background-color:#323232;
+	position:relative;
+	padding:30px 20px 20px;
+	color:#FFF;
+	zoom:1;
+}
+#myaccount_main .c_list_outter .arrow_top{
+	border-bottom: 8px solid #323232;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	height: 0;
+	position: absolute;
+	top: -6px;
+	_top: -22px;
+	width: 0;
+	_display:none;
+}
+#myaccount_main .c_list_outter .contract .arrow_top{
+	right:100px;
+}
+#myaccount_main .c_list_outter .consulting_detail .arrow_top{
+	right:30px;
+}
+#myaccount_main .c_list_outter .btn_close{
+	position:absolute;
+	top:8px;
+	right:8px;
+}
+#myaccount_main .c_list_outter .btn_close a{
+	width: 18px;
+	height: 18px;
+	text-indent: -9999px;
+	text-align: left;
+	background-image:url(/images/my_account/btn_close.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .btn_close a:hover{
+	background-position:0 -18px;
+}
+/*合約詳情*/
+#myaccount_main .c_list_outter .contract .c_btn_set{
+	margin-top:10px;
+}
+#myaccount_main .c_list_outter .contract .c .r_btn_01{
+	padding-right:5px;
+}
+#myaccount_main .c_list_outter .contract .btn_con_detail a,
+#myaccount_main .c_list_outter .contract .btn_con_attach a{
+	display:block;
+	padding:2px 4px;
+	color:#FFF;
+	background-color:#004aa4;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .contract .btn_con_detail a:hover,
+#myaccount_main .c_list_outter .contract .btn_con_attach a:hover{
+	background-color:#005dcf;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .contract .sep_border{
+	border-top:1px solid #000;
+	border-bottom:1px solid #3c3c3c;
+	margin:15px 0;
+}
+#myaccount_main .c_list_outter .contract .change_log{
+	color:#b5b5b5;
+}
+#myaccount_main .c_list_outter .contract .change_log .change_log_t{
+	float:left;
+	width:80px;
+}
+#myaccount_main .c_list_outter .contract .change_log .change_log_c{
+	margin-left:100px;
+}
+#myaccount_main .c_list_outter .contract .change_log .change_log_c ul li{
+	list-style:disc;
+}
+/*諮詢明細*/
+.caption{
+	color:#999999;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard{
+	font-size:0.917em;
+	-webkit-text-size-adjust:none;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c{
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #4d4d4d;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c .r_status_01{
+	color:#97c7ff;
+	width:16%;
+
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c .r_status_02,
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c .r_status_03,
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c .r_status_04,
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c .r_status_05{
+	width:16%;
+	
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .c .r_status_operate{
+	width:25px;
+	text-align:center;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .type_stats_t{
+	color:#97c7ff;
+	margin-bottom:6px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .r_type_stats_01{
+	width:165px;
+	*width:163px;
+	padding-right:8px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .r_type_stats_02{
+	width:175px;
+	*width:170px;
+	padding-right:8px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .r_type_stats_03{
+	width:195px;
+	*width:191px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .type_stats_ico{
+	width:20px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .type_stats_ico img{
+	vertical-align:middle;	
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .type_stats_name{
+	color:#999999;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .r_type_stats_01 .type_stats_name{
+	width:35px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .r_type_stats_02 .type_stats_name{
+	width:40px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .r_type_stats_03 .type_stats_name{
+	width:65px;
+}
+#myaccount_main .c_list_outter .consulting_detail .dashboard .type_stats .type_stats_stats{
+	width:110px;
+	*width:106px;
+}
+/*即將開課、歷史諮詢記錄*/
+#myaccount_main .c_list_outter .consulting_detail .page{
+	font-size:0.917em;
+	-webkit-text-size-adjust:none;
+	text-align:center;
+	width:100%;
+	margin-top:10px;
+	padding-top:10px;
+	border-top: 1px solid #c9c9c9;
+}
+#myaccount_main .c_list_outter .consulting_detail .page a{
+	display:inline-block;
+	background-color:#FFF;
+	padding:2px 3px;
+	text-align:center;
+	color:#454545;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .consulting_detail .page .current a{
+	background-color:#509fff;
+	color:#FFF;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .consulting_detail .page a:hover{
+	text-decoration:none;
+	background-color:#cde4ff;
+	color:#454545;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log{
+	background-color:#FFF;
+	color:#000;
+	padding:15px 10px;
+	margin-bottom:10px;
+	position:relative;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .session_log_t{
+	font-size:1.250em;
+	margin-bottom:10px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_seesion_count{
+	font-size:0.917em;
+	-webkit-text-size-adjust:none;
+	background-color:#e7f2ff;
+	padding:3px 10px;
+	margin-bottom:10px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .r_seesion_count_t{
+	color:#509fff;
+	width:65px;
+}
+
+#myaccount_main .c_list_outter .consulting_detail .session_log .session_log_info{
+	font-size:12px;
+	position:relative;
+	float:right;
+	text-align:right;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .session_log_info .blue{
+	color: #509fff;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .session_log_info .red{
+	color: #ff4e4b;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .r_seesion_count_c{
+	width:63px;
+	padding-right:2px;
+	*width:60px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .r_seesion_count_c img{
+	vertical-align:middle;
+	margin-right:2px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_status_count{
+
+	margin-top:3px;
+	padding:3px 0;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_status_count .r_status_count_t{
+	color:#509fff;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_status_count .r_status_count_01{
+	width:120px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_status_count .r_status_count_02{
+	width:130px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_status_count .r_status_count_03{
+	width:110px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_status_count .r_status_count_04{
+	width:120px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_sort {
+	font-weight: normal;
+	color: #939393;
+	padding: 0 5px 5px;
+	border-bottom: 1px solid #c9c9c9;
+	margin-bottom:5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_list{
+	font-size:0.917em;
+	-webkit-text-size-adjust:none;
+	padding: 5px 0 5px 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c_list_pre .r_log_03-2{
+	color:#939393;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_01{
+	width:100px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_02{
+	width:120px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_03{
+	width:290px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_03-1 img{
+	vertical-align:middle;
+	margin-right:3px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_03-2{
+	width:270px;
+	padding-right: 5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_04{
+	width:50px;
+	text-align:center;
+	padding-right: 5px;
+	color:#509fff;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_04 span{
+	width:50px;
+	text-align:center;
+	padding-right: 5px;
+	color:#ff4e4b;
+}
+
+#myaccount_main .c_list_outter .consulting_detail .session_log .c .r_log_05{
+	width:50px;
+	text-align:center;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .btn_search{
+	width:60px;
+	text-align:center;
+	position:absolute;
+	right:10px;
+	top:15px;
+	_right:35px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .btn_search a{
+	display:block;
+	padding:2px 4px;
+	color:#FFF;
+	background-color:#004aa4;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .btn_search a img{
+	vertical-align:middle;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .btn_search a:hover{
+	background-color:#005dcf;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .selected a{
+	background-color:#ff6612;
+	text-decoration:none;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .selected a:hover{
+	background-color:#ff7d12;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log{
+	background-color:#323232;
+	position:relative;
+	padding:10px;
+	color:#999;
+	margin-bottom:10px;
+	zoom:1;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .block_body .c{
+	position:relative;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .arrow_top{
+	right:25px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_t{
+	color:#FFF;
+	margin-bottom:5px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_01{
+	border-right: 1px solid #4d4d4d;
+	width:110px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_02{
+	border-right: 1px solid #4d4d4d;
+	width:240px;
+	padding-left:10px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_03{
+	border-right: 1px solid #4d4d4d;
+	width:70px;
+	padding-left:10px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_04{
+	padding-left:15px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_01 input{
+	border:1px solid #000;
+	width:90px;
+	padding:2px 3px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_01 label{
+	position:relative;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_01 label .ico_calendar{
+	position:absolute;
+	right:8px;
+	top:0;
+	*top:5px;
+	_right:17px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_02 .type_stats_body .r .l{
+	margin-bottom:2px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_02 .type_stats_body .r_type_stats_01{
+	width:65px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_02 .type_stats_body .r_type_stats_02{
+	width:75px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_02 .type_stats_body .r_type_stats_03{
+	width:95px;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_04 .btn_search_submit{
+	position:absolute;
+	top:50%;
+	height:10em;
+	margin-top:-1em ;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_04 .btn_search_submit input{
+	display:block;
+	padding:2px 3px;
+	color:#FFF;
+	background-color:#004aa4;
+	cursor:pointer;
+	border: none;
+}
+#myaccount_main .c_list_outter .consulting_detail .session_log .search_session_log .r_search_04 .btn_search_submit input:hover{
+	background-color:#005dcf;
+}
+.Contract_Details_1, .Contract_Details_2{
+	padding:5px;
+	margin-top:10px;
+	width:660px;
+	background:#FFFFFF;
+	color:#666;
+}

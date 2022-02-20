@@ -1,0 +1,2 @@
+functions_reservation_class.asp
+// 所有訂課頁面用到的函式

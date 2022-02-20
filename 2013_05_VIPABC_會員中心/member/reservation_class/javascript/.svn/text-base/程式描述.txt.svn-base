@@ -1,0 +1,8 @@
+lobby_class.js
+// 大會堂訂課頁面用到的
+
+reservation_class.js
+// 所有訂課頁面皆會用到
+
+watch_class.js
+// 觀看課表頁面用到的

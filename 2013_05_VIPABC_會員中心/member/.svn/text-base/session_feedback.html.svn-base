@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>VIPABC</title>
+<link media="screen" type="text/css" href="/css/css_cn.css" rel="stylesheet"/>
+<script src="/lib/javascripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="all">
+<div id="header">
+
+<div id="header_main">
+<div id="header-flash">
+
+<!--flash start-->
+<div id="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="298"><param name="movie" value="/flash/index.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><embed wmode="transparent" src="/flash/index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="298"></embed>
+  </object>
+  </div>
+<!--flash end-->
+
+<div id="logo"><a href="../index.html" title="VIPABC"></a></div>
+
+<!--右上-->
+<div id="wording">
+<div class="w2">
+<div class="color02"><a href="../index-purple.html"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0"></a></div>
+<div class="color01"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0" /></div>
+<div class="clear"></div>
+</div>
+<div class="w1">欢迎来到VIPABC，您可前往<a href="../regist/regist_1.html">会员登录</a>，或者<a href="../regist/regist_add.html">注册会员</a><a href="../faq/faq.html"><img src="/images/images_cn/index/faq.gif" width="38" height="14" border="0"  title="常见问答"></a></div>
+</div>
+<!--右上-->
+
+<!--右ad-->
+<div id="top_ad"><a href="#"><img src="/images/images_cn/top_banner.gif" width="160" height="30" border="0" /></a></div>
+<!--右ad-->
+
+<!--捷徑-->
+<div id="fast">
+<div class="box">
+<div class="lt"></div>
+<div class="say"><span class="m-right5">快速前往</span><a href="../member/member.html">课堂</a>．<a href="../member/member.html">大会堂</a></div>
+<div class="rt"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--捷徑-->
+
+<!--menubar start-->
+<div id="menubar">
+<ul>
+<li class="lt"></li>
+<li class="main"><a href="../consultant/consultant.html" title="专业顾问团队">专业顾问团队<br /><span>Consultants</span></a></li>
+<li class="main"><a href="../classroom/application.html" title="订做专属课程">订做专属课程<br /><span>Classroom</span></a></li>
+<li class="main"><a href="../member/member.html" title="会员专区">会员专区<br /><span>Member</span></a></li>
+<li class="main"><a href="../mgm/index.html" title="成果分享">成果分享<br /><span>Achievements</span></a></li>
+<li class="main"><a href="../goodies/index.html" title="特惠活动">特惠活动<br /><span>Event</span></a></li>
+<li class="main"><a href="../search/index.html" title="搜索">搜索<br /><span>Search</span></a></li>
+<li class="main"><a href="../service/service.html" title="在线客服">在线客服<br /><span>Online Service</span></a></li>
+
+<li class="rt"></li>
+<div class="clear"></div>
+</ul>
+</div>
+<!--menubar end-->
+</div>
+</div>
+
+<!--板本-->
+<div id="version">
+  <select name="select2" id="select2" class="login_box5">
+  <option>请选择语言版本</option>
+  <option>简体</option>
+  <option>繁体</option>
+  <option>English</option>
+  </select></div>
+<!--板本-->
+
+<!--次選單start-->
+<div id="header_main2">
+         <!--3會員次選單出現=09/11/23新增-->
+        <div id="menubar2_3"><a href="#">进教室</a>｜<a href="#">预订课程</a>｜<a href="#">观看课表</a>｜<a href="#">大会堂</a>｜<a href="#">录像文件</a>｜<a href="#">仿真多益考题</a>｜<a href="#">学习纪录</a>｜<a href="#">管理个人资料</a>｜<a href="#">产品购买</a></div>
+        <!--3會員次選單出現=09/11/23新增-->
+</div>
+<!--次選單end-->
+</div>
+
+
+
+
+<div class="clear"></div>
+<div id="main">
+<div class="all_width">
+
+<!-- Menber Content Start -->
+<div class="main">
+    <div class="main_con">
+        <div class="path">
+        您目前所在位置 / <a href="#">会员专区</a> / <span class=" bold">會員首頁</span>
+        </div>
+       <!--內容start-->
+       <div id="issue_membox">
+         <!--問卷資料start-->
+         <div class="main_mylist">
+           <ul>
+             <li><span class="m-right5">课后评比</span><span class="black"><span class="red">10</span>分为最满意，<span class="red">1</span>分最不满意。鼠标置于分数上，将会出现该分数的定义。</span></li>
+            </ul>
+         </div>
+         <!--問卷資料end-->
+         
+         <!--  教學質量標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />教学质量</div>
+           <div class="con_header_right "><input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">10</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">9</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">8</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">7</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">6</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">5</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">4</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">3</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">2</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">1</span>
+          </div>
+         </div>
+         <div class="clear"></div>
+         <!--   教學質量end    -->
+         <!-- 問卷一start-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">讲话速度</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />良好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />太慢</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />太快</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--問卷一 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--  問卷二   -->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">时间分配 (可复选)</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />良好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />发言时间分配不均</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />开口练习机会少</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />教材未上完</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--  問卷二 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--  問卷三   -->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">教学技巧 (可复选)</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />良好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />未将重点写于白板</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />未充分互动讨论仅念课文</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="iss_main_memfiled_left_2"></div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />未主动引导学员回答</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />软件操作不熟悉</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="clear"></div>
+        </div>
+        <!--  問卷三 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--  問卷四   -->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">教学态度(可复选)</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />认真</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />亲切</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />耐心</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />散漫</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />恶劣</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--  問卷四 end-->
+        
+        <!--  教學品質標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />教材品质 </div>
+           <div class="con_header_right "><input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">10</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">9</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">8</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">7</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">6</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">5</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">4</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">3</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">2</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">1</span>
+          </div>
+         </div>
+         <div class="clear"></div>
+         <!--   教學品質end    -->
+         <!-- 問卷一start-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">难易度</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />刚好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />太难</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />太简单</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--問卷一 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--  問卷二   -->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">需求面</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />符合需求</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />符合但希望内容更为丰富</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />符合但内容过多</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="iss_main_memfiled_left_2"></div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />符合但内容过少</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />符合但教材内容稍难</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />符合但教材内容太简单</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="iss_main_memfiled_left_2"></div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />不完全符合，我希望加强</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--  問卷二 end-->
+        
+        <!--  通讯质量標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />通讯质量</div>
+           <div class="con_header_right "><input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">10</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">9</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">8</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">7</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">6</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">5</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">4</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">3</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">2</span>
+                                          <input type="radio" name="radio" id="radio2" value="radio" /><span class="color_1 bold m-right5">1</span>
+          </div>
+         </div>
+         <div class="clear"></div>
+         <!--   通讯质量end    -->
+         
+         
+         
+         <!--  問卷一  -->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left_2">通讯状态(可复选)</div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />正常</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />略有延迟或断续</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />經常延迟或断续</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />有回音</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="iss_main_memfiled_left_2"></div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />有噪声</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />看不到影像</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />其他学员环境吵杂</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="iss_main_memfiled_left_2"></div>
+        <div class="iss_main_memfiled_right_3">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />不完全符合，我希望加强</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--  問卷二 end-->
+        
+        <!--  通讯质量標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />欢迎用英文写下您对顾问的建议与赞美, even it's broken English!</div>
+           <div class="con_header_right "></div>
+         </div>
+         <div class="clear"></div>
+         <!--   通讯质量end    -->
+        
+        <div class="advice">
+         <!--09/11/19:修改start-->建议<br><!--09/11/19:修改end--><textarea name="textarea" class="login_box5 width17 height3"></textarea>
+         <!--09/11/19:新增2個br--><br /><br />
+         <!--09/11/19:修改start-->赞美<br><!--09/11/19:修改end--><textarea name="textarea" class="login_box5 width17 height3"></textarea>
+         <div class="clear"></div>
+         </div>
+        
+        <!--09/11/19新增start-->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />能否用一句话形容VIPABC对你的帮助？</div>
+           <div class="con_header_right "></div>
+         </div>
+         <div class="clear"></div>
+         <div class="advice">
+         <textarea name="textarea" class="login_box5 width17 height5"></textarea></p>
+         </div>
+         <!--09/11/19新增end-->
+        
+        <!-- 確認扭 --->        
+            <div class="t-right m-top15 "><!--09/11/19m-top25改m-top15-->
+              <input type="submit" name="button" id="button" value="+ 继续反馈其他客户上课状况" class="btn_3"/>
+            </div>
+        <!-- 確認扭 end-->   
+       </div> 
+       <!-- 內容end -->
+    </div>
+    <div class="sidebar">
+    <!--start-->
+    <div class="sidebar_box">
+       <ul class="big color_1">
+         学习记录有疑问？
+        	<li><a href="#">评论顾问的分数会有什么影响？</a></li>
+            <li><a href="#">我可以选择顾问吗？</a></li>
+            <li><a href="#">通讯的质量可以求助吗？</a></li>
+        </ul>
+    </div>
+    <!--end-->
+    
+    <!--09/11/19新增問卷,暫時放這裡start-->
+    <div class="sidebar_box">
+       <div class="write2">
+       <span class="big color_1">您最满意VIPABC的服务是？</span>
+       <li><input type="radio" name="radio" id="radio" value="radio" />上课弹性</li>
+       <li><input type="radio" name="radio" id="radio" value="radio" />专业师资</li>
+       <li><input type="radio" name="radio" id="radio" value="radio" />个制化教材</li>
+       <li><input type="radio" name="radio" id="radio" value="radio" />客户服务</li>
+       <li class="bt"><input type="submit" name="button" id="button" value="提交" class="btn_22"/></li>
+        <div class="clear"></div>
+       </div>
+      
+    </div>
+    <!--09/11/19新增問卷,暫時放這裡end-->
+    
+    
+</div>
+<div class="clear"></div>
+</div>
+<!-- Main Content End -->
+
+
+<!-- Navigation Start -->
+<div class="nav_all">
+	<div class="nav_1 small">
+     <ul>
+     <a href="#">专业顾问团队</a>
+     <li><a href="#">顾问团队</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">订做专属课程</a>
+     <li><a href="#">免费预约真人在线试读</a></li>
+     <li><a href="#">英语能力测试</a></li>
+     <li><a href="#">个人方案</a></li>
+     <li><a href="#">企业方案</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">会员专区</a>
+     <li><a href="#">进入教室</a></li>
+     <li><a href="#">订课</a></li>
+     <li><a href="#">查閱课表</a></li>
+     <li><a href="#">大会堂</a></li>
+     <li><a href="#">錄影檔</a></li>
+     <li><a href="#">模拟托业考题</a></li>
+     <li><a href="#">我的学习记录</a></li>
+     <li><a href="#">个人资料/兴趣选取</a></li>
+     <li><a href="#">我的收藏</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">成果分享</a>
+     <li><a href="#">名人推荐</a></li>
+     <li><a href="#">用户推荐</a></li>
+     </ul>
+
+     <ul>
+     <a href="#">特惠活动</a>
+     <li><a href="#">活动</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">搜索</a>
+     <li><a href="#">搜索</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">在线客服</a>
+     <li><a href="#">联络客服</a></li>
+     <li><a href="#">历史记录</a></li>
+     </ul>
+     
+     <div class="clear"></div>
+    </div>
+</div>
+<!-- Navigation End -->
+
+</div>
+</div>
+<!-- Footer Start -->
+<div class="footer">
+   <div class="copyright">
+       <ul>
+       <li><a href="#">导览</a></li>
+       <li><a href="../about/index.html">关于VIPABC</a></li>
+       <li><a href="../news/news_list.html">新闻/报道</a></li>
+       <li><a href="#">隐私条款</a></li>
+       <li><a href="#">安全条款</a></li>
+       <li><a href="#">服务条款</a></li>
+       <li><a href="../epaper/index.html">电子报</a></li>
+       <li><a href="../contact/contact_us.html">联络我们</a></li>
+       <li><a href="../resume/job.html">加入我们</a></li>
+       <li><a href="#">学术交流伙伴</a></li>
+       </ul>
+       <div class="clear"></div>
+       <div class="color_4 small">麥奇數位股份有限公司 版權所有 © VIPABC All Rights Reserved. 经营许可证编号: 京ICP备05067667号</div>
+   </div>
+</div>
+<!-- Footer End -->
+
+</div>
+</body>
+</html>

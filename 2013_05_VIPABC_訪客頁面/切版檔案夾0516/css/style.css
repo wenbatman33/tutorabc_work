@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+/* Example One */
+
+.nav_bar{
+	position: relative;
+	float:right;
+	/*margin-top:-35px;*/
+}
+
+
+.nav_bar li a.cur{
+	color:#f60;
+}
+
+
+
+
+.nav_bar li { 
+	display: inline-block;
+	margin-right:15px;	
+}
+.nav_bar a { 
+	color: #8e8e8e;
+	font-size: 15px;
+	line-height:48px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.nav_bar a:hover { 
+	color:#999; 
+}
+#magic-line { 
+	position: absolute;
+	bottom: 10px; 
+	left: 0; 
+	width: 100px; 
+	height: 2px; 
+	background: #ff9000;
+}
+.current_page_item a { 
+	color:#ff9000 !important; 
+}
+.ie6 .nav_bar li, .ie7 .nav_bar li { 
+	display: inline; 
+}
+.ie6 #magic-line {
+	bottom: -3px;
+}
+
+

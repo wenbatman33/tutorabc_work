@@ -1,0 +1,26 @@
+normal_and_vip.asp
+// 一對一和一對三訂課頁面
+
+normal_and_vip_near_cancel.asp
+// 一對一和一對三 近期取消課程頁面
+
+normal_and_vip_near_order.asp
+// 一對一和一對三 近期預訂課程頁面
+
+order_success.asp
+// 一對一和一對三和大會堂 成功預訂(包含預訂失敗)課程頁面
+
+reorder_success.asp
+// 一對一和一對三和大會堂 成功重訂(包含重訂失敗)課程頁面
+
+lobby_near_cancel.asp
+// 大會堂 近期取消課程頁面
+
+lobby_near_order.asp
+// 大會堂 近期預定課程頁面
+
+watch_class.asp
+// 觀看課表
+
+reservation_class_exe.asp
+// 一對三 一對一 大會堂 預定和重訂課程 的後台

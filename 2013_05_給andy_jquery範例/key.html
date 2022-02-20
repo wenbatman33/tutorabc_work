@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+$(function() {
+
+$('body').keydown(function(event){
+	
+	
+	var temp= $('#myDiv').scrollLeft();
+ if (event.which == 37 | event.which ==  38  ) { //上＋左鍵的代碼
+ 
+	
+	$("#myDiv").stop().animate({
+		    scrollLeft:temp-100
+		});
+ }
+ if (event.which == 39 | event.which == 40) { // 下＋右鍵的代碼
+   $("#myDiv").stop().animate({
+		    scrollLeft: temp+100
+		
+		
+		});
+ }
+});
+
+
+
+
+});
+</script>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+#myDiv{
+	position:relative;
+	overflow:hidden;
+	width:600px;
+	height:600px;
+	background:#CCCCCC;
+	
+}
+
+
+#mybox{
+	position:absolute;
+	width:100%;
+	height:100%;
+	
+}
+</style>
+</head>
+
+<body>
+
+<div id="myDiv">
+
+    <div id="mybox">
+    <img src="http://images2.fanpop.com/image/photos/9300000/through-the-years-michael-jordan-9335028-1280-800.jpg" /> 
+</div>
+</div>
+</body>
+</html>

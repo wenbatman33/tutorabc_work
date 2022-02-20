@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>無標題文件</title>
+<link href="/css/my_account.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".buyBodybox").hide();
+        $('.btn_close').click(function(){
+            /*按關閉按鈕全部收合*/
+            $(".buyBodybox").slideUp();
+        });
+        $('.buy_list').hover(function() {
+            $(this).css('cursor','pointer');
+            }, function() {
+            $(this).css('cursor','auto');
+
+        });
+
+
+        $('#buy_list_01').click(function(){
+            $("#buyBody_02").hide();
+            $("#buyBody_03").hide();
+            $("#buyBody_04").hide();
+            $("#buyBody_01").slideToggle();
+        });
+        $('#buy_list_02').click(function(){
+            $("#buyBody_01").hide();
+            $("#buyBody_03").hide();
+            $("#buyBody_04").hide();
+            $("#buyBody_02").slideToggle();
+        });
+        $('#buy_list_03').click(function(){
+            $("#buyBody_01").hide();
+            $("#buyBody_02").hide();
+            $("#buyBody_04").hide();
+            $("#buyBody_03").slideToggle();
+        });
+        $('#buy_list_04').click(function(){
+            $("#buyBody_01").hide();
+            $("#buyBody_02").hide();
+            $("#buyBody_03").hide();
+            $("#buyBody_04").slideToggle();
+        });
+        
+    });
+</script>
+</head>
+
+<body>
+<div class="container">
+	<ul id='buy_list_sort'class="buy_list_sort">
+        <li class="buyColumn_01">产品名称</li>
+        <li class="buyColumn_02">产品使用期限 </li>
+        <li class="buyColumn_03">可用点数 </li>
+        <li class="buyColumn_04">服务期限</li>
+    </ul>
+    <ul id='buy_list_01' class="buy_list">
+        <li class="buyColumn_01">點數3,000點</li>
+        <li class="buyColumn_02">2010/10/20~2011/10/19</li>
+        <li class="buyColumn_03">3,300点</li>
+        <li class="buyColumn_04">3 Months </li>
+    </ul>
+
+
+    <div id="buyBody_01" class="buyBodybox">
+        <div class="buyArrow_top"></div>
+        <div class="block_body_buy">
+            <div class="btn_close"><a href="#">x</a></div>
+
+            <div class="btn_info_title">订单明细</div>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>订单编号 </p><p class='buy_t_white'>XXXXXXXXXXXXXXXXX</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>订购日期 </p><p class='buy_t_white'>2013/05/15</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>消费总额 </p><p class='buy_t_white'>人民币3,000元整</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>基础点数 </p><p class='buy_t_white'>3,000</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>点数兑换优惠 </p><p class='buy_t_white'>95折</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>服务专线 </p><p class='buy_t_white'>4006-30-30-30</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>服务信箱 </p><p class='buy_t_white'>vipservices@vipabc.com</p></li>
+            </ul>
+
+            <div class="btn_info_title">历史付款记录</div>
+            <ul class='pay_info_sort'>
+                <li class='pay_info_Column'>缴款类别</li>
+                <li class='pay_info_Column'>付款方式</li>
+                <li class='pay_info_Column'>付款日期</li>
+                <li class='pay_info_Column'>付款金额</li>
+                <li class='pay_info_Column'>发票种类</li>
+                <li class='pay_info_Column'>发票代码</li>
+                <li class='pay_info_Column'>发票号码</li>
+            </ul>
+
+            <ul class='pay_info'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                              
+            </ul>
+            <ul class='pay_info_even'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                                   
+            </ul>
+
+            <ul class='pay_info'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                          
+            </ul>
+            <ul class='pay_info_even'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                           
+            </ul>
+            <div class="buy_info_total">已付金额（人民币）3000元</div>
+
+        </div> 
+    </div>
+    
+    
+    
+    <ul id='buy_list_02' class="buy_list even">
+        <li class="buyColumn_01">點數3,000點</li>
+        <li class="buyColumn_02">尚未付款</li>
+        <li class="buyColumn_03">-</li>
+        <li class="buyColumn_04">-</li>
+    </ul>
+    <div id="buyBody_02" class="buyBodybox">
+        <div class="buyArrow_top"></div>
+        <div class="block_body_buy">
+            <div class="btn_close"><a href="#">x</a></div>
+
+            <div class="btn_info_title">订单明细</div>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>订单编号 </p><p class='buy_t_white'>XXXXXXXXXXXXXXXXX</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>订购日期 </p><p class='buy_t_white'>2013/05/15</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>消费总额 </p><p class='buy_t_white'>人民币3,000元整</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>基础点数 </p><p class='buy_t_white'>3,000</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>点数兑换优惠 </p><p class='buy_t_white'>95折</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>服务专线 </p><p class='buy_t_white'>4006-30-30-30</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>服务信箱 </p><p class='buy_t_white'>vipservices@vipabc.com</p></li>
+            </ul>
+
+            <div class="btn_info_title">本次付款项目说明</div>
+            <ul class='pay_info_sort'>
+                <li class='pay_notyet_Column_01'>项目</li>
+                <li class='pay_notyet_Column'>缴款类别</li>
+                <li class='pay_notyet_Column'>付款方式</li>
+                <li class='pay_notyet_Column'>付款日期</li>
+                <li class='pay_notyet_Column'>付款金额</li>              
+            </ul>
+            <div class='pay_info'>
+                <div class='pay_notyet_Column_01'><input type="radio" name="radio" id="radio" value="radio" /></div>
+                <div class='pay_notyet_Column'>在線刷卡</div>
+                <div class='pay_notyet_Column'>2013/01/08</div>
+                <div class='pay_notyet_Column'>30,000</div>
+                <div class='pay_notyet_Column'>普通发票</div>                           
+            </div>
+            
+            <div class="pay_notyet_total">
+                <p class='buy_t_blue'>请选择上面的"项目"，系统将会自动计算您本次应付款金额<input type="text" name="textfield" id="textfield" />元整<br>您已付金额(人民币)0 未付金额(人民币)23,000</p>
+
+            </div>
+
+            <div class="pay_notyet_remark">
+                <p class='buy_t_blue'>
+                ＊请先将您的信用卡准备好，再按确认键，待会进入卡号输入页时，若超过三分钟，您的交易有可能会失败！<br>
+                交易提醒:<br>
+                1. 请使用IE6、IE7、IE8及IE内核的浏览器进行支付。<br>
+                2. 避免使用IE9、360、TT、遨游、谷歌Chrome、苹果电脑、火狐Firefox等浏览器。<br>
+                3. 点选后请留意浏览器上方是否出现”安全登录控件”请点选安装 (详细说明)。<br>
+                4. 请关闭360安全卫士、360网购保镖。<br>
+                5. 预先安装 块钱安全登录控件。<br>
+                6. 预先安装 招商银行安全登录控件 (第20条)。<br>
+                </p>
+            </div>
+            <div class="pay_notyet_send">
+            <a class="online_evaluation_btn" href="#">确认提交</a>
+            </div>
+        </div> 
+    </div>
+
+    <ul id='buy_list_03' class="buy_list">
+        <li class="buyColumn_01">點數3,000點</li>
+        <li class="buyColumn_02">2010/10/20~2011/10/19</li>
+        <li class="buyColumn_03">3,300点</li>
+        <li class="buyColumn_04">3 Months </li>
+    </ul>
+    <div id="buyBody_03" class="buyBodybox">
+        <div class="buyArrow_top"></div>
+        <div class="block_body_buy">
+            <div class="btn_close"><a href="#">x</a></div>
+
+            <div class="btn_info_title">订单明细</div>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>订单编号 </p><p class='buy_t_white'>XXXXXXXXXXXXXXXXX</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>订购日期 </p><p class='buy_t_white'>2013/05/15</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>消费总额 </p><p class='buy_t_white'>人民币3,000元整</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>基础点数 </p><p class='buy_t_white'>3,000</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>点数兑换优惠 </p><p class='buy_t_white'>95折</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>服务专线 </p><p class='buy_t_white'>4006-30-30-30</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>服务信箱 </p><p class='buy_t_white'>vipservices@vipabc.com</p></li>
+            </ul>
+
+            <div class="btn_info_title">历史付款记录</div>
+            <ul class='pay_info_sort'>
+                <li class='pay_info_Column'>缴款类别</li>
+                <li class='pay_info_Column'>付款方式</li>
+                <li class='pay_info_Column'>付款日期</li>
+                <li class='pay_info_Column'>付款金额</li>
+                <li class='pay_info_Column'>发票种类</li>
+                <li class='pay_info_Column'>发票代码</li>
+                <li class='pay_info_Column'>发票号码</li>
+            </ul>
+
+            <ul class='pay_info'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                              
+            </ul>
+            <ul class='pay_info_even'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                                   
+            </ul>
+
+            <ul class='pay_info'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                          
+            </ul>
+            <ul class='pay_info_even'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                           
+            </ul>
+            <div class="buy_info_total">已付金额（人民币）3000元</div>
+
+        </div> 
+    </div>
+    <ul id='buy_list_04' class="buy_list even">
+        <li class="buyColumn_01">點數3,000點</li>
+        <li class="buyColumn_02">2010/10/20~2011/10/19</li>
+        <li class="buyColumn_03">3,300点</li>
+        <li class="buyColumn_04">3 Months </li>
+    </ul>
+    <div id="buyBody_04" class="buyBodybox">
+        <div class="buyArrow_top"></div>
+        <div class="block_body_buy">
+            <div class="btn_close"><a href="#">x</a></div>
+
+            <div class="btn_info_title">订单明细</div>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>订单编号 </p><p class='buy_t_white'>XXXXXXXXXXXXXXXXX</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>订购日期 </p><p class='buy_t_white'>2013/05/15</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>消费总额 </p><p class='buy_t_white'>人民币3,000元整</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>基础点数 </p><p class='buy_t_white'>3,000</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>点数兑换优惠 </p><p class='buy_t_white'>95折</p></li>
+            </ul>
+            <ul class='buy_info'>
+                <li class='buy_info_Column_01'><p class='buy_t_gray'>服务专线 </p><p class='buy_t_white'>4006-30-30-30</p></li>
+                <li class='buy_info_Column_02'><p class='buy_t_gray'>红利点数 </p><p class='buy_t_white'>300</p></li>
+                <li class='buy_info_Column_03'><p class='buy_t_gray'>服务信箱 </p><p class='buy_t_white'>vipservices@vipabc.com</p></li>
+            </ul>
+
+            <div class="btn_info_title">历史付款记录</div>
+            <ul class='pay_info_sort'>
+                <li class='pay_info_Column'>缴款类别</li>
+                <li class='pay_info_Column'>付款方式</li>
+                <li class='pay_info_Column'>付款日期</li>
+                <li class='pay_info_Column'>付款金额</li>
+                <li class='pay_info_Column'>发票种类</li>
+                <li class='pay_info_Column'>发票代码</li>
+                <li class='pay_info_Column'>发票号码</li>
+            </ul>
+
+            <ul class='pay_info'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                              
+            </ul>
+            <ul class='pay_info_even'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                                   
+            </ul>
+
+            <ul class='pay_info'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                          
+            </ul>
+            <ul class='pay_info_even'>
+                <li class='pay_info_Column'>缴清全额</li>
+                <li class='pay_info_Column'>在線刷卡</li>
+                <li class='pay_info_Column'>2013/01/08</li>
+                <li class='pay_info_Column'>30,000</li>
+                <li class='pay_info_Column'>普通发票</li>
+                <li class='pay_info_Column'>231001070052</li>
+                <li class='pay_info_Column'>9091520</li>                           
+            </ul>
+            <div class="buy_info_total">已付金额（人民币）3000元</div>
+           
+        </div> 
+    </div>
+
+</div>
+</body>
+</html>

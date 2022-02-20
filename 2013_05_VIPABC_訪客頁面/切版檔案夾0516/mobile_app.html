@@ -1,0 +1,267 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <div class="y_btn"><a class="btn_text color_fff" href="#"><div>立即预约</div></a></div>  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>移动学习</div>
+                    
+                    <ul  class="tab_ul">
+                    <li class="tab_li_L_active" style="width:33%"><span class="tab_li_span">iOS</span></li>
+                    <li class="tab_li_M" style="width:33%"><span class="tab_li_span"><a href="#">Android</a></span></li>
+                    <li class="tab_li_R" style="width:33%"><span class="tab_li_span"><a href="#">Windows Phone</a></span></li>
+                  </ul>
+                    
+                    <!-- #############物件請載入至此 部分 start################ -->
+                    <div class="tab_container">
+                        
+                        <div class="appad">
+                        <ul>
+                            <li class="Smart"><a href="#">Smart Phone</a></li>
+                            <li class="appline">線</li>
+                            <li class="Tablet">Tablet PC</li>
+                        </ul>
+                        </div>
+                        <div class="app_submenu4">
+                            <ul>
+                            <li><a href="#">
+                                <img src="images/appicon_tm.png"></a><br>
+                                TutorMobile</li>  
+                            <li><a href="#">
+                                <img src="images/ico_iPad-Spotlight_58.png"></a><br>
+                                字彙快手HD</li>  
+                            <li><a href="#">
+                                <img src="images/appicon-epaper.png"></a><br>
+                                英文學習報</li>  
+                            <li><a href="#">
+                                <img src="images/appicon-es.png"></a><br>
+                                英文急救站</li>  
+                            <div class="Clear"></div>
+                            </ul>
+                        </div>
+                        
+                        <div  class="box_shadow" ></div>
+                        
+                        
+                        <div class="app_links_warp">
+                                <div class="app_big_icon"> <a href="#"><img src="images/app_l_icon.png" width="170" height="191"></a></div>
+                                 <div class="app_info_wrap">
+                                    <div class="app_title">
+                                        <p>
+                                        VIPABC ON<br>
+                                        THE GO
+                                        </p>
+                                    </div>
+                                    <div class="app_des">
+                                        <p>
+                                        免費下載<br>
+                                        Category:Education<br>
+                                        Size: 2.1MB
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="app_stm_icon"><img src="images/appicon_apple_icon.png" width="126" height="44"></div>
+                                <div class="app_qr"><a href="#"><img src="images/qr_cod.jpg" width="126" height="125"></a></div>
+                         </div>
+                         
+                         <div class="app_comment">
+                                   <h2>平版在手，立即下載TutorMobile，<br>TutorABC 打破傳統教學模式，創造 24 小時英語環境，<br>
+                                    包羅萬象的主題課程，隨時隨地上課，輕鬆征服英語！
+                                    <br></h2>
+                                    <h3>
+                                    現在，您只要拿起手上的平板電腦連上網路，馬上開始雲端學習旅程，透過全球24時區最專業的外籍顧問，並藉由TutorABC專利的『DCGS』動態課程生成系統，讓您學習無負擔，輕鬆提升英文語言能力！<br><br>
+                                    無論何時何地，都能即時與全球最專業的外籍顧問進行最密切的線上互動學習；24小時自選課程，再冷門的上課時段，也阻擋不了您學習的熱情<br><br>
+                                    最優質的學習服務，唯有TutorABC！<br><br>
+                                    服務特色：<br>
+                                    ● 隨時隨地展開您的行動學習<br>
+                                    無論任何時間、任何地點，皆能身處英語學習環境！學習不必侷限教室，舟車勞頓更成過去式。<br><br>
+                                    ● 24小時全天候真人即時教學<br>
+                                    讓您與外籍顧問實際互動，自然開口，連語言中最微妙的情緒、表情、字彙選用、音調起伏，都能完整掌握。<br><br>
+                                    ● 包羅萬象的網路直播課程<br>
+                                    網路直播的主題多為深具新聞話題、富有啟發與趣味的主題，在外籍顧問由淺入深的引領下，您可在最短時間內，獲得該主題最全面、最實用的內容。<br><br>
+                                    ● 全球外籍顧問打造學習聯合國<br>
+                                    倫敦、紐約、香港、雪梨…橫跨南北半球、五大洲，讓全世界24時區都有您的專屬顧問。在TutorABC，您找到真正的學習日不落國！<br></h2>
+                    
+                    
+                            <h3>
+                                <img src="http://www.tutorabc.com/aspx/Mvc/images/TutorMobile01.png"><br><br><img src="http://www.tutorabc.com/aspx/Mvc/images/TutorMobile02.png"></h3>
+                    
+                        </div>
+
+                    
+                    </div>
+                    <!-- #############物件請載入至此 部分 end################ -->
+                  
+              
+
+              
+            
+              
+              
+              
+        </div>
+    </div>
+
+</div>
+<!-- #############Content部分 end################ -->
+
+<div id="footer-all">
+       <div class="footer">
+        <div class="footcertify"><img src="images/permit_foot.jpg" width="960" height="50" alt="VIPABC在线英语培训服务承诺" /></div>
+        <div class="right">
+        <!--<a href="#">导览</a>．-->
+        <a href="/program/about/index.asp">关于VIPABC</a>．
+        <!--<a href="/program/news/news_list.asp">新闻/报道</a>．-->
+        <a href="/program/terms/privacy.asp">隐私保护</a>．
+        <a href="/program/terms/security.asp">安全条款</a>．
+        <a href="/program/terms/service.asp">服务条款</a>．
+         <!--<a href="/program/epaper/index.asp"></a>．-->
+        <a href="/program/recruit/index.asp" style="color:#ff6600;">诚征英才</a>．
+        <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>．
+        <!--<a href="#">加入我们</a>．-->
+        <!-- <a href="/program/terms/Academic_Affiliates.asp"></a>．-->
+        <a href="/program/download_page/interactive_software.asp">测试教学平台</a>．
+        <!--<a href="http://www.tutormeet.com/mictest/mictest.html?lang=3&compstatus=vipabc" target="_blank">平台测试</a>．-->
+        <a href="/program/contact/contact_us.asp">联络我们</a>．
+        <a href="/program/app/index.asp "style="color:#ff6600;">热门App下载</a>
+        <span class="certline" style="line-height:20px;">教育许可:教职成司函[2011]267号&nbsp;|&nbsp;经营许可证:京ICP证090121号&nbsp;|&nbsp;京ICP备11004351号&nbsp;|&nbsp;京公网安备110105019074<br />
+        <a href="/program/about/index.asp">VIPABC.com</a>&nbsp; <a href="/program/terms/law.asp"><font color="#999999">版权所有</font></a> &copy; 2008-2013 全球最大真人<a href="/program/consultant/consultant_list.asp" style="padding:0 0 0 0;text-decoration: none;color: #777777;">英语外教</a>网&nbsp;All Rights Reserved. | 服务专线:<font color="#FF6600"  style="font-size:14px; font-weight:bold">4006-30-30-30</font> 
+     　</span>
+        <br />
+        <a href="http://trust.360.cn/search.php" target="_blank" title="360绿色网站" rel="nofollow" >
+        <img src="images/360cert.jpg" border="0" /></a>
+        <a href="https://www.itrust.org.cn/yz/pjwx.asp?wm=2679644979" target="_blank" rel="nofollow" >
+        <img src="images/webtrust.jpg" width="110" height="40" border="0" /></a>
+        <a href="http://www.315online.com.cn/member/315120016.html" target="_blank" rel="nofollow" >
+        <img src="images/315cert.jpg"  width="110" height="40" border="0" /></a>
+        <!--<a href="http://www.vipabc.com/cnnic1.asp" target="_blank">
+        <img src="/images/cert/kexin.jpg" width="110" height="40" border="0"  /></a>-->
+        <a href="https://ss.cnnic.cn/verifyseal.dll?sn=e12040111010015948308104" target="_blank" rel="nofollow" ><img src="images/kexin.jpg" width="110" height="40" border="0" /></a>
+        <!--<iframe src="http://www.vipabc.com/cnnic.asp" frameborder="0" scrolling="0" width="160" height="90"></iframe>-->
+        <a id='___szfw_logo___' href='https://search.szfw.org/cert/l/CX20120625001575001635' target='_blank'><img src='images/trusticon1.png'></a><script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+        <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202012121200003" target="_blank" rel="nofollow">
+        <img src="images/hd315.gif" width="110" height="40" border="0" /></a>
+        </div>
+        <!--<div class="right"><select name="select" id="select" class="btn"><option>Choose  Language</option></select></div>-->
+        <br class="clear" />
+    </div>
+</div>
+</body>
+</html>

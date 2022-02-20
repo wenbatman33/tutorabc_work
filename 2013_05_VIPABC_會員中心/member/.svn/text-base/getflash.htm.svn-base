@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>VIPABC上课重要通知</title>
+    <style type="text/css">
+        body
+        {
+            background-color: #efefef;
+            line-height: 22px;
+        }
+    </style>
+</head>
+<body>
+    <table width="734" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <!--Header START-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="left">
+                            <a href="http://www.vipabc.com" target="_blank">
+                                <img src="../../images/lp_edm_logo_vip.gif" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+                <!--Header END-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!--Body START-->
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <img src="../../images/lp_space.gif">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="4">
+                            <img src="../../images/lp_edm_top.gif">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#dadada" align="center">
+                            <!--MAINBOX START-->
+                            <table width="732" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td bgcolor="#ffffff" align="center">
+                                        <!--Main Here START-->
+                                        <table width="655" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="25">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <font face="Arial, Helvetica, sans-serif" size="3">亲爱的客户您好,<br />
+                                                        <br />
+                                                        VIPABC 提醒您：因近日Adobe更新的Flash Player版本(11.3.300.257)导致上课声音断续的问题，为确保上课质量，提醒您请依照下列步骤修正版本：<br>
+                                                        <br>
+                                                        Step1. <b>移除现有Flash版本</b><br>
+                                                        <a href="#" onclick="downloadUninstaller()">
+                                                            <img src="../../images/btn_winxp_2.gif" vspace="3" border="0">
+                                                        </a>&nbsp;&nbsp; <a href="#" onclick="downloadUninstaller()">
+                                                            <img src="../../images/btn_win7_2.gif" vspace="3" border="0">
+                                                        </a>
+                                                        <br />
+                                                        <br />
+                                                        Step2. <b>安装修正Flash版本</b><br>
+                                                        <a href="#" onclick="downloadFlashPlayer()">
+                                                            <img src="../../images/btn_startinstall2.gif" vspace="3" border="0"></a>
+                                                        <br />
+                                                        <br />
+                                                        Step3. <b>提醒您，请依照下列图示更改设定：</b><br>
+                                                        1. 点选选项<b>开始</b>→<b>设置</b>→<b>控制面板</b>→调整计算机设定<b>→选择<b>Flash Player</b></b><br>
+                                                        <font color="#e1000d"><b>Windows XP</b></font><br>
+                                                        <img src="../../images/mail_f_1_v.jpg"><br>
+                                                        <font color="#e1000d"><b>Windows 7</b></font><br>
+                                                        <img src="../../images/mail_f_2_v.jpg"><br>
+                                                        <br>
+                                                        2. 点选<b>高级</b>→选择<b>从不检查更新</b><br>
+                                                        <img src="../../images/mail_f_3_v.jpg"><br>
+                                                        <br>
+                                                        如有任何疑问，欢迎来信 <a href="mailto:vipservices@vipabc.com" target="_blank">vipservices@vipabc.com</a>
+                                                        或致电 4006-30-30-22 询问。<br />
+                                                        感谢您对VIPABC支持与爱护，在学习的路上，VIPABC祝您美梦成真！</font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="25">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--Main Here END-->
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--MAINBOX END-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="4">
+                            <img src="../../images/lp_edm_bottom.gif">
+                        </td>
+                    </tr>
+                </table>
+                <!--Body END-->
+            </td>
+        </tr>
+        <tr>
+            <td height="30" align="center">
+                <font size="2" face="Arial, Helvetica, sans-serif">COPYRIGHT © 2012 VIPABC.com</font>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        //var flashHost = "qa.tutormeet.com";
+        var is32bit = true;
+
+        if (navigator.userAgent.indexOf("WOW64") != -1 || navigator.userAgent.indexOf("Win64") != -1) {
+            is32bit = false;
+            //alert("This is a 64 bit OS");
+        } else {
+            //alert("This a 32 bit OS");
+        }
+
+        function downloadUninstaller() {
+            if (is32bit) {
+                location.href = "flash/uninstall_flash_player_32bit.exe";
+            } else {
+                location.href = "flash/uninstall_flash_player_64bit.exe";
+            }
+        }
+
+        function downloadFlashPlayer() {
+            location.href = "flash/install_flash_player_10_active_x.exe";
+        } 
+    </script>
+</body>
+</html>

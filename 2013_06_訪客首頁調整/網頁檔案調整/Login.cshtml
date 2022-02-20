@@ -1,0 +1,152 @@
+﻿@model NewVIPABC.Models.LoginInfo
+<head>
+    <script type="text/javascript">
+        function login() {
+            var mail = document.getElementById("mail").value;
+            var password = document.getElementById("pwd_login_password").value;
+            var remmember = "N";
+            if (document.getElementById("remmember").checked) {
+                remmember = "Y";
+            }
+            if (isEmailCheck("mail", "", "请输入您注册时输入的E-mail账号", 1)) {
+                if (password == "" || password == "请输入您的密码") {
+                    alert("您输入的密码有误，请重新输入！");
+                    return false;
+                }
+                //记录cookie
+                $.getJSON('@Url.Action("RmemberCookieJson", "Login")?mail=' + mail + '&pwd_login_password=' + password + '&remmember=' + remmember + '&callback=?', doCallBack);
+                //登录验证
+                document.getElementById("frm_member_login").action = 'http://192.168.101.73:91/program/member/member_login_exe.asp?mail=' + mail + '&pwd_login_password=' + password + '&remmember=' + remmember;
+                document.getElementById("frm_member_login").submit();
+            }
+        }
+        function doCallBack(data) {
+        }
+        //快速註冊 資料確認
+        function register() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var password2 = document.getElementById("password2").value;
+            if (isEmailCheck('email', 'emailCheck', '请输入您常用的邮箱', 2) && isPasswordCheck('password', 'pwdCheck', 2) && isPasswordCheck2('password', 'password2', 'pwdCheck2', 2)) {
+                window.location.href = '@Url.Action("UserRegister", "Login")?txt_email_addr=' + email + '&pwd_passwd=' + password + '&pwd_passwd_retry' + password2 + '&type=1';
+            }
+        }
+    </script>
+</head>
+<div class="fixed_box">
+    <div class="box_960">
+        <div class="registration_form">
+            <img src="@Url.Content("~/Content/images/reg_banner.png")" width="268" height="316">
+        </div>
+    </div>
+</div>
+@*@using (Html.BeginForm("member_login_exe.asp", "Login", FormMethod.Post, new { name = "form1", id = "form1" }))
+{ *@
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+            <div class="breadcrumb">
+                <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>会员登录</div>
+            <form name="frm_member_login" id="frm_member_login" method="post">
+            <div style="position: relative; float: left; width: 305px; height: 500px; margin-top: 50px;">
+                <h1 style="color: #666;">
+                    会员登录<br />
+                </h1>
+                <h4 style="color: #666;">
+                    歡迎登录VIPABC<br />
+                    登录VIPABC后，您可以享受到我们更多的服务。</h4>
+                <br>
+                <div style="position: relative; width: 100%; text-align: left; float: left; height: 32px;
+                    line-height: 32px; vertical-align: middle;">
+                    帐 号
+                    @Html.TextBoxFor(m => m.email, new
+                       {
+                           @class = "reg_field",
+                           @name = "mail",
+                           @id = "mail",
+                           @style = "width:200px",
+                           @onfocus="if(this.value=='请输入您注册时输入的E-mail账号'){this.value='';this.className='reg_field';}else{this.className='reg_field_black';}" ,
+                           @onblur="if(this.value==''){this.value='请输入您注册时输入的E-mail账号';this.className='reg_field';}else{this.className='reg_field_black';}"
+                       })
+                    <br />
+                </div>
+                <div style="position: relative; width: 100%; text-align: left; float: left; height: 32px;
+                    line-height: 32px; vertical-align: middle;">
+                    密 码
+                    @Html.PasswordFor(m => m.password, new
+                       {
+                           @class = "reg_field",
+                           @name = "pwd_login_password",
+                           @id = "pwd_login_password",
+                           @style = "width:200px"
+                       })
+                </div>
+                <div style="position: relative; width: 100%; text-align: left; float: left; margin-left: 30px;
+                    height: 32px; line-height: 32px; vertical-align: middle;">
+                    @Html.CheckBoxFor(m => m.checkRemember, new
+                       {
+                           @class = "reg_field",
+                           @name = "remmember",
+                           @id = "remmember",
+                           @style = "margin-left: 5px",
+                           @checked = false
+                       })
+                    <label class="reg_txt" style="margin-left: 5px">
+                        下次自动登录（維持14日)</label>
+                </div>
+                <div style="position: relative; width: 100%; height: auto; line-height: 60px; vertical-align: middle;">
+                    <div class="y_btn" style="position: relative; float: left; margin-left: 30px; margin-top: 10px;">
+                        <a class="btn_text color_fff" href="#" onclick="login();">
+                            <div>
+                                登录</div>
+                        </a>
+                    </div>
+                    <span style="display: block; position: relative; float: left; margin-left: 40px;"><a
+                            class="a_link" href="@Url.Action("ForgetPassword", "Login")">忘记密码</a></span></div>
+            </div>
+            </form>
+            <div style="position:relative; float:left; width:29px; height:500px; background: url(@Url.Content("~/Content/images/box_vertical_shadow.png"));">
+            </div>
+            <div style="position: relative; float: left; width: 305px; height: 500px; margin-top: 50px;">
+                <h1 style="color: #666;">
+                    還不是會員<br />
+                    馬上加入</h1>
+                <h4 style="color: #666;">
+                    歡迎登录VIPABC<br />
+                    登录VIPABC后，您可以享受到我们更多的服务。</h4>
+                <br />
+                <div style="position: relative; width: 100%; text-align: left; float: left; height: 32px;
+                    line-height: 32px; vertical-align: middle;">
+                    帐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号
+                    <input style="width: 200px" id="email" name="email" value="请输入您常用的邮箱" class="reg_field"
+                        onfocus="if(this.value=='请输入您常用的邮箱'){this.value='';this.className='reg_field';}else{this.className='reg_field_black';}" 
+                        onblur="if(this.value==''){this.value='请输入您常用的邮箱';this.className='reg_field';}else{isEmailCheck('email','emailCheck','请输入您常用的邮箱',2);this.className='reg_field_black';}" />
+                    <span id="emailCheck"></span>
+                </div>
+                <div style="position: relative; width: 100%; text-align: left; float: left; height: 32px;
+                    line-height: 32px; vertical-align: middle;">
+                    密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码
+                    <input style="width: 200px" type="password" id="password" name="password" class="reg_field"
+                        onblur="isPasswordCheck('password','pwdCheck',2);" />
+                    <span id="pwdCheck"></span>
+                </div>
+                <div style="position: relative; width: 100%; text-align: left; float: left; height: 32px;
+                    line-height: 32px; vertical-align: middle;">
+                    确认密码
+                    <input style="width: 200px" type="password" id="password2" name="password2" class="reg_field"
+                        onblur="isPasswordCheck2('password','password2','pwdCheck2',2);" />
+                    <span id="pwdCheck2"></span>
+                </div>
+                <div style="position: relative; width: 100%;" onclick="register();">
+                    <div class="y_btn" style="position: relative; float: left; margin-left: 50px; margin-top: 10px;">
+                        <a class="btn_text color_fff" href="#">
+                            <div>
+                                免费注册</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*}*@ 
