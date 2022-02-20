@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>VIPABC</title>
+<link media="screen" type="text/css" href="/css/css_cn.css" rel="stylesheet"/>
+<script src="/lib/javascripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="all">
+<div id="header">
+
+<div id="header_main">
+<div id="header-flash">
+
+<!--flash start-->
+<div id="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="298"><param name="movie" value="/flash/index.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><embed wmode="transparent" src="/flash/index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="298"></embed>
+  </object>
+  </div>
+<!--flash end-->
+
+<div id="logo"><a href="../index.html" title="VIPABC"></a></div>
+
+<!--右上-->
+<div id="wording">
+<div class="w2">
+<div class="color02"><a href="../index-purple.html"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0"></a></div>
+<div class="color01"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0" /></div>
+<div class="clear"></div>
+</div>
+<div class="w1">欢迎来到VIPABC，您可前往<a href="../regist/regist_1.html">会员登录</a>，或者<a href="../regist/regist_add.html">注册会员</a><a href="../faq/faq.html"><img src="/images/images_cn/index/faq.gif" width="38" height="14" border="0"  title="常见问答"></a></div>
+</div>
+<!--右上-->
+
+<!--右ad-->
+<div id="top_ad"><a href="#"><img src="/images/images_cn/top_banner.gif" width="160" height="30" border="0" /></a></div>
+<!--右ad-->
+
+<!--捷徑-->
+<div id="fast">
+<div class="box">
+<div class="lt"></div>
+<div class="say"><span class="m-right5">快速前往</span><a href="../member/member.html">课堂</a>．<a href="../member/member.html">大会堂</a></div>
+<div class="rt"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--捷徑-->
+
+<!--menubar start-->
+<div id="menubar">
+<ul>
+<li class="lt"></li>
+<li class="main"><a href="../consultant/consultant.html" title="专业顾问团队">专业顾问团队<br /><span>Consultants</span></a></li>
+<li class="main"><a href="../classroom/application.html" title="订做专属课程">订做专属课程<br /><span>Classroom</span></a></li>
+<li class="main"><a href="../member/member.html" title="会员专区">会员专区<br /><span>Member</span></a></li>
+<li class="main"><a href="../mgm/index.html" title="成果分享">成果分享<br /><span>Achievements</span></a></li>
+<li class="main"><a href="../goodies/index.html" title="特惠活动">特惠活动<br /><span>Event</span></a></li>
+<li class="main"><a href="../search/index.html" title="搜索">搜索<br /><span>Search</span></a></li>
+<li class="main"><a href="../service/service.html" title="在线客服">在线客服<br /><span>Online Service</span></a></li>
+
+<li class="rt"></li>
+<div class="clear"></div>
+</ul>
+</div>
+<!--menubar end-->
+</div>
+</div>
+
+<!--板本-->
+<div id="version">
+  <select name="select2" id="select2" class="login_box5">
+  <option>请选择语言版本</option>
+  <option>简体</option>
+  <option>繁体</option>
+  <option>English</option>
+  </select></div>
+<!--板本-->
+
+<!--次選單start-->
+<div id="header_main2">
+         <!--3會員次選單出現=09/11/23新增-->
+        <div id="menubar2_3"><a href="#">进教室</a>｜<a href="#">预订课程</a>｜<a href="#">观看课表</a>｜<a href="#">大会堂</a>｜<a href="#">录像文件</a>｜<a href="#">仿真多益考题</a>｜<a href="#">学习纪录</a>｜<a href="#">管理个人资料</a>｜<a href="#">产品购买</a></div>
+        <!--3會員次選單出現=09/11/23新增-->
+</div>
+<!--次選單end-->
+</div>
+<div class="clear"></div>
+<div id="main">
+<div class="all_width">
+
+<!-- Main Content Start -->
+<div class="main">
+    <div class="main_con">
+        <div class="path">
+        您目前所在位置 / 会员专区 / 学习纪录<a href="#"></a></div>
+       <!--內容start-->
+        <div class="main_membox">
+        <!--上版位課程start-->
+        <div class="top_class5">
+        <h1><span class="bold">目前级数：Level 3</span><a href="#">打印证书 </a><a href="#">申请升降级</a><br />
+          <span class="bold">您还有拥有</span><span class="titleRed">10</span><span class="bold">堂课程</span><a href="#">详细说明</a><br />
+          <br />
+          课时计算方式说明：一对一课程每次扣<span class="titleRed">3课时</span>  /  小班制每次扣<span class="titleRed">1课时</span>  /  24hr 内订课每次扣<span class="titleRed">2课时</span></h1>
+          </div>
+        <div class="top_class_N1" >上课记录&评分 </div>
+        <a class="top_class_N2" href="learning_5.html">我的单词银行</a>
+        <a class="top_class_N2" href="learning_3.html">学习状态查询</a>
+        <a class="top_class_N2" href="learning_4.html">程度分析</a>
+        <a class="top_class_N2" href="#">证书打印</a>
+        <a class="top_class_N4" href="#">DCGS学习偏好设定</a>
+        <div class="top_block"></div>
+        <p>您满意这次上课的内容吗？<br />
+欢迎您通过课后评价告诉我们您的感受，您每一个宝贵的建议都是提升课程质量的重要依据。<br />
+VIPABC 技术客服部将竭力为您提供更优质的学习环境。VIPABC 祝您学习愉快！</p>
+        <!--上版位課程end-->
+        <div class="red_title">课程简介</div>
+        <div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="score_bd">
+          <tr>
+            <th>
+            <div class="Div_relative"><div class="gray_line"></div>
+            </div>
+            教材名称</th>
+            <td ><span class="color_1">Business - Body Language</span></td>
+            </tr>
+          <tr>
+            <th>上课时间</th>
+            <td>2009/10/4 - 23:30</td>
+            </tr>
+          <tr>
+            <th>顾问名称</th>
+            <td>Hermani Toussaint</td>
+          </tr>
+          <tr>
+            <th>课程等级</th>
+            <td >
+            <p class="gray_ballNum">1</p>
+            <p class="gray_ballNum">2</p>
+            <p class="gray_ballNum">3</p>
+            <p class="gray_ballNum">4</p>
+            <p class="gray_ballNum">5</p>
+            <p class="gray_ballNum">6</p>
+            <p class="gray_ballNum">7</p>
+            <p class="gray_ballNum">8</p>
+            <p class="gray_ballNum">9</p>
+            <p class="gray_ballNum">10</p>
+            <p class="gray_ballNum">11</p>
+            <p class="green_ballNum">12</p>
+            
+            
+            </td>
+          </tr>
+          <tr>
+            <th>教材简述</th>
+            <td>Body language accounts for more than half of what others respond to. Discussion of what types of signals<br />
+              do you send according to how you hold or move your body. What emotional feedback to you give to others in response to the signals they give you?</td>
+          </tr>
+        </table>
+        <div class="clear"></div>
+        </div>
+        <div class="red_title">顾问课后评价</div>
+        <div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bought_bd">
+
+          <tr>
+            <th>参与度</th>
+            <th>发音</th>
+            <th>理解力</th>
+            <th>创造力</th>
+            <th class="rightLine">流畅度</th>
+          </tr>
+          <tr>
+            <td>Outstanding</td>
+            <td>Outstanding</td>
+            <td>Outstanding</td>
+            <td>Outstanding</td>
+            <td class="rightLine">Outstanding</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="score_bd">
+
+          <tr>
+            <th>顾问评语</th>
+            <td>Riley expressed and presented his discussihis speech was clear, distinct, organized and preciseon with <br />
+              clarity, used the language easily and fluently, excellent job! </td>
+          </tr>
+        </table>
+        <div class="clear"></div>
+        </div>
+        <div class="page">
+        <input type="submit" name="button2" id="button2" value="+ 填写课后评语及反馈其他客户上课状况" class="btn_red3"/>
+        </div>
+        </div>
+        <!--內容end-->
+        </div>
+        <div class="sidebar">
+    <!--start-->
+    <div class="sidebar_box">
+       <ul class="big color_1">
+         学习记录有疑问？
+        	 <li><a href="#">评分标准是怎样的？</a></li>
+             <li><a href="#">我可以积累多少个单词？</a></li>
+             
+             <li><a href="#">申请升降级流程？</a></li>
+             <li><a href="#">立即联络在线客服</a></li>
+        </ul>
+    </div>
+    <!--end-->
+</div>
+<div class="clear"></div>
+</div>
+<!-- Main Content End -->
+
+
+
+<!-- Navigation Start -->
+<div class="nav_all">
+	<div class="nav_1 small">
+     <ul>
+     <a href="#">专业顾问团队</a>
+     <li><a href="#">顾问团队</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">订做专属课程</a>
+     <li><a href="#">免费预约真人在线试读</a></li>
+     <li><a href="#">英语能力测试</a></li>
+     <li><a href="#">个人方案</a></li>
+     <li><a href="#">企业方案</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">会员专区</a>
+     <li><a href="#">进入教室</a></li>
+     <li><a href="#">订课</a></li>
+     <li><a href="#">查閱课表</a></li>
+     <li><a href="#">大会堂</a></li>
+     <li><a href="#">錄影檔</a></li>
+     <li><a href="#">模拟托业考题</a></li>
+     <li><a href="#">我的学习记录</a></li>
+     <li><a href="#">个人资料/兴趣选取</a></li>
+     <li><a href="#">我的收藏</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">成果分享</a>
+     <li><a href="#">名人推荐</a></li>
+     <li><a href="#">用户推荐</a></li>
+     </ul>
+
+     <ul>
+     <a href="#">特惠活动</a>
+     <li><a href="#">活动</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">搜索</a>
+     <li><a href="#">搜索</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">在线客服</a>
+     <li><a href="#">联络客服</a></li>
+     <li><a href="#">历史记录</a></li>
+     </ul>
+     
+     <div class="clear"></div>
+    </div>
+</div>
+<!-- Navigation End -->
+</div>
+</div>
+<!-- Footer Start -->
+<div class="footer">
+   <div class="copyright">
+       <ul>
+       <li><a href="#">导览</a></li>
+       <li><a href="../about/index.html">关于VIPABC</a></li>
+       <li><a href="../news/news_list.html">新闻/报道</a></li>
+       <li><a href="#">隐私条款</a></li>
+       <li><a href="#">安全条款</a></li>
+       <li><a href="#">服务条款</a></li>
+       <li><a href="../epaper/index.html">电子报</a></li>
+       <li><a href="../contact/contact_us.html">联络我们</a></li>
+       <li><a href="../resume/job.html">加入我们</a></li>
+       <li><a href="#">学术交流伙伴</a></li>
+       </ul>
+       <div class="clear"></div>
+       <div class="color_4 small">麥奇數位股份有限公司 版權所有 © VIPABC All Rights Reserved. 经营许可证编号: 京ICP备05067667号</div>
+   </div>
+</div>
+<!-- Footer End -->
+</div>
+</body>
+</html>

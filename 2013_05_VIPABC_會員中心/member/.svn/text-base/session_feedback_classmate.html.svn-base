@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>VIPABC</title>
+<link media="screen" type="text/css" href="/css/css_cn.css" rel="stylesheet"/>
+<script src="/lib/javascripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="all">
+<div id="header">
+
+<div id="header_main">
+<div id="header-flash">
+
+<!--flash start-->
+<div id="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="298"><param name="movie" value="/flash/index.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><embed wmode="transparent" src="/flash/index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="298"></embed>
+  </object>
+  </div>
+<!--flash end-->
+
+<div id="logo"><a href="../index.html" title="VIPABC"></a></div>
+
+<!--右上-->
+<div id="wording">
+<div class="w2">
+<div class="color02"><a href="../index-purple.html"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0"></a></div>
+<div class="color01"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0" /></div>
+<div class="clear"></div>
+</div>
+<div class="w1">欢迎来到VIPABC，您可前往<a href="../regist/regist_1.html">会员登录</a>，或者<a href="../regist/regist_add.html">注册会员</a><a href="../faq/faq.html"><img src="/images/images_cn/index/faq.gif" width="38" height="14" border="0"  title="常见问答"></a></div>
+</div>
+<!--右上-->
+
+<!--右ad-->
+<div id="top_ad"><a href="#"><img src="/images/images_cn/top_banner.gif" width="160" height="30" border="0" /></a></div>
+<!--右ad-->
+
+<!--捷徑-->
+<div id="fast">
+<div class="box">
+<div class="lt"></div>
+<div class="say"><span class="m-right5">快速前往</span><a href="../member/member.html">课堂</a>．<a href="../member/member.html">大会堂</a></div>
+<div class="rt"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--捷徑-->
+
+<!--menubar start-->
+<div id="menubar">
+<ul>
+<li class="lt"></li>
+<li class="main"><a href="../consultant/consultant.html" title="专业顾问团队">专业顾问团队<br /><span>Consultants</span></a></li>
+<li class="main"><a href="../classroom/application.html" title="订做专属课程">订做专属课程<br /><span>Classroom</span></a></li>
+<li class="main_on"><a href="../member/member.html" title="会员专区">会员专区<br /><span class="small">Member</span></a></li>
+<li class="main"><a href="../mgm/index.html" title="成果分享">成果分享<br /><span>Achievements</span></a></li>
+<li class="main"><a href="../goodies/index.html" title="特惠活动">特惠活动<br /><span>Event</span></a></li>
+<li class="main"><a href="../search/index.html" title="搜索">搜索<br /><span>Search</span></a></li>
+<li class="main"><a href="../service/service.html" title="在线客服">在线客服<br /><span>Online Service</span></a></li>
+
+<li class="rt"></li>
+<div class="clear"></div>
+</ul>
+</div>
+<!--menubar end-->
+</div>
+</div>
+
+<!--板本-->
+<div id="version">
+  <select name="select2" id="select2" class="login_box5">
+  <option>请选择语言版本</option>
+  <option>简体</option>
+  <option>繁体</option>
+  <option>English</option>
+  </select></div>
+<!--板本-->
+
+<!--次選單start-->
+<div id="header_main2">
+         <!--3會員次選單出現=09/11/23新增-->
+        <div id="menubar2_3"><a href="#">进教室</a>｜<a href="#">预订课程</a>｜<a href="#">观看课表</a>｜<a href="#">大会堂</a>｜<a href="#">录像文件</a>｜<a href="#">仿真多益考题</a>｜<a href="#">学习纪录</a>｜<a href="#">管理个人资料</a>｜<a href="#">产品购买</a></div>
+        <!--3會員次選單出現=09/11/23新增-->
+</div>
+<!--次選單end-->
+</div>
+
+
+
+<div class="clear"></div>
+<div id="main">
+<div class="all_width">
+
+<!-- Menber Content Start -->
+<div class="main">
+    <div class="main_con">
+        <div class="path">
+        您目前所在位置 / <a href="#">会员专区</a> / <span class=" bold">會員首頁</span>
+        </div>
+       <!--內容start-->
+       <div id="issue_membox">
+         <!--問卷資料start-->
+         <div class="main_mylist">
+           <ul>
+             <li>反馈其他客户上课状况</li>
+             </ul>
+         </div>
+         <!--問卷資料end-->
+         
+         <!--  其他會員名字標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />somebody's name</div>
+           <div class="con_header_right "></div>
+         </div>
+         <div class="clear"></div>
+         <!--   其他會員名字標頭end    -->
+         <!-- 职业别 start-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left">计算机环境<br />(网络、音效)</div>
+        <div class="iss_main_memfiled_right">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />正常</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_2">回音及杂音干扰</span><input type="radio" name="radio" id="radio" value="radio" />一直持续<input type="radio" name="radio" id="radio2" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_1">声音断续</span><input type="radio" name="radio" id="radio3" value="radio" />一直持续<input type="radio" name="radio" id="radio4" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_1">未关视频</span><input type="radio" name="radio" id="radio5" value="radio" />一直持续<input type="radio" name="radio" id="radio6" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_2">声音太大或太小</span><input type="radio" name="radio" id="radio7" value="radio" />一直持续<input type="radio" name="radio" id="radio8" value="radio" />已排除</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--职业别 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--學生學習狀況-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left">上课表现</div>
+        <div class="iss_main_memfiled_right_2">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />良好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />此同学Level太高</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />回答太慢，让大家等很久</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />此同学Level太低</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />说话太冗长</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />上课中讲电话或听到电话铃声</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />会打断别人说话</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />靠麦克风太近，呼吸声音影响上课</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />吃东西</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />不自觉一直念英文影响到我</li>
+        
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--學生學習 end-->
+        
+        <!--  其他會員名字標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />Someone’s name</div>
+           <div class="con_header_right "></div>
+         </div>
+         <div class="clear"></div>
+         <!--   其他會員名字標頭end    -->
+         <!-- 职业别 start-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left">计算机环境<br />(网络、音效)</div>
+        <div class="iss_main_memfiled_right">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />正常</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_2">回音及杂音干扰</span><input type="radio" name="radio" id="radio" value="radio" />一直持续<input type="radio" name="radio" id="radio2" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_1">声音断续</span><input type="radio" name="radio" id="radio3" value="radio" />一直持续<input type="radio" name="radio" id="radio4" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_1">未关视频</span><input type="radio" name="radio" id="radio5" value="radio" />一直持续<input type="radio" name="radio" id="radio6" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_2">声音太大或太小</span><input type="radio" name="radio" id="radio7" value="radio" />一直持续<input type="radio" name="radio" id="radio8" value="radio" />已排除</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--职业别 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--學生學習狀況-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left">上课表现</div>
+        <div class="iss_main_memfiled_right_2">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />良好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />此同学Level太高</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />回答太慢，让大家等很久</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />此同学Level太低</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />说话太冗长</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />上课中讲电话或听到电话铃声</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />会打断别人说话</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />靠麦克风太近，呼吸声音影响上课</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />吃东西</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />不自觉一直念英文影响到我</li>
+        
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--學生學習 end-->
+        
+        <!--  其他會員名字標頭    -->
+         <div class="con_title">
+           <div class="con_header_left"><img src="/images/images_cn/arrow_path.gif" alt="" width="4" height="12" hspace="2" />Someone’s name</div>
+           <div class="con_header_right "></div>
+         </div>
+         <div class="clear"></div>
+         <!--   其他會員名字標頭end    -->
+         <!-- 职业别 start-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left">计算机环境<br />(网络、音效)</div>
+        <div class="iss_main_memfiled_right">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />正常</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_2">回音及杂音干扰</span><input type="radio" name="radio" id="radio" value="radio" />一直持续<input type="radio" name="radio" id="radio2" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_1">声音断续</span><input type="radio" name="radio" id="radio3" value="radio" />一直持续<input type="radio" name="radio" id="radio4" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_1">未关视频</span><input type="radio" name="radio" id="radio5" value="radio" />一直持续<input type="radio" name="radio" id="radio6" value="radio" />已排除</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" /><span class="iss_width_2">声音太大或太小</span><input type="radio" name="radio" id="radio7" value="radio" />一直持续<input type="radio" name="radio" id="radio8" value="radio" />已排除</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--职业别 end-->
+        <div class="iss_main_memfiled_line"></div>
+        <!--學生學習狀況-->
+        <div class="iss_main_memfiled_all">
+        <div class="iss_main_memfiled_left">上课表现</div>
+        <div class="iss_main_memfiled_right_2">
+        <ul>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />良好</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />此同学Level太高</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />回答太慢，让大家等很久</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />此同学Level太低</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />说话太冗长</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />上课中讲电话或听到电话铃声</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />会打断别人说话</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />靠麦克风太近，呼吸声音影响上课</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />吃东西</li>
+        <li><input type="checkbox" name="checkbox" id="checkbox" />不自觉一直念英文影响到我</li>
+        
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--學生學習 end-->
+        
+        <div class="t-right m-top25 ">
+          <input type="submit" name="button" id="button" value="+ 回课后评比" class="btn_1"/><input type="submit" name="button" id="button" value="+ 确认提交" class=" m-left5 btn_1"/>
+        </div>
+         
+       </div>
+       <!-- 內容end -->
+    </div>
+    <div class="sidebar">
+    <!--start-->
+    <div class="sidebar_box">
+       <ul class="big color_1">
+         学习记录有疑问？
+        	 <li><a href="#">我的反馈会保密吗？</a></li>
+             <li><a href="#">我可以知道别人对我的反馈吗？</a></li>
+             <li><a href="#">立即联络在线客服</a></li>
+        </ul>
+    </div>
+    <!--end-->
+</div>
+<div class="clear"></div>
+</div>
+<!-- Main Content End -->
+
+
+<!-- Navigation Start -->
+<div class="nav_all">
+	<div class="nav_1 small">
+     <ul>
+     <a href="#">专业顾问团队</a>
+     <li><a href="#">顾问团队</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">订做专属课程</a>
+     <li><a href="#">免费预约真人在线试读</a></li>
+     <li><a href="#">英语能力测试</a></li>
+     <li><a href="#">个人方案</a></li>
+     <li><a href="#">企业方案</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">会员专区</a>
+     <li><a href="#">进入教室</a></li>
+     <li><a href="#">订课</a></li>
+     <li><a href="#">查閱课表</a></li>
+     <li><a href="#">大会堂</a></li>
+     <li><a href="#">錄影檔</a></li>
+     <li><a href="#">模拟托业考题</a></li>
+     <li><a href="#">我的学习记录</a></li>
+     <li><a href="#">个人资料/兴趣选取</a></li>
+     <li><a href="#">我的收藏</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">成果分享</a>
+     <li><a href="#">名人推荐</a></li>
+     <li><a href="#">用户推荐</a></li>
+     </ul>
+
+     <ul>
+     <a href="#">特惠活动</a>
+     <li><a href="#">活动</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">搜索</a>
+     <li><a href="#">搜索</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">在线客服</a>
+     <li><a href="#">联络客服</a></li>
+     <li><a href="#">历史记录</a></li>
+     </ul>
+     
+     <div class="clear"></div>
+    </div>
+</div>
+<!-- Navigation End -->
+
+</div>
+</div>
+<!-- Footer Start -->
+<div class="footer">
+   <div class="copyright">
+       <ul>
+       <li><a href="#">导览</a></li>
+       <li><a href="../about/index.html">关于VIPABC</a></li>
+       <li><a href="../news/news_list.html">新闻/报道</a></li>
+       <li><a href="#">隐私条款</a></li>
+       <li><a href="#">安全条款</a></li>
+       <li><a href="#">服务条款</a></li>
+       <li><a href="../epaper/index.html">电子报</a></li>
+       <li><a href="../contact/contact_us.html">联络我们</a></li>
+       <li><a href="../resume/job.html">加入我们</a></li>
+       <li><a href="#">学术交流伙伴</a></li>
+       </ul>
+       <div class="clear"></div>
+       <div class="color_4 small">麥奇數位股份有限公司 版權所有 © VIPABC All Rights Reserved. 经营许可证编号: 京ICP备05067667号</div>
+   </div>
+</div>
+<!-- Footer End -->
+
+</div>
+</body>
+</html>

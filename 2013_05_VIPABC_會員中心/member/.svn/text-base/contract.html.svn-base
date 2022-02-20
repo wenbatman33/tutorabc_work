@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>VIPABC</title>
+<link media="screen" type="text/css" href="/css/css_cn.css" rel="stylesheet"/>
+<script src="/lib/javascripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="all">
+
+
+<div id="header">
+
+<div id="header_main">
+<div id="header-flash">
+
+<!--flash start-->
+<div id="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="298"><param name="movie" value="/flash/index.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><embed wmode="transparent" src="/flash/index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="298"></embed>
+  </object>
+  </div>
+<!--flash end-->
+
+<div id="logo"><a href="../index.html" title="VIPABC"></a></div>
+
+<!--右上-->
+<div id="wording">
+<div class="w2">
+<div class="color02"><a href="../index-purple.html"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0"></a></div>
+<div class="color01"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0" /></div>
+<div class="clear"></div>
+</div>
+<div class="w1">欢迎来到VIPABC，您可前往<a href="../regist/regist_1.html">会员登录</a>，或者<a href="../regist/regist_add.html">注册会员</a><a href="../faq/faq.html"><img src="/images/images_cn/index/faq.gif" width="38" height="14" border="0"  title="常见问答"></a></div>
+</div>
+<!--右上-->
+
+<!--右ad-->
+<div id="top_ad"><a href="#"><img src="/images/images_cn/top_banner.gif" width="160" height="30" border="0" /></a></div>
+<!--右ad-->
+
+<!--捷徑-->
+<div id="fast">
+<div class="box">
+<div class="lt"></div>
+<div class="say"><span class="m-right5">快速前往</span><a href="../member/member.html">课堂</a>．<a href="../member/member.html">大会堂</a></div>
+<div class="rt"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--捷徑-->
+
+<!--menubar start-->
+<div id="menubar">
+<ul>
+<li class="lt"></li>
+<li class="main"><a href="../consultant/consultant.html" title="专业顾问团队">专业顾问团队<br /><span>Consultants</span></a></li>
+<li class="main"><a href="../classroom/application.html" title="订做专属课程">订做专属课程<br /><span>Classroom</span></a></li>
+<li class="main_on"><a href="../member/member.html" title="会员专区">会员专区<br /><span class="small">Member</span></a></li>
+<li class="main"><a href="../mgm/index.html" title="成果分享">成果分享<br /><span>Achievements</span></a></li>
+<li class="main"><a href="../goodies/index.html" title="特惠活动">特惠活动<br /><span>Event</span></a></li>
+<li class="main"><a href="../search/index.html" title="搜索">搜索<br /><span>Search</span></a></li>
+<li class="main"><a href="../service/service.html" title="在线客服">在线客服<br /><span>Online Service</span></a></li>
+
+<li class="rt"></li>
+<div class="clear"></div>
+</ul>
+</div>
+<!--menubar end-->
+</div>
+</div>
+
+<!--板本-->
+<div id="version">
+  <select name="select2" id="select2" class="login_box5">
+  <option>请选择语言版本</option>
+  <option>简体</option>
+  <option>繁体</option>
+  <option>English</option>
+  </select></div>
+<!--板本-->
+
+<!--次選單start-->
+<div id="header_main2">
+         <!--3會員次選單出現=09/11/23新增-->
+        <div id="menubar2_3"><a href="#">进教室</a>｜<a href="#">预订课程</a>｜<a href="#">观看课表</a>｜<a href="#">大会堂</a>｜<a href="#">录像文件</a>｜<a href="#">仿真多益考题</a>｜<a href="#">学习纪录</a>｜<a href="#">管理个人资料</a>｜<a href="#">产品购买</a></div>
+        <!--3會員次選單出現=09/11/23新增-->
+</div>
+<!--次選單end-->
+</div>
+
+
+<div class="clear"></div>
+<div id="main">
+<div class="all_width">
+
+<!-- Menber Content Start -->
+<div class="main">
+    <div class="main_con">
+        <div class="path">
+        您目前所在位置 / <a href="#">会员首页</a> / <span class=" bold">课程购买合约</span>
+        </div>
+       <!--內容start-->
+       <div class="terms_main2">
+    <div class="title color_2">提醒您，课时数及账号将于款项缴清后一并开通，若您的款项已缴清请忽略此信息。</div>
+    <div class="title2">會員權益概要</div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意今加入麦奇数位股份有限公司（以下简称本公司）会员而享有数字学习咨询课程及服务，所购买之产品为<span class="color_1">新二年220产品</span>，含赠送课时数<span class="color_1">10</span>次，总共可使用<span class="color_1">230</span>课时，总购买费用计人民币<span class="color_1">壹拾X万X仟X佰X拾X元整</span>。<span class="color_1">合约咨询服务期间自2009年10月18日起，至2011年10月17日止，为期24个月</span>。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意本公司赠送会员的课时数，须在购买课时数使用完毕且合约未到期时始生效力，若会员有提前解除或终止合约，或有重大违约事由撤销会籍者，不得请求给付赠与课时数或请求以之折换现金。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意：<br />
+      <span class="color_1">1.</span>所购买的产品内容为1~6人精致小班制教学服务，每咨询将扣抵一课时，但一对一教学服务，计费是以三课时小班制课程兑换一课时一对一课程。<br />
+      <span class="color_1">2.</span>本公司亦提供单向教学为主之英语学习大会堂服务（每次使用扣抵一课时）。<span class="color_4">注：大会堂以专业课程为主（例如商业谈判、商业简报、发音、语法课程等等）单向教学式之30人以上讲堂。</span><br />
+      <span class="color_1">3.</span>每次上课咨询的时间为45分钟<span class="color_4">（小班制、一对一、大会堂课程皆是）</span>。<br />
+      <span class="color_1">4.</span>本公司提供多国籍语言顾问进行语言咨询服务，但无法指定特定顾问进行咨询服务。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意最少需在课程服务开始前24小时通过网络进 行课程预订，若于咨询前12至24<span class="color_4">（不含）</span>小时内预订者，该次课将以1.25课时计算使用课时数；若于咨询前4至12<span class="color_4">（不含）</span>小时内预订者，该次课将以1.5课时计算使用课时数；若于咨询前2至4<span class="color_4">（不含）</span>小时内预订者，该次课将以2课时计算使用课时数。如课程当天因故无法出席，最迟须在四个小时前来电或透过网络取消课程，若未于课前四小时取消课程，则该课程仍计入已使用课时数。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意于购买产品后七日内享有审阅权，如七日内<span class="color_1">（即2009/10/24）</span>办理退费，本公司将扣除耳机、麦克风计人民币800元后无息退回，但应扣除已使用之课程费用；如超过七日后因个人因素办理退费者，则应按照退费规定办理<span class="color_4">（有关退费之详细规范仍以会员入会合约书为准）</span>。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意会员不得将会籍出售、转让给予他人使用，非经本公司同意私下出售、转让会造成丧失会员资格且不得请求退还未使用课程之费用；本会员确因情况特殊有会籍移转之必要，应依照合约内载明之服务条款办理。
+</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意会员购买之产品，是按会员个人需求将咨询课时数与时间搭配，并已预留相当时间供弹性调整，会员订购前应详细评估判断，选择最合适自己方案及期限。因此会员同意咨询之服务期间，如有要求延期之情形时，购买延长服务期限每月人民币3,000元整。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div>
+    <div class="check"><input type="checkbox" name="checkbox" id="checkbox" /></div>
+    <div class="law">本会员了解并同意购买本产品而向金融机构办理融资，由金融资机构代会员乙次付清费用，会员则以分期方式向金融机构缴纳分期款，相关分期缴款及债权债务关系仅存于会员与金融机构间，概与本公司无涉。会员使用前述本公司往来之金融机构申贷本约应付款项时，如于合约期限届满且未违反任何相关之规定，则该笔金融机构贷款所收取之手续相关费用部分，本公司同意予以负担，若于中途解约，则仍应负担手续相关费用。</div>
+    <div class="clear"></div>
+    </div>
+    
+    <div class="dode"></div>
+    
+    <div class="title2">VIPABC会员入会合约书</div>
+    
+    <div>
+    <div class="name1">中文姓名：黃曉明</div>
+    <div class="name2">英文姓名：Happy</div>
+    <div class="name3">女</div>
+    <div class="clear"></div>
+    <div class="name1">出生日期：1979年3月5日</div>
+    <div class="name4">身分證號：T*****8502</div>
+    <div class="clear"></div>
+    <div class="name1">會員帳號：happyman@yahoo.com.tw</div>
+    <div class="name4">联络電話：0921-051415</div>
+    <div class="clear"></div>
+    <div class="name1">电子邮件：happyman54652@yahoo.com.tw</div>
+    <div class="name4">通訊地址：台北縣士林區至誠路55巷27弄8號五樓</div>
+    <div class="clear"></div>
+    </div>
+    <p>立合约书人：麦奇数位股份有限公司<span class="color_4">（即VIPABC，简称本公司）</span>，正式会员：黄晓明<span class="color_4">（即注册付费会员，以下简称会员）</span>，兹就会员加入本公司VIPABC网络数字学习系统，并于会籍有效期限内，依据本合约书所订的条款参与网络咨询课程及服务，双方同意就相关合约内容约定如下：</p>会员以新入会资格成为VIPABC正式会员，选定购买服务为新二年220，合约课时数220次，费用总计<span class="color_1">人民币壹拾X万X仟X佰X拾X元整</span>。本公司并同意会员另有免费赠送10课时之优惠。本合约有效期自<span class="color_1">2009年10月18日起，至2011年10月17日止</span>。<p>会员凡于即日起首次购买【新二年220】方案之咨询课程，会员将额外享有30课时课程及二个月期限之增值服务，该增值服务除可本人使用外或得指定他人一人于合约起始日后二月内分享使用30课时课程。若有提前终止合约之场合，使用课时数与期限之计算应扣除增值服务之课时数与期限，以原购买之产品方案为准；若有转让他人者，受让者将不得享有本增值服务。</p>
+    <div>
+    <div class="name4">会员同意：黃曉明</div>
+    <div class="name2">付款人：黃曉明</div>
+    <div class="name4">法定代理：</div>
+    <div class="name2">销售顾问：Sophia Huang</div>
+    <div class="name4">签约日期：2009年10月9日</div>
+    <div class="name2"></div>
+    <div class="clear"></div>
+    </div>
+    <p><span class="bold">第一条 服务与认知</span><br>会员了解并同意，本公司系合法登记在案具有「语言表达顾问」业务经营项目之公司，首创精致、科技、个人化的「美语咨询顾问」服务，并以获得之新发明专利「动态课程生成系统」及多项获奖数字服务系统，为会员提供语言咨询及相关专业美语服务。</p>
+    <p><span class="bold">第二条 接受条款会员</span><br>对本公司提供之网络数字学习咨询服务及方式，已于网站上充分阅读了解并同意遵守本约之规范，并就随时可阅览之契约内容亦进行相当时间详尽审阅后，在自由意愿下签订本合约。当会员按下「同意」键或正式签署后，即表示会员在使用本公司所提供的任何服务时，愿意遵守本合约书之条款、会员服务规范及相关规定。若会员无法接受本约内容，请按下「不同意」键后离开或无须有任何签署或入会之行为。</p><p><span class="bold">第三条 监护权之行使</span><br>
+本公司会员之年龄，系未满二十岁之未成年会员时，除已了解本约说明外，并应于会员之法定代理人（或监护人）阅读、了解并同意本约定书所有内容后，方可使用VIPABC网站提供相关之服务。当会员使用或继续使用VIPABC，即表示会员之法定代理人（或监护人），已阅读、了解并同意接受合约书所有内 容及其后的修改变更。</p><p><span class="bold">第四条 会员注册义务</span><br>会员按照注册程序加入新会员时，应详实填写个人正确、完整之数据（包括真实姓名及各项相关数据），并随时更新已过时或异动之数据。如果会员提供个人资料不实，或未实时更新数据而有任何延误或损失时，应由会员自行负责，本公司并得随时终止会员的会员资格及使用各项服务之权利。会员之个人资料，本公司仅供内部使用，如有泄露致损害其权益时，将依法负相关法律之责。</p><p><span class="bold">第五条 资格及有效期限</span><br>一、会员以新入会资格成为VIPABC正式会员，所选定购买之学程及合约咨询服务期间，详见「VIPABC会员入会基本资料」所载。 
+二、会员已了解并同意，本公司于开放咨询时段内，会员可随时享有咨询服务。本公司亦因会员人数增加而随之增聘语言顾问，以满足会员使用需求，所以会员于合约有效期内，无论课时数使用如何，合约时间与咨询课时数等同重要。合约期满或虽未届止但课时数于期限内使用完毕时，本公司对于会员之服务即视为终止，会员不得再有所主张或请求。
+三、会员于合约有效期内查看会员个人之录像文件时，以四分之ㄧ课时数计算，观摩其 他会员之录像文件，以二分之ㄧ课时数计算，观看大会堂，则以一课时数计算。</p>
+<p><span class="bold">第六条 使用义务与责任</span><br>
+会员使用本公司网站服务前，须自行配备上网所需之各项计算机软硬件设备，并负担接入因特网及电话等相关费用。使用网站服务应遵守中华人民共和国相关法令及因特网之国际使用惯例与礼节。若使用本公司与中华人民共和国以外之网站链接，须同意遵守各网站当地之相关法令。</p>
+<p><span class="bold">第七条 系统安装及提供</span><br>
+本公司于合约有效期限内，应提供会员VIPABC 在线系统之使用安装及该系统维护服务，使会员得以正常使用网络数字学习系统。如系会员个人计算机之软硬件或电信业者因特网系统等障碍因素，则不在本公司提供维护服务范围之内。会员亦不得以网络带宽或其他环境因素，致使其视频品质不良时，向本公司要求或主 张任何之权益。</p>
+<p><span class="bold">第八条 系统暂停或中断</span><br>
+本公司有例行性或因故需将本网站相关系统设备进行迁移、更换或维护，而须暂停或中断全部之服务时，本公司得于72小时前在系统内或网站上，以张贴告示之方 式通知会员。本公司如未依约定方式通知致影响会员之权益时，会员可请求将合约服务日数延长二日。但本公司遇有临时或紧急或不可抗力之事由，或于事后并未关 闭服务主机者，不在此限。</p>
+<p><span class="bold">第九条 咨询系统维护服务</span><br>
+本公司对VIPABC相关之系统应负维护之责，会员如遇系统无法正常使用或有异动之情形，应迅速与客服人员联系，本公司并应提供服务项目包括下列
+<br>一、对于网站咨询服务系统之故障排除及维护更新。
+<br>二、会员对于咨询服务系统之使用建议或申诉。
+<br>三、会员个人资料申请、变更之协助。
+<br>四、其他与会员权益有关并应依约定提供服务之事宜。</p>
+<p><span class="bold">第十条 会员基本规则</span><br>
+一、会员同意并遵守关于使用咨询服务之规则，包括现行实施或相关之公告。本约内容及相关信息将会不定期修订，并于公告后正式生效，敬请随时查询VIPABC网站公告。
+<br>二、会员必须于咨询前24小时在线预订，以确认咨询时间，若于咨询前12至24（不含）小时内预订者，该次课将以1.25课时计算使用课时数；若于咨询前4至12（不含）小时内预订者，该次课将以1.5课时计算使用课时数；若于咨询前
+2至4（不含）小时内预订者，该课时将以2课时计算使用课时。
+<br>三、为尊重自身及其他会员权益，预约后请务必准时进入在线咨询室。如有逾时之情形，会员将无法进入该堂之咨询，并就该预约课时数仍为计入使用课时数。
+<br>
+四、网络预约：www.vipabc.com 
+<br>
+客服信箱：vipservices@vipabc.com
+<br>
+本公司客户服务专线： （02）3365-9999</p>
+<p><span class="bold">第十一条 禁止行为</span><br>下列行为系本公司VIPABC网站及在线咨询服务禁止之行为，但不以这些行为为限；会员如有不当行为或违反相关服务条款时，本公司得视违反情节轻重或影响大小，而予以暂停或撤销其会籍，除不得要求退还未使用课时数之费用外本公司并保留该损害赔偿之请求权利。<br>一、会员入侵或破坏本公司网站内部各项设施，或任何有损及本公司名誉之行为。
+<br>二、利用在线视频系统施行：暴露、猥亵、性暗示或其他不雅或足以影响本公司咨询服务进行之行为。<br>三、利用在线系统施行言语或文字骚扰、谩骂、攻击，或其他不受欢迎之行为。
+<br>四、通过文件传输软件，发送非法软件或具破坏或影响他人权益之情形。
+<br>五、在咨询进行中或服务系统上，有销售营利、政治活动、宗教宣扬或其他与课程内容无关之行为。
+<br>六、为维护双方之权益，本公司禁止职员及语言顾问与会员在非咨询服务时间或利用其它以外之方式互动（例如；即时通讯等软硬件设施）。如在此规范外之一切行为或意外发生，概与本公司无涉。
+<br>七、利用公开竞标、拍卖或以其他方式租、借、转卖本公司会籍资格及服务项目。
+<br>八、私自提供账号、密码予他人使用本公司服务项目。
+九、会员咨询之课程内容与教材属于本公司所有，会员不得擅将咨询课程之录音、录像或教材内容，公开播放或贩卖。</p>
+<p><span class="bold">第十二条 咨询费用之缴付</span><br>会员应视个人实际之咨询所需与经济能力，选择适当产品类型及课时数。会 员于签订本合约之同时，应以现金或ATM转账或信用卡传真刷卡为主要支付方式，并将款项乙次付清。会员如选择现金支付、汇款或由金融机构办理分期方式支付 时，请先与客户服务专员联系，以便提供相关信息数据。本公司于会员完款及本合约签署完成后，将正式启用新会员之咨询资格。 </p>
+<p><span class="bold">第十三条 融资方式缴付</span><br>会员咨询费用款项系以金融机构之融资方式办理给付时，除可自行与金融机构办理外，亦可选择向本公司往来金融机构申请办理，由金融资机构代会员乙次付清费 用，会员则以分期方式向金融机构缴纳分期款。但有关会员之审核权限及金融机构与会员间权利义务关系，仍由该双方自行约定之，与本公司无涉。会员使用前述本 公司往来之金融机构申贷本约应付款项时，如于合约期限届满且未违反任何相关之规定，则该笔金融机构贷款所收取之相关手续费用部分，本公司同意予以负担，若 于中途解约，则仍应依第十八条第二项定办理。</p>
+<p><span class="bold">第十四条 七日内不愿购买</span><br>会员之合约使用生效日起七日内，如对本公司所提供服务不愿购买时，须依法以书面或其他方式通知解除合约，本公司并就所缴付金额扣除耳机、麦克风之费用新台 币（下同）800元后，无息退回。会员于该期间内有使用咨询之服务时，应就使用部分，同意按每一单堂课程800元成本计算费用后，退回剩余金额（一对一课程以2400元计，查看会员个人咨询录像文件每课时200元，如为其他会员之录像文件课程时，每课时以400元计）。会员于前述之第七日后提出终止，则适用本约第十八条约定。 </p>
+<p><span class="bold">第十五条 会籍之专属性</span><br>会员了解并同意，本公司提供语言咨询服务之理念，系使用全世界独创并荣获国家发明专利之「动态课程生成系统」，不仅系依每位会员语言能力、个人背景、兴趣 及学习偏好与学习比重，将会员特性、需求做适合之配对，咨询后再辅以学习追踪系统，以此做为多位语言顾问评估会员升级之依据；该具体且完整追踪学习效果， 并为个人专属的管理学习资源而不可替代。因此，本公司对每位会员前置投资作业及专属性，并非可按时间及课时数量化其价值。因而会员加入顾问服务后，不能以个人因素任意解除、终止合约，并要求相关费用之退还，亦不得将本服务提供予他人使用，若有解约或终止会籍事宜，应依本约第十八条规定办理。</p>
+<p><span class="bold">第十六条 会籍之转让规范</span><br>一、会员了解并同意，会员在行使咨询服务时，系以本公司研发之数字学习系统，采取计算机比对方式，将会员职业、兴趣及背景等输入，配比出合适之语言顾问提供指导，咨询过程中并由语言顾问对会员学习过程记录分析，以完整追踪学习成效。因此个人会籍不得转卖，会员亦不得将会籍资格、可使用课时数以出售、公开竞标或拍卖或出借等方式予他人使用，因此会影响本公司操作系统及其他会员权益，将视为无效行为。如经发现后，本公司可终止合约并停止提供会员服务，会员不得请求费用之退还或补偿，其与受让人间之权利义务关系概与本公司无涉。<br>二、会员确因情形特殊有移转会籍之必要时，应提出书面申请，本公司有权审核受让会员之资格，经本公司同意受让会员之资格，于扣除（取消）原所赠课时数及相关优惠后，会员并应另支付3000元之会籍移转手续费。会员同意会籍之移转，以壹次为限，且该受让承接之新会员，不得有终止或再次移转之情形。</p>
+<p><span class="bold">第十七条 会员会籍之延期</span><br>本公司提供服务之设计，是依会员个人需求将咨询课时数与时间搭配，并已预留相当时间供弹性调整，会员订购前应详细评估判断，选择最合适自己方案及期限。因此会员同意咨询之服务期间，如有要求延期之情形时，购买延长服务期限每月人民币3,000元整。</p>
+<p><span class="bold">第十八条 违约处理方式</span><br>一、会员有本约第十一条各款情形之ㄧ者不予退费。 
+<br>二、本公司依约提供服务下，如系会员个人因素请求终止合约时（以书面通知为限），则视为会员违约，本公司有权收取违约金。有关违约金与退费之计算标准如下：
+<br>1、会员于合约生效日（即2009/10/18）起七日内（即2009/10/24）申请终止合约（退费）者，依本约第14条之规定办理。  
+<br>2、会员于合约生效日第八日（即2009/10/25）起至三十日（即2009/11/16）止，且尚未使用咨询课时数而申请终止合约（退费）者，退还会员其总额百分之七十（70%）。 
+<br>3、会员申请终止合约时未超过全部合约有效期三分之一，且已使用咨询课时数未超过全部课时数三分之一者（不含赠送课时数），退还总额百分之五十（50%）。 
+<br>4、会员申请终止合约时已超过全部合约有效期三分之一，或已使用咨询课时数，已超过全部课时数三分之一者（不含赠送课时数）即符合二者任一项者，即不予退费。 
+<br>5、依前述第1款至第4款计算之退款数额，会员若有依本约第十三条向金融机构融资缴付之情形，而致本公司有负担或损失金融机构之相关手续费用时，本公司并将扣除前述之相关手续费用后始退费。 
+<br>三、本公司所赠送会员课程课时数，须以课程课时数使用完毕且合约未到期时始生效力，若会员有提前解除或终止合约，或有本约第十一条各款情形之－者，不得请求给付赠与课时数或请求以之折换现金。</p>
+<p><span class="bold">第十九条 会员续约权利</span><br>
+会员购买之产品及课时数使用完毕后，可采用续购方式继续行使会员权益。该相关续约手续及办法，依本公司规定办理。</p>
+<p><span class="bold">第二十条 影音权之使用</span><br>会员同意咨询期间相关之录像、录音及文字图片文件等内容，可无偿供本公司系列产品之编辑与研发、会员教学观摩、业务推广、产品发表或销售之使用。</p>
+<p><span class="bold">第廿一条 合约效力</span><br>双方同意本约内容之全部或部分判定无效时，并不影响合约其它条款之效力。为免生争议及认定上歧异，任何口头非文字载明之承诺、条件，均视为无效约定。</p>
+<p><span class="bold">第廿二条 未尽事项</span><br>就本约未尽事宜，双方同意依本公司内部或网站上有关之公告、说明、服务条款补充，并依中华人民共和国法律与其它相关法令解释并适用之。</p>
+<p><span class="bold">第廿三条 争议解决</span><br>双方同意因本合约发生争议时，应本着诚信原则善尽最大努力协议处理。如需诉讼，双方同意以台湾台北地方法院为第一审管辖法院。</p>
+<p><span class="bold">第廿四条 合约之保存</span><br>本「入会合约书」及「VIPABC会员入会基本资料」于会员确认并同意后，请会员自行将该源文件保留，兹为双方合约签署之凭据。</p>
+<p class="t-center"><input type="submit" name="button" id="button" value="+ 同意" class="btn_1"/><input type="submit" name="button" id="button" value="+ 不同意" class="btn_1 m-left10"/></p>
+<div class="dode"></div>
+<p class="t-center"><input type="submit" name="button" id="button" value="+ 打印合约书" class="btn_1"/><input type="submit" name="button" id="button" value="+ 回上页" class="btn_1 m-left10"/></p>
+
+    </div>
+       <!--內容end-->
+    </div>
+    <div class="sidebar">
+</div>
+<div class="clear"></div>
+</div>
+<!-- Main Content End -->
+
+
+<!-- Navigation Start -->
+<div class="nav_all">
+	<div class="nav_1 small">
+     <ul>
+     <a href="#">专业顾问团队</a>
+     <li><a href="#">顾问团队</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">订做专属课程</a>
+     <li><a href="#">免费预约真人在线试读</a></li>
+     <li><a href="#">英语能力测试</a></li>
+     <li><a href="#">个人方案</a></li>
+     <li><a href="#">企业方案</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">会员专区</a>
+     <li><a href="#">进入教室</a></li>
+     <li><a href="#">订课</a></li>
+     <li><a href="#">查閱课表</a></li>
+     <li><a href="#">大会堂</a></li>
+     <li><a href="#">錄影檔</a></li>
+     <li><a href="#">模拟托业考题</a></li>
+     <li><a href="#">我的学习记录</a></li>
+     <li><a href="#">个人资料/兴趣选取</a></li>
+     <li><a href="#">我的收藏</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">成果分享</a>
+     <li><a href="#">名人推荐</a></li>
+     <li><a href="#">用户推荐</a></li>
+     </ul>
+
+     <ul>
+     <a href="#">特惠活动</a>
+     <li><a href="#">活动</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">搜索</a>
+     <li><a href="#">搜索</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">在线客服</a>
+     <li><a href="#">联络客服</a></li>
+     <li><a href="#">历史记录</a></li>
+     </ul>
+     
+     <div class="clear"></div>
+    </div>
+</div>
+<!-- Navigation End -->
+</div>
+</div>
+
+<!-- Footer Start -->
+<div class="footer">
+   <div class="copyright">
+       <ul>
+       <li><a href="#">导览</a></li>
+       <li><a href="../about/index.html">关于VIPABC</a></li>
+       <li><a href="../news/news_list.html">新闻/报道</a></li>
+       <li><a href="#">隐私条款</a></li>
+       <li><a href="#">安全条款</a></li>
+       <li><a href="#">服务条款</a></li>
+       <li><a href="../epaper/index.html">电子报</a></li>
+       <li><a href="../contact/contact_us.html">联络我们</a></li>
+       <li><a href="../resume/job.html">加入我们</a></li>
+       <li><a href="#">学术交流伙伴</a></li>
+       </ul>
+       <div class="clear"></div>
+       <div class="color_4 small">麥奇數位股份有限公司 版權所有 © VIPABC All Rights Reserved. 经营许可证编号: 京ICP备05067667号</div>
+   </div>
+</div>
+<!-- Footer End -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>VIPABC</title>
+<link media="screen" type="text/css" href="/css/css_cn.css" rel="stylesheet"/>
+<script src="/lib/javascripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="all">
+
+
+
+<!-- Header Start -->
+<div class="header">
+    <div class="logo">
+    <a href="#"><img src="/images/images_cn/blank.gif" width="148" height="34"></a>    
+    </div>
+    <div class="header_banner"><a href="#"><img src="/images/images_cn/ad.jpg" width="468" height="60"></a></div>
+  <div class="header_other">
+        <div class="menber_info">  
+        Welcome, Rain , 管理个人资料‧预定课程     
+        </div>
+        <div class="link_info"> 
+        <a href="#"><img src="/images/images_cn/blank.gif" width="102" height="19"></a>
+        </div>
+    </div>
+<div class="clear"></div>
+</div>
+<!-- Header End -->
+
+
+
+<!-- Menu Start -->
+<div class="main_menu">
+    <div class="all_width">
+       <div class="menu_item"><a href="#"><span class="big">无国界顾问</span><br><span class="small">Consultants</span></a></div> 
+       <div class="menu_item"><a href="#"><span class="big">量身订作课程</span><br><span class="small">Classroom</span></a></div> 
+       <div class="menu_item_on"><a href="#"><span class="big">会员专区</span><br><span class="small">Member</span></a></div> 
+       <div class="menu_item"><a href="#"><span class="big">成果分享</span><br><span class="small">Achievements</span></a></div> 
+       <div class="menu_item"><a href="#"><span class="big">好康活动</span><br><span class="small">Event</span></a></div> 
+       <div class="menu_item"><a href="#"><span class="big">搜寻</span><br><span class="small">Search</span></a></div> 
+       <div class="menu_item"><a href="#"><span class="big">在线客服</span><br><span class="small">Online Service</span></a></div> 
+    </div>
+</div>
+<div class="sec_menu small">
+    <div class="all_width">
+        <div class="menu_item_menber "><a href="#">进教室</a> │ <a href="#">预定课程</a> │ <a href="#">观看课表</a> │ <a href="#">大会堂</a> │ <a href="#">录像文件</a> │ <a href="#">仿真多益考题</a> │ <a href="#">学习纪录</a> │ <a href="#">管理个人资料</a></div><div class="clear"></div>
+    </div>
+</div>
+<!-- Menu End -->
+
+
+
+
+<div class="clear"></div>
+<div class="all_width">
+
+<!-- Main Content Start -->
+<div class="main">
+<div class="main_con">
+        <div class="path">
+        您目前所在位置 / <a href="#">量身订作课程</a> / <span class=" bold">英语能力测试</span>
+        </div>        
+        <!--英語能力測試內容start-->
+        <div class="main_classcontbox ">
+        <!--英語能力測試過程列start-->
+        <div class="main_classtest_processbar">
+        您现在进行的是<br/>
+        <ul class="process2">
+        <li>词汇</li>
+        <li>阅读</li>
+        <li>文法</li>
+        <li>听力</li>
+        <li>发音</li>
+        <li>完成</li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+        <!--英語能力測試過程列end-->
+        <!--測試時間計時列start-->
+        <div class="test_timer">
+        <h3>本题测验时间尚余 <span class="color_1 bold">00:25</span> 秒</h3>
+        </div>
+        <!--測試時間計時列end-->
+        <div class="clear"></div>
+        <!--測試題內容start-->
+        <div class="quizbox">
+        <h2><span class="color_1">Q.</span> 请依题目中所提供之叙述或对话找出最能诠释其语意的句子.</h2>
+        <p>Jason: What have you been up to? Jack: Nothing much. How about you? <span class="color_1 bold">From this information, you can say that...</span></p>
+        <ul>
+        <li><input type="radio" name="radio" id="radio" value="radio" />(a) Jason wants to know where jack is.</li>
+        <li><input type="radio" name="radio" id="radio" value="radio" />(b) Jack doesn’t know what to do.</li>
+        <li><input type="radio" name="radio" id="radio" value="radio" />(c) They haven’t seen each other lately.</li>
+        </ul>
+        
+        <div class="testgo"><input type="submit" name="button" id="button" value="Next" class="btn_2"/></div>
+        </div>
+        <!--測試題內容end-->
+        </div>
+        <!--英語能力測試內容end-->      
+ </div>
+  
+  <div class="sidebar">
+    <!--更多報導start-->
+    <div class="sidebar_box">
+       <ul>
+        	<li><a href="#">先存档，下次再做测验</a></li>
+        </ul>
+    </div>
+    <!--更多報導end-->
+    </div>
+    
+  <div class="clear"></div>
+</div>
+<!-- Main Content End -->
+
+
+
+<!-- Navigation Start -->
+<div class="nav_all">
+	<div class="nav_1 small">
+     <ul>
+     <a href="#">专业顾问团队</a>
+     <li><a href="#">顾问</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">订做专属课程</a>
+     <li><a href="#">免费预约真人在线试读</a></li>
+     <li><a href="#">英语能力测试</a></li>
+     <li><a href="#">个人方案</a></li>
+     <li><a href="#">企业方案</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">会员专区</a>
+     <li><a href="#">进入教室</a></li>
+     <li><a href="#">订课</a></li>
+     <li><a href="#">查閱课表</a></li>
+     <li><a href="#">大会堂</a></li>
+     <li><a href="#">錄影檔</a></li>
+     <li><a href="#">模拟多益考题</a></li>
+     <li><a href="#">我的学习记录</a></li>
+     <li><a href="#">管理个人资料</a></li>
+     <li><a href="#">我的收藏</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">成果分享</a>
+     <li><a href="#">名人推荐</a></li>
+     </ul>
+
+     <ul>
+     <a href="#">好康活动</a>
+     <li><a href="#">活动</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">搜索</a>
+     <li><a href="#">搜索</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">線上客服</a>
+     </ul>
+     
+     <div class="clear"></div>
+    </div>
+</div>
+<!-- Navigation End -->
+
+</div>
+
+<!-- Footer Start -->
+<div class="footer">
+   <div class="copyright">
+       <ul>
+       <li><a href="#">导览</a></li>
+       <li><a href="#">关于VIPABC</a></li>
+       <li><a href="#">新闻/报道</a></li>
+       <li><a href="#">隐私条款</a></li>
+       <li><a href="#">安全条款</a></li>
+       <li><a href="#">联络我们</a></li>
+       <li><a href="#">加入我们</a></li>
+       <li><a href="#">服务条款</a></li>
+       <li><a href="#">电子报</a></li>
+       </ul>
+       <div class="clear"></div>
+       <div class="color_4 small">麥奇數位股份有限公司 版權所有 © TutorABC All Rights Reserved. 经营许可证编号: 京ICP备05067667号</div>
+   </div>
+</div>
+<!-- Footer End -->
+
+</div>
+</body>
+</html>

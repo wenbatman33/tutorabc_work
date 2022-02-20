@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>VIPABC</title>
+<link media="screen" type="text/css" href="/css/css_cn.css" rel="stylesheet"/>
+<script src="/lib/javascripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="all">
+
+
+<div id="header">
+
+<div id="header_main">
+<div id="header-flash">
+
+<!--flash start-->
+<div id="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="298"><param name="movie" value="/flash/index.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><embed wmode="transparent" src="/flash/index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="298"></embed>
+  </object>
+  </div>
+<!--flash end-->
+
+<div id="logo"><a href="../index.html" title="VIPABC"></a></div>
+
+<!--右上-->
+<div id="wording">
+<div class="w2">
+<div class="color02"><a href="../index-purple.html"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0"></a></div>
+<div class="color01"><img src="/images/images_cn/blank.gif" width="9" height="9" border="0" /></div>
+<div class="clear"></div>
+</div>
+<div class="w1">欢迎来到VIPABC，您可前往<a href="../regist/regist_1.html">会员登录</a>，或者<a href="../regist/regist_add.html">注册会员</a><a href="../faq/faq.html"><img src="/images/images_cn/index/faq.gif" width="38" height="14" border="0"  title="常见问答"></a></div>
+</div>
+<!--右上-->
+
+<!--右ad-->
+<div id="top_ad"><a href="#"><img src="/images/images_cn/top_banner.gif" width="160" height="30" border="0" /></a></div>
+<!--右ad-->
+
+<!--捷徑-->
+<div id="fast">
+<div class="box">
+<div class="lt"></div>
+<div class="say"><span class="m-right5">快速前往</span><a href="../member/member.html">课堂</a>．<a href="../member/member.html">大会堂</a></div>
+<div class="rt"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--捷徑-->
+
+<!--menubar start-->
+<div id="menubar">
+<ul>
+<li class="lt"></li>
+<li class="main"><a href="../consultant/consultant.html" title="专业顾问团队">专业顾问团队<br /><span>Consultants</span></a></li>
+<li class="main"><a href="../classroom/application.html" title="订做专属课程">订做专属课程<br /><span>Classroom</span></a></li>
+<li class="main"><a href="../member/member.html" title="会员专区">会员专区<br /><span>Member</span></a></li>
+<li class="main"><a href="../mgm/index.html" title="成果分享">成果分享<br /><span>Achievements</span></a></li>
+<li class="main"><a href="../goodies/index.html" title="特惠活动">特惠活动<br /><span>Event</span></a></li>
+<li class="main"><a href="../search/index.html" title="搜索">搜索<br /><span>Search</span></a></li>
+<li class="main"><a href="../service/service.html" title="在线客服">在线客服<br /><span>Online Service</span></a></li>
+
+<li class="rt"></li>
+<div class="clear"></div>
+</ul>
+</div>
+<!--menubar end-->
+</div>
+</div>
+
+<!--板本-->
+<div id="version">
+  <select name="select2" id="select2" class="login_box5">
+  <option>请选择语言版本</option>
+  <option>简体</option>
+  <option>繁体</option>
+  <option>English</option>
+  </select></div>
+<!--板本-->
+
+<!--次選單start-->
+<div id="header_main2">
+        <!--2課程次選單出現=09/11/23新增-->
+        <div id="menubar2_2"></div>
+        <!--2課程次選單出現=09/11/23新增-->
+</div>
+<!--次選單end-->
+</div>
+
+
+
+<div class="clear"></div>
+<div id="main">
+<div class="all_width">
+
+<!-- Main Content Start -->
+<div class="main">
+    <div class="main_con">
+        <div class="path">
+        您目前所在位置 / <a href="#">首頁</a> / <span class=" bold">会员登入</span>
+        </div>
+        <!--內容start-->
+        <div class="main_fun">
+     	    <div class="bold color_1 big">会员登入</div>
+            <div class="reg_1">&nbsp;</div>
+            <div class="reg_2">
+            	<div class="login_1">
+                <input type="text" class="login_box" value="请输入您注册的E-Mail"/>
+            	<input name="input" type="text" class="login_box"  value="请输入您的密码" style="margin-top:8px;"/>
+            	</div>
+                <div class="login_2">
+                <div><input type="checkbox" name="checkbox" id="checkbox">记住我的Email账号</div>
+                <div style="margin-top:5px;"><input type="checkbox" name="checkbox" id="checkbox" />记住我的密码</div>
+                </div>
+                <div class="login_3"><input type="submit" name="button" id="button" value="+ 登录" class="btn_1" OnClick="window.location='../member/member.html'" ></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="main_fun2">
+        <div class="fun2_box">
+        <div class="fun2_box_left">
+        <div class="ps_1"><span class="big" style="margin-right:10px;">忘记密码</span>请输入注册时的电子邮件地址，我们会将密码发送至您的电子邮箱</div>
+        <div style="margin:8px 0 0 93px;"><input type="text" class="login_box"/></div>
+        </div>
+        <div class="fun2_box_right"><input type="submit" name="button" id="button" value="+ 发送密码" class="btn_1" OnClick="window.location='regist_send2.html'" ></div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="fun2_box">
+        <div class="fun2_box_left">
+        <div class="ps_1"><span class="big" style="margin-right:10px;">重发认证信</span>请输入注册时的电子邮件地址，我们会重发认证信至您的电子邮箱</div>
+        <div style="margin:8px 0 0 105px;"><input type="text" class="login_box"/></div>
+        </div>
+        <div class="fun2_box_right"><input type="submit" name="button" id="button" value="+ 重发认证信" class="btn_1" OnClick="window.location='regist_send.html'" ></div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="fun2_box">
+        <div class="fun2_box_left">
+        <div class="word_3">VIPABC－为您搭起与世界接轨的桥梁！</div>
+        <div class="ps_2"><span class="big color_3" style="margin-right:10px;">加入会员</span>加入我们，您可以：</div>
+        <div class="word_1">A. 免费获得「专业一对一英语能力分析」<br>B. 世界各地专业美语顾问，随时恭候您的咨询。</div>
+        <div class="word_2">立即成为会员<div><input type="text" class="login_box2" style="margin-top:7px;" value="请输入E-Mail，此E-Mail 将成为您的会员登录账号">
+        <input type="text" class="login_box2" style="margin-top:7px;" value="请输入密码">
+        <input type="text" class="login_box2" style="margin-top:7px;" value="确认密码">
+        </div></div>
+        </div>
+        <div class="fun2_box_right2"><input type="submit" name="button" id="button" value="+ 注册会员" class="btn_1" OnClick="window.location='regist_add.html'" ></div>
+        <div class="clear"></div>
+        </div>
+        </div>
+        <!--內容end-->
+    </div>
+    <div class="sidebar">
+    </div>
+<div class="clear"></div>
+</div>
+<!-- Main Content End -->
+
+
+
+<!-- Navigation Start -->
+<div class="nav_all">
+	<div class="nav_1 small">
+     <ul>
+     <a href="#">专业顾问团队</a>
+     <li><a href="#">顾问团队</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">订做专属课程</a>
+     <li><a href="#">免费预约真人在线试读</a></li>
+     <li><a href="#">英语能力测试</a></li>
+     <li><a href="#">个人方案</a></li>
+     <li><a href="#">企业方案</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">会员专区</a>
+     <li><a href="#">进入教室</a></li>
+     <li><a href="#">订课</a></li>
+     <li><a href="#">查閱课表</a></li>
+     <li><a href="#">大会堂</a></li>
+     <li><a href="#">錄影檔</a></li>
+     <li><a href="#">模拟托业考题</a></li>
+     <li><a href="#">我的学习记录</a></li>
+     <li><a href="#">个人资料/兴趣选取</a></li>
+     <li><a href="#">我的收藏</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">成果分享</a>
+     <li><a href="#">名人推荐</a></li>
+     <li><a href="#">用户推荐</a></li>
+     </ul>
+
+     <ul>
+     <a href="#">特惠活动</a>
+     <li><a href="#">活动</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">搜索</a>
+     <li><a href="#">搜索</a></li>
+     </ul>
+     
+     <ul>
+     <a href="#">在线客服</a>
+     <li><a href="#">联络客服</a></li>
+     <li><a href="#">历史记录</a></li>
+     </ul>
+     
+     <div class="clear"></div>
+    </div>
+</div>
+<!-- Navigation End -->
+</div>
+</div>
+
+
+<!-- Footer Start -->
+<div class="footer">
+   <div class="copyright">
+       <ul>
+       <li><a href="#">导览</a></li>
+       <li><a href="../about/index.html">关于VIPABC</a></li>
+       <li><a href="../news/news_list.html">新闻/报道</a></li>
+       <li><a href="#">隐私条款</a></li>
+       <li><a href="#">安全条款</a></li>
+       <li><a href="#">服务条款</a></li>
+       <li><a href="../epaper/index.html">电子报</a></li>
+       <li><a href="../contact/contact_us.html">联络我们</a></li>
+       <li><a href="../resume/job.html">加入我们</a></li>
+       <li><a href="#">学术交流伙伴</a></li>
+       </ul>
+       <div class="clear"></div>
+       <div class="color_4 small">麥奇數位股份有限公司 版權所有 © VIPABC All Rights Reserved. 经营许可证编号: 京ICP备05067667号</div>
+   </div>
+</div>
+<!-- Footer End -->
+
+
+
+
+</div>
+</body>
+</html>
