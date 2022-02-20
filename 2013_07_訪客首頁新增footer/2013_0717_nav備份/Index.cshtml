@@ -1,0 +1,814 @@
+﻿@model NewVIPABC.Models.ClientBasicModel
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+@{var LobbySession = ViewData["LobbySession"] as NewVIPABC.Models.LobbySession;}
+@{var BannerImageList = ViewData["BannerImage"] as IEnumerable<NewVIPABC.Models.Banner>;}
+@{var FamousData = ViewData["FamousData"] as IEnumerable<NewVIPABC.Models.FamousStory>;}
+@{var LessonDaily = ViewData["LessonDaily"] as NewVIPABC.Models.LessonDailyModel;}
+@{var ImageUrl = NewVIPABC.Extensions.PublicFacade.ImageUrl;}
+@{var ImageUrlMain = NewVIPABC.Extensions.PublicFacade.ImageUrlMain;}
+@{var XmlData = ViewData["XmlData"] as IEnumerable<NewVIPABC.Models.DDLModel>;}
+@{var MediaItem = ViewData["MediaItem"] as IEnumerable<NewVIPABC.Models.DDLModel>;}
+@{var News = ViewData["News"] as IEnumerable<NewVIPABC.Models.News>;}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
+    <meta name="360-site-verification" content="cf884938eccdd48a6033fc9c24aba305" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>英语学习网站_英语口语_英语听力_VIPABC真人在线英语外教网</title>
+    <meta name="description" content="VIPABC是全球最大的真人英语外教网站,专业英语培训机构.自行研发DCGS动态课程学习系统,以学习者为中心,和全球外教同步视频实时互动,提供英语口语听力学习,企业,商务英语培训服务." />
+    <meta name="keywords" content="英语学习网站,英语口语,英语听力,英语培训机构,VIPABC,在线英语学习,英语外教,英语家教" />
+    <meta http-equiv="content-language" content="zh-cn" />
+    <meta name="Contact" content="电话:4006-303030" />
+    <meta name="Copyright" content="麦奇教育集团VIPABC Inc." />
+    <meta name="Author" content="VIPABC英语" />
+    <meta id="viewport" name='viewport'>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/event.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.scrollTo-min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.easing.1.3.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/albumSlides.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/unitpngfix.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.8.3.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.10.0.custom.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/javascript/fullautoemail.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/javascript/index_2.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/javascript/verify.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/javascript/index_8.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/javascript/error_handle.js")" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/jquery-ui-1.10.0.custom.css")" />
+    <link href="@Url.Content("~/Content/css/reset.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/main.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/font.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/albumSlides.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/form.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/footer.css")" rel="stylesheet" type="text/css" />
+    <!-- fancybox -->
+    <script>
+        (function (doc) {
+            var viewport = document.getElementById('viewport');
+            if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+                doc.getElementById("viewport").setAttribute("content", "initial-scale=0.3");
+            } else if (navigator.userAgent.match(/iPad/i)) {
+                doc.getElementById("viewport").setAttribute("content", "initial-scale=0.7");
+            }
+        } (document));
+    </script>
+    <script type="text/javascript" src="@Url.Content("~/Content/source/jquery.fancybox.js?v=2.1.4")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/source/helpers/jquery.fancybox-buttons.js?v=1.0.5")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7")"></script>
+    <script type="text/javascript"src="@Url.Content("~/Content/source/helpers/jquery.fancybox-media.js?v=1.0.5")"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/source/jquery.fancybox.css?v=2.1.4")"
+        media="screen" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/source/helpers/jquery.fancybox-buttons.css?v=1.0.5")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7")" />
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/fancybox.js")"></script>
+    <!-- fancybox -->
+    <link rel="shortcut icon" type="image/ico" href="http://www.vipabc.com/favicon.ico" />
+    <script type="text/javascript">
+        // banners 居中對位
+        $(document).ready(function () {
+            $(window).resize(function () {
+                document.getElementById("album").style.left = (document.documentElement.clientWidth - document.getElementById("album").offsetWidth) / 2 + 'px';
+            });
+            $(window).resize();
+        });
+        // banners 居中對位
+        // start 弹出指定大小在线客服窗口
+        function OpenModalDialog() {
+            window.showModalDialog('http://onlineservice.vipabc.com/VIPABC', window, 'dialogWidth=650px;dialogHeight=570px;');
+        }
+        // end 弹出指定大小在线客服窗口
+        // 验证成功之后submit
+        function OnSubmit() {
+            if (checkForm()) {
+                document.getElementById("form1").action = '/program/regist/regist_exe.asp';
+                document.getElementById("form1").submit();
+            }
+        }
+        function sendepaper() {
+            var epaper_email = document.getElementById("txt_email").value;
+            //檢驗email格式    
+            if (g_obj_verify.isEmailAddressValid(epaper_email) == g_obj_error_handle.error_code.input_data_is_empty) {
+                alert("请输入您的邮箱");
+                $("#txt_email").focus();
+                return false;
+            }
+            if (g_obj_verify.isEmailAddressValid(epaper_email) != g_obj_error_handle.success_code) {
+                alert("您输入的邮箱格式不正确");
+                $("#txt_email").focus();
+                return false;
+            }
+            if (epaper_email == "请输入您的邮箱") {
+                alert("请输入您的邮箱");
+                $("#txt_email").focus();
+                return false;
+            }
+            //將使用者留下的email寫入資料庫	
+            document.getElementById("form1").action = '@Url.Action("Index", "Home")?email=' + epaper_email + '&&type=1';
+            document.getElementById("form1").submit();
+        }
+        function ChangeYoukuURL(videoID) {
+            var videoAddress = "";
+            videoAddress = "<embed src='http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=" + videoID + "&winType=adshow&isAutoPlay=true' quality='high' wmode='Opaque' flashvars='isAutoPlay=true&isShowRelatedVideo=false' width='638' height='386' align='middle' allowscriptaccess='sameDomain' type='application/x-shockwave-flash'></embed>"
+            $("#thevideo").html(videoAddress);
+            return false;
+        }
+        function loginOut() {
+            deleteCookie("loginName");
+            window.location.href = '@Url.Action("Index", "Home")';
+        }
+        function deleteCookie(name) {
+            var date = new Date();
+            date.setTime(date.getTime() - 10000);
+            document.cookie = name + "=; expire=" + date.toGMTString() + "; path=/";
+        }
+
+    </script>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { name = "form1", id = "form1" }))
+    {  
+        <!-- fixed_box 固定註冊表單 start -->
+        <div class="fixed_box">
+            <div class="fixed_box_960">
+                <div class="registration_form">
+                    @*  <a href="javascript:OpenModalDialog()">
+                        <img src="@Url.Content("~/Content/images/CustomerService.png")" width="138" height="94" style="margin-left: 136px;"></a>*@
+                    <div style="position: relative; background: url(@Url.Content("~/Content/images/Form_bg.png")); width: 268px;
+                    height: 290px;">
+                        <div id="form_box" style="position: absolute; width: 210px; height: auto; top: 90px;
+                            left: 32px;">
+                            <input id="hdn_score" name="hdn_score" type="hidden" value="demo" />
+                            <input type="hidden" id="hdn_phone_nationcode" name="hdn_phone_nationcode" value="+86" />
+                            <input type="text" id="txt_cname" name="txt_cname" class="form_input" value="请输入您的姓名"
+                                onfocus="if(this.value=='请输入您的姓名'){this.value='';}this.style.color='#666';" onblur="if(this.value==''){this.value='请输入您的姓名';this.style.color='#ccc';}else{this.style.color='#666';}" />
+                            <input type="text" class="form_input" name="txt_email_addr" id="txt_email_addr" value="请输入电子邮箱"
+                                onfocus="if(this.value=='请输入电子邮箱'){this.value='';}this.style.color='#666';" onblur="if(this.value==''){this.value='请输入电子邮箱';this.style.color='#ccc';}else{this.style.color='#666';}" /><br />
+                            <select name="sel_nation_code" id="sel_nation_code" class="form_select" onchange="changeNationalCode(this)"
+                                onfocus="this.style.color='#666'" onblur="if(this.value=='0'){this.style.color='#ccc';}else{this.style.color='#666';}">
+                                <option value="0">请选择</option>
+                                @if (@XmlData != null)
+                                {
+                                    foreach (var item in XmlData)
+                                    {
+                                        if (item.value == "+86")
+                                        {
+                                    <option value="@item.value" selected="selected">@item.text</option> 
+                                        }
+                                        else
+                                        {
+                                    <option value="@item.value">@item.text</option> 
+                                        }
+                                    }
+                                }
+                            </select>
+                            <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode" class="form_input width_50"
+                                value="+86" onchange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value"
+                                onfocus="this.style.color='#666';" onblur="this.style.color='#666';" />
+                            <input type="text" class="form_input width_145" name="txt_cphone" id="txt_cphone"
+                                value="请输入移动电话" onfocus="if(this.value=='请输入移动电话'){this.value='';}this.style.color='#666';"
+                                onblur="if(this.value==''){this.value='请输入移动电话';this.style.color='#ccc';}else{this.style.color='#666';}" />
+                            <select name="rad_know_abc" id="rad_know_abc" class="form_select" onfocus="this.style.color='#666'"
+                                onblur="if(this.value=='0'){this.style.color='#ccc';}else{this.style.color='#666';}">
+                                <option value="0">-从何处得知-</option>
+                                @if (@XmlData != null)
+                                {
+                                    foreach (var item in MediaItem)
+                                    {
+                                    <option value="@item.value">@item.text</option>
+                                    }
+                                }
+                            </select><br />
+                            <div class="y_btn">
+                                <a class="btn_text color_fff" href="javascript:void(0);" onclick="javascript:OnSubmit();">
+                                    <div>
+                                        立即预约</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backTop">
+            <div class="backTop_960">
+                <a class="index_top" href="javascript:pageScroll('')">
+                    <img src="@Url.Content("~/Content/images/backTop.png")"  width="50" height="50"></a>
+            </div>
+        </div>
+        <!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+        <div id="banners">
+            <div id="login_btns">
+                @if (Request.Cookies["loginName"] == null || string.IsNullOrEmpty(Request.Cookies["loginName"].Value))
+                {
+                    <div class="new_tel_btn">
+                        <a href="tel:4006-30-30-30">
+                            <img src="@Url.Content("~/Content/images/new_tel_btn.png")" width="223" height="19"></a></div>
+                    <div class="new_reg_btn">
+                        <a href="@Url.Action("UserRegister", "Login")">
+                            <img src="@Url.Content("~/Content/images/new_btn_01.png")" width="91" height="23"></a></div>
+                    <div class="new_login_btn">
+                        <a href="@Url.Action("Login", "Login")">
+                            <img src="@Url.Content("~/Content/images/new_btn_02.png")" width="91" height="23"></a></div>
+                }
+                else
+                {                   
+                    <p>
+                        Welcome @Request.Cookies["loginName"].Value 你好 <a href="/program/member/member.asp">
+                            会员首页</a> <a href="#" onclick="loginOut();">登出</a></p>  
+                }
+            </div>
+            <div id="main_nav">
+                <div class="main_logo">
+                    <img src="@Url.Content("~/Content/images/new_logo.png")" width="144" height="38"></div>
+                <div class="main_nav_con">
+                    <ul class="main_nav_ul">
+                        <li><a class="part_01" href="javascript:pageScroll('#part_01')">服务特色</a></li>
+                        <li><a class="part_02" href="javascript:pageScroll('#part_02')">高效英语学习</a></li>
+                        <li><a class="part_03" href="javascript:pageScroll('#part_03')">移动学习</a></li>
+                        <li><a class="part_04" href="javascript:pageScroll('#part_04')">免费在线英语讲堂</a></li>
+                        <li><a class="part_05" href="javascript:pageScroll('#part_05')">客户见证</a></li>
+                        <li><a class="part_06" href="javascript:pageScroll('#part_06')">英语学习专区</a></li>
+                        <li><a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="album">
+                <div class="slides">
+                    <ul>
+                        @if (BannerImageList != null)
+                        {
+                            foreach (var item in BannerImageList)
+                            {
+                            <li src="@ImageUrl/BannerImg/@item.BannerPicture" style="display:none;"><a href="@item.BannerUrl" target="_blank">
+                                <img src="@ImageUrl/BannerImg/@item.BannerSmallPic" width="960" height="560" style="filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="")"></a></li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="new_ad_switch">
+                <div class="timeline">
+                </div>
+                <a href="#" class="banner_prev">&lt;</a> <a href="#" class="banner_next">&gt;</a>
+                <ul class="new_ad_btns">
+                    @{var k = 0;}
+                    @if (BannerImageList != null)
+                    {
+                        foreach (var item in BannerImageList)
+                        {
+                            k++;
+                            var showIndex = "0" + k;
+                        <li class="ad_line">
+                            <div>
+                                <a href="#">@showIndex<br />@item.BannerName</a></div>
+                        </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>        
+        <div id="top_nav_index">
+            <div class="topmain">
+                <div class="logo">
+                    <a class="index_top" href="#">
+                        <img src="@Url.Content("~/Content/images/logo.png")" width="187" height="49"/></a></div>
+                <ul class="nav_bar">
+                    <li><a class="part_01" href="javascript:pageScroll('#part_01')">服务特色</a></li>
+                    <li><a class="part_02" href="javascript:pageScroll('#part_02')">高效英语学习</a></li>
+                    <li><a class="part_03" href="javascript:pageScroll('#part_03')">移动学习</a></li>
+                    <li><a class="part_04" href="javascript:pageScroll('#part_04')">免费在线英语讲堂</a></li>
+                    <li><a class="part_05" href="javascript:pageScroll('#part_05')">客户见证</a></li>
+                    <li><a class="part_06" href="javascript:pageScroll('#part_06')">英语学习专区</a></li>
+                    <li><a class="part_07" href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                </ul>
+                <div class="sub_tel_btn">
+                    @if (Request.Cookies["loginName"] == null || string.IsNullOrEmpty(Request.Cookies["loginName"].Value))
+                    {
+                        <a href="tel:4006-30-30-30">
+                            <img src="@Url.Content("~/Content/images/new_tel_btn.png")" width="223" height="19"></a>
+                        <a href="@Url.Action("UserRegister", "Login")">
+                            <img src="@Url.Content("~/Content/images/new_btn_01.png")" width="91" height="23"></a>
+                        <a href="@Url.Action("Login", "Login")">
+                            <img src="@Url.Content("~/Content/images/new_btn_02.png")" width="91" height="23"></a>                  
+                    }
+                    else
+                    {                   
+                        <p>
+                            Welcome @Request.Cookies["loginName"].Value 你好 <a href="/program/member/member.asp"
+                                onclick="backToMember();">会员首页</a> <a href="#" onclick="loginOut();">登出</a></p>  
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- part_01部分 start -->
+        <div id="part_01" class="box_Orange">
+            <div class="box_960">
+                <div class="box_660" style="margin: 20px 0 0 0;">
+                    <ul>
+                        <li style="float: left; margin-right: 5px; width: 126px;"><a class="fancybox-media"
+                            href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=XNTgxNzQ3NDQ0&winType=adshow&isAutoPlay=true">
+                            <img src="@Url.Content("~/Content/images/Service_img_01.jpg")" width="126" height="101">
+                        </a>
+                            <h5 class="color_fff bold" style="text-align: center;">
+                                全英语学习环境</h5>
+                        </li>
+                        <li style="float: left; margin-right: 5px; width: 126px;"><a class="fancybox-media"
+                            href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=XMzgzNzU3MDA4&winType=adshow&isAutoPlay=true">
+                            <img src="@Url.Content("~/Content/images/Service_img_02.jpg")" width="126" height="101">
+                        </a>
+                            <h5 class="color_fff bold" style="text-align: center;">
+                                在线学习、真人互动</h5>
+                        </li>
+                        <li style="float: left; margin-right: 5px; width: 126px;"><a class="fancybox-media"
+                            href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=XNTc5NDAwNTE2&winType=adshow&isAutoPlay=true">
+                            <img src="@Url.Content("~/Content/images/Service_img_03.jpg")" width="126" height="101">
+                        </a>
+                            <h5 class="color_fff bold" style="text-align: center;">
+                                24H学习不打烊</h5>
+                        </li>
+                        <li style="float: left; margin-right: 5px; width: 126px;"><a class="fancybox-media"
+                            href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=XNTc5NDAwODk2&winType=adshow&isAutoPlay=true">
+                            <img src="@Url.Content("~/Content/images/Service_img_04.jpg")" width="126" height="101">
+                        </a>
+                            <h5 class="color_fff bold" style="text-align: center;">
+                                全球外教顾问</h5>
+                        </li>
+                        <li style="float: left; margin-right: 5px; width: 126px;"><a class="fancybox-media"
+                            href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=XNTc5NDA0MDk2&winType=adshow&isAutoPlay=true">
+                            <img src="@Url.Content("~/Content/images/Service_img_05.jpg")" width="126" height="101">
+                        </a>
+                            <h5 class="color_fff bold" style="text-align: center;">
+                                移动学习</h5>
+                        </li>
+                    </ul>
+                    <span class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_01.png")" width="660" height="96" alt="服务特色 Service Features" title="服务特色 Service Features" ></span>
+                </div>
+                <div class="box_660 color_fff" style="margin: 0px 0 0px 0;">
+                    <div class="title_wrap">
+                    </div>
+                    <h4>
+                        学习英语最重要就是「环境」与「方法」， VIPABC 为您身打造最有VIP的英语学习法！ 忘记过去事倍功半的英语学习阴影，与我们直奔最方便、最具成效的『聪明学习法』。
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <!-- part_01部分 end -->
+        <div id="part_02" class="box_White">
+            <div class="T_Orange">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_333">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_02.png")" width="660" height="96" alt="如何学习 How to Learn?" title="如何学习 How to Learn?" >
+                    </div>
+                    <h4>
+                        「VIP高效学习法」立即开始崭新的英语学习旅程！<br>
+                        <br>
+                        精准掌握您的英语水平：外教顾问为您进行「在线语言程度分析」更了解您英语水平，精准掌握您的英语学习方向
+                    </h4>
+                    <h4>
+                        <br>
+                        最适合您的课程：<br>
+                        透过个性化的「学习偏好设定」包括：兴趣、学习重点、职业，VIPABC独家专利的DCGS系统会为您媒合最合适的课程与外教顾问<br>
+                        <br>
+                    </h4>
+                    <h4>
+                        最有效的英语学习法：「在线外教顾问真人互动教学」课堂中您将充分了解学习内容，专业外教顾问在线与您即时互动，纠正您的口语发音，解读例句和国外常用语法，让您学到地道的英语！<br>
+                        <br>
+                        选择 VIPABC ，让您英语沟通无障碍，遇到外国人不再手足无措
+                    </h4>
+                </div>
+                <div class="box_660" style="margin-top: 20px">
+                    <ul>
+                        <li style="float: left; margin-left: 20px">
+                            <img src="@Url.Content("~/Content/images/Learn_01.jpg")" width="185" height="170"></li>
+                        <li style="float: left; margin-left: 20px">
+                            <img src="@Url.Content("~/Content/images/Learn_02.jpg")" width="224" height="143"></li>
+                        <li style="float: left; margin-left: 20px">
+                            <img src="@Url.Content("~/Content/images/Learn_03.jpg")" width="191" height="182"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box_Gray">
+            <div class="T_White">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_333">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_03.png")" width="660" height="96" alt="专业分级 Professional Grading" title="专业分级 Professional Grading" >
+                    </div>
+                    <h3>
+                        听 / 说 / 读 / 写细分12等级</h3>
+                    <h4>
+                        VIPABC在线英语分析针对个人英语问题深入了解，依照听、说、读、写不同能力细分为十二个等级，专业外教顾问在您学习过程中，精确为您的英语水平把关，让您可以循序渐进提高英语口说、英语听力能力。
+                    </h4>
+                    <h3>
+                        美国大学评量方式评估升级
+                    </h3>
+                    <h4>
+                        国内英语培训机构与学习系统大都以测验模式作为英语水平升级的依据，而VIPABC 则采用美国优质大学的评量方式，从学习报告、评估、联机操作、效益稽核、测验评量等结合数字专业外教顾问建议并予以评估升级，不受限制测验学习能力，让您真正感受说一口流利英语的成就感。
+                    </h4>
+                    <img src="@Url.Content("~/Content/images/Grading_img.jpg")"  width="650" height="391">
+                </div>
+            </div>
+        </div>
+        <div class="box_White">
+            <div class="T_Gray">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_333">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_05.png")" width="660" height="96" alt="学习追踪系统 Learning materials system" title="学习追踪系统 Learning materials system"  >
+                    </div>
+                    <h3>
+                        学习追踪系统精确掌握英语学习成效
+                    </h3>
+                    <h4>
+                        深怕自己在英语学习过程中无法检视目前成果吗?VIPABC 特别研发学习追踪系统（LMS），针对每一位学习者所学过的教材以及外教顾问指导的过程，留下详细纪录，完整追踪您的英语学习成效</h4>
+                    <h3>
+                        无限复习成效倍增
+                    </h3>
+                    <h4>
+                        您不需要一边抄笔记，一边忙着听外教顾问上课，VIPABC 为您全程同步视频上课实况，让您专心听、说英语，还可以无限次复习教材，有效提升自己的英语水平，学习效果倍增，就像置身国外与外籍人士面对面自然开口说英语。
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="box_Orange">
+            <div class="T_White">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_fff">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_04.png")" width="660" height="96" alt="自选上课方式 Session Choice" title="自选上课方式 Session Choice"  >
+                    </div>
+                    <h4>
+                        VIPABC耗时三年研发在线、真人、同步视频英语学习系统，突破传统英语教学窠臼，提供学习者最具方便性的英语学习平台，打破传统英语培训班教学的时间空间限制，您可以自由安排学习计划，任何时间、任何地点皆可在线学习，在全英语学习环境中，与来自全球千位以上专业外教顾问互动咨询，有效提高英语学习效率，降低学习成本，提升英语竞争力。
+                    </h4>
+                </div>
+                <div class="box_660" style="margin-top: 20px">
+                    <ul>
+                        <li style="width: 651px; height: 132px; background: url(@Url.Content("~/Content/images/Choice_img_01.png"));
+                        margin-top: 10px;">
+                            <h3 style="margin-left: 160px; margin-right: 10px">
+                                1对1 英语家教</h3>
+                            <h4 style="margin-left: 160px; margin-right: 10px">
+                                您可以获得外教顾问百分之百的逐句指导，您甚至能自行提供上课教材（如：工作需要进行的英文简报档案），让顾问针对您的特殊需求，提供完整协助。</h4>
+                        </li>
+                        <li style="width: 651px; height: 132px; background: url(@Url.Content("~/Content/images/Choice_img_02.png"));
+                        margin-top: 10px;">
+                            <h3 style="margin-left: 160px; margin-right: 10px">
+                                1-4人小班英语会话</h3>
+                            <h4 style="margin-left: 160px; margin-right: 10px">
+                                您将与英语水平相仿的其他客户一同学习英语，您能从他人的发言中，学习到您较少用的单词，听见不同的观点。透过4人以下的小班课程、深具教学经验的外教顾问引导，您的开口权益将不受影响。</h4>
+                        </li>
+                        <li style="width: 651px; height: 132px; background: url(@Url.Content("~/Content/images/Choice_img_03.png"));
+                        margin-top: 10px;">
+                            <h3 style="margin-left: 160px; margin-right: 10px">
+                                主题式英语大会堂</h3>
+                            <h4 style="margin-left: 160px; margin-right: 10px">
+                                您不只学得英语的「知识」，更通过英语增长「见识」。大会堂的主题多为深具新闻话题、富有启发与趣味的主题，在外教顾问由浅入深的引领下，您可在最短时间内，获得该主题最全面、最实用的英语内容。</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="part_03" class="box_Gray">
+            <div class="T_Orange">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_333" style="float: left;">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_06.png")" width="660" height="96" alt="移动学习 Mobile Learning" title="移动学习 Mobile Learning">
+                    </div>
+                    <h4>
+                        VIPABC 全面支持移动学习，VIPABC On The Go提供24小时订位/在线英语学习
+                    </h4>
+                </div>
+                <div class="box_660">
+                    <div style="position: relative; margin-top: 20px; float: left;">
+                        <a href="@Url.Action("App", "App")?type=5">
+                            <img src="@Url.Content("~/Content/images/MobileLearning_01.png")" width="234" height="262">
+                        </a>
+                    </div>
+                    <div style="position: relative; margin-top: 20px; margin-left: 10px; float: left;">
+                        <h4>
+                            「移动词汇通」每日精选5个单词<br>
+                            「词汇快手」玩游戏轻松提升英语单词能力<br>
+                            「英语学习报」了解各国时事脉动<br>
+                            「英语急救站」兼具趣味与实用的英语学习短片<br>
+                        </h4>
+                    </div>
+                    <div style="position: relative; padding-top: 150px;">
+                        <ul>
+                            <li style="float: left; margin-left: 20px"><a href="@Url.Action("App", "App")?type=1">
+                                <img src="@Url.Content("~/Content/images/MobileLearning_02.png")" width="85" height="107"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="@Url.Action("App", "App")?type=4">
+                                <img src="@Url.Content("~/Content/images/MobileLearning_03.png")" width="85" height="107"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="@Url.Action("App", "App")?type=3">
+                                <img src="@Url.Content("~/Content/images/MobileLearning_04.png")" width="85" height="107"></a></li>
+                            <li style="float: left; margin-left: 20px"><a href="@Url.Action("App", "App")?type=2">
+                                <img src="@Url.Content("~/Content/images/MobileLearning_05.png")" width="85" height="107"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="part_04" class="box_Orange">
+            <div class="T_Gray">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_fff">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_07.png")" width="660" height="96" alt="免费在线英语讲堂 Free Session" title="免费在线英语讲堂 Free Session">
+                    </div>
+                    <h4>
+                        全球专业外教顾问在线提供包罗万象的主题式英语，精彩咨询内容，名额有限，马上报名
+                    </h4>
+                </div>
+                <div class="box_660 color_fff">
+                    <div style="position: relative; margin-top: 20px; margin-left: 0px; float: left;">
+                        <p class="color_fff" style="font-size: 24px;">
+                            @LobbySession.SessionDateFirst @LobbySession.SessionTimeFirst@LobbySession.weekfirst</p>
+                        <p class="color_fff" style="font-size: 18px; width: 290px; margin-top: 6px;">
+                            @LobbySession.SessionNameFirst</p>
+                        <p class="color_fff" style="font-size: 13px; width: 290px; margin-top: 10px; height: 90px;">
+                            @LobbySession.SessionTypeFirst<br />
+                            @LobbySession.SessionDescriptionFirst</p>
+                        <a href="@LobbySession.LobbyLink"  target="_blank">
+                            <img src="@Url.Content("~/Content/images/Reservation_btn.png")" width="289" height="50" style=" margin-left:-5px;"/></a>
+                    </div>
+                    <div style="position: relative; margin-top: 20px; margin-left: 20px; height: auto;
+                        float: left;">
+                        <a href="@LobbySession.LobbyLink"  target="_blank">
+                            <img src="@ImageUrl/Lobbysession/@LobbySession.PictureSmall" width="320" height="188" style="display:block; margin:0 auto; float:left;"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="part_05" class="box_White">
+            <div class="T_Orange">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_333" style="float: left;">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_08.png")" width="660" height="96" alt="客户见证 Testimonials" title="客户见证 Testimonials">
+                    </div>
+                    <h4>
+                        感谢每位客户对我们的支持及肯定，您的进步与成功是对我们最大的鼓励 VIPABC坚持给您高质量及便利有效的英语学习方式，数万位职场菁英的共同选择，诚挚的推荐给您！
+                    </h4>
+                </div>
+                <div class="box_660 color_333" style="float: left;">
+                    @if (FamousData != null)
+                    {
+                        if (FamousData.ToList()[0].VideoId != null && FamousData.ToList()[0].VideoId != "")
+                        {
+                        <div style="position: relative; margin-top: 20px; float: left;" onclick="ChangeYoukuURL('@FamousData.ToList()[0].VideoId'); thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+                            <img src="@ImageUrl/Images/FamousStory/@FamousData.ToList()[0].ImgUrl" width="638" height="386" style="float: left;" />
+                        </div>
+                        <div id="thevideo" style="display: none; z-index: -100;">
+                        </div>
+                        }
+                        else
+                        {                            
+                        <div style="position: relative; margin-top: 20px; float: left;">
+                            <a class="fancybox-media" href="@FamousData.ToList()[0].PageLink" target="_blank">
+                                <img src="@ImageUrl/Images/FamousStory/@FamousData.ToList()[0].ImgUrl" width="638" height="386" style="float: left;" />
+                            </a>
+                        </div>
+                        }
+                    }
+                    <div style="position: relative; margin-top: 20px; float: left;">
+                        <ul>
+                            @if (FamousData != null)
+                            {
+                                for (var i = 1; i < 6; i++)
+                                {
+                                    if (@FamousData.Count() > i)
+                                    {                                        
+                                <li style="float: left; width: 120px; margin-right: 10px">
+                                    @if (FamousData.ToList()[i].VideoId != null && FamousData.ToList()[i].VideoId != "")
+                                    {
+                                        <a class="fancybox-media" href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=@FamousData.ToList()[i].VideoId&winType=adshow&isAutoPlay=true">
+                                            <img src="@ImageUrl/Images/FamousStory/@FamousData.ToList()[i].ImgUrl" width="119" height="73">
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a class="fancybox-media" href="@FamousData.ToList()[i].PageLink" target="_blank">
+                                            <img src="@ImageUrl/Images/FamousStory/@FamousData.ToList()[i].ImgUrl" width="119" height="73">
+                                        </a>
+                                    }
+                                    <h5 class="color_333" style="text-align: left;">
+                                        @FamousData.ToList()[i].Title</h5>
+                                </li>
+                                       
+                                    }
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="part_06" class="box_Gray">
+            <div class="T_White">
+            </div>
+            <div class="box_960">
+                <div class="box_660 color_333">
+                    <div class="title_wrap">
+                        <img src="@Url.Content("~/Content/images/title_09.png")" width="660" height="96" alt="英语学习专区 English Learning Resources" title="英语学习专区 English Learning Resources">
+                    </div>
+                    <h4>
+                        VIPABC 特别为您提供英语学习专区，让您轻松加强英能力</h4>
+                </div>
+                <div class="box_660">
+                    <div class="index_list">
+                        <ul>
+                            <li class="index_dailywords_wrap"><a href="@LessonDaily.video_file_link" target='_blank'>
+                                <div class="index_list_White">
+                                    每日一句</div>
+                            </a><a href="@LessonDaily.video_file_link" target='_blank'>
+                                @{var img = @LessonDaily.consultant_sn + ".jpg";}
+                                <img src="http://www.vipabc.com/consultant_profile/@img" width="79" height="81"></a>
+                                <a href="@LessonDaily.video_file_link" target='_blank'>
+                                    <div class="index_list_on">
+                                        @LessonDaily.basic_fname 教你说：<br />
+                                        @LessonDaily.e_topic
+                                    </div>
+                                </a></li>
+                            <li class="index_list_wrap">
+                                <div class="index_list_Orange">
+                                    英语学习报</div>
+                                <a href="@Url.Action("EpaperList", "Epaper")">
+                                    <img src="@Url.Content("~/Content/images/Resources02.png")" width="200" height="144"></a>
+                                <div class="index_list_on">
+                                    最新最热门的话题<br />
+                                    VIPABC英文报和你一起掌握!
+                                </div>
+                            </li>
+                            <li class="index_list_wrap">
+                                <div class="index_list_Orange">
+                                    英语急救站</div>
+                                <a class="fancybox-media" href="http://static.youku.com/v1.0.0149/v/swf/qplayer_rtmp.swf?VideoIDS=XMzk3NDM0MzQ0&winType=adshow&isAutoPlay=true">
+                                    <img src="@Url.Content("~/Content/images/Resources03.png")" width="200" height="144"></a>
+                                <div class="index_list_on">
+                                    轻松有英文短剧<br />
+                                    让您不费力气就能提升英语能力！
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_660 color_333" style="float: left; background: url(@Url.Content("~/Content/images/Subscription_bg.png"));
+                width: 660px; height: 95px;">
+                    <div style="width: 530px; height: 38px; padding-top: 25px; padding-left: 130px; vertical-align: middle;">
+                        <input name="txt_email" type="text" class="reg_field" id="txt_email" value="请输入您的邮箱"
+                            onfocus="if(this.value=='请输入您的邮箱'){this.value='';this.className='reg_field';}else{this.className='reg_field_black';}"
+                            onblur="if(this.value==''){this.value='请输入您的邮箱';this.className='reg_field';}else{this.className='reg_field_black';}"
+                            style="height: 30px; vertical-align: middle; width: 360px; float: left;" />
+                        <a href="#">
+                            <img src="@Url.Content("~/Content/images/Subscription_btn.png")" width="105" height="37" align="absmiddle" onclick="sendepaper()"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_links">
+                <div class="box_960">
+                    <div class="foot_logo">
+                        <img src="@Url.Content("~/Content/images/footer_logo.png")" width="200" height="52"></div>
+                    <div class="foot_permit">
+                        <li>
+                            <img src="@Url.Content("~/Content/images/foot_permit_01.png")" width="182" height="34"></li>
+                        <li>
+                            <img src="@Url.Content("~/Content/images/foot_permit_02.png")" width="182" height="34"></li>
+                        <li>
+                            <img src="@Url.Content("~/Content/images/foot_permit_03.png")" width="182" height="34"></li>
+                        <li>
+                            <img src="@Url.Content("~/Content/images/foot_permit_04.png")" width="182" height="34"></li>
+                    </div>
+                    <div class="foot_links_ul_goup">
+                        <ul class="foot_links_ul">
+                            <li>关于我们</li>
+                            <li><a href="@Url.Action("AboutVIPABC", "About")">选择VIPABC的理由</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=1">企业沿革</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=2">新闻中心</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=3">学术交流机构</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=1">企业荣耀</a></li>
+                            <li><a href="@Url.Action("Sitemap", "About")">网站地图</a></li>
+                        </ul>
+                        <ul class="foot_links_ul">
+                            <li>学英文最佳选择</li>
+                            <li><a href="@Url.Action("Content0", "Content")">最弹性的学习时间</a></li>
+                            <li><a href="@Url.Action("Content1", "Content")">最专业的外教顾问</a></li>
+                            <li><a href="@Url.Action("Content2", "Content")">最隐私的学习环境</a></li>
+                            <li><a href="@Url.Action("Content3", "Content")">最有效的英语学习法</a></li>
+                            <li><a href="@Url.Action("Content4", "Content")">最个性化的教材内容</a></li>
+                            <li><a href="@Url.Action("Content5", "Content")">最轻松的真人互动教学</a></li>
+                        </ul>
+                        <ul class="foot_links_ul">
+                            <li>我们的课程适合</li>
+                            <li><a href="@Url.Action("Content11", "Content")">上班族 / 专业人士</a></li>
+                            <li><a href="@Url.Action("Content12", "Content")">企业培训</a></li>
+                            <li><a href="@Url.Action("Content13", "Content")">出国游学</a></li>
+                            <li><a href="@Url.Action("Content14", "Content")">孩童/青少年</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class="foot_links_ul">
+                            <li>VIPABC 帮你提升</li>
+                            <li><a href="@Url.Action("Content6", "Content")">英语口语</a></li>
+                            <li><a href="@Url.Action("Content7", "Content")">英语听力</a></li>
+                            <li><a href="@Url.Action("Content8", "Content")">英语阅读</a></li>
+                            <li><a href="@Url.Action("Content9", "Content")">商务英语</a></li>
+                            <li><a href="@Url.Action("Content10", "Content")">职业英语</a></li>
+                        </ul>
+                        <ul class="foot_links_ul">
+                            <li>新闻中心</li>
+                            <li><a href="@Url.Action("About", "About")?type=2&tab=1">公司信息</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=2&tab=2">媒体报导</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=2&tab=3">学习资源</a></li>
+                            <li><a href="@Url.Action("About", "About")?type=2&tab=4">最新优惠</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class="foot_links_ul">
+                            <li>英语学习专区</li>
+                            <li><a href="@LobbySession.LobbyLink" target="_blank">在线免费讲堂</a></li>
+                            <li><a href="@LessonDaily.video_file_link" target="_blank">每日一句</a></li>
+                            <li><a href="@Url.Action("EpaperList", "Epaper")">英语学习报</a></li>
+                            <li><a href="@Url.Action("App", "App")?type=1">移动学习App</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class="foot_links_ul">
+                            <li>与我联系</li>
+                            @*<li><a href="http://onlineservice.vipabc.com/VIPABC" target="_blank">在线客服</a></li>*@
+                            <li><a href="@Url.Action("ContactUs", "Home")">联络我们</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="foot_tel">
+                        <a href="tel:4006-30-30-30">
+                            <img src="@Url.Content("~/Content/images/foot_tel.png")" width="184" height="44"></a></div>
+                </div>
+            </div>
+            <div class="footer_cert">
+                <div class="box_960">
+                    <div class="foot_bottom_links">
+                        <p>
+                            <a href="@Url.Action("About", "About")">关于VIPABC</a> <a href="@Url.Action("Privacy", "Home")">
+                                隐私保护</a> <a href="@Url.Action("Security", "Home")">安全条款</a> <a href="@Url.Action("Service", "Home")">
+                                    服务条款</a> <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                            <a href="http://biz.vipabc.com/" target="_blank">企业培训</a> <a href="@Url.Action("ContactUs", "Home")">
+                                联络我们</a>
+                        </p>
+                    </div>
+                    <div class="footer_cert_icons">
+                        <p>
+                            <a href="#">
+                                <img src="@Url.Content("~/Content/images/cert/cert_01.jpg")" width="106" height="40"></a>
+                            <a href="#">
+                                <img src="@Url.Content("~/Content/images/cert/cert_02.jpg")" width="110" height="40"></a>
+                            <a href="#">
+                                <img src="@Url.Content("~/Content/images/cert/cert_03.jpg")" width="110" height="40"></a>
+                            <a href="#">
+                                <img src="@Url.Content("~/Content/images/cert/cert_04.jpg")" width="110" height="40"></a>
+                            <a href="#">
+                                <img src="@Url.Content("~/Content/images/cert/cert_05.jpg")" width="112" height="40"></a>
+                            <a href="#">
+                                <img src="@Url.Content("~/Content/images/cert/cert_06.jpg")" width="110" height="40"></a>
+                        </p>
+                    </div>
+                    <div class="footer_cert_certline">
+                        <p>
+                            教育许可 : 教职成司函 [ 2011 ] 267 号 | 经营许可证 : 京 ICP 证 090121 号 | 京 ICP 备 11004351 号</p>
+                        <p>
+                            VIPABC.com 版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

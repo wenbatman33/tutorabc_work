@@ -1,0 +1,108 @@
+﻿@model NewVIPABC.Models.News
+@using NewVIPABC.Extensions;
+@{
+    Layout = null;
+}
+@{int maxpage = Convert.ToInt32(HttpContext.Current.Session["maxpage"]);}
+@{var NewsList = ViewData["NewsList"] as IEnumerable<NewVIPABC.Models.News>;}
+@{var ImageUrl = NewVIPABC.Extensions.PublicFacade.ImageUrl;}
+<head>
+    <link href="@Url.Content("~/Content/css/reset.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/main.css")" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/event_sub.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.scrollTo-min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.easing.1.3.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/albumSlides.js")"></script>
+    <script type="text/javascript">
+        function changePage(page) {
+            //转页
+            document.getElementById("form1").action = '@Url.Action("NewsList", "About")?type='+@Model.newsType +'&&page=' + page;
+            document.getElementById("form1").submit();
+        }
+        function changeClass(type) {
+            //转页
+            document.getElementById("form1").action = '@Url.Action("NewsList", "About")?type=' + type;
+            document.getElementById("form1").submit();
+        }
+         function changeUrl(newsID) {
+            //转页
+           window.open('@Url.Action("NewsDetail", "About")?newsType='+@Model.newsType+'&&newsID='+newsID,"_blank");
+        }
+    </script>
+</head>
+<div class="appad">
+    <ul>
+        @if (Model.newsType == 1)
+        {
+            <li class="Smart" id='news1' onclick="changeClass(1)" style="cursor: pointer">公司新闻</li>
+            <li class="appline"></li>
+            <li class="Tablet" id='news2' onclick="changeClass(2)" style="cursor: pointer"><a>媒体报道</a></li>
+        }
+        else
+        {
+            <li class="Smart" id='news1' onclick="changeClass(1)" style="cursor: pointer"><a>公司新闻</a></li>
+            <li class="appline"></li>
+            <li class="Tablet" id='news2' onclick="changeClass(2)" style="cursor: pointer">媒体报道</li>
+        }
+    </ul>
+</div>
+@using (Html.BeginForm("NewsList", "About", FormMethod.Post, new { name = "form1", id = "form1", pagevalue = "1" }))
+{
+    <!-- #############物件請載入至此 部分 start################ -->
+    <div class="tab_container">
+        <ul class="news_ul">
+            @if (@NewsList != null)
+            {
+                for (var i = 0; i < @NewsList.Count(); i++)
+                {
+                    var item = @NewsList.ToList()[i];
+                <li class="news_list_wrap"  onclick="changeUrl('@item.NewsId');">
+                    <img src="@ImageUrl/NewsImg/@item.NewsPictureSmall" width="200" height="144">
+                    <div class="news_list_on">
+                        <span class="news_title" style="width:300px"><a>
+                            @if (@item.NewsTitle.Length <= 25)
+                            {
+                                @item.NewsTitle
+                            }
+                            else
+                            {
+                                @item.NewsTitle.Substring(0, 25)<span>...</span>
+                            }
+                        </a></span>
+                        <span class="news_desc"><a>
+                            @if (@item.NewsContentText.Length <= 60)
+                            {
+                                @item.NewsContentText
+                            }
+                            else
+                            {
+                                @item.NewsContentText.Substring(0, 60)<span>...</span>
+                            }
+                        </a></span>
+                    </div>
+                </li>
+                }
+            }
+        </ul>
+        <div class="epaper_page">
+            @Html.Pager(@Model.nowpage, @maxpage)
+            <span style="display: block; position: relative; float: right; height: 25px; line-height: 25px;
+                color: #666; font-size: 13px;">转到
+                <select name="sel_nation_code" id="sel_nation_code" class="reg_select" style="width: 80px;">
+                    @for (var j = 1; j <= Convert.ToInt32(maxpage); j++)
+                    {
+                        if (Model.nowpage == j)
+                        {
+                        <option value="@j" selected="selected" onclick="changePage(@j);"><span>第</span>@j<span>页</span>
+                        </option>
+                        }
+                        else
+                        {
+                        <option value="@j" onclick="changePage(@j);"><span>第</span>@j<span>页</span> </option>
+                        }
+                    }
+                </select></span>
+        </div>
+    </div> 
+}

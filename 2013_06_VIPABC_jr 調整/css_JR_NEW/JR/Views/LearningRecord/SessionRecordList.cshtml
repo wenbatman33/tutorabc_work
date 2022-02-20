@@ -1,0 +1,101 @@
+﻿@model IEnumerable<TutorGroup.VIPABCJR.Member.Models.SessionRecordList>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+    })
+    function set_fav_con(ClassConsultantId, FavoriteCosultant, ClassConsultantName) {
+        var show_msg = "";
+        if (FavoriteCosultant == 0 || FavoriteCosultant == -1) {
+            show_msg = "您确定要将顾问" + ClassConsultantName + "设为收藏的顾问吗?";
+        } else {
+            show_msg = "您确定要取消收藏的顾问" + ClassConsultantName + "嗎?";
+        }
+
+        if (confirm(show_msg)){
+            $.ajax({
+                type: "post",
+                url: '@Url.Action("boolFavoriteConsault", "LearningRecord")',
+                data: { ClassConsultantId: ClassConsultantId, client_sn: "@ViewBag.client_sn", FavoriteCosultant: FavoriteCosultant },
+                async: false
+            }).done(function (data) {
+                //var btnID = 'btn-' + ClassConsultantId;
+                //alert(btnID)
+                //$(btnID).
+                if (data == 1) {
+                    alert('设置成功');
+                    location.reload();
+                }
+            })
+        } else {
+            return false;
+        }
+    }
+</script>
+<div id="content">
+    <div class="menber_membox"> <!--內容start-->
+    <div class="main_membox">
+        <div class="page_title_2"><h2 class="page_title_h2">上课记录&amp;评分</h2></div>
+        <div class="box_shadow" style="background-position:-80px 0px;"></div>
+        <!--上版位課程start-->
+            <div class="top_class5">
+                <h1>
+                    <span class="bold">目前等级：Level @ViewBag.ProfileLearnLevel</span><br />
+                    <!--可用周期总堂数<font color="red">&nbsp;0</font><br />
+                    剩余周期堂数<font color="red">&nbsp;0</font>
+        
+                    <br />
+                    本期未用(超用)课时<font color="red">&nbsp;</font>-->
+                </h1>
+            </div>
+            <a id="a_learning_record" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent">上课记录&amp;评分</a> 
+            <a id="a_learning_word" class="top_class_N2" href="/program/member/learning_word.asp" target="_parent">我的单词银行</a> 
+            <a id="a_learning_learn_old" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=2" target="_parent">帐户资讯</a> 
+            <a id="a_learning_level" class="top_class_N2" href="/program/member/learning_level.asp" target="_parent">程度分析</a> 
+            <a id="a_learning_dcgs" class="top_class_N4" href="/program/aspx/AspxLogin.asp?url_id=5" target="_parent">DCGS学习偏好设置</a> 
+            <a id="a_learning_review" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=4" target="_parent">咨询复习</a>
+            <div class="top_block">
+            </div>
+        <!--上版位課程end-->
+    <!--上課紀錄評分-->
+    <ul class="class_list4">
+       <li>
+        <h1>咨询日期</h1>
+        <h1>咨询时间</h1>
+        <h2 style="width:210px">教材名称</h2>
+		<h3 style="width:40px">类型</h3>
+        <h3>顾问</h3>
+        <h4></h4>
+        </li>
+@{  int intCounter = 0;
+    foreach (var classrecord in Model)
+    {
+        DateTime tmpDateStart = new DateTime(classrecord.ClassStartDate.Year,classrecord.ClassStartDate.Month,classrecord.ClassStartDate.Day,classrecord.ClassStartTime,30,00);
+        DateTime tmpDateEnd = tmpDateStart.AddMinutes(45);
+        <li @if (intCounter%2==0){ <text>class="C4_BgGreen"</text> }>
+            <h1>@classrecord.ClassStartDate.ToString("yyyy/MM/dd")</h1><!--date-->
+            <h1>@tmpDateStart.ToString("HH:mm") ~ @tmpDateEnd.ToString("HH:mm")</h1><!--time-->
+            <h2 style="width:210px"><!--material title-->
+                <a href="/program/member/session_feedback_jr.asp?status=save&Session_sn=@classrecord.session_sn&client_sn=@classrecord.client_sn">@classrecord.MaterialTitle</a>
+            </h2>
+            <h3 style="width:40px">
+	            <img 
+                @if(classrecord.ClassTypeId==1 ||classrecord.ClassTypeId==7)
+                {<text>src="/images/sessionFeedback/feedback_class_1to1_zh-cn.gif"</text>}
+                else if(classrecord.LobbySessionId>0)
+                {<text>src="/images/sessionFeedback/feedback_class_ss_zh-cn.gif"</text>}
+                else
+                {<text>src="/images/sessionFeedback/feedback_class_1to6_zh-cn.gif"</text>}/>
+            </h3><!--classtype-->
+            <h3>@classrecord.ClassConsultantName</h3><!--consultant-->
+            <h4><!--收藏顧問-->
+                <input type="button" name="btn_collect" id="btn-@classrecord.ClassConsultantId" @if(classrecord.FavoriteCosultant==0 ||classrecord.FavoriteCosultant==-1){<text>value="收藏顾问"</text>}else{<text>value="取消此顾问"</text>} class="btn_cancel" onclick="javascript: set_fav_con(@classrecord.ClassConsultantId,@classrecord.FavoriteCosultant,'@classrecord.ClassConsultantName');"/>
+            </h4>
+        </li>
+        intCounter++;
+    }
+}
+    </ul>
+    <!--內容end-->
+    </div>
+    </div>
+</div>

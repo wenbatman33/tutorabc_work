@@ -1,0 +1,314 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="fixed_box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <div class="y_btn"><a class="btn_text color_fff" href="#"><div>立即预约</div></a></div>  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>关于VIPABC</div>
+              
+              <div class='content_container'>
+              		<table width="660" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td valign="top"><h3 class="color_orange">关于VIPABC</h3><p><br>
+      VIPABC集团旗下品牌创建于1998年,为实体的专业培训机构，以学习者需求为核心，以服务导向为基础。VIPABC集团于2004年3月首推在线学习平台，以美国硅谷研发团队为核心,发表全球首创云计算整合服务，提供最有效的真人外教•实时互动•网络视频的英语学习平台。VIPABC英语深耕全球语言培训市场，自十几年来始终如一，提供最高品质服务，在全球拥有32个国家、60个城市、超过一千位以上外籍优秀师资，进行365天、24小时真人在线网络学习服务的Total Solution e-Learning “云学习”技术平台，在不同的城市及时段为客户提供教学服务，更藉由「扩增实境」及无线网络的整合运用，开发一系列具有知识网络概念的学习频道，成为新一代知识服务入口，每年的客户使用量达240万人次。 </p>
+      <p><span class="title"><img src="images/building1.jpg" width="395" align="right" class="img"><h3 class="color_orange">品质保证 </h3></span><br>
+          </p><ul>
+           <li>◆ 24小时全天候不间断学习</li>
+           <li>◆ 最高的服务满意度</li>
+           <li>◆ 真人实时互动，全英语学习环境</li>
+           <li>◆ 全球任意角落想学就学</li>
+           <li>◆ 量身定做个性化教材</li>
+           <li>◆ 专业外籍顾问，来自全球且经验丰富</li>
+           <li>◆ 精确分级与专业制度</li>
+           <li>◆ 贴心辅导并完整追踪学习成效</li>
+           <p></p>
+                
+          <p>
+          <h3 class="color_orange">我们的优势</h3><br>
+          <strong>真人在线实时互动、全英语学习环境</strong><br>
+        在线真人同步互动学习机制，对着电脑或机器单向说话是非常单调呆板的事，任何设计再好的语言系统，都无法取代与外国人面对面互动谈话的经验，只有真人互动学习机制才能让学习者习惯跟外国人说英语。VIPABC超越所有线上学习系统，由真正的专业外籍顾问引导学习者用英语学英语，通过双向视频互动，就像拥有多位专属外籍家教，随时随地沉浸在全英语学习环境。</p>
+      <p><strong><img src="images/tutor.jpg" align="left" border="0" class="img">专业外籍顾问，高水准师资品质，千位外教来自全球且经验丰富</strong><br>
+        严格筛选以过滤顾问条件，VIPABC不仅重视如TESL，TEFL等专业认证，更严格筛选具备商学、法律、企管、传播、文学、工程等专业背景之外籍顾问，以提供学习者最首选的学习对象。外籍顾问来自全球，教学经验丰富，VIPABC拥有来自全球百位以上的专业外籍顾问，每位顾问都受过专业训练，教学经验丰富，让学习者能获得最专业的学习资讯。</p>
+      <p><strong>个人化英语咨询跳脱填鸭教学，量身订做，随选个人化教材</strong><br>
+        全球首创动态课程生成系统（DCGS），荣获多项专利奖项肯定。透过在线语言分析，针对语言能力、职业、兴趣及学习偏好等，量身订作最适合学习者的学习内容，自动配对并实时编排最符合学习者需求的英语咨询内容，让学习更有效益，不再是千篇一律的填鸭式教材。透过在线语言分析，自动配对并实时编排最符合需求的学习内容，让学习更有效益。</p>
+      <p><h3 class="color_orange"><img src="images/staff2.jpg" width="320" align="right" class="img">使命与愿景 </h3><br>
+        未来，我们将致力于全球性销售与服务之学习入口平台为企业发展方向，除了扩大语文学习平台、并推出全球瞩目之多语文学习互动服务，并期以提供中国对语文学习有高度需求朋友最优等、最有效的英语学习服务为目标。 </p>
+      <p><h3 class="color_orange">我们的团队 </h3><br>
+        VIPABC拥有一批充满热情的专业服务团队，从第一次接触VIPABC开始，专属英语管家全程追踪辅导，凡事以您为优先，提供最优质满意服务，协助解决一切问题，提升英语学习效果。</p>
+      <p><h3 class="color_orange">联系我们 </h3><br>
+        24H 服务热线：<strong><font color="#FF9000">4006-30-30-30</font></strong><br>
+        企业培训专线：<strong><font color="#FF9000">4009-30-30-30</font></strong> (服务时间周一到周五：9:00–18:00)
+        <br>
+		服务信箱：<a class="color_orange" href="mailto:vipservices@vipabc.com">vipservices@vipabc.com</a><br><br>
+		
+        <strong>上海公司</strong>：上海市黄浦区西藏中路168号1802室(都市总部大楼),邮编:200001<br>
+        联系电话：021-6171-3030<br>
+        交通信息：18、20、37、46、49、108、123、139、167、518、537、584、802、916、921、980、隧道三线、新川专线、上川专线、地铁1号、2号、8号人民广场站15号口<br><br>
+		
+		<strong>北京公司</strong>：北京市朝阳区建国路88号C座305A,邮编100022<br>
+		联系电话：010-8580-7330<br>
+		交通信息：647、930、502、669、667、31,、608、11、30、486、597、677、718、605、621、649、地铁1号线大望路站B出口<br>
+				<br>
+				<strong>体验中心</strong>：北京市朝阳区东三环中路39号建外SOHO A座0103B,邮编100022<br>
+联系电话：010-6558-3030<br>
+交通信息：28、57、214夜、348、601、627、683、686、707、805快、814、818、846、954、974、976、998、运通107到大北窑南下车、地铁1号线及10号线国贸站C出口 。	</p></ul></td>
+  </tr>
+</tbody>
+</table>
+      
+          
+              
+              
+              
+        </div>
+    </div>
+
+</div>
+<!-- #############Content部分 end################ -->
+
+<div class="footer">
+	<div class="footer_links">
+       <div class="box_960">
+   		<div class="foot_logo"><img src="images/footer_logo.png" width="200" height="52"></div>
+        
+       	  <div class="foot_permit">
+           	  <li><img src="images/foot_permit_01.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_02.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_03.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_04.png" width="182" height="34"></li>
+          </div>
+         
+          <div class="foot_links_ul_goup">
+          
+          <ul class="foot_links_ul">
+           	  <li>关于我们</li>
+              <li><a href="#">选择VIPABC的理由</a></li>
+              <li><a href="#">企业沿革</a></li>
+              <li><a href="#">新闻中心</a></li>
+              <li><a href="#">学术交流机构</a></li>
+              <li><a href="#">企业荣耀</a></li>
+              <li><a href="#">网站地图</a></li>
+          </ul>
+         
+         
+         <ul class="foot_links_ul">
+           	  <li>学英文最佳选择</li>
+              <li><a href="#">最弹性的上课时间</a></li>
+              <li><a href="#">最专业的外籍顾问</a></li>
+              <li><a href="#">最隐私的上课环境</a></li>
+              <li><a href="#">最有效的学习方法</a></li>
+              <li><a href="#">最个性化的教材内容</a></li>
+              <li><a href="#">最轻松的真人互动教学</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>我们的课程适合</li>
+              <li><a href="#">上班族 / 专业人士</a></li>
+              <li><a href="#">企业培训</a></li>
+              <li><a href="#">出国游学</a></li>
+              <li><a href="#">孩童/青少年</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>VIPABC 帮你提升</li>
+              <li><a href="#">英语口语</a></li>
+              <li><a href="#">英语听力</a></li>
+              <li><a href="#">英语作文</a></li>
+              <li><a href="#">英语阅读</a></li>
+              <li><a href="#">商务英语</a></li>
+              <li><a href="#">职业英语</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>新闻中心</li>
+              <li><a href="#">最新优惠</a></li>
+              <li><a href="#">公司信息</a></li>
+              <li><a href="#">媒体报导</a></li>
+              <li><a href="#">学习资源</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>英语学习专区</li>
+              <li><a href="#">在线免费讲堂</a></li>
+              <li><a href="#">每日一句</a></li>
+              <li><a href="#">英语电子报</a></li>
+              <li><a href="#">移动学习App</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>与我联系</li>
+              <li><a href="#">在线客服</a></li>
+              <li><a href="#">联络我们</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          </div>
+          
+          <div class="foot_tel"><a href="tel:4006-30-30-30"><img src="images/foot_tel.png" width="184" height="44"></a></div>
+        </div>  
+         
+     </div> 
+    
+	<div class="footer_cert">
+   		 <div class="box_960">
+            <div class="foot_bottom_links">
+            <p>
+                <a href="/About/About">关于VIPABC</a>
+                <a href="/Home/Privacy">隐私保护</a>
+                <a href="/Home/Security">安全条款</a>
+                <a href="/Home/Service">服务条款</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>
+                <a href="/Home/ContactUs">联络我们</a>
+            </p>
+            </div>
+            <div class="footer_cert_icons">
+            <p> 
+                <a href="#"><img src="images/cert/cert_01.jpg" width="106" height="40"></a>
+                <a href="#"><img src="images/cert/cert_02.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_03.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_04.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_05.jpg" width="112" height="40"></a>
+                <a href="#"><img src="images/cert/cert_06.jpg" width="110" height="40"></a>
+            </p>
+            </div>
+            
+            <div class="footer_cert_certline">
+            <p> 教育许可 : 教职成司函 [ 2011 ] 267 号  |  经营许可证 : 京 ICP 证 090121 号  |  京 ICP 备 11004351 号</p>
+            <p> VIPABC.com  版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+            </div>            
+
+         </div>
+    </div>
+</div>
+</body>
+</html>

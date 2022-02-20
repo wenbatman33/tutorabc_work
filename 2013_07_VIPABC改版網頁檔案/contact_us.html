@@ -1,0 +1,392 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="fixed_box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <div class="y_btn"><a class="btn_text color_fff" href="#"><div>立即预约</div></a></div>  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>联络我们</div>
+
+              <div style="position:relative; float:left; width:660px; height:auto; margin-top:20px;">
+              		<h2 style="color:#666;">联络我们</h2>
+                    <div  class="box_shadow" style="background-position:-80px 0px;"></div> 
+                    <h4 style="color:#666;">如果 FAQ 无法满足您的需要，不用客气，请马上与我们联络！</h4>
+                	<div style="position:relative; float:right; width:100%; margin:0 auto;">
+
+                    <div  class="reg_form">
+                            <div class="reg_row">
+                                <div class="reg_title_wrap"><span class="reg_txt">您的姓名</span></div>
+                                <div class="reg_field_wrap">
+                                	<input type="text" class="reg_field"  value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" style="width:320px;" />
+                                </div>
+                                <div class="reg_prompt_wrap color_red">
+                                        <img src="images/error.png" width="12" height="12"> 邮箱格式有问题，请修改
+                                </div>
+                            </div>
+                      
+                            <div class="reg_row">
+                                <div class="reg_title_wrap"><span class="reg_txt">联系电话 </span></div>
+                                <div class="reg_field_wrap">
+                                        <input type="radio"  class="reg_field reg_txt" checked="checked" name="group1" ><label class="reg_txt" style="margin-left:5px">移动电话</label>
+                                        <input type="radio"  class="reg_field reg_txt" checked="checked" name="group1" ><label class="reg_txt" style="margin-left:5px">固定电话</label><br>
+                                        <select name="sel_nation_code" id="sel_nation_code" class="reg_select"  style="width:320px;">
+                                            <option value="0">请选择</option>
+                                            <option value="+86" selected="selected">中国 China</option>
+                                            <option value="-1">其他 Others</option>
+                                        </select><br>
+                                        <input class="reg_field" type="text" value="+86" style="width:120px;"/> 
+                                        <input class="reg_field" type="text" value=""  style="width:180px;"/>
+                                </div>
+                                <div class="reg_prompt_wrap color_red"><img src="images/error.png" width="12" height="12"> 請輸入联系电话</div>
+                            </div>
+                            
+                            <div class="reg_row">
+                              <div class="reg_title_wrap"><span class="reg_txt">联系电话 </span></div>
+                              <div class="reg_field_wrap">
+                                <input type="radio"  class="reg_field reg_txt" checked="checked" name="group1" >
+                                <label class="reg_txt" style="margin-left:5px">移动电话</label>
+                                <input type="radio"  class="reg_field reg_txt" checked="checked" name="group1" >
+                                <label class="reg_txt" style="margin-left:5px">固定电话</label>
+                                <br>
+                                <select name="sel_nation_code2" id="sel_nation_code2" class="reg_select"  style="width:320px;">
+                                  <option value="0">请选择</option>
+                                  <option value="+86" selected="selected">中国 China</option>
+                                  <option value="-1">其他 Others</option>
+                                </select>
+                                <br>
+                                <input class="reg_field" type="text" value="+86" style="width:120px;"/>
+                                <input class="reg_field" type="text" value=""  style="width:180px;"/>
+                              </div>
+                              <div class="reg_prompt_wrap color_red"><img src="images/error.png" alt="" width="12" height="12"> 請輸入联系电话</div>
+                            </div>
+                            <div class="reg_row">
+                              <div class="reg_title_wrap"><span class="reg_txt">E-Mail</span></div>
+                              <div class="reg_field_wrap">
+                                <input type="text" class="reg_field"  value="请填写回复时您常用的电子邮件，此将成为您的注册帐号" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请填写回复时您常用的电子邮件，此将成为您的注册帐号';}" style="width:320px;" />
+                              </div>
+                              <div class="reg_prompt_wrap color_red"> <img src="images/error.png" alt="" width="12" height="12"> 邮箱格式有问题，请修改 </div>
+                            </div>
+                            <div class="reg_row">
+                              <div class="reg_title_wrap"><span class="reg_txt">E-Mail</span></div>
+                              <div class="reg_field_wrap">
+                                <input type="text" class="reg_field"  value="请填写回复时您常用的电子邮件，此将成为您的注册帐号" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请填写回复时您常用的电子邮件，此将成为您的注册帐号';}" style="width:320px;" />
+                              </div>
+                              <div class="reg_prompt_wrap color_red"> <img src="images/error.png" alt="" width="12" height="12"> 邮箱格式有问题，请修改 </div>
+                            </div>
+                            <div class="reg_row">
+                              <div class="reg_title_wrap"><span class="reg_txt">E-Mail</span></div>
+                                <div class="reg_field_wrap">
+                                <input type="text" class="reg_field"  value="请填写回复时您常用的电子邮件，此将成为您的注册帐号" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请填写回复时您常用的电子邮件，此将成为您的注册帐号';}" style="width:320px;" />
+                                </div>
+                                <div class="reg_prompt_wrap color_red">
+                                        <img src="images/error.png" width="12" height="12"> 邮箱格式有问题，请修改
+                                </div>
+                      </div>
+                
+                
+                    
+                            <div class="reg_row">
+                                <div class="reg_title_wrap"><span class="reg_txt">方便联络时间 </span></div>
+                                <div class="reg_field_wrap">                                     
+                                        <div style="width:160px; float:left;"><input type="radio"  class="reg_field" checked="checked" name="group2" ><label class="reg_txt" style="margin-left:5px">09:00 ~ 13:00</label></div>
+                                        <div style="width:160px; float:left;"><input type="radio"  class="reg_field" checked="checked" name="group2" ><label class="reg_txt" style="margin-left:5px">13:00 ~ 18:00 </label></div>
+                                        <div style="width:160px; float:left;"><input type="radio"  class="reg_field" checked="checked" name="group2" ><label class="reg_txt" style="margin-left:5px">18:00 ~ 22:00</label></div>
+                                        <div style="width:160px; float:left;"><input type="radio"  class="reg_field" checked="checked" name="group2" ><label class="reg_txt" style="margin-left:5px">不拘</label></div>
+                                </div>
+                                <div class="reg_prompt_wrap color_red"><img src="images/error.png" width="12" height="12"> 请输入从何处得知</div>
+                            </div>
+                            <div class="reg_row">
+                                <div class="reg_title_wrap"><span class="reg_txt">问题类型</span></div>
+                                			<div class="reg_field_wrap">
+                                											<select class="reg_select" name="sel_contact_us_qtype" id="sel_contact_us_qtype" style="width:320px;">
+                                                                                 <option value="">请选择</option>
+                                                                                 <option value="6">想了解产品与价格</option>
+                                                                                 <option value="4">技术问题</option>
+                                                                                 <option value="1">意见反馈</option>
+                                                                            </select>
+                                                                            
+                              					</div>
+                              					<div class="reg_prompt_wrap color_red"><img src="images/error.png" width="12" height="12"> 请输入年龄</div>
+          					</div>
+                            
+                             <div class="reg_row">
+                                <div class="reg_title_wrap"><span class="reg_txt">问题描述</span></div>
+                                <div class="reg_field_wrap">
+                               		<textarea class="reg_field" style="width:320px; height:100px; resize: none;" ></textarea>
+                                </div>
+                                <div class="reg_prompt_wrap color_red">
+                                        <img src="images/error.png" width="12" height="12"> 邮箱格式有问题，请修改
+                                </div>
+                            </div>
+                            
+                            
+                            <!-- ############# Form部分 end################ -->
+                            <div  class="box_shadow"></div> 
+                            <div class="reg_row"><div class="y_btn" style="margin:auto auto auto 15%;"><a  class="btn_text color_fff" href="#"><div>确认提交</div></a></div></div>
+                            
+                            
+                            </div>
+                                        
+                        
+                        
+                        
+                            
+                    </div>
+                 
+              </div>
+              
+            
+              
+              
+              
+        </div>
+    </div>
+
+</div>
+<!-- #############Content部分 end################ -->
+
+<div class="footer">
+	<div class="footer_links">
+       <div class="box_960">
+   		<div class="foot_logo"><img src="images/footer_logo.png" width="200" height="52"></div>
+        
+       	  <div class="foot_permit">
+           	  <li><img src="images/foot_permit_01.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_02.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_03.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_04.png" width="182" height="34"></li>
+          </div>
+         
+          <div class="foot_links_ul_goup">
+          
+          <ul class="foot_links_ul">
+           	  <li>关于我们</li>
+              <li><a href="#">选择VIPABC的理由</a></li>
+              <li><a href="#">企业沿革</a></li>
+              <li><a href="#">新闻中心</a></li>
+              <li><a href="#">学术交流机构</a></li>
+              <li><a href="#">企业荣耀</a></li>
+              <li><a href="#">网站地图</a></li>
+          </ul>
+         
+         
+         <ul class="foot_links_ul">
+           	  <li>学英文最佳选择</li>
+              <li><a href="#">最弹性的上课时间</a></li>
+              <li><a href="#">最专业的外籍顾问</a></li>
+              <li><a href="#">最隐私的上课环境</a></li>
+              <li><a href="#">最有效的学习方法</a></li>
+              <li><a href="#">最个性化的教材内容</a></li>
+              <li><a href="#">最轻松的真人互动教学</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>我们的课程适合</li>
+              <li><a href="#">上班族 / 专业人士</a></li>
+              <li><a href="#">企业培训</a></li>
+              <li><a href="#">出国游学</a></li>
+              <li><a href="#">孩童/青少年</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>VIPABC 帮你提升</li>
+              <li><a href="#">英语口语</a></li>
+              <li><a href="#">英语听力</a></li>
+              <li><a href="#">英语作文</a></li>
+              <li><a href="#">英语阅读</a></li>
+              <li><a href="#">商务英语</a></li>
+              <li><a href="#">职业英语</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>新闻中心</li>
+              <li><a href="#">最新优惠</a></li>
+              <li><a href="#">公司信息</a></li>
+              <li><a href="#">媒体报导</a></li>
+              <li><a href="#">学习资源</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>英语学习专区</li>
+              <li><a href="#">在线免费讲堂</a></li>
+              <li><a href="#">每日一句</a></li>
+              <li><a href="#">英语电子报</a></li>
+              <li><a href="#">移动学习App</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>与我联系</li>
+              <li><a href="#">在线客服</a></li>
+              <li><a href="#">联络我们</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          </div>
+          
+          <div class="foot_tel"><a href="tel:4006-30-30-30"><img src="images/foot_tel.png" width="184" height="44"></a></div>
+        </div>  
+         
+     </div> 
+    
+	<div class="footer_cert">
+   		 <div class="box_960">
+            <div class="foot_bottom_links">
+            <p>
+                <a href="/About/About">关于VIPABC</a>
+                <a href="/Home/Privacy">隐私保护</a>
+                <a href="/Home/Security">安全条款</a>
+                <a href="/Home/Service">服务条款</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>
+                <a href="/Home/ContactUs">联络我们</a>
+            </p>
+            </div>
+            <div class="footer_cert_icons">
+            <p> 
+                <a href="#"><img src="images/cert/cert_01.jpg" width="106" height="40"></a>
+                <a href="#"><img src="images/cert/cert_02.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_03.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_04.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_05.jpg" width="112" height="40"></a>
+                <a href="#"><img src="images/cert/cert_06.jpg" width="110" height="40"></a>
+            </p>
+            </div>
+            
+            <div class="footer_cert_certline">
+            <p> 教育许可 : 教职成司函 [ 2011 ] 267 号  |  经营许可证 : 京 ICP 证 090121 号  |  京 ICP 备 11004351 号</p>
+            <p> VIPABC.com  版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+            </div>            
+
+         </div>
+    </div>
+</div>
+</body>
+</html>

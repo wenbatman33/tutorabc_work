@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, h1, h2, h3, h4, h5, h6, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, fieldset, figcaption, figure, footer, group, header, hgroup, legend, mark, menu, meter, nav, output, progress, section, summary, time, audio, video {
+border: 0 none;
+margin: 0;
+padding: 0;
+}
+ul, ul li{list-style:none}
+dl{height:1%}
+a:focus{outline:0}
+input:focus{outline:0}
+a{
+color:#ff5a00;
+text-decoration:none;
+outline: none; /* for Firefox Google Chrome */
+behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+a:hover{text-decoration:underline}
+.Clear{clear:both;}
+.Clearleft{clear:left;}
+.Clearright{clear:right;}
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+.clearfix { display: inline-block;} 
+html[xmlns] .clearfix { display: block;} 
+* html .clearfix { height: 1%;}
+.red{color:##ff9000;}
+
+#session_booking{
+	width:698px;
+}
+.session_booking_head .notice{
+	
+	padding:12px 20px;
+	line-height:2em;
+	margin:0 0 30px;
+	color:#666;
+}
+.session_booking_head .notice .notice_t{
+	font-weight:bold;
+	color:#ff9000;
+	margin-bottom:5px;
+	font-size:15px;	
+}
+.session_booking_head .notice ol li{
+	list-style: decimal outside none;
+	font-size:13px;
+	margin-left:22px;
+}
+.session_booking_body{
+	background-color:#eeeeef;
+	font-size:12px;
+}
+.session_booking_body .head_bar{
+	padding:10px;
+}
+.session_booking_body .head_bar .filter{
+	float:left;
+}
+.session_booking_body .head_bar .filter select{
+	width:100px;
+}
+.session_booking_body .head_bar .display_type{
+	float:right;
+	width:62px;
+	padding:0 10px;
+	border-left:1px solid #dfd9b2;
+}
+.session_booking_body .head_bar .display_type .type_btn{
+	float:left;
+	margin:0 0 0 11px;
+	_margin:0 0 0 10px;
+}
+.session_booking_body .head_bar .display_type .type_btn a{
+	width:20px;
+	height:20px;
+	text-indent: -9999px;
+	text-align: left;
+	background-image:url(/images/SpecialSession/ico_display_type.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+}
+.session_booking_body .head_bar .display_type .type_btn a.display_type_cal{
+	background-position: 0 0;
+	cursor: pointer;  /*預設行事曆暗 顯示手指*/
+}
+.session_booking_body .head_bar .display_type .type_btn a.display_type_cal_current,
+.session_booking_body .head_bar .display_type .type_btn a.display_type_cal:hover{
+	background-position: 0 -20px;
+}
+.session_booking_body .head_bar .display_type .type_btn a.display_type_cal_hover{ /*行事曆變亮 顯示箭頭*/ 
+	background-position: 0 -20px;
+	cursor: default;  
+}
+.session_booking_body .head_bar .display_type .type_btn a.display_type_list_hover{ /*列表變暗 顯示手指*/
+	background-position: 0 -40px;
+	cursor: pointer; 
+}
+.session_booking_body .head_bar .display_type .type_btn a.display_type_list{
+	background-position: 0 -40px;
+}
+.session_booking_body .head_bar .display_type .type_btn a.display_type_list_current,
+.session_booking_body .head_bar .display_type .type_btn a.display_type_list:hover{
+	background-position: 0 -60px;
+}
+.session_booking_body .head_bar .lesson_qty{
+	float:right;
+	margin-right:15px;
+}
+.session_booking_body .head_bar .lesson_qty .qty{
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px solid ##ff9000;
+	*text-decoration:underline;
+}
+.session_booking_body .l_c{
+	padding:10px 0;
+	border-bottom:1px solid #FFF;
+}
+.session_booking_body .even{
+	background-color:#fff;
+}
+.session_booking_body .ordered{ /*同時段訂了一對一/一對多*/
+	background-color:#BBBBBB;
+}
+.session_booking_body .checked{ /*訂課完成變藍色*/
+	background-color:#D1E3ED;
+}
+.session_booking_body .CheckedColor{ /*異動checkbox變黃色*/
+	/*background-color:#FFFFBF;*/
+	background-color:#ffffd9;
+}
+.session_booking_body .today{
+	padding:1px 3px;
+	background-color:#e60012;
+	font-size:11px;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin-left:2px;
+}
+
+.session_booking_body .reserved{
+	padding:1px 3px;
+	background-color:##ff9000;
+	font-size:11px;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin-left:-10px;
+}
+
+.session_booking_body .page{
+	text-align:center;
+	margin:10px 0;
+}
+.session_booking_body .page a{
+	padding:2px 3px;
+}
+.session_booking_body .page .current{
+	background-color:##ff9000;
+}
+.session_booking_body .page .current a{
+	color:#FFFFFF;
+}
+.session_booking_body .page a:hover{
+	color:#FFF;
+	background-color:#f84c00;
+	text-decoration:none;
+}
+.session_booking_body .l_c .l_r{
+	float:left;
+	padding:0 5px;
+}
+/*列表*/
+.session_booking_list .l_c .r_01{
+	width:50px;
+	text-align:center;
+}
+/*-------------------checkbox圖-----------------------*/
+.checkbox{
+        display:block;
+        width:19px;
+        height:19px;
+        margin:0 auto;
+}
+.check_on
+{
+    cursor:pointer;
+    background-image:url(/images/SpecialSession/big_in.gif);
+}
+.check_off
+{
+    cursor:pointer;
+    background-image:url(/images/SpecialSession/big_no.gif);
+}
+.disabled{
+    background-image:url(/images/SpecialSession/big_diable.gif);
+}
+
+/*-------------------checkbox圖-----------------------*/
+
+.session_booking_list .l_c .r_02{
+	width:140px;
+}
+
+.session_booking_list .l_c .r_03{
+	width:390px;
+}
+.session_booking_list .l_c .r_04{
+	width:70px;
+	text-align:center;
+}
+.session_booking_list .session_booking_list_h{
+	background-color:#cccccc;
+	color:#FFFFFF;
+	font-size:13px;
+	font-weight:bold;
+}
+.session_booking_list .session_booking_list_l .l_c .r_02{
+	font-size:13px;
+	line-height:1.5em;
+}
+.session_booking_list .session_booking_list_l .l_c .r_02 .consultant_name{
+	font-weight:bold;
+	color:#ff8a00;
+	margin-bottom:5px;
+}
+.session_booking_list .session_booking_list_l .l_c .r_02 .consultant_name .booked{
+	padding:1px 2px;
+	padding:2px 1px 1px\9;
+	background-color:##ff9000;
+	font-size:10px;
+	font-weight:bold;
+	color:#FFFFFF;
+	width:45px;
+	float:right;
+	text-align:center;
+}
+.session_booking_list .session_booking_list_l .l_c .r_02 .consultant_pic img{
+	width:120px;
+}
+.session_booking_list .session_booking_list_l .l_c .r_03 .title_c,
+.session_booking_list .session_booking_list_l .l_c .r_03 .title_e{
+	font-size:13px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+.session_booking_list .session_booking_list_l .l_c .r_03 .desc{
+	line-height:1.5em;
+	padding-top:5px;
+	color:#6c6c6c;
+}
+.session_booking_list .session_booking_list_l .l_c .r_04{
+	font-size:13px;
+	color:#ff8a00;
+}
+.session_booking_list .btn_submit{
+	text-align:center;
+	padding:10px 0;
+	border-top:1px solid #FFF;
+}
+/*行事曆*/
+.session_booking_cal .session_booking_cal_section{
+	background-color:#FFFFFF;	
+	margin-bottom:1px;
+}
+.session_booking_cal .session_booking_cal_section_h a{
+	color:#666666;
+	display:block;
+	background-color:#dfdfdf;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px;
+}
+.session_booking_cal .session_booking_cal_section_h a:hover{
+	text-decoration:none;
+	color:#666666;
+	background-color:#f7f7f7;
+}
+.session_booking_cal .session_booking_cal_section_h a .section_ico{
+	width:11px;
+	height:11px;
+	background-image:url(/images/SpecialSession/ico_section.png);
+}
+.session_booking_cal .session_booking_cal_section_h a .open{
+	background-position:0 0;
+}
+.session_booking_cal .session_booking_cal_section_h a .close{
+	background-position:0 -11px;
+}
+.session_booking_cal .session_booking_cal_section_b{
+	/*background-image:url(/images/SpecialSession/cal_bg.gif);*/
+	background-repeat:repeat-y;
+	background-color:#ffffff;
+}
+.session_booking_cal .session_booking_cal_section_b .even{
+	/*background-image:url(/images/SpecialSession/cal_bg.gif);*/
+	background-repeat:repeat-y;
+	background-color:#eeeeef;
+}
+.session_booking_cal .session_booking_cal_section_b .ordered{ /*同時段訂了一對一/一對多*/
+	/*background-image:url(/images/SpecialSession/cal_bg.gif);*/
+	background-repeat:repeat-y;
+	background-color:#BBBBBB;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c{
+	padding:2px 0 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e6e6e6;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r{
+	padding:0;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .r_01{
+	width:65px;
+	text-align:center;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .r_02,
+.session_booking_cal .session_booking_cal_section_b .c_h .r_03{
+	width:200px;
+	border-left:2px solid #FFF;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .r_04{
+	width:205px;
+	border-left:2px solid #FFF;
+	text-align: left;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .r_02,
+.session_booking_cal .session_booking_cal_section_b .c_h .r_03,
+.session_booking_cal .session_booking_cal_section_b .c_h .r_04{
+	height:19px;
+	background-color:#e3e3e3;
+	position:relative;
+	color:#666666;
+	font-weight:bold;
+	padding-top: 2px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 5px;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .l_r .btn_next{
+	position:absolute;
+	right:auto;
+	top:0px;
+	left: 152px;
+	color: #000000;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .l_r .btn_pre a{ /**/
+	width:65px;
+	height:1px; /*22px*/
+	text-indent: -9999px;
+	text-align: left;
+	background-image:url(/images/SpecialSession/btn_cal.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .l_r .btn_next a{
+	width:45px; /*65px*/
+	height:1px; /*22px*/
+	text-indent: -9999px;
+	text-align: left;
+	background-image:url(/images/SpecialSession/btn_cal.png);
+	background-repeat: no-repeat;
+	background-position: 0 -44px;
+	display: block;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .l_r .btn_pre a:hover{
+	background-position: 0 -22px;
+}
+.session_booking_cal .session_booking_cal_section_b .c_h .l_r .btn_next a:hover{
+	background-position: 0 -66px;
+	color: #FF0000;
+}
+.session_booking_cal .session_booking_cal_section_b .c_l .r_01{
+	padding-top:10px;
+}
+.session_booking_cal .session_booking_cal_section_b .c_l .r_02{
+	width:200px;
+	margin-left:2px;
+}
+.session_booking_cal .session_booking_cal_section_b .c_l .r_03{
+	width:203px;
+	margin-left:6px;
+}
+.session_booking_cal .session_booking_cal_section_b .c_l .r_04{
+	width:190px;
+	margin-left:5px;
+	_margin-left:2px;
+}
+.session_booking_cal .session_booking_cal_section_b .c_l .l_r .r_session{
+	padding:5px;
+	min-height:60px;
+	height: auto !important;
+	height: 62px;
+	position:relative;
+	text-align: left;
+}
+.session_booking_cal .session_booking_cal_section_b .c_l .l_r .r_session:hover{
+	background-color:#f7f7f7;
+	width: 190px;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .title_c{
+	margin-bottom:5px;
+	line-height:1.5em;
+	font-size: 13px;
+	width:180px;
+	height:40px;
+	overflow:hidden;
+	float: none;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .title_c a{
+	color:#666666;
+	display:block;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .title_c a:hover{
+	color:#000;
+	text-decoration:none;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .title_c a .tip{
+	display: none;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .title_c a:hover .tip { 
+	display: block; 
+	position: absolute; 
+	width: 320px;
+	padding: 5px; 
+	z-index: 2000; 
+	color: #000000; 
+	background: #FFFFAA; 
+	font: 12px "Arial", sans-serif;
+	text-align:center; 
+	text-decoration: none;
+	right:0px;
+	bottom:0;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .lv{
+	color:#FF9966;
+	width:105px;
+	float:left;
+}
+.session_booking_cal .session_booking_cal_section_b .l_c .l_r .booked{
+	padding:1px 2px;
+	padding:2px 2px 1px\9;
+	background-color:##ff9000;
+	font-size:10px;
+	font-weight:bold;
+	color:#FFFFFF;
+	width:45px;
+	float:right;
+	text-align:center;
+}
+/*行事曆_確認*/
+.session_booking_detail .l_c .r_01{
+	width:140px;
+	padding-left:20px;
+}
+.session_booking_detail .l_c .r_02{
+	width:390px;
+}
+.session_booking_detail .l_c .r_03{
+	width:72px;
+	text-align:center;
+}
+.session_booking_detail .session_booking_detail_h{
+	background-color:#c9b582;
+	color:#FFFFFF;
+	font-size:13px;
+	font-weight:bold;
+}
+.session_booking_detail .session_booking_detail_l .l_c .r_01{
+	font-size:13px;
+	line-height:1.5em;
+}
+.session_booking_detail .session_booking_detail_l .l_c .r_01 .consultant_name{
+	font-weight:bold;
+	color:#ff8a00;
+	margin-bottom:5px;
+}
+.session_booking_detail .session_booking_detail_l .l_c .r_01 .consultant_pic img{
+	width:120px;
+}
+.session_booking_detail .session_booking_detail_l .l_c .r_02 .title_c,
+.session_booking_detail .session_booking_detail_l .l_c .r_02 .title_e{
+	font-size:13px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+.session_booking_detail .session_booking_detail_l .l_c .r_02 .desc{
+	line-height:1.5em;
+	padding-top:5px;
+	color:#6c6c6c;
+}
+.session_booking_detail .session_booking_detail_l .l_c .r_03{
+	font-size:13px;
+	color:#ff8a00;
+}
+.session_booking_detail .btn_submit{
+	text-align:center;
+	padding:10px 0;
+	border-top:1px solid #FFF;
+}

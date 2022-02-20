@@ -1,0 +1,48 @@
+﻿@{string type = ViewData["type"].ToString();}
+<head>
+    <script type="text/javascript">
+        function changTab(tab) {
+            if (tab == 1) {
+                document.getElementById("AboutTab1").className = "tab_li_L_active";
+                document.getElementById("AboutTab2").className = "tab_li_R";
+
+                document.getElementById("content1").style.display = "block";
+                document.getElementById("content2").style.display = "none";
+
+            }
+            else {
+                document.getElementById("AboutTab1").className = "tab_li_L";
+                document.getElementById("AboutTab2").className = "tab_li_R_active";
+
+                document.getElementById("content1").style.display = "none";
+                document.getElementById("content2").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+            <div class="breadcrumb">
+                <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>移动学习</div>
+            <ul class="tab_ul">
+                <li id="AboutTab1" class="tab_li_L_active" style="width: 50%" onclick="changTab(1);">
+                    <span class="tab_li_span">iOS</span></li>
+                <li id="AboutTab2" class="tab_li_R" style="width: 50%" onclick="changTab(2);"><span
+                    class="tab_li_span"><span class="tab_li_span">Android</a></span></li>
+            </ul>
+            <!-- #############iOS################ -->
+            <div id="content1" style="display: block;">
+                <iframe frameborder="0" height="100%" width="100%"  scrolling="no"
+                    src="@Url.Content("~/App/IOS")?type=@type" style="height:1750px;"></iframe>
+            </div>
+            <!-- #############iOS################ -->
+            <!-- #############Android################ -->
+            <div id="content2" style="display: none;">
+                <iframe frameborder="0" height="100%" width="100%"  scrolling="no"
+                    src="@Url.Content("~/App/Android")" style="height:1250px;"></iframe>
+            </div>
+            <!-- #############Android################ -->
+        </div>
+    </div>
+</div>

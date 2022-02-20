@@ -1,0 +1,55 @@
+
+body { font-family:Verdana; font-size:14px; margin:0; background:url(images/bg_all.gif) repeat:repeat-y center;  }
+ul li{list-style:none; margin:0 ; padding:0}
+a:link    {color:#333333; text-decoration:none; }
+a:visited {color:#333333; text-decoration:none;}
+a:active  {color:#333333; text-decoration:none;}
+a:hover   {color:#333333; text-decoration:none;}
+
+#container {margin:0 auto; width:960px;}
+#header { height:90px;  margin-bottom:5px;}
+#mainContent { display:block; margin-bottom:5px;}
+#sidebar { float:left; width:205px; background:#fff;}
+#content { float:left; width:680px;  background:#fff; padding:0px;}/*因为是固定宽度，采用左右浮动方法可有效避免ie 3像素bug*/
+#footer { height:60px; width:960px; background:#ffffff; clear:both}
+
+/*2012顶部启明投资新闻==================================================*/
+#top_news{ height:30px; background:#5ab700;}
+.topmain{ width:960px; margin:0 auto;}
+.topleft{ color:#fff000; font-size:14px; font-weight:bold; float:left; line-height:30px;}
+.topright{font-size:12px; color:#fff; float:right; line-height:30px;}
+.topright a{font-size:12px; color:#fff; text-decoration:none; font-weight:bold;}
+.topright a:hover{font-size:12px; color:#bbbbbb; text-decoration:none;font-weight:bold;}
+.topleft a{color:#fff; font-size:14px; font-weight:bold; text-decoration:none;}
+.topleft a:link{color:#fff; font-size:14px; font-weight:bold; text-decoration:none;}
+.topleft a:visited{color:#fff; font-size:14px; font-weight:bold; text-decoration:none;}
+.topleft a:hover{color:#fff; font-size:14px; font-weight:bold; text-decoration:underline;}
+/*2012顶部启明投资新闻==================================================*/
+.mainbanner{height:201px; width:683px;}
+.girlpic{position:absolute; top:40px;}
+.rightcontainer{width:236px;  height:100%;min-height:500px; margin:0px 0px 0px 25px; position:relative; background:#fffe9a;}
+.lableright{
+	position:absolute;ww
+	top:13px;
+	left:-24px;
+}
+
+.videoright{ width:225px;margin:0px auto; position:relative}
+.maincontent .location{height:40px; color:#5ab700; line-height:38px; font-size:12px}
+
+.font_green{ font-size:12px;  color:#5ab700;}
+.font_green:link{ font-size:12px;  color:#5ab700; text-decoration:none;}
+.font_green:visited{ font-size:12px;  color:#5ab700; text-decoration:none;}
+.font_green:active{ font-size:12px;  color:#5ab700; text-decoration:none;}
+.font_green:hover{ font-size:12px;  color:#5ab700; text-decoration:underline;}
+
+.font_greend{ font-size:12px;  color:#006600;}
+.font_greend:link{ font-size:12px;  color:#006600; text-decoration:underline;}
+.font_greend:visited{ font-size:12px;  color:#006600; text-decoration:underline;}
+.font_greend:active{ font-size:12px;  color:#006600; text-decoration:underline;}
+.font_greend:hover{ font-size:12px;  color:#006600; text-decoration:none;}
+
+.statusboard{ background:#f4ffef; padding:20px;}
+
+.subtitle {height:40px; color:#5ab700; line-height:38px; font-size:12px; margin-left:20px;}
+.accounttable td{ padding:2px}

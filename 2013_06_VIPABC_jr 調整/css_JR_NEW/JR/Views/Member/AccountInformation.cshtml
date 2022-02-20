@@ -1,0 +1,218 @@
+﻿@model TutorGroup.VIPABCJR.Member.ViewModels.AccountInformationViewModel
+<script type="text/javascript">
+    $(document).ready(function () {
+        getControlClass('AccountInformation');
+    });
+
+    function getControlClass(p_aName) {
+        $("#" + p_aName).css({ color: "#FFFFFF" });
+        $("#" + p_aName).removeClass();
+        $("#" + p_aName).addClass("top_class_N3");
+    }
+</script>
+<div id="content" style="width: 700px;">
+    <div class="menber_membox">
+    <div class="page_title_5"><h2 class="page_title_h2">账户资讯</h2></div>
+    <div class="box_shadow" style="background-position:-80px 0px;"></div>
+        <!--<img src="images/banner1.jpg" width="683" height="201" />-->
+        <!--內容start-->
+        <div class="main_membox">
+            <!--上版位課程start-->
+            <div class="top_class5">
+                <h1>
+                    <span class="bold">目前等级：Level @Model.Level</span><br />
+                </h1>
+            </div>
+            <a id="a_learning_record" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent">上课记录&amp;评分</a> 
+            <a id="a_learning_word" class="top_class_N2" href="/program/member/learning_word.asp" target="_parent">我的单词银行</a> 
+            <a id="a_learning_learn_old" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=2" target="_parent">帐户资讯</a> 
+            <a id="a_learning_level" class="top_class_N2" href="/program/member/learning_level.asp" target="_parent">程度分析</a> 
+            <a id="a_learning_dcgs" class="top_class_N4" href="/program/aspx/AspxLogin.asp?url_id=5" target="_parent">DCGS学习偏好设置</a> 
+            <a id="a_learning_review" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=4" target="_parent">咨询复习</a>
+            <div class="top_block">
+            </div>
+            <!--上版位課程end-->
+            <div class="arrow_title">
+                课程购买明细</div>
+            <div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="history_bd">
+                    <tr>
+                        <th>
+                            购买日期
+                        </th>
+                        <th>
+                            购买课时数
+                        </th>
+                        <th>
+                            赠送课时数
+                        </th>
+                        <th>
+                            总课时数新增
+                        </th>
+                        <th>
+                            合约
+                        </th>
+                        <th class="rightLine">
+                            备注
+                        </th>
+                    </tr>
+                    @if (Model.ContractInfoList.Count() > 0)
+                    {
+                        foreach (TutorGroup.VIPABCJR.Member.ViewModels.ContractViewModel i in Model.ContractInfoList)
+                        {
+                        <tr>
+                            <td>@i.ContractInputTime
+                            </td>
+                            <td>@i.ContractOriginalSession
+                            </td>
+                            <td>@i.ContractGiftSession
+                            </td>
+                            <td>@i.TotoalSession
+                            </td>
+                            <td>
+                                <a href="/program/member/contract.asp?contract_sn=@i.ContractSn" target="_parent">
+                                    合约预览</a>
+                            </td>
+                            <td class="rightLine">
+                                产品期限 @(i.ContractServiceStartDate)
+                                - @(i.ContractServiceEndDate)
+                            </td>
+                        </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6">
+                                NO Data
+                            </td>
+                        </tr>
+                    }
+                </table>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="arrow_title">
+                课时数使用纪录</div>
+            <div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="bought_bd">
+                    <tr>
+                        <th>
+                            可使用总课时数
+                        </th>
+                        <th rowspan="2" class="width_30">
+                            -
+                        </th>
+                        <th>
+                            已使用课时数(含已预约)
+                        </th>
+                        <th rowspan="2" class="width_30">
+                            =
+                        </th>
+                        <th class="rightLine">
+                            目前剩余课时数
+                        </th>
+                    </tr>
+                    @if (Model.ContractInfoList.Count() > 0)
+                    {
+                        foreach (TutorGroup.VIPABCJR.Member.ViewModels.ContractViewModel i in Model.ContractInfoList)
+                        {
+                        <tr>
+                            <td>@i.TotoalSession
+                            </td>
+                            <td>@i.ContractUsedSession
+                            </td>
+                            <td class="rightLine">@i.AvaliableSession
+                            </td>
+                        </tr>
+                        }
+                    }
+                </table>
+                <div class="clear">
+                </div>
+            </div>
+            @*<div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="bought_bd">
+                    <tr>
+                        <th>可使用总录像赠送时数</th>
+                        <th rowspan="2" class="width_30">-</th>
+                        <th>已使用总录像赠送时数(含已预约)</th>
+                        <th rowspan="2" class="width_30">=</th>
+                        <th class="rightLine">目前剩余录像赠送时数</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="rightLine"></td>
+                    </tr>
+                </table>
+                <div class="clear"></div>
+            </div>*@ @*<div>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bought_bd">
+                    <tr>
+                        <th class="width_100">日期</th>
+                        <th class="width_100">时间</th>
+                        <th>详细说明</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center">No Data</td>
+                    </tr>
+                </table>
+                <div class="clear"></div>
+            </div>*@
+            <div>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bought_bd">
+                    <tr>
+                        <th class="width_100">
+                            日期
+                        </th>
+                        <th class="width_100">
+                            时间
+                        </th>
+                        <th>
+                            详细说明
+                        </th>
+                    </tr>
+                    @if (Model.SessionRecordList.Count() > 0)
+                    {
+                        foreach (TutorGroup.VIPABCJR.Member.Models.SessionRecordList i in Model.SessionRecordList)
+                        {
+                        <tr>
+                            <td>
+                                @i.ClassStartDate.ToString("yyyy-MM-dd")
+                            </td>
+                            <td>
+                                @(i.ClassStartTime + ":30 - " + new DateTime(i.ClassStartDate.Year, i.ClassStartDate.Month, i.ClassStartDate.Day, i.ClassStartTime, 30, 0).AddMinutes(45).ToString("HH:mm"))
+                            </td>
+                            <td class="main_ct">
+                                &nbsp;
+                                @if (String.IsNullOrWhiteSpace(i.MaterialTitle))
+                                {
+                                    <font color="black">session time has not yet arrived &nbsp;</font><!--</a>-->
+                                }
+                                else
+                                {
+                                    <!--<a href="learning_record_detail.asp?session_sn=2013022718848&read_only=y" class="account">-->
+                                    <font color="blue"><a href="/program/member/learning_record_detail_JR.asp?session_sn=@i.session_sn&read_only=y" target="_parent">@i.MaterialTitle </a>&nbsp;</font><!--</a>--> 
+                                }
+                            </td>
+                        </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3">
+                                NO Data
+                            </td>
+                        </tr>
+                    }
+                </table>
+                <div class="clear">
+                </div>
+            </div>
+            <font id="div_abc_inner_main_contents"></font>
+        </div>
+        <!--內容end-->
+    </div>
+</div>

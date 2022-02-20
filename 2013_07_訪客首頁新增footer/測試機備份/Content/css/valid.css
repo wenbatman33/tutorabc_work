@@ -1,0 +1,12 @@
+.Correct,.Wrong,.Exp{height:20px;line-height:19px;padding:2px 5px 2px 2em;font-size:12px;}
+.Correct{background:url(../images/register.png) 5px 2px no-repeat;color:#008800;}
+.Wrong{background:url(../images/register.png) 5px -79px no-repeat;color:#8b2b34;}
+
+.btnSubmit
+{
+    width:105px;
+    height:37px;
+    border:none;
+    cursor:pointer;
+    background-image:url("../images/register_btn.png");
+    }

@@ -1,0 +1,145 @@
+﻿@model NewVIPABC.Models.Epaper
+@using NewVIPABC.Extensions;
+@{int maxpage = Convert.ToInt32(HttpContext.Current.Session["maxpage"]);}
+@{var EpaperList = ViewData["EpaperList"] as IEnumerable<NewVIPABC.Models.Epaper>;}
+<head>
+    <script language="javascript" type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.jplayer.min.js")"></script>
+    <link href="@Url.Content("~/Content/css/jplayer.blue.monday.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/html.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function changePage(page) {
+            //转页
+            document.getElementById("form1").action = '@Url.Action("EpaperList", "Epaper")?type='+@Model.EpaperType+'&page='+ page;
+            document.getElementById("form1").submit();
+        }
+        function changeClass(type) {          
+            document.getElementById("form1").action = '@Url.Action("EpaperList", "Epaper")?type='+type;
+            document.getElementById("form1").submit();
+        }
+         function changeUrl(ID) {
+            //转页
+            window.location.href='@Url.Action("EpaperDetail", "Epaper")?epaperType='+@Model.EpaperType+'&ID='+ID;          
+        }
+    </script>
+</head>
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+            <div class="breadcrumb">
+                <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>学习报</div>
+            <ul class="tab_ul">
+                @if (@Model.EpaperType == 1)
+                {
+                    <li id="li1" class="tab_li_L_active" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                        <span class="tab_li_span">商业科技</span></li>
+                    <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                        <span class="tab_li_span">旅游探索</span></li>
+                    <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                        <span class="tab_li_span">生活娱乐</span></li>
+                    <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                        <span class="tab_li_span">健康医学</span></li>
+                    <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                        <span class="tab_li_span">人文艺术</span></li>
+                }
+                else if (@Model.EpaperType == 2)
+                {
+                    <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                        <span class="tab_li_span">商业科技</span></li>
+                    <li id="li2" class="tab_li_M_active" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                        <span class="tab_li_span">旅游探索</span></li>
+                    <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                        <span class="tab_li_span">生活娱乐</span></li>
+                    <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                        <span class="tab_li_span">健康医学</span></li>
+                    <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                        <span class="tab_li_span">人文艺术</span></li>
+                }
+                else if (@Model.EpaperType == 3)
+                {
+                    <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                        <span class="tab_li_span">商业科技</span></li>
+                    <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                        <span class="tab_li_span">旅游探索</span></li>
+                    <li id="li3" class="tab_li_M_active" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                        <span class="tab_li_span">生活娱乐</span></li>
+                    <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                        <span class="tab_li_span">健康医学</span></li>
+                    <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                        <span class="tab_li_span">人文艺术</span></li>
+                }
+                else if (@Model.EpaperType == 4)
+                {
+                    <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                        <span class="tab_li_span">商业科技</span></li>
+                    <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                        <span class="tab_li_span">旅游探索</span></li>
+                    <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                        <span class="tab_li_span">生活娱乐</span></li>
+                    <li id="li4" class="tab_li_M_active" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                        <span class="tab_li_span">健康医学</span></li>
+                    <li id="li5" class="tab_li_R" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                        <span class="tab_li_span">人文艺术</span></li>
+                }
+                else
+                {
+                    <li id="li1" class="tab_li_L" style="width: 20%; cursor: pointer;" onclick="changeClass(1)">
+                        <span class="tab_li_span">商业科技</span></li>
+                    <li id="li2" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(2)">
+                        <span class="tab_li_span">旅游探索</span></li>
+                    <li id="li3" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(3)">
+                        <span class="tab_li_span">生活娱乐</span></li>
+                    <li id="li4" class="tab_li_M" style="width: 20%; cursor: pointer;" onclick="changeClass(4)">
+                        <span class="tab_li_span">健康医学</span></li>
+                    <li id="li5" class="tab_li_R_active" style="width: 20%; cursor: pointer;" onclick="changeClass(5)">
+                        <span class="tab_li_span">人文艺术</span></li>
+                }
+            </ul>
+            <div id="divArticle" style="">
+                <div id="tab1">
+                    @{var i = 0; }
+                    @using (Html.BeginForm("EpaperList", "Epaper", FormMethod.Post, new { name = "form1", id = "form1", pagevalue = "1" }))
+                    {
+                        if (EpaperList != null && EpaperList.Count() > 0)
+                        {
+                            foreach (var item in EpaperList)
+                            {
+                                var contentid = "content" + i;
+                                var hiddenid = "hidden" + i;
+                        <div class="epaper_list" style="display: block;">
+                            <a href="javascript:void(0)" onclick="changeUrl(@item.ID);">
+                                <img src="@item.Images.pic215x145" width="100" height="83"/>
+                            </a>
+                            <div class="list_top">
+                                <a href="javascript:void(0)" onclick="changeUrl(@item.ID);">
+                                    @item.Name
+                                    <br />
+                                    @item.Localizations.En.Name</a></div>
+                            <div class="list_bottom">
+                                <a id="@contentid" href="javascript:void(0)" onclick="changeUrl(@item.ID);"></a>
+                            </div>
+                        </div>
+                        <input id="@hiddenid" type="hidden" value="@item.Content" />
+                                                              i++;
+                            }
+                        }
+                        <div class="epaper_page">
+                            @Html.Pager(@Model.nowpage, @maxpage)
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+           for(var j=0;j<@i;j++)
+           {
+           var contentid = "content" + j;
+           var hiddenid="hidden"+j;
+           var content=document.getElementById(hiddenid).value;
+           if(content.length>260)
+           {
+           content=content.substr(0,260)+"...";
+           }
+           document.getElementById(contentid).innerHTML = content;
+           }
+    </script>

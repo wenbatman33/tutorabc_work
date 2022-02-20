@@ -1,0 +1,271 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="fixed_box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <input type="button" value="立即预约" class="y_btn" >  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>服务条款</div>
+                    
+               
+              
+				<div class="div_abc_outer_main_continent"><!--contents start-->       
+           <!--contents end-->
+        <div class="terms_main">    欢迎您加入「VIPABC」免费会员（含正式会员适用）并使用「VIPABC」所提供之各项会员服务（以下简称本服务），「VIPABC」网站（以下简称本网站）是由「TutorGroup麦奇教育集团」（以下简称本公司）所建置，当您注册完成或开始使用本服务时，即视为您已经阅读、了解并同意本公司之会员服务条款（以下简称本服务条款），关于本服务条款系为规范您与本公司间之契约。如果您不同意本服务条款的内容，或者您所属国家或地区排除本约定内容之全部或一部时，您应立即停止使用「VIPABC」会员服务。    <p>如您是未满十八岁之未成年人，则您必须在加入会员前将本服务条款请您的父母、法定代理人或监护人阅读并得到其同意，才可以注册及使用「VIPABC」所提供之会员服务。当您使用「VIPABC」所提供之服务时，则视为您的父母或监护人已经阅读、了解并同意本服务条款。</p>    <p><span class="bold">一、您的注册义务</span><br>（一）请依注册申请程序所提示之项目，登录您本人正确、真实及完整之个人资料。当您的个人资料有异动时，请立即予以更新，以维持您个人资料之正确、真实及完整。如因您登录资料不实或冒用他人名义，以致个人权利受有损害或有侵害他人之权利或有违反法令时，应自负相关之法律责任。<br>（二）如您所提供个人资料有误或个人资料异动但未予更新，以致于与原登录之数据不符时，本公司有权随时终止会员资格及各项会员服务。</p>    <p><span class="bold">二、会员服务</span><br>（一）您依注册程序登录并经本公司完成相关设定后，您即取得会员之资格，并可以开始使用本服务。<br>（二）当您成为「VIPABC」会员后而得使用之各项会员服务时，其所有权或使用权利仍属本公司及其所约定之人，所有会员仅得依本服务条款之约定使用，不得出租、出借、移转或让予给其他第三人使用。<br>（三）本公司有权增加、变更或取消会员服务中相关系统或功能之全部或一部之权利，无须个别通知会员；且有关现行或尔后之各项服务均受本服务条款之规范。</p>    <p><span class="bold">三、「VIPABC」隐私权保护政策</span><br>您的注册数据及其他相关数据，均受到「VIPABC」隐私权保护政策」所保护，有关「VIPABC」隐私权保护，请详阅「VIPABC」首页上「隐私权政策」，以了解并保障您的权益。但会员于上课期间所纪录之影像、声音及教材等内容，同意无偿供本公司于相关产品之改善、宣传及营销时使用。</p>   <p><span class="bold">四、会员账号及密码之保管</span><br>（一）您注册完成后将会取得一组账号及密码，您有义务妥善保管您的账号及密码之机密与安全，不得泄漏给任何以外第三人。您必须为此组账号及密码之一切行为负责，此组账号及密码所做之一切行为即视为您本身之行为。<br>（二）本组账号及密码仅限于您个人使用，非经本公司之同意，您不得出租、出借、移转或让与给其他第三人使用。<br>（三）如您发现您的账号及密码遭盗用或其他不当使用，您必须立即通知「VIPABC」，以利本公司采取相关措施。但不得将本公司所采取之措施解释为本公司对您有明示或默示担保或赔偿责任，对于您的账号及密码遭人非法使用，本公司亦无法负任何赔偿责任。<br>（四）每次使用完毕后，应确实注销并结束您账号及密码的使用，以防止被他人盗用。</p>   <p><span class="bold">五、会员之权利</span><br>「VIPABC」为您提供了不可转让、非专利、有存取、使用与显示的权限限制的网站内容，您在开始使用这些内容时必须遵守这些相关的规定。此网站上的数据只供您做为私人与非商业的用途来使用。而此网站所提供的特定服务则只有「VIPABC」的注册会员才能使用。在您注册购买「VIPABC」 所提供的服务或者免费试用服务时，也就表示您同意接受在本公司及「VIPABC」网站上中所列示的各项条款与规定。</p>   <p><span class="bold">六、会员之义务</span><br>（一）会员不得利用「VIPABC」会员服务，进行任何商业行为或以任何方式非法使用。<br>（二）会员同意接受「VIPABC」会员中心寄发的会员电子报，或特别优惠、促销活动及其他相关信息。<br>（三）会员除应遵守本服务条款之约定外，并同意遵守本公司各项服务营业规章与会员所在当地国家法令及因特网之国际使用惯例与礼节，且不得有从事下列或有类似之行为：<br>1、有窃取、更改、破坏他人信息，或有擅自复制他人信息转售、转载情事者。<br>2、未经对方同意，擅自寄发电子广告信件至对方信箱者，或蓄意破坏他人信箱或其通信设备者。<br>3、于论坛区张贴与主题无关之讯息者。<br>4、散播计算机病毒者。<br>5、公布或传送任何诽谤、侮辱、具威胁性、攻击、不雅、猥亵、不实，或有违背公序良俗、字义、图片或任何形式的档案于「VIPABC」网站上。<br>6、撷取、转寄、播放非经所有人正式开放或授权之资源者。<br>7、有侵害他人名誉、隐私权、营业秘密、知识产权或其他相关之权利，或有侵害之虞者。<br>8、未经同意收集他人电子邮件地址及其他个人资料者。<br>9、传送、张贴广告，或发表或任何虚伪不实或引人错误及其他之表示或表征者。<br>10、其他有危害通信、违反相关法令或本公司规定之情事或之虞者。<br>（四）上述规定不代表本公司对会员传送、张贴或发表之内容做任何形式或实质之审查，会员必须对自己所做之行为负责。如经本公司察觉或经他人申诉会员有违反上述各款情事或之虞时，本公司除有权径行移除或删除该内容外，并有权终止或暂停该会员之资格及各项会员服务。本公司如因此产生损害时，并得依法向该会员请求赔偿。<br>（五）本公司有权自行判断是否经由会员账号所传送之电子广告信件，或其它未经同意之大宗电子邮件，如经本公司确定为会员账号所为时，本公司有权立即终止该账号之使用，并得向该账号之拥有者请求损害赔偿。</p>    <p><span class="bold">七、服务暂停或中断</span><br>（一） 本公司于下列情形之一时，得暂停或中断本服务之全部或一部，对于使用会员不负担任何赔偿责任：<br>1、对于本网站相关系统设备进行迁移、更换或维护时。<br>2、因地震、台风等天然灾害、战争、政府禁令等等不可归责于本公司所造成之服务停止或中断或网络之线路质量。<br>（二）如因本公司对于本网站相关系统设备进行迁移、更换或维护而必须暂停或中断该全部或一部之服务时，本公司于暂停或中断前将以电子邮件通知或于本网站上公告。<br>（三）因使用者违反本服务条款或法令，或有不可归责本公司之事由，而造成本服务之全部或一部暂停或中断时，暂停或中断期间之费用仍须依正常标准计费及缴纳。<br>（四）对于本服务之暂停或中断，有可能造成您使用上的不便、数据遗失或其他经济及时间上之损失，您平时应采取适当的防护措施，以保障您的权益。</p>   <p><span class="bold">八、网络资源之使用</span><br>（一）因特网系开放性网络，并由各网络提供者负责维护，本公司无法就会员撷取信息资源之正确性、完整性、安全性、可靠性、合适性、线路中断及错误负责，亦无法保证用户与本公司间数据传输速率，会员如因传输速率或撷取使用网络数据而导致直接或间接之损害或损失时，本公司不负任何损害赔偿责任。<br>（二）本服务网络上可撷取之任何资源，皆属该数据所有者所拥有，使用会员应遵守各该网络信息所有者之授权或其他法律规定，否则不得使用该等资源，如因此导致任何责任皆由使用者自行负责，概与本公司无涉。</p>    <p><span class="bold">九、会员服务之措施及限制</span><br>（一）您同意本公司有权就本服务订定相关的措施及限制，包括但不限于：电子邮件信箱空间之容量、电子邮件讯息可收发之最大档案、同一电子邮件讯息可发送至不同地址之上限及特定时间内本服务使用次数及每次使用时间之上限。<br>（二）如本公司将会员传送之任何讯息及内容删除或未储存，本公司不负担任何损害赔偿责任，请应自行定期备份数据。<br>（三）本公司得因业务考虑，随时变更该措施及限制，对于前述所做之变更，将不对会员个别通知或公告。</p>   <p><span class="bold">十、信息或建议</span><br>本网站所出现的信息可能因为本公司、第三方及相关电信业者网络系统软硬件设备之故障或失灵，而全部或一部暂时无法使用、或造成数据传输错误、或遭黑客侵入系统窜改或伪造变造数据等；因此使用者在阅读或使用所有出现在本网站上的信息时，包括各种数据、建议、分析、评论和报导等，都应该特别谨慎，该等信息既不代表本公司的言论或意见，本公司也无法担保其真实性、完整性及可信度。本网站所有信息和链接，都只是为了提供给使用者自行研究参考，并非对使用者作任何有关专业建议或暗示，亦无法取代或补充专业顾问之个别分析建议，使用者在作成任何具体决定时，应该自行谨慎作成判断，或者另外洽询专业顾问。用户基于本网站上的任何信息所作成的任何决定，都必须自行负担风险，本公司不负任何之责。</p><p><span class="bold">十一、与第三人网站之连结</span><br>本网站如有提供搜索引擎之服务时，仅于提供使用者方便且迅速查询到用户想要的信息，您所查到的数据是使用搜索引擎之结果，不代表本公司与连结网站之业者有任何合作关系。如您因进入该网站而产生之纠纷或损害，请您径行与该网站之业者联系，本公司不负任何责任。</p><p><span class="bold">十二、广告</span><br>本网站如有传播或刊载之广告，关于其内容所展现的文字、图片、动画、声音、影像或以其他方式对商品或服务之说明，都是由广告主或广告代理商所提供。对于广告之内容，本公司基于尊重广告主或广告代理商权利，不对广告之内容进行审查，您应该自行判断该广告的正确性及可信度，本公司不对该广告做任何担保。</p><p><span class="bold">十三、商品或服务之交易</span><br>如果您透过本网站与网络上其他厂商或业者进行商品或服务之买卖或各种交易行为，此时仅该厂商或业者与您有契约关系存在，本公司并不介入或参与。如该商品或服务有任何瑕疵或纠纷时，请您径行与该厂商或业者联络解决，本公司对此不负任何担保责任。如果商品或服务系由本公司所提供，则相关权利义务依各会员服务所订定之规定办理。</p><p><span class="bold">十四、内容提供商</span><br>本网站之内容如由本公司有合作关系之业者或厂商所提供时，本公司基于尊重他人知识产权及其他权益，不对其所提供之内容做任何实质的审查，使用者对于内容之正确性及可靠性应审慎判断，本公司不对此作任何的担保。该内容如有不实或错误，您应该径行向该内容提供商反映。</p><p><span class="bold">十五、担保责任之免除</span><br>（一）本公司各项会员服务，依本公司既有之规划提供，对于特定使用者之特殊需求，本公司不担保本服务将符合您的所有需求。<br>（二）本公司不担保各项服务之正确、完整、安全、可靠、合适、时效、稳定、不会断线及出错。您同意对于您所传送之电子邮件、档案及其他数据做备份。关于因传送过程而造成电子邮件、档案及其他数据之遗失，本公司不负任何担保责任。<br>（三）对于您在本服务中所下载之电子邮件、档案及其他数据，您应该自行考虑其风险，如因下载而造成您计算机系统的损坏或计算机中数据的遗失，本公司不负任何担保责任。</p><p><span class="bold">十六、会员内容之保留或揭露</span><br>（一）本公司不对于会员所传送、张贴或发表之内容（包括但不限于文字、图片、音乐、影像、软件、信息及各种数据等）做任何形式或实质之审查，亦不担保其正确、完整、安全或可靠。会员对于使用由其他会员所提供之内容应自行考虑其风险。<br>（二）本公司基于下列理由会将会员所传送、张贴、发表或使用课程之内容保留或揭露：<br>1、司法或检调、警察机关侦查犯罪需要时。<br>2、政府机关依法律程序要求时。<br>3、因会员之行为违反法令或本公司相关服务条款之规定时。<br>4、基于维护公益或保护本公司或他人之权利。</p><p><span class="bold">十七、知识产权</span><br>本网站上所显示、使用或提供之软件、程序及内容（包括但不限于文字、说明、图画、图片、图形、档案、页面设计、网站规划与安排等）之专利权、著作权、商标权、营业秘密、专门技术及其他知识产权均属本公司或其他权利人所有，非经权利人事先书面授权同意，会员不得重制、公开传播、公开播送、公开上映、改作、编辑、出租、散布、进行还原工程、解编、反向组译、或其他方式之使用。如有违反时，除应自行负法律责任外，因而对本公司造成损害或损失，本公司得向该会员请求损害赔偿。</p><p><span class="bold">十八、特别规定</span><br>本服务条款系就本网站之各项服务所作之一般规定，如各该会员服务有特别规定时，则先依各该特别规定。</p><p><span class="bold">十九、服务条款之增订及修改</span><br>本服务条款如有增订或修改，您同意自该修订条款于本网站公告之日起受其约束，本网站将不对会员个别通知。如您于公告后继续使用本服务，则视为您已经同意该修订条款。</p>
+  <font id="div_abc_inner_main_contents"></font>
+    </div></div>
+              
+            
+              
+              
+              
+      </div>
+    </div>
+</div>
+<!-- #############Content部分 end################ -->
+
+<div class="footer">
+	<div class="footer_links">
+       <div class="box_960">
+   		<div class="foot_logo"><img src="images/footer_logo.png" width="200" height="52"></div>
+        
+       	  <div class="foot_permit">
+           	  <li><img src="images/foot_permit_01.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_02.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_03.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_04.png" width="182" height="34"></li>
+          </div>
+         
+          <div class="foot_links_ul_goup">
+          
+          <ul class="foot_links_ul">
+           	  <li>关于我们</li>
+              <li><a href="#">选择VIPABC的理由</a></li>
+              <li><a href="#">企业沿革</a></li>
+              <li><a href="#">新闻中心</a></li>
+              <li><a href="#">学术交流机构</a></li>
+              <li><a href="#">企业荣耀</a></li>
+              <li><a href="#">网站地图</a></li>
+          </ul>
+         
+         
+         <ul class="foot_links_ul">
+           	  <li>学英文最佳选择</li>
+              <li><a href="#">最弹性的上课时间</a></li>
+              <li><a href="#">最专业的外籍顾问</a></li>
+              <li><a href="#">最隐私的上课环境</a></li>
+              <li><a href="#">最有效的学习方法</a></li>
+              <li><a href="#">最个性化的教材内容</a></li>
+              <li><a href="#">最轻松的真人互动教学</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>我们的课程适合</li>
+              <li><a href="#">上班族 / 专业人士</a></li>
+              <li><a href="#">企业培训</a></li>
+              <li><a href="#">出国游学</a></li>
+              <li><a href="#">孩童/青少年</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>VIPABC 帮你提升</li>
+              <li><a href="#">英语口语</a></li>
+              <li><a href="#">英语听力</a></li>
+              <li><a href="#">英语作文</a></li>
+              <li><a href="#">英语阅读</a></li>
+              <li><a href="#">商务英语</a></li>
+              <li><a href="#">职业英语</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>新闻中心</li>
+              <li><a href="#">最新优惠</a></li>
+              <li><a href="#">公司信息</a></li>
+              <li><a href="#">媒体报导</a></li>
+              <li><a href="#">学习资源</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>英语学习专区</li>
+              <li><a href="#">在线免费讲堂</a></li>
+              <li><a href="#">每日一句</a></li>
+              <li><a href="#">英语电子报</a></li>
+              <li><a href="#">移动学习App</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>与我联系</li>
+              <li><a href="#">在线客服</a></li>
+              <li><a href="#">联络我们</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          </div>
+          
+          <div class="foot_tel"><a href="tel:4006-30-30-30"><img src="images/foot_tel.png" width="184" height="44"></a></div>
+        </div>  
+         
+     </div> 
+    
+	<div class="footer_cert">
+   		 <div class="box_960">
+            <div class="foot_bottom_links">
+            <p>
+                <a href="/About/About">关于VIPABC</a>
+                <a href="/Home/Privacy">隐私保护</a>
+                <a href="/Home/Security">安全条款</a>
+                <a href="/Home/Service">服务条款</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>
+                <a href="/Home/ContactUs">联络我们</a>
+            </p>
+            </div>
+            <div class="footer_cert_icons">
+            <p> 
+                <a href="#"><img src="images/cert/cert_01.jpg" width="106" height="40"></a>
+                <a href="#"><img src="images/cert/cert_02.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_03.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_04.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_05.jpg" width="112" height="40"></a>
+                <a href="#"><img src="images/cert/cert_06.jpg" width="110" height="40"></a>
+            </p>
+            </div>
+            
+            <div class="footer_cert_certline">
+            <p> 教育许可 : 教职成司函 [ 2011 ] 267 号  |  经营许可证 : 京 ICP 证 090121 号  |  京 ICP 备 11004351 号</p>
+            <p> VIPABC.com  版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+            </div>            
+
+         </div>
+    </div>
+</div>
+</body>
+</html>

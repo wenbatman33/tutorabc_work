@@ -1,0 +1,453 @@
+﻿@model List<TutorGroup.VIPABCJR.Member.Models.SessionRecordList>
+@{
+    ViewBag.Title = "諮詢複習與練習";
+}
+<script type="text/javascript" src="http://www.tutormeet.com/js/jcbean.js"></script>
+<style type="text/css">
+    html *
+    {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+    }
+    .nav
+    {
+        margin-top: 200px;
+    }
+    .nav *
+    {
+        text-decoration: none;
+        font-size: 9pt;
+    }
+    .nav * a:hover
+    {
+        background-color: #77ad1c; /* 鼠标经过时的红色背景，可自定义 */
+        color: #FFFFFF;
+    }
+    .menu    
+    {
+        list-style: none;
+        height: 40px;
+        width: 100%;
+        background-color: #ffffff;
+        margin-top: 0px;
+    }
+    .nav
+    {
+        list-style: none;
+        height: 40px;
+        width: 800px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    }
+    .nav li
+    {
+        float: left;
+        border-left: 0px solid #4a4a4a;
+        border-right: 1px solid #eff2e9;
+        border-top: 0px solid #4a4a4a;
+        border-bottom: 0px solid #242424;
+        position: relative;
+    }
+    .nav li a
+    {
+        color: #747171;
+        height: 38px;
+        line-height: 38px;
+        font-weight: bold;
+        padding: 0 30px;
+        blr: expression(this.onFocus=this.close());
+        blr: expression(this.onFocus=this.blur());
+        display: inline-block;
+    }
+    .nav li a:focus
+    {
+        -moz-outline-style: none;
+    }
+    .nav li .sub-nav
+    {
+        position: absolute;
+        top: 39px;
+        left: -5px;
+        list-style: none;
+        background-color: #9bc25e;
+        display: none;
+    }
+    .nav li .sub-nav li
+    {
+        text-align: center;
+        clear: left;
+        width: 140px;
+        height: 35px;
+        line-height: 35px;
+        position: relative;
+    }
+    .nav li .sub-nav li a
+    {
+        height: 34px;
+        line-height: 34px;
+        width: 138px;
+        padding: 0;
+        display: inline-block;
+        color: #FFFFFF;
+    }
+    .menu
+    {
+        width: 800px;
+    }
+    body, td, th
+    {
+        font-family: 宋体;
+        font-size: 12px;
+    }
+    
+    /*Footer===========================================================================================*/
+    #footer-all
+    {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        background: #fff;
+    }
+    .footer
+    {
+        width: 950px;
+        margin: 0 auto 0 auto;
+        clear: both;
+        position: relative;
+        padding: 20px 10px 10px 0px;
+    }
+    .footer .left
+    {
+        width: 78%;
+        float: left;
+        text-align: left;
+    }
+    .footer .right
+    {
+        width: 22%;
+        float: left;
+        text-align: right;
+        padding: 10px 0 0 0;
+    }
+    .footer .left h1
+    {
+        width: 100%;
+        text-align: left;
+        color: #777777;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 5px 0 0 6px;
+    }
+    .footer .left a
+    {
+        text-decoration: none;
+        padding: 0 6px 0 6px;
+        color: #333333;
+    }
+    .footer .left a:hover
+    {
+        text-decoration: underline;
+        padding: 0 6px 0 6px;
+        color: #333333;
+    }
+    .footer .right .btn
+    {
+        border: 0;
+        width: 180px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        border: 1px #cccccc solid;
+        color: #666666;
+        font-size: 12px;
+    }
+    
+    /* Footer的導覽 */
+    .STYLE1
+    {
+        color: #125700;
+        font-weight: bold;
+    }
+    .STYLE2
+    {
+        color: #666666;
+    }
+    .STYLE3
+    {
+        color: #393939;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //預設關閉
+
+        $("#dialog-form").dialog({
+            autoOpen: false,
+            height: 170, //燈箱大小
+            width: 260,
+            modal: true,
+            //closeOnEscape false按esc不會跳出
+            closeOnEscape: false,
+            close: function () {
+                $("#dialog-form").dialog("close");
+            }
+        });
+    });
+    /// <summary>
+    /// 20121214 阿捨新增 
+    /// 打開新的 dialog for 系統訊息
+    /// 用燈箱顯示課程資訊 確認觀看錄影檔
+    /// </summary>
+    function OpenMsg(strRecordName, intClientSn, intRecordType, intCostSession, intRecordSn, intMaterialSn, intVideoType, intControlType) {
+
+        //================ 將原燈箱UI的關閉鈕拿掉 Start ================
+        $(".ui-dialog-titlebar").removeClass().empty();
+        //================ 將原燈箱UI的關閉鈕拿掉 End ================
+        $("#dialog-form").dialog("option", "resizable", false);
+        $("#dialog-form").dialog("option", "draggable", false);
+        $("#record_name").attr("value", strRecordName);
+        $("#client_sn").attr("value", intClientSn);
+        $("#record_type").attr("value", intRecordType);
+        $("#cost_session").attr("value", intCostSession);
+        $("#record_sn").attr("value", intRecordSn);
+        $("#material_sn").attr("value", intMaterialSn);
+        $("#video_type").attr("value", intVideoType);
+
+        //判斷是否時間內重覆觀看之錄影檔
+        $.ajax({
+            url: "/program/member/ajaxAddRecordList.asp",
+            cache: false,
+            async: false,
+            data: {
+                client_sn: intClientSn,
+                cost_session: intCostSession,
+                record_sn: intRecordSn,
+                material_sn: intMaterialSn,
+                video_type: intVideoType,
+                method_type: 2
+            },
+            success: function (result) {
+                if ("1" == result) { //表時間內觀看為免費
+                    $("#show_cost_session").text("0");
+                    $("#button").attr("value", "免费回顾");
+                }
+                else {
+                    $("#show_cost_session").text("0.25");
+                    $("#button").attr("value", "确定");
+                }
+            },
+            error: function (result) {
+                //alert("error:"+result);
+            }
+        });
+
+        //若為舊產品, 直接開啟並記錄
+        if (1 == intControlType) {
+            OpenRecord();
+        }
+        else {
+            //燈箱打開 設定是否可調整大小/拖曳
+            $("#dialog-form").dialog("open");
+        }
+    }
+
+    /// <summary>
+    /// 20121214 阿捨新增 
+    /// 關閉新的 dialog
+    /// </summary>
+    function CloseMsg() {
+        $("#dialog").dialog("destroy");
+        $("#dialog-form").dialog("close"); //做完動作再關閉燈箱
+    }
+
+    /// <summary>
+    /// 20121214 阿捨新增 
+    /// 呼叫打開錄影檔
+    /// </summary>
+    function OpenRecord() {
+        var strRecordName = $("#record_name").val();
+        var intClientSn = $("#client_sn").val();
+        var intRecordType = $("#record_type").val();
+        var intCostSession = $("#cost_session").val();
+        var intRecordSn = $("#record_sn").val();
+        var intMaterialSn = $("#material_sn").val();
+        var intVideoType = $("#video_type").val();
+
+        //寫入錄影檔觀看紀錄
+        $.ajax({
+            url: "/program/member/ajaxAddRecordList.asp",
+            cache: false,
+            data: {
+                client_sn: intClientSn,
+                cost_session: intCostSession,
+                record_sn: intRecordSn,
+                material_sn: intMaterialSn,
+                video_type: intVideoType,
+                method_type: 1
+            },
+            success: function (result) {
+
+            },
+            error: function (result) {
+                //alert("error:"+result);
+            }
+        });
+        CloseMsg();
+        if (intRecordType == 1) //joinnet
+        {
+            popupJoinnetPlayback(strRecordName);
+        }
+        //else if ( intRecordType == 2 ) //tutormeet
+        else //tutormeet
+        {
+            popupTutorMeetPlayback(strRecordName, intClientSn, "vipjr");
+        }
+    }
+
+    function popupJoinnetPlayback(str_video_path) {
+        window.open(str_video_path);
+    }
+</script>
+<div id="dialog-form" style="display:none;background-color:#fcf9f0;border: solid 1px #fe9d00;">
+    <div id="box">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td height="47" align="center" valign="bottom">
+                    <span class="STYLE4" lang="zh">是否观看此复习录影档</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="42" align="center">
+                    <span class="STYLE6" lang="zh">系统将扣除您</span><span class="STYLE1" id="show_cost_session">0.25</span><span class="STYLE6" lang="zh">课时</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="20%">
+                                <input type="hidden" id="record_name"   />
+                                <input type="hidden" id="client_sn"     />
+                                <input type="hidden" id="record_type"   />
+                                <input type="hidden" id="cost_session"  />
+                                <input type="hidden" id="record_sn"     />
+                                <input type="hidden" id="material_sn"   />
+                                <input type="hidden" id="video_type"    />
+                            </td>
+                            <td width="50%" lang="zh">
+                                <input name="button" type="button" class="btn" id="button" value="确定" onclick="OpenRecord();"/>
+                            </td>
+                            <td width="30%" lang="zh">
+                                <input name="button2" type="button" class="btn2" id="button2" value="取消" onclick="CloseMsg();"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="main_membox" style="width: 700px;">
+    <!--上版位課程start-->
+    <div class="page_title_2"><h2 class="page_title_h2">咨询复习&amp;练习</h2></div>
+    <div class="box_shadow" style="background-position:-80px 0px;"></div>
+    <div class="top_class5">
+        <h1>
+            <span class="bold">目前等级：Level @ViewBag.profileLevel</span><br />
+        </h1>
+    </div>
+    <a id="a_learning_record" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent">上课记录&amp;评分</a> 
+    <a id="a_learning_word" class="top_class_N2" href="/program/member/learning_word.asp" target="_parent">我的单词银行</a> 
+    <a id="a_learning_learn_old" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=2" target="_parent">帐户资讯</a> 
+    <a id="a_learning_level" class="top_class_N2" href="/program/member/learning_level.asp" target="_parent">程度分析</a> 
+    <a id="a_learning_dcgs" class="top_class_N4" href="/program/aspx/AspxLogin.asp?url_id=5" target="_parent">DCGS学习偏好设置</a> 
+    <a id="a_learning_review" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=4" target="_parent">咨询复习</a>
+    <div class="top_block">
+    </div>
+    <!--上版位課程end-->
+    <!--list start-->
+    <div class="hwork">
+        <div class="w">            
+            <span class="org">贴心提醒</span><span class="gray">：请点选课程日期并点选教材名称后方<img src="@Url.Content("~/Content/images/video.gif")" width="14" height="9" class="m-left5 m-right5">即可进行在线观看！<br>
+            <!--录影档下载扣点后，于7天内重复下载相同录影档时，不会被再次扣点！-->
+            </span>
+        </div>
+        <div class="wlist">
+            <div>
+                <li class="title1">日期</li>
+                <li class="title2">教材名称</li>
+                <li class="title3">成绩</li>
+                <div class="clear">
+                </div>
+            </div>
+            @if (Model.Count > 0)
+            {
+                //var orderModel = Model.OrderBy(n => Convert.ToDateTime(n.ClassStartDate.ToString("d") + " " + n.ClassStartTime + ":30")).Reverse();
+                var orderModel = Model.OrderBy(n => n.ClassStartDate).Reverse();
+                foreach (var tmp in orderModel)
+                {
+                    var classTime = Convert.ToDateTime(tmp.ClassStartDate.ToString("d") + " " + tmp.ClassStartTime + ":30");
+                    if ((tmp.ClassStatusId == 3 || tmp.ClassStatusId == 2 || tmp.ClassStatusId == 4) && !String.IsNullOrEmpty(tmp.ClassMaterialNumber) && DateTime.Compare(DateTime.Now, classTime) > 0)
+                    {
+                        <div class="onebox">
+                        <div class="date">@tmp.ClassStartDate.ToString("d")</div>
+                        <div class="desc">
+                            <span class="bold">
+                                @tmp.MaterialTitle
+                                @if (!String.IsNullOrEmpty(tmp.FileFullName))
+                                {
+                                    String strRecordUrl = "";
+                                    int intRecordType = 0;
+                                    if (tmp.FileFullName.IndexOf(".jnr", 0) > 0)
+                                    {
+                                        strRecordUrl = "http://" + tmp.PathServer + "/" + tmp.PathText + tmp.SessionDate.Replace("/", "_") + "/" + tmp.FileFullName;
+                                        intRecordType = 1;
+                                    }
+                                    else
+                                    {
+                                        strRecordUrl = tmp.FileFullName;
+                                        intRecordType = 2;
+                                    }
+                                    String strOnclickJS = "OpenMsg('" + strRecordUrl + "','" + ViewBag.intClientSn + "','" + intRecordType + "','0.25','" + tmp.FileInfoSn + "','" + tmp.ClassMaterialNumber + "','1','0')";
+                                    <img src="@Url.Content("~/Content/images/video.gif")" width="14" height="9" border="0" alt="" onclick="@strOnclickJS" />
+                                }
+                            </span>
+                            <p>
+                                Level: <span class="bold m-left5">@tmp.ProfileLearnLevel</span> <span class="m-left10">
+                                    顾问 <span class="bold">@tmp.ClassConsultantName</span> </span>
+                            </p>
+                        </div>
+                        <div class="count">
+                            @if (tmp.ClassStatusId == 2)
+                            {
+                                if (tmp.ClassStartDate != null && tmp.ClassStartTime != null)
+                                {
+                                    var EndClassTime = Convert.ToDateTime(tmp.ClassStartDate.ToString("d") + " " + tmp.ClassStartTime + ":30").AddMinutes(45);
+                                    if (DateTime.Compare(DateTime.Now, EndClassTime) > 0)
+                                    {
+                                        <span>缺席</span>
+                                    }
+                                }
+                            }
+                            else if (tmp.ClassStatusId == 3 || tmp.ClassStatusId == 4)
+                            {
+                                if (String.IsNullOrEmpty(tmp.HomeworkScore))
+                                {
+                                    @Html.ActionLink("尚未填寫", "DoHomework", new { intClassRecordId = @tmp.ClassRecordId, strClassMaterialNumber = @tmp.ClassMaterialNumber, intLevel = @tmp.ProfileLearnLevel, strClassConsultantName = @tmp.ClassConsultantName, strMaterialTitle = @tmp.MaterialTitle, dateClassStartDate = @tmp.ClassStartDate, intClientSn = @ViewBag.intClientSn })
+                                }
+                                else
+                                {
+                                    @Html.ActionLink(tmp.HomeworkScore, "DoHomework", new { intClassRecordId = @tmp.ClassRecordId, strClassMaterialNumber = @tmp.ClassMaterialNumber, intLevel = @tmp.ProfileLearnLevel, strClassConsultantName = @tmp.ClassConsultantName, strMaterialTitle = @tmp.MaterialTitle, dateClassStartDate = @tmp.ClassStartDate, intClientSn = @ViewBag.intClientSn })
+                                }
+                            }
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+</div>

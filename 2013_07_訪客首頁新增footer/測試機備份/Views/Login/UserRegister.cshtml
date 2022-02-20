@@ -1,0 +1,445 @@
+﻿@{
+    ViewBag.Title = "UserRegister.cshtml";
+}
+@{var XmlData = ViewData["XmlData"] as IEnumerable<NewVIPABC.Models.DDLModel>;}
+@{var MediaItem = ViewData["MediaItem"] as IEnumerable<NewVIPABC.Models.DDLModel>;}
+@{var i = 0;}
+@{var count = MediaItem.Count() - 1;}
+@{var email = ViewData["email"] as string;}
+@{var password = ViewData["password"] as string;}
+<head>
+    @*<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")"></script>*@
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/jquery.skygqCheckAjaxform.1.3.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/regist_add.js")"></script>
+    <link href="@Url.Content("~/Content/css/valid.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var items_array2;
+        $(function () {
+            items_array2 = [
+		{ name: "txt_email_addr", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "pwd_passwd", type: "password", simple: "您的密码", focusMsg: '请填写您的密码' },
+        { name: "pwd_passwd_retry", type: "eq", to: "pwd_passwd", simple: "确认密码", focusMsg: '请填写确认密码' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "chk_gender", simple: "您的性别", focusMsg: '请选择您的性别' },
+        { name: "txt_ename", type: "ename", simple: "您的英文姓名", focusMsg: '请填写您的英文姓名' },
+        { name: "age_area", simple: "您的年龄", focusMsg: '请填写您的年龄' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+            //        { name: "txt_cphone", type: ctype, simple: "您的移动电话", focusMsg: '' },
+            //        { name: "txt_gphone_code", type: "gphone_code", simple: "您的区号", focusMsg: '' },
+            //        { name: "txt_gphone", type: "gphone", simple: "您的电话", focusMsg: '' },
+            //        { name: "txt_gphone_ext", type: "gphone_ext", simple: "您的分机号", focusMsg: '' },
+        {name: "rad_know_abc", simple: "如何得知VIPABC", focusMsg: '请选择如何得知VIPABC' },
+        { name: "captchacode", type: "captchacode", simple: "您的验证码", focusMsg: '请填写您的验证码' },
+        { name: "txt_cphone", type: "86cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' },
+        { name: "captchacode", simple: "上方检查码，不区分大小写", focusMsg: '请填写上方检查码，不区分大小写', ajax: { url: 'http://www.vipabc.com/lib/functions/functions_captcha.asp', success_msg: '', failure_msg: '验证码不正确'} }
+	];
+
+            $("#frm_regist").skygqCheckAjaxForm({
+                items: items_array2
+            });
+        });
+        //验证码更换
+        function reFreshImage(valImageId) {
+            var objImage = document.images[valImageId];
+            //alert("1");
+            if (objImage == undefined) {
+                //alert("2");
+                return;
+            }
+            //alert("3");
+            var now = new Date();
+            //alert("4");
+            objImage.src = objImage.src.split('?')[0] + '?x=' + now.toUTCString();
+            //alert("5:"+objImage.src);
+        }
+        //切换手机和电话
+        function setContactTel(p_objId) {
+            if (p_objId.id == "rad_mobile") {
+                items_array2.splice(0, items_array2.length);
+                items_array2 = [
+		{ name: "txt_email_addr", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "pwd_passwd", type: "password", simple: "您的密码", focusMsg: '请填写您的密码' },
+        { name: "pwd_passwd_retry", type: "eq", to: "pwd_passwd", simple: "", focusMsg: '请填写确认密码' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "chk_gender", simple: "您的性别", focusMsg: '请选择您的性别' },
+        { name: "txt_ename", type: "ename", simple: "您的英文姓名", focusMsg: '请填写您的英文姓名' },
+        { name: "age_area", simple: "您的年龄", focusMsg: '请填写您的年龄' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "rad_know_abc", simple: "如何得知VIPABC", focusMsg: '请选择如何得知VIPABC' },
+        { name: "captchacode", type: "captchacode", simple: "您的验证码", focusMsg: '请填写您的验证码' },
+        { name: "txt_cphone", type: "86cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' },
+        { name: "captchacode", simple: "上方检查码，不区分大小写", focusMsg: '请填写上方检查码，不区分大小写', ajax: { url: 'http://www.vipabc.com/lib/functions/functions_captcha.asp', success_msg: '', failure_msg: '验证码不正确'} }
+	];
+                document.getElementById("span_rad_mobile").style.display = "";
+                document.getElementById("span_rad_gphone").style.display = "none";
+                $("#frm_regist").skygqCheckAjaxForm({
+                    items: items_array2
+                });
+            }
+            else {
+                items_array2.splice(0, items_array2.length);
+                items_array2 = [
+		{ name: "txt_email_addr", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "pwd_passwd", type: "password", simple: "您的密码", focusMsg: '请填写您的密码' },
+        { name: "pwd_passwd_retry", type: "eq", to: "pwd_passwd", simple: "", focusMsg: '请填写确认密码' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "chk_gender", simple: "您的性别", focusMsg: '请选择您的性别' },
+        { name: "txt_ename", type: "ename", simple: "您的英文姓名", focusMsg: '请填写您的英文姓名' },
+        { name: "age_area", simple: "您的年龄", focusMsg: '请填写您的年龄' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "rad_know_abc", simple: "如何得知VIPABC", focusMsg: '请选择如何得知VIPABC' },
+        { name: "captchacode", type: "captchacode", simple: "您的验证码", focusMsg: '请填写您的验证码' },
+        { name: "txt_gphone", type: "gphone", simple: "您的电话", focusMsg: '请填写您的电话' },
+        { name: "captchacode", simple: "上方检查码，不区分大小写", focusMsg: '请填写上方检查码，不区分大小写', ajax: { url: 'http://www.vipabc.com/lib/functions/functions_captcha.asp', success_msg: '', failure_msg: '验证码不正确'} }
+	];
+                document.getElementById("span_rad_mobile").style.display = "none";
+                document.getElementById("span_rad_gphone").style.display = "";
+                $("#frm_regist").skygqCheckAjaxForm({
+                    items: items_array2
+                });
+            }
+        }
+
+        //todo: 國碼不能hardcode在程式內
+        function changeNationalCode(obj) {
+            if (document.getElementById('rad_mobile').checked) {
+                var str_nation_code = obj.options[obj.selectedIndex].value;
+                if (str_nation_code == "0") {
+                    //請選擇：do nothing
+                    $("#txt_phone_nationcode").val("");
+                }
+                else if (str_nation_code == "-1") {
+                    //其他
+                    document.getElementById("txt_phone_nationcode").value = "";
+                    document.getElementById("txt_phone_nationcode").disabled = "";
+                    document.getElementById("hdn_phone_nationcode").value = "";
+                } else {
+                    document.getElementById("txt_phone_nationcode").value = str_nation_code;
+                    document.getElementById("txt_phone_nationcode").disabled = "disabled";
+                    document.getElementById("hdn_phone_nationcode").value = str_nation_code;
+                }
+                if (str_nation_code=="+886") {
+                    items_array2.splice(0, items_array2.length);
+                items_array2 = [
+		{ name: "txt_email_addr", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "pwd_passwd", type: "password", simple: "您的密码", focusMsg: '请填写您的密码' },
+        { name: "pwd_passwd_retry", type: "eq", to: "pwd_passwd", simple: "", focusMsg: '请填写确认密码' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "chk_gender", simple: "您的性别", focusMsg: '请选择您的性别' },
+        { name: "txt_ename", type: "ename", simple: "您的英文姓名", focusMsg: '请填写您的英文姓名' },
+        { name: "age_area", simple: "您的年龄", focusMsg: '请填写您的年龄' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "rad_know_abc", simple: "如何得知VIPABC", focusMsg: '请选择如何得知VIPABC' },
+        { name: "captchacode", type: "captchacode", simple: "您的验证码", focusMsg: '请填写您的验证码' },
+        { name: "txt_cphone", type: "cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' },
+        { name: "captchacode", simple: "上方检查码，不区分大小写", focusMsg: '请填写上方检查码，不区分大小写', ajax: { url: 'http://www.vipabc.com/lib/functions/functions_captcha.asp', success_msg: '', failure_msg: '验证码不正确'} }
+	];
+                document.getElementById("span_rad_mobile").style.display = "";
+                document.getElementById("span_rad_gphone").style.display = "none";
+                $("#frm_regist").skygqCheckAjaxForm({
+                    items: items_array2
+                });
+                }
+                else{
+                    items_array2.splice(0, items_array2.length);
+                items_array2 = [
+		{ name: "txt_email_addr", type: "mail", simple: "您的邮箱", focusMsg: '请填写您的邮箱' },
+        { name: "pwd_passwd", type: "password", simple: "您的密码", focusMsg: '请填写您的密码' },
+        { name: "pwd_passwd_retry", type: "eq", to: "pwd_passwd", simple: "", focusMsg: '请填写确认密码' },
+        { name: "txt_cname", type: "cname", simple: "您的姓名", focusMsg: '请填写您的姓名' },
+        { name: "chk_gender", simple: "您的性别", focusMsg: '请选择您的性别' },
+        { name: "txt_ename", type: "ename", simple: "您的英文姓名", focusMsg: '请填写您的英文姓名' },
+        { name: "age_area", simple: "您的年龄", focusMsg: '请填写您的年龄' },
+        { name: "sel_nation_code", simple: "国码", focusMsg: '请选择国码' },
+        { name: "rad_know_abc", simple: "如何得知VIPABC", focusMsg: '请选择如何得知VIPABC' },
+        { name: "captchacode", type: "captchacode", simple: "您的验证码", focusMsg: '请填写您的验证码' },
+        { name: "txt_cphone", type: "86cphone", simple: "您的移动电话", focusMsg: '请填写您的移动电话' },
+        { name: "captchacode", simple: "上方检查码，不区分大小写", focusMsg: '请填写上方检查码，不区分大小写', ajax: { url: 'http://www.vipabc.com/lib/functions/functions_captcha.asp', success_msg: '', failure_msg: '验证码不正确'} }
+	];
+                document.getElementById("span_rad_mobile").style.display = "";
+                document.getElementById("span_rad_gphone").style.display = "none";
+                $("#frm_regist").skygqCheckAjaxForm({
+                    items: items_array2
+                });
+                }
+            }
+            if (document.getElementById('rad_gphone').checked) {
+                var str_nation_code = obj.options[obj.selectedIndex].value;
+                if (str_nation_code == "0") {
+                    //請選擇：do nothing
+                } else if (str_nation_code == "-1") {
+                    //其他
+                    document.getElementById("txt_phone_nationcode").value = "";
+                    document.getElementById("txt_phone_nationcode").disabled = "";
+                    document.getElementById("hdn_phone_nationcode").value = "";
+                } else {
+                    document.getElementById("txt_phone_nationcode").value = str_nation_code;
+                    document.getElementById("txt_phone_nationcode").disabled = "disabled";
+                    document.getElementById("hdn_phone_nationcode").value = str_nation_code;
+                }
+            }
+        }
+        // 验证成功之后submit
+        //        function OnSubmit() {
+        //            document.getElementById("frm_regist").action = 'http://192.168.101.73:91/NewVIPABC_ASP/regist/regist_exe.asp';
+        //            document.getElementById("frm_regist").submit();
+        //        }
+        $(document).ready(function () {
+            if (! -[1, ]) {
+                document.getElementById("IE_div").style.display = "";
+                document.getElementById("not_IE_div").style.display = "none";
+            }
+            else {
+                document.getElementById("IE_div").style.display = "none";
+                document.getElementById("not_IE_div").style.display = "";
+            }
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                if (navigator.userAgent.indexOf("MSIE 9.0") > 0) {
+                    document.getElementById("IE_div").style.display = "";
+                    document.getElementById("not_IE_div").style.display = "none";
+                }
+            }
+        });
+    </script>
+</head>
+<!-- fixed_box 固定註冊表單 start -->
+<div class="fixed_box">
+    <div class="fixed_box_960">
+        <div class="registration_form">
+            <img src="@Url.Content("~/Content/images/reg_banner.png")" width="268" height="316">
+        </div>
+    </div>
+</div>
+<!-- fixed_box 固定註冊表單 start -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+            <div class="breadcrumb">
+                <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>会员注册</div>
+            <div class="title_info">
+                全球每年240万人次的真实体验，快加入VIPABC成就自我 注册只需1分钟，马上开始崭新的学习体验！
+            </div>
+            <div class="isMember_warp">
+                <div class="isMember">
+                    已是会员?
+                </div>
+                <div class="g_btn">
+                    <a class="btn_text color_fff" href="@Url.Action("Login", "Login")">
+                        <div>
+                            马上登录</div>
+                    </a>
+                </div>
+            </div>
+            <div class="box_shadow">
+            </div>
+            <div class="steps_wrap_1">
+                <div class="steps_txt color_fff">
+                    <h3>
+                        注册会员</h3>
+                    <h4>
+                        填妥您的相关资料</h4>
+                </div>
+                <div class="steps_txt color_666">
+                    <h3>
+                        认证E-Mail</h3>
+                    <h4>
+                        点击链接，完成账号认证</h4>
+                </div>
+            </div>
+            <div class="reg_form">
+                <form name="frm_regist" action="http://192.168.101.73:91/program/regist/regist_exe.asp"
+                id="frm_regist" method="post">
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <input name="hdn_score" type="hidden" value="regist" />
+                        <span class="reg_txt">E-Mail</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        @if (email == "")
+                        {
+                            <input id="txt_email_addr" name="txt_email_addr" type="text" class="reg_field" value="请填写您常用的电子邮件，此将成为您的注册帐号"
+                                onfocus="if(this.value=='请填写您常用的电子邮件，此将成为您的注册帐号'){this.value='';}this.style.color='#666';"
+                                onblur="if(this.value!=''){this.style.color='#666';}" style="width: 320px;" />
+                        }
+                        else
+                        { 
+                            <input id="txt_email_addr" name="txt_email_addr" type="text" class="reg_field" value="@email"
+                            onfocus="if(this.value=='请填写您常用的电子邮件，此将成为您的注册帐号'){this.value='';}this.style.color='#666';"
+                            onblur="if(this.value!=''){this.style.color='#666';}" style="width: 320px;" />
+                        }
+                    </div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        邮箱格式有问题，请修改
+                    </div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">密码</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input class="reg_field" type="password" id="pwd_passwd" name="pwd_passwd" value="@password"
+                         onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}"
+                            style="width: 320px;" /></div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        请输入密码</div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">确认密码</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input class="reg_field" type="password" id="pwd_passwd_retry" name="pwd_passwd_retry" value="@password"
+                        onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}"
+                            style="width: 320px;" /></div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        请再次输入密码</div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">中文姓名</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input class="reg_field" type="text" id="txt_cname" name="txt_cname" value=""
+                        onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" style="width: 320px;" />
+                    </div>
+                    <div class="reg_title_wrap">
+                    </div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input type="radio" id="chk_gender" name="chk_gender" value="1" class="reg_field"
+                            name="chk_gender" style="margin-left: 5px"><label class="reg_txt" style="margin-left: 5px">先生</label>
+                        <input type="radio" name="chk_gender" value="2" class="reg_field" name="chk_gender"
+                            style="margin-left: 5px"><label class="reg_txt" style="margin-left: 5px">小姐</label>
+                    </div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/ok.png")" width="12" height="12"></div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">英文姓名</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input class="reg_field" type="text" id="txt_ename" name="txt_ename" value="请填写英文姓名"
+                            onfocus="if(this.value=='请填写英文姓名'){this.value='';}this.style.color='#666';"
+                            onblur="if(this.value!=''){this.style.color='#666';}"
+                             style="width: 320px;" /></div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        请输入英文姓名</div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">年龄</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <select class="reg_select" name="age_area" id="age_area" style="width: 320px;"
+                         onfocus = "this.style.color='#666'" onblur = "if(this.value==''){this.style.color='#ccc';}else{this.style.color='#666';}">
+                            <option value="">请选择</option>
+                            <option value="8">18岁以下</option>
+                            <option value="9">19~25</option>
+                            <option value="10">26~35</option>
+                            <option value="11">36~45</option>
+                            <option value="12">46~55</option>
+                            <option value="13">56岁以上</option>
+                        </select>
+                    </div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        请输入年龄</div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">联系电话 </span>
+                    </div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input type="radio" id="rad_mobile" value="cphone" name="rad_contact_tel" class="reg_field reg_txt"
+                            checked="checked" onclick="setContactTel(this)" /><label class="reg_txt" style="margin-left: 5px">移动电话</label>
+                        <input type="radio" id="rad_gphone" value="gphone" name="rad_contact_tel" class="reg_field reg_txt"
+                            onclick="setContactTel(this)" /><label class="reg_txt" style="margin-left: 5px">固定电话</label>
+                        <input type="hidden" id="hdn_phone_nationcode" name="hdn_phone_nationcode" value="+86" /><br />
+                    </div>
+                    <div class="reg_title_wrap" id="IE_div" style="display: none;">
+                    </div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <select name="sel_nation_code" id="sel_nation_code" class="form_select" onchange="changeNationalCode(this)"
+                            onfocus = "this.style.color='#666'" onblur = "if(this.value==''){this.style.color='#ccc';}else{this.style.color='#666';}">
+                            <option value="">请选择</option>
+                            @foreach (var item in XmlData)
+                            {
+                                if (item.value == "+86")
+                                {
+                                <option value="@item.value" selected="selected">@item.text</option> 
+                                }
+                                else
+                                {
+                                <option value="@item.value">@item.text</option> 
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="reg_title_wrap" id="not_IE_div" style="display: none;">
+                    </div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <input class="reg_field" type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"
+                            readonly="readonly" value="+86" style="width: 70px;" onchange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                        <span id="span_rad_mobile">
+                            <input class="reg_field" type="text" id="txt_cphone" name="txt_cphone" value="" style="width: 180px;"
+                            onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                        </span><span id="span_rad_gphone" style="display: none;">-<input type="text" id="txt_gphone_code"
+                            name="txt_gphone_code" class="reg_field" style="width: 65px;" onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />-
+                            <input type="text" id="txt_gphone" name="txt_gphone" class="reg_field" style="width: 100px;"
+                            onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                            Ext.<input type="text" id="txt_gphone_ext" name="txt_gphone_ext" class="reg_field"
+                                style="width: 65px;" onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                        </span>
+                    </div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        請輸入联系电话</div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">从何处得知</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        @foreach (var item in MediaItem)
+                        {
+                            if (count > 0)
+                            {
+                            <div style="width: 160px; float: left;">
+                                <input type="radio" class="reg_field" name="rad_know_abc" id="rad_know_abc"+"@i" value="@item.value" /><label
+                                    class="reg_txt" style="margin-left: 5px">@item.text</label></div>
+                            }
+                            else
+                            {
+                            <div style="width: 300px; float: left;">
+                                <input type="radio" class="reg_field" name="rad_know_abc" id="rad_know_abc"+"@i" value="@item.value" /><label
+                                    class="reg_txt" style="margin-left: 5px">@item.text</label></div>
+                            }
+                            i++; count--;
+                        }
+                    </div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        请输入从何处得知</div>*@
+                </div>
+                <div class="reg_row">
+                    <div class="reg_title_wrap">
+                        <span class="reg_txt">检查码</span></div>
+                    <div class="reg_field_wrap" style="width: 500px;">
+                        <img id="imgCaptcha" src="http://www.vipabc.com/lib/functions/functions_captcha.asp"><span
+                            class="reg_txt" style="text-decoration: underline"> <a href="javascript:reFreshImage('imgCaptcha');">
+                                更换图片</a></span><br />
+                        <input class="reg_field" name="captchacode" type="text" id="captchacode" value=""
+                            style="width: 130px;" onfocus="this.style.color='#666';" onblur="if(this.value!=''){this.style.color='#666';}" />
+                    </div>
+                    @*<div class="reg_prompt_wrap color_red">
+                        <img src="@Url.Content("~/Content/images/error.png")" width="12" height="12">
+                        请输入检查码</div>*@
+                </div>
+                <!-- ############# Form部分 end################ -->
+                <div class="box_shadow">
+                </div>
+                <div class="reg_row">
+                    <input style="margin-left: 15%;" type="submit" value="免费注册" class="y_btn" />
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

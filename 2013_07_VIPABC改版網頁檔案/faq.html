@@ -1,0 +1,953 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+<!-- faq  -->
+
+<script type='text/javascript' language="javascript" src="js/fag.js"></script>
+<!-- faq  -->
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="fixed_box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <input type="button" value="立即预约" class="y_btn" >  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>服务条款</div>
+                    
+               
+              
+				<div class="div_abc_outer_main_continent"><!--contents start-->       
+           <!--contents end-->
+        <div id="temp_contant">
+       <!--內容start-->
+
+        <div class="main_faq">
+            <!--1類start-->
+            <div class="main_faqbox">
+            <div>
+            <div class="cate color_1">课程学习类问题</div>
+            <div class="f-right faq-btn-open" id="class_kind_question_div">
+            <a id="class_kind_atag" href="javascript:openAndCloseDiv('class_kind');" title="打开">打开</a></div>
+            <div class="clear"></div>
+            </div>
+             <!--quest start-->
+             <div class="question">
+             <div class="top1"></div>
+             <!--1-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('class_kind','q1');">如何能学好英文？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('class_kind','q2');">了解自己的学习状况？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--1-->
+             <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('class_kind','q3');">大会堂的上课方式？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('class_kind','q4');">教材内容或家庭作业答案有疑问？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+             </div>
+             <div class="line"></div>
+             <!--quest end-->
+             <div class="answer" id="class_kind_answer_div" style="display:none;">
+             <div class="box">
+             <!--a1-->
+             <div class="say">
+             <p><a name="class_kind_q1">如何能学好英文？</a></p>
+             VIPABC提供的是纯英语的学习环境，学习英文其实并不难，但是需要时间的累积和学习习惯语言逻辑的养成，所以只要保持上课的密集度，习惯纯英文的环境，英文自然而然的就会突飞猛进。             
+            </div>
+             <!--a1-->
+             <!--a2-->
+             <div class="say">
+             <p><a name="class_kind_q2">了解自己的学习状况？</a></p>
+             请您可于官网会员专区中的我的学习纪录中点选上课纪录与评分，并选择上课的教材名称点选进去，您就能够看到顾问该堂课程所给予您的评鉴及建议，课后也有提供家庭作业练习，让您能了解自己的学习状况。             
+            </div>
+             <!--a2-->
+             <!--a3-->
+             <div class="say">
+             <p><a name="class_kind_q3">大会堂的上课方式？</a></p>
+              大会堂上课是已演讲方式教学，学员无须发言只须听顾问教课即可，其余教学方式与一般课程相同。<br>大会堂的课程是针对各类型的主题或教学比重所安排的，教材焦点和适合学习程度，课前两周就会先公布，欢迎您可以随时预约您有兴趣的主题课程。             
+            </div>
+             <!--a3-->
+             <!--a4-->
+             <div class="say">
+             <p><a name="class_kind_q4">教材内容或家庭作业答案有疑问？</a></p>
+             您可以将您的问题在课后评鉴建议”栏上做填写，客服部将会协助您请语言部重新审核教材和作业内容的正确性，顾问将于一天工作天后E-MAIL至您的信箱解答您的疑问。             
+            </div>
+             <!--a4-->
+             </div>
+             <div class="ps"> 
+             </div>        
+             </div>
+             
+             </div>
+             <!--1類end-->
+             <!--2類start-->
+              <div class="main_faqbox">
+            <div>
+            <div class="cate color_1">网站使用问题</div>
+            <div class="f-right faq-btn-open" id="web_kind_question_div">
+            <a id="web_kind_atag" href="javascript:openAndCloseDiv('web_kind');" title="打开">打开</a></div>
+            <div class="clear"></div>
+            </div>
+             <!--quest start-->
+             <div class="question">
+             <div class="top1"></div>
+             <!--1-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q1');">忘记账号密码怎么办？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q2');">为什么无法登入会员？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--1-->
+             <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q3');">那里可以更改用户密码吗？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q4');">到哪里更新我的个人基本资料？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+             <!--3-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q5');">为什么使用网站功能时账号会自动会员注销？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q6');">无法进入教室上课？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--3-->
+             <!--4-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q7');">上课中断线？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('web_kind','q8');">为什么不能使用无线网络？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--4-->
+             </div>
+             <div class="line"></div>
+             <!--quest end-->
+             
+             <div class="answer" id="web_kind_answer_div" style="display:none;">
+             <div class="box">
+             <!--a1-->
+             <div class="say">
+             <p><a name="web_kind_q1">忘记账号密码怎么办？</a></p>
+             请您来电客服专线4006-30-30-30，客服人员将协助您重新寄发您所登记的密码邮件，请您至信箱中确认即可。             
+            </div>
+             <!--a1-->
+             <!--a2-->
+             <div class="say">
+             <p><a name="web_kind_q2">为什么无法登入会员？</a></p>
+             请您先确认您所输入的账号或是密码是否为小写及阿拉伯数字的组合，以及相关的符号是否正确，再重新输入一次。如仍有问题请您来电4006-30-30-30与我们联系。             
+            </div>
+             <!--a2-->
+             <!--a3-->
+             <div class="say">
+             <p><a name="web_kind_q3">那里可以更改用户密码吗？</a></p>
+             请您先登入会员，登入后点选会员专区功能中的”管理个人资料”中密码栏位即有修改密码功能可以协助您修改密码，密码修改成功系统会自动寄发e-mail通知您，您即可以使用新密码登入了。             
+            </div>
+             <!--a3-->
+             <!--a4-->
+             <div class="say">
+             <p><a name="web_kind_q4">到哪里更新我的个人基本资料？</a></p>
+             请您登入会员后，点选会员服务功能中的”管理个人资料”即可进行个人基本资料更新。             
+            </div>
+             <!--a4-->
+             <!--a5-->
+             <div class="say">
+             <p><a name="web_kind_q5">为什么使用网站功能时账号会自动会员注销？</a></p>
+             为了维护您账号安全，本公司网页设有安全机制，若您於同一画面停滞太久且并没有任何动作,系统将会自动更新，把登入过时的账号自动注销，因此请您重新登入一次，若造成您的困扰及不便，敬请见谅。             
+            </div>
+             <!--a5-->
+             <!--a6-->
+             <div class="say">
+             <p><a name="web_kind_q6">无法进入教室上课？</a></p>
+             1.请您确认电脑是否未安装上课软件造成无法进入咨询室。<br>
+             2.可能是目前您所开启的网页当掉停滞不动，请您可以使用Ctrl F5重整网页画面，或是重新开启一个新的网页登入。<br>
+             3.请您确认是否使用IE浏览器开启VIPABC网页，使用其他浏览器可能会造成无法进入咨询室的问题发生。<br>
+             4.若您仍无法进入咨询室请来电4006-30-30-30客服专线我们将有专人协助您。<br>
+			             
+            </div>
+             <!--a6-->
+             <!--a7-->
+             <div class="say">
+             <p><a name="web_kind_q7">上课中断线？</a></p>
+             请您确认网络联机状况是否正常，建议您可同时开启其他网页进行确认。若正常请您重新点选VIPABC网页上「进入教室」，便可再度进入教室继续上课。若联机正常仍无法重新进入教室，请来电4006-30-30-30客服专线我们将有专人协助您。若发现您的网络联机中断无法联机，请尽速与您的网络电信业者联系，请电信业者进行维修。             
+            </div>
+             <!--a7-->
+             <!--a8-->
+             <div class="say">
+             <p><a name="web_kind_q8">为什么不能使用无线网络？</a></p>
+             由于无线网络容易受地形或电波干扰，容易造成带宽不稳定，上课时容易突然带宽减弱，将影响您的学习质量，因此为确保您的学习质量,我们强烈建议您使用有线网路上课。             
+            </div>
+             <!--a8-->
+             </div>
+             <div class="ps"> 
+             </div>        
+             </div>
+             
+             </div>
+             <!--2類end-->
+             
+             <!--3類start-->
+             
+			<div class="main_faqbox">
+            <div>
+            <div class="cate color_1">会员相关问题</div>
+            <div class="f-right faq-btn-open" id="member_kind_question_div">
+            <a id="member_kind_atag" href="javascript:openAndCloseDiv('member_kind');" title="打开">打开</a></div>
+            <div class="clear"></div>
+            </div>
+             <!--quest start-->
+             <div class="question">
+             <div class="top1"></div>
+             <!--1-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q1');">我可以更改E-mail吗？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q2');">课时數的计算方式？？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--1-->
+             <!--2-->
+             <div class="list">
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q3');">如何增加收藏的顾问？</a></div>
+             </div>
+			 -->
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q4');">如何增加精选电子报？</a></div>
+             </div>
+			 -->
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q5');">申请升降级流程</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q6');">申请以后可以反悔吗？</a></div>
+             </div>
+			 -->
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q7');">无法进入教室怎么办？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q8');">给顾问的评价分数会有什么作用？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q9');">我可以选择顾问吗？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q10');">对于通讯的质量可以求助吗？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q11');">我的反馈会保密吗？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q12');">我可以知道别人对我的反馈吗？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q13');">该从哪里订课？ </a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q14');">怎样确认课程已预订成功？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q15');">如何取消课程？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q16');">如何重订课程？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q17');">取消课程会损失课时数吗？</a></div>
+             </div>
+			 
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q27');">顾问评分标准是什么？</a></div>
+             </div>
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q18');">我该怎么查看明细？</a></div>
+             </div>
+			 -->
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">			 
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q29');">可以不填职业别吗？</a></div>	
+			 </div>	
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q19');">按了取消就直接取消订课了吗？ </a></div>
+             </div>
+			 -->
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q20');">VIP行事历的作用是？ </a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q21');">大会堂会有几人上课？ </a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q22');">大会堂的上课方式？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q23');">录像文件的质量如何？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q24');">无法下载录像文件？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+			 		 
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q28');">我可以累积多少个单词？</a></div>
+             </div>
+			 <!--
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q25');">一共有多少题？</a></div>
+             </div>
+			  -->
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q26');">多少分以上算是良好？</a></div>
+             </div>
+			 -->
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+             </div>
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q30');">收藏的课程可以重复观看吗？</a></div>
+             </div>
+             <div class="clear"></div>
+             </div>-->
+             <!--2-->
+			 <!--2-->
+             <div class="list">
+			 <!--todo 暫時拿掉
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q31');">可以指定收藏的顾问进行咨询吗？</a></div>
+             </div>
+             <div class="q">
+             <div class="w"><a href="javascript:gotoHashPoint('member_kind','q32');">课程日期/金額相关有问题？</a></div>
+             </div>
+			 -->
+             <div class="clear"></div>
+             </div>
+             <!--2-->
+			 <div class="line"></div>
+             </div>
+             <!--quest end-->
+             
+             
+             <div class="answer" id="member_kind_answer_div" style="display:none;">
+             <div class="box">
+             <!--a1-->
+             <div class="say">
+             <p><a name="member_kind_q1">我可以更改E-mail吗？</a></p>
+             可以。如需更改您的e-mail账号，请与4006-30-30-30客服联络。             
+            </div>
+             <!--a1-->
+             <!--a2-->
+             <div class="say">
+             <p><a name="member_kind_q2">课时數的计算方式？</a></p>
+             ＊大会堂预订取消<br>1. 新增预订课程：课程开始的8小时前完成，收取1课时费用。为提供您学习在线英文讲座的便利，现在「大会堂」课程开放上课前5分钟也可接受预约。<br>
+			 2. 取消预订课程：需在课程开始的4小时前完成。<br><br>
+			 ＊一对多课程预订取消<br>1. 新增预订课程：课程开始的8小时前完成，收取1课时费用。<br>2.取消预订课程：需在课程开始的4小时前完成<br>
+			 
+			 <!--todo 暫時拿除
+			 3. 临时预订24小时之内课程（区块内呈现红色，名额有限）<br />(1) 开课前24小时~开课前12小时预订：收取1.25课时费用。<br />(2) 开课前12小时~开课前4小时预订：收取1.5课时费用。<br />(3) 开课前4小时~开课前2小时预订：收取2课时费用，且无法取消课程。
+			 -->
+			 <br><br>
+			 ＊一对一课程预订取消<br>1. 新增预订课程：课程开始的8小时前完成，收取2课时费用。<br>2. 取消预订课程：需在课程开始的4小时前完成。<br><br>
+			 ＊录影文件下载<br>自己的课程：会员合约有效期限内无限次免费观看；大会堂：收取1课时；其他客户课程：收取1课时             
+            </div>
+             <!--a2-->
+             <!--a3-->
+			 <!--todo 暫時拿除
+             <div class="say">
+             <p><a name="member_kind_q3">如何增加收藏的顾问？</a></p>
+             会员专区->会员首页->编辑我的收藏->新增顾问收藏名单             
+            </div>
+			-->
+             <!--a3-->
+             <!--a4-->
+			 <!--todo 暫時拿除
+             <div class="say">
+             <p><a name="member_kind_q4">如何增加精选电子报？</a></p>
+             会员专区->会员首页->编辑我的收藏->新增精选电子报             
+            </div>
+			-->
+             <!--a4-->
+			 <!--a5-->
+			 <!--todo 暫時拿除
+             <div class="say">
+             <p><a name="member_kind_q5">申请升降级流程</a></p>
+             申请进入"升(降)级评估流程"，4小时后将会上到升级后的课程，在未来40天内的课程中，累积3位顾问的升级推荐，系统将会自动为您升级；但若是先累积4位顾问不建议您升级，将会回原级别继续学习。             
+            </div>
+			-->
+             <!--a5-->
+			 <!--a6-->
+			 <!--todo 暫時拿除
+             <div class="say">
+             <p><a name="member_kind_q6">申请以后可以反悔吗？</a></p>
+             您申请进入"升(降)级评估流程"后有任何学习上的问题，欢迎您与客服联系，协助您将课程等级重新调整。             
+            </div>
+			-->
+             <!--a6-->
+			 <!--a7-->
+             <div class="say">
+             <p><a name="member_kind_q7">无法进入教室怎么办？</a></p>
+             1.上课前3分钟教室才会开启<br>2.将于30分课程正式开始 <br>3.若网页停滞无法正常运作，请您将网页重新刷新或重新登录网站 <br>4.课程开始进行后您还是无法进教室，请您立即点击在线小帮手反映或是致电客服协助您处理。             
+            </div>
+             <!--a7-->
+			 <!--a8-->
+             <div class="say">
+             <p><a name="member_kind_q8">给顾问的评价分数会有什么作用？ </a></p>
+             欢迎您于每次课后留下您宝贵的建议，将可以让顾问更了解您学习的需求，提供您更完善的教学安排、更符合您的课程。             
+            </div>
+             <!--a8-->
+			 <!--a9-->
+             <div class="say">
+             <p><a name="member_kind_q9">我可以选择顾问吗？ </a></p>
+             因顾问上课时间和您上课时间不一定完全相同，若您有喜欢的顾问，可自行编辑收藏顾问名单，如该顾问上课，即会优先为您安排。             
+            </div>
+             <!--a9-->
+			 <!--a10-->
+			 <!--todo 暫時拿除 
+             <div class="say">
+             <p><a name="member_kind_q10">对于通讯的质量可以求助吗？ </a></p>
+             上课中有任何通讯问题，建议您立即点击在线小帮手，IT监控将会协助处理您的问题。若您的问题于课后并未获得改善，建议您可来电客服，协助您处理或是安排重新测试。             
+            </div>
+			-->
+             <!--a10-->
+			 <!--a11-->
+             <div class="say">
+             <p><a name="member_kind_q11">我的反馈会保密吗？ </a></p>
+             您反馈的问题其他客户并不会得知，但可帮助客服了解您的学习状况，针对有问题的客户进一步给予协助。             
+            </div>
+             <!--a11-->
+			 <!--a12-->
+             <div class="say">
+             <p><a name="member_kind_q12">我可以知道别人对我的反馈吗？ </a></p>
+             您并不会得知其他客户对您的建议，若有任何学习上的问题将会由客服和您直接联系。             
+            </div>
+             <!--a12-->
+			 <!--a13-->
+             <div class="say">
+             <p><a name="member_kind_q13">该从哪里订课？</a></p>
+              请到 会员专区/预订课程 选择您想要的课程类型/日期，预订您想上课的时间。             
+            </div>
+             <!--a13-->
+			 <!--a14-->
+             <div class="say">
+             <p><a name="member_kind_q14">怎样确认课程已预订成功？</a></p>
+             预订完成将会同时e-mail预订成功的信件通知您。 <br>您也可以于观看课表上看到您已预订的图标             
+            </div>
+             <!--a14-->
+			 <!--a15-->
+             <div class="say">
+             <p><a name="member_kind_q15">如何取消课程？</a></p>
+             1.选择您要取消课程的预订状态<br>2.点击取消此课程，并确认提交             
+            </div>
+             <!--a15-->
+			 <!--a16-->
+             <div class="say">
+             <p><a name="member_kind_q16">如何重订课程？</a></p>
+             1.选择您要取消的某项课程的预订状态<br>2.点击取消此课程，并确认提交<br>3.重新预订您想要的上课时间             
+            </div>
+             <!--a16-->
+			 <!--a17-->
+             <div class="say">
+             <p><a name="member_kind_q17">取消课程会损失课时数吗？</a></p>
+             不会。课程取消后将会归还您原本扣除的课时数。             
+            </div>
+             <!--a17-->
+			 <!--a18-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q18">我该怎么查看明细？</a></p>
+              将鼠标移至日期上即可查看详细内容             
+            </div>
+			-->
+             <!--a18-->
+			 <!--a19-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q19">按了取消就直接取消订课了吗？</a></p>
+             请您点击取消后，按确认课程就可取消。             
+            </div>
+			-->
+             <!--a19-->
+			 <!--a20-->
+             <div class="say">
+             <p><a name="member_kind_q20">VIP行事历的作用是？</a></p>
+             可查询开放咨询和暂停咨询的公告             
+            </div>
+             <!--a20-->
+			 <!--a21-->
+             <div class="say">
+             <p><a name="member_kind_q21">大会堂会有几人上课？</a></p>
+             对大会堂教学主题有兴趣的客户都可以参与，无人数限制。             
+            </div>
+             <!--a21-->
+			 <!--a22-->
+             <div class="say">
+             <p><a name="member_kind_q22">大会堂的上课方式？</a></p>
+             大会堂课程为主题式单向教学的讲座课程。             
+            </div>
+             <!--a22-->
+			 <!--a23-->
+             <div class="say">
+             <p><a name="member_kind_q23">录像文件的质量如何？</a></p>
+             系统会自动筛选通讯质量优良的课程提供客户下载，若通讯质量不佳和文件异常将不提供客户下载。             
+            </div>
+             <!--a23-->
+			 <!--a24-->
+             <div class="say">
+             <p><a name="member_kind_q24">无法下载录像文件？</a></p>
+             <!--修改開始 start-->
+              
+             <div style="margin-left:10px;"><span class="color_4"></span><br>
+             <span class="bold color_2" style="text-decoration:underline;"></span><br>
+             <span class="color_2"></span><br>
+             <img src="images/vip_faq_01.gif" width="473" height="340"><br><br>
+             </div>
+			 
+             <div style="margin-left:10px;"><span class="bold color_2" style="text-decoration:underline;"></span><br>
+             <span class="color_2"><br>
+             </span><br>
+             <img src="images/vip_faq_02.gif" width="473" height="283"><br><br>
+             <span class="color_2"></span><br>
+             <img src="images/vip_faq_03.gif" width="410" height="479"><br><br>
+             <span class="color_2"><br>
+             </span><br>
+             <img src="images/vip_faq_04.gif" width="413" height="440"><br><br>
+            
+             </div>
+			 <br>
+			 <br>
+             
+             <!--修改結束 end-->
+			             
+            </div>
+             <!--a24-->
+			 <!--a25-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q25">一共有多少题？</a></p>
+             在线模拟考共75题，总分1000分，细分为阅读50题（每题10分）及听力25题（每题20分）。             
+            </div>
+			-->
+             <!--a25-->
+			 <!--a26-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q26">多少分以上算是良好？</a></p>
+             10-1000分等级说明<br>
+			 入门10-200分－<br>语法观念尚未建立，单词量十分有限，听力理解能力仅限于有限的单词，阅读能力仅限于简单的句子。<br>
+			 初级210-400分－<br>对于语法稍有概念，但仍不完整。由于词汇能力仅限于最常使用的生活单词，听力部分仍嫌吃力，阅读部分可阅读简单句所组成的文章。<br>
+			 中级410-600分－<br>基本语法概念已经形成，但仍有似是而非之处，词汇能力已能帮助理解听力与阅读简单文章。<br>
+			 中高级610-800分－<br>词汇与语法虽稍有缺陷，但已能够有效地辅助听力与阅读，听力部分已可以理解大部分内容，阅读能力受限于词汇能力，对于复杂的句子可能仍有困惑。<br>
+			 高级810-1000分－<br>语法结构观念清晰，单词运用能力佳，可理解大部分的听力，及有足够的语言能力阅读原文报纸文章。             
+            </div>
+			-->
+             <!--a26-->
+			 <!--a27-->
+             <div class="say">
+             <p><a name="member_kind_q27">顾问评分标准是什么？</a></p>
+             顾问会参考以下您的上课表现给予评价<br>1.参与度 2.发音 3.理解力 4.创造力 5.流畅度             
+            </div>
+             <!--a27-->
+			 <!--a28-->
+             <div class="say">
+             <p><a name="member_kind_q28">我可以累积多少个单词？</a></p>
+             没有上限             
+            </div>
+             <!--a28-->
+			 <!--a29-->
+             <div class="say">
+             <p><a name="member_kind_q29">可以不填职业别吗？</a></p>
+             不行。所有的数据都需详细填写，系统才能安排最适合您的教材。             
+            </div>
+             <!--a29-->
+			 <!--a30-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q30">收藏的课程可以重复观看吗？</a></p>
+             可以。录像文件下载扣点后，于7天内重复下载相同录像文件时，不会被再次扣点！             
+            </div>
+			-->
+             <!--a30-->
+			 <!--a31-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q31">可以指定收藏的顾问进行咨询吗？</a></p>
+             因顾问上课时间和您的上课时间不一定完全相同，若有您喜欢的顾问上课，即会优先为您安排。		
+            </div>
+			-->
+             <!--a31-->
+			 <!--a32-->
+			 <!--todo 暫時拿掉
+             <div class="say">
+             <p><a name="member_kind_q32">课程日期/金額相关有问题？</a></p>
+             请直接与您的咨询顾问联络。
+             </div>
+			 -->
+             <!--a32-->
+			 
+             </div>
+             <div class="ps"> 
+             </div>        
+ 
+             </div>
+             
+             </div>
+             
+			 <!--3類end-->             
+        </div>
+        <!--內容end-->
+        
+  <font id="div_abc_inner_main_contents"></font>
+    </div>
+    
+    
+    </div>
+              
+            
+              
+              
+              
+      </div>
+    </div>
+</div>
+<!-- #############Content部分 end################ -->
+
+<div class="footer">
+	<div class="footer_links">
+       <div class="box_960">
+   		<div class="foot_logo"><img src="images/footer_logo.png" width="200" height="52"></div>
+        
+       	  <div class="foot_permit">
+           	  <li><img src="images/foot_permit_01.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_02.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_03.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_04.png" width="182" height="34"></li>
+          </div>
+         
+          <div class="foot_links_ul_goup">
+          
+          <ul class="foot_links_ul">
+           	  <li>关于我们</li>
+              <li><a href="#">选择VIPABC的理由</a></li>
+              <li><a href="#">企业沿革</a></li>
+              <li><a href="#">新闻中心</a></li>
+              <li><a href="#">学术交流机构</a></li>
+              <li><a href="#">企业荣耀</a></li>
+              <li><a href="#">网站地图</a></li>
+          </ul>
+         
+         
+         <ul class="foot_links_ul">
+           	  <li>学英文最佳选择</li>
+              <li><a href="#">最弹性的上课时间</a></li>
+              <li><a href="#">最专业的外籍顾问</a></li>
+              <li><a href="#">最隐私的上课环境</a></li>
+              <li><a href="#">最有效的学习方法</a></li>
+              <li><a href="#">最个性化的教材内容</a></li>
+              <li><a href="#">最轻松的真人互动教学</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>我们的课程适合</li>
+              <li><a href="#">上班族 / 专业人士</a></li>
+              <li><a href="#">企业培训</a></li>
+              <li><a href="#">出国游学</a></li>
+              <li><a href="#">孩童/青少年</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>VIPABC 帮你提升</li>
+              <li><a href="#">英语口语</a></li>
+              <li><a href="#">英语听力</a></li>
+              <li><a href="#">英语作文</a></li>
+              <li><a href="#">英语阅读</a></li>
+              <li><a href="#">商务英语</a></li>
+              <li><a href="#">职业英语</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>新闻中心</li>
+              <li><a href="#">最新优惠</a></li>
+              <li><a href="#">公司信息</a></li>
+              <li><a href="#">媒体报导</a></li>
+              <li><a href="#">学习资源</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>英语学习专区</li>
+              <li><a href="#">在线免费讲堂</a></li>
+              <li><a href="#">每日一句</a></li>
+              <li><a href="#">英语电子报</a></li>
+              <li><a href="#">移动学习App</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>与我联系</li>
+              <li><a href="#">在线客服</a></li>
+              <li><a href="#">联络我们</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          </div>
+          
+          <div class="foot_tel"><a href="tel:4006-30-30-30"><img src="images/foot_tel.png" width="184" height="44"></a></div>
+        </div>  
+         
+     </div> 
+    
+	<div class="footer_cert">
+   		 <div class="box_960">
+            <div class="foot_bottom_links">
+            <p>
+                <a href="/About/About">关于VIPABC</a>
+                <a href="/Home/Privacy">隐私保护</a>
+                <a href="/Home/Security">安全条款</a>
+                <a href="/Home/Service">服务条款</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>
+                <a href="/Home/ContactUs">联络我们</a>
+            </p>
+            </div>
+            <div class="footer_cert_icons">
+            <p> 
+                <a href="#"><img src="images/cert/cert_01.jpg" width="106" height="40"></a>
+                <a href="#"><img src="images/cert/cert_02.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_03.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_04.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_05.jpg" width="112" height="40"></a>
+                <a href="#"><img src="images/cert/cert_06.jpg" width="110" height="40"></a>
+            </p>
+            </div>
+            
+            <div class="footer_cert_certline">
+            <p> 教育许可 : 教职成司函 [ 2011 ] 267 号  |  经营许可证 : 京 ICP 证 090121 号  |  京 ICP 备 11004351 号</p>
+            <p> VIPABC.com  版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+            </div>            
+
+         </div>
+    </div>
+</div>
+</body>
+</html>

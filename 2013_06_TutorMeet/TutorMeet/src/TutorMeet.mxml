@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   xmlns:ns1="*"
+			   width="1024" height="768" minWidth="0" minHeight="0" backgroundColor="#CCCCCC">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.managers.CursorManager;
+			private function navClickHandler(e:MouseEvent):void {
+				//logoBtn.source="../images/avater_1.png";
+			}
+			private function navRollOver(e:MouseEvent,num:Number):void {
+				e.currentTarget.source="../images/navBtn_"+num+"_on.png";
+				Mouse.cursor="button";
+				//Alert.show("../images/navBtn_"+num+"_on.png");
+			}
+			private function navRollOut(e:MouseEvent,num:Number):void {
+				Mouse.cursor="arrow";
+				e.currentTarget.source="../images/navBtn_"+num+".png";
+			}
+			private function subClickHandler(e:MouseEvent):void {
+				//logoBtn.source="../images/avater_1.png";
+			}
+			private function subRollOver(e:MouseEvent,num:Number):void {
+				e.currentTarget.source="../images/subNav_btn"+num+"_click.png";
+				Mouse.cursor="button";
+				//Alert.show("../images/navBtn_"+num+"_on.png");
+			}
+			private function subRollOut(e:MouseEvent,num:Number):void {
+				Mouse.cursor="arrow";
+				e.currentTarget.source="../images/subNav_btn"+num+".png";
+			}
+			private function toolClickHandler(e:MouseEvent):void {
+				//logoBtn.source="../images/avater_1.png";
+			}
+			private function toolRollOver(e:MouseEvent,num:Number):void {
+				e.currentTarget.source="../images/toolbtn"+num+"_click.png";
+				Mouse.cursor="button";
+				//Alert.show("../images/navBtn_"+num+"_on.png");
+			}
+			private function toolRollOut(e:MouseEvent,num:Number):void {
+				Mouse.cursor="arrow";
+				e.currentTarget.source="../images/toolbtn"+num+".png";
+			}
+		]]>
+	</fx:Script>
+	
+	<s:BorderContainer x="0" y="0" width="100%" height="50" backgroundColor="#0284DD" borderVisible="false" dropShadowVisible="false">
+		<mx:Image id="logoBtn" x="10" y="10" source="../images/logo.png"/>
+		<mx:Image id="navBtn_1" x="253" y="12" mouseOver="navRollOver(event,1);" mouseOut="navRollOut(event,1);" click="navClickHandler(event);" source="../images/navBtn_1.png"/>
+		<mx:Image id="navBtn_2" x="366" y="12" mouseOver="navRollOver(event,2);" mouseOut="navRollOut(event,2);" click="navClickHandler(event);" source="../images/navBtn_2.png"/>
+		<mx:Image id="navBtn_3" x="437" y="12" mouseOver="navRollOver(event,3);" mouseOut="navRollOut(event,3);" click="navClickHandler(event);" source="../images/navBtn_3.png"/>
+		<mx:Image id="navBtn_4" x="548" y="12" mouseOver="navRollOver(event,4);" mouseOut="navRollOut(event,4);" click="navClickHandler(event);" source="../images/navBtn_4.png"/>
+		<mx:Image x="706" y="19" source="../images/blue_line.png"/>
+		<mx:Image x="750" y="19" source="../images/blue_line.png"/>
+		<mx:Image x="820" y="19" source="../images/blue_line.png"/>
+		<mx:Image id="settingBtn" x="716" y="12"  source="../images/settingBtn.png"/>
+		<s:Label x="755" y="21" width="61" color="#75CDFD" text="教室560" textAlign="center"/>
+		<s:Label x="826" y="21" width="164" color="#75CDFD" text="4月8日 星期一  1:38AM" textAlign="center"/>
+	</s:BorderContainer>
+	
+	<mx:Image id="cam_bg" x="8" y="57" width="204" source="../images/cam_bg.png"/>
+	<mx:Image x="9" y="86" width="202" source="../images/cam_avater_1.png"/>
+	<mx:Image id="tab1" x="8" y="303" width="204" source="../images/tab1.png"/>
+	<mx:Image x="139" y="337" source="../images/tabs_btn1.png"/>
+	<mx:Image x="161" y="337" source="../images/tabs_btn2.png"/>
+	<mx:Image x="186" y="337" source="../images/tabs_btn3.png"/>
+	<mx:Image x="27" y="364" source="../images/tabs_line.png"/>
+	<mx:Image x="27" y="657" source="../images/tabs_line.png"/>
+	
+	<s:Label x="22" y="669" width="43" height="18" color="#666666" text="傳送給" textAlign="center"/>
+	
+	
+	<s:BorderContainer x="20" y="372" width="175" height="30"  borderVisible="false" dropShadowVisible="false">
+		<mx:Image x="1" y="11" source="../images/light_green.png"/>
+		<mx:Image x="119" y="7" source="../images/status3.png"/>
+		<mx:Image x="142" y="7" source="../images/status1.png"/>
+		<mx:Image x="165" y="7" source="../images/status2.png"/>
+		
+		<s:Label x="12" y="11" width="81" height="18" color="#6" text="Jennifer" textAlign="left"/>
+	</s:BorderContainer>
+	
+	<s:BorderContainer x="20" y="401" width="175" height="30"  borderVisible="false" dropShadowVisible="false">
+		<mx:Image x="1" y="11" source="../images/light_red.png"/>
+		<mx:Image x="119" y="7" source="../images/status3.png"/>
+		<mx:Image x="142" y="7" source="../images/status3.png"/>
+		<mx:Image x="165" y="7" source="../images/status2.png"/>
+		
+		<s:Label x="12" y="11" width="81" height="18" color="#6" text="Jennifer" textAlign="left"/>
+	</s:BorderContainer>
+
+	
+	
+	
+	
+	
+	<mx:Image x="14" y="262" source="../images/Volume.png"/>
+	<mx:Image x="218" y="58" height="600" width="799"  source="../images/whiteboard.png"/>
+	
+	<mx:Image x="41" y="272" source="../images/scrollBar_bg.png"/>
+	<mx:Image x="142" y="272" source="../images/scrollBar_bg.png"/>
+	<mx:Image x="119" y="262" source="../images/microphone.png"/>
+	<mx:Image x="14" y="216" source="../images/camBtn2.png"/>
+	<mx:Image x="173" y="88" source="../images/camBtn1.png"/>
+	<mx:Image x="173" y="220" source="../images/camBtn3.png"/>
+	<mx:Image x="47" y="266" source="../images/scrollBar.png"/>
+	
+	
+	<mx:Image x="218" y="58" width="800" height="42" source="../images/subNav_bg.png"/>
+	<mx:Image id="subNav_btn1" x="228" y="65" mouseOver="subRollOver(event,1);" mouseOut="subRollOut(event,1);" click="subClickHandler(event);" source="../images/subNav_btn1.png"/>
+	<mx:Image id="subNav_btn2" x="320" y="65" mouseOver="subRollOver(event,2);" mouseOut="subRollOut(event,2);" click="subClickHandler(event);" source="../images/subNav_btn2.png"/>
+	<mx:Image id="subNav_btn3" x="411" y="65" mouseOver="subRollOver(event,3);" mouseOut="subRollOut(event,3);" click="subClickHandler(event);" source="../images/subNav_btn3.png"/>
+	<mx:Image id="subNav_btn4" x="502" y="65" mouseOver="subRollOver(event,4);" mouseOut="subRollOut(event,4);" click="subClickHandler(event);" source="../images/subNav_btn4.png"/>
+	<mx:Image id="pagebtn_prv" x="757" y="64"  source="../images/pagebtn_prv.png"/>
+	<mx:Image id="pagebtn_next" x="782" y="64"  source="../images/pagebtn_next.png"/>
+	<s:TextInput x="814" y="67" width="30" text="1" textAlign="center"/>
+	<s:Label x="850" y="72" width="43" color="#666666" text="/ 20頁" textAlign="center"/>
+	<mx:Image id="downloadTextbooks" x="912" y="64"  source="../images/downloadTextbooks.png"/>
+	<mx:Image id="toolbtn1" x="224" y="105" mouseOver="toolRollOver(event,1);" mouseOut="toolRollOut(event,1);" click="toolClickHandler(event);" source="../images/toolbtn1.png"/>
+	<mx:Image id="toolbtn2" x="224" y="138" mouseOver="toolRollOver(event,2);" mouseOut="toolRollOut(event,2);" click="toolClickHandler(event);" source="../images/toolbtn2.png"/>
+	<mx:Image id="toolbtn3" x="224" y="171" mouseOver="toolRollOver(event,3);" mouseOut="toolRollOut(event,3);" click="toolClickHandler(event);" source="../images/toolbtn3.png"/>
+	<mx:Image id="toolbtn4" x="224" y="204" mouseOver="toolRollOver(event,4);" mouseOut="toolRollOut(event,4);" click="toolClickHandler(event);" source="../images/toolbtn4.png"/>
+	<mx:Image id="toolbtn16" x="224" y="237" mouseOver="toolRollOver(event,16);" mouseOut="toolRollOut(event,16);" click="toolClickHandler(event);" source="../images/toolbtn16.png"/>
+	
+	<mx:Image id="toolbtn5" x="224" y="270" mouseOver="toolRollOver(event,5);" mouseOut="toolRollOut(event,5);" click="toolClickHandler(event);" source="../images/toolbtn5.png"/>
+	
+	<mx:Image id="toolbtn6" x="224" y="303" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,6);" mouseOver="toolRollOver(event,6);"
+			  source="../images/toolbtn6.png"/>
+	<mx:Image id="toolbtn7" x="224" y="337" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,7);" mouseOver="toolRollOver(event,7);"
+			  source="../images/toolbtn7.png"/>
+	<mx:Image id="toolbtn8" x="224" y="370" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,8);" mouseOver="toolRollOver(event,8);"
+			  source="../images/toolbtn8.png"/>
+	<mx:Image id="toolbtn9" x="224" y="403" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,9);" mouseOver="toolRollOver(event,9);"
+			  source="../images/toolbtn9.png"/>
+	<mx:Image id="toolbtn10" x="224" y="436" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,10);" mouseOver="toolRollOver(event,10);"
+			  source="../images/toolbtn10.png"/>
+	<mx:Image id="toolbtn11" x="224" y="469" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,11);" mouseOver="toolRollOver(event,11);"
+			  source="../images/toolbtn11.png"/>
+	<mx:Image id="toolbtn12" x="224" y="502" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,12);" mouseOver="toolRollOver(event,12);"
+			  source="../images/toolbtn12.png"/>
+	<mx:Image id="toolbtn13" x="224" y="535" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,13);" mouseOver="toolRollOver(event,13);"
+			  source="../images/toolbtn13.png"/>
+	<mx:Image id="toolbtn14" x="224" y="569" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,14);" mouseOver="toolRollOver(event,14);"
+			  source="../images/toolbtn14.png"/>
+	<mx:Image id="toolbtn15" x="223" y="602" width="33" height="33" click="toolClickHandler(event);"
+			  mouseOut="toolRollOut(event,15);" mouseOver="toolRollOver(event,15);"
+			  source="../images/toolbtn15.png"/>
+	
+	
+	<mx:Image x="277" y="605" source="../images/longGrayLine.png"/>
+	<s:TextInput x="774" y="619" width="40" text="100%" textAlign="center"/>
+	<mx:Image x="817" y="616" source="../images/zoomIn.png"/>
+	<mx:Image x="843" y="616" source="../images/zoomOut.png"/>
+	<s:Label x="861" y="624" width="43" height="18" color="#666666" text="縮放" textAlign="center"/>
+	
+	<mx:Image x="910" y="616" source="../images/fullScreen.png"/>
+	
+	
+	
+	<mx:Image x="218" y="659" source="../images/avater_1.png"/>
+	<mx:Image x="354" y="659" source="../images/avater_2.png"/>
+	<mx:Image x="489" y="659" source="../images/avater_3.png"/>
+	<mx:Image x="623" y="659" source="../images/avater_4.png"/>
+	<mx:Image x="758" y="659" source="../images/inviteOther.png"/>
+	
+	
+	
+	<s:BorderContainer x="218" y="729" width="130" height="30" alpha=".5" backgroundColor="#000000"
+					   borderVisible="false" dropShadowVisible="false">
+	</s:BorderContainer>
+	<s:BorderContainer x="354" y="729" width="130" height="30" alpha=".5" backgroundColor="#000000"
+					   borderVisible="false" dropShadowVisible="false">
+	</s:BorderContainer>
+	<s:BorderContainer x="490" y="729" width="130" height="30" alpha=".5" backgroundColor="#000000"
+					   borderVisible="false" dropShadowVisible="false">
+	</s:BorderContainer>
+	<s:BorderContainer x="625" y="729" width="130" height="30" alpha=".5" backgroundColor="#000000"
+					   borderVisible="false" dropShadowVisible="false">
+	</s:BorderContainer>
+	<mx:Image x="327" y="736" source="../images/inviteIcon.png"/>
+	<s:Label x="228" y="738" width="94" height="18" color="#ffffff" text="Jennifer" textAlign="center"/>
+	<s:Label x="361" y="738" width="94" height="18" color="#ffffff" text="Jennifer" textAlign="center"/>
+	<mx:Image x="462" y="736" source="../images/inviteIcon.png"/>
+	<s:Label x="498" y="738" width="94" height="18" color="#ffffff" text="Jennifer" textAlign="center"/>
+	<s:Label x="634" y="738" width="94" height="18" color="#ffffff" text="Jennifer" textAlign="center"/>
+	<mx:Image x="600" y="736" source="../images/inviteIcon.png"/>
+	<mx:Image x="734" y="736" source="../images/inviteIcon.png"/>
+	<mx:Image x="150" y="266" source="../images/scrollBar.png"/>
+	<s:DropDownList x="67" y="665" width="72"></s:DropDownList>
+	
+	<mx:Image x="146" y="668" source="../images/Emoticon.png"/>
+	<mx:Image x="23" y="693" source="../images/Dialog.png"/>
+
+	
+</s:Application>

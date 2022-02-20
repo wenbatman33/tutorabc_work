@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "UserRegisterStep";
+}
+@{var name = ViewData["Name"] as string;}
+@{var code = ViewData["Code"] as string;}
+<!-- fixed_box 固定註冊表單 start -->
+<div class="fixed_box">
+    <div class="box_960">
+        <div class="registration_form">
+            <img src="@Url.Content("~/Content/images/reg_banner.png")" width="268" height="316">
+        </div>
+    </div>
+</div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+            <div class="breadcrumb">
+                <a href="@Url.Action("Index", "Home")">Home</a><span> / </span>会员注册</div>
+            <div class="steps_wrap_2">
+                <div class="steps_txt color_666">
+                    <h3>
+                        注册会员</h3>
+                    <h4>
+                        填妥您的相关资料</h4>
+                </div>
+                <div class="steps_txt color_fff">
+                    <h3>
+                        认证E-Mail</h3>
+                    <h4>
+                        点击链接，完成账号认证</h4>
+                </div>
+            </div>
+            <div class="reg_form">
+                <h2 style="color: #666; margin-top: 20px;">
+                    Dear @name</h2>
+                <div class="box_shadow" style="background-position: -80px 0px;">
+                </div>
+                <h3 style="color: #666;">
+                    欢迎您加入全球最专业的在线英语学习第一品牌VIPABC<br />
+                    接下来就与我们一起轻松学英文吧！</h3>
+                <h4 style="color: #666;">
+                    请点击以下链接，完成会员账号认证<br />
+                    <span class="reg_link"><a href="http://192.168.101.73:91/program/regist/account_authenticate.asp?randstr=@code">进行会员认证</a></span></h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #############Content部分 end################ -->

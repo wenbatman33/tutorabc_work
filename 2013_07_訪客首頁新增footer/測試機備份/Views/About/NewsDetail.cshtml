@@ -1,0 +1,108 @@
+﻿@model NewVIPABC.Models.NewsDetail
+@{var ImageUrl = NewVIPABC.Extensions.PublicFacade.ImageUrl;}
+@{var LessonDaily = ViewData["LessonDaily"] as NewVIPABC.Models.LessonDailyModel;}
+@{var NewsList = ViewData["NewsList"] as IEnumerable<NewVIPABC.Models.News>;}
+<head>
+    <link href="@Url.Content("~/Content/css/reset.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/main.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">      
+         function changeUrl(newsID) {
+            //转页
+           window.open('@Url.Action("NewsDetail", "About")?newsType='+@Model.newsType+'&&newsID='+newsID,"_blank");
+        }
+    </script>
+</head>
+@using (Html.BeginForm("NewsDetail", "About", FormMethod.Post, new { name = "form1", id = "form1", pagevalue = "1" }))
+{
+    <input id="hidden" type="hidden" value="@Model.NewsContent" />
+    <div class="content">
+        <div class="box_960">
+            <div class="box_660 color_333">
+                <div class="breadcrumb">
+                    <a href="@Url.Action("Index", "Home")">Home</a><span> / </span><a href="@Url.Action("About", "About")?type=2">
+                        新闻中心</a><span> / </span>新闻内容</div>
+            </div>
+            <div class="tab_container">
+                <div class="news_container" style="width: 670px">
+                    <h2>@Model.NewsTitle</h2>
+                    @* <img src="@ImageUrl/NewsImg/@Model.NewsPicture" width="449" height="334" />*@
+                    @* <br />*@
+                    <h4>
+                        <div id="divContent">
+                        </div>
+                        <h4>
+                            <div class="news_nav">
+                                @if (Model.lastTitle != null && Model.lastTitle != "")
+                                {
+                                    <span style="font-size: 14px; float: left; margin-right: 6px"><a href="@Url.Action("NewsDetail", "About")?newsType=@Model.newsType&&newsID=@Model.lastID">
+                                        &lt;-上一篇
+                                        @if (@Model.lastTitle.Length <= 10)
+                                        {
+                                            @Model.lastTitle
+                                        }
+                                        else
+                                        {
+                                            @Model.lastTitle.Substring(0, 10)
+                                            <span>...</span> 
+                                        }
+                                    </a></span>
+                                }
+                                @if (Model.nextTitle != null && Model.nextTitle != "")
+                                {
+                                    <span style="font-size: 14px; float: right; margin-right: 6px"><a href="@Url.Action("NewsDetail", "About")?newsType=@Model.newsType&&newsID=@Model.nextID">
+                                        下一篇
+                                        @if (@Model.nextTitle.Length <= 10)
+                                        {
+                                            @Model.nextTitle
+                                        }
+                                        else
+                                        {
+                                            @Model.nextTitle.Substring(0, 10)
+                                            <span>...</span> 
+                                        }
+                                        -&gt; </a></span>
+                                }
+                            </div>
+                            <div class="box_shadow" style="background-position: -80px 0px;">
+                            </div>
+                </div>
+                <ul class="news_ul">
+                    @if (@NewsList != null)
+                    {
+                        for (var i = 0; i < @NewsList.Count(); i++)
+                        {
+                            var item = @NewsList.ToList()[i];
+                        <li class="news_list_wrap"  onclick="changeUrl('@item.NewsId');">
+                            <img src="@ImageUrl/NewsImg/@item.NewsPictureSmall" width="200" height="144">
+                            <div class="news_list_on">
+                                <span class="news_title"><a>
+                                    @if (@item.NewsTitle.Length <= 25)
+                                    {
+                                        @item.NewsTitle
+                                    }
+                                    else
+                                    {
+                                        @item.NewsTitle.Substring(0, 25)<span>...</span>
+                                    }
+                                </a></span><span class="news_desc"><a>
+                                    @if (@item.NewsContentText.Length <= 60)
+                                    {
+                                        @item.NewsContentText
+                                    }
+                                    else
+                                    {
+                                        @item.NewsContentText.Substring(0, 60)<span>...</span>
+                                    }
+                                </a></span>
+                            </div>
+                        </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("divContent").innerHTML = document.getElementById("hidden").value;
+    </script>
+}

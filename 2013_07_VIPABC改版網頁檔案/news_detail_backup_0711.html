@@ -1,0 +1,369 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+<!-- fancybox -->
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="fixed_box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <input type="button" value="立即预约" class="y_btn" >  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+    	<li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span><a href="#"> 新闻中心</a><span> / </span>新闻内容</div>
+
+          <div class="tab_container">
+          
+          
+                  <div class="news_container">                  
+                  <h2>VIPABC携手Kenexa为中国企业打造世界人才，提升国际竞争力</h2>                  
+                  <img src="images/u27_normal.png" width="449" height="334"><br>
+<h4>
+            2012年5月28日，VIPABC获评由中国互联网信用评价中心（商务部和国资委批准评级机构）授予的企业信用评级AA级。<br>
+                     
+                  中国互联网协会成立于2001年5月25日，由国内从事互联网行业的网络运营商、服务提供商、设备制造商、系统集成商以及科研、教育机构等70多家互联网从业者共同发起成立，是由中国互联网行业及与互联网相关的企事业单位自愿结成的行业性的全国性的非营利性的社会组织。<br>
+                     
+                    中国互联网协会2012年首批企业信用评价工作于2012年1月1日启动，至2012年5月15日结束。评价指标包括企业综合素质、财务状况、管理水平、竞争力、社会信用记录等方面。企业信用评价评级是为审核网站及其经营主体的可信度，减少网民对用户信息保护的忧虑，让消费者放心。<br>
+                     
+                    根据企业信用评价工作流程，中国互联网协会于5月24日召开了“信用评价专家评审会”，初评成绩良好的33家企业通过了专家评审，获得A级以上信用评级，现正式向社会公示，公示期自2012年5月28日始至2012年6月8日止。<br>
+                     
+                     
+                     
+                    附件：2012年首批企业信用评价评审结果（33家）<br>
+                     
+                    一、互联网行业信用AAA级企业（23家）<br>
+                     
+                    上海付费通信息服务有限公司（付费通）<br>
+                           中移电子商务有限公司（中国移动手机支付）<br>
+                           湖南供销电子商务有限公司（网上供销社）<br>
+                           江苏公用信息有限公司（江苏公用信息平台）<br>
+                           通联支付网络服务股份有限公司（通联支付）<br>
+                           上海溯天珠宝贸易有限公司（钻石小鸟）<br>
+                           天翼电子商务有限公司（翼支付）<br>
+                           上海钢市电子商务有限公司（钢贸360交易融资平台）<br>
+                            家有购物集团有限公司（家有购物官网网站）<br>
+                            纵横天地电子商旅服务有限公司（纵横天地官方网站）<br>
+                            苏州易中达电子商务有限公司（钢企网）<br>
+                            北京和讯在线信息咨询服务有限公司（和讯）<br>
+                            掌上通航空服务(北京)有限公司（飞行网）<br>
+                            义乌中国小商品城信息技术有限公司（中国小商品城）<br>
+                            北京东大正保科技有限公司（正保教育网）<br>
+                            北京北辰信通网络技术有限公司（北辰信通网）<br>
+                            河北三佳润尚商贸有限责任公司（河北三佳购物频道）<br>
+                            余姚中国塑料城物流有限公司（浙江塑料城网上交易市场）<br>
+                            新华旅行网络服务有限公司（新华旅行网）<br>
+                            中经汇通有限责任公司（中经汇通）<br>
+                            渤海易生商务服务有限公司（易生支付）<br>
+                            北京通融通信息技术有限公司（易宝支付）<br>
+                            湖南经桥网络科技有限公司（经桥网）<br>
+                     
+                    二、互联网行业信用AA级企业（8家）<br>
+                     
+                    北京观滔高科技有限公司（观滔商城,观滔宽带）<br>
+                            北京尚品百姿电子商务有限公司（尚品网）<br>
+                            悠易互通（北京）广告有限公司（悠易互通）<br>
+                            广州唯品会信息科技有限公司（唯品会）<br>
+                            杭州凡之美科技有限公司（致美网）<br>
+                            上海德农网络信息技术有限公司（德农网）<br>
+                            天津市企商科技发展有限公司（企商科技）<br>
+                            北京创意麦奇教育信息咨询有限公司（VIPABC）<br>
+                     
+                    三、互联网行业信用A级企业（2家）<br>
+                     
+                    广州壹六八网络科技有限公司（中国排行榜网）<br>
+                            石家庄怡佳幸福来科技有限公司（幸福商城）<br>
+                  
+            </h4>
+              <div class="news_nav">
+                          <span style="font-size:14px; float:left; margin-right:6px">  
+                            <a href="#">&lt;-上一篇 VIPABC获中国互联网...</a></span>
+                          <span style="font-size:14px; float:right; margin-right:6px">  
+                            <a href="#">下一篇在线英语学习一把交椅...-&gt; </a></span>
+                            
+                          
+                </div>
+                  
+          <div  class="box_shadow" style="background-position:-80px 0px;"></div> 
+          </div>
+                  
+                  <ul class="news_ul">
+                            <li class="news_list_wrap">
+                               <img src="images/Resources01.png" width="200" height="144">
+                             <div class="news_list_on">
+                             <span class="news_title"> <a href="/aspx/Mvc/html/speedmemory.html">每日的英文营养品
+                              随时补充英语力</a></span>
+                              <span class="news_desc"><a href="/aspx/Mvc/html/speedmemory.html">每日的英文营养品随时补充英语力每日的英文营养品随时补充英语力每日的英文营养品随时补充英语力</a></span>
+                               </div>
+                            </li>
+                            <li class="news_list_wrap">
+                            <img src="images/Resources02.png" width="200" height="144">
+                            <div class="news_list_on">
+                                <span class="news_title"><a href="/aspx/Mvc/html/speedmemory.html">最新最热门的话题
+                                VIPABC英文报和你一起掌握!</a></span>
+                                 <span class="news_desc"><a href="/aspx/Mvc/html/speedmemory.html">最新最热门的话题
+                                VIPABC英文报和你一起掌握!</a></span>
+                                
+                             </div>
+                            </li>
+                            <li class="news_list_wrap">
+                            <img src="images/Resources03.png" width="200" height="144">
+                            <div class="news_list_on">
+                               <span class="news_title"><a href="/aspx/Mvc/html/speedmemory.html">輕鬆有英文短劇
+                               让您不费力气就能提升英语能力！</a>
+                               </span>
+                               <span class="news_desc"><a href="/aspx/Mvc/html/speedmemory.html">輕鬆有英文短劇
+                               让您不费力气就能提升英语能力！</a>
+                               </span>
+                             </div>
+                            </li>
+                        </ul>
+                </div>
+
+           
+              
+              
+        </div>
+    </div>
+
+</div>
+<!-- #############Content部分 end################ -->
+<div class="footer">
+	<div class="footer_links">
+       <div class="box_960">
+   		<div class="foot_logo"><img src="images/footer_logo.png" width="200" height="52"></div>
+        
+       	  <div class="foot_permit">
+           	  <li><img src="images/foot_permit_01.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_02.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_03.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_04.png" width="182" height="34"></li>
+          </div>
+         
+          <div class="foot_links_ul_goup">
+          
+          <ul class="foot_links_ul">
+           	  <li>关于我们</li>
+              <li><a href="#">选择VIPABC的理由</a></li>
+              <li><a href="#">企业沿革</a></li>
+              <li><a href="#">新闻中心</a></li>
+              <li><a href="#">学术交流机构</a></li>
+              <li><a href="#">企业荣耀</a></li>
+              <li><a href="#">网站地图</a></li>
+          </ul>
+         
+         
+         <ul class="foot_links_ul">
+           	  <li>学英文最佳选择</li>
+              <li><a href="#">最弹性的上课时间</a></li>
+              <li><a href="#">最专业的外籍顾问</a></li>
+              <li><a href="#">最隐私的上课环境</a></li>
+              <li><a href="#">最有效的学习方法</a></li>
+              <li><a href="#">最个性化的教材内容</a></li>
+              <li><a href="#">最轻松的真人互动教学</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>我们的课程适合</li>
+              <li><a href="#">上班族 / 专业人士</a></li>
+              <li><a href="#">企业培训</a></li>
+              <li><a href="#">出国游学</a></li>
+              <li><a href="#">孩童/青少年</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>VIPABC 帮你提升</li>
+              <li><a href="#">英语口语</a></li>
+              <li><a href="#">英语听力</a></li>
+              <li><a href="#">英语作文</a></li>
+              <li><a href="#">英语阅读</a></li>
+              <li><a href="#">商务英语</a></li>
+              <li><a href="#">职业英语</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>新闻中心</li>
+              <li><a href="#">最新优惠</a></li>
+              <li><a href="#">公司信息</a></li>
+              <li><a href="#">媒体报导</a></li>
+              <li><a href="#">学习资源</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>英语学习专区</li>
+              <li><a href="#">在线免费讲堂</a></li>
+              <li><a href="#">每日一句</a></li>
+              <li><a href="#">英语电子报</a></li>
+              <li><a href="#">移动学习App</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>与我联系</li>
+              <li><a href="#">在线客服</a></li>
+              <li><a href="#">联络我们</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          </div>
+          
+          <div class="foot_tel"><a href="tel:4006-30-30-30"><img src="images/foot_tel.png" width="184" height="44"></a></div>
+        </div>  
+         
+     </div> 
+    
+	<div class="footer_cert">
+   		 <div class="box_960">
+            <div class="foot_bottom_links">
+            <p>
+                <a href="/About/About">关于VIPABC</a>
+                <a href="/Home/Privacy">隐私保护</a>
+                <a href="/Home/Security">安全条款</a>
+                <a href="/Home/Service">服务条款</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>
+                <a href="/Home/ContactUs">联络我们</a>
+            </p>
+            </div>
+            <div class="footer_cert_icons">
+            <p> 
+                <a href="#"><img src="images/cert/cert_01.jpg" width="106" height="40"></a>
+                <a href="#"><img src="images/cert/cert_02.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_03.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_04.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_05.jpg" width="112" height="40"></a>
+                <a href="#"><img src="images/cert/cert_06.jpg" width="110" height="40"></a>
+            </p>
+            </div>
+            
+            <div class="footer_cert_certline">
+            <p> 教育许可 : 教职成司函 [ 2011 ] 267 号  |  经营许可证 : 京 ICP 证 090121 号  |  京 ICP 备 11004351 号</p>
+            <p> VIPABC.com  版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+            </div>            
+
+         </div>
+    </div>
+</div>
+</body>
+</html>

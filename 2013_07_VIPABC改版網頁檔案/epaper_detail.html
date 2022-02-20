@@ -1,0 +1,362 @@
+<!doctype html>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>英語學習網站_英語口語_英語聽力_VIPABC真人在線英語外教網</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/event_sub.js"></script>
+<script type="text/javascript" src="js/albumSlides.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/albumSlides.css" rel="stylesheet" type="text/css"/>
+<link href="css/form.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- fancybox -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox.js"></script>
+
+<link href="css/jquery.fancybox_VIPABC.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<!-- fancybox -->
+
+<script language="javascript" type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<link href="css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<link href="css/html.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+    <div class="fixed_box">
+        <div class="fixed_box_960">
+            <div class="registration_form">
+            	<a href="#"><img src="images/CustomerService.png" width="138" height="94" style="margin-left:136px;"></a>
+                <div style="position:relative; background:url(images/Form_bg.png); width:268px; height:316px;">
+               	<div id="form_box" style="position:absolute; width:210px; height:auto; top:90px; left:32px;">	
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入您的姓名" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入您的姓名';}" />
+                <input class="form_input" name="txt_cname" type="text" id="txt_cname" value="请输入电子邮箱" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入电子邮箱';}" /><br>
+                <select name="sel_nation_code" id="sel_nation_code"  class="form_select" onChange="changeNationalCode(this)">
+                    <option value="0">请选择</option>
+                    <option value="+86"  selected="selected">中国 China</option>
+                    <option value="+886"  >台湾 Taiwan</option>
+                    <option value="+852"  >香港 Hong Kong</option>
+                    <option value="+853"  >澳门 Macao</option>
+                    <option value="+61"  >澳大利亚 Australia</option>
+                    <option value="+1"  >加拿大 Canada</option>
+                    <option value="+81"  >日本 Japan</option>
+                    <option value="+82"  >南韩 Korea South</option>
+                    <option value="+65"  >新加坡 Singapore</option>
+                    <option value="+1"  >美国 U.S.A.</option>
+                    <option value="+84"  >越南 Vietnam</option>
+                    <option value="-1"  >其他 Others</option>
+                </select>
+                <input type="text" id="txt_phone_nationcode" name="txt_phone_nationcode"  class="form_input width_50" value="+86" disabled onChange="document.getElementById('hdn_phone_nationcode').value=document.getElementById('txt_phone_nationcode').value" />
+                  <input class="form_input width_145" name="txt_cname" type="text"  id="txt_cname" value="请输入移动电话" onFocus="this.value='';" onBlur="if(this.value==''){this.value='请输入移动电话';}" />
+                  <input class="form_input width_100" name="txt_cname" type="text" id="txt_cname" value="学习服务日期" onFocus="this.value='';" onBlur="if(this.value==''){this.value='学习服务日期';}" />
+                 <select name="rad_know_abc" id="rad_know_abc"  class="form_select width_100">
+                    <option value="0">选择时间</option>
+                    <option value="10:00~12:00">10:00~12:00</option>
+                    <option value="12:00~18:00">12:00~18:00</option>
+                    <option value="18:00~22:00">18:00~22:00</option>
+                </select>
+                <select name="rad_know_abc" id="rad_know_abc"  class="form_select">
+                    <option value="">-请选择-</option>
+                    <option value="23">网易163有道</option>
+                    <option value="23">社区传单</option>
+                    <option value="23">英语入口网</option>
+                    <option value="23">其他</option>
+                    <option value="25">腾讯QQ</option>
+                    <option value="26">谷歌/Google</option>
+                    <option value="27">报刊杂志</option>
+                    <option value="28">电视/广播</option>
+                    <option value="30">百度</option>
+                    <option value="32">短信/电子报</option>
+                    <option value="34">地铁/公交</option>
+                    <option value="35">朋友介绍</option>
+                    <option value="41">搜狐/Soho</option>
+                </select><br>
+                <input type="button" value="立即预约" class="y_btn" >  </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- fixed_box 固定註冊表單 start -->
+<!-- top_news 上方新聞以及註冊按鈕群 -->
+<div id="top_news">
+  <div class="topmain">
+    <div class="topleft">
+    	<a href="/program/news/news_detail.asp?NewsId=132" target="_blank">TutorGroup获启明创投注资1500万美元　加速拓展中国市场</a>
+   	</div>
+    <ul class="user_register_bar">
+		 <li><div class="g_btn"><a class="btn_text color_fff" href="#"><div>会员登录</div></a></div></li>
+    	<li><div class="r_btn" ><a class="btn_text color_fff" href="#"><div>免费注册</div></a></div></li>
+    </ul>  
+  </div>
+</div>
+<!-- nav 上方主要按鈕們 捲動時會固定在上方-->
+<div id="top_nav">
+    <div class="topmain">
+    	<div class="logo"><a class="index_top" href="javascript:pageScroll('')"><img src="images/logo.png" width="187" height="49"></a></div>
+            <ul class="nav_bar">
+                <li><a class="part_01" href="#">服务特色</a></li>
+                <li><a class="part_02" href="#">最有效学习法</a></li>
+                <li><a class="part_03" href="#">行动学习</a></li>
+                <li><a class="part_04" href="#">免费在线直播讲堂</a></li>
+                <li><a class="part_05" href="#">客户见证</a></li>
+                <li><a class="part_06" href="#">英语学习专区</a></li>
+                <li><a href="http://www.vipabc.com/biz/" target="_blank">企业培训</a></li>
+                
+      </ul>
+        <div class="tel"><a href="tel:4006-30-30-30"><img src="images/tel.png" width="214" height="25"></a></div>
+    </div>
+</div>
+<!-- #############Content部分 start################ -->
+<div class="content">
+    <div class="box_960">
+        <div class="box_660 color_333">
+              <div class="breadcrumb"><a href="#">Home</a><span> / </span>學習報</div>
+              
+              
+
+
+                <ul  class="tab_ul">
+                    <li class="tab_li_L" style="width:20%"><span class="tab_li_span"><a href="#">商业科技</a></span></li>
+                    <li class="tab_li_M_active" style="width:20%"><span class="tab_li_span">旅游探索</span></li>
+                    <li class="tab_li_M" style="width:20%"><span class="tab_li_span"><a href="#">生活娱乐</a></span></li>
+                    <li class="tab_li_M" style="width:20%"><span class="tab_li_span"><a href="#">健康医学</a></span></li>
+                    <li class="tab_li_R" style="width:20%"><span class="tab_li_span"><a href="#">人文艺术</a></span></li>
+                  </ul>
+              
+              
+          <div id="divArticle" style="">
+              <div class="epaper_h_e">Branding Yourself</div>
+              <div class="epaper_h_c">漂亮行銷自己</div>
+              <div class="epaper_pic"><img id="EPaperImage" width="660" height="405" src="images/20130502_a.png" atl=""></div>  
+
+              <div class="article"> 
+                <!--聲音檔-->
+                <div class="vedio_epaper">
+					<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata" src="http://www.tutorabc.com/media/epaperrecoding/voice075.mp3"></audio></div>
+					<div id="jp_container_1" class="jp-audio">
+						<div class="jp-type-single">
+							<div class="jp-gui jp-interface" style="">
+								<ul class="jp-controls">
+									<li><a href="javascript:;" class="jp-play" tabindex="1" style="">play</a></li>
+									<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;">pause</a></li>
+									<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+									<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute" style="">mute</a></li>
+									<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none;">unmute</a></li>
+									<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume" style="">max volume</a></li>
+								</ul>
+								<div class="jp-progress">
+                                    <div class="jp-seek-bar" style="width: 100%;">
+										<div class="jp-play-bar" style="width: 0%;"></div>
+									</div>
+								</div>
+								<div class="jp-volume-bar" style="">
+									<div class="jp-volume-bar-value" style="width: 80%;"></div>
+								</div>
+								<div class="jp-time-holder">
+									<div class="jp-current-time">00:00</div>
+									<div class="jp-duration">01:27</div>
+
+									<ul class="jp-toggles">
+										<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat" style="">repeat</a></li>
+										<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none;">repeat off</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                <!--聲音檔 END-->
+
+                <div id="paragraphs" style="font-size:12px"><p>
+		With the <span><a href="#vocabulary1" class="fancybox" rel="g1">advent</a></span> of social media and blogs, it’s now easier than ever to become famous, or to “brand” yourself. While you might not be the next Nike or Apple, how you come across on these <span onClick=""><a href="#vocabulary2" class="fancybox" rel="g1">platforms</a></span> can be really important when it comes to being successful. So what is it you want to be known for? How should you brand yourself?
+	  </p><p>
+		First , think about what it is that makes up your brand. Use positive words, such as <span><a href="#vocabulary3" class="fancybox" rel="g1">collaborative</a></span>, resourceful, connected, diplomatic, visionary, etc., when describing your <span><a href="#vocabulary4" class="fancybox" rel="g1">persona</a></span> or outlook. If you’re a tax accountant, brand yourself to sound like an expert in the field. While you’re at it, build an online presence. If people were to Google search your name, what results would they get? What they find should be separate from your company’s website.
+	  </p><p>
+		Go on to network in order to generate brand awareness. You want to connect with other professionals in similar industries by using social networks and commenting on other people’s blogs. This is one of the best ways for you to become known in the industry. Form relationships with people, especially your <span><a href="#vocabulary5" class="fancybox" rel="g1">audience</a></span>!
+	  </p><div class="vocabulary" id="vocabulary1"><h2 class="vocabu">advent<span id="aaa">( n. 名詞 ) </span><span id="bbb"> (季節、事件等的)到來，出現</span></h2><p class="vocabu_p">The advent of the computer completely changed how companies conducted business.</p><p class="vocabu_p2">電腦的問世徹底改變了企業執行業務的方式。</p><p class="vocabu_p3">｜</p></div><div class="vocabulary" id="vocabulary2"><h2 class="vocabu">platform<span id="aaa">( n. 名詞 )</span><span id="bbb">平台</span></h2><p class="vocabu_p">We decided to write the software using the UNIX platform.</p><p class="vocabu_p2">我們決定使用UNIX平台編寫軟體。</p><p class="vocabu_p3">｜</p></div><div class="vocabulary" id="vocabulary3"><h2 class="vocabu">collaborative<span id="aaa">( adj. 形容詞 )</span><span id="bbb">合作，共同研究</span></h2><p class="vocabu_p">The collaborative project involved people from several different departments.</p><p class="vocabu_p2">合作專案有幾個不同部門的人員參與。</p><p class="vocabu_p3">｜</p></div><div class="vocabulary" id="vocabulary4"><h2 class="vocabu">persona<span id="aaa">( n. 名詞 )</span><span id="bbb">(在社交場合等的)外表</span></h2><p class="vocabu_p">Mike has a very serious persona at work, but he is completely different at home.</p><p class="vocabu_p2">麥克在工作時外表總是非常嚴肅，與他在家時是完全不同的。</p><p class="vocabu_p3">｜</p></div><div class="vocabulary" id="vocabulary5"><h2 class="vocabu">audience<span id="aaa">( n. 名詞 )</span><span id="bbb">聽眾；觀眾；讀者</span></h2><p class="vocabu_p">The audience applauded loudly after the performance.</p><p class="vocabu_p2">演出後觀眾大聲鼓掌。</p><p class="vocabu_p3">｜</p></div><div style="clear: both"></div></div>
+              </div><!--<div class="article"> --></div>
+              
+              
+              
+              <div class="article_more" style=""><p>更多生活娛樂類學習報</p><ul><li><div class="article_list_point">點點</div><div class="article_list"><a href="javascript:void(0)" onClick="showhide('tab1', 'BrandingYourself.xml');">漂亮行銷自己 Branding Yourself...</a></div></li><li><div class="article_list_point">點點</div><div class="article_list"><a href="javascript:void(0)" onClick="showhide('tab1', 'EcommerceRich.xml');">e鳴驚人!電子商務讓您致富的理由 5 reasons...</a></div></li><li><div class="article_list_point">點點</div><div class="article_list"><a href="javascript:void(0)" onClick="showhide('tab1', 'BPTheNewYear.xml');">商業系列︰新年新計畫 Business Planning...</a></div></li><li><div class="article_list_point">點點</div><div class="article_list"><a href="javascript:void(0)" onClick="showhide('tab1', 'AutoCars.xml');">科技新革命:自動車引領未來 Self-Driving...</a></div></li><li><div class="article_list_point">點點</div><div class="article_list"><a href="javascript:void(0)" onClick="showhide('tab1', 'BeInteresting.xml');">如何在職場中成為目光焦點 How To Be...</a></div></li><li><div class="article_list_point">點點</div><div class="article_list"><a href="javascript:void(0)" onClick="showhide('tab1', 'Socializing.xml');">會說話，讓你少奮鬥10年 How To Have A...</a></div></li></ul></div>
+              
+              
+              
+              <form id="formEpaper" action="" novalidate>
+        <div class="epaper_intro_wrap">
+          <div class="epaper_intro">
+            <ul>
+            	<li class="epaper_intro1">立即订阅免费学习报</li>
+            	<li class="epaper_intro2">了解国际时事脉动，体会世界人文之旅，各式有趣主题探讨，重点单字解析，英文学习报绝对是您第一手消息的最佳来源！</li>
+            </ul>
+            </div>
+          <div class="epaper_input">
+		   <div style=" position:relative; width:100%; text-align:left; float:left;height:32px; line-height:32px;vertical-align:middle;"">姓　名 
+	         <input class="reg_field" type="text" value=""  style="width:350px;"/></div>
+			<div style=" position:relative; width:100%; text-align:left; float:left;height:32px; line-height:32px;vertical-align:middle;"">电　话 
+		      <input class="reg_field" type="text" value=""  style="width:350px;"/></div>
+            <div style=" position:relative; width:100%; text-align:left; float:left;height:32px; line-height:32px;vertical-align:middle;"">E-mail 
+            <input class="reg_field" type="text" value=""  style="width:350px;"/></div>
+
+                   
+
+				<input style=" position:relative; float:left; margin-left:50px; margin-top:10px;" type="button" value="确定送出" class="y_btn" >
+            </div>
+         </div>
+    </form>
+
+              
+        </div>
+    </div>
+
+</div>
+<!-- #############Content部分 end################ -->
+
+<div class="footer">
+	<div class="footer_links">
+       <div class="box_960">
+   		<div class="foot_logo"><img src="images/footer_logo.png" width="200" height="52"></div>
+        
+       	  <div class="foot_permit">
+           	  <li><img src="images/foot_permit_01.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_02.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_03.png" width="182" height="34"></li>
+              <li><img src="images/foot_permit_04.png" width="182" height="34"></li>
+          </div>
+         
+          <div class="foot_links_ul_goup">
+          
+          <ul class="foot_links_ul">
+           	  <li>关于我们</li>
+              <li><a href="#">选择VIPABC的理由</a></li>
+              <li><a href="#">企业沿革</a></li>
+              <li><a href="#">新闻中心</a></li>
+              <li><a href="#">学术交流机构</a></li>
+              <li><a href="#">企业荣耀</a></li>
+              <li><a href="#">网站地图</a></li>
+          </ul>
+         
+         
+         <ul class="foot_links_ul">
+           	  <li>学英文最佳选择</li>
+              <li><a href="#">最弹性的上课时间</a></li>
+              <li><a href="#">最专业的外籍顾问</a></li>
+              <li><a href="#">最隐私的上课环境</a></li>
+              <li><a href="#">最有效的学习方法</a></li>
+              <li><a href="#">最个性化的教材内容</a></li>
+              <li><a href="#">最轻松的真人互动教学</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>我们的课程适合</li>
+              <li><a href="#">上班族 / 专业人士</a></li>
+              <li><a href="#">企业培训</a></li>
+              <li><a href="#">出国游学</a></li>
+              <li><a href="#">孩童/青少年</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>VIPABC 帮你提升</li>
+              <li><a href="#">英语口语</a></li>
+              <li><a href="#">英语听力</a></li>
+              <li><a href="#">英语作文</a></li>
+              <li><a href="#">英语阅读</a></li>
+              <li><a href="#">商务英语</a></li>
+              <li><a href="#">职业英语</a></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>新闻中心</li>
+              <li><a href="#">最新优惠</a></li>
+              <li><a href="#">公司信息</a></li>
+              <li><a href="#">媒体报导</a></li>
+              <li><a href="#">学习资源</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          <ul class="foot_links_ul">
+           	  <li>英语学习专区</li>
+              <li><a href="#">在线免费讲堂</a></li>
+              <li><a href="#">每日一句</a></li>
+              <li><a href="#">英语电子报</a></li>
+              <li><a href="#">移动学习App</a></li>
+              <li></li>
+              <li></li>
+          </ul>
+          
+          
+          <ul class="foot_links_ul">
+           	  <li>与我联系</li>
+              <li><a href="#">在线客服</a></li>
+              <li><a href="#">联络我们</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          </div>
+          
+          <div class="foot_tel"><a href="tel:4006-30-30-30"><img src="images/foot_tel.png" width="184" height="44"></a></div>
+        </div>  
+         
+     </div> 
+    
+	<div class="footer_cert">
+   		 <div class="box_960">
+            <div class="foot_bottom_links">
+            <p>
+                <a href="/About/About">关于VIPABC</a>
+                <a href="/Home/Privacy">隐私保护</a>
+                <a href="/Home/Security">安全条款</a>
+                <a href="/Home/Service">服务条款</a>
+                <a href="http://www.vipabc.com/program/recruit/index.asp">诚征英才</a>
+                <a href="http://biz.vipabc.com/" target="_blank">企业培训</a>
+                <a href="/Home/ContactUs">联络我们</a>
+            </p>
+            </div>
+            <div class="footer_cert_icons">
+            <p> 
+                <a href="#"><img src="images/cert/cert_01.jpg" width="106" height="40"></a>
+                <a href="#"><img src="images/cert/cert_02.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_03.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_04.jpg" width="110" height="40"></a>
+                <a href="#"><img src="images/cert/cert_05.jpg" width="112" height="40"></a>
+                <a href="#"><img src="images/cert/cert_06.jpg" width="110" height="40"></a>
+            </p>
+            </div>
+            
+            <div class="footer_cert_certline">
+            <p> 教育许可 : 教职成司函 [ 2011 ] 267 号  |  经营许可证 : 京 ICP 证 090121 号  |  京 ICP 备 11004351 号</p>
+            <p> VIPABC.com  版权所有 © 2008-2013 全球最大真人英语外教网 All Rights Reserved.</p>
+            </div>            
+
+         </div>
+    </div>
+</div>
+</body>
+</html>

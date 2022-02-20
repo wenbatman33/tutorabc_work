@@ -1,0 +1,181 @@
+﻿@model TutorGroup.VIPABCJR.Member.ViewModels.OrderDetailViewModel
+<div id="content">
+    <div class="menber_membox">
+    <div class="page_title_5"><h2 class="page_title_h2">产品购买</h2></div>
+    <div class="box_shadow" style="background-position:-80px 0px;"></div>
+        <!--<img src="images/banner1.jpg" width="683" height="201" />-->
+        <div id="temp_contant">
+            <!--內容start-->
+            <div class="main_membox">
+                <div class="buy">
+                    <div class="w">
+                        亲爱的<span class="bold">@Model.ClientEnglishName</span>您好，感谢您在VIPABC的订购和对我们的支持！<br />
+                        以下是您的订单明细</div>
+                    <!--訂單 start-->
+                    <div class="box">
+                        <div class="line"></div>
+                        <div class="title">订单明细</div>
+                        <!--订购日期 date start-->
+                        <div class="con">
+                            <div class="name">订购日期</div>
+                            <div class="show">@Model.InputeDate</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--订购日期 date end-->
+                        <!--订单编号 no start-->
+                        <div class="con">
+                            <div class="name">订单编号</div>
+                            <div class="show">@Model.PorderNumber</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--订单编号 no end-->
+                        <!--消费总额 total start-->
+                        <div class="con">
+                            <div class="name">消费总额</div>
+                            <div class="show">人民币<b>@Model.Amount</b>元整</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--消费总额 total end-->
+                        <!--服务专线tel start-->
+                        <div class="con">
+                            <div class="name">服务专线</div>
+                            <div class="show">
+                                4006-30-30-30
+                                @if(!String.IsNullOrWhiteSpace(Model.SalesExtension))
+                                {
+                                    Response.Write("分机" + Model.SalesExtension);
+                                }
+                                ／专员@(Model.Sales)为您服务</div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        <!--服务专线 tel end-->
+                        <!--服务信箱 mail start-->
+                        <div class="con">
+                            <div class="name">服务信箱</div>
+                            <div class="show">vipservices@vipabc.com</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--服务信箱 mail end-->
+                    </div>
+                    <!--訂單 end-->
+                    <!--商品start-->
+                    <div class="box">
+                        <div class="line">
+                        </div>
+                        <div class="title">商品明细</div>
+                        <!--产品名称 name start-->
+                        <div class="con">
+                            <div class="name">产品名称</div>
+                            <div class="show">@Model.ProductName</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--产品名称 name end-->
+                        <!--使用课时数 堂數 start-->
+                        <div class="con">
+                            <div class="name">使用课时数</div>
+                            <div class="show">@Model.TotalSession</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--使用课时数 堂數 end-->
+                        <!--服务期限 deline start-->
+                        <div class="con">
+                            <div class="name">服务期限</div>
+                            <div class="show">@Model.ValidMonth months</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--服务期限 deline end-->
+                        <!--课程开始日期 start start-->
+                        <div class="con">
+                            <div class="name">课程开始日期</div>
+                            <div class="show">@Model.ProductStartDate</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--课程开始日期 start end-->
+                        <!--课程结束日期 stop start-->
+                        <div class="con">
+                            <div class="name">课程结束日期</div>
+                            <div class="show">@Model.ProductEndDate</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--课程结束日期 stop end-->
+                        <!--产品总额 start-->
+                        <div class="con">
+                            <div class="name">产品总额</div>
+                            <div class="show">@Model.Amount</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--产品总额 end-->
+                        <!--总计（人民币） start-->
+                        <div class="con">
+                            <div class="name">总计（人民币）</div>
+                            <div class="show">@Model.Amount</div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--总计（人民币） end-->
+                    </div>
+                    <!--商品end-->
+                    @*<form name="buy" method="post" action="/program/member/buy_2.asp">
+                    <!--力史start-->
+                    <div class="box">
+                        <div class="line">
+                        </div>
+                        <div class="title">
+                            历史付款纪录</div>
+                        <div class="con3">
+                            <!--缴款类别 title-->
+                            <div class="name1">
+                                <div class="pt1">
+                                    缴款类别</div>
+                                <div class="pt">
+                                    付款方式</div>
+                                <div class="pt">
+                                    付款日期</div>
+                                <div class="pt">
+                                    付款金额</div>
+                                <div class="pt">
+                                    发票种类</div>
+                                <div class="pt">
+                                    发票代码</div>
+                                <div class="pt">
+                                    发票号码</div>
+                                <div class="clear">
+                                </div>
+                            </div>
+                            <!--缴款类别 title-->
+                            <!--show-->
+                            <div class="show1">
+                                <div class="pt1">
+                                    缴清全额</div>
+                                <div class="pt">
+                                    汇款</div>
+                                <div class="pt">
+                                    2011/03/30</div>
+                                <div class="pt">
+                                    0</div>
+                                <div class="pt">
+                                    普通发票</div>
+                                <div class="pt">
+                                    231001070052</div>
+                                <div class="pt">
+                                </div>
+                                <div class="clear">
+                                </div>
+                            </div>
+                            <!--show-->
+                        </div>
+                    </div>
+                    <!--力史start-->
+                    <div align="right">
+                        已付金额(人民币)<span id="pay1">0</span></div>
+                    <div align="right">
+                        未付金额(人民币)<span id="pay2">0</span></div>
+                    </form>*@
+                </div>
+            </div>
+            <!--內容end-->
+            <font id="div_abc_inner_main_contents"></font>
+        </div>
+    </div>
+</div>
+</div>

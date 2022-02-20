@@ -1,0 +1,153 @@
+﻿ @model TutorGroup.VIPABCJR.Member.ViewModels.PersonalProfileViewModel
+<div id="content" style="width: 700px;">
+    <div class="menber_membox">
+        <!--<img src="images/banner1.jpg" width="700" height="201" />-->
+        <div class="maincontent">
+            <!---
+            <span class="location">
+                <img src="@Url.Content("~/Content/images/tdot.jpg")" alt="" width="8" height="11" />您目前所在位置 / 会员专区 / 管理个人资料
+            </span>
+            -->
+            <div class="statusboard">
+                <ul>
+                    @*<li>今日无任何咨询 <span id="span_in_room_time"></span>其他上课时间： </li>*@
+                    <li>
+                        <a href="/program/member/reservation_class/watch_class.asp" target="_parent">观看其他课表</a>
+                        &nbsp;
+                        <a href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent"> 我的学习记录</a>
+                    </li>
+                    <li>@*<span class="STYLE3">数据完整度：62%</span> 编辑个人资料 &nbsp;&nbsp;DCGS学习偏好设置*@</li>
+                </ul>
+            </div>
+            <div class="box_shadow" style="background-position:-80px 0px;"></div>
+            <div id="div_commend_member_info">
+                <table class="accounttable" width="700" height="204" border="0" align="center" cellpadding="1"
+                    cellspacing="1" bgcolor="#cccccc">
+                    <tbody>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    Email 账号</div>
+                            </td>
+                            <td colspan="3" bgcolor="#FFFFFF">@Model.Account
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    密码</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">
+                                ******<a href="/program/member/profile_password.asp" target="_parent" class="font_green">修改密码</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    中文姓名</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.ChineseName
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    ＊英文姓名</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.EnglishFirstName
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    英文姓氏</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.EnglishLastName
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    等级</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@(Model.Level)等级
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    性别</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.Sex
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    出生日期</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.Birthday
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    通讯地址</div>
+                            </td>
+                            <td colspan="5" bgcolor="#FFFFFF">@Model.Address
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    移动电话1</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.CellPhone1
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    移动电话2</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.CellPhone2
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    最想加强的是</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.Enhanced
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    固定电话</div>
+                            </td>
+                            <td bgcolor="#FFFFFF">@Model.FixdPhone
+                            </td>
+                            <td bgcolor="#efefef">
+                                <div align="right">
+                                    公司电话</div>
+                            </td>
+                            <td colspan="3" bgcolor="#FFFFFF">@Model.OfficePhone
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    职业别</div>
+                            </td>
+                            <td colspan="5" bgcolor="#FFFFFF">@Model.OccupationCategory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    职位</div>
+                            </td>
+                            <td colspan="5" bgcolor="#FFFFFF">@Model.Occupation
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="35" bgcolor="#efefef">
+                                <div align="right">
+                                    兴趣</div>
+                            </td>
+                            <td colspan="5" bgcolor="#FFFFFF">@Model.Interest
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

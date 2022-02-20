@@ -1,0 +1,725 @@
+﻿@model TutorGroup.VIPABCJR.Member.Models.ClientSessionEvaluationInsert
+<script type="text/javascript">
+    $(document).ready(function () {
+        var strVal = "";
+        var imgSrc = "http://www.vipabc.com/images/sessionFeedback/feedback_LV" + "@ViewBag.ProfileLearnLevel" + ".gif";
+        var imgSrcConsultantEvaluation = "http://www.vipabc.com/images/sessionFeedback/feedback_tutorRating_" + "@ViewBag.intConsultantPoint" + ".gif"
+        var strVacURL = "http://www.vipabc.com/program/member/class_vocabulary.asp?mtl=" + "@ViewBag.ClassMaterialNumber"
+        //課程等級
+        $('#imgProfileLearnLevel').attr("src", imgSrc);
+        //
+        $('#buttonReview').click(function(){
+            window.open(strVacURL)
+        })
+        //顯示顾问课后评鉴
+        if ("@ViewBag.ConEvaluation" == "1") {
+            $('#ConEvaluation').show();
+        }
+        //顧問平均比
+        $('#ConsultantPointBar').attr({
+            style: "width: 324px; height: 16px; color: rgb(255, 255, 255); font-weight: bold; text-align: center; background-image: url("+imgSrcConsultantEvaluation+"); padding: 1px 20px 0px 0px; background-repeat: no-repeat no-repeat;"
+        })
+        /* 1 ~ 10 radio button */
+        for (i = 10; i >= 1; i--) {
+            strVal = '&nbsp;';
+            strVal += i + '&nbsp;&nbsp;';
+            $('span[name="span_consultant_points"]').append('<input type="radio" name="consultant_points" value="' + i + '">' + strVal);
+            $('span[name="span_materials_points"]').append('<input type="radio" name="materials_points" value="' + i + '">' + strVal);
+            $('span[name="span_overall_points"]').append('<input type="radio" name="overall_points" value="' + i + '">' + strVal);
+        }
+        /* 時間分配 */
+        $("input[name='distribution'][type='radio']").change(function () {
+            fnClear("#distributionContent", "checkbox") //取消第三層所有的checkBox checked = checked
+            fnLayerThree(this, "#343_1241", "#distribution_B") //先隱藏現在所顯示的標籤範圍，若是選擇的項目相符才顯示
+        });
+        /* 教學技巧 */
+        $("input[name='tskill'][type='radio']").change(function () {
+            fnClear("#tskillContent", "checkbox")
+            fnLayerThree(this, "#344_1247", "#tskill_B")
+        });
+        /* 教学态度 */
+        $("input[name='behavior'][type='radio']").change(function () {
+            fnClear("#behaviorContent", "checkbox")
+            fnLayerThree(this, "#345_1253", "#behavior_A")
+            fnLayerThree(this, "#345_1255", "#behavior_C")
+        });
+        /* 通讯状态 */
+        $("input[name='connection'][type='radio']").change(function () {
+            fnClear("#connectionContent", "checkbox")
+            fnLayerThree(this, "#346_1291", "#connection_B")
+        });
+        /* 需求面 */
+        $("input[name='requirement'][type='radio']").change(function () {
+            $("#requirement_9").val('')
+            fnLayerThree(this, "#347_1278", "#requirement_9", "disabled")
+        });
+        /* 顯示第三層的function */
+        function fnLayerThree(selectEvent, checkTarget, showAreaID, displayType) {
+            if (displayType == 'disabled') {
+                $(showAreaID).attr("disabled", true)
+                if ($(selectEvent).is(checkTarget)) {
+                    $(showAreaID).attr("disabled", false)
+                }
+            }
+            else {
+                $(showAreaID).hide()
+                if ($(selectEvent).is(checkTarget)) {
+                    $(showAreaID).show()
+                }
+            }
+        }
+        /* 針對型態清空
+        * clearAreaID 不一定要ID，只要能作為識別項目即可。
+        */
+        function fnClear(clearAreaID, clearType) {
+            if (clearType == "radio" || clearType == "checkbox") {
+                $(clearAreaID).find('input[type=' + clearType + ']').each(function () {
+                    $(this).attr("checked", false)
+                })
+            }
+        }
+        /* ("all", true) lock All
+        *  ("all", false)  unlock All
+        */
+        function fnDisable(type, boolValue) {
+            if (type == "all") {
+                $('#formMain').find(':input').each(function () {
+                    $(this).attr("disabled", boolValue)
+                })
+            }
+        }
+        /*jQuery.validator.addMethod("isThreeLayer", function (value, element) {
+        $('#cbo_recruiterPosition2').removeClass('error');
+        $('#cbo_recruiterPosition3').removeClass('error');
+        if ($('input[name="distribution"]').val()=="B" &&) {
+        return false;
+        }
+        else if (($('#cbo_recruiterPosition2').val() == $('#cbo_recruiterPosition3').val()) && ($('#cbo_recruiterPosition2').val() != '' && $('#cbo_recruiterPosition3').val() != '')) {
+        return false;
+        }
+        else if (($('#cbo_recruiterPosition1').val() == $('#cbo_recruiterPosition3').val()) && ($('#cbo_recruiterPosition1').val() != '' && $('#cbo_recruiterPosition3').val() != '')) {
+        return false;
+        }
+        else {
+        return true;
+        }
+        }, jQuery.validator.messages.required);*/
+        $('#formMain').validate({
+            rules: {
+                consultant_points: {
+                    required: true,
+                    digits: true
+                },
+                materials_points: {
+                    required: true,
+                    digits: true
+                },
+                overall_points: {
+                    required: true,
+                    digits: true
+                },
+                behavior: {
+                    required: true
+                },
+                distribution: {
+                    required: true
+                },
+                /*speed:{
+                required: true
+                },*/
+                tskill: {
+                    required: true
+                },
+                /*requirement: {
+                required: true
+                },
+                difficulty: {
+                required: true
+                },*/
+                connection: {
+                    required: true
+                }
+            },
+            messages: {
+                consultant_points: "[顾问教学品质]",
+                materials_points: "[教材品质]",
+                overall_points: "[通讯品质]",
+                behavior: "[教学态度] 请至少选择一项!",
+                distribution: "[时间分配] 请至少选择一项!",
+                //speed: "請輸入學校",
+                tskill: "[教学技巧] 请至少选择一项!",
+                //requirement: ,
+                //difficulty: ,
+                connection: "[通讯状态] 请至少选择一项!"
+            },
+            errorPlacement: function (error, element) {
+                if (element.is(":radio"))
+                    error.appendTo(element.parent());
+                else if (element.is(":checkbox"))
+                    error.appendTo(element.parent().parent());
+                else
+                    error.appendTo(element.parent().next());
+            },
+            onfocusout: true,
+            submitHandler: function (form) { //overide submit of JS 
+                /*$.ajax({
+                type: "POST",
+                url: "@Url.Action("QuickRecruit", "Recruit")",
+                data: $("#recruitInformation").serialize(), // serializes the form's elements.
+                success: function (data) {
+                var strErrorMsg = "請重新輸入，感謝您！";
+                var strSuccessMsg = "感謝您的填寫！";
+                var strMsg = '';
+                if(data=='1'){
+                fnClear();
+                $('#div_recruiterSchoolOther').hide();
+                strMsg = strSuccessMsg;
+                }else{
+                strMsg = strErrorMsg
+                }
+                alert(strMsg);
+                }
+                }).always(function() {
+                location.reload();//不reload的話會無法重新檢查
+                });*/
+                form.submit();
+            }
+        });
+
+        if("@ViewBag.FilledIn"=="1"){
+            fnDisable("all", true)
+            $('#btnFeedBack').hide()
+            $('#ContactTime').hide()
+        }
+        //
+        $('input[name="consultant_points"][value="@ViewBag.consultant_points"]').attr("checked",true);
+        $('input[name="materials_points"][value="@ViewBag.materials_points"]').attr("checked",true);
+        $('input[name="overall_points"][value="@ViewBag.overall_points"]').attr("checked",true);
+        
+        $('input[name="speed"][value="@ViewBag.speed"]').attr("checked",true);
+
+        //
+        var strList = $('input[name="hid_distribution"]').val().split(',');
+        $('input[name="distribution"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+                if($(this).is("input[id='343_1241']:checked")){
+                    fnLayerThree(this, "#343_1241", "#distribution_B")
+                }
+            }
+        })
+
+        //
+        strList = $('input[name="hid_tskill"]').val().split(',');
+        $('input[name="tskill"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+                if($(this).is("input[id='344_1247']:checked")){
+                    fnLayerThree(this, "#344_1247", "#tskill_B")
+                }
+            }
+        })
+
+        //
+        strList = $('input[name="hid_tskill"]').val().split(',');
+        $('input[name="tskill"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+                if($(this).is("input[id='344_1247']:checked")){
+                    fnLayerThree(this, "#344_1247", "#tskill_B")
+                }
+            }
+        })
+
+        strList = $('input[name="hid_behavior"]').val().split(',');
+        $('input[name="behavior"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+                if($(this).is("input[id='345_1253']:checked")){
+                    fnLayerThree(this, "#345_1253", "#behavior_A")
+                }
+                if($(this).is("input[id='345_1255']:checked")){
+                    fnLayerThree(this, "#345_1255", "#behavior_C")
+                }
+            }
+        })
+
+        //
+        strList = $('input[name="hid_difficulty"]').val().split(',');
+        $('input[name="difficulty"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+            }
+        })
+
+        //
+        strList = $('input[name="hid_requirement"]').val().split(',');
+        $('input[name="requirement"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+                else{
+                    strList[i] = strList[i].replace('10|','').replace('|','')
+                    $('#requirement_9').val(strList[i]);
+                }
+            }
+        })
+
+        //
+        strList = $('input[name="hid_connection"]').val().split(',');
+        $('input[name="connection"]').each(function(){
+            for(i=0;i<strList.length;i++){
+                if(strList[i]==$(this).val()){
+                    $(this).attr("checked",true);
+                }
+                if($(this).is("input[id='346_1291']:checked")){
+                    fnLayerThree(this, "#346_1291", "#connection_B")
+                }
+            }
+        })
+        $('#suggestions').val($('input[name="hid_suggestions"]').val())
+        $('#compliment').val($('input[name="hid_compliment"]').val())
+    })
+</script>
+<style type="text/css">
+.error {
+	color: rgb(255, 0, 0);
+}
+</style>
+<div class="main_membox">
+        <div class="page_title_2"><h2 class="page_title_h2">上课记录&amp;评分</h2></div>
+        <div class="box_shadow" style="background-position:-80px 0px;"></div>
+    <!--上版位課程start-->
+    <div class="top_class5">
+        <h1><span class="bold">目前等级：Level  @ViewBag.ProfileLevelNow</span><br /></h1>
+    </div>
+    <a id="a_learning_record" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent">上课记录&amp;评分</a> 
+    <a id="a_learning_word" class="top_class_N2" href="/program/member/learning_word.asp" target="_parent">我的单词银行</a> 
+    <a id="a_learning_learn_old" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=2" target="_parent">帐户资讯</a> 
+    <a id="a_learning_level" class="top_class_N2" href="/program/member/learning_level.asp" target="_parent">程度分析</a> 
+    <a id="a_learning_dcgs" class="top_class_N4" href="/program/aspx/AspxLogin.asp?url_id=5" target="_parent">DCGS学习偏好设置</a> 
+    <a id="a_learning_review" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=4" target="_parent">咨询复习</a>
+  
+    <div class="top_block"></div>
+    <!--上版位課程end-->
+
+<!--list start-->
+</div>
+<div id="divMain" class="" style="float: left; width: 700px; margin: 0px 0px 80px 15px; display: inline; z-index: -999;">
+	<form name="formMain" id="formMain" method="post" style="margin: 0px; padding: 0px; border: 0px;" action="@Url.Action("InsertSessionFeedBack", "LearningRecord")">
+		<div class="" style="font-family: Verdana, Arial, Helvetica, sans-serif; width: 565px; font-size: 12px; color: rgb(0, 0, 0); text-align: left;">
+        <input name="ProfileId" type="hidden" value="@ViewBag.ProfileId" />
+        <input name="session_sn" type="hidden" value="@ViewBag.session_sn" />
+        <input name="client_sn" type="hidden" value="@ViewBag.client_sn" />
+        <input name="boolFillIn" type="hidden" value="@ViewBag.boolFillIn" />
+        <!--評鑑結果Start-->
+        <input name="hid_consultant_points" type="hidden" value="@ViewBag.consultant_points" />
+        <input name="hid_materials_points" type="hidden" value="@ViewBag.materials_points" />
+        <input name="hid_overall_points" type="hidden" value="@ViewBag.overall_points" />
+        <input name="hid_compliment" type="hidden" value="@ViewBag.compliment" />
+        <input name="hid_suggestions" type="hidden" value="@ViewBag.suggestions" />
+        <input name="hid_behavior" type="hidden" value="@ViewBag.behavior" />
+        <input name="hid_distribution" type="hidden" value="@ViewBag.distribution" />
+        <input name="hid_speed" type="hidden" value="@ViewBag.speed" />
+        <input name="hid_tskill" type="hidden" value="@ViewBag.tskill" />
+        <input name="hid_requirement" type="hidden" value="@ViewBag.requirement" />
+        <input name="hid_difficulty" type="hidden" value="@ViewBag.difficulty" />
+        <input name="hid_connection" type="hidden" value="@ViewBag.connection" />
+        <!--評鑑結果End-->
+		<!--課程簡介Start-->
+			<div class="session-desc" style="margin: 0px 0px 25px; position: relative;">
+				<div class="top1" style="background-image: url(http://www.vipabc.com/images/sessionFeedback/arrow_path.gif); background-color: rgb(255, 255, 255); font-size: 15px; font-weight: bold; color: rgb(51, 51, 51); padding: 5px 0px 7px 20px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-position: 10px 9px; background-repeat: no-repeat no-repeat;">
+					课程简介</div>
+					<div class="box1" style="border: 1px solid rgb(204, 204, 204); background-color: rgb(234, 234, 234); padding: 15px 15px 10px;">
+					<table cellpadding="0" cellspacing="0" class="se-desc" style="width: 533px; font-size: 12px;">
+						<tr>
+							<td class="left" style="vertical-align: top; color: rgb(51, 51, 51); text-align: right; width: 63px; padding: 5px 0px;">
+							教材名称：</td>
+							<td class="right" style="vertical-align: top; color: rgb(0, 0, 0); text-align: left; width: 465px; padding-left: 5px; line-height: 18px;">
+							@ViewBag.MaterialTitle</td>
+						</tr>
+						
+						<tr>
+							<td class="left" style="vertical-align: top; color: rgb(51, 51, 51); text-align: right; width: 63px; padding: 5px 0px;">
+							上课时间：</td>
+							<td class="right" style="vertical-align: top; color: rgb(0, 0, 0); text-align: left; width: 465px; padding-left: 5px; line-height: 18px;">
+							@ViewBag.ClassStartDate</td>
+						</tr>
+						
+						<tr>
+							<td class="left" style="vertical-align: top; color: rgb(51, 51, 51); text-align: right; width: 63px; padding: 5px 0px;">
+							顾问名称：</td>
+							<td class="right" style="vertical-align: top; color: rgb(0, 0, 0); text-align: left; width: 465px; padding-left: 5px; line-height: 18px;">
+							@ViewBag.ClassConsultantName</td>
+						</tr>
+						
+						<tr>
+							<td class="left" style="vertical-align: top; color: rgb(51, 51, 51); text-align: right; width: 63px; padding: 5px 0px;">
+							课程等级：</td>
+							<td class="right" style="vertical-align: top; color: rgb(0, 0, 0); text-align: left; width: 465px; padding-left: 5px; line-height: 18px;">
+							<img id="imgProfileLearnLevel" src="http://www.vipabc.com/images/sessionFeedback/feedback_LV8.gif" style="border: 0px;" /></td>
+						</tr>
+						
+						<tr>
+							<td class="left" style="vertical-align: top; color: rgb(51, 51, 51); text-align: right; width: 63px; padding: 5px 0px;">
+							教材简述：</td>
+							<td class="right" style="vertical-align: top; color: rgb(0, 0, 0); text-align: left; width: 465px; padding-left: 5px; line-height: 18px;">
+							@ViewBag.MaterialDescription</td>
+						</tr>
+					</table>
+					<div align="right">
+					<input type="button" name="button1" id="buttonReview" value="单字预习" class="btn-feedback" style="background-image: url(http://www.vipabc.com/images/sessionFeedback/feedback_btn_bg.gif); font-size: 15px; color: rgb(51, 51, 51); text-align: center; border: 0px; margin: 0px; padding: 0px; cursor: pointer; width: 111px; height: 30px; background-repeat: no-repeat no-repeat;" /></div>
+				</div>
+			</div>
+		<!--課程簡介End-->
+		<!--顾问课后评鉴Start-->
+			<div class="session-desc" style="margin: 0px 0px 25px; position: relative;display:none;" id="ConEvaluation">
+				<div class="top1" style="background-image: url(http://www.vipabc.com/images/sessionFeedback/arrow_path.gif); background-color: rgb(255, 255, 255); font-size: 15px; font-weight: bold; color: rgb(51, 51, 51); padding: 5px 0px 7px 20px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-position: 10px 9px; background-repeat: no-repeat no-repeat;">
+				顾问课后评鉴</div>
+				<div class="box1" style="border: 1px solid rgb(204, 204, 204); background-color: rgb(234, 234, 234); padding: 15px 15px 10px;">
+					<table cellpadding="0" cellspacing="0" class="con-comment">
+						<tr>
+							<td class="left" style="width: 150px;">
+							<p>参与度：<span>@ViewBag.participation</span></p>
+							<p>发　音：<span>@ViewBag.pronunciation</span></p>
+							<p>理解力：<span>@ViewBag.comprehension</span></p>
+							<p>创造力：<span>@ViewBag.creativity</span></p>
+							<p>流畅度：<span>@ViewBag.facility</span></p>
+							</td>
+							<td class="right" valign="top">
+							<p>顾问评语：</p>
+							<div>@ViewBag.c_comments</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		<!--顾问课后评鉴End-->
+		<!--课后评比Start-->
+			<div class="session-desc" id="ConsultantEvaluationCollection" style="margin: 0px 0px 25px; position: relative;">
+			<div class="top1" style="background-image: url(http://www.vipabc.com/images/sessionFeedback/arrow_path.gif); background-color: rgb(255, 255, 255); font-size: 15px; font-weight: bold; color: rgb(51, 51, 51); padding: 5px 0px 7px 20px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-position: 10px 9px; background-repeat: no-repeat no-repeat;">
+			课后评比</div>
+				<table cellpadding="0" cellspacing="0" class="rating" style="background-color: rgb(255, 255, 255); width: 565px; font-size: 12px;">
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						顾问平均评比</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="ConsultantPointBar"class="tutor-score9" style="width: 324px; height: 16px; color: rgb(255, 255, 255); font-weight: bold; text-align: center; background-image: url(http://www.vipabc.com/images/sessionFeedback/feedback_tutorRating_9.gif); padding: 1px 20px 0px 0px; background-repeat: no-repeat no-repeat;">
+						@ViewBag.doubleConsultantPoint</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left ra-title" id="teacherscore" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top; background-color: rgb(234, 234, 234); font-weight: bold;">
+						<img src="http://www.vipabc.com/images/sessionFeedback/icon-feedback-info.png" hspace="2" style="border: 0px;" />顾问教学品质</td>
+						<td class="right ra-title" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top; background-color: rgb(234, 234, 234); font-weight: bold;">
+						<div id="level_1" style="padding: 0px;">
+						<span style="padding: 0px 1px;" name="span_consultant_points"></span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						讲话速度 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="level_3" style="padding: 0px;">
+						<span style="padding: 0px 1px;">
+						    <input type="radio" name="speed" id="340" value="1"/>&nbsp;太快&nbsp;&nbsp;
+                            <input type="radio" name="speed" id="379" value="2"/>&nbsp;适中&nbsp;&nbsp;
+                            <input type="radio" name="speed" id="380" value="3"/>&nbsp;太慢&nbsp;&nbsp;
+                        </span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						时间分配 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="distributionContent" style="padding: 0px;">
+						    <span style="padding: 0px 1px;">
+						        <input type="radio" name="distribution" id="343_1239" value="3"/>&nbsp;良好&nbsp;&nbsp;
+                                <input type="radio" name="distribution" id="343_1240" value="A"/>&nbsp;适中&nbsp;&nbsp;
+                                <input type="radio" name="distribution" id="343_1241" value="B"/>&nbsp;不佳&nbsp;&nbsp;
+                            </span>
+                            <div id="distribution_B" style="padding: 0px 0px 0px 10px; display:none;">
+						        <span style="padding: 0px 1px;">
+						            <input type="checkbox" name="distribution" id="343_1241_1242" value="1"/>&nbsp;发言时间分配不均&nbsp;&nbsp;
+                                    <input type="checkbox" name="distribution" id="343_1241_1243" value="2"/>&nbsp;开口练习机会少&nbsp;&nbsp;
+                                    <input type="checkbox" name="distribution" id="343_1241_1244" value="4"/>&nbsp;教材未上完&nbsp;&nbsp;
+                                </span>
+                            </div>
+                        </div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						教学技巧 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="tskillContent" style="padding: 0px;">
+						    <span style="padding: 0px 1px;">
+						        <input type="radio" name="tskill" id="344_1245" value="3"/>&nbsp;良好&nbsp;&nbsp;
+                                <input type="radio" name="tskill" id="344_1246" value="A"/>&nbsp;尚可&nbsp;&nbsp;
+                                <input type="radio" name="tskill" id="344_1247" value="B"/>&nbsp;不佳&nbsp;&nbsp;
+                            </span>
+                            <div id="tskill_B" style="padding: 0px 0px 0px 10px; display:none;">
+						    <span style="padding: 0px 1px;">
+						        <input type="checkbox" name="tskill" id="344_1247_1248" value="1"/>&nbsp;未充份互动讨论仅念课文&nbsp;&nbsp;<br/>
+                                <input type="checkbox" name="tskill" id="344_1247_1249" value="2"/>&nbsp;未能实时纠正错误&nbsp;&nbsp;<br/>
+                                <input type="checkbox" name="tskill" id="344_1247_1250" value="4"/>&nbsp;未主动引导学员回答&nbsp;&nbsp;<br/>
+                                <input type="checkbox" name="tskill" id="344_1247_1251" value="5"/>&nbsp;未将重点写于白板&nbsp;&nbsp;<br/>
+                                <input type="checkbox" name="tskill" id="344_1247_1252" value="6"/>&nbsp;软件操作不熟悉&nbsp;&nbsp;<br/>
+                            </span>
+                        </div>
+                        </div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						教学态度 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="behaviorContent" style="padding: 0px;">
+						<span style="padding: 0px 1px;">
+						    <input type="radio" name="behavior" id="345_1253" value="A"/>&nbsp;良好&nbsp;&nbsp;
+                            <input type="radio" name="behavior" id="345_1254" value="B"/>&nbsp;尚可&nbsp;&nbsp;
+                            <input type="radio" name="behavior" id="345_1255" value="C"/>&nbsp;不佳&nbsp;&nbsp;
+                        </span>
+                        <div id="behavior_A" style="padding: 0px 0px 0px 10px; display:none;">
+						    <span style="padding: 0px 1px;">
+						        <input type="checkbox" name="behavior" id="345_1253_1266" value="5"/>&nbsp;认真&nbsp;&nbsp;
+                                <input type="checkbox" name="behavior" id="345_1253_1267" value="4"/>&nbsp;亲切&nbsp;&nbsp;
+                                <input type="checkbox" name="behavior" id="345_1253_1268" value="3"/>&nbsp;有耐心&nbsp;&nbsp;
+                            </span>
+                        </div>
+                        <div id="behavior_C" style="padding: 0px 0px 0px 10px; display: none;">
+                            <span style="padding: 0px 1px;">
+						        <input type="checkbox" name="behavior" id="345_1253_1269" value="2"/>&nbsp;散漫&nbsp;&nbsp;
+                                <input type="checkbox" name="behavior" id="345_1253_1270" value="1"/>&nbsp;恶劣&nbsp;&nbsp;
+                                <input type="checkbox" name="behavior" id="345_1253_1271" value="6"/>&nbsp;没耐心&nbsp;&nbsp;
+                            </span>
+                        </div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left ra-title" id="mertirialscore" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top; background-color: rgb(234, 234, 234); font-weight: bold;">
+						<img src="http://www.vipabc.com/images/sessionFeedback/icon-feedback-info.png" hspace="2" style="border: 0px;" />
+                        教材品质</td>
+						<td class="right ra-title" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top; background-color: rgb(234, 234, 234); font-weight: bold;">
+						<div id="level_7" style="padding: 0px;">
+						<span name="span_materials_points" style="padding: 0px 1px;">
+						</span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						难易度 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="level_8" style="padding: 0px;">
+						<span style="padding: 0px 1px;">
+						    <input type="radio" name="difficulty" id="342_1272" value="2"/>&nbsp;太难&nbsp;&nbsp;
+                            <input type="radio" name="difficulty" id="342_1273" value="1"/>&nbsp;适中&nbsp;&nbsp;
+                            <input type="radio" name="difficulty" id="342_1274" value="3"/>&nbsp;太简单&nbsp;&nbsp;
+                        </span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						需求面 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="requirementContent" style="padding: 0px;">
+						    <span style="padding: 0px 1px;">
+						        <input type="radio" name="requirement" id="347_1275" value="1"/>&nbsp;符合需求&nbsp;&nbsp;<br />
+						        <input type="radio" name="requirement" id="347_1276" value="4"/>&nbsp;不完全符合需求，觉得內容太多&nbsp;&nbsp;<br />
+						        <input type="radio" name="requirement" id="347_1277" value="5"/>&nbsp;不完全符合需求，觉得內容太少&nbsp;&nbsp;<br />
+						        <input type="radio" name="requirement" id="347_1278" value="9"/>&nbsp;不完全符合，我希望加强&nbsp;&nbsp;
+                            </span>
+                            <input type="text" name="requirement" id="requirement_9" size="7" disabled="disabled" value="" />
+                        </div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left ra-title" id="netscore" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top; background-color: rgb(234, 234, 234); font-weight: bold;">
+						<img src="http://www.vipabc.com/images/sessionFeedback/icon-feedback-info.png" hspace="2" style="border: 0px;" />
+                        通讯品质</td>
+						<td class="right ra-title" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top; background-color: rgb(234, 234, 234); font-weight: bold;">
+						<div id="level_10" style="padding: 0px;">
+						<span name="span_overall_points"style="padding: 0px 1px;">
+                        </span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="left" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 101px; vertical-align: top;">
+						通讯状态 :</td>
+						<td class="right" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 6px 0px 0px 5px; text-align: left; color: rgb(51, 51, 51); vertical-align: top;">
+						<div id="connectionContent" style="padding: 0px;">
+						    <span style="padding: 0px 1px;">
+						        <input type="radio" name="connection" id="346_1289" value="7"/>&nbsp;良好&nbsp;&nbsp;
+                                <input type="radio" name="connection" id="346_1290" value="A"/>&nbsp;尚可&nbsp;&nbsp;
+                                <input type="radio" name="connection" id="346_1291" value="B"/>&nbsp;不佳&nbsp;&nbsp;
+                            </span>
+                            <div id="connection_B" style="padding: 0px 0px 0px 10px; display:none;">
+						        <span style="padding: 0px 1px;">
+						            <input type="checkbox" name="connection" id="346_1291_1292" value="4"/>&nbsp;有回音&nbsp;&nbsp;<br/>
+                                    <input type="checkbox" name="connection" id="346_1291_1293" value="5"/>&nbsp;有杂音&nbsp;&nbsp;<br/>
+                                    <input type="checkbox" name="connection" id="346_1291_1294" value="3"/>&nbsp;看不到影像&nbsp;&nbsp;<br/>
+						            <input type="checkbox" name="connection" id="346_1291_1295" value="1"/>&nbsp;常有延迟或断续&nbsp;&nbsp;<br/>
+                                    <input type="checkbox" name="connection" id="346_1291_1296" value="2"/>&nbsp;略有延迟或断续&nbsp;&nbsp;<br/>
+                                    <input type="checkbox" name="connection" id="346_1291_1297" value="8"/>&nbsp;其它学员环境吵杂&nbsp;&nbsp;<br/>
+                                </span>
+                            </div>
+                        </div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		<!--课后评比End-->	
+		<!--其他同學上課狀況Start-->
+        
+			<div class="session-desc" id="StudentEvaluationCollection" style="margin: 0px 0px 25px; position: relative;">
+			<div class="top1" style="background-image: url(http://www.vipabc.com/images/sessionFeedback/arrow_path.gif); background-color: rgb(255, 255, 255); font-size: 15px; font-weight: bold; color: rgb(51, 51, 51); padding: 5px 0px 7px 20px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-position: 10px 9px; background-repeat: no-repeat no-repeat;">
+			    其他同学上课状况
+            </div>
+            @{foreach(var classmate in Model.classmate)
+              {
+				<table cellpadding="0" cellspacing="0" class="classmate" style="background-color: rgb(255, 255, 255); width: 565px; font-size: 12px;">
+				    <tr>
+					    <td class="left bg" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 10px 10px 10px 0px; text-align: right; color: rgb(51, 51, 51); width: 103px; font-weight: bold; background-color: rgb(240, 240, 240);">
+					        @classmate.clientChineseName
+                        </td>
+					    <td class="right bg" style="border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; padding: 5px 0px 0px 5px; text-align: left; color: rgb(0, 0, 0); background-color: rgb(240, 240, 240);">
+					    <div class="environment" style="border-bottom-width: 1px; border-bottom-color: rgb(185, 212, 242); border-bottom-style: solid; padding: 5px 0px; width: 424.640625px;">
+					        <h1 style="padding: 0px 0px 5px 2px; margin: 0px; font-size: 12px; font-weight: bold;">
+					            计算机环境（网络、音效）
+                            </h1>
+					        <div id="level_12" style="padding: 0px;">
+					            <span style="padding: 0px 1px;">
+					                <input type="radio" name="classmate.condition" id="level_1_1_1_377" value="S"/>&nbsp;良好&nbsp;&nbsp;
+                                    <input type="radio" name="classmate.condition" id="level_1_1_1_387" value="A"/>&nbsp;尚可&nbsp;&nbsp;
+                                    <input type="radio" name="classmate.condition" id="level_1_1_1_388" value="B"/>&nbsp;不佳&nbsp;&nbsp;
+                                </span>
+                                <span style="padding: 0px 1px;">
+                                    <input type="checkbox" name="classmate.condition" id="level_1_1_2_1513" value="S2" />
+                                    &nbsp;回音及杂音干扰&nbsp;&nbsp;
+                                </span>
+                                    <div id="level_3" style="padding: 0px 0px 0px 20px;">
+                                        <span style="padding: 0px 1px;">
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1514" value="V1"/>&nbsp;一直持续&nbsp;&nbsp;
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1519" value="V1"/>&nbsp;已排除&nbsp;&nbsp;
+                                        </span>
+                                    </div>
+                                <span style="padding: 0px 1px;">
+                                    <input type="checkbox" name="classmate.condition" id="level_1_1_2_1514" value="S3" />
+                                    &nbsp;声音断续&nbsp;&nbsp;
+                                </span>
+                                    <div id="level_4" style="padding: 0px 0px 0px 20px;">
+                                        <span style="padding: 0px 1px;">
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1515" value="V1" />&nbsp;一直持续&nbsp;&nbsp;
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1520" value="V1" />&nbsp;已排除&nbsp;&nbsp;
+                                        </span>
+                                    </div>
+                                <span style="padding: 0px 1px;">
+                                    <input type="checkbox" name="classmate.condition" id="level_1_1_2_1515" value="S4" />
+                                    &nbsp;未关视频&nbsp;&nbsp;</span>
+                                    <div id="level_5" style="padding: 0px 0px 0px 20px;">
+                                        <span style="padding: 0px 1px;">
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1516" value="V1" />&nbsp;一直持续&nbsp;&nbsp;
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1521" value="V1" />&nbsp;已排除&nbsp;&nbsp;
+                                        </span>
+                                    </div>
+                                <span style="padding: 0px 1px;">
+                                    <input type="checkbox" name="level_1_1_2_1517" id="level_1_1_2_1516" value="S5" />
+                                    &nbsp;声音太大或太小&nbsp;&nbsp;</span>
+                                    <div id="level_6" style="padding: 0px 0px 0px 20px;">
+                                        <span style="padding: 0px 1px;">
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1517" value="V1" />&nbsp;一直持续&nbsp;&nbsp;
+                                            <input type="radio" name="classmate.condition" id="level_1_1_3_1522" value="V1"/>&nbsp;已排除&nbsp;&nbsp;
+                                        </span>
+                                    </div>
+                                <span style="padding: 0px 1px;">
+                                    <input type="checkbox" name="classmate.condition" id="level_1_1_2_1517" value="S6" />
+                                    &nbsp;背景环境嘈杂&nbsp;&nbsp;
+                                </span>
+                                <div id="level_7" style="padding: 0px 0px 0px 20px;">
+                                    <span style="padding: 0px 1px;">
+                                        <input type="radio" name="classmate.condition" id="level_1_1_3_1518" value="V1" />&nbsp;一直持续&nbsp;&nbsp;
+                                        <input type="radio" name="classmate.condition" id="level_1_1_3_1523" value="V1"/>&nbsp;已排除&nbsp;&nbsp;
+                                    </span>
+                                </div>
+                            </div>
+					    </div>
+					    <div class="environment" style="border-bottom-width: 1px; border-bottom-color: rgb(185, 212, 242); border-bottom-style: solid; padding: 5px 0px; width: 424.640625px;">
+					        <h1 style="padding: 0px 0px 5px 2px; margin: 0px; font-size: 12px; font-weight: bold;">
+					            上课表现
+                            </h1>
+					        <div id="level_13" style="padding: 0px;">
+					            <span style="padding: 0px 1px;">
+					                <input type="radio" name="classmate.performance" id="level_1_2_1_378" value="P"/>&nbsp;良好&nbsp;&nbsp;
+                                    <input type="radio" name="classmate.performance" id="level_1_2_1_381" value="A"/>&nbsp;尚可&nbsp;&nbsp;
+                                    <input type="radio" name="classmate.performance" id="level_1_2_1_382" value="B"/>&nbsp;不佳&nbsp;&nbsp;
+                                </span>
+                                <div style="padding: 0px;">
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1531" value="P2"  />&nbsp;回答太慢，让大家等很久&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1532" value="P3"  />&nbsp;会打断别人说话&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1533" value="P4"  />&nbsp;此同学Level太高&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1534" value="P9"  />&nbsp;此同学Level太低&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1535" value="P5"  />&nbsp;上课中讲电话或听到电话铃声&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1536" value="P6"  />&nbsp;不自觉一直念英文影响到我&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1537" value="P7" />&nbsp;说话太冗长&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1538" value="P8"  />&nbsp;吃东西&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1539" value="P10"  />&nbsp;靠麦克风太近呼吸声太大&nbsp;&nbsp;</span><br/>
+                                    <span style="padding: 0px 1px;">
+                                        <input type="checkbox" name="classmate.performance" id="level_1_2_2_1540" value="P11"  />&nbsp;上课做别的事影响到我&nbsp;&nbsp;</span>
+                                </div>
+                            </div>
+					    </div>
+					    </td>
+				    </tr>
+				</table>
+                }
+            }
+			</div>
+        
+		<!--其他同學上課狀況End-->
+		<!--對顧問的建議及讚揚Start-->
+			<div class="session-desc" style="margin: 0px 0px 25px; position: relative;">
+			    <div class="top1" style="background-image: url(http://www.vipabc.com/images/sessionFeedback/arrow_path.gif); background-color: rgb(255, 255, 255); font-size: 15px; font-weight: bold; color: rgb(51, 51, 51); padding: 5px 0px 7px 20px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-position: 10px 9px; background-repeat: no-repeat no-repeat;">
+			        对顾问的建议与赞扬
+                </div>
+			    <div class="box2" style="border: 1px solid rgb(204, 204, 204); background-color: rgb(246, 245, 238); padding: 15px 15px 15px 20px; color: rgb(51, 51, 51);">
+			        建议<br />
+			        <textarea name="suggestions" id="suggestions" cols="45" rows="5" class="textarea-fb"style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); font-size: 12px; color: rgb(51, 51, 51); height: 60px; margin: 3px 0px 10px; width: 520px;"></textarea>赞扬<br />
+			        <textarea name="compliment" id="compliment" cols="45" rows="5" class="textarea-fb"style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); font-size: 12px; color: rgb(51, 51, 51); height: 60px; margin: 3px 0px 10px; width: 520px;"></textarea>
+			        <span id="ContactTime"><input type="checkbox" name="boolContact" value="1" id="boolContact"/>
+                        请客服人员以电话与我联络(我们将于24小时内尽速与您联系。)&nbsp;联络时间请于&nbsp;
+			            <select size="1" name="ContactTime">
+				            <option value="0">不拘</option>
+				            <option value="1">上午</option>
+				            <option value="2">下午</option>
+				            <option value="3">晚上</option>
+			            </select>
+                    </span>
+                </div>
+            </div>
+			<div align="center">
+			<input type="submit" name="btnFeedBack" id="btnFeedBack" value="送出评鉴" class="btn-feedback"style="background-image: url(http://www.vipabc.com/images/sessionFeedback/feedback_btn_bg.gif); font-size: 15px; color: rgb(51, 51, 51); text-align: center; border: 0px; margin: 0px; padding: 0px; cursor: pointer; width: 111px; height: 30px; background-repeat: no-repeat no-repeat;" /></div>	
+		<!--對顧問的建議及讚揚End-->
+		</div>
+	</form>
+</div>

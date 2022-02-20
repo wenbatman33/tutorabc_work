@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>簡易入口</h2>
+@Html.ActionLink("上課紀錄＆評分", "Index", "LearningRecord", null, null, null, new { client_sn = 223543 }, null)
+@Html.ActionLink("訂課紀錄", "ClassRecordViews", "ClassRecord", null, null, null, new { 
+                                                                                         profileId = 0, 
+                                                                                         ProfileLearnLevel = 1, 
+                                                                                         ContractId = 0, 
+                                                                                         ClassStartDate    = "2013-03-18",
+                                                                                         ClassStartTime = 11,
+                                                                                         ClassCostPoints = "65",
+                                                                                         ClassTypeId = 1,
+                                                                                         ClassIntervalId = 1,
+                                                                                         ClassStatusId = 1,
+                                                                                         BrandId = 1,
+                                                                                         StaffId = 0,
+                                                                                         client_sn = 399773,
+                                                                                         contract_sn = 50002400
+                                                                                         
+}, null)
+@Html.ActionLink("DCGS設置", "DCGS", "DCGS", null, null, null, new { ClientSn = 226203 }, null)

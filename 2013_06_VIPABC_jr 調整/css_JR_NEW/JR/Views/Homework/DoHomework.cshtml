@@ -1,0 +1,317 @@
+﻿@model TutorGroup.VIPABCJR.Member.Models.HomeworkModel
+@{
+    ViewBag.Title = "DoHomework";
+    List<TutorGroup.VIPABCJR.Member.Models.HomeworkRecordModel> Qtype1 = Model.HomeworkQuestionList.FindAll(n => n.HomeworkQuestionTypeId == 1);
+    List<TutorGroup.VIPABCJR.Member.Models.HomeworkRecordModel> Qtype2 = Model.HomeworkQuestionList.FindAll(n => n.HomeworkQuestionTypeId == 2);
+    String[] qTitle = { "A", "B", "C", "D", "E" };
+    String disable = "";
+    Boolean BolHomeworkDone = false;
+    if (!String.IsNullOrEmpty(Model.HomeworkScore))
+    {
+        disable = "disabled";
+        BolHomeworkDone = true;
+    }
+}
+<script type="text/javascript">
+    function checkAnswer() {
+        var bol_is_empty_answer;
+        //是不是有空值的選項
+        bol_is_empty_answer = true;
+        $("input:radio").each(function () {
+            //$(this).parent().removeClass("path");
+            //抓出個別名稱
+            var str_input_radio_name = $(this).attr("name");
+            //檢查是否有答案沒選
+            if ($("input[name=" + str_input_radio_name + "]:checked").size() <= 0) {
+                //錯誤的變色
+                //$(this).parent().addClass("path");
+                bol_is_empty_answer = false;
+            }
+        });
+        if (!bol_is_empty_answer) {
+            alert("请确认答案是否都已经填写");
+        }
+        return bol_is_empty_answer;
+    }
+
+</script>
+
+<div class="main_membox" style="width: 648px;">
+    <!--上版位課程start-->
+    <div class="top_class5">
+        <h1><span class="bold">目前等级：Level @ViewBag.profileLevel</span><br /></h1>
+    </div>
+    <a id="a_learning_record" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent">上课记录&amp;评分</a> 
+    <a id="a_learning_word" class="top_class_N2" href="/program/member/learning_word.asp" target="_parent">我的单词银行</a> 
+    <a id="a_learning_learn_old" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=2" target="_parent">帐户资讯</a> 
+    <a id="a_learning_level" class="top_class_N2" href="/program/member/learning_level.asp" target="_parent">程度分析</a> 
+    <a id="a_learning_dcgs" class="top_class_N4" href="/program/aspx/AspxLogin.asp?url_id=5" target="_parent">DCGS学习偏好设置</a> 
+    <a id="a_learning_review" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=4" target="_parent">咨询复习</a>
+    <div class="top_block"></div>
+    <!--上版位課程end-->
+
+<!--list start-->
+    <form method="post" action='@Url.Action("WriteHomework")' onsubmit="return checkAnswer(this);" >
+    <div class="main">
+        <div class="main_con">
+            <div class="main_membox" style="margin:0 0 0 -30px">
+                <div class="hwork">
+                <!--table start-->
+                    <div class="wlist2">
+                        <div class="title">Session Information<div class="tline"></div></div>
+                        <div>
+                            <div class="linebox">
+                                <div class="plt">Course #</div>
+                                <div class="prt">@Model.ClassMaterialNumber</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="linebox">
+                                <div class="plt">Title</div>
+                                <div class="prt">@Model.ClassMaterialTitle</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="linebox">
+                                <div class="plt">Session Time</div>
+                                <div class="prt">@Model.SeesionTime.ToString("yyyy/MM/dd HH:mm")</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="linebox">
+                                <div class="plt">Consultant</div>
+                                <div class="prt">@Model.ConsultantFullName</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="linebox">
+                                <div class="plt">Level</div>
+                                <div class="prt">
+                                @for (int i = 1; i <= 12; i++)
+                                {
+                                    if (i < Model.Level)
+                                    {
+                                            <p class='green_ballNum2'>@i</p>
+                                    }
+                                    else
+                                    {
+                                        if (i == Model.Level)
+                                        {
+                                            <p class='green_ballNum_go'>@i</p>
+                                        }
+                                        else
+                                        {
+                                            <p class='gray_ballNum2'>@i</p>
+                                        }
+                                    }
+                                }                          
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="linebox">
+                                <div class="plt">Description</div>
+                                <div class="prt">@Model.Description</div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    
+                        <input type="hidden" name="HomeworkId" value=@Model.HomeworkId>
+                        <input type="hidden" name="ClassRecordId" value=@Model.ClassRecordId>
+                        <input type="hidden" name="ProfileLevel" value=@ViewBag.profileLevel>                          
+                    
+                    </div>
+
+                    <div class="wlist3">
+                        <div class="title">Your score is<span class="score">@Model.HomeworkScore</span></div>
+                        <div class="ps">Please answer these questions: The correct answer is displayed in Orange.</div>
+                        @foreach (TutorGroup.VIPABCJR.Member.Models.HomeworkRecordModel tmp in Qtype1)
+                        {
+                            <p>
+                            @{
+                                if(!String.IsNullOrEmpty(tmp.HomeworkAnswer))
+                                {
+                                    if (tmp.HomeworkCorrect == 1)
+                                    {
+                                        <img src="@Url.Content("~/Content/images/yes.gif")" width="20" height="20" alt="" />
+                                    }
+                                    else if (tmp.HomeworkCorrect == 0)
+                                    {
+                                        <img src="@Url.Content("~/Content/images/wrong.gif")" width="20" height="20" alt="" />
+                                    }
+                                }                                                   
+                            @tmp.HomeworkQuestionNumber
+                            <span>.</span>
+                            @tmp.Question<br />
+                                String[] temp = tmp.QuestionSelect.Split('^');
+                                String name = "Q" + @tmp.HomeworkQuestionNumber;
+                                String check = "";
+                                //qTitle
+                                int value = 0;
+                                for (int i = 0; i < temp.Length; i++)
+                                {
+                                    value = i + 1;
+                                    if (!String.IsNullOrEmpty(tmp.HomeworkAnswer))
+                                    {
+                                        if (temp[i] == tmp.HomeworkAnswer.ToString() && BolHomeworkDone)
+                                        {
+                                            check = "checked";
+                                        }
+                                        else
+                                        {
+                                            check = "";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        check = "";
+                                    }
+
+                                    if (!String.IsNullOrEmpty(tmp.HomeworkAnswer))
+                                    {
+                                        if (temp[i] == tmp.HomeworkQuestionAnswer && BolHomeworkDone)
+                                        {
+                                        <input type="radio" name=@name value='@temp[i]' @disable @check /><span class="under">@qTitle[i].ToLowerInvariant().</span> <span style="color:red">@temp[i]&nbsp;</span> 
+                                        }
+                                        else
+                                        {
+                                        <input type="radio" name=@name value='@temp[i]' @disable @check /><span class="under">@qTitle[i].ToLowerInvariant().</span><span>@temp[i]  &nbsp;</span> 
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <input type="radio" name=@name value='@temp[i]' @disable @check /><span class="under">@qTitle[i].ToLowerInvariant().</span><span>@temp[i]  &nbsp;</span> 
+                                    }
+                                }
+                            <br />
+                        }</p>                            
+                        } 
+                        <!--題目--><span class="under"><!--選項標題--></span><!--選項-->
+
+                        <div class="selct">
+                            <div class="tle">Please find the correct definition</div>
+                            <div class="p-bottom15">
+	                        <!--左邊s-->
+                                <div class="lt">
+                                @foreach (TutorGroup.VIPABCJR.Member.Models.HomeworkRecordModel tmp in Qtype2)
+                                {
+                                    <!--左邊s-->
+                                    <div class="lt">
+                                        <div class="subj">
+                                            <!--
+                                            <img src="/images/images_cn/yes.gif" width="20" height="20"  />
+                                            <img src="/images/images_cn/wrong.gif" width="20" height="20" />
+                                            -->
+                                            <span class="subj-font"><!--單字-->
+                                                @{
+                                                    if(!String.IsNullOrEmpty(tmp.HomeworkAnswer))
+                                                    {
+                                                        if (tmp.HomeworkCorrect == 1)
+                                                        {
+                                                            <img src="@Url.Content("~/Content/images/yes.gif")" width="20" height="20" alt="" />
+                                                        }
+                                                        else if (tmp.HomeworkCorrect == 0)
+                                                        {
+                                                            <img src="@Url.Content("~/Content/images/wrong.gif")" width="20" height="20" alt="" />
+                                                        }
+                                                    }                                                 
+                                                }
+                                                @tmp.HomeworkQuestionNumber
+                                                <span>.</span>
+                                                @tmp.Question<br />
+                                            </span>
+                                        </div>
+                                        <div class="subj-as">
+                                            @{
+                                                    String name = "Q" + @tmp.HomeworkQuestionNumber;
+                                                    String check = "";
+                                                    int value = 0;
+                                                    for (int i = 0; i < 5; i++)
+                                                    {
+                                                        value = i + 1;
+                                                        if (!String.IsNullOrEmpty(tmp.HomeworkAnswer))
+                                                        {
+                                                            if (value.ToString() == tmp.HomeworkAnswer.ToString() && BolHomeworkDone)
+                                                            {
+                                                                check = "checked";
+                                                            }
+                                                            else
+                                                            {
+                                                                check = "";
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            check = "";
+                                                        }
+
+                                                        if (!String.IsNullOrEmpty(tmp.HomeworkAnswer))
+                                                        {
+                                                            if (value.ToString() == @tmp.HomeworkQuestionAnswer && BolHomeworkDone)
+                                                            {
+                                                                        <input type="radio" name=@name value=@value @disable @check /><span><span style="color:red">@qTitle[i]</span>&nbsp;</span> 
+                                                            }
+                                                            else
+                                                            {
+                                                                        <input type="radio" name=@name value=@value @disable @check /><span>@qTitle[i]&nbsp;</span> 
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                                        <input type="radio" name=@name value=@value @disable @check /><span>@qTitle[i]&nbsp;</span>
+                                                        }
+                                                    }
+                                                <br />  
+                                            }
+                                            <div class="clear"></div>	
+                                        </div>	
+                                    		                
+                                    </div>
+                                    <!--左邊e-->
+                                }
+                                </div>
+                                <div class="rt">
+                                    @for (int i = 1; i <= Qtype2.Count; i++)
+                                    {
+                                        var tmp = Qtype2.Find(n => n.HomeworkQuestionAnswer == i.ToString());
+                                        <!--右邊s-->
+                                        <div class="rt">
+                                            <div class="cho">
+
+                                                <h1>@qTitle[i - 1]</h1>
+                                                <h2>@if (!String.IsNullOrEmpty(tmp.QuestionSelect))
+                                                    {
+                                                        @tmp.QuestionSelect;
+                                                    }
+                                                    <br /></h2>
+
+                                                <div class="clear"></div>
+                                            </div>	
+                                        </div>
+                                        <!--右邊e-->
+                                    }        
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!--
+                    <div class="bline">
+			            <input type="button" name="button2" id="button2" value="+ 回上页" class="btn_1" onclick="window.location = 'learning_review.asp'" />
+			            <input type="button" class="btn_1" value="+ 提交" id="send_homework" name="button2" />
+		            </div>
+                    -->
+                    <div class="bline">
+                        <input type="button" name="button2" id="button2" value="+ 回上页" onclick="parent.window.location = '/program/aspx/AspxLogin.asp?url_id=4'" />
+                        @if (!BolHomeworkDone)
+                        {
+                            <input type="submit" value="+ 提交" id="send_homework" name="button2" />
+                        }	
+                    </div>		        
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+
+
+
+
+

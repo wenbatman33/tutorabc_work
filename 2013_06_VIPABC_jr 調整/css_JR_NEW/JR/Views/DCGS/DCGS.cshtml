@@ -1,0 +1,230 @@
+﻿@model TutorGroup.VIPABCJR.Member.Models.DCGSModel
+@{
+    ViewBag.Title = "Index";
+}
+<div id="content" style="width: 700px;">
+    <div class="menber_membox" style="width: 700px;">@*<img src="images/banner1.jpg" width="683" height="201" /> *@<!--內容start-->
+        <div class="main_membox">
+            <div class="page_title_3"><h2 class="page_title_h2">DCGS学习偏好设置</h2></div>
+            <div class="box_shadow" style="background-position:-80px 0px;"></div>
+            <!--上版位課程start-->
+            <!--上版位課程start-->
+            <div class="top_class5">
+                <h1>
+                    <span class="bold">目前等级：Level @Model.intClientLevel</span><br />
+                    <!--可用周期总堂数<font color="red">&nbsp;0</font><br />
+                    剩余周期堂数<font color="red">&nbsp;0</font>
+        
+                    <br />
+                    本期未用(超用)课时<font color="red">&nbsp;</font>-->
+                </h1>
+            </div>
+            <a id="a_learning_record" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=6" target="_parent">上课记录&amp;评分</a> 
+            <a id="a_learning_word" class="top_class_N2" href="/program/member/learning_word.asp" target="_parent">我的单词银行</a> 
+            <a id="a_learning_learn_old" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=2" target="_parent">帐户资讯</a> 
+            <a id="a_learning_level" class="top_class_N2" href="/program/member/learning_level.asp" target="_parent">程度分析</a> 
+            <a id="a_learning_dcgs" class="top_class_N4" href="/program/aspx/AspxLogin.asp?url_id=5" target="_parent">DCGS学习偏好设置</a> 
+            <a id="a_learning_review" class="top_class_N2" href="/program/aspx/AspxLogin.asp?url_id=4" target="_parent">咨询复习</a>
+            <div class="top_block">
+            </div>
+            <!--上版位課程end-->
+            <!--上版位課程end-->
+            <!--勾選start-->
+            <form name="dcgs" action="@Url.Action("UpdateDCGS", "DCGS")" method="post" onsubmit="return checkForm();" >
+            <!--submit後讓頁面接的到ProfileId-->
+            <input type="hidden" name="profileId" value="@Model.ProfileId" />
+            <div>
+                <div class="line01">
+                </div>
+                <!--最想加强的是 start-->
+                <div class="main_memfiled_all">
+                    <div class="main_memfiled_left">
+                        最想加強的是</div>
+                    <div class="main_memfiled_right">
+                        @foreach (TutorGroup.VIPABCJR.Member.ViewModels.DCGSViewModel i in Model.AllFocusList)
+                        {
+                            string strFocusCheck = "";
+                            if (Model.arrFocusTempList.Contains(i.intFocusSn))
+                            {
+                                strFocusCheck = "checked";
+                            }
+                            <input type="radio" name="focus" id="radio" value="@i.intFocusSn"  @strFocusCheck />
+                            @i.strFocusSname
+                            @*@Html.RadioButtonFor(m=>i.strFocusSname,i.intFocusSn)*@
+                            @*@Html.RadioButton(i.strFocusSname, i.intFocusSn)*@
+                        }
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <!--最想加强的是 end-->
+                <div class="main_memfiled_line2" style="width: 500px;">
+                </div>
+                <!--职业别 start-->
+				<!--
+                <div class="main_memfiled_all">
+                    <div class="main_memfiled_left">
+                        职业别<br />
+                        (可复选1 ~ 2 项)</div>
+                    <div class="main_memfiled_right">
+                        <ul>
+                            @foreach (TutorGroup.VIPABCJR.Member.ViewModels.DCGSViewModel j in Model.AllIndustryList)
+                            {
+                                @*@Html.CheckBox(j.strIndustrySname,j.intIndustrySn)
+                                        @j.strIndustrySname*@
+                                string strIndustryCheck = "";
+                                if (Model.arrIndustryTempList.Contains(j.intIndustrySn))
+                                {
+                                    strIndustryCheck = "checked";
+                                }
+                                <li>
+                                    <input type="checkbox" name="industry" id="@j.strIndustrySname" value="@j.intIndustrySn" @strIndustryCheck />
+                                    @j.strIndustrySname</li>
+                            }
+                        </ul>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+				-->
+                <!--职业别 end-->
+				<!--
+                <div class="main_memfiled_line" style="width: 500px;">
+                </div>
+				-->
+                <!--职位别 start-->
+				<!--
+                <div class="main_memfiled_all">
+                    <div class="main_memfiled_left">
+                        职位<br />
+                        (可复选1 ~ 2 项)</div>
+                    <div class="main_memfiled_right">
+                        <ul>
+                            @foreach (TutorGroup.VIPABCJR.Member.ViewModels.DCGSViewModel k in Model.AllRoleList)
+                            {
+                                string strRoleCheck = "";
+                                if (Model.arrRoleTempList.Contains(k.intRoleSn))
+                                {
+                                    strRoleCheck = "checked";
+                                }
+                                <li>
+                                    <input type="checkbox" name="role" id="@k.strRoleSname" value="@k.intRoleSn" @strRoleCheck />
+                                    @k.strRoleSname</li>
+                            }
+                        </ul>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+				-->
+                <!--职位别 end-->
+				<!--
+                <div class="main_memfiled_line" style="width: 500px;">
+                </div>
+				-->
+                <!--兴趣 start-->
+                <div class="main_memfiled_all">
+                    <div class="main_memfiled_left">
+                        兴趣<br />
+                        (可复选3 ~ 5 项)</div>
+                    <div class="main_memfiled_right">
+                        <ul>
+                            @foreach (TutorGroup.VIPABCJR.Member.ViewModels.DCGSViewModel n in Model.AllInterestList)
+                            {
+                                string strInterestCheck = "";
+                                if (Model.arrInterestTempList.Contains(n.intInterestSn))
+                                {
+                                    strInterestCheck = "checked";
+                                }
+                                <li>
+                                    <input type="checkbox" name="interest" id="@n.strInterestSname" value="@n.intInterestSn" @strInterestCheck />
+                                    @n.strInterestSname</li>
+                            }
+                        </ul>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <!--兴趣 end-->
+                <div class="main_memfiled_line" style="width: 500px;">
+                </div>
+                <div class="t-left l_margin">
+                    <input type="submit" name="button" id="button" value="+ 确认提交" class="btn_1" /></div>
+            </div>
+            </form>
+            <div class="top_block">
+            </div>
+            <!--勾選end-->
+            <font id="div_abc_inner_main_contents"></font>
+        </div>
+        <!--內容end-->
+    </div>
+</div>
+<script>
+    function checkForm() {
+        var strIndustry = ""
+        var focus = document.getElementsByName("focus")
+        //var industry = document.getElementsByName("industry")
+        //var role = document.getElementsByName("role")
+        var interest = document.getElementsByName("interest")
+        //for (i = 0; i < focus.length; i++) {
+        //    if (focus[i].checked) {
+        //        alert(focus[i].value);
+        //    }
+        //}
+        //for (i = 0; i < industry.length; i++) {
+        //    if (industry[i].checked) {
+        //        strIndustry = strIndustry + focus[i].value + ","
+        //        alert(focus[i].value);
+        //    }
+        //}
+        //驗證最想加强的是 單選
+        if ($("input[name='focus']:checked").length == 0) {
+            alert("请填写您最想加强的学习项目");
+            return false;
+        }
+
+        //驗證职业别 複選1~2
+        /*
+        if ($("input[name='industry']:checked").length == 0) {
+        alert("请选择您的职业别");
+        return false;
+        }
+        if ($("input[name='industry']:checked").length > 2) {
+        alert("请选择职业别复选1 ~ 2項");
+        return false;
+        }
+        */
+        //驗證职位别 複選1~2
+        /*
+        if ($("input[name='role']:checked").length == 0) {
+        alert("请选择您的职位");
+        return false;
+        }
+        if ($("input[name='role']:checked").length > 2) {
+        alert("请选择职位复选1 ~ 2項");
+        return false;
+        }
+        */
+        //驗證兴趣 至少3~5
+        if ($("input[name='interest']:checked").length == 0) {
+            alert("请选择您的兴趣");
+            return false;
+        }
+        if ($("input[name='interest']:checked").length < 3) {
+            alert("请选择兴趣复选3 ~ 5項");
+            return false;
+        }
+        if ($("input[name='interest']:checked").length > 5) {
+            alert("请选择兴趣复选3 ~ 5項");
+            return false;
+        }
+        return true;
+    }
+</script>
