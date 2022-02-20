@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolFormStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/animate.css">
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+<script type='text/javascript' src="js/jquery.transit.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	var sidebarOpen = "false";
+	
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find("span").addClass('color_000');});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find("span").removeClass('color_000');});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find("span").addClass('color_000');
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find("span").removeClass('color_000');
+				  }
+				);
+			}
+		}
+	}); 
+	$(".funcBoxFromBtn").touchEvent('funcBoxFromBtn_Active');
+	$(".funcBoxFromBtn_Red").touchEvent('funcBoxFromBtn_Active_Red');
+	
+	$.fn.extend({    
+		sidebarBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRight').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRight').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRight').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRight').animate({right:20}, 200 );
+					
+				  }
+				);
+			}
+		}
+	}); 
+	$(".sidebarNav ul li").sidebarBtnEvent('sidebarliHover');
+	var delaySpeed=1100;
+	
+	$(".sidebarNav_icon").click(function() {
+		 $(".SalesContainer").css(['-webkit-transform', 'translateZ(0)' ,'transform','translateZ(0)']);
+	  if(sidebarOpen=="false"){
+		  sidebarOpen="true";
+            $(".SalesViewPort").animate({left:224}, 200 );
+			$(".sidebar").animate({left:0}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '-15deg'
+			}, 200);
+        }else{
+			sidebarOpen="false";
+            $(".SalesViewPort").animate({left:0}, 200 );
+			$(".sidebar").animate({left:-246}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '0deg'
+			}, 200);
+        }
+	});
+	
+	$('.newListTitle02').delay(200).animate({opacity:1}, 200 );
+	$('.rightfuncBoxFrom').delay(400).animate({opacity:1}, 200 );
+	$('.newListImg').delay(800).animate({opacity:1}, 400 );
+	$('.newListTitle01').delay(1400).animate({opacity:1}, 200 );
+});
+</script>
+<style>
+.bargraph {
+	list-style: none;
+	width: 250px;
+	background-color: #d2d2d2;
+	border-radius: 12px;
+	box-shadow: inset 1px 1px 1px rgba(20%,20%,20%,0.5);
+	float: left;
+}
+.bargraph li {
+  position: relative;
+  height: 12px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+}
+.bargraph li span {
+  position: absolute;
+  right: -40px;
+  line-height: 25px;
+}
+.bargraph .top01 {
+  background-image: linear-gradient( 90deg, #ffd200 , #ff4e00 );
+  border-radius:12px;
+  box-shadow:inset -1px -1px 1px rgba(20%,20%,20%,0.5);
+  width: 100%;
+}
+.bargraph .top02 {
+  background-image: linear-gradient( 90deg, #ffd200 , #ff4e00 );
+  border-radius:12px;
+  box-shadow:inset -1px -1px 1px rgba(20%,20%,20%,0.5);
+  width: 20%;
+}
+.bargraph .top03 {
+  background-image: linear-gradient( 90deg, #ffd200 , #ff4e00 );
+  border-radius:12px;
+  box-shadow:inset -1px -1px 1px rgba(20%,20%,20%,0.5);
+  width: 90%;
+}
+.bargraph .top04 {
+  background-image: linear-gradient( 90deg, #ffd200 , #ff4e00 );
+  border-radius:12px;
+  box-shadow:inset -1px -1px 1px rgba(20%,20%,20%,0.5);
+  width: 40%;
+}
+.bargraph .top05 {
+  background-image: linear-gradient( 90deg, #ffd200 , #ff4e00 );
+  border-radius:12px;
+  box-shadow:inset -1px -1px 1px rgba(20%,20%,20%,0.5);
+  width: 60%;
+}
+.bargraph .top06 {
+  background-image: linear-gradient( 90deg, #ffd200 , #ff4e00 );
+  border-radius:12px;
+  box-shadow:inset -1px -1px 1px rgba(20%,20%,20%,0.5);
+  width: 10%;
+}
+</style>
+</head>
+<body class="bgLightGray">
+     	  <!-- topNav start-->
+     	<div class="topNav">
+       	  <div class="nav_back float_left mgl55"><a href="#"><img src="images/nav_back.png" width="52" height="52"></a></div>
+            <div class="nav_forward float_left"><a href="#"><img src="images/nav_forward.png"></a></div>
+            <div class="TutorABC_Logo"><img src="images/TutorABC_Logo.png"></div>
+            <a href="#"><div class="PromptIcon"><div class=" margin1 float_right fontSize12 color_fff">99</div></div></a>
+        </div>
+        <!-- topNav end-->
+        <!-- sidebar start-->
+    <div class="sidebar">
+    	<div class="sidebarNav">
+            <ul>
+                <a href="#"><li><span class='sidebarIcon_0 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">首頁</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_1 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">體驗</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_2 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">免費講堂</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_3 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">熱銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_4 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">促銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_5 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">特色</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_6 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">實況</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_7 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">見證</span><span class='arrowRight '></span></li></a>
+            </ul>
+        </div>
+    	<div class="sidebarNav_icon"><a href="#"><span class="nav_icon"></span></a></div>
+    </div>
+    <!-- sidebar end-->
+<div class="SalesViewPort">
+    <!-- SalesContainer start-->
+    <div class="SalesContainer levelBg">
+      <div style="width:100%; min-height:768px; height:auto; float: left;">
+        <div class="levelLeft">
+            <div class="levelshow animated bounceInUp">
+              <p>Mary 's<br/>Evaluation Report</p>
+              <h1>Level <span style="font-weight:bold;">6</span></h1>
+            </div>
+            <div class="float_left col11">
+                    <a style="background-color:#64b900; border-color:#64b900;" class="funcBoxFromBtn width240" href="#">推薦產品</a>
+            </div>
+            <div class="levelresult mgt10 mgt10">
+              <h1>分析結果</h1>
+              <p>對於您已熟悉的主題及日常生活相關話題，您已經具備以完整句子溝通表達的能力。面對不複雜的問題，您能正確使用動詞時態，甚至以簡單的例子或道理來支持個人的意見。因此建議您，透過大量口語練習，著重於練習使用以各種時態造句，並強化用字遣詞能力。</p>
+            </div>
+        </div>
+        <div class="levelRight">
+          <div class="spidershow">
+            <font style="float:left; width:320px;">
+              <h1>顧問給你的建議</h1>
+              <p>很棒 It was really nice meeting you today Kevin. I enjoyed talking to you today and I am sure you will benefit a lot if you study with us. If you can speak English fluently you will be able to accomplish your goals. We will help you to become a confident and an excellent communicator.</p>
+            </font>
+            <div class="animated bounceInRight"><img src="images/levelspider.png" width="345" height="281" style="float:right;"></div>
+            </div>
+            <div class="levelbarchart">
+             <div class="levelreport">
+               <div class="kind">
+               <span class="titlefont">聽力</span><span class="redfont">10</span></div>
+               <div class="bar">
+               <div class="number">
+                 <li>10</li>
+                 <li>9</li>
+                 <li>8</li>
+                 <li>7</li>
+                 <li>6</li>
+                 <li>5</li>
+                 <li>4</li>
+                 <li>3</li>
+                 <li>2</li>
+                 <li style="color:#d00404;">1</li>
+               </div>
+               <div class="bargraph"><li class="top01"></li></div>
+               </div>
+               <div class="explanation">
+               你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.
+               </div>
+             </div>
+             <div class="levelreport" style="background:#f2f2f2;">
+               <div class="kind">
+               <span class="titlefont">字彙</span><span class="redfont">2</span></div>
+               <div class="bar">
+               <div class="number">
+                 <li>10</li>
+                 <li>9</li>
+                 <li>8</li>
+                 <li>7</li>
+                 <li>6</li>
+                 <li>5</li>
+                 <li>4</li>
+                 <li>3</li>
+                 <li style="color:#d00404;">2</li>
+               </div>
+               <div class="bargraph"><li class="top02"></li></div>
+               </div>
+               <div class="explanation">
+               你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.
+               </div>
+             </div>
+             <div class="levelreport">
+               <div class="kind">
+               <span class="titlefont">口語</span><span class="redfont">9</span></div>
+               <div class="bar">
+               <div class="number">
+                 <li>10</li>
+                 <li style="color:#d00404;">9</li>
+               </div>
+               <div class="bargraph"><li class="top03"></li></div>
+               </div>
+               <div class="explanation">
+               你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.
+               </div>
+             </div>
+             <div class="levelreport" style="background:#f2f2f2;">
+               <div class="kind">
+               <span class="titlefont">閱讀</span><span class="redfont">4</span></div>
+               <div class="bar">
+               <div class="number">
+                 <li>10</li>
+                 <li>9</li>
+                 <li>8</li>
+                 <li>7</li>
+                 <li>6</li>
+                 <li>5</li>
+                 <li style="color:#d00404;">4</li>
+               </div>
+               <div class="bargraph"><li class="top04"></li></div>
+               </div>
+               <div class="explanation">
+               你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.
+               </div>
+             </div>
+             <div class="levelreport">
+               <div class="kind">
+               <span class="titlefont">文法</span><span class="redfont">6</span></div>
+               <div class="bar">
+               <div class="number">
+                 <li>10</li>
+                 <li>9</li>
+                 <li>8</li>
+                 <li>7</li>
+                 <li>6</li>
+                 <li>5</li>
+                 <li>4</li>
+                 <li>3</li>
+                 <li>2</li>
+                 <li style="color:#d00404;">1</li>
+               </div>
+               <div class="bargraph"><li class="top05"></li></div>
+               </div>
+               <div class="explanation">
+               你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.
+               </div>
+             </div>
+             <div class="levelreport" style="background:#f2f2f2;">
+               <div class="kind">
+               <span class="titlefont">發音</span><span class="redfont">4</span></div>
+               <div class="bar">
+               <div class="number">
+                 <li>10</li>
+                 <li>9</li>
+                 <li>8</li>
+                 <li>7</li>
+                 <li>6</li>
+                 <li>5</li>
+                 <li>4</li>
+                 <li>3</li>
+                 <li>2</li>
+                 <li style="color:#d00404;">1</li>
+               </div>
+               <div class="bargraph"><li class="top06"></li></div>
+               </div>
+               <div class="explanation">
+               你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.你已能理解大部分非正式的問句,直述句及簡易對話.然而,對於不熟悉的主題可能有理解上的困難.因此建議你練習聽速度較快的對話.
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+	 </div>
+    <!-- SalesContainer end-->
+</div>
+            <!-- bottomStatus start-->
+        <div class="bottomStatus">
+            <div class="float_left  mgl20 mgt15 color_6b6b6b lineHeight24">Hi, Kate Lin <span class="logOutBtn lineHeight24"></span> </div>
+            <div class="float_right mgt15 mgr20"><span class="Tel24hour lineHeight24"></span></div>
+        </div>
+        <!-- bottomStatus end-->
+</body>
+</html>

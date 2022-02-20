@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta id="viewport" name='viewport'>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<title>TutorABC 線上‧真人‧同步 英語視訊學習系統
+</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/grid.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/footer_yao.css" rel="stylesheet" type="text/css"/>
+<link href="css/hearder_index.css" rel="stylesheet" type="text/css"/>
+
+
+
+</head>
+<body>
+<!-- fixed_box 固定註冊表單 start -->
+<div class="grid_100 regFixedWrap">
+            <div class="floatright regCustomerServiceIcon" style="top: 0px;">
+                <a href="javascript:void(0);" onclick="PopupCenter();">
+                    <img src="images/CustomerService.png" width="43" height="125" alt="">
+                </a>
+            </div>
+            <div class="grid_12">
+                <div class="regForm" style="top: 0px;">
+                    <div class="regFormWrap">
+                        <div id="form_box" class="form_box">
+                            <div class="grid_100">
+                                <input class="grid_100 form_input" name="txt_cname" type="text" id="CName" value="*請輸入您的姓名" onfocus="if(this.value=='*請輸入您的姓名'){this.value='';}" onblur="if(this.value==''){this.value='*請輸入您的姓名';}">
+                                <span class="reg_ok_right" style="display:none"></span>
+                                <div class="reg_tips" style="display:none">
+                                    <span class="arrow_right"></span>
+                                    <span class="arrow_right_outline"></span>
+                                    <span class="reg_error"></span>
+                                    <div class="reg_tips_info">
+                                        請輸入您的姓名</div>
+                                    </div>
+                                </div>
+                            <div class="grid_100">
+                                <input class="grid_100 form_input" name="txt_cname" type="text" id="Mail" value="*請輸入您的E-mail" onfocus="if(this.value=='*請輸入您的E-mail'){this.value='';}" onblur="if(this.value==''){this.value='*請輸入您的E-mail';}">
+                                    <span class="reg_ok_right" style="display:none"></span>
+                                    <div class="reg_tips" style="display:none">
+                                        <span class="arrow_right"></span>
+                                        <span class="arrow_right_outline"></span>
+                                        <span class="reg_error"></span>
+                                        <div class="reg_tips_info">
+                                            請輸入您的E-mail</div>
+                                        </div>
+                                    </div>
+                            <div class="grid_100">
+                                <input class="grid_100 form_input" name="txt_cname" type="text" id="CPhone" value="*請輸入行動電話" onfocus="if(this.value=='*請輸入行動電話'){this.value='';}" onblur="if(this.value==''){this.value='*請輸入行動電話';}">
+                                    <span class="reg_ok_right" style="display:none"></span>
+                                    <div class="reg_tips" style="display:none">
+                                        <span class="arrow_right"></span>
+                                        <span class="arrow_right_outline"></span>
+                                        <span class="reg_error"></span>
+                                        <div class="reg_tips_info">
+                                            請輸入行動電話</div>
+                                        </div>
+
+                                </div>
+                            <span class="fontSize12 color_gray">*為必填欄位</span>
+                            
+                            
+                            <a href="javascript:void(0);" onclick="regFormSubmit();" class="regFormBtn margin_top5 btn btn-blue">立即預約</a>
+                            <span class="fontSize12 color_gray lineHeight12"><input type="checkbox" name="checkbox" id="checkbox">  我已閱讀並同意接受</span><a class="a_link underline" href="#">個資保護聲明</a> 
+                        </div>
+                    </div>
+                        <div class="regFormTel" alt="歡迎您致電4006-30-30-30" title="歡迎您致電4006-30-30-30">
+                        </div>
+                        <div class="grid_150" id="LandingPageBlock"><a href="http://www.tutorabc.com/count.asp?code=1Lmv0AODiV" target="_blank"><img src="http://www.tutorabc.com/aspx/Mvc/images/index/0224.gif"></a></div>
+                        <div class="grid_150" id="materialFlash"><a href="http://www.tutorabc.com/count.asp?code=qVLErEuZ6S" target="_blank"><img src="http://www.tutorabc.com/aspx/Mvc/images/index/englishinterview_240X90.gif"></a></div>
+                        <div class="grid_150" id="lobbyLoginFlash">
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- fixed_box 固定註冊表單 start -->
+<div class="grid_100 topNavFixed bgColor_fff">
+	<div  class="grid_12 topNavFixed_960">
+        <div class="main_logo"><img src="images/logo.png" width="168" height="44"></div>
+        <div class="newHearderOldVer"><a class="fontSize14" href="javascript:void(0);" >舊版TutorABC</a></div>
+        <div class="telphone"><span class="fontSize14">諮詢電話：</span><span class="fontSize18">0800-66-66-80</span></div>
+        <div class="topNavLink_1 fontSize16">
+            <ul>
+               <li><a class="fontSize14" href="javascript:void(0);" >有效學習的方法</a></li>  
+               <li><a class="fontSize14" href="javascript:void(0);" >關於我們</a></li>   
+               <li><a class="fontSize14" href="javascript:void(0);" >課程介紹</a></li>  
+               <li><a class="fontSize14" href="javascript:void(0);" >師資</a></li>  
+               <li><a class="fontSize14" href="javascript:void(0);" >我們的用戶</a></li>
+               <li><a class="fontSize14" href="javascript:void(0);" >免費熱門講堂</a></li>
+            </ul>
+        </div>
+        <div class="topNavLink_2 fontSize16">
+        	<ul>
+               <li><a class="fontSize14" href="javascript:void(0);" >會員中心</a></li>  
+               <li><a class="fontSize16 regRedBtn" href="javascript:void(0);" >註冊會員</a></li>   
+               <li><a class="fontSize14" href="javascript:void(0);" >免費語言程度分析</a></li>  
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="grid_100 albumWrap">
+  <div class="grid_12" style=" width:960px; height:535px; position:relative;">
+   
+
+    <div style="position:absolute; float:left; top:0xp; left:0px; z-index:301;">
+    	 <div id="album">
+            <a href="http://abgne.tw" class="ad" ><img src="images/albumImg1.jpg" width="990" height="535"  alt=""/></a>
+            <a href="http://tw.yahoo.com" class="ad" style="display:none"><img src="images/albumImg2.jpg" width="990" height="535"  alt=""/></a>
+            <a href="http://www.google.com" class="ad" style="display:none"><img src="images/albumImg3.jpg" width="990" height="535"  alt=""/></a>
+            <a href="http://www.google.com" class="ad" style="display:none"><img src="images/albumImg4.jpg" width="990" height="535"  alt=""/></a>
+        </div>
+    
+    </div>
+    <div style="position: absolute; float: left; top: 0px; left: 730px; z-index: 305;">
+        <a href="#">
+        	<img src="images/happyNewYear.png" width="230" height="170">
+        </a>
+    </div>
+
+    <div style="position: absolute; float: left; top: 170px; left: 750px; z-index: 305;">
+    	<span class="fontSize14 color_white">電視廣告</span>
+        <a class="various fancybox.iframe" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true">
+        <div class="albumVideo_2" ></div>
+        </a>
+        
+    </div>
+    <div style="position: absolute; float: left; top: 310px; left: 750px; z-index: 305;">
+        <span class="fontSize14 color_white">微電影:語言的力量</span>
+        <a class="various fancybox.iframe" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true">
+            <div class="albumVideo_1" ></div>
+        </a>
+    </div>
+    <div style="position: absolute; float: left; top: 460px; left: 750px; z-index: 305;">
+    	 <span class="fontSize14 color_white text-center" style="position: absolute;  top: 10px; left: 116px; z-index: 305;">為愛超越<br>二部曲</span>
+        <a class="various fancybox.iframe" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true">
+        <div class="albumVideo_3" ></div>
+        </a>
+    </div>
+    
+
+  </div>
+</div>
+
+<div class="grid_100 userTalk bgColor_fff">
+    <div  class="grid_12  lineHeight40 color_gray fontSize14">
+   	 <span class="bold">我們的用戶說：</span><span>- 老師非常細心和認真，仔細糾正每一個發音，改正了我說錯了十幾年的錯誤讀音，並給我...</span>
+    </div>
+</div> 
+
+
+<div class="grid_100 zReadType">
+    <div class="grid_12 zReadType_1">
+        <div class="grid_8 contentBox">
+            <div class="Img"><img src="images/Img_01.png" width="152" height="152"  alt=""/></div>
+            <div class="Info">
+            <h2 class="color_red"><img src="images/title_01.png" width="480" height="40"  alt=""/></h2>
+            <span class=" fontSize13 text-justify lineHeight28 color_gray">姚明13歲時首次登場，那時他效力於中國籃球聯賽（CBA）中的上海大鯊魚少年隊。當時，姚明為了入隊，每天訓練10小時。持續不斷的堅持訓​​練只為了成就心裡的目標，而TutorABC 帶給用戶的互動學習、讓一心想把英語真正學好、流利使用的人。每次的課程都是往成功前進一步的訓練。</span>
+            <h3 class="color_black"><img src="images/subTitle_01.png" width="480" height="40"  alt=""/></h3>
+            <span class=" fontSize13 text-justify lineHeight24 color_black">語言學習，在於互動與頻率。互動不足，頻率不夠，都無法學好英文。</span>
+            <div><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="http://192.168.23.124:9001/NewVIPABC/NewVIPABC/Home/FreeAnalysis">體驗互動方式</a></div>
+        </div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid_100 zReadType">
+    <div class="grid_12 zReadType_2">
+        <div class="grid_8 contentBox">
+        <div class="Info">
+        <h2 class="color_red"><img src="images/title_02.png" width="480" height="40"  alt=""/></h2>
+        <span class=" fontSize13  text-justify lineHeight28 color_gray">他說自己來NBA後沒有正規學習過英語，都是通過平時的聽說進行積累，"學語言有一個過程，最開始時一聽到別人說英文，你就緊張，頭都大了，單詞一個都聽不進去，現在放鬆了，好的語言環境加上正確的學習態度讓姚明的英語突飛猛進，但他還是更多地把進步歸功於環境。TutorABC 把這樣的環境、完整地從世界各地帶到中國、讓大家真正的將英語活絡使用。</span>
+        <h3 class="color_black"><img src="images/subTitle_02.png" width="480" height="40"  alt=""/></h3>
+        <span class=" fontSize13 lineHeight24 color_black">單詞不是"背"來的，而是"用"來的。高頻度的純英文交流，可以讓單詞爛熟於心。</span>
+        <div><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="../../colorbox/colorbox_TutorABC.html">感受學好英文的環境</a></div>
+        </div>
+        <div class="Img"><img src="images/Img_02.png" width="152" height="152"  alt=""/></div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid_100 zReadType">
+    <div class="grid_12 zReadType_1">
+        <div class="grid_8 contentBox">
+        <div class="Img"><img src="images/Img_03.png" width="152" height="152"  alt=""/></div>
+        <div class="Info">
+        <h2 class="color_red"><img src="images/title_03.png" width="480" height="40"  alt=""/></h2>
+        <span class=" fontSize13 text-justify   lineHeight28 color_gray">事實呢?我失敗過許許多多次。這是我不願意讓別人為我寫傳記的原因。但我相信著、雖是凡人的我、從每一次的錯誤中學到正確的處理方式，帶來的成就更是銘心。 TutorABC 讓人從錯誤中找到正確的方式、不再真正需要的場合發生失誤。</span>
+        <h3 class="color_black"><img src="images/subTitle_03.png" width="480" height="40"  alt=""/></h3>
+        <span class=" fontSize13 text-justify lineHeight24 color_black">TutorABC 採用哈佛problem base learning 學習法，有資深的老師，幫你做專業的糾正。在顧及面子的前提下，盡情開口犯錯，才是最佳的英語學習方式。</span>
+        <div><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="../../colorbox/colorbox_TutorABC.html">體驗正確學習的方式</a></div>
+        </div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid_100 zReadType">
+    <div class="grid_12 zReadType_2">
+        <div class="grid_8 contentBox">
+        <div class="Info">
+        <h2 class="color_red"><img src="images/title_04.png" width="480" height="40"  alt=""/></h2>
+        <span class=" fontSize13 text-justify lineHeight28 color_gray">任何人對於一門語言的成就感，都來自能夠開口使用這門語言。一旦有了成就感，人們就會愛上這門語言，一旦有機會的時候，就願意表現；而一旦願意表現，榮譽感就會出現，如此就進入了一個正面循環。由開口到成就感、到愛上英文、再到願意表達。</span>
+        <h3 class="color_black"><img src="images/subTitle_04.png" width="480" height="40"  alt=""/></h3>
+        <span class=" fontSize13 text-justify lineHeight24 color_black">語法的學習不是方程式的背誦，多聽多看就會使用。要了解聽說讀寫的概念，聽讀是input的過程，而說寫是output過程。不經過大腦的翻譯和思考，直接脫口而出的才是英語‧</span>
+        <div><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="../../colorbox/colorbox_TutorABC.html">試用一次、就會愛上</a></div>
+        </div>
+        <div class="Img"><img src="images/Img_04.png" width="152" height="152"  alt=""/></div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid_100 zReadType">
+    <div class="grid_12 zReadType_1">
+        <div class="grid_8 contentBox">
+        <div class="Img"><img src="images/Img_05.png" width="152" height="152"  alt=""/></div>
+        <div class="Info">
+        <h2 class="color_red"><img src="images/title_05.png" width="480" height="40"  alt=""/></h2>
+        <span class=" fontSize13 text-justify  lineHeight28 color_gray">有人認為慈善就是給貧困者物資上的項目。我說不、提供真正所需要的，才是有幫助的。首先是認識與了解、然後才能滿足，像學語言、我們學得不是一門學問、而是文化。 TutorABC 透過了解每一個人不同的需求、設計每個人合適的課程，讓人真正得到的、不只是分數、而是生命。</span>
+        <h3 class="color_black"><img src="images/subTitle_05.png" width="480" height="40"  alt=""/></h3>
+        <span class=" fontSize13 text-justify lineHeight24 color_black">把語言帶您的生活當中，最關鍵的方法，就是了解每個人的屬性、認識語言的文化，進而了解每一個世界角落。</span>
+        <div><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="../../colorbox/colorbox_TutorABC.html">給自己一個徜徉世界的機會</a></div>
+        </div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid_100">
+    <div class="grid_12 zReadType_2">
+        <div class="grid_8 contentBox text-center">
+            <span class="color_brown fontSize46">TutorABC</span><span class="color_lightBrowwn fontSize24"> X </span><span class="color_brown fontSize46">Yao Ming</span><br>
+            <span class="color_lightGray">姚明聯袂TutorABC啟創英語教學新紀元</span><br>
+        </div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+    </div>
+</div>
+<div class="grid_100">
+    <div class="grid_12 zReadType_2">
+        <div class="grid_8 contentBox">
+        <div><h2 class="color_red"><img src="images/title_06.png" width="480" height="40"  alt=""/></h2></div>
+        <div class="ourUser">
+        	<div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_01.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           <div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_02.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           <div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_03.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           <div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_04.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           <div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_02.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           <div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_03.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           
+           <div class="ourUserItem">
+            <div class="ourUserImg"><img src="images/user_01.png" width="143" height="140"  alt=""/></div>
+            <div class="ourUserInfo text-center fontSize14" > 電腦公司<br>總經理 <span class="bold">楊銀平</span></div>
+           </div>
+           
+           <div class="ourUserItem">
+           	<div class="margin_top50 ourUserMore text-center fontSize14" >＋更多我们的用户</div>
+            
+           </div>
+           
+        
+        </div>
+       
+        </div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+    </div>
+</div>
+
+<div class="grid_100">
+    <div class="grid_12 zReadType_2">
+        <div class="grid_8 contentBox text-center">
+            <span class="color_brown fontSize46">Language Is Power</span><br>
+            <span class="color_lightGray">每天，有超過10億人在學習英語<br>
+            奮鬥、信念、堅持，這是只屬於一個人的戰役<br><br>改變，已經開始<br>未來有了更多可能<br>見證語言的力量，見證更好的自己<br>一切，都將值得！ </span><br>
+        </div>
+        <div class="grid_8" style="position:relative; float:left;"><hr></div>
+    </div>
+</div>
+
+<div class="grid_100">
+    <div class="grid_12 zReadType_2">
+        <div class="grid_8 contentBox">
+        <div><h2 class="color_red"><img src="images/title_07.png" width="480" height="40"  alt=""/></h2></div>
+        <div class="ourContent">
+                <div class="ourContentItem">
+                <div class="ourContentImg"><img src="images/content_01.png" width="135" height="144"  alt=""/></div>
+                <div class="ourContentInfo text-center fontSize14" >
+                    <span class="color_black">每日一句：</span><br>
+                    <span class="color_gray"> Samantha 教你說：</span><br>
+                    <span class="color_orange"> Rank And File</span>
+                </div>
+                </div>
+                
+                <div class="ourContentItem">
+                <div class="ourContentImg"><img src="images/content_02.png" width="135" height="144"  alt=""/></div>
+                <div class="ourContentInfo text-center fontSize14" >
+                    <span class="color_black">每日一句：</span><br>
+                    <span class="color_gray"> Samantha 教你說：</span><br>
+                    <span class="color_orange"> Rank And File</span>
+                </div>
+                </div>
+                
+                <div class="ourContentItem">
+                <div class="ourContentImg"><img src="images/content_03.png" width="135" height="144"  alt=""/></div>
+                <div class="ourContentInfo text-center fontSize14" >
+                    <span class="color_black">每日一句：</span><br>
+                    <span class="color_gray"> Samantha 教你說：</span><br>
+                    <span class="color_orange"> Rank And File</span>
+                </div>
+                </div>
+                
+                <div class="ourContentItem">
+                <div class="ourContentImg"><img src="images/content_04.png" width="135" height="144"  alt=""/></div>
+                <div class="ourContentInfo text-center fontSize14" >
+                    <span class="color_black">每日一句：</span><br>
+                    <span class="color_gray"> Samantha 教你說：</span><br>
+                    <span class="color_orange"> Rank And File</span>
+                </div>
+                </div>
+                </div>
+        </div>
+        <div class="grid_8 margin_top20 margin_bottom20" style="position:relative; float:left;">
+        <span><input class="reg_field grid_6" style="height:20px; padding:6px;" type="text"></span>
+        <span><a href="#" class="btn btn-yellow">订阅电子报</a></span>
+        
+        
+        </div>
+    </div>
+</div>
+
+<!-- 2013 1220 新版footer start -->
+
+<div class="footer">
+	 <div class="grid_100 footerRedLine">
+        <div class="footerRedLine960 ">  
+           <img src="images/icon_1.png" width="230" height="35"  alt=""/>
+           <img src="images/icon_2.png" width="230" height="35"  alt=""/>
+           <img src="images/icon_3.png" width="230" height="35"  alt=""/>
+           <img src="images/icon_4.png" width="230" height="35"  alt=""/>
+        </div>
+    </div>
+     <div class="footer960">
+     	<h2  class=" margin_top50 margin_bottom20"><img src="images/footer_title.png" width="349" height="35"  alt=""/></h2>
+     </div>
+    <div class="footer960 foot_linksWrap">
+        <div class="foot_grid foot_links">
+            <p class="color_white">關於我們</p>
+            <p><a class='foot_links_link' href="/aspx/portal/About/AboutVIPABC">選擇VIPABC的理由</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/evolution">企業沿革</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/News">新聞中心</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/institution">學術交流機構</a></p>
+            <p><a class='foot_links_link'  href="http://www.vipabc.com/program/campaign/2011prize/index.htm">企業榮耀</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/Sitemap">網站地圖</a></p>
+        </div>
+        <div class="foot_grid foot_links">
+            <p class=" color_white">學英文最佳選擇</p>
+            <p><a class='foot_links_link'  href="/aspx/portal/onlineenglish/time">最彈性的學習時間</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/onlineenglish/tutor">最專業的外教顧問</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/onlineenglish/live_classes">最隱私的學習環境</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/onlineenglish/award_winning_onlinecourse">最有效的英語學習法</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/onlineenglish/materials">最個性化的教材內容</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/onlineenglish/interactive_lessons">最輕鬆的真人互動教學</a></p>
+        </div>
+        <div class="foot_grid foot_links">
+            <p class="color_white">我們的課程適合</p>
+            <p><a class='foot_links_link'  href="/aspx/portal/course/adults">上班族 / 專業人士</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/course/corporate">企業培訓</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/course/liuxue">出國遊學</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/course/junior">孩童 / 青少年</a></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="foot_grid foot_links">
+            <p class="color_white">VIPABC 幫你提升</p>
+            <p><a class='foot_links_link'  href="/aspx/portal/english/spoken" onclick="logCount(52);">英語口語</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/english/listening" onclick="logCount(53);">英語聽力</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/english/reading" onclick="logCount(54);">英語閱讀</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/english/business" onclick="logCount(55);">商務英語</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/english/applied" onclick="logCount(56);">職業英語</a></p>
+        </div>
+        <div class="foot_grid foot_links">
+            <p class="color_white">新聞中心</p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/News?tab=1" onclick="logCount(57);">公司信息</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/News?tab=2" onclick="logCount(58);">媒體報導</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/News?tab=3" onclick="logCount(59);">學習資源</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/About/News?tab=4" onclick="logCount(60);">最新優惠</a></p>
+            <p></p>
+        </div>
+        <div class="foot_grid foot_links">
+            <p class="color_white">英語學習專區</p>
+            <p><a class='foot_links_link'  href="#part_04" onclick="logCount(61);">在線免費講堂</a></p>
+            <p><a class='foot_links_link'  href="#part_06" target="_blank" onclick="logCount(62);">每日一句</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/Epaper/EpaperList" onclick="logCount(63);">英語學習報</a></p>
+            <p><a class='foot_links_link'  href="/aspx/portal/App/App?type=1" onclick="logCount(64);">移動學習</a></p>
+            <p><a class='foot_links_link_y' href="/aspx/portal/App/interactiveSoftware" onclick="logCount(65);">在線教學說明</a></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <div class="grid_12 margin_top5 margin_bottom10"><hr></div>
+        <div class="footer960">
+            <div class="width600 floatleft">
+            <div class="foot_bottom">
+            <p>
+            <a class="foot_bottom_link" href="/aspx/portal/About/evolution" onclick="logCount(69);">關於VIPABC</a>
+            <a class="foot_bottom_link" href="/aspx/portal/Home/Privacy" onclick="logCount(70);">隱私保護</a> 
+            <a class="foot_bottom_link" href="/aspx/portal/Home/Security" onclick="logCount(71);">安全條款</a> 
+            <a class="foot_bottom_link" href="/aspx/portal/Home/Service" onclick="logCount(72);">服務條款</a>
+            <a class="foot_bottom_link_red" href="http://www.vipabc.com/program/recruit/index.asp" onclick="logCount(73);">誠徵英才</a>
+            <a class="foot_bottom_link_red" href="http://biz.vipabc.com/" target="_blank" onclick="logCount(74);">企業培訓</a>
+            </p>
+            </div>
+            <div class="foot_bottom">
+            <p class="fontSize12">Copyright © 2012 TutorABC Inc.</p>
+            </div>
+            </div>
+            
+            <div class="width360 floatright">
+            <div class="width170 color_white floatleft margin5">
+            <span class="margin_top5 fontSize13">更便利的隨身教室</span><br>
+            <span class="margin_top10"><img src="images/footerClassRoom.png" width="87" height="67"  alt=""/></span><span class="margin_top10"> <img src="images/spell_QRcode.png" width="67" height="67"  alt=""/></span>
+            </div>
+            <div class="width170 color_white floatleft margin5">
+            <span class="margin_top5 fontSize13">與我聯繫</span><br>
+            <span class="margin_top5 fontSize13"><a class="foot_bottom_link_red">在線客服</a></span><br>
+            <span class="margin_top5 fontSize13"><a class="foot_bottom_link_red">聯絡我們</a></span><br>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="grid_12 margin_top20 "></div>
+</div>		
+<!-- 2013 1220 新版footer end -->
+
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript" src="js/event_index.js"></script>
+<script type="text/javascript" src="js/album.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<link rel="stylesheet" href="js/colorbox/colorbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/colorbox/jquery.colorbox.js"></script>
+
+</body>
+</html>

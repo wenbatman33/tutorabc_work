@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+.timeLinePoint{ background:url(../images/about_timeline_point.png) 0px 10px no-repeat; padding-left:20px; line-height:24px;}
+.TutorList{ position:relative; height:auto;}
+.TutorList_item{ position:relative;  height:200px;  width:100%; }
+.TutorPhoto{ position:relative; float:left; width:200px; height:200px; }
+.TutorDesWrap{position:relative; float:left; width:595px; height:200px; }
+.TutorName{ position:relative; float:left;  margin-left:10px; margin-top:10px; }
+.TutorDes{ position:relative;  float:left;  margin-left:10px; margin-top:10px; }
+
+.CustomerList{ position:relative; height:auto; }
+.CustomerList_item{ position:relative;  height:150px; width:100%; padding-top:15px; padding-bottom:10px; }
+.CustomerPhoto{ position:relative; float:left; width:195px; height:135px; }
+.CustomerDesWrap{position:relative; float:left; width:595px; height:120px; }
+.CustomerName{ position:relative; float:left;  margin-left:10px; margin-top:10px; }
+.CustomerDes{ position:relative;  float:left; height:50px; overflow:hidden;  margin-left:10px; margin-top:10px; }
+
+
+
+
+
+.content {
+position: relative;
+width: 100%;
+height: auto;
+min-height: 500px;
+padding-top: 380px;
+margin-bottom: 20px;
+}
+.box_960 {
+position: relative;
+width: 960px;
+height: auto;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.box_660 {
+position: relative;
+width: 660px;
+height: auto;
+float: left;
+}
+.article_more{
+	color:#666666;
+	clear:both;
+	height:100%;
+	overflow:hidden;
+	
+	margin-bottom:30px;
+	}
+.article_more p{
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:6px;
+	margin-top:20px;
+	}
+.article_more ul li{
+	float:left;
+	width:300px;}
+.article_list_point{
+	text-indent:-999px;
+	width:15px;
+	height:30px;
+	background:url(../images/epaper_img.png) 0 -124px no-repeat;
+	float:left;}
+.article_list{
+	font-size:13px;
+	float:left;
+	width:280px;
+	height:22px;
+	border-bottom:1px solid #cccccc;
+	padding-left:2px; 
+	margin-bottom:7px;}
+.article_list a{
+	float:left;
+	color:#666666;
+	text-decoration:none;}
+.article_list a:hover{
+	color:#ff9000;
+}
+
+.div_abc_outer_main_continent {
+position: relative;
+float: right;
+width: 100%;
+height: auto;
+margin-top: 8px;
+margin-bottom: 20px;
+}
+
+
+/*############### 学术交流机构 ############### */
+
+
+.Academic_warp{
+	position:relative;
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top:20px;
+	
+}
+
+.Academic_item{
+	position:relative;
+	float:left;
+	width:100%;
+	margin:16px 16px 16px 0px;
+	height:auto;
+	
+}
+.Academic_item li{
+	position:relative;
+	float:left;
+	width:200px;
+	height:120px;
+	margin-top:10px;
+	margin-right:12px;
+	border:3px #eee solid; background:#fff;
+
+	
+}
+.tab_container{
+	display:block; position:relative; width:100%; float:left; margin-top:10px;
+}
+.box_shadow {
+position: relative;
+float: left;
+margin-top: 6px;
+width: 660px;
+height: 20px;
+background: url(../images/box_shadow.png) no-repeat;
+}
+/*############### 学术交流机构 ############### */

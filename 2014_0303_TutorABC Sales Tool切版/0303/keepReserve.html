@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolFormStyle.css" type="text/css" >
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+<script type='text/javascript' src="js/jquery.transit.min.js"></script>
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	var sidebarOpen = "false";
+	
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find("span").addClass('color_000');});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find("span").removeClass('color_000');});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find("span").addClass('color_000');
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find("span").removeClass('color_000');
+				  }
+				);
+			}
+		}
+	}); 
+	
+	$(".funcBoxFromBtn").touchEvent('funcBoxFromBtn_Active');
+	
+	$.fn.extend({    
+		btnType2:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+				  }, function() {
+					$(this).removeClass(str);
+				  }
+				);
+			}
+		}
+	});
+	$(".keepReserveBtn_1").btnType2('keepReserveBtnHover_1');
+	$(".keepReserveBtn_2").btnType2('keepReserveBtnHover_2');
+	$(".keepReserveBtn_3").btnType2('keepReserveBtnHover_3');
+	
+	
+	
+	
+	
+	$.fn.extend({    
+		sidebarBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRight').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRight').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRight').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRight').animate({right:20}, 200 );
+					
+				  }
+				);
+			}
+		}
+	}); 
+	$(".sidebarNav ul li").sidebarBtnEvent('sidebarliHover');
+	
+	var delaySpeed=1100;
+	
+	$(".sidebarNav_icon").click(function() {
+		 $(".SalesContainer").css(['-webkit-transform', 'translateZ(0)' ,'transform','translateZ(0)']);
+	  if(sidebarOpen=="false"){
+		  sidebarOpen="true";
+            $(".SalesContainer").animate({left:224}, 200 );
+			$(".sidebar").animate({left:0}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '-10deg'
+			}, 200);
+        }else{
+			sidebarOpen="false";
+            $(".SalesContainer").animate({left:0}, 200 );
+			$(".sidebar").animate({left:-246}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '0deg'
+			}, 200);
+        }
+	});
+	
+	$('.nowReserveTitle_03').delay(0).animate({opacity:1}, 200 );
+	$(".keepReserveInfo_1").delay( 200 ).animate({opacity:1}, 200 );
+	$(".keepReserveInfo_2").delay( 400 ).animate({opacity:1}, 200 );
+	$(".keepReserveBtn_1").delay( 600 ).animate({opacity:1}, 200 );
+	$(".keepReserveBtn_2").delay( 800 ).animate({opacity:1}, 200 );
+	$(".keepReserveBtn_3").delay( 1000 ).animate({opacity:1}, 200 );
+	$('.nowReserveTitle_01').delay(1200).animate({opacity:1}, 200 );
+	$('.nowReserveTitle_02').delay(1400).animate({opacity:1}, 200 );
+	
+	
+});
+</script>
+</head>
+<body class="bgLightGray">
+<div class="SalesViewPort">
+	<!-- sidebar start-->
+    <div class="sidebar">
+    	<div class="sidebarNav">
+            <ul>
+                <a href="#"><li><span class='sidebarIcon_0 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">首頁</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_1 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">體驗</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_2 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">免費講堂</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_3 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">熱銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_4 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">促銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_5 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">特色</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_6 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">實況</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_7 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">見證</span><span class='arrowRight '></span></li></a>
+            </ul>
+        </div>
+    	<div class="sidebarNav_icon"><a href="#"><span class="nav_icon"></span></a></div>
+    </div>
+    <!-- sidebar end-->
+    
+    <!-- SalesContainer start-->
+    <div class="SalesContainer nowReserveBg">
+     	<!-- topNav start-->
+        <div class="topNav">
+        	<div class="nav_back float_left mgl55"><a href="#"><img src="images/nav_back.png"></a></div>
+            <div class="nav_forward float_left"><a href="#"><img src="images/nav_forward.png"></a></div>
+            <div class="TutorABC_Logo"><img src="images/TutorABC_Logo.png"></div>
+            <a href="#"><div class="PromptIcon"><div class=" margin1 float_right fontSize12 color_fff">99</div></div></a>
+        </div>
+        <!-- topNav end-->
+            <div class="rightfuncBox">
+            	<div class="rightfuncBoxBgRed"></div>
+                <div class="nowReserveTitle_03 opacity0"><img src="images/nowReserveTitle_03.png"></div>
+            	<div class="keepReserveInfo_1 relative width300 height120 mgt280  mgl25 color_fff fontSize14" style=" opacity:0;">
+                	<div class="relative width300 height110">
+                    我們已為您保留試讀體驗的機會，並隨時歡迎你!
+                    </div>
+                    <div class="inline_block col11"><hr class="hr1"/></div>
+                </div>
+                
+                <div class="keepReserveInfo_2 relative width300 height30 mgt10  mgl25 color_fff fontSize16" style="opacity:0;">
+                	何不先了解一下我們的學習特色呢?
+                </div>
+                <div class="relative width300 height100 mgt10  mgl25 color_fff fontSize16">
+                    <ul>
+                    <a href="#"><li class="keepReserveBtn keepReserveBtn_1"><span class="color_fff">特色</span></li></a>
+                    <a href="#"><li class="keepReserveBtn keepReserveBtn_2"><span class="color_fff">實況</span></li></a>
+                    <a href="#"><li class="keepReserveBtn keepReserveBtn_3"><span class="color_fff">見證</span></li></a>
+                    </ul>
+                </div>
+			</div>
+            
+            <div class="nowReserveTitle_01 opacity0"><img src="images/nowReserveTitle_01.png"></div>
+            <div class="nowReserveTitle_02 opacity0"><img src="images/nowReserveTitle_02.png"></div>
+
+            
+        <!-- bottomStatus start-->
+        <div class="bottomStatus">
+            <div class="float_left  mgl20 mgt15 color_6b6b6b lineHeight24">Hi, Kate Lin <span class="logOutBtn lineHeight24"></span> </div>
+            <div class="float_right mgt15 mgr20"><span class="Tel24hour lineHeight24"></span></div>
+        </div>
+        <!-- bottomStatus end-->
+	</div>
+    <!-- SalesContainer end-->
+</div>
+</body>
+</html>

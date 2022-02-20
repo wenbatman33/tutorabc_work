@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/* 表單樣式 start*/
+
+.funcBoxFrom_input{
+	height: 40px;
+	font-size: 16px;
+	color: #aaa;
+	vertical-align: middle;
+	font-family: 'Duru Sans', sans-serif;
+	padding: 0px 5px 0px 30px;
+}
+.funcBoxFrom_input:focus{
+	color: #333;
+	background-color: #ededed;
+}
+
+.funcBoxFrom_input:disabled{
+	color: #333;
+	background-color: #ccc;
+	opacity:1;
+}
+
+.input_none{
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+	padding-left:10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconUser{
+	background:url(../images/iconUser.png) 8px 10px no-repeat;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconMail{
+	background:url(../images/iconMail.png) 8px 10px no-repeat;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconPhone{
+	background:url(../images/iconPhone.png) 8px 10px no-repeat;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconNone{
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+	-ms-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.errMsg{
+	display: block;
+	position: absolute;
+	top: 33px;
+	right: 0px;
+	font-size: 12px;
+	padding: 5px;
+	background: #ededed;
+	color: #900;
+	z-index: 90;
+	box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.5);
+	;
+}
+/*箭頭上右*/
+.arrow_upRight{
+	width:0px;
+	height:0px;
+	border-width:6px;
+	border-style:solid;
+	border-color:transparent transparent #ededed transparent ;
+	position:absolute;
+	top:-12px;
+	right:10px;
+}
+/*箭頭上右 */
+.arrow_upRight_red{
+	width:0px;
+	height:0px;
+	border-width:6px;
+	border-style:solid;
+	border-color:transparent transparent #ededed transparent ;
+	position:absolute;
+	top:-12px;
+	right:4px;
+
+}
+/*箭頭中左*/
+.arrow_upLeft{
+	width:0px;
+	height:0px;
+	border-width:6px;
+	border-style:solid;
+	border-color:transparent #ededed transparent transparent ;
+	position:absolute;
+	top:6px;
+	left:-12px;
+}
+
+.funcBoxFromBtn_Red {
+	display:inline-block;
+	height:40px;
+	color: #FFF;
+	background-color: #af2727;
+	border:1px solid #af2727;
+	text-decoration: none;
+	text-align:center;
+	vertical-align:middle;
+	line-height:40px;
+	font-size: 16px;
+    font-family: 'Duru Sans', sans-serif;
+	-webkit-border-radius: 6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+.funcBoxFromBtn {
+	display:inline-block;
+	height:40px;
+	color: #FFF;
+	background-color: #fc5f00;
+	border:1px solid #fc5f00;
+	text-decoration: none;
+	text-align:center;
+	vertical-align:middle;
+	line-height:40px;
+	font-size: 16px;
+    font-family: 'Duru Sans', sans-serif;
+	-webkit-border-radius: 6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+.funcBoxFromBtn_Active{
+	color: #000;
+	background-color: #FFCC00;
+	border: 1px solid #FFCC00;
+}
+.funcBoxFromBtn_Active_Red{
+	color: #FFF;
+	background-color: #c03030;
+	border: 1px solid #c03030;
+}
+.funcBoxFromBtn3 {
+	display: inline-block;
+	height: 35px;
+	color: #fff;
+	border: 1px solid #999;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: 'Duru Sans', sans-serif;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: #999;
+}
+.funcBoxFromBtn3_Active{
+	color: #000;
+	background-color: #FFCC00;
+	border: 1px solid #FFCC00;
+}
+.funcBoxFromBtn3_Active_Red{
+	color: #FFF;
+	background-color: #c03030;
+	border: 1px solid #c03030;
+}
+.funcBoxFromBtn2 {
+	display: inline-block;
+	height: 35px;
+	color: #FC5F00;
+	background: #fcfcfc  url(../images/iconadd.png) no-repeat;
+	background-position: 170px ;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: 'Duru Sans', sans-serif;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.funcBoxFromBtn2_Active{
+	color: #000;
+	background-color: #FFCC00;
+	border: 1px solid #FFCC00;
+}
+.funcBoxFromBtn2_Active_Red{
+	color: #FFF;
+	background-color: #c03030;
+	border: 1px solid #c03030;
+}
+/* radioBtn 樣式*/
+
+.funcBoxFrom_radioBtn span{
+	color:#333;
+    padding:10px 15px;
+    display:block;
+}
+.funcBoxFrom_radioBtn input {
+    position:absolute;
+    top:-900px;
+}
+.funcBoxFrom_radioBtn input:checked + span {
+    color:#fff;
+    background: #af2727; 
+}
+.radioBtn_l span {
+    background: #ffffff;
+    border-radius: 8px 0px 0px 8px;
+	border: 1px solid #ccc;
+    border-right-width: 1px;
+    cursor: pointer;
+	float:left;
+}
+.radioBtn_r span {
+    background: #ffffff;
+    border-radius: 0px 8px 8px 0px;
+	border-right:solid 1px #CCCCCC;
+	border: 1px solid #CCCCCC;
+    border-left-width: 0px;
+    cursor: pointer;
+	float:left;
+}
+
+
+.radioBtn_m span {
+     background: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+	border-right:solid 1px #CCCCCC;
+	border: 1px solid #CCCCCC;
+    border-left-width: 0px;
+    cursor: pointer;
+	float:left;
+}
+/* radioBtn 樣式end*/
+
+
+.funcBoxFrom_select{
+	color: #aaa;
+	height: 40px;
+	background: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+	border-right:solid 1px #CCCCCC;
+	border: 1px solid #CCCCCC;
+    border-left-width: 0px;
+	padding: 0px 5px 0px 5px;
+    cursor: pointer;
+	float:left;
+}
+.funcBoxFrom_select:focus{
+	color: #333;
+	background-color: #ededed;
+}
+.funcBoxFrom_select2{
+	color: #aaa;
+	height: 40px;
+	background: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+	border-right:solid 1px #aaaaaa;
+	border: 1px solid #aaaaaa;
+    border-left-width: 0px;
+	padding: 0px 5px 0px 5px;
+    cursor: pointer;
+	float:left;
+}
+.funcBoxFrom_select:focus2{
+	color: #333;
+	background-color: #ededed;
+}
+
+
+
+/* Checkbox NewStyle */
+.newCheckbox {
+	position: relative;
+}
+.newCheckbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	background: #fcfff4;
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+	left: 0px;
+	z-index: 998;
+}
+.newCheckbox label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 9px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+	z-index:998px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.newCheckbox label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.newCheckbox input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+
+
+.newCheckbox2 {
+	position: relative;
+}
+.newCheckbox2 label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	background: #fcfff4;
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+	left: 0px;
+	z-index: 998;
+}
+.newCheckbox2 label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 9px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+	z-index:998px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.newCheckbox2 label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.newCheckbox2 input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}

@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,
+*:after,
+*:before {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+
+
+/* Dropdown Menu
+===============================*/
+.drop-wrap {
+	width: 300px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index:90000;
+}
+
+.main-drop {
+	position: relative;
+	background: #ecf0f1;
+	color: #fff;
+	cursor: pointer;
+}
+
+.main-drop {
+  position:absolute;
+  top:0;
+  right:0;
+  padding:6px 9px 6px 16px;
+  background:none;
+  cursor:pointer;
+
+}
+
+.main-drop_Active {
+  border-left:1px solid #d4d4d4;
+background: #ecf0f1;
+}
+
+.drop-wrap ul {
+  list-style:none;
+  text-align:left;
+  display:none;
+  margin-top:52px;
+  width:300px;
+  height:490px;
+  background: #f0f3f6;
+  padding:0;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  overflow: scroll;
+  border:1px solid #a9a9a9;
+ 	-webkit-overflow-scrolling: touch;
+}
+
+.drop-wrap li {
+	display: block;
+	color: #000;
+	font-size: 17px;
+	padding: 18px 10px 22px 18px;
+	border-bottom: 1px solid #bababa;
+	position: relative;
+}
+.drop-wrap li.alreadyclick {
+	display: block;
+	color: #A0A0A0;
+	font-size: 17px;
+	padding: 18px 10px 22px 18px;
+	border-bottom: 1px solid #bababa;
+	background: #dedede;
+}
+.dropbtn {
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	background: #de2c2c;
+	width: 120px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.dropbtn_Active {
+  background:#fc5f00;
+  cursor:pointer;
+}
+.dropbtnGray {
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	background: #333;
+	width: 120px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.dropbtnGray_Active {
+  background:#fc5f00;
+  cursor:pointer;
+}
+.senttime {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #666;
+	font-size: 12px;
+	width:40px;
+	height:23px;
+	line-height:23px;
+	padding-left:23px;
+	text-align:right;
+	background:url(../images/message_clock.png) left no-repeat;
+}
+
+

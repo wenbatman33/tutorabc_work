@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolFormStyle.css" type="text/css" >
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+<script type='text/javascript' src="js/jquery.transit.min.js"></script>
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	var sidebarOpen = "false";
+	
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find("span").addClass('color_000');});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find("span").removeClass('color_000');});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find("span").addClass('color_000');
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find("span").removeClass('color_000');
+				  }
+				);
+			}
+		}
+	}); 
+	$(".funcBoxFromBtn").touchEvent('funcBoxFromBtn_Active');
+	
+	
+	$.fn.extend({    
+		sidebarBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRight').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRight').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRight').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRight').animate({right:20}, 200 );
+					
+				  }
+				);
+			}
+		}
+	}); 
+	$(".sidebarNav ul li").sidebarBtnEvent('sidebarliHover');
+	
+	var delaySpeed=1100;
+	
+	$(".sidebarNav_icon").click(function() {
+		 $(".SalesContainer").css(['-webkit-transform', 'translateZ(0)' ,'transform','translateZ(0)']);
+	  if(sidebarOpen=="false"){
+		  sidebarOpen="true";
+            $(".SalesViewPort").animate({left:224}, 200 );
+			$(".sidebar").animate({left:0}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '-15deg'
+			}, 200);
+        }else{
+			sidebarOpen="false";
+            $(".SalesViewPort").animate({left:0}, 200 );
+			$(".sidebar").animate({left:-246}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '0deg'
+			}, 200);
+        }
+	});
+	
+	$('.nowReserveTitle_03').delay(200).animate({opacity:1}, 200 );
+	$('.rightfuncBoxFrom').css("opacity","0").delay(200).animate({opacity:1}, 200 );
+	$('.newListImg').delay(600).animate({opacity:1}, 400 );
+	$('.newListTitle01_1').delay(1000).animate({opacity:1}, 200 );
+	$('.newListTitle01_2').delay(1200).animate({opacity:1}, 200 );
+});
+</script>
+</head>
+<body class="bgLightGray">
+     	<!-- topNav start-->
+        <div class="topNav">
+        	<div class="nav_back float_left mgl55"><a href="#"><img src="images/nav_back.png"></a></div>
+            <div class="nav_forward float_left"><a href="#"><img src="images/nav_forward.png"></a></div>
+            <div class="TutorABC_Logo"><img src="images/TutorABC_Logo.png"></div>
+            <a href="#"><div class="PromptIcon"><div class=" margin1 float_right fontSize12 color_fff">99</div></div></a>
+        </div>
+        <!-- topNav end-->
+	<!-- sidebar start-->
+    <div class="sidebar">
+    	<div class="sidebarNav">
+            <ul>
+                <a href="#"><li><span class='sidebarIcon_0 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">首頁</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_1 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">體驗</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_2 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">免費講堂</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_3 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">熱銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_4 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">促銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_5 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">特色</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_6 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">實況</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_7 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">見證</span><span class='arrowRight '></span></li></a>
+            </ul>
+        </div>
+    	<div class="sidebarNav_icon"><a href="#"><span class="nav_icon"></span></a></div>
+    </div>
+    <!-- sidebar end-->
+<div class="SalesViewPort">
+    <!-- SalesContainer start-->
+    <div class="SalesContainer">
+         <div style="width: 100%; min-height: 768px; float: left;" class="newListBg">
+           <div class="newListImg opacity0" style="top: 73px; left: 0px;"><img src="images/newImg2.png" width="798" height="695"></div>
+           <div class="rightfuncBox">
+           	 <div class="nowReserveTitle_03 opacity0 color_fff fontSize38"  style="letter-spacing:8px;">馬上約<span style=" font-weight:bold;">體驗</span></div>
+            	<div class="rightfuncBoxFrom opacity0 width260">
+                <form name='mcForm'>
+                    <div class="inline_block col11 mgt5 mgb5">
+                        <input class="width225 funcBoxFrom_input input_iconUser" name="text_name" type="text" id="text_name" value="英文姓名" onFocus="this.value=''; $('#errMsg_1').hide();" onBlur="if(this.value==''){this.value='英文姓名';}" />
+                        <div id='errMsg_1'class="errMsg"><span class="arrow_upRight"></span>姓名欄位錯誤</div>
+                    </div>
+                    <div class="inline_block col11 mgt5 mgb5">
+                        <select class="funcBoxFrom_select width260">
+                          <option value="請選擇年齡">請選擇年齡</option>
+                          <option value="1">10~19歲</option>
+                          <option value="2">20~29歲</option>
+                          <option value="3">30~39歲</option>
+                          <option value="4">40~49歲</option>
+                          <option value="5">50~59歲</option>
+                      </select>
+                      <div id='errMsg_1'class="errMsg"><span class="arrow_upRight"></span>請選擇年齡</div>
+                    </div>
+
+                    <div class="inline_block col11 color_fff fontSize12">預計要體驗的時段</div>
+                	<div class="inline_block col11 mgt5 mgb5">
+                    	
+                   	  <input class="funcBoxFrom_input input_none width120 float_left" value="2013-03-08"  min="2013-02-10" max="2013-03-10"   name="text_name" type="date"  />
+                      <select class="funcBoxFrom_select width110 float_left mgl10">
+                        <option value="請選擇體驗的時段">14 : 30</option>
+                          <option value="1">15 : 00</option>
+                          <option value="2">15 : 30</option>
+                          <option value="3">16 : 00</option>
+                          <option value="4">16 : 30</option>
+                          <option value="5">17 : 00</option>
+                      </select>
+                      <div id='errMsg_1'class="errMsg"><span class="arrow_upRight"></span>請選擇體驗的時段</div>
+                      </span>
+                    </div>
+                    <div class="inline_block col11 color_fff fontSize12">偏好的顧問類型</div>
+                    <div class=" col11 mgt10 mgt10">
+                        <label class="funcBoxFrom_radioBtn radioBtn_l" ><input name='teacher' type='radio' id='radio-choice-1' value='1' checked /><span class="width55 text-center">外籍</span></label>
+                        <label class="funcBoxFrom_radioBtn radioBtn_m" ><input name='teacher' type='radio' id='radio-choice-2' value='2'  /><span class="width55 text-center">雙語</span></label>
+                        <label class="funcBoxFrom_radioBtn radioBtn_r" ><input name='teacher' type='radio' id='radio-choice-3' value='3' /><span class="width50 text-center">不拘</span></label>
+                        
+                        
+                        <div id='errMsg_4'class="errMsg" style="display:none;"><span class="arrow_upRight"></span>偏好的顧問類型</div>
+                    </div>
+                    <div class="inline_block col11 mgt15">
+                        <!-- newCheckbox -->
+                         <input type="checkbox" id="c1" name="cc" />
+                         <label for="c1"><span></span><font class="color_fff">我要現場體驗</font></label>
+                        <!-- newCheckbox end -->
+                  </div>
+                  <div class="inline_block col11  mgt20"><hr size="1" Color="#d77d7c"></div>
+                    <div class=" col11 mgt10 mgt10">
+                    	<a class="funcBoxFromBtn width260" href="#">確定預約</a>
+                    </div>
+                </form>
+                </div>
+                <div class="rightfuncBoxBg"></div>
+			</div>
+            
+            <div class="newListTitle01_1 opacity0" style="top: 551px; left: 49px;"><img src="images/nowReserveTitle_01.png"></div>
+          <div class="newListTitle01_2 opacity0" style="top: 639px; left: 47px; ;"><img src="images/nowReserveTitle_02.png" ></div>
+	</div>
+   </div>
+    <!-- SalesContainer end-->
+</div>
+        <!-- bottomStatus start-->
+        <div class="bottomStatus">
+            <div class="float_left  mgl20 mgt15 color_6b6b6b lineHeight24">Hi, Kate Lin <span class="logOutBtn lineHeight24"></span> </div>
+            <div class="float_right mgt15 mgr20"><span class="Tel24hour lineHeight24"></span></div>
+        </div>
+        <!-- bottomStatus end-->
+</body>
+</html>

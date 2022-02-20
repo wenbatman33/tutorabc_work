@@ -1,0 +1,652 @@
+﻿@using NewVIPABC.Extensions;
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+
+    var XmlData = ViewData["XmlData"] as IEnumerable<NewVIPABC.Models.DDLModel>;
+    var MediaItem = ViewData["MediaItem"] as IEnumerable<NewVIPABC.Models.DDLModel>;
+    var YouKuUrl = NewVIPABC.Extensions.PublicFacade.YouKuUrl;
+    int langvalue = NewVIPABC.Extensions.LocalizationHelpers.GetLanguage(this.Context);
+    var LobbySession = NewVIPABC.Extensions.IndexFacade.GetLobbySession(this.Context, langvalue) as NewVIPABC.Models.LobbySession;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 網頁宣告簡體 避IE免簡體字型錯位 -->
+<html xml:lang="zh-CN" lang="zh-CN" xmlns:wb="http://open.weibo.com/wb" class="bgColor_edece8">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name='viewport'>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <title>@Html.Lang("index_title")</title>
+    <meta name="keywords" content="@Html.Lang("index_keywords")" />
+    <meta name="description" content="@Html.Lang("index_description")" />
+    <meta http-equiv="content-language" content="@Html.Lang("index_lan")" />
+    <meta name="Contact" content="@Html.Lang("index_tel"):4006-303030" />
+    <meta name="ROBOTS" content="ALL">
+    <meta name="distribution" content="@Html.Lang("index_distribution")">
+    <meta name="copyright" content="@Html.Lang("index_copyright")">
+    <meta name="Author" content="@Html.Lang("index_Author")" />
+    <meta name="Generator" content="@Html.Lang("index_Author")" />
+    <meta name="rating" content="general">
+    <meta name="WEBCRAWLERS" content="ALL">
+    <meta name="SPIDERS" content="ALL">
+    <meta name="REVISIT-AFTER" content="1 DAYS">
+
+
+    <link href="@Url.Content("~/Content/css/reset_index.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/css/VIPABC_YAO.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/css/font_index.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/css/form_index.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/css/footer_index.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/css/landingForm_yao.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/header_yao.css")" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        var print_name="@Html.Lang("print_name")";
+        var print_mail="@Html.Lang("print_mail")";
+        var mail_error="@Html.Lang("mail_error")";
+        var choose_place="@Html.Lang("choose_place")";
+        var print_phone="@Html.Lang("print_phone")";
+        var phone_error="@Html.Lang("phone_error")";
+        var choose_country="@Html.Lang("choose_country")";
+        var choose_howknow="@Html.Lang("check20")";
+        var fill_countryNum="@Html.Lang("fill_countryNum")";
+        var cname_error="@Html.Lang("cname_error")";        
+    </script>
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.8.3.js")" ></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-ui-1.10.0.custom.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/index_2.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/javascript/public.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery.lazyload.js")"></script>
+    
+    
+    <script type="text/javascript" src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js"  charset="utf-8"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/event_index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/userTalk.js")"></script>
+
+
+    <!-- fancybox -->
+    <script type="text/javascript" src="@Url.Content("~/Content/source/jquery.fancybox.js?v=2.1.4")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/source/helpers/jquery.fancybox-buttons.js?v=1.0.5")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/source/helpers/jquery.fancybox-media.js?v=1.0.5")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/fancybox.js")"></script>
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/jquery-ui-1.10.0.custom.css")" />
+    <link rel="stylesheet" media="screen" href="@Url.Content("~/Content/source/jquery.fancybox.css?v=2.1.4")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/source/helpers/jquery.fancybox-buttons.css?v=1.0.5")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7")"/>
+    <!-- fancybox -->
+
+    <!-- colorbox -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/source/colorbox/colorbox.css")" />
+    <script src="@Url.Content("~/Content/source/colorbox/jquery.colorbox.js")">
+
+    <!-- colorbox -->
+</head>
+<body>
+
+    @{Html.RenderAction("FreeAnalysisAndAd", "Home");}
+
+    <div class="grid_100 topNavFixed bgColor_fff">
+	    <div  class="grid_12 topNavFixed_960">
+            <div class="main_logo" title="VIPABC全球英语外教网"><a href="@Url.Action("Index", "Home")"><img src="@Url.Content("~/Content/images/index/logo.png")" width="168" height="44" alt=""></a></div>
+            <div class="telphone"><span class="fontSize14">咨询电话：</span><span class="fontSize18">4006-30-30-30</span></div>
+            <div class="newHearderOldVer"><a class="fontSize14" href="#" onclick="backToMember('/index.asp');logCount(2);">旧版VIPABC</a></div>
+            <!--
+            <div class="language_Wrap lineHeight24">  
+                <span class="languageIcon fontSize16 lineHeight24 "></span><a class="btnType_1 language fontSize14" href="javascript:void(0);" >简体中文 <b class="caret"></b> </a>
+                <ul class="dropdown-menu fontSize14" style="display:none;">
+                    <li><a tabindex="-1" href="#">English</a></li>
+                </ul>
+            </div>
+            -->
+            <div class="baidu"><wb:follow-button uid="1729584914" type="red_1" width="67" height="23" onmouseover="logCount(3);"></wb:follow-button></div>
+            <div class="topNavLink_1 fontSize16">
+                <ul>
+                   <li><a class="fontSize14" href="@Url.Action("award_winning_onlinecourse", "onlineenglish")" >有效学习方法</a></li>  
+                   <li><a class="fontSize14" href="@Url.Action("AboutVIPABC", "About")" >关于我们</a></li>   
+                   <li><a class="fontSize14" href="@Url.Action("CourseStructure", "onlineenglish")" >课程介绍</a></li>  
+                   <li><a class="fontSize14" href="@Url.Action("tutor", "onlineenglish")" >师资</a></li>  
+                   <li><a class="fontSize14" href="@Url.Action("Customer", "Home")" >我们的用户</a></li>
+                   <li><a class="fontSize14" href="@LobbySession.LobbyLink" target="_blank">免费热门讲堂</a></li>
+                </ul>
+            </div>
+            <div class="topNavLink_2 fontSize16">
+        	    <ul>
+                    @if (Request.Cookies["clientName"] == null || string.IsNullOrEmpty(Request.Cookies["clientName"].Value))
+                    {
+                        <li><a class="fontSize14" href="@Url.Action("Login", "Login")" >登入会员</a></li>  
+                        <li><a class="fontSize16 regRedBtn" href="@Url.Action("UserRegister", "Login")" >注册会员</a></li>   
+                        <li><a class="fontSize14 fancyboxIframe" href="" data-href="@Url.Action("FreeAnalysis", "Home")">免费语言程度分析</a></li>
+                    }
+                    else
+                    {
+                        <li>
+                            Hi
+                            @if (@Request.Cookies["clientName"].Value.Substring(0, Request.Cookies["clientName"].Value.IndexOf('+')).Length < 10)
+                            {                            
+                                @Request.Cookies["clientName"].Value.Substring(0, Request.Cookies["clientName"].Value.IndexOf('+'))
+                            }
+                            
+                            @Html.Lang("index_hello")
+                        </li>  
+                        <li>
+                            @if (Request.Cookies["bolVIPABCJR"] != null && Request.Cookies["bolVIPABCJR"].Value == "1")
+                            { 
+                                <a href="#" onclick="logCount(6);backToMember('/program/aspx/AspxLoginJrNew.asp?url_id=1');">
+                                <span class="fontSize14">@Html.Lang("index_member")</span></a>
+                            }
+                            else
+                            {<a href="#" onclick="logCount(6);backToMember('/program/member/member_new.asp');">
+                                <span class="fontSize14">@Html.Lang("index_member")</span></a>
+                            }
+                        </li>   
+                        <li><a class="fontSize14" href="/program/member/member_logout_exe.asp" >登出</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 albumWrap" title="Yao Ming 姚明 华人的骄傲、移动的长城．见证语言的力量">
+        <div class="grid_12" style=" width:960px; height:535px; position:relative;">   
+            <div style="position:absolute; float:left; top:50px; left:0px; z-index:303;"><img src="@Url.Content("~/Content/images/index/albumTitle.png")" width="373" height="112"  alt=""/></div>
+            <div style="position:absolute; float:left; top:0xp; left:150px; z-index:301;"><img src="@Url.Content("~/Content/images/index/albumImg1.png")" width="872" height="535"  alt=""/></div>
+            <div style="position:absolute; float:left; top:349px; left:0px; z-index:304;"><img src="@Url.Content("~/Content/images/index/albumImg2.png")" width="174" height="186"  alt=""/></div>
+            <div style="position:absolute; float:left; top:290px; left:0px; z-index:305;"><img src="@Url.Content("~/Content/images/index/albumSubTitle.png")" width="225" height="50"  alt=""/></div>
+            <div style="position:absolute; float:left; top:230px; left:750px; z-index:305;">
+                <span class="fontSize14 color_white">微电影:为爱超越(父亲篇)</span>
+                <a class="various" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNjUzNjc2OTQ4&amp;winType=adshow&amp;isAutoPlay=true">
+                    
+                    <div class="albumVideo_1" ></div>
+                </a>
+            </div>
+            <div style="position:absolute; float:left; top:370px; left:750px; z-index:305;">
+                <span class="fontSize14 color_white">见证人：杨银平</span>
+                <a class="various" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTg0ODkxNDg0&amp;winType=adshow&amp;isAutoPlay=true">
+                    <div class="albumVideo_2"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 userTalk bgColor_fff">
+        <div class="grid_12  lineHeight40 color_gray fontSize14">
+            <div id="user_marquee">
+                <ul>
+				     <li><span class="bold">我們的用戶說：</span></span>老师讲的非常不错，时间把握的也很好。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>祝VIP的所有员工：新年快乐！谢谢你们的努力工作，使我能更好的学习英语！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师上课很认真很有耐心。感谢帮助我纠正发音。希望再次上您的课</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师语法课上得好,有水平.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师能延展开学习内容，很喜欢。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Doug Slaughter顾问教学态度很认真。教学目的是明确的，但组织教学的方法步骤不是很恰当，调动学生积极性不够。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>教室的课堂气氛十分良好，沟通，交流，教学在轻松愉快的学习气氛中轻松完成！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问上课声情并茂，手舞足蹈，很有代入感，能够吸引我的注意力，很赞</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问声音非常干净和洪亮，特别喜欢他纠正发音时，能够每个音节都仔细清晰发出标准的发声。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Alan上课要求严格，注意训练和提高学员的表达能力，并有耐心。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>今天抽空临时上了立马上的课程，想不到效果非常好，老师耐心细致地尽量使我理解词意，谢谢老师！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>thank you for you good teaching and practical advice.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>thank you! 给我们讲了很多教材上没有的知识，对我们不懂的语法和组织语言方面给予了帮助和指导补充，很感谢。希望以后能多多听到老师的课程，谢谢</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师非常好，每句都不厌其烦地教，谢谢！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师上课很轻松幽默，表情和肢体动作丰富有趣 。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>ELLEN提前帮解答了订课的程序,虽然没有到小班课程,仍然十分感谢!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>讲解很细致，发音很清晰</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师选的教材很适中.老师讲课也很有耐心.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>今天学习了关于喜欢什么样音乐的语句，总体感觉不错，老师帮忙纠正了很多生词的发音。十分感谢。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>非常nice的老师，希望还能曳继续听他的课。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师非常好，能发散思维，引导我们思考，不拘泥于教材，有很多发散的空间，特别有助于提高听力、发音、英语思维能力，希望以后能多上到Tantini Kamin的课程</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>很开心的一堂课 ！老师很有耐心 很开朗 语音清晰</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顧問不厭其煩的再三糾正我的發音</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>这个课件内容非常好，可以帮助学生类推同类句子</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Consultant Angela is really a wonderful teacher, she can explain and answer my questions very well.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师选的教材很适中,通过老师的讲解,能学到很多东西.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thank you, Stacy. I enjoyed this session very much. See you next time! Wish you Happy New Year!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>I like Sarah's class. It's simple, easy understanding and better for us to remember the content of the text.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>非常的认真并且很有耐心，对每个学员的发音都进行纠正。对生字词的讲解非常详细。这堂课让我学到很多。谢谢！MIKE老师</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>excellent teacher, i love her very much,really hope to have her class every day</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thank you very much and happy new year.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>I learned a lot about how to write an good business letter from this lesson. </span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>风趣、幽默活跃课堂气氛，谢谢老师！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Dear Iris,Thanks for the teaching you give today, Youre an excellent teacher.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>thank you teather.you are great .help me a lot</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thank you for your teaching today. I have learned something new. Happy new year.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>感谢YOYO及时为我安排了发音课程,谢谢!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Andrew corrects our pronunciation and grammar. He did very well. Great job!!!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Gary Lai,教得实在是太好了，他不讲一句中文，但是完全能听懂，太棒了。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Dave 上课很认真耐心亲切，谢谢！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Dear barbara,You taught me the preprosition of time,position and place very clear and patient. Thanks a million.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师很细心，也很耐心，发音更棒</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Well done and thank you very much. Happy new year!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师教的很认真,很仔细,很喜欢这个老师上课</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>In todays session, I learned a lot of words, knowledge that I never meet. </span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Radz, Thank you very much for your good teaching and sharing. I enjoyed in this calss and learned a lot. Happy New Year.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>很细心很有耐心的顾问，细心听我发音的每个细节并耐心纠正我的不正确发音，每个字面意思都解释得很清楚，</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Mary is a nice teacher~</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>You are very kind and confiedent for the class,well done.And thanks for the answer to my last question.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师教得非常好，很有耐心！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>I would thank you for helping to correct my english, it's so kind of you. And thanks again.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>very impressive above the lesson Andrea delivered! hope to see you soon !</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>I love tutor's writing my saying throughout the session because I can review it later.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问上课的气氛很好，他能轻松带我们进入课堂。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thanks you to correct my alert notices more precise and clear.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师不错，今天的课程有些难，还是有效的让我们加深了影响，给出了足够的耐心。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>I am deeply indebted to Miss Diana Casillas for her outstanding and warm teaching.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Peter is a wonderful teacher! He is a very humorous and knowledgeable person. </span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问很有耐心纠正发音，课堂上还延伸到日常交流，感觉不错的一节课。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Peter is very humorous, which makes attedning his class a total enjoyment.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>thank you Rebeca carmana teacher lets learn the birthday party the words thank you</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>thank you and happy new year</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>I have spend a very wonderful time with u ,thank u!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师认真负责，讲课有技巧，学到很多东西，时间掌握很好，很亲切的好老师~</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thank you Peter, you gave us lots of examples to practice English, we had a great time learning English with you. Happy New Year!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>简单的语词，常用习惯，发音的正确，让我有一个最基础的适应，非常好，第一次有同伴一起学习，老师安排时间较好，记得下课和老师说再见“see you next time”</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Nathan worked hard to arrange our time to speak in the lesson and he always corrected our pronunciation errors immediately.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thank you very much and wish to see you again. Happy new year!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Debora is a great teacher because she has more patient,professional,good teaching way for us．顾问老师挺好的，哈哈，挺开心的一堂课，我们互动性挺好！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师的课通俗易懂，很容易接受。以后请多安排这个老师的课，谢谢了</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>happy new year.thank you very much.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>This is first time to meet you,you are very nice great teacher,Im enjoy this class today,I hope learn more from you always can meet you , thank you</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问讲得很好。非常感谢！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thanks teacher Jason for correcting my mistakes and encouraging me to keep practicing:)</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>非常有耐心，而且能敏感而及时地发现存在的问题！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Christopher explained the tipping situations clearly. I would make a budget for tipping in next vacation.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师特别有趣，而且很清楚我们每个人说错的地方，而且特别慈祥，还会说一点中文，很喜欢这个老师</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>讲解的特别明白，希望多帮我安排这个顾问的课，谢谢.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>本来看教材不喜欢，但是老师让我很愉快的学完了一节课，喜欢老师的风格</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thank you for your opinions about living in mexico and united state.Nice meeting you .</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Thanks a lot for your efforts and Ill review the main points after session. Happy New Year to you!</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>今天抽空临时上了立马上的课程，想不到效果非常好，老师耐心细致地尽量使我理解词意，谢谢老师！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问声音非常干净和洪亮，特别喜欢他纠正发音时，能够每个音节都仔细清晰发出标准的发声</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>透过表面看本质，通过简单的句型，引出语法的使用，很容易接受，很喜欢这种潜移默化的教学方式。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师讲的很详细，双语教学，感觉很适合自己</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>和其他同学比较.我的表达能力和英语单词是比较欠缺的.老师选的教材难易适中.</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>非常热情、阳光、细心，课程安排和充分全面，希望能再次安排这位老师上课，非常感谢。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>好幽默 开朗的的老师 我喜欢的教学风格 谢谢老师耐心的教我怎样去读长的单词</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问很亲切，教授方式也很喜欢。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师的态度很亲切，有耐心，只是自己的词汇量太少了，很多都不是很懂，又不知道该怎么问</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>非常好的老师，很耐心而且对课程掌握很到位。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师口语很标准，很好</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师讲的非常好，给人的感觉也非常好，我收藏了，可惜我来晚了，一直没有进入状态！</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问老师教的很好，而且很细心，很有耐心，我非常喜欢。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师非常好,课程生动有趣,能激励学习,如有可能希望多参加其课程</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>通讯很好，老师很认真，组织教学也很好。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>顾问能够及时讲解，语速正好，非常好。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>Alan 上课善于引导，耐心。</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师教学很认真</span></li>
+                     <li><span class="bold">我們的用戶說：</span></span>老师的课很生动，活泼，也很形象，看来老师是有充分准备的，非常喜欢这么认真的老师</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+
+    <div class="grid_100 zReadType">
+        <div class="grid_12 zReadType_1">
+            <div class="grid_8 contentBox">
+                <div class="Img"><img src="@Url.Content("~/Content/images/index/Img_01.png")" width="152" height="152" title="Yao Ming 姚明：收获，坚持的信念"/></div>
+                <div class="Info">
+                    <h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_01.png")" width="480" height="40"  alt="Yao Ming 姚明：收获，坚持的信念"/></h2>
+                    <span class=" fontSize13 text-justify lineHeight28 color_gray">“通过我的接触，我觉得VIPABC可以通过他们的教育方式给大家提供一种全新的教育理念。这不仅仅是线下或者线上的这一种区别，更重要的是在我们有限的时间里可以和更多的外教去进行接触，进行交流，使我们了解到更多的英语的学习方法和习惯。”--姚明<br>
+                    免去舟车劳顿，避免时间浪费，VIPABC做到的远不止这些。365天、24小时随到随学的灵活排课，高品质移动APP，让学习者充分利用碎片时间，想学就学，时刻置身全英文环境。</span>
+                    <h3 class="color_black"><img src="@Url.Content("~/Content/images/index/subTitle_01.png")" width="480" height="40"  alt=""/></h3>
+                    <span class=" fontSize13 text-justify lineHeight24 color_black">语言学习，在于互动与频率，互动不足，频率不够，都无法学好英文。</span>
+                    <div class="margin_top10"><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="@Url.Action("FreeAnalysis", "Home")">免费体验高效互动学习法</a></div>
+                </div>
+                <div class="grid_8" style="position:relative; float:left;"><hr></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 zReadType">
+        <div class="grid_12 zReadType_2">
+            <div class="grid_8 contentBox">
+                <div class="Info">
+                    <h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_02.png")" width="480" height="40"  alt="" title="Yao Ming 姚明：环境，从起跑到跳跃"/></h2>
+                    <span class=" fontSize13  text-justify lineHeight28 color_gray">“美国的生活经验让我发现，真正好的英文老师，就是我每一个不同的队友。虽然他们来自不同国度，有不同文化背景。但是因为可以经常跟他们交流，我才跟这个世界有了更深的接触。”--姚明<br>
+                    VIPABC寻遍全球，为学习者提供具有法律、商学、企管等专业背景，并通过TESOL、TEFL等资格认证的优秀师资，带给学习者全球化语言学习环境。</span>
+                    <h3 class="color_black"><img src="@Url.Content("~/Content/images/index/subTitle_02.png")" width="480" height="40"  alt=""/></h3>
+                    <span class=" fontSize13 lineHeight24 color_black">学习语言，真正重要的应该是语言背后所代表的文化，所体现的思维逻辑，不只是一个会讲英文的人那么单纯。因为学习语言就是为了融入这个社会，学英文就是为了和世界接触，你没办法从单一的老师获得这些经验。</span>
+                    <div class="margin_top10"><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="@Url.Action("FreeAnalysis", "Home")">感受学好英文的环境</a></div>
+                </div>
+                <div class="Img"><img src="@Url.Content("~/Content/images/index/Img_02.png")" width="152" height="152" title="Yao Ming 姚明：环境．让我从起跑到跳跃"/></div>
+                <div class="grid_8" style="position:relative; float:left;"><hr></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 zReadType">
+        <div class="grid_12 zReadType_1">
+            <div class="grid_8 contentBox">
+                <div class="Img"><img src="@Url.Content("~/Content/images/index/Img_03.png")" width="152" height="152" title="Yao Ming 姚明：犯错，成功的必经之路"/></div>
+                <div class="Info">
+                    <h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_03.png")" width="480" height="40"  alt=""/></h2>
+                    <span class=" fontSize13 text-justify   lineHeight28 color_gray">“通过VIPABC，可以接触全世界最优秀的外教，在我需要的时候、有任何问题的时候，都能够找到相对应的教材帮助我学习。它很厉害的一点，就是每次都是不同的老师教我，却又好像是同一个老师，一路都记得我的学习进度、爱好需求VIPABC结合语言教学的专业、网络世界的专业，让我的学习在有限的时间内，做到非常有效。”--姚明<br>
+                    VIPABC独立研发的在线学习系统，实现学习者与专业外教的实时互动。感触纯英语环境之余，专为教学设计的单向视频模式更保证了学习者的隐私，让学习者无惧尴尬，大胆开口讲英语。</span>
+                    <h3 class="color_black"><img src="@Url.Content("~/Content/images/index/subTitle_03.png")" width="480" height="40"  alt=""/></h3>
+                    <span class=" fontSize13 text-justify lineHeight24 color_black">个人化学习，是掌握语言最高效的方式。</span>
+                    <div class="margin_top10"><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="@Url.Action("FreeAnalysis", "Home")">体验最佳学习方式</a></div>
+                </div>
+                <div class="grid_8" style="position:relative; float:left;"><hr></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 zReadType">
+        <div class="grid_12 zReadType_2">
+            <div class="grid_8 contentBox">
+                <div class="Info">
+                    <h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_04.png")" width="480" height="40" alt="" title="Yao Ming 姚明：需求，学习的动力"/></h2>
+                    <span class=" fontSize13 text-justify lineHeight28 color_gray">“通过在网上学习课程，我们可以看到老师对我们的反应。无论是语言上的反应，还是面部的反应，老师呢，也比较nice，他会告诉我们犯了哪些错误，哪些单词的发音不太标准，给我们一些调整。但老师看不到我们，相对来说，会让我们的学习状态变得更放松。不用顾及一些不需要顾及的东西，学习自然更轻松。”--姚明<br>
+                    VIPABC独立研发的在线学习系统，实现学习者与专业外教的实时互动。感触纯英语环境之余，专为教学设计的单向视频模式更保证了学习者的隐私，让学习者无惧尴尬，大胆开口讲英语。
+                    </span>
+                    <h3 class="color_black"><img src="@Url.Content("~/Content/images/index/subTitle_04.png")" width="480" height="40"  alt=""/></h3>
+                    <span class=" fontSize13 text-justify lineHeight24 color_black">学好一门语言，要犯5000次错误。人们之所以无法开口，是因为不敢犯错。所以学习者真正需要的，是一个可以放心犯错的环境。</span>
+                    <div class="margin_top10"><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="@Url.Action("FreeAnalysis", "Home")">享受英文的秘诀</a></div>
+                </div>
+                <div class="Img"><img src="@Url.Content("~/Content/images/index/Img_04.png")" width="152" height="152" title="Yao Ming 姚明：真正的享受英语"/></div>
+                <div class="grid_8" style="position:relative; float:left;"><hr></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 zReadType">
+        <div class="grid_12 zReadType_1">
+            <div class="grid_8 contentBox">
+                <div class="Img"><img src="@Url.Content("~/Content/images/index/Img_05.png")" width="152" height="152"  title="Yao Ming 姚明：语言，认知世界的窗户"/></div>
+                <div class="Info">
+                    <h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_05.png")" width="480" height="40"  alt=""/></h2>
+                    <span class=" fontSize13 text-justify  lineHeight28 color_gray">
+                    “VIPABC的远程教育，可以使边远山区的孩子和世界各地的外教联系在一起。这不仅仅是为他们学习语言带来一种方便，更重要的是给他们一种机会去改变他们的世界观，看看外面的世界。从而使他们的想象力、他们的思想飞出大山。”--姚明<br>
+                    我希望中国的孩子能通过英文看见世界，我很愿意和VIPABC一起，见证语言的力量。</span>
+                    <h3 class="color_black"><img src="@Url.Content("~/Content/images/index/subTitle_05.png")" width="480" height="40"  alt=""/></h3>
+                    <span class=" fontSize13 text-justify lineHeight24 color_black">把语言带入生活当中，最关键的方法，就是认识语言的文化，了解它背后的逻辑，进而打开认知世界的窗户。</span>
+                    <div class="margin_top10"><a class="btn btn-yellow fancyboxIframe" href="javascript:void(0);" data-href="@Url.Action("FreeAnalysis", "Home")">免费试用专业英语课程</a></div>
+                </div>
+                <div class="grid_8" style="position:relative; float:left;"><hr></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100">
+        <div class="grid_12 zReadType_2">
+            <div class="grid_8 contentBox text-center">
+                <span class="color_brown fontSize46">VIPABC</span><span class="color_lightBrowwn fontSize24"> X </span><span class="color_brown fontSize46">Yao Ming</span><br>
+                <span class="color_lightGray">姚明联袂VIPABC启创英语教学新纪元</span><br>
+            </div>
+            <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+    <div class="grid_100">
+        <div class="grid_12 zReadType_2">
+            <div class="grid_8 contentBox margin_top20">
+                <div><h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_06.png")" width="480" height="40"  alt=""/></h2></div>
+                <div class="ourUser margin_top20" data-url="@Url.Content("~/Async/Famous")">
+                    @{Html.RenderAction("Famous", "Async");}
+                </div>
+            </div>
+            <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+
+    <div class="grid_100">
+        <div class="grid_12 zReadType_2">
+            <div class="grid_8 contentBox text-center">
+                <span class="color_brown fontSize46">Language is My Power</span><br>
+                <span class="color_lightGray">每天，有超过10亿人在学习英语<br>
+                奋斗、信念、坚持，这是只属于一个人的战役<br><br>
+            
+                改变，已经开始<br>
+                未来有了更多可能<br>
+                见证 语言的力量，见证 更好的自己<br>
+             
+                一切，都将值得！</span><br>
+            </div>
+            <div class="grid_8" style="position:relative; float:left;"><hr></div>
+        </div>
+    </div>
+
+    <div class="grid_100">
+        <div class="grid_12 zReadType_2">
+            <div class="grid_8 contentBox margin_top20">
+            <div><h2 class="color_red"><img src="@Url.Content("~/Content/images/index/title_07.png")" width="480" height="40"  alt=""/></h2></div>
+                <div class="ourContent margin_top20">
+                    <div class="ourContentItem" id="dailyTopic" title="VIPABC顾问:每日一句英文会话">
+                        <div class="ourContentImg"><img src="@Url.Content("~/Content/images/index/content_01.jpg")" width="135" height="144"  alt=""/></div>
+                        <div class="ourContentInfo text-center fontSize14">
+                            <span class="color_black">每日一句：</span><br/>
+                            <span class="color_gray"> Samantha 教你说：</span><br/>
+                            <span class="color_orange"> Rank And File</span>
+                        </div>
+                    </div>
+                
+                    <div class="ourContentItem">
+                        <a href="@Url.Action("EpaperList", "Epaper")" onclick="logCount(34);">
+                            <div class="ourContentImg"><img src="@Url.Content("~/Content/images/index/content_02.jpg")" width="135" height="144"  alt=""/></div>
+                            <div class="ourContentInfo text-center fontSize14" >
+                                <span class="color_black">@Html.Lang("index_key2")：</span><br/>
+                                <span class="color_gray"> @Html.Lang("index_key3")</span><br/>
+                                <span class="color_orange">@Html.Lang("index_key8")</span>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="ourContentItem">
+                        <a href="@LobbySession.LobbyLink" target="_blank" onclick="logCount(26);">
+                            <div class="ourContentImg"><img src="/VIPABCMaintain/Content/Lobbysession/@LobbySession.PictureSmall" width="135" height="144" title="@LobbySession.SessionNameFirst"/></div>
+                            <div class="ourContentInfo text-center fontSize14" title="@LobbySession.SessionNameFirst">
+                                <span class="color_black">免费线上讲堂：</span><br>
+                                <span class="color_gray"> @LobbySession.SessionNameFirst </span><br>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="ourContentItem" title="VIPABC 英语学习短剧">
+                        <div class="ourContentImg">
+                             <a class="various" href="http://static.youku.com/v1.0.0352/v/swf/loader.swf?VideoIDS=XNTgxNzQ3NDQ0&amp;winType=adshow&amp;isAutoPlay=true">
+                                <img src="@Url.Content("~/Content/images/index/content_04.jpg")" width="135" height="144"  alt=""/>
+                            </a>
+                        </div>
+                        <div class="ourContentInfo text-center fontSize14" >
+                            <span class="color_black">@Html.Lang("index_key10")：</span><br/>
+                            <span class="color_gray"> @Html.Lang("index_key11") </span><br/>
+                            <span class="color_orange"> @Html.Lang("index_key12") </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_8 margin_top20 margin_bottom20" style="position:relative; float:left;">
+                <form id="form1" name="form1" method="post" action="@Url.Action("Index", "Home")">
+                    <span>
+                        <input type="text" name="txt_email" class="reg_field grid_6" id="txt_email" value="@Html.Lang("print_mail")"
+                                        onfocus="if(this.value=='@Html.Lang("print_mail")'){this.value='';this.className='reg_field';}"
+                                        onblur="if(this.value==''){this.value='@Html.Lang("print_mail")';this.className='reg_field';}"
+                                        style="height:20px;padding:6px;width:510px;" autocomplete="off"/>
+                    </span>
+                    <span><a onclick="sendepaper();logCount(77);" class="btn btn-yellow">订阅电子报</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_100 footer">
+        <div class="grid_100 footerRedLine">
+            <div class="grid_12 lineHeight40">  
+                <img src="@Url.Content("~/Content/images/index/icon_1.png")" width="230" height="35"  alt=""/>
+                <img src="@Url.Content("~/Content/images/index/icon_2.png")" width="230" height="35"  alt=""/>
+                <img src="@Url.Content("~/Content/images/index/icon_3.png")" width="230" height="35"  alt=""/>
+                <img src="@Url.Content("~/Content/images/index/icon_4.png")" width="230" height="35"  alt=""/>
+            </div>
+        </div>
+        <div class="grid_12 margin_top10">
+            <h2 class="color_red margin_top50 margin_bottom20"><img src="@Url.Content("~/Content/images/index/title_08.png")" width="480" height="40"  alt=""/></h2>
+        </div>
+        <div class="grid_12 foot_linksWrap">
+            <div class="foot_grid foot_links">
+                <p class="color_white">关于我们</p>
+                <p><a class="foot_links_link" href="@Url.Action("AboutVIPABC", "About")" onclick="logCount(36);">选择VIPABC的理由</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("evolution", "About")" onclick="logCount(37);">企业沿革</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("News", "About")" onclick="logCount(38);">新闻中心</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("institution", "About")" onclick="logCount(39);">学术交流机构</a></p>
+                <p><a class="foot_links_link" href="http://www.vipabc.com/program/campaign/2011prize/index.htm" target="_blank" onclick="logCount(40);">企业荣耀</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("Sitemap", "About")" onclick="logCount(41);">网站地图</a></p>
+            </div>
+            <div class="foot_grid foot_links">
+                <p class=" color_white">学英文最佳选择</p>
+                <p><a class="foot_links_link" href="@Url.Action("time", "onlineenglish")" onclick="logCount(42);">最弹性的学习时间</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("tutor", "onlineenglish")" onclick="logCount(43);">最专业的外教顾问</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("live_classes", "onlineenglish")" onclick="logCount(44);">最隐私的学习环境</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("award_winning_onlinecourse", "onlineenglish")" onclick="logCount(45);">最有效的英语学习法</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("materials", "onlineenglish")" onclick="logCount(46);">最个性化的教材内容</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("interactive_lessons", "onlineenglish")" onclick="logCount(47);">最轻松的真人互动教学</a></p>
+            </div>
+            <div class="foot_grid foot_links">
+                <p class="color_white">我们的课程适合</p>
+                <p><a class="foot_links_link" href="@Url.Action("adults", "course")" onclick="logCount(48);">上班族 / 专业人士</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("corporate", "course")" onclick="logCount(49);">企业培训</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("liuxue", "course")" onclick="logCount(50);">出国游学</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("junior", "course")" onclick="logCount(51);">孩童/青少年</a></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="foot_grid foot_links">
+                <p class="color_white">VIPABC 帮你提升</p>
+                <p><a class="foot_links_link" href="@Url.Action("spoken", "english")" onclick="logCount(52);">英语口语</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("listening", "english")" onclick="logCount(53);">英语听力</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("reading", "english")" onclick="logCount(54);">英语阅读</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("business", "english")" onclick="logCount(55);">商务英语</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("applied", "english")" onclick="logCount(56);">职业英语</a></p>
+            </div>
+            <div class="foot_grid foot_links">
+                <p class="color_white">新闻中心</p>
+                <p><a class="foot_links_link" href="@Url.Action("News", "About")?tab=1" onclick="logCount(57);">公司信息</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("News", "About")?tab=2" onclick="logCount(58);">媒体报导</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("News", "About")?tab=3" onclick="logCount(59);">学习资源</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("News", "About")?tab=4" onclick="logCount(60);">最新优惠</a></p>
+                <p></p>
+            </div>
+            <div class="foot_grid foot_links">
+                <p class="color_white">英语学习专区</p>
+                <p><a class="foot_links_link" href="@LobbySession.LobbyLink" onclick="logCount(61);" target="_blank">在线免费讲堂</a></p>
+                <p><span class="foot_links_link dailyTopic" style="cursor:pointer;" onclick="logCount(62);" id="FooterDailyTopic">每日一句</span></p>
+                <p><a class="foot_links_link" href="@Url.Action("EpaperList", "Epaper")" onclick="logCount(63);">英语学习报</a></p>
+                <p><a class="foot_links_link" href="@Url.Action("App", "App")?type=1" onclick="logCount(64);">移动学习App</a></p>
+                <p><a class="foot_links_link_y" href="@Url.Action("interactiveSoftware", "App")" onclick="logCount(65);">在线教学说明</a></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="grid_12 margin_top5 margin_bottom10"><hr></div>
+        <div class="grid_12">
+            <div class="width600 floatleft">
+                <div class="foot_bottom">
+                    <p>
+                        <a class="foot_bottom_link" href="@Url.Action("AboutVIPABC", "About")" onclick="logCount(69);">关于VIPABC</a>
+                        <a class="foot_bottom_link" href="@Url.Action("Privacy", "Home")" onclick="logCount(70);">隐私保护</a> 
+                        <a class="foot_bottom_link" href="@Url.Action("Security", "Home")" onclick="logCount(71);">安全条款</a> 
+                        <a class="foot_bottom_link" href="@Url.Action("Service", "Home")" onclick="logCount(72);">服务条款</a>
+                        <a class="foot_bottom_link_red" href="http://www.vipabc.com/program/recruit/index.asp" onclick="logCount(73);" target="_blank">诚征英才</a>
+                        <a class="foot_bottom_link_red" href="http://biz.vipabc.com/" onclick="logCount(74);" target="_blank">企业培训</a>
+                    </p>
+                </div>
+                <div class="foot_bottom">
+                    <p>教育许可 : 教职成司函 [ 2011 ] 267 号 | 经营许可证 : 京 ICP 证 090121 号 | 京ICP 备 11004351 号</p>
+                    <p class="footer_p_display">VIPABC.com 版权所有 © 2008-2014 全球最大英语真人外教网</p>
+                </div>
+            </div>
+        
+            <div class="width360 floatright">
+                <div class="width170 color_white floatleft margin5">
+                    <span class="margin_top5 fontSize13">姚明的随身英语教练</span><br>
+                    <span class="margin_top10"><img src="@Url.Content("~/Content/images/index/footerClassRoom.png")" width="87" height="67"  alt=""/></span>
+                    <span class="margin_top10"><img src="@Url.Content("~/Content/images/index/VIPABC_On_The_Go.png")" width="67" height="67" alt=""/></span>
+                </div>
+                <div class="width170 color_white floatleft margin5">
+                    <span class="margin_top5 fontSize13">与我联系</span><br>
+                    <span class="margin_top5 fontSize13"><a class="foot_bottom_link_red" href="http://onlineservice.vipabc.com/VIPABC" onclick="logCount(66);" target="_blank">在线客服</a></span><br>
+                    <span class="margin_top5 fontSize13"><a class="foot_bottom_link_red" href="@Url.Action("ContactUs", "Home")" onclick="logCount(75);">联络我们</a></span><br>
+                </div>
+            </div>
+        </div>
+    
+        <div class="grid_12 margin_top20 clear ">
+            <div class="width700 floatleft">
+                <a href="https://www.itrust.org.cn/yz/pjwx.asp?wm=2679644979" target="_blank"><div class="footercert1" alt="VIPABC认证 信用企业 " title="VIPABC认证 信用企业 " ></div></a> 
+                <a href="http://www.315online.com.cn/member/315120016.html" target="_blank"><div class="footercert2" alt="英语培训机构 " title="英语培训机构 "></div></a> 
+                <a href="https://ss.cnnic.cn/verifyseal.dll?sn=e12040111010015948308104" target="_blank"><div class="footercert3" alt="VIPABC英语外教 " title="VIPABC英语外教 "></div></a>
+                <a href="https://search.szfw.org/cert/l/CX20120625001575001635" target="_blank"><div class="footercert4"  alt="VIPABC英语家教 " title="VIPABC英语家教 "></div></a>
+                <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202012121200003" target="_blank"><div class="footercert5" alt="英语学习网站业 " title="英语学习网站业 " ></div></a>
+                <a href="http://www.anquan.org/authenticate/cert/?site=www.vipabc.com&amp;sn=2013082118403065859" target="_blank"><div class="footercert6" alt="安全联盟 可信认证 " title="安全联盟 可信认证 "></div></a>
+            </div>
+            <div class="width180 floatright">
+                <img src="http://www.vipabc.com/aspx/portal/Content/images/foot_tel.png" data-original="http://www.vipabc.com/aspx/portal/Content/images/foot_tel.png" onclick="logCount(78);" width="184" height="44" alt="VIPABC咨询热线 客户服务专线 4006-30-30-30" title="VIPABC咨询热线 客户服务专线 4006-30-30-30" style="display: inline;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        $("img").lazyload({
+            effect: "fadeIn"
+        });
+
+        $("#dailyTopic").load("/dailyTopicForYaoWeb.html");
+
+        //footer的每日一句連結
+        $(function () {
+            $.ajax({
+                url: "/daily_topic_link.html",
+                success: function (result) {
+                    $(".dailyTopic").click(
+			            function () {
+			                window.open(result, "_blank");
+			            }
+		            );
+                }
+            });
+        });
+    });
+
+    function backToMember(url) {
+        if (url == "/index.asp" && getCookie("txt%5Flogin%5Fcheck") == "") 
+        {
+            window.location.href = url;
+        }
+        else 
+        {
+            aurl = "/program/member/check_member_login.asp"; //call 的頁面
+            jQuery.support.cors = true;
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: aurl,
+                data: "",
+                success: function (data) 
+                {
+                    if (data == "success") 
+                    {
+                        window.location.href = url;
+                    } 
+                    else 
+                    {
+                        var chk_remember_account = "Y";
+                        if (url == "/index.asp") {
+                            document.getElementById("frm_member_login").action = '/program/member/member_login_exe.asp?ToIndex=1&chk_remember_account=' + chk_remember_account;
+                        }
+                        else {
+                            document.getElementById("frm_member_login").action = '/program/member/member_login_exe.asp?chk_remember_account=' + chk_remember_account;
+                        }
+                        document.getElementById("frm_member_login").submit();
+                    }
+                },
+                error: function () {
+
+                }
+            });
+        }
+    }       
+</script>

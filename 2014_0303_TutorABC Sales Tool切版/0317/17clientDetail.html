@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolFormStyle.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href="css/css3lightbox.css" />
+<link rel="stylesheet" href="css/animate.css">
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+<script type='text/javascript' src="js/jquery.transit.min.js"></script>
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	var sidebarOpen = "false";
+	
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find("span").addClass('color_000');});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find("span").removeClass('color_000');});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find("span").addClass('color_000');
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find("span").removeClass('color_000');
+				  }
+				);
+			}
+		}
+	}); 
+	
+	$(".clientDetail_phone").touchEvent('clientDetail_phone_Active');
+	$(".clientDetail_location").touchEvent('clientDetail_location_Active');
+	$(".clientDetail_level").touchEvent('clientDetail_level_Active');
+	$(".clientDetail_email").touchEvent('clientDetail_email_Active');
+	$(".clientDetail_startdemo").touchEvent('clientDetail_startdemo_Active');
+	$(".clientDetailbtn_01").touchEvent('clientDetailbtn_01_Active');
+	$(".clientDetailbtn_02").touchEvent('clientDetailbtn_02_Active');
+	$(".clientDetailbtn_03").touchEvent('clientDetailbtn_03_Active');
+	$(".clientDetailbtn_04").touchEvent('clientDetailbtn_04_Active');	
+	$(".clientDetailbtn_05").touchEvent('clientDetailbtn_05_Active');
+	$(".clientDetailbtn_06").touchEvent('clientDetailbtn_06_Active');
+	$(".clientDetailbtn_07").touchEvent('clientDetailbtn_07_Active');
+	$(".productListSave_lightboxclose").touchEvent('productListSave_lightboxclose_Active');
+	
+	$.fn.extend({    
+		btnType2:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+				  }, function() {
+					$(this).removeClass(str);
+				  }
+				);
+			}
+		}
+	});
+	$(".keepReserveBtn_1").btnType2('keepReserveBtnHover_1');
+	$(".keepReserveBtn_2").btnType2('keepReserveBtnHover_2');
+	$(".keepReserveBtn_3").btnType2('keepReserveBtnHover_3');
+	
+	
+	
+	
+	
+	$.fn.extend({    
+		sidebarBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRight').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRight').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRight').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRight').animate({right:20}, 200 );
+					
+				  }
+				);
+				
+			}
+		}
+	}); 
+	$(".sidebarNav ul li").sidebarBtnEvent('sidebarliHover');
+	
+
+	$.fn.extend({    
+		clientBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRightforother').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRightforother').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRightforother').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRightforother').animate({right:20}, 200 );
+					
+				  }
+				);
+				
+			}
+		}
+	}); 
+	$(".clientBtn").clientBtnEvent('clientBtnHover');
+
+	$.fn.extend({    
+		clientBtn2Event:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRightforother').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRightforother').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRightforother').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRightforother').animate({right:20}, 200 );
+					
+				  }
+				);
+				
+			}
+		}
+	}); 
+	$(".clientBtn2").clientBtn2Event('clientBtn2Hover');
+
+
+	var delaySpeed=1100;
+	
+	$(".sidebarNav_icon").click(function() {
+		 $(".SalesContainer").css(['-webkit-transform', 'translateZ(0)' ,'transform','translateZ(0)']);
+	  if(sidebarOpen=="false"){
+		  sidebarOpen="true";
+            $(".SalesViewPort").animate({left:224}, 200 );
+			$(".sidebar").animate({left:0}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '-15deg'
+			}, 200);
+        }else{
+			sidebarOpen="false";
+            $(".SalesViewPort").animate({left:0}, 200 );
+			$(".sidebar").animate({left:-246}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '0deg'
+			}, 200);
+        }
+	});
+	
+	$(".client_name").delay( 200 ).animate({opacity:1}, 200 );
+	$(".client_situation").delay( 400 ).animate({opacity:1}, 200 );
+	$(".client_btn").delay( 600 ).animate({opacity:1}, 200 );
+	$(".client_btn2").delay( 800 ).animate({opacity:1}, 200 );
+	
+	
+});
+</script>
+
+</head>
+<body class="bgLightGray">
+	       <section>
+			  <ul class="lb-album ">
+					<li>
+						<div class="lb-overlay" id="lightbox">
+						  <div id="image01" style="width: 400px; height:auto; margin: 200px auto 0px auto;">
+                          	<a href="#page" class="lb-close productListSave_lightboxclose"></a>
+							    <div class=" text-center padding30 color_000">katelin@tutorabc.com</div>
+
+						  </div>
+					  </div>
+			    </li>
+				</ul>
+			</section>
+            <section>
+			  <ul class="lb-album ">
+					<li>
+						<div class="lb-overlay" id="lightbox2">
+						  <div id="image01" style="width: 400px; height:auto; 	margin: 200px auto 0px auto;">
+                          	<a href="#page" class="lb-close productListSave_lightboxclose"></a>
+							    <div class=" text-center padding30 color_000">台北市大安區信義路254號12樓</div>
+
+						  </div>
+					  </div>
+			    </li>
+				</ul>
+			</section>
+     	<!-- topNav start-->
+
+     	<div class="topNav">
+       	  <div class="nav_back float_left mgl55"><a href="#"><img src="images/nav_back.png"></a></div>
+            <div class="nav_forward float_left"><a href="#"><img src="images/nav_forward.png"></a></div>
+            <div class="TutorABC_Logo"><img src="images/TutorABC_Logo.png"></div>
+            <a href="#"><div class="PromptIcon"><div class=" margin1 float_right fontSize12 color_fff">99</div></div></a>
+        </div>
+        <!-- topNav end-->
+	<!-- sidebar start-->
+    <div class="sidebar">
+    	<div class="sidebarNav">
+            <ul>
+                <a href="#"><li><span class='sidebarIcon_0 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">首頁</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_1 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">體驗</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_2 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">免費講堂</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_3 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">熱銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_4 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">促銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_5 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">特色</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_6 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">實況</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_7 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">見證</span><span class='arrowRight '></span></li></a>
+            </ul>
+        </div>
+    	<div class="sidebarNav_icon"><a href="#"><span class="nav_icon"></span></a></div>
+    </div>
+    <!-- sidebar end-->
+<div class="SalesViewPort"><!-- SalesContainer start-->
+    <div class="SalesContainer clientDetailBg">
+        <div style="width: 100%; min-height: 768px; float: left;">
+           <div class="client_name opacity0 float_left width810 mgt140 pdl100 fontSize34 color_6b6b6b">
+                李大同 <span class="fontSize16">先生</span>
+           </div>
+           <div class="float_left width810 mgt60 pdl100">
+                <div class="client_situation opacity0 float_left mgr10 width310 clientDetail_earphone pdl70 pdt20 pdb20 pdr20 text-left fontSize16">已約體驗 (現場體驗)
+                </div>
+                <div class="client_situation opacity0 float_left width310 clientDetail_clock pdl70 pdt20 pdb20 pdr20 text-left fontSize16">2014 / 04 / 05  13:00
+                </div>
+                <div class="client_btn opacity0 float_left width260 pdr10 pdb10 bgWhite mgt20 mgr10" style="min-height:260px;">
+				 <div class="float_left" style="display:none;"><a class="clientDetail_phone" href="#lightbox"><li class=" width120 height35 clientDetail_phone float_left mgl10 mgt10 text-center color_fff pdt85">電話</li></a></div>
+				 <div class="float_left" style="display:none;"><a class="clientDetail_location" href="#lightbox2"><li class=" width120 height35 clientDetail_location float_left mgl10 mgt10 text-center color_fff pdt85">地址</li></a></div>
+				 <div class="float_left"><a class="clientDetail_email" href="#lightbox"><li class=" width120 height35 clientDetail_email float_left mgl10 mgt10 text-center color_fff pdt85">Email</li></a></div>
+				 <div class="float_left"><a class="clientDetail_startdemo" href="#"><li class=" width120 height35 clientDetail_startdemo float_left mgl10 mgt10 text-center color_fff pdt85">進入體驗</li></a></div>   
+				 <div class="float_left"><a class="clientDetail_level" href="#"><li class=" width120 height35 clientDetail_level float_left mgl10 mgt10 text-center color_fff pdt85">程度</li></a></div>                         
+                </div>
+                
+                <div class="client_btn2 opacity0 float_left width520 pdr10 pdb10 bgWhite mgt20" >
+                     <a href="#" style="display:none;"><li class=" width120 height35 clientDetailbtn_01 float_left mgl10 mgt10 text-center color_000 pdt85">馬上約體驗</li></a>
+                     <a href="#"><li class=" width120 height35 clientDetailbtn_02 float_left mgl10 mgt10 text-center color_000 pdt85" style="display:none;">進入體驗</li></a>
+                     <a href="#"><li class=" width120 height35 clientDetailbtn_03 float_left mgl10 mgt10 text-center color_000 pdt85">學習方案</li></a>
+                     <a href="#"><li class=" width120 height35 clientDetailbtn_04 float_left mgl10 mgt10 text-center color_000 pdt85">馬上約體驗</li></a>
+                     <a href="#"><li class=" width120 height35 clientDetailbtn_05 float_left mgl10 mgt10 text-center color_000 pdt85">更改體驗時間</li></a>
+                     <a href="#"><li class=" width120 height35 clientDetailbtn_06 float_left mgl10 mgt10 text-center color_000 pdt85">更改合約資訊</li></a>
+                     <a href="#"><li class=" width120 height35 clientDetailbtn_07 float_left mgl10 mgt10 text-center color_000 pdt85">下次聯絡</li></a>
+                </div>
+           </div>
+        </div>
+  </div>
+</div>
+    <!-- SalesContainer end-->
+</div>
+        <!-- bottomStatus start-->
+        <div class="bottomStatus">
+            <div class="float_left  mgl20 mgt15 color_6b6b6b lineHeight24">Hi, Kate Lin <span class="logOutBtn lineHeight24"></span> </div>
+            <div class="float_right mgt15 mgr20"><span class="Tel24hour lineHeight24"></span></div>
+        </div>
+        <!-- bottomStatus end-->
+</body>
+</html>

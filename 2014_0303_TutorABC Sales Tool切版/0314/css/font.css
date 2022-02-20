@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+h1,h2,h3,h4,h5,h6{font-family:inherit;line-height:1.5;color:inherit;text-rendering:optimizelegibility;}
+h1{ font-size:28px;  vertical-align: middle;}
+h2{ font-size:24px;  vertical-align: middle;}
+h3{ font-size:20px;  vertical-align: middle;}
+h4{ font-size:16px;  vertical-align: middle;}
+h5{ font-size:14px;  vertical-align: middle;}
+h6{ font-size:12px;  vertical-align: middle;}
+
+.fontSize12 { font-size: 12px; }
+.fontSize13 { font-size: 13px; }
+.fontSize14 { font-size: 14px; }
+.fontSize16 { font-size: 16px; }
+.fontSize18 { font-size: 18px; }
+.fontSize20 { font-size: 20px; }
+.fontSize22 { font-size: 22px; }
+.fontSize24 { font-size: 24px; }
+.fontSize26 { font-size: 26px; }
+.fontSize28 { font-size: 28px; }
+.fontSize30 { font-size: 30px; }
+.fontSize32 { font-size: 32px; }
+.fontSize34 { font-size: 34px; }
+.fontSize36 { font-size: 36px; }
+.fontSize38 { font-size: 38px; }
+.fontSize40 { font-size: 40px; }
+.fontSize42 { font-size: 42px; }
+.fontSize44 { font-size: 44px; }
+.fontSize46 { font-size: 46px; }
+.fontSize48 { font-size: 48px; }
+.fontSize50 { font-size: 50px; }
+.lineHeight12 { line-height:12px; vertical-align: middle;}
+.lineHeight14 { line-height:14px; vertical-align: middle;}
+.lineHeight16 { line-height:16px; vertical-align: middle;}
+.lineHeight18 { line-height:18px; vertical-align: middle;}
+.lineHeight20 { line-height:20px; vertical-align: middle;}
+.lineHeight22 { line-height:22px; vertical-align: middle;}
+.lineHeight24 { line-height:24px; vertical-align: middle;}
+.lineHeight26 { line-height:26px; vertical-align: middle;}
+.lineHeight28 { line-height:28px; vertical-align: middle;}
+.lineHeight30 { line-height:30px; vertical-align: middle;}
+.lineHeight32 { line-height:32px; vertical-align: middle;}
+.lineHeight34 { line-height:34px; vertical-align: middle;}
+.lineHeight36 { line-height:36px; vertical-align: middle;}
+.lineHeight38 { line-height:38px; vertical-align: middle;}
+.lineHeight40 { line-height:40px; vertical-align: middle;}
+.lineHeight42 { line-height:42px; vertical-align: middle;}
+.lineHeight44 { line-height:44px; vertical-align: middle;}
+.lineHeight46 { line-height:46px; vertical-align: middle;}
+.lineHeight48 { line-height:48px; vertical-align: middle;}
+.lineHeight50 { line-height:50px; vertical-align: middle;}
+.lineHeight55 { line-height:55px; vertical-align: middle;}
+.lineHeight60 { line-height:60px; vertical-align: middle;}
+/*文字水平對齊*/
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{text-align:center;}
+/*文字垂直對齊*/
+.alignMiddle{vertical-align:middle}
+.alignTop{vertical-align:text-top}
+.alignBottom{vertical-align:text-bottom}
+/*文字樣式*/
+.color_6b6b6b{ color:#6b6b6b;}
+.color_fff{ color:#fff;}
+.color_000{ color:#000;} 
+.color_c13636{ color:#c13636;} 
+
+/*HR樣式*/
+.hr1{
+	border: 1px solid #ccc;
+}
+.hr2{
+	border: 1px solid #fff;
+}

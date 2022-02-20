@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+				  }, function() {
+					$(this).removeClass(str);
+				  }
+				);
+			}
+		}
+	}); 
+	
+	$(".logsubmitBtn").touchEvent('logsubmitBtn_Active');
+	
+	$('.loginImg').delay(0).animate({opacity:1}, 800 );
+	$('.loginTitle').delay(800).animate({opacity:1}, 200 );
+	$('.loginForm').delay(1200).animate({opacity:1}, 200 );
+});
+</script>
+
+</head>
+<body class="bgDarkRed">
+
+<div class="SalesViewPort">
+
+    <div class="loginImg opacity0"><img src="images/login_img_yao.png"></div>
+    
+  <div class="loginTitle opacity0"><img src="images/login_title.png"></div>
+  <div class="loginForm opacity0">
+    		<div class="loginInputs">
+                <input style="width: 435px;" class="loginform_input" name="text_name" type="text" id="text_name" value="Your ID" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Your ID';}" />
+                <input style="width: 435px;" class="loginform2_input" name="text_name" type="text" id="text_name" value="Your Password" onFocus="this.value='';" onBlur="if(this.value==''){this.value='Your Password';}" />
+           	</div>
+                
+            <div class="logsubmit mgt10"><a  class="logsubmitBtn"href="#">登入</a></div>
+    
+    </div>
+
+</div>
+</body>
+</html>

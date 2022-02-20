@@ -1,0 +1,42 @@
+.footerRedLine{ position:relative; width:100%; margin:0 auto; height: 35px; background:#e50012; float:left;}
+.footerRedLine960{position:relative; width:960px; margin:0 auto;}
+.footer{position:relative; width:100%; margin:0 auto;   min-height:50px;  background:#262626; float:left;}
+.footer960{position:relative; width:960px; margin:0 auto;}
+.footer hr{margin:1.5 0;border:0;border-top:1px solid #000000;border-bottom:1px solid #666666;}
+
+.footer_cert{min-height:50px; background:#262626; float:left;}
+
+.foot_logo{ display:block; position:relative; float:left; width:200px; height:52px; margin:20px 0 0 0;}
+.foot_linksWrap{ position:relative;height:160px; }
+.foot_links{ display:block; position:relative; float:left; width:125px; padding:3px;	 }
+.foot_links p{ list-style:none; font-size:14px; font-weight:bold;}
+.foot_links_link{ list-style:none;  color:#bfbfbf; text-decoration:none; font-size:13px; font-weight:normal;}
+.foot_links_link:hover{ list-style:none;  color:#eeeeee; text-decoration:none; font-size:13px;font-weight:normal;}
+
+.foot_links_link_y{ list-style:none;  color:#ffc600; text-decoration:none; font-size:13px; line-height:26px; font-weight:normal;}
+.foot_links_link_y:hover{ list-style:none;  color:#eeeeee; text-decoration:none; font-size:13px;line-height:26px; font-weight:normal;}
+
+
+.foot_bottom{display:block; position:relative;  margin:15px 0 4px 0;}
+.foot_bottom p{color:#999999; text-decoration:none; font-size:12px;margin:0 8px 0 0;}
+.foot_bottom_link{color:#ffffff; text-decoration:none; font-size:13px;margin:0 8px 0 0;}
+.foot_bottom_link:hover{color:#eeeeee; text-decoration:none; font-size:13px;}
+.foot_bottom_link_red{color:#e50012; text-decoration:none; font-size:13px;margin:0 8px 0 0;}
+.foot_bottom_link_red:hover{color:#eeeeee; text-decoration:none; font-size:13px;}
+
+
+.foot_tel{position:relative; display:block;width:100%; float:left; height:44px; text-align:right;}
+.foot_grid{width:150px;}
+
+.footercert1{  float:left;margin-left:3px; width:110px; height:40px;  background:url(../images/cert_01_gray.jpg) no-repeat;}
+.footercert1:hover{ background:url(../images/cert_01.jpg) no-repeat;}
+.footercert2{  float:left;margin-left:3px;width:110px; height:40px; background:url(../images/cert_02_gray.jpg) no-repeat;}
+.footercert2:hover{ background:url(../images/cert_02.jpg) no-repeat;}
+.footercert3{  float:left;margin-left:3px;width:110px; height:40px;  background:url(../images/cert_03_gray.jpg) no-repeat;}
+.footercert3:hover{ background:url(../images/cert_03.jpg) no-repeat;}
+.footercert4{  float:left;margin-left:3px;width:112px; height:40px;  background:url(../images/cert_04_gray.jpg) no-repeat;}
+.footercert4:hover{ background:url(../images/cert_04.jpg) no-repeat;}
+.footercert5{  float:left;margin-left:3px;width:110px; height:40px;  background:url(../images/cert_05_gray.jpg) no-repeat;}
+.footercert5:hover{ background:url(../images/cert_05.jpg) no-repeat;}
+.footercert6{  float:left; margin-left:3px;width:110px; height:40px;  background:url(../images/cert_06_gray.png) no-repeat;}
+.footercert6:hover{ background:url(../images/cert_06.png) no-repeat;}

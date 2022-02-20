@@ -1,0 +1,257 @@
+
+
+
+
+
+
+
+<SCRIPT language="javascript">
+
+checkTimer = 10 //選單的移動速度
+
+menuTopPosition=180 //選單的垂直位置間格
+
+menuLeftPosition=10 //選單的水平位置間格
+
+menuWidth=150 //選單的寬度
+
+bigFlag=false
+
+//廣告圖片來源
+
+imgSrc=new Array()
+
+imgSrc[0]="../../../../images/floating_buy.gif";
+
+//imgSrc[2]=""
+
+//廣告圖片的超鏈結
+
+imgURL=new Array()
+
+imgURL[0]="http://www.tutorming.com/asp/products/product_introduction.asp"
+
+//imgURL[1]=""
+
+//imgURL[2]=""
+
+//廣告的簡短說明
+
+imgAlt=new Array()
+
+imgAlt[0]=""
+
+//imgAlt[1]=""
+
+//imgAlt[2]=""
+
+//建立影像物件陣列,並將圖片檔案預先儲存物件內
+
+imgArray=new Array()
+
+for (x=0;x<=imgSrc.length-1;x++) {
+
+	imgArray[x]=new Image()
+
+	imgArray[x].src=imgSrc[x]
+
+}
+
+
+
+//初始選單
+
+function iniMenuPosition(){
+
+ menuArea.style.top = document.body.scrollTop + menuTopPosition
+
+ menuArea.style.left =  menuLeftPosition
+
+ menuArea.style.width = menuWidth
+
+ menuArea.style.visibility = "visible"
+
+  if (document.all) {
+
+   num=Math.floor(Math.random() * imgSrc.length)
+
+    //menuArea.innerHTML = "<img src='../images/00034.gif'>" 
+
+   menuArea.innerHTML += "<a href='" + imgURL[num] + 
+
+   "' ><img id='myPic' name='myPic' src='" + 
+
+   imgArray[num].src + "' border='0' alt='" + imgAlt[num] + 
+
+   "' STYLE='filter:Alpha(Opacity=100)'></a>"
+
+  }
+
+
+
+ checkMenuPosition()
+
+}
+
+
+
+//異動選單位置
+
+function checkMenuPosition()
+
+{
+
+ var offsetY
+
+ menuArea.style.left =  menuLeftPosition
+
+ menuTop = parseInt (menuArea.style.top, 10)
+
+ menuToPosition = document.body.scrollTop + menuTopPosition 
+
+   if ( menuTop != menuToPosition ) 
+
+   {
+
+ 	offsetY = Math.ceil( Math.abs( menuToPosition - menuTop ) / 20 )
+
+	if ( menuToPosition < menuTop )
+
+	{
+
+	 offsetY = -offsetY
+
+	}                      
+
+	 menuArea.style.top = parseInt (menuArea.style.top, 10) + offsetY
+
+    }
+
+  setTimeout ("checkMenuPosition()", checkTimer)
+
+}
+
+
+
+//滑鼠指標移入時
+
+function mouse_in() {
+
+ document.myPic.style.filter="Alpha(Opacity=100)"
+
+}
+
+
+
+//滑鼠指標移出時
+
+function mouse_out() {
+
+ document.myPic.style.filter="Alpha(Opacity=100)"
+
+}
+
+</SCRIPT>
+
+
+
+<body onLoad="iniMenuPosition()">
+
+<DIV id="menuArea" style="POSITION: absolute;" name="menuArea"
+
+ onMouseOver="mouse_in()" onMouseOut="mouse_out()"></DIV>
+
+</	body>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title> TutorMing </title>
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/Scripts/swfobject.js"></script>
+
+<style type="text/css">
+
+<!--
+
+body 
+
+{
+
+	margin:0px;
+
+}
+
+-->
+
+</style>
+
+</head>
+
+
+
+<body style="background-image: url('/images/bg.jpg')">
+
+
+
+<div align="center">
+
+
+
+   <div id="flashcontent3" ></div>
+
+        <script type="text/javascript">
+
+    var lang = lang
+
+     var fo3 = new FlashObject("choose.swf", "movie3", "955", "752", "7", "#ff00ff");
+
+     fo3.addParam("wmode", "transparent");
+
+     fo3.write("flashcontent3");
+
+ </script> 
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+    if (typeof (_gat) == 'object')
+
+    {
+
+        var pageTracker = _gat._getTracker("UA-4807149-1");
+
+        pageTracker._initData();
+
+        pageTracker._trackPageview();
+
+    }
+
+</script>
+
+</body>
+
+</html>
+

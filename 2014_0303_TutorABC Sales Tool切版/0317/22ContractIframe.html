@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolFormStyle.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href="css/css3lightbox.css" />
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+<script type='text/javascript' src="js/jquery.transit.min.js"></script>
+<script>
+browser_=/iPhone|iPad/i.test(navigator.userAgent);
+isInIframe = (window.location != window.parent.location) ? true : false;
+</script>
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	var sidebarOpen = "false";
+	
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find("span").addClass('color_000');});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find("span").removeClass('color_000');});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find("span").addClass('color_000');
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find("span").removeClass('color_000');
+				  }
+				);
+			}
+		}
+	}); 
+	
+	$(".clientBtn").touchEvent('clientBtn_Active');
+	$(".clientBtn2").touchEvent('clientBtn2_Active');
+	$(".funcBoxFromBtn2").touchEvent('funcBoxFromBtn2_Active');
+	
+	$.fn.extend({    
+		btnType2:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+				  }, function() {
+					$(this).removeClass(str);
+				  }
+				);
+			}
+		}
+	});
+	$(".keepReserveBtn_1").btnType2('keepReserveBtnHover_1');
+	$(".keepReserveBtn_2").btnType2('keepReserveBtnHover_2');
+	$(".keepReserveBtn_3").btnType2('keepReserveBtnHover_3');
+	
+	
+	
+	
+	
+	$.fn.extend({    
+		sidebarBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRight').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRight').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRight').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRight').animate({right:20}, 200 );
+					
+				  }
+				);
+				
+			}
+		}
+	}); 
+	$(".sidebarNav ul li").sidebarBtnEvent('sidebarliHover');
+	
+
+	$.fn.extend({    
+		clientBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRightforother').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRightforother').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRightforother').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRightforother').animate({right:20}, 200 );
+					
+				  }
+				);
+				
+			}
+		}
+	}); 
+	$(".clientBtn").clientBtnEvent('clientBtnHover');
+
+	$.fn.extend({    
+		clientBtn2Event:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRightforother').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRightforother').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRightforother').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRightforother').animate({right:20}, 200 );
+					
+				  }
+				);
+				
+			}
+		}
+	}); 
+	$(".clientBtn2").clientBtn2Event('clientBtn2Hover');
+
+
+	var delaySpeed=1100;
+	
+	$(".sidebarNav_icon").click(function() {
+		 $(".SalesContainer").css(['-webkit-transform', 'translateZ(0)' ,'transform','translateZ(0)']);
+	  if(sidebarOpen=="false"){
+		  sidebarOpen="true";
+            $(".SalesViewPort").animate({left:224}, 200 );
+			$(".sidebar").animate({left:0}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '-15deg'
+			}, 200);
+        }else{
+			sidebarOpen="false";
+            $(".SalesViewPort").animate({left:0}, 200 );
+			$(".sidebar").animate({left:-246}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '0deg'
+			}, 200);
+        }
+	});
+	
+	$(".logsubmitBtn").touchEvent('logsubmitBtn_Active');
+	$('.settingFormalan').delay(200).animate({opacity:1}, 200 );
+	$(".title").delay( 400 ).animate({opacity:1}, 200 );
+	$(".name").delay( 600 ).animate({opacity:1}, 200 );
+	$(".form").delay( 800 ).animate({opacity:1}, 200 );
+	
+	
+});
+</script>
+</head>
+<body class="bgLightGray">
+     	<!-- topNav start-->
+        <div class="topNav">
+        	<div class="nav_back float_left mgl55"><a href="#"><img src="images/nav_back.png"></a></div>
+            <div class="nav_forward float_left"><a href="#"><img src="images/nav_forward.png"></a></div>
+            <div class="TutorABC_Logo"><img src="images/TutorABC_Logo.png"></div>
+            <a href="#"><div class="PromptIcon"><div class=" margin1 float_right fontSize12 color_fff" style="background:url(images/PromptIcon_message.png);">99</div></div></a>
+        </div>
+        <!-- topNav end-->
+	<!-- sidebar start-->
+    <div class="sidebar">
+    	<div class="sidebarNav">
+            <ul>
+                <a href="#"><li><span class='sidebarIcon_0 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">首頁</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_1 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">體驗</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_2 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">免費講堂</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_3 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">熱銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_4 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">促銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_5 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">特色</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_6 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">實況</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_7 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">見證</span><span class='arrowRight '></span></li></a>
+                <a href="#lightbox"><li><span class='sidebarIcon_8 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">客戶</span><span class='arrowRight '></span></li></a>
+            </ul>
+        </div>
+    	<div class="sidebarNav_icon"><a href="#"><span class="nav_icon"></span></a></div>
+    </div>
+    <!-- sidebar end-->
+<div class="SalesViewPort">
+<div class="settingFormalan opacity0" style="float: left; bottom: 0px; left: 102px; height: 665px; overflow: hidden;"><img src="images/clientlist_Yao.png" width="224" height="784"></div>
+    <!-- SalesContainer start-->
+    <div class="SalesContainer productBg">
+        <div style="width: 100%; min-height: 768px; float: left; ">
+            <div class="RightbuyBox">
+
+            <div class="form opacity0 float_left fontSize15 lineHeight26" style="margin-top:52px;padding:40px 60px 10px 60px;  text-align:justify;  ">
+            <iframe width="622" height="480" src="iframetest.html" scrolling="no" frameborder="0" allowfullscreen></iframe>
+</iframe> 
+歡迎您加入TutorABC免費會員（含正式會員適用）並使用TutorABC所提供之各項會員服務（以下簡稱本服務），TutorABC網站（以下簡稱本網站）是由「麥奇數位股份有限公司」（以下簡稱本公司）所建置，當您註冊完成或開始使用本服務時，即視為您已經閱讀、了解並同意本公司之會員服務條款（以下簡稱本服務條款），關於本服務條款係為規範您與本公司間之契約。如果您不同意本服務條款的內容，或者您所屬國家或地區排除本約定內容之全部或一部時，您應立即停止使用TutorABC會員服務。
+如您是未滿二十歲之未成年人，則您必須在加入會員前將本服務條款請您的父母、法定代理人或監護人閱讀並得到其同意，才可以註冊及使用TutorABC所提供之會員服務。當您使用TutorABC所提供之服務時，則視為您的父母或監護人已經閱讀、了解並同意本服務條款。
+一、您的註冊義務
+（一）請依註冊申請程序所提示之項目，登錄您本人正確、真實及完整之個人資料。當您的個人資料有異動時，請立即予以更新，以維持您個人資料之正確、真實及完整。如因您登錄資料不實或冒用他人名義，以致個人權利受有損害或有侵害他人之權利或有違反法令時，應自負相關之法律責任。
+（二）如您所提供個人資料有誤或個人資料異動但未予更新，以致於與原登錄之資料不符時，本公司有權隨時終止會員資格及各項會員服務。
+
+二、會員服務
+（一）您依註冊程序登錄並經本公司完成相關設定後，您即取得會員之資格，並可以開始使用本服務。
+（二）當您成為TutorABC會員後而得使用之各項會員服務時，其所有權或使用權利仍屬本公司及其所約定之人，所有會員僅得依本服務條款之約定使用，不得出租、出借、移轉或讓予給其他第三人使用。
+（三）本公司有權增加、變更或取消會員服務中相關系統或功能之全部或一部之權利，無須個別通知會員；且有關現行或爾後之各項服務均受本服務條款之規範。
+
+三、TutorABC隱私權保護政策
+您的註冊資料及其他相關資料，均受到「TutorABC隱私權保護政策」所保護，有關TutorABC隱私權保護，請詳閱TutorABC首頁上「隱私權政策」，以了解並保障您的權益。但會員於上課期間所紀錄之影像、聲音及教材等內容，同意無償供本公司於相關產品之改善、宣傳及行銷時使用。
+
+四、會員帳號及密碼之保管
+（一）您註冊完成後將會取得一組帳號及密碼，您有義務妥善保管您的帳號及密碼之機密與安全，不得洩漏給任何以外第三人。您必須為此組帳號及密碼之一切行為負責，此組帳號及密碼所做之一切行為即視為您本身之行為。
+（二）本組帳號及密碼僅限於您個人使用，非經本公司之同意，您不得出租、出借、移轉或讓與給其他第三人使用。
+（三）如您發現您的帳號及密碼遭盜用或其他不當使用，您必須立即通知TutorABC，以利本公司採取相關措施。但不得將本公司所採取之措施解釋為本公司對您有明示或默示擔保或賠償責任，對於您的帳號及密碼遭人非法使用，本公司亦無法負任何賠償責任。
+（四）每次使用完畢後，應確實登出並結束您帳號及密碼的使用，以防止被他人盜用。
+
+五、會員之權利
+TutorABC為您提供了不可轉讓、非專屬、有存取、使用與顯示的權限限制的網站內容，您在開始使用這些內容時必須遵守這些相關的規定。此網站上的資料只供您做為私人與非商業的用途來使用。而此網站所提供的特定服務則只有TutorABC的註冊會員才能使用。在您註冊購買TutorABC 所提供的服務或者免費試用服務時，也就表示您同意接受在本公司及TutorABC網站上中所列示的各項條款與規定。
+六、會員之義務
+（一）會員不得利用TutorABC會員服務，進行任何商業行為或以任何方式非法使用。
+（二）會員同意接受TutorABC會員中心寄發的會員電子報，或特別優惠、促銷活動及其他相關資訊。
+（三）會員除應遵守本服務條款之約定外，並同意遵守本公司各項服務營業規章與中華民國法令及網際網路之國際使用慣例與禮節，且不得有從事下列或有類似之行為：
+
+1、有竊取、更改、破壞他人資訊，或有擅自複製他人資訊轉售、轉載情事者。
+2、未經對方同意，擅自寄發電子廣告信件至對方信箱者，或蓄意破壞他人信箱或其通信設備者。
+3、於論壇區張貼與主題無關之訊息者。
+4、散播電腦病毒者。
+5、公布或傳送任何誹謗、侮辱、具威脅性、攻擊、不雅、猥褻、不實，或有違背公序良俗、字義、圖片或任何形式的檔案於TutorABC網站上。
+6、擷取、轉寄、播放非經所有人正式開放或授權之資源者。
+7、有侵害他人名譽、隱私權、營業秘密、智慧財產權或其他相關之權利，或有侵害之虞者。
+8、未經同意收集他人電子郵件位址及其他個人資料者。
+9、傳送、張貼廣告，或發表或任何虛偽不實或引人錯誤及其他之表示或表徵者。
+10、其他有危害通信、違反相關法令或本公司規定之情事或之虞者。
+（四）上述規定不代表本公司對會員傳送、張貼或發表之內容做任何形式或實質之審查，會員必須對自己所做之行為負責。如經本公司察覺或經他人申訴會員有違反上述各款情事或之虞時，本公司除有權逕行移除或刪除該內容外，並有權終止或暫停該會員之資格及各項會員服務。本公司如因此產生損害時，並得依法向該會員請求賠償。
+（五）本公司有權自行判斷會員是否經由其帳號傳送電子廣告信件，或其它未經同意之大宗電子郵件，如經本公司確定為會員帳號所為時，本公司有權立即終止該帳號之使用，並得向該帳號之擁有者請求損害賠償。
+
+七、服務暫停或中斷
+（一）	本公司於下列情形之一時，得暫停或中斷本服務之全部或一部，對於使用會員不負擔任何賠償責任：
+1、對於本網站相關系統設備進行遷移、更換或維護時。
+2、因不可歸責於本公司所造成之服務停止或中斷或網路之線路品質。
+3、本公司認為必要暫停或中斷本服務之全部或一部。
+（二）如因本公司對於本網站相關系統設備進行遷移、更換或維護而必須暫停或中斷該全部或一部之服務時，本公司於暫停或中斷前將以電子郵件通知或於本網站上公告。
+（三）因使用者違反本服務條款或法令，或有不可歸責本公司之事由，而造成本服務之全部或一部暫停或中斷時，暫停或中斷期間之費用仍須依正常標準計費及繳納。
+（四）對於本服務之暫停或中斷，有可能造成您使用上的不便、資料遺失或其他經濟及時間上之損失，本公司不負擔任何賠償責任，您平時應採取適當的防護措施，以保障您的權益。
+
+八、網路資源之使用
+（一）網際網路係開放性網路，並由各網路提供者負責維護，本公司無法就會員擷取資訊資源之正確性、完整性、安全性、可靠性、合適性、線路中斷及錯誤負責，亦無法保證使用者與本公司間資料傳輸速率，會員如因傳輸速率或擷取使用網路資料而導致直接或間接之損害或損失時，本公司不負任何損害賠償責任。
+（二）本服務網路上可擷取之任何資源，皆屬該資料所有者所擁有，使用會員應遵守各該網路資訊所有者之授權或其他法律規定，否則不得使用該等資源，如因此導致任何責任皆由使用者自行負責，概與本公司無涉。
+
+九、會員服務之措施及限制
+（一）您同意本公司有權就本服務訂定相關的措施及限制，包括但不限於：電子郵件信箱空間之容量、電子郵件訊息可收發之最大檔案、同一電子郵件訊息可發送至不同地址之上限及特定時間內本服務使用次數及每次使用時間之上限。
+（二）如本公司將會員傳送之任何訊息及內容刪除或未儲存，本公司不負擔任何損害賠償責任，請應自行定期備份資料。
+（三）本公司得因業務考量，隨時變更該措施及限制，對於前述所做之變更，將 不對會員個別通知或公告。
+
+十、資訊或建議
+本網站所出現的資訊可能因為本公司、協力廠商及相關電信業者網路系統軟硬體設備之故障或失靈，而全部或一部暫時無法使用、或造成資料傳輸錯誤、或遭第三人侵入系統竄改或偽造變造資料等；因此使用者在閱讀或使用所有出現在本網站上的資訊時，包括各種資料、建議、分析、評論和報導等，都應該特別謹慎，該等資訊既不代表本公司的言論或意見，本公司也無法擔保其真實性、完整性及可信度。本網站所有資訊和連結，都只是為了提供給使用者自行研究參考，並非對使用者作任何有關專業建議或暗示，亦無法取代或補充專業顧問之個別分析建議，使用者在作成任何具體決定時，應該自行謹慎作成判斷，或者另外洽詢專業顧問。使用者基於本網站上的任何資訊所作成的任何決定，都必須自行負擔風險，本公司不負任何之責。
+
+十一、與第三人網站之連結
+本網站如有提供搜尋引擎之服務時，僅於提供使用者方便且迅速查詢到使用者想要的資訊，您所查到的資料是使用搜尋引擎之結果，不代表本公司與連結網站之業者有任何合作關係。如您因進入該網站而產生之糾紛或損害，請您逕行與該網站之業者聯繫，本公司不負任何責任。
+
+十二、廣告
+本網站如有傳播或刊載之廣告，關於其內容所展現的文字、圖片、動畫、聲音、影像或以其他方式對商品或服務之說明，都是由廣告主或廣告代理商所提供。對於廣告之內容，本公司基於尊重廣告主或廣告代理商權利，不對廣告之內容進行審查，您應該自行判斷該廣告的正確性及可信度，本公司不對該廣告做任何擔保。
+
+十三、商品或服務之交易
+如果您透過本網站與網路上其他廠商或業者進行商品或服務之買賣或各種交易行為，此時僅該廠商或業者與您有契約關係存在，本公司並不介入或參與。如該商品或服務有任何瑕疵或糾紛時，請您逕行與該廠商或業者聯絡解決，本公司對此不負任何擔保責任。如果商品或服務係由本公司所提供，則相關權利義務依各會員服務所訂定之規定辦理。統一發票將於交易完成後客戶完款開立，並以郵寄方式寄出，如需開立三聯式發票，應於購物流程中註明。
+
+十四、內容提供者
+本網站之內容如由本公司有合作關係之業者或廠商所提供時，本公司基於尊重他人智慧財產權及其他權益，不對其所提供之內容做任何實質的審查，使用者對於內容之正確性及可靠性應審慎判斷，本公司不對此作任何的擔保。該內容如有不實或錯誤，您應該逕行向該內容提供者反映。
+
+十五、擔保責任之免除
+（一）本公司各項會員服務，依本公司既有之規劃提供，對於特定使用者之特殊需求，本公司不擔保本服務將符合您的所有需求。
+（二）本公司不擔保各項服務之正確、完整、安全、可靠、合適、時效、穩定、不會斷線及出錯。您同意對於您所傳送之電子郵件、檔案及其他資料做備份。關於因傳送過程而造成電子郵件、檔案及其他資料之遺失，本公司不負任何擔保責任。
+（三）對於您在本服務中所下載之電子郵件、檔案及其他資料，您應該自行考量其風險，如因下載而造成您電腦系統的損壞或電腦中資料的遺失，本公司不負任何擔保責任。
+
+十六、會員內容之保留或揭露
+（一）本公司不對於會員所傳送、張貼或發表之內容（包括但不限於文字、圖片、音樂、影像、軟體、資訊及各種資料等）做任何形式或實質之審查，亦不擔保其正確、完整、安全或可靠。會員對於使用由其他會員所提供之內容應自行考量其風險。
+（二）本公司基於下列理由會將會員所傳送、張貼、發表或使用課程之內容保留或揭露：
+１、司法或檢調、警察機關偵查犯罪需要時。
+２、政府機關依法律程序要求時。
+３、因會員之行為違反法令或本公司相關服務條款之規定時。
+４、基於維護公益或保護本公司或他人之權利。
+
+十七、智慧財產權
+本網站上所使用或提供之軟體、程式及內容（包括但不限於文字、說明、圖畫、圖片、圖形、檔案、頁面設計、網站規劃與安排等）之專利權、著作權、商標權、營業秘密、專門技術及其他智慧財產權均屬本公司或其他權利人所有，非經權利人事先書面授權同意，會員不得重製、公開傳播、公開播送、公開上映、改作、編輯、出租、散布、進行還原工程、解編、反向組譯、或其他方式之使用。如有違反時，除應自行負法律責任外，因而對本公司造成損害或損失，本公司得向該會員請求損害賠償。
+
+十八、特別規定
+本服務條款係就本網站之各項服務所作之一般規定，如各該會員服務有特別規定時，則先依各該特別規定。
+
+十九、服務條款之增訂及修改
+本服務條款如有增訂或修改，您同意自該修訂條款於本網站公告之日起受其約束，本網站將不對會員個別通知。如您於公告後繼續使用本服務，則視為您已經同意該修訂條款。
+
+二十、準據法及管轄法院
+（一） 關於本服務條款之解釋或適用，以中華民國之法律為準據法。
+（二） 會員因使用本服務而與本公司所生之爭議，同意本誠信原則解決之，如有訴訟之必要時，同意以臺灣臺北地方法院為第一審管轄法院。
+
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- SalesContainer end-->
+</div>
+        <!-- bottomStatus start-->
+        <div class="bottomStatus">
+            <div class="float_left  mgl20 mgt15 color_6b6b6b lineHeight24">Hi, Kate Lin <span class="logOutBtn lineHeight24"></span> </div>
+            <div class="float_right mgt15 mgr20"><span class="Tel24hour lineHeight24"></span></div>
+        </div>
+        <!-- bottomStatus end-->
+</body>
+</html>

@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* 表單樣式 start*/
+
+.funcBoxFrom_input{
+	height: 40px;
+	font-size: 16px;
+	color: #aaa;
+	vertical-align: middle;
+	font-family: 'Duru Sans', sans-serif;
+	padding: 0px 5px 0px 30px;
+}
+.funcBoxFrom_input:focus{
+	color: #333;
+	background-color: #ededed;
+}
+
+.funcBoxFrom_input:disabled{
+	color: #333;
+	background-color: #ccc;
+	opacity:1;
+}
+
+.input_none{
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+	padding-left:10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconUser{
+	background:url(../images/iconUser.png) 8px 10px no-repeat;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconMail{
+	background:url(../images/iconMail.png) 8px 10px no-repeat;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.input_iconPhone{
+	background:url(../images/iconPhone.png) 8px 10px no-repeat;
+	border: 1px solid #aaaaaa;
+	background-color: #ffffff;
+	outline: none;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+.errMsg{ display:block; position:absolute; top:30px; right:0px; font-size:12px; padding:5px;  background:#ededed; color:#900; z-index:90; box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.5);-webkit-box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.5);;
+}
+/*箭頭上右*/
+.arrow_upRight{
+	width:0px;
+	height:0px;
+	border-width:6px;
+	border-style:solid;
+	border-color:transparent transparent #ededed transparent ;
+	position:absolute;
+	top:-12px;
+	right:10px;
+}
+/*箭頭上右 */
+.arrow_upRight_red{
+	width:0px;
+	height:0px;
+	border-width:6px;
+	border-style:solid;
+	border-color:transparent transparent #ededed transparent ;
+	position:absolute;
+	top:-12px;
+	right:4px;
+
+}
+
+.funcBoxFromBtn_Red {
+	display:inline-block;
+	height:40px;
+	color: #FFF;
+	background-color: #af2727;
+	border:1px solid #af2727;
+	text-decoration: none;
+	text-align:center;
+	vertical-align:middle;
+	line-height:40px;
+	font-size: 16px;
+    font-family: 'Duru Sans', sans-serif;
+	-webkit-border-radius: 6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+.funcBoxFromBtn {
+	display:inline-block;
+	height:40px;
+	color: #FFF;
+	background-color: #fc5f00;
+	border:1px solid #fc5f00;
+	text-decoration: none;
+	text-align:center;
+	vertical-align:middle;
+	line-height:40px;
+	font-size: 16px;
+    font-family: 'Duru Sans', sans-serif;
+	-webkit-border-radius: 6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+.funcBoxFromBtn_Active{
+	color: #FFF;
+	background-color: #fe914f;
+	border: 1px solid #fe914f;
+}
+.funcBoxFromBtn_Active_Red{
+	color: #FFF;
+	background-color: #c03030;
+	border: 1px solid #c03030;
+}
+/* radioBtn 樣式*/
+
+.funcBoxFrom_radioBtn span{
+	color:#333;
+    padding:10px 15px;
+    display:block;
+}
+.funcBoxFrom_radioBtn input {
+    position:absolute;
+    top:-900px;
+}
+.funcBoxFrom_radioBtn input:checked + span {
+    color:#fff;
+    background: #af2727; 
+}
+.radioBtn_l span {
+    background: #ffffff;
+    border-radius: 8px 0px 0px 8px;
+	border: 1px solid #ccc;
+    border-right-width: 1px;
+    cursor: pointer;
+	float:left;
+}
+.radioBtn_r span {
+    background: #ffffff;
+    border-radius: 0px 8px 8px 0px;
+	border-right:solid 1px #CCCCCC;
+	border: 1px solid #CCCCCC;
+    border-left-width: 0px;
+    cursor: pointer;
+	float:left;
+}
+
+
+.radioBtn_m span {
+     background: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+	border-right:solid 1px #CCCCCC;
+	border: 1px solid #CCCCCC;
+    border-left-width: 0px;
+    cursor: pointer;
+	float:left;
+}
+/* radioBtn 樣式end*/
+
+
+.funcBoxFrom_select{
+	color: #aaa;
+	height: 40px;
+	background: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+	border-right:solid 1px #CCCCCC;
+	border: 1px solid #CCCCCC;
+    border-left-width: 0px;
+	padding: 0px 5px 0px 5px;
+    cursor: pointer;
+	float:left;
+}
+.funcBoxFrom_select:focus{
+	color: #333;
+	background-color: #ededed;
+}
+

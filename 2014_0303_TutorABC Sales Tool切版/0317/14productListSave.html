@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+
+<title>TutorABC Sales Tool</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" >
+<link rel="stylesheet" href="css/grid.css" type="text/css" >
+<link rel="stylesheet" href="css/font.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolStyle.css" type="text/css" >
+<link rel="stylesheet" href="css/salesToolFormStyle.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href="css/css3lightbox.css" />
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/dropmenu.css">
+<script type='text/javascript' src="js/dropmenu.js"></script>
+<script type='text/javascript' src="js/jquery-1.9.0.js"></script>
+<script type='text/javascript' src="js/jquery.transit.min.js"></script>
+<script>
+$(function() {
+	var deviceAgent = navigator.userAgent.toLowerCase();
+	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+	var sidebarOpen = "false";
+	
+	/* str參數為:滑鼠滑過去的class */
+	$.fn.extend({    
+		touchEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find("span").addClass('color_000');});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find("span").removeClass('color_000');});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find("span").addClass('color_000');
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find("span").removeClass('color_000');
+				  }
+				);
+			}
+		}
+	}); 
+	
+	$(".nav_icon").touchEvent('nav_icon_Active');
+	$(".nextPagebtn").touchEvent('nextPagebtn_Active');
+	$(".prePagebtn").touchEvent('prePagebtn_Active');
+	$(".logOutBtn").touchEvent('logOutBtn_Active');
+	$(".funcBoxFromBtn3").touchEvent('funcBoxFromBtn3_Active');
+	$(".productListSave_edit").touchEvent('productListSave_edit_Active');
+	$(".productListSave_credit").touchEvent('productListSave_credit_Active');
+	$(".productListSave_sms").touchEvent('productListSave_sms_Active');
+	$(".productListSave_lightboxclose").touchEvent('productListSave_lightboxclose_Active');	
+	$(".main-drop").touchEvent('main-drop_Active');	
+	$(".dropbtn").touchEvent('dropbtn_Active');	
+	$(".dropbtnGray").touchEvent('dropbtnGray_Active');	
+	
+	$.fn.extend({    
+		btnType2:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+				  }, function() {
+					$(this).removeClass(str);
+				  }
+				);
+			}
+		}
+	});
+	$(".keepReserveBtn_1").btnType2('keepReserveBtnHover_1');
+	$(".keepReserveBtn_2").btnType2('keepReserveBtnHover_2');
+	$(".keepReserveBtn_3").btnType2('keepReserveBtnHover_3');
+	
+	
+
+	$.fn.extend({    
+		sidebarBtnEvent:function(str){
+			if(agentID) { 
+				$(this).bind('touchstart', function(event){$(this).addClass(str);$(this).find('.arrowRight').animate({right:10}, 200 );});
+				$(this).bind('touchend', function(event){$(this).removeClass(str);$(this).find('.arrowRight').animate({right:20}, 200 );});
+			}else{
+				$(this).hover(
+				  function() {
+					$(this).addClass(str);
+					$(this).find('.arrowRight').animate({right:10}, 200 );
+				  }, function() {
+					$(this).removeClass(str);
+					$(this).find('.arrowRight').animate({right:20}, 200 );
+					
+				  }
+				);
+			}
+		}
+	}); 
+	$(".sidebarNav ul li").sidebarBtnEvent('sidebarliHover');
+	
+	var delaySpeed=1100;
+	
+	$(".sidebarNav_icon").click(function() {
+		 $(".SalesContainer").css(['-webkit-transform', 'translateZ(0)' ,'transform','translateZ(0)']);
+	  if(sidebarOpen=="false"){
+		  sidebarOpen="true";
+            $(".SalesViewPort").animate({left:224}, 200 );
+			$(".sidebar").animate({left:0}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '-15deg'
+			}, 200);
+        }else{
+			sidebarOpen="false";
+            $(".SalesViewPort").animate({left:0}, 200 );
+			$(".sidebar").animate({left:-246}, 200 );
+			$('.SalesContainer').transition({
+			  perspective: '1024px',
+			  rotateY: '0deg'
+			}, 200);
+        }
+	});
+	
+	$(".logsubmitBtn").touchEvent('logsubmitBtn_Active');
+	$('.settingFormalan').delay(200).animate({opacity:1}, 200 );
+	$(".title").delay( 400 ).animate({opacity:1}, 200 );
+	$(".name").delay( 600 ).animate({opacity:1}, 200 );
+	$(".form").delay( 800 ).animate({opacity:1}, 200 );
+	
+	
+});
+
+
+</script>
+
+</head>
+<body class="bgLightGray">
+<!-- Message start-->
+           <div style="position: absolute; display: block; width: 21px; height: 21px; text-align: center; background: url(images/PromptIcon_message.png); top: 6px; font-size: 15px; right: 7px; z-index: 90001; color: #fff; font-weight: bold; font-family: 'Duru Sans', sans-serif;">10</div>
+        <div class="drop-wrap">
+           <div class="main-drop">
+            <img src="images/PromptIcon.png" width="36" height="36">
+           </div>
+          <ul>
+            <li>已為你安排14:50的顧問<a href="#" class="dropbtn">好，我知道了</a><div class=" senttime">14:50</div></li>
+            <li>顧問已進入教室，現在就進入體驗?<a href="#" class="dropbtn">前往體驗</a><div class=" senttime">14:50</div></li>
+            <li>顧問已完成程度分析<a href="#" class="dropbtn">前往瀏覽</a><div class=" senttime">14:50</div></li>
+            <li class="alreadyclick">顧問已進入教室，現在就進入體驗?已為你安排14:50的顧問<a href="#" class="dropbtn">好，我知道了</a><div class=" senttime">14:50</div></li>
+            <li>已為你安排14:50的顧問<a href="#" class="dropbtn">好，我知道了</a><div class=" senttime">14:50</div></li>
+            <li>已為你安排14:50的顧問<a href="#" class="dropbtn">好，我知道了</a><div class=" senttime">1天前</div></li>
+          </ul>
+</div>
+      <!-- Message end-->
+			<section>
+			  <ul class="lb-album ">
+					<li>
+						<div class="lb-overlay" id="lightbox">
+						  <div id="image01">
+                          	<a href="#page" class="lb-close productListSave_lightboxclose"></a>
+							<div>
+								<h3>簡訊發送</h3>
+							    <p>手機刷卡簡訊將發送至你的手機</p>
+                    <div class="rightfuncBoxFrom width432" style="height:auto; top:140px; left:55px;">
+                <form name='mcForm'>
+                    <div class="col11 mgt5">
+                    	<input class="width380 funcBoxFrom_input input_iconPhone" style="height:50px; background-position:10px 14px; padding-left:40px; font-size:18px;" name="text_name" type="text" id="text_name" value="手機號碼" onFocus="this.value='';  $('#errMsg_3').hide();" onBlur="if(this.value==''){this.value='手機號碼';}" />
+                        <div id='errMsg_3'class="errMsg"><span class="arrow_upRight"></span>手機號碼欄位錯誤</div>
+                    </div>
+                    <div class="logsubmit mgt30" style="width:425px;"><a class="logsubmitBtn" style="width:425px; height:50px; line-height:50px;" href="#">確定發送</a></div>
+                </form>
+                </div>
+
+							</div>
+						  </div>
+					  </div>
+			    </li>
+			  </ul>
+			</section>
+     	<!-- topNav start-->
+        <div class="topNav">
+        	<div class="prePagebtn float_left mgl70"><a class="prePagebtn" href="#"></a></div>
+            <div class="nextPagebtn float_left "><a class="nextPagebtn" href="#"></a></div>
+            <div class="TutorABC_Logo"><img src="images/TutorABC_Logo.png"></div>
+        </div>
+        <!-- topNav end-->
+<div class="settingFormalan opacity0" style="float: left; bottom: 0px; left: 109px; height: 665px; overflow: hidden;"><img src="images/productPlan_Yao.png" width="224" height="784"></div>
+	<!-- sidebar start-->
+    <div class="sidebar">
+    	<div class="sidebarNav">
+            <ul>
+                <a href="#"><li><span class='sidebarIcon_0 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">首頁</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_1 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">體驗</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_2 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">免費講堂</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_3 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">熱銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_4 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">促銷</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_5 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">特色</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_6 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">實況</span><span class='arrowRight '></span></li></a>
+                <a href="#"><li><span class='sidebarIcon_7 lineHeight50'></span><span class="color_fff lineHeight50 mgl10">見證</span><span class='arrowRight '></span></li></a>
+            </ul>
+        </div>
+    	<div class="sidebarNav_icon"><a class="nav_icon" href="#"></a></div>
+    </div>
+    <!-- sidebar end-->
+<div class="SalesViewPort">
+    <!-- SalesContainer start-->
+    <div class="SalesContainer productBg">
+        <div style="width: 100%; min-height: 768px; float: left;">
+            <div class="RightbuyBox">
+            <div class="title opacity0 inline_block color_000 fontSize18 mgl70 mgt90 float_left width630 fontSize28 color_000"><div class="float_left">林小美<span class=" color_c13636">的產品明細</span></div><div class="float_left"><a  class="productListSave_edit" href="#"></a></div></div>
+            <div class="form opacity0 mgt25 width742 float_left fontSize16">
+              <div class="width672 bgMediumWhite pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">產品名稱</div>
+                <div style="width:80%;" class="float_left">2年</div>
+              </div>
+              <div class=" width672 bgMediumGray pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">服務期限</div>
+                <div style="width:80%;" class="float_left">120堂</div>
+              </div>
+              <div class="width672 bgMediumWhite pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">服務期間</div>
+                <div style="width:80%;" class="float_left">70,200(平均單堂價:585)</div>
+              </div>
+              <div class=" width672 bgMediumGray pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">產品總額</div>
+                <div style="width:80%;" class="float_left">73,200(平均單堂價:610)</div>
+              </div>
+              <div class="width672 bgMediumWhite pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">產品名稱</div>
+                <div style="width:80%;" class="float_left">2年</div>
+              </div>
+              <div class=" width672 bgMediumGray pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">發票種類</div>
+                <div style="width:80%;" class="float_left">
+                      <div class=" float_left ">二聯式</div>
+                </div>
+              </div>
+              <div class="width672 bgMediumWhite pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left">發票寄送地址</div>
+                <div style="width:80%;" class="float_left">70,200(平均單堂價:585)</div>
+              </div>
+              <div class=" width672 bgMediumGray pdl70 pdt15 pdb15 float_left">
+                <div style="width:20%;" class="float_left mgt10">付款方式</div>
+                <div style="width:80%;" class="float_left">
+                <div class="float_left">
+                <div class="inline_block col11  width120 float_left mgt10">付款筆數1</div>
+<div class="inline_block col11  width120 mgt10 float_left">現金</div>
+<div class="inline_block col11  width110 mgt10 float_left">6832</div>
+                 <div class="float_left">
+                 <div class="float_left"><a class="productListSave_credit" href="#"></a></div>
+                 <div class="mgl25 float_left"><a class="productListSave_sms" href="#lightbox"></a></div>
+                 </div>
+                 </div>
+                 <div class="inline_block mgt10 mgb10 width470 float_left"><hr class="hr2"></div>
+                <div class="float_left">
+                <div class="inline_block col11  width120 float_left mgt10">付款筆數1</div>
+<div class="inline_block col11  width120 mgt10 float_left">現金</div>
+<div class="inline_block col11  width110 mgt10 float_left">6832</div>
+                 <div class="float_left"><a class="productListSave_credit" href="#"></a></div>
+                 <div class="mgl25 float_left"><a class="productListSave_sms" href="#lightbox"></a></div>
+                 </div>
+                 <div class="inline_block mgt10 mgb10 width470 float_left"><hr class="hr2"></div>
+                </div>
+              </div>
+              <div class=" width672 mgt30 mgb100 float_left pdl70">
+                    <a class="funcBoxFromBtn3 width300" href="#">編輯設定</a>
+                    <a class="funcBoxFromBtn3 width300" href="#">查看合約</a>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- SalesContainer end-->
+</div>
+        <!-- bottomStatus start-->
+        <div class="bottomStatus">
+            <div class="float_left width300  pdl20 pdr20 pdt10 color_6b6b6b lineHeight24"><a class="logOutBtn" href="#">Hi, Kate Lin</a></div>
+            <div class="float_right mgt15 mgr20"><span class="Tel24hour lineHeight24"></span></div>
+        </div>
+        <!-- bottomStatus end-->
+<script>
+    $(document).ready(function(e){
+   $('.main-drop').on('click',function(){
+      $('.drop-wrap ul').slideToggle();
+   });
+   
+})
+//Make sure you scroll down//@ sourceURL=pen.js
+</script>
+
+</body>
+</html>

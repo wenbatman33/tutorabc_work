@@ -1,0 +1,150 @@
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_100 { position: relative; margin:0 auto; }
+.grid_1 { width:80px;}
+.grid_2 { width:160px;}
+.grid_3 { width:240px;}
+.grid_4 { width:320px;}
+.grid_5 { width:400px;}
+.grid_6 { width:480px;}
+.grid_7 { width:560px;}
+.grid_8 { width:660px;}
+.grid_9 { width:720px;}
+.grid_10 { width:800px;}
+.grid_11 { width:880px;}
+.grid_12 { width:960px;}
+.grid_100 { width:100%;}
+.width10{ width:10px;}
+.width20{ width:20px;}
+.width30{ width:30px;}
+.width40{ width:40px;}
+.width50{ width:50px;}
+.width60{ width:60px;}
+.width70{ width:70px;}
+.width80{ width:80px;}
+.width90{ width:90px;}
+.width100{ width:100px;}
+.width110{ width:110px;}
+.width120{ width:120px;}
+.width130{ width:130px;}
+.width140{ width:140px;}
+.width150{ width:150px;}
+.width160{ width:160px;}
+.width170{ width:170px;}
+.width180{ width:180px;}
+.width190{ width:190px;}
+.width200{ width:200px;}
+.width210{ width:210px;}
+.width220{ width:220px;}
+.width230{ width:230px;}
+.width240{ width:240px;}
+.width250{ width:250px;}
+.width260{ width:260px;}
+.width270{ width:270px;}
+.width280{ width:280px;}
+.width290{ width:290px;}
+.width300{ width:300px;}
+.width350{ width:350px;}
+.width360{ width:360px;}
+.width370{ width:370px;}
+.width380{ width:380px;}
+.width400{ width:400px;}
+.width410{ width:410px;}
+.width420{ width:420px;}
+.width430{ width:430px;}
+.width440{ width:440px;}
+.width450{ width:450px;}
+.width460{ width:460px;}
+.width470{ width:470px;}
+.width480{ width:480px;}
+.width490{ width:490px;}
+.width500{ width:500px;}
+.width600{ width:600px;}
+.width660{ width:660px;}
+.width700{ width:700px;}
+.width800{ width:800px;}
+.width900{ width:900px;}
+.height10{ height:10px;}
+.height20{ height:20px;}
+.height30{ height:30px;}
+.height40{ height:40px;}
+.height50{ height:50px;}
+.height60{ height:60px;}
+.height70{ height:70px;}
+.height80{ height:80px;}
+.height90{ height:90px;}
+.height100{ height:100px;}
+.height110{ height:110px;}
+.height120{ height:120px;}
+.height130{ height:130px;}
+.height140{ height:140px;}
+.height150{ height:150px;}
+.height160{ height:160px;}
+.height170{ height:170px;}
+.height180{ height:180px;}
+.height190{ height:190px;}
+.height200{ height:200px;}
+.height210{ height:210px;}
+.height300{ height:300px;}
+.height300{ height:300px;}
+.height400{ height:400px;}
+.height500{ height:500px;}
+.height600{ height:600px;}
+.height700{ height:700px;}
+.height800{ height:800px;}
+.height900{ height:900px;}
+/* 間距 */
+.margin5 { margin:5px;}
+.margin10{ margin:10px;}
+.margin15{ margin:15px;}
+.margin20{ margin:20px;}
+
+.margin_left1 { margin-left: 1px;}
+.margin_left2 { margin-left: 2px;}
+.margin_left3 { margin-left: 3px;}
+.margin_left4 { margin-left: 4px;}
+.margin_left5 { margin-left: 5px;}
+.margin_left10 { margin-left: 10px;}
+.margin_left15 { margin-left: 15px;}
+.margin_left20 { margin-left: 20px;}
+
+.margin_top5 { margin-top: 5px;}
+.margin_top10{ margin-top:10px;}
+.margin_top15{ margin-top:15px;}
+.margin_top20{ margin-top:20px;}
+.margin_top25{ margin-top:25px;}
+.margin_top30{ margin-top:30px;}
+.margin_top35{ margin-top:35px;}
+.margin_top40{ margin-top:40px;}
+.margin_top45{ margin-top:45px;}
+.margin_top50{ margin-top:50px;}
+.margin_top60{ margin-top:60px;}
+.margin_top70{ margin-top:70px;}
+.margin_top80{ margin-top:80px;}
+.margin_top90{ margin-top:90px;}
+.margin_top100{ margin-top:100px;}
+
+.margin_bottom5 { margin-bottom: 5px;}
+.margin_bottom10{ margin-bottom:10px;}
+.margin_bottom20{ margin-bottom:20px;}
+
+.padding1 { padding:1px;}
+.padding2 { padding:2px;}
+.padding3 { padding:3px;}
+.padding4 { padding:4px;}
+.padding5 { padding:5px;}
+.padding10{ padding:10px;}
+.padding20{ padding:20px;}
+
+.margin_tb5 { margin: 5px 0 5px 0;}
+.margin_tb10{ margin: 10px 0 10px 0;}
+.margin_tb20{ margin: 20px 0 20px 0;}
+
+.margin_lr5 { margin:0 5px 0 5px;}
+.margin_lr10{ padding:: auto 20px auto 20px;}
+.margin_lr20{ margin:0 20px 0 20px;}
+
+.border-left{ border-left-color:#333333;  border-left-style:solid; border-width:1px;}
+.border-right{ border-right-color:#333333;  border-right-style:solid; border-width:1px;}
+.floatleft{ float:left;}
+.floatright{ float:right;}
+.absolute{ position:absolute;}
+.relative{ position:relative;}

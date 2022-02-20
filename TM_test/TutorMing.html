@@ -1,0 +1,127 @@
+
+<!-- saved from url=(0058)http://www.tutorming.com/webinar/learning%20tool/index.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./TutorMing_files/beacon.js"></script><script language="javascript">
+checkTimer = 10 //選單的移動速度
+menuTopPosition=180 //選單的垂直位置間格
+menuLeftPosition=10 //選單的水平位置間格
+menuWidth=150 //選單的寬度
+bigFlag=false
+//廣告圖片來源
+imgSrc=new Array()
+imgSrc[0]="../../../../images/floating_buy.gif";
+//imgSrc[2]=""
+//廣告圖片的超鏈結
+imgURL=new Array()
+imgURL[0]="http://www.tutorming.com/asp/products/product_introduction.asp"
+//imgURL[1]=""
+//imgURL[2]=""
+//廣告的簡短說明
+imgAlt=new Array()
+imgAlt[0]=""
+//imgAlt[1]=""
+//imgAlt[2]=""
+//建立影像物件陣列,並將圖片檔案預先儲存物件內
+imgArray=new Array()
+for (x=0;x<=imgSrc.length-1;x++) {
+	imgArray[x]=new Image()
+	imgArray[x].src=imgSrc[x]
+}
+
+//初始選單
+function iniMenuPosition(){
+ menuArea.style.top = document.body.scrollTop + menuTopPosition
+ menuArea.style.left =  menuLeftPosition
+ menuArea.style.width = menuWidth
+ menuArea.style.visibility = "visible"
+  if (document.all) {
+   num=Math.floor(Math.random() * imgSrc.length)
+    //menuArea.innerHTML = "<img src='../images/00034.gif'>" 
+   menuArea.innerHTML += "<a href='" + imgURL[num] + 
+   "' ><img id='myPic' name='myPic' src='" + 
+   imgArray[num].src + "' border='0' alt='" + imgAlt[num] + 
+   "' STYLE='filter:Alpha(Opacity=100)'></a>"
+  }
+
+ checkMenuPosition()
+}
+
+//異動選單位置
+function checkMenuPosition()
+{
+ var offsetY
+ menuArea.style.left =  menuLeftPosition
+ menuTop = parseInt (menuArea.style.top, 10)
+ menuToPosition = document.body.scrollTop + menuTopPosition 
+   if ( menuTop != menuToPosition ) 
+   {
+ 	offsetY = Math.ceil( Math.abs( menuToPosition - menuTop ) / 20 )
+	if ( menuToPosition < menuTop )
+	{
+	 offsetY = -offsetY
+	}                      
+	 menuArea.style.top = parseInt (menuArea.style.top, 10) + offsetY
+    }
+  setTimeout ("checkMenuPosition()", checkTimer)
+}
+
+//滑鼠指標移入時
+function mouse_in() {
+ document.myPic.style.filter="Alpha(Opacity=100)"
+}
+
+//滑鼠指標移出時
+function mouse_out() {
+ document.myPic.style.filter="Alpha(Opacity=100)"
+}
+</script>
+
+</head><body onLoad="iniMenuPosition()" style="background-image: url(http://www.tutorming.com/images/bg.jpg);">
+<div id="menuArea" style="position: absolute; top: 282px; left: 10px; width: 150px; visibility: visible;" name="menuArea" onMouseOver="mouse_in()" onMouseOut="mouse_out()"></div>
+<!--	body-->
+
+
+
+
+
+<title> TutorMing </title>
+<script src="./TutorMing_files/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript" src="./TutorMing_files/swfobject.js"></script>
+<style type="text/css">
+<!--
+body 
+{
+	margin:0px;
+}
+-->
+</style>
+
+
+
+
+<div align="center">
+
+   <div id="flashcontent3"><embed type="application/x-shockwave-flash" src="choose.swf" width="955" height="600" id="movie3" name="movie3" bgcolor="#ff00ff" quality="high" wmode="transparent"></div>
+        <script type="text/javascript">
+    var lang = lang
+     var fo3 = new FlashObject("choose.swf", "movie3", "955", "752", "7", "#ff00ff");
+     fo3.addParam("wmode", "transparent", "scale", "noScale" );
+     fo3.write("flashcontent3");
+ </script> 
+
+
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./TutorMing_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+    if (typeof (_gat) == 'object')
+    {
+        var pageTracker = _gat._getTracker("UA-4807149-1");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    }
+</script>
+
+
+<div id="window-resizer-tooltip" style="display: none;"><a href="http://www.tutorming.com/webinar/learning%20tool/index.asp#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1920</span> x <span class="tooltipHeight" id="winHeight">1028</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1920</span> x <span class="tooltipHeight" id="vpHeight">584</span></div><script type="text/javascript">var vglnk = vglnk || {api_url: '//api.viglink.com/api', key: '0dff9ade2d1125af6c910069b6d6e155', reaffiliate: false};</script><script type="text/javascript" async src="./TutorMing_files/vglnk.js"></script><span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body></html>

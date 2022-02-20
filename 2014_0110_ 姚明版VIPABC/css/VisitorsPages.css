@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+.timeLinePoint{ background:url(../images/about_timeline_point.png) 0px 10px no-repeat; padding-left:20px; line-height:20px; color:#666; font-size:14px;}
+.TutorList{ position:relative; height:auto;}
+.TutorList_item{ position:relative; display:table; height:200px;  width:100%; }
+.TutorPhoto{ position:relative; float:left; width:200px; height:200px; }
+.TutorDesWrap{position:relative; display:table; float:left; width:380px; height:200px; }
+.TutorName{ position:relative; float:left; display:table;  margin-left:10px;   }
+.TutorDes{ position:relative;  display:table;  float:left; display:table;  margin-left:10px; margin-top:10px; color:#666; }
+
+.CustomerList{ position:relative; display:table;  height:auto; }
+.CustomerList_item{ position:relative; display:table;  height:150px; width:100%; padding-top:15px; padding-bottom:10px; }
+.CustomerPhoto{ position:relative; float:left; width:195px; height:135px; }
+.CustomerDesWrap{position:relative; float:left; width:380px; height:auto; }
+.CustomerName{ position:relative; display:table;  float:left;  margin-left:10px;  }
+.CustomerDes{ position:relative;  display:table; float:left; height:50px; overflow:hidden;  margin-left:10px; margin-top:10px; margin-bottom:10px; }
+

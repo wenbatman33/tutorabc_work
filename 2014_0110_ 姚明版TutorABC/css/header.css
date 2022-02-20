@@ -1,0 +1,42 @@
+.newHearder{ position:fixed; display:block; height:90px; width:100%; margin:0 auto; background:#FFF; z-index:906; top:0px; left:0px;}
+.newHearder960{ position:relative; width:960px; margin:0 auto;}
+.newHearderLogo{ position:absolute; width:168px; height:44px; top:34px;}
+.newHearderNews{position:absolute; top:4px; width:500px; color:#999;}
+.newHearderNews a{ color:#666; text-decoration:none; font-size:14px;}
+.newHearderNews a:hover{ color:#999;  font-size:14px;}
+.newHearderTel{position:absolute; top:4px; right:130px; font-size: 18px;	color: #aa9887; }
+.language_Wrap{position:absolute; top:4px; right:0px; width:100px; font-size: 18px;	color: #333333; }
+.language{  color:#333;}
+.baidu{position:absolute; top:4px; right:10px; width:60px;font-size: 18px;	color: #333333;}
+
+.newHearderLinkGroup1{position:absolute; top:56px; left:200px; font-size: 18px; color: #333333;}
+.newHearderLinkGroup1 ul{}
+.newHearderLinkGroup1 ul li{ float:left; margin-right:10px;}
+.newHearderLinkGroup1 ul li a{color:#333;}
+.newHearderLinkGroup1 ul li a:hover{color:#666;}
+.newHearderLinkGroup2{position:absolute; top:56px; right:10px; font-size: 18px; color: #333333;}
+.newHearderLinkGroup2 ul{}
+.newHearderLinkGroup2 ul li{ float:left; margin-right:10px;}
+.newHearderLinkGroup2 ul li a{color:#aa9887;}
+.newHearderLinkGroup2 ul li a:hover{color:#911317;}
+.newHearderYaoWrap{ position:absolute; float:left; width:100%; margin:0 auto; top:90px;  height:237px; background:#0E3380; z-index:901;}
+.newHearderYaoWrap960{ position:relative; width:960px; margin:0 auto;}
+.albumVideo_1{ width:191px; height:107px;  background:url(../images/albumVideo_1_gray.png)}
+.albumVideo_1:hover{ width:191px; height:107px;  background:url(../images/albumVideo_1.png)}
+.albumVideo_2{ width:191px; height:107px;  background:url(../images/albumVideo_2_gray.png)}
+.albumVideo_2:hover{ width:191px; height:107px;  background:url(../images/albumVideo_2.png)}
+
+
+.languageIcon{ display: inline-block;background-repeat: no-repeat;background-image:url(../images/languageIcon.png); margin:1px; cursor: pointer; }
+.languageIcon{background-position:0px 0px; width:18px; height:18px;}
+
+.newHearderUserTalk{ position:absolute; width:100%; margin:0 auto; background:#ededed; top:327px; float:left; height:40px;z-index:902;}
+.newHearderUserTalk960{ position:relative; width:960px; margin:0 auto;}
+.contentNews{color:#98afd8}
+.contentNews:hover{ color:#b6ccf3}
+
+.dropdown-menu{position:absolute; top:24px; left:0px;z-index:999;display:none;float:right;min-width:90px;padding:5px 0;margin:2px 0 0;list-style:none;background-color:#ffffff;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.2);*border-right-width:2px;*border-bottom-width:2px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box;}
+.dropdown-menu li{ text-align:center; color:#666666; line-height:30px;}
+.dropdown-menu li a{ text-align:center; color:#666666; text-decoration: none;}
+.dropdown-menu li a:hover{ text-align:center; color:#999999; text-decoration: none;}
+.caret {  display: inline-block;  width: 0;  height: 0;  margin-left: 2px;  vertical-align: middle;  border-top: 4px solid #000000;  border-right: 4px solid transparent;  border-bottom: 0 dotted;  border-left: 4px solid transparent;}
