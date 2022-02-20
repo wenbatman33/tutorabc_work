@@ -1,0 +1,338 @@
+/*Reset---------------------------------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight:normal;
+	line-height:1.86em;
+	word-spacing: 1px;
+	letter-spacing:1;
+}
+div{overflow:hidden;}
+ol, ul {list-style: none;}
+a{text-decoration:none;}
+hr,.br{clear:both;}
+ 
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ 
+/* remember to define focus styles! */
+:focus {	outline: 0;}
+ 
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+ 
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+/*Reset END-----------------------------------------------------------------------------------------------------------------*/
+
+/*身分驗證-----------------------------------------------------------------------------------------------------------------*/
+.body{
+	font-size:13px;
+	letter-spacing:1px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:550px;
+	padding:30px 15px;
+	margin:0 auto;
+	}
+.where{
+	margin:30px 0;
+	}
+.f_all{
+	margin:0 auto;
+	width:460px;
+	padding:20px;
+	border:#CCCCCC 1px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	}
+.f_all ul{
+	border-bottom:#CCCCCC 1px solid;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	}	
+.f_all ul li{
+	clear:both;
+	height:100%;
+	overflow:hidden;
+	margin-bottom:20px;
+	}
+.f_all ul li div{
+	float:left;
+	}
+.f_all ul li.title{
+	font-size:15px;
+	font-weight:bold;
+	color:#0a6ec9;
+	}
+.f_all ul li div.forget_left{
+	width:100px;
+	text-align:right;
+	}
+.f_all ul li div .forget_right{
+	width:350px;
+	}
+.f_all ul li.sample{
+	font-size:12px;
+	letter-spacing:0;
+	-webkit-text-size-adjust:none;
+	padding-left:100px;
+	color:#CCCCCC;
+	margin-top:-22px;
+	}
+.f_all ul li div .forget_code{
+	width:80px;
+	}
+.f_all ul li div img{
+	margin:0 15px;
+	}
+.f_all ul li div a{
+	color:#F60;
+	}
+.forget_button{
+	float:left;
+	margin-left:100px;
+	background:url(../images/button.gif);
+	+display:inline;
+	}
+.forget_button2{
+	float:left;
+	background:url(../images/button.gif);
+	margin-left:140px;
+	+display:inline;
+	}
+.forget_button3{
+	float:left;
+	background:url(../images/button.gif);
+	}
+.forget_button input, .forget_button2 input, .forget_button3 input{
+	color:#FFFFFF;
+	width:94px;
+	height:36px;
+	background:none;
+	cursor:pointer;
+	border:0;
+	}		
+/*身分驗證 END-----------------------------------------------------------------------------------------------------------------*/
+
+/*3選1 -----------------------------------------------------------------------------------------------------------------------*/
+.f_all ul li.gary{
+	color:#CCCCCC;
+	}
+.f_all ul li.gary span{
+	color:#FF6600;
+	}
+.f_all ul li.choice{
+	margin-top:-10px;
+	margin-bottom:10px;
+	} 
+.f_all ul li div input{
+	height:20px;
+	}
+.ifno{
+	color:#CCCCCC;}
+/*3選1 END--------------------------------------------------------------------------------------------------------------------*/
+
+/*手機驗證碼 -----------------------------------------------------------------------------------------------------------------------*/
+.f_all ul li.else{
+	color:#979797;
+	padding-left:15px;
+	line-height:15px;
+	background:url(../images/else.gif) no-repeat;
+	}
+.otherchoice{
+	float:left;
+	line-height:36px;
+	margin-left:10px;
+	}
+.otherchoice a{
+	color:#0a6ec9;
+	}
+.otherchoice a:hover{
+	color:#0156a3;
+	}
+/*手機驗證碼 END--------------------------------------------------------------------------------------------------------------------*/
+.f_all ul li div .forget_prompt{
+	width:100px;
+	}
+/*最後一步 -----------------------------------------------------------------------------------------------------------------------*/
+.attention{
+	color:#979797;
+	width:500px;
+	margin:0 auto;
+	line-height:20px;
+	}
+.forget_button_last{
+	width:94px;
+	height:36px;
+	margin:0 auto;
+	background:url(../images/button.gif);
+	}
+.forget_button_last input{
+	color:#FFFFFF;
+	width:94px;
+	height:36px;
+	background:none;
+	cursor:pointer;
+	border:0;
+	}	
+/*最後一步 END--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*英*/
+.body_en{
+	font-size:12px;
+	letter-spacing:0px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:570px;
+	padding:30px 15px;
+	margin:0 auto;
+	}
+.where{
+	margin:30px 0;
+	}
+.f_all_en{
+	margin:0 auto;
+	width:480px;
+	padding:20px;
+	border:#CCCCCC 1px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	}
+.f_all_en ul{
+	border-bottom:#CCCCCC 1px solid;
+	padding-bottom:25px;
+	margin-bottom:20px;
+	}	
+.f_all_en ul li{
+	clear:both;
+	height:100%;
+	overflow:hidden;
+	}
+.f_all_en ul li div{
+	float:left;
+	}
+.f_all_en ul li.title_en{
+	font-size:15px;
+	font-weight:bold;
+	color:#0a6ec9;
+	margin-bottom:10px;
+	}
+.f_all_en ul li div.forget_left{
+	}
+.f_all_en ul li div .forget_right_en{
+	width:300px;
+	}
+.f_all_en ul li.sample_en{
+	font-size:11px;
+	-webkit-text-size-adjust:none;
+	color:#CCCCCC;
+	/*padding-left:150px;*/
+	margin-bottom:10px;
+	line-height:15px;
+	}
+.f_all_en ul li.sample2{
+	-webkit-text-size-adjust:none;
+	padding-left:245px;
+	margin-top:-10px;
+	}
+.f_all_en ul li div .forget_code{
+	width:80px;
+	}
+.f_all_en ul li div img{
+	margin:0 5px;
+	}
+.f_all_en ul li div a{
+	color:#F60;
+	text-decoration:underline;
+	}
+.forget_button_en{
+	float:left;
+	background:url(../images/button.gif);
+	}
+.forget_button2_en{
+	float:right;
+	background:url(../images/button.gif);
+	}
+.forget_button3_en{
+	float:left;
+	margin-left:65px;
+	background:url(../images/button.gif);
+	+display:inline;
+	}
+.forget_button_en input, .forget_button2_en input, .forget_button3_en input{
+	color:#FFFFFF;
+	width:94px;
+	height:36px;
+	background:none;
+	cursor:pointer;
+	border:0;
+	}		
+/*身分驗證 END-----------------------------------------------------------------------------------------------------------------*/
+
+/*3選1 -----------------------------------------------------------------------------------------------------------------------*/
+.f_all_en ul li.gary{
+	color:#CCCCCC;
+	margin-bottom:10px;
+	}
+.f_all_en ul li.gary span{
+	color:#FF6600;
+	}
+/*.f_all ul li.choice{
+	margin-top:-10px;
+	margin-bottom:10px;
+	} */
+.f_all_en ul li div input{
+	height:18px;
+	}
+.ifno{
+	color:#CCCCCC;}
+/*3選1 END--------------------------------------------------------------------------------------------------------------------*/
+
+/*手機驗證碼 -----------------------------------------------------------------------------------------------------------------------*/
+.f_all_en ul li.else{
+	color:#979797;
+	padding-left:15px;
+	line-height:15px;
+	background:url(../images/else.gif) no-repeat;
+	margin-top:20px;
+	}
+.otherchoice{
+	float:left;
+	line-height:36px;
+	margin-left:10px;
+	}
+.otherchoice2{
+	float:right;
+	line-height:36px;
+	margin-left:10px;
+	}
+.otherchoice a{
+	color:#0a6ec9;
+	}
+.otherchoice a:hover{
+	color:#0156a3;
+	}
+/*手機驗證碼 END--------------------------------------------------------------------------------------------------------------------*/
+.f_all_en ul li div .forget_prompt{
+	width:100px;
+	margin-left:10px;
+	}

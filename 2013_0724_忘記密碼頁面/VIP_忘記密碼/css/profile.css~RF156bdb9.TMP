@@ -1,0 +1,128 @@
+/*Reset---------------------------------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight:normal;
+	line-height:1.86em;
+	word-spacing: 1px;
+	letter-spacing:1;
+}
+div{overflow:hidden;}
+ol, ul {list-style: none;}
+a{text-decoration:none;}
+hr,.br{clear:both;}
+ 
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ 
+/* remember to define focus styles! */
+:focus {	outline: 0;}
+ 
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+ 
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+/*Reset END-----------------------------------------------------------------------------------------------------------------*/
+
+/*基本資料-----------------------------------------------------------------------------------------------------------------*/
+.profile_all{
+	width:590px; 
+	margin:0 auto; 
+	font-family:Verdana, Geneva, sans-serif;}
+.profile_new {
+	width:566px;
+	margin-left:16px;
+	font-size:13px;}
+.td_bg_1{
+	background:#0066CC;
+	color:#FFFFFF;
+	padding:5px;}
+.td_bg_2{
+	background:#C1D0E8;
+	padding:5px;}
+.td_bg_3{
+	background:#EBEFF8;
+	padding:5px;}
+.td_text_l{
+	text-align:left;}
+.td_text_r{
+	text-align:right;}
+.td_text_c{
+	text-align:center;}
+.td_forget a{
+	color:#0066CC;
+	padding-left:5px;}
+.td_forget a:hover{
+	text-decoration:underline;}	
+.td_text_l select{
+	height:26px;
+	line-height:26px;
+	padding:2px;}
+.td_input1{
+	width:195px;
+	/*height:25px;
+	height:20px\0;
+	line-height:25px;*/}
+.td_input2{
+	width:190px;}
+.td_input3{
+	width:60px;
+	height:25px;
+	line-height:25px;}
+.td_input4{
+	width:45px;
+	height:25px;
+	line-height:25px;}
+.td_input5{
+	width:100px;
+	height:25px;
+	line-height:25px;}
+.td_input6{
+	width:60px;
+	margin-right:10px;}
+.td_input7{
+	width:116px;}	
+.profile_red{
+	color:#FF0000;}
+
+/**/
+.profile_right{
+	padding-left:5px;}
+.profile_right img{
+	vertical-align:middle;}
+.profile_wrong{
+	width:300px;
+	font-size:13px;
+	line-height:21px;
+	padding-top:3px\9;
+	margin-top:5px\0;
+	padding-left:16px;
+	color:#FF0000;
+	background:url(images/wrong.png) no-repeat left center;
+	clear:both;}
+.input_wrong{
+	background:#FFCFCF;
+	border:1px solid #ABADB3;
+	height:20px;}
+.input_wrong2{
+	background:#FFCFCF;
+	border:1px solid #ABADB3;}
+/*基本資料 END--------------------------------------------------------------------------------------------------------------------*/

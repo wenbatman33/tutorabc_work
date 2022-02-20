@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<title>VIPABC 在线‧真人‧同步 英语视讯学习系统</title>
+<meta name="description" content="英文老师到你家！提供「真人实时互动」、「专业外籍顾问」、「量身订作学习内容」、「精准追踪学习成效」的客制化语言学习服务。" />
+<meta name="keywords" content="Ielts,Toeic,外籍老师,多益,托福,美语家教,美语教学,美语补习,英文教学,英文进修,英文会话,英文补习,英文检定,英文听力,旅游英文,商用英文,视讯英文,雅思,补英文,英文家教,在线英文,在线学习,学美语,学英文,学英语" />
+<link href="css/justsessionN.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script>
+    function correctPNG()
+    {
+        for(var i=0; i<document.images.length; i++)
+        {
+            var img = document.images[i]
+            var imgName = img.src.toUpperCase()
+            if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+            {
+                var imgID = (img.id) ? "id='" + img.id + "' " : ""
+                var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+                var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+                var imgStyle = "display:inline-block;" + img.style.cssText
+                if (img.align == "left") imgStyle = "float:left;" + imgStyle
+                if (img.align == "right") imgStyle = "float:right;" + imgStyle
+                if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+                var strNewHTML = "<span "+ imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='image');\"></span>"
+                img.outerHTML = strNewHTML
+                i = i-1
+            }
+        }
+    }
+    window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+<script language="javascript" type="text/javascript" src="scripts/jQuery_v1.8.2.js"></script>
+<link href="scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('.fancybox').fancybox({loop:false});
+		});
+	</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="main">
+      <div class="toolbar"><a href="#">回到会员服务首页</a></div>
+  <!--Header START-->    
+      <div class="header">
+      <a href="#"><img src="images/banner-7a.jpg" width="960" height="90"  /></a>
+      </div>
+  <!--Header END-->
+  	<div class=" contentAll">
+  	  <div class="path">
+      	<span class="color-004">您目前所在位置 </span> > <a href="#">VIPABC官方网站</a> <span>></span> <a href="#ifleave" class="fancybox">会员服务</a> > <span class="color-004">进入咨询室</span>
+      </div>
+  	
+    <div class="titles">
+    <img src="images/session_title_cn.png" alt="大会堂 10分钟随选随看" title="大会堂 10分钟随选随看" />
+    <img src="images/room_cn.png" /></div>
+    	
+      <div class="ifleave_style" id="ifleave">
+          <p>您即将要离开咨询室，为了解您的上课感受，请问是否填写课后评鉴?</p>
+          <div><input type="submit"value="好" class="btn-box-ok" />&nbsp;<input type="submit"value="下次填写" class="btn-box-no" /></div>
+      </div>
+      
+      <div class="infoBar clearfix">
+      	<h2>2013/04/15 (四) 18:30 - 19:30 (45min.)</h2>
+        <div class="btnScreenArea">
+                <span class=" f-left">顯示比例</span>
+               <a href="#" class="btnScreenSize current" title="原尺寸">原尺寸</a> 
+                <a href="#" class="btnScreenSize" title=" 满版"> 满版</a>
+          </div>
+         <div class="btnArea" style="width:250px;">
+                <input type="submit" name="button5" id="button5" value="单词" class="btn-check-ss1" />
+                <input type="submit" name="button5" id="button5" value="课后评鉴" class="btn-check-ss2" />
+                <input type="submit" name="button5" id="button5" value="填写作业" class="btn-check-ss2" />
+          </div>
+      </div>
+      
+      <div class="embedWindow">     
+     	 <iframe src="classroom.html" frameborder="0" width="100%" height="auto"></iframe>
+      </div>
+           
+      <div class="push"></div>   
+    </div>
+  </div>
+
+  <!--Footer START-->
+  <div id="footer">Copyright © VIPABC All Rights Reserved.</div>
+  <!--Footer END--> 
+</div>
+</body>
+</html>

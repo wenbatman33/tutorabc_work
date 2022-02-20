@@ -1,0 +1,182 @@
+﻿@charset "utf-8";
+
+.new-feedback                   {font-family:Verdana,Arial, Helvetica, sans-serif; width:100%;font-size:12px; color:#666; text-align:left;}
+img                             {border:0;}
+.clear                          {clear:both;}
+.new-feedback .bold             {font-weight:bold;}
+.new-feedback a                 {outline: none; /* for Firefox */  hlbr:expression(this.onFocus=this.blur()); /* for IE */}
+.new-feedback .f-left           {float:left; width:50%; }
+
+/*列表**************************************************************************************/
+.new-feedback table.feedback-list       { width:100%; margin:20px 0 0 0;}
+.new-feedback table.feedback-list tr    {}
+.new-feedback table.feedback-list tr th { background:#CEC9C6; color:#666; text-align:left; font-weight:normal; padding:8px 0 8px 0; }
+.new-feedback table.feedback-list tr td { background:#ffffff; border-bottom:1px #ccc solid; padding:10px 0 10px 0;}
+.new-feedback table.feedback-list tr th.h-time    {padding-left:10px;}
+.new-feedback table.feedback-list tr td.s-time    {width:19%; color:#666666; padding-left:10px;}
+.new-feedback table.feedback-list tr td.s-matrial {width:46%; padding-right:5px; }
+.new-feedback table.feedback-list tr td.s-matrial a {color:#666; text-decoration:none;}
+.new-feedback table.feedback-list tr td.s-matrial a:hover {color:#666; text-decoration:underline;}
+.new-feedback table.feedback-list tr td.s-type    {width:8%;}
+.new-feedback table.feedback-list tr td.s-tutor   {width:21%; color:#666;}
+.new-feedback table.feedback-list tr td.s-love    {width:6%; padding-left:4px;}
+
+
+/*分頁**************************************************************************************/
+.new-feedback .feedback-page { text-align:center; padding:30px 0 20px 0;}
+.new-feedback .feedback-page a { border:1px #adadad solid; padding:5px 8px 5px 8px; margin:0 8px 0 0; text-decoration:none; font-weight:bold; color:#555;}
+.new-feedback .feedback-page a:hover {color:#666; text-decoration:underline;}
+.new-feedback .feedback-page .in { background:url(/images/sessionFeedback/feedback_page_in.gif) repeat-x top; color:#fff;}
+
+
+
+/*單文**************************************************************************************/
+.new-feedback .title {font-size:12px; color:#666; padding:10px 0 20px 0; line-height:18px;}
+
+.new-feedback .session-desc       {margin:0 0 25px 0; position:relative;} 
+.new-feedback .session-desc .top1 {background:#fff url(/images/sessionFeedback/arrow_path.gif) no-repeat; background-position:10px 9px; font-size:15px; font-weight:bold; 
+                                   color:#666; padding:8px 0 5px 20px; border-top-width: 1px;border-top-style: solid;border-top-color: #CCCCCC;}
+*:first-child+html .new-feedback .session-desc .top1   { padding:8px 0 5px 20px;}/*ie7*/
+html>body .new-feedback .session-desc .top1            { padding:5px 0 7px 20px;}/*ff*/  
+body:nth-of-type(1) .new-feedback .session-desc .top1  { padding:5px 0 7px 20px;}/*Chrome*/
+
+.new-feedback .session-desc .top1 .ppps                { position:absolute; top:8px; font-size:12px; font-weight:normal; right:0px;}
+
+/*課程描述*/
+.new-feedback .session-desc .box1                  {border:1px #ccc solid;; background:#eaeaea; 
+                                                    padding:15px 15px 10px 15px;}/*有3邊線*/
+.new-feedback .session-desc .box2                  {border:1px #CCCCCC solid; background:#fffcf4; 
+                                                    padding:15px 15px 15px 20px; color:#666;}/*有3邊線-FeedBack用*/
+.new-feedback .session-desc table.se-desc          {width:100%; font-size:12px;}
+.new-feedback .session-desc table.se-desc td       {vertical-align:top;}
+.new-feedback .session-desc table.se-desc td.left  {color:#666; text-align:right; width:12%; padding:5px 0 5px 0;}
+.new-feedback .session-desc table.se-desc td.right {color:#666; text-align:left; width:87%; padding-left:5px; line-height:18px;}
+
+/*顧問評語*/
+.main_mylist.con-comment           {width:100%; font-size:12px;}
+.main_mylist table.con-comment td.left   {border-right:1px #b9d4f2 solid; width:31%; padding:0 0 0 5px;}
+.main_mylist table.con-comment td.left p  {color:#6188b3; padding:0 0 9px 0; margin:0;}
+.main_mylist table.con-comment td.left p span {color:#666; font-weight:bold; }
+.main_mylist table.con-comment td.right  {padding:0 0 0 20px; vertical-align:top;color:#666; line-height:19px;}
+.main_mylist table.con-comment td.right p {color:#6188b3; padding:0;margin:0;}
+
+/*課後評比*/
+.new-feedback .session-desc table.rating           {background:#ffffff; width:100%; font-size:12px; }
+.new-feedback .session-desc table.rating td        {border-bottom:1px #ccc solid; padding:10px 0 10px 0;}
+.new-feedback .session-desc table.rating td.left   {text-align:right; color:#666; width:18%; vertical-align:top;} 
+.new-feedback .session-desc table.rating td.right  {text-align:left; color:#666; padding:5px 0 0 5px; vertical-align:top;}
+*:first-child+html .new-feedback .session-desc table.rating td.right   { padding:5px 0 0 5px;}/*ie7*/
+html>body .new-feedback .session-desc table.rating td.right            { padding:6px 0 0 5px;}/*ff*/  
+body:nth-of-type(1) .new-feedback .session-desc table.rating td.right  { padding:6px 0 0 5px;}/*Chrome*/
+
+.clearall {z-index:3;position:absolute;right:10px;}
+html>body .clearall {z-index:3;position:absolute;right:10px;bottom:8px;}/*ff*/
+body:nth-of-type(1) .clearall {z-index:3;position:absolute;right:10px;bottom:8px;} /*Chrome*/
+
+.laybel2_time {padding:3px 0 7px 119px;}/*時間分配第2層*/
+*:first-child+html .laybel2_time  {padding:3px 0 7px 119px;}/*ie7*/
+html>body .laybel2_time           {padding:3px 0 7px 123px;}/*ff*/  
+body:nth-of-type(1) .laybel2_time {padding:3px 0 7px 123px;}/*Chrome*/
+
+.laybel2_pergood {padding:3px 0 7px 1px;}/*人的第2層-good*/
+
+.ff-desc  {float:left; text-align:left; padding:0; margin:0; width:49%; }
+
+.new-feedback .session-desc table.rating td.ra-title  {background:#eaeaea; font-weight:bold; }
+.new-feedback .session-desc table.rating td.ra-title .n10  {color:#008f00;}
+.new-feedback .session-desc table.rating td.ra-title .n9  {color:#00aa00;}
+.new-feedback .session-desc table.rating td.ra-title .n8  {color:#5db900;}
+.new-feedback .session-desc table.rating td.ra-title .n7  {color:#a5b900;}
+.new-feedback .session-desc table.rating td.ra-title .n6  {color:#bcb100;}
+.new-feedback .session-desc table.rating td.ra-title .n5  {color:#e49e17;}
+.new-feedback .session-desc table.rating td.ra-title .n4  {color:#e47717;}
+.new-feedback .session-desc table.rating td.ra-title .n3  {color:#e44c17;}
+.new-feedback .session-desc table.rating td.ra-title .n2  {color:#c72610;}
+.new-feedback .session-desc table.rating td.ra-title .n1  {color:#b76660;}
+
+.new-feedback .session-desc ul                       { margin:0 0 8px 0; padding:0 0 8px 0; list-style-type:none; }
+*:first-child+html .new-feedback .session-desc ul    { margin:0 0 8px 0; }/*ie7*/
+html>body .new-feedback .session-desc ul             { margin:0; padding:0 0 8px 0;}/*ff*/  
+body:nth-of-type(1) .new-feedback .session-desc ul   { margin:0; padding:0 0 8px 0;}/*Chrome*/
+
+.new-feedback .session-desc ul li                    {margin:0; padding:1px 0 2px 1px; list-style-type:none; width:49%; float:left;}
+.new-feedback .session-desc ul li.one                {width:99%; }
+
+/*顧問分數*/
+.new-feedback .tutor-score9 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_9.gif) no-repeat;padding:1px 20px 0 0;}/*width和padding-right加起來要等於321*/
+.new-feedback .tutor-score8 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_8.gif) no-repeat;padding:1px 51px 0 0;}
+.new-feedback .tutor-score7 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_7.gif) no-repeat;padding:1px 86px 0 0;}
+.new-feedback .tutor-score6 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_6.gif) no-repeat;padding:1px 115px 0 0;}
+.new-feedback .tutor-score5 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_5.gif) no-repeat;padding:1px 150px 0 0;}
+.new-feedback .tutor-score4 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_4.gif) no-repeat;padding:1px 180px 0 0;}
+.new-feedback .tutor-score3 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_3.gif) no-repeat;padding:1px 210px 0 0;}
+.new-feedback .tutor-score2 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_2.gif) no-repeat;padding:1px 245px 0 0;}
+.new-feedback .tutor-score1 {width:324px; height:16px;color:#fff; font-weight:bold; text-align:center; 
+                             background:url(/images/sessionFeedback/feedback_tutorRating_1.gif) no-repeat;padding:1px 275px 0 0;}							 
+							 
+
+/*同學評比*/
+.new-feedback .session-desc table.classmate           {background:#FFFFFF; width:100%; font-size:12px;}
+.new-feedback .session-desc table.classmate td        {border-bottom:1px #CCC solid; padding:10px 0 10px 0;}
+.new-feedback .session-desc table.classmate td.left   {text-align:right; color:#666; width:20%; font-weight:bold; padding-right:10px; } 
+.new-feedback .session-desc table.classmate td.right  {text-align:left; color:#666; padding:5px 0 0 5px; }
+.new-feedback .session-desc table.classmate td.bg     {background:#F0F0F0;}
+
+.new-feedback .session-desc table.classmate h1        {font-weight:bold; margin:0; padding:0 0 5px 2px; font-size:12px; }
+.new-feedback .session-desc table.classmate .environment           {border-bottom:1px #b9d4f2 solid; padding:5px 0 5px 0; width:95%;}
+.new-feedback .session-desc table.classmate .environment ul        {list-style-type:none; margin:0; padding:0;}
+.new-feedback .session-desc table.classmate .environment ul li     {list-style-type:none; margin:0; padding:0 0 3px 0; float:left; height:20px;}
+.new-feedback .session-desc table.classmate .environment ul li.en-type {width:36%;}
+.new-feedback .session-desc table.classmate .environment ul li.en-desc {width:62%;}
+
+.new-feedback .session-desc table.classmate .pfms                       {padding:8px 0 0px 0; margin:0 0 3px 0; }
+*:first-child+html .new-feedback .session-desc table.classmate .pfms    {margin:0 0 3px 0;}/*ie7*/
+html>body .new-feedback .session-desc table.classmate .pfms             {padding:8px 0 5px 0; margin:0;}/*ff*/  
+body:nth-of-type(1) .new-feedback .session-desc table.classmate .pfms   {padding:8px 0 5px 0; margin:0;}/*Chrome*/
+
+.new-feedback .session-desc table.classmate .pfms ul        {list-style-type:none; margin:0; padding:0;}
+.new-feedback .session-desc table.classmate .pfms ul li     {list-style-type:none; margin:0; padding:0 0 3px 0; float:left; width:48%; height:20px;}
+
+
+/*評比需知-POP燈箱*/
+.rating-pop-desc                { position:absolute; font-size:12px; z-index:50; }
+.rating-pop-desc .pop-desc-top  { background:url(/images/sessionFeedback/icon-feedback-line.gif) repeat-x bottom;}
+.rating-pop-desc .pop-desc-body { background:#fff7d9; padding:15px 0 15px 15px; border-left:1px #eace93 solid;border-right:1px #eace93 solid;border-bottom:1px #eace93 solid;}
+.rating-pop-desc .pop-desc-body .pop-rating-title {font-size:15px; font-weight:bold; color:#333; width:300px;}
+.rating-pop-desc .pop-desc-body .pop-rating-area { float:left; padding:7px 15px 0 0 ; line-height:22px; color:#555;}
+.rating-pop-desc .pop-desc-body .pop-rating-area span {color:#c96660; font-weight:bold;}
+
+
+.local-rating-con   {top:91px; }/*顧問評分說明的位置*/
+.local-rating-matr  {top:270px;}/*素材評分說明的位置*/
+.local-rating-net   {top:418px; }/*網路評分說明的位置*/
+*:first-child+html .local-rating-cs    {top:418px;}/*ie7*/
+
+
+
+
+.btn-feedback  { background:url(/images/sessionFeedback/feedback_btn_bg.gif) no-repeat; font-size:15px; color:#333; text-align:center; border:0; margin:0; padding:0; 
+                 cursor:pointer;width:111px; height:30px;}
+.input-fb      { background:#fff; border:0; font-size:12px; color:#333; border:1px #adadad solid; height:18px; margin:0 0 0 5px; width:220px;}
+.textarea-fb   { background:#fff; border:0; border:1px #ccc solid; font-size:12px; color:#333; height:60px; margin:3px 0 10px 0;width:650px;}
+.s-line {color:#ccc; font-size:11px;}
+.f-orgggg    { color:#ff9666; font-weight:bold;}
+
+
+/* button */
+.btn_2 {width:97px;height:20px;background:url(http://www.vipabc.com//images/images_cn/add/mymember_icon.jpg) no-repeat;text-align:right;font-size:12px;color:#fff;border:0px;cursor:pointer;	padding-top: 0;padding-right: 6px;padding-bottom: 0;padding-left: 0;}
+
+.btn_3 { width:130px; height:23px; background:url(http://www.vipabc.com//images/images_cn/btn_3.gif) no-repeat; text-align:right; font-size:12px; color:#fff; border:0px; cursor:pointer;padding:0 6px 0 0;}
+
+
+.btn_submit { width:130px; height:23px; background:url(http://www.vipabc.com//images/images_cn/btn_3.gif) no-repeat; text-align:center; font-size:14px; font-weight:bold; color:#fff; border:0px; cursor:pointer;}
+
+
